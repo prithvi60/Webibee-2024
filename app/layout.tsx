@@ -1,28 +1,29 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-import './globals.css'
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-
+import "./globals.css";
+import { Providers } from "./providers";
+import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export const metadata: Metadata = {
-  title: 'Travel',
-  description: 'Travel UI/UX App for Camping',
-}
+  title: "Webibee",
+  description: "Webibee Web Development Agency",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body>
-        <Navbar />
-        <main className="relative overflow-hidden">
-          {children}
-        </main>
-        <Footer />
+        <Providers>
+          <NavBar/>
+          <main className="relative overflow-hidden">{children}
+          </main>
+          <Footer/>
+        </Providers>
       </body>
     </html>
-  )
+  );
 }

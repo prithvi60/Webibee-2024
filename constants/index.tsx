@@ -7,6 +7,19 @@ export const NAV_LINKS = [
   { href: '/', key: 'contact_us', label: 'Contact Us' },
 ];
 
+// Hero Masonary
+export const IMG =[
+  {src: "/img-1.jpg",ratio:"aspect-video"},
+  {src: "/img-3.jpg",ratio:"aspect-square"},
+  {src: "/img-2.jpg",ratio:"aspect-video"},
+  {src: "/img-4.jpg",ratio:"aspect-square"},
+  {src: "/img-1.jpg",ratio:"aspect-video"},
+  {src: "/img-3.jpg",ratio:"aspect-video"},
+  {src: "/img-3.jpg",ratio:"aspect-video"},
+  {src: "/img-2.jpg",ratio:"aspect-square"},
+  {src: "/img-4.jpg",ratio:"aspect-video"},
+]
+
 // CAMP SECTION
 export const PEOPLE_URL = [
   '/person-1.png',

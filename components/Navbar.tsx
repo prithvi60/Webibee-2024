@@ -1,41 +1,121 @@
-import { NAV_LINKS } from "@/constants"
-import Image from "next/image"
-import Link from "next/link"
-import Button from "./Button"
+"use client";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+} from "@nextui-org/react";
+import Image from "next/image";
+const NavBar = () => {
+  const menuItems = ["Portfolio", "Testimonials", "Team", "Services"];
 
-const Navbar = () => {
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <Link href="/">
-        <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
-      </Link>
+    <Navbar
+      shouldHideOnScroll
+      isBordered
+      isBlurred
+      maxWidth="2xl"
+      className="py-2 bg-white font-body"
+    >
+      <NavbarContent className="md:hidden" justify="start">
+        <NavbarMenuToggle className="text-primary" />
+      </NavbarContent>
 
-      <ul className="hidden h-full gap-12 lg:flex">
-        {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
-            {link.label}
+      <NavbarContent className="md:hidden pr-3" justify="center">
+        <NavbarBrand className="mr-5 animate-drip-expand">
+          <div className="relative h-12 w-12 animate-pulse">
+            <Image
+              src={"/brain-logo.svg"}
+              alt="Webibee logo"
+              fill
+              aria-label="Webibee logo"
+              className="absolute object-contain object-center"
+            />
+          </div>
+          {/* <p className="font-extrabold text-3xl font-logo_header">WEBIBEE</p> */}
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden md:flex gap-6" justify="end">
+        <NavbarBrand className="space-x-2 animate-drip-expand">
+          <div className="relative h-14 w-14 animate-pulse">
+            <Image
+              src={"/brain-logo.svg"}
+              alt="Webibee logo"
+              fill
+              aria-label="Webibee logo"
+              className="absolute object-contain object-center"
+            />
+          </div>
+          <p className="font-extrabold text-3xl font-header text-gradient tracking-wider">
+            Webibee
+          </p>
+        </NavbarBrand>
+      </NavbarContent>
+      <NavbarContent className="hidden md:flex gap-10" justify="end">
+        <NavbarItem isActive>
+          <Link
+            color="primary"
+            href="#"
+            aria-current="page"
+            className="text-lg hover:text-purple-300"
+          >
+            Portfolio
           </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="#" className="text-lg text-black hover:text-purple-300">
+            Testimonials
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="#" className="text-lg text-black hover:text-purple-300">
+            Team
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="#" className="text-lg text-black hover:text-purple-300">
+            Services
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+
+      <NavbarContent justify="end">
+        <NavbarItem>
+          <Button
+            as={Link}
+            className="bg-gradient font-bold text-white text-base md:text-lg"
+            href="#"
+            variant="flat"
+            size="md"
+          >
+            Book A Meeting
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+
+      <NavbarMenu className="bg-secondary bg-opacity-90 mt-6">
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`} className="">
+            <Link
+              className="w-full p-2 font-body font-semibold text-lg"
+              // color={
+              // }
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
         ))}
-      </ul>
+      </NavbarMenu>
+    </Navbar>
+  );
+};
 
-      <div className="lg:flexCenter hidden">
-        <Button 
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
-      </div>
-
-      <Image 
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-      />
-    </nav>
-  )
-}
-
-export default Navbar
+export default NavBar;

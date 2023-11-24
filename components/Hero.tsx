@@ -1,83 +1,67 @@
-import Image from 'next/image'
-import Button from './Button'
+import Image from "next/image";
+// import { IMG } from "@/constants"
+const IMG = [
+  { src: "/img-1.jpg", ratio: "aspect-box" },
+  { src: "/img-3.jpg", ratio: "aspect-square" },
+  { src: "/img-2.jpg", ratio: "aspect-box" },
+  { src: "/img-4.jpg", ratio: "aspect-square" },
+  { src: "/img-1.jpg", ratio: "aspect-box" },
+  { src: "/img-3.jpg", ratio: "aspect-box" },
+  { src: "/img-3.jpg", ratio: "aspect-box" },
+  { src: "/img-2.jpg", ratio: "aspect-square" },
+  { src: "/img-4.jpg", ratio: "aspect-box" },
+];
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-      <div className="hero-map" />
-
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-        <Image 
-          src="/camp.svg"
-          alt="camp"
-          width={50}
-          height={50}
-          className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
-        />
-        <h1 className="bold-52 lg:bold-88">Putuk Truno Camp Area</h1>
-        <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-          We want to be on each of your journeys seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app
-        </p>
-
-        <div className="my-11 flex flex-wrap gap-5">
-          <div className="flex items-center gap-2">
-            {Array(5).fill(1).map((_, index) => (
-              <Image 
-                src="/star.svg"
-                key={index}
-                alt="star"
-                width={24}
-                height={24}
-              />
+    <section className="pb-10 font-body bg-secondary">
+      <div className="w-full h-full md:h-[80vh] md:flex md:justify-between gap-5 md:gap-2">
+        {/* titlte card */}
+        <div className="w-full md:w-2/5 text-white flex flex-col justify-center items-center gap-5 py-5">
+          <h3 className="text-bold text-5xl tracking-wide font-header">
+            Webibee world
+          </h3>
+          <p className="font-medium text-2xl text-center w-4/5">
+            We build and design websites meant for sales
+          </p>
+          <hr className="w-3/5 p-0.5 bg-gradient"/>
+        </div>
+        {/* Masonary cards */}
+        <div className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
+          <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel rounded-xl">
+            {IMG.map((item, idx) => (
+              <div
+                className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
+                key={idx}
+              >
+                <Image
+                  alt="..."
+                  fill
+                  src={item.src}
+                  className="object-cover object-center mb-3"
+                />
+              </div>
             ))}
           </div>
-
-          <p className="bold-16 lg:bold-20 text-blue-70">
-            198k
-            <span className="regular-16 lg:regular-20 ml-1">Excellent Reviews</span>
-          </p>
-        </div>
-
-        <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button 
-            type="button" 
-            title="Download App" 
-            variant="btn_green" 
-          />
-          <Button 
-            type="button" 
-            title="How we work?" 
-            icon="/play.svg"
-            variant="btn_white_text" 
-          />
-        </div>
-      </div>
-
-      <div className="relative flex flex-1 items-start">
-        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
-
-           <div className="flex flex-col">
-            <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Location</p>
-              <Image src="/close.svg" alt="close" width={24} height={24} />
-            </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
-          </div>
-
-          <div className="flexBetween">
-            <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
-            </div>
+          <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel rounded-xl">
+            {IMG.map((item, idx) => (
+              <div
+                className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
+                key={idx}
+              >
+                <Image
+                  alt="..."
+                  fill
+                  src={item.src}
+                  className="object-cover object-center mb-3"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

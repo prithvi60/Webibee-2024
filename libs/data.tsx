@@ -30,3 +30,48 @@ export const IMG =[
     {title: "Transparency", para :"A well-designed website builds immediate trust, boosting engagement and conversions."},
     {title: "Post Delivery Support", para :"Faster websites correlate with higher conversion rates, driving business success."},
   ]
+
+  // FAQ
+  export const Faq = [
+    {title: "How much we charge?",content : ""},
+    {title: "Payment terms",content : ""},
+    {title: "How much time to get it built",content : ""},
+    {title: "Other services we offer",content : ""},
+    {title: "Who do i need to provide to get started",content : ""},
+    {title: "How do your make the websites",content : ""},
+    {title: "Refund ",content : ""}
+  ]
+
+  // Contact Us
+export const services=[
+  {label:"Service 1", value:"Service 1"},
+  {label:"Service 2", value:"Service 2"},
+  {label:"Service 3", value:"Service 3"},
+  {label:"Service 4", value:"Service 4"},
+]
+
+export const about=[
+  {label:"Media 1", value:"Media 1"},
+  {label:"Media 2", value:"Media 2"},
+  {label:"Media 3", value:"Media 3"},
+  {label:"Media 4", value:"Media 4"},
+]
+
+// WORKFLOW 
+export const workflow=[
+{para:"Research your niche and the competitions"},
+{para:"Design UI based on aesthetic and marketing"},
+{para:"Develop a world class ,high performance website"},
+{para:"QA by senior developers to ensure bug free solutions"},
+{para:"Make it easy to you to evolve with your business through automation"},
+]
+
+//PORTFOLIO
+export const portfolio=[
+  {img:"/avatar-1.jpg"},
+  {img:"/avatar-2.jpg"},
+  {img:"/avatar-3.jpg"},
+  {img:"/avatar-1.jpg"},
+  {img:"/avatar-2.jpg"},
+  {img:"/avatar-3.jpg"}
+]

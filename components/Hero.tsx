@@ -18,17 +18,17 @@ const Hero = () => {
       <div className="w-full h-full md:h-[80vh] md:flex md:justify-between gap-5 md:gap-2">
         {/* titlte card */}
         <div className="w-full md:w-2/5 text-white flex flex-col justify-center items-center gap-5 py-5">
-          <h3 className="text-bold text-5xl tracking-wide font-header">
+          <h3 className="text-bold text-5xl md:text-7xl tracking-wide font-header text-center">
             Webibee world
           </h3>
           <p className="font-medium text-2xl text-center w-4/5">
-            We build and design websites meant for sales
+          We are software developers who build modern websites and tools to boost your brands business 
           </p>
           <hr className="w-3/5 p-0.5 bg-gradient"/>
         </div>
         {/* Masonary cards */}
         <div className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
-          <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel rounded-xl">
+          <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
             {IMG.map((item, idx) => (
               <div
                 className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}

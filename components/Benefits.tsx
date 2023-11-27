@@ -4,12 +4,12 @@ import {Card, CardHeader, CardBody, Divider} from "@nextui-org/react";
 
 export default function Benefits() {
   return (
-    <section className="py-16 bg-gradient">
+    <section className="py-16 bg-gradient px-5">
       <div className="pb-14 mx-auto">
-        <h2 className="font-header text-4xl md:text-5xl text-center">
+        <h2 className="font-header text-5xl md:text-7xl text-center text-white">
         Benefits of getting a website built from us
         </h2>
-        <hr className="w-80 mt-4 mx-auto p-[1px] bg-white" />
+        <hr className="w-80 mt-4 mx-auto p-[1px] bg-gradient" />
       </div>
       <div className="flex justify-center items-center flex-wrap gap-10 w-4/5 mx-auto">
         {benefits.map((item,idx)=>(

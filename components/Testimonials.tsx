@@ -13,7 +13,7 @@ export default function Testimonials() {
   return (
     <section className="py-6 md:py-10">
       <div className="py-10 mx-auto">
-        <h2 className="font-header text-4xl md:text-5xl text-gradient text-center">
+        <h2 className="font-header text-5xl md:text-7xl text-gradient text-center">
           Customer Testimonials
         </h2>
         <hr className="w-56 mt-4 mx-auto p-[1px] bg-white" />

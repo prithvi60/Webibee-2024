@@ -26,9 +26,9 @@ const NavBar = () => {
         <NavbarMenuToggle className="text-primary" />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden pr-3" justify="center">
+      <NavbarContent className="md:hidden" justify="center">
         <NavbarBrand className="mr-5 animate-drip-expand">
-          <div className="relative h-12 w-12 animate-pulse">
+          <div className="relative h-11 w-11 animate-pulse">
             <Image
               src={"/brain-logo.svg"}
               alt="Webibee logo"
@@ -57,7 +57,7 @@ const NavBar = () => {
           </p>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden md:flex gap-10" justify="end">
+      <NavbarContent className="hidden md:flex md:gap-5 lg:gap-10" justify="end">
         <NavbarItem isActive>
           <Link
             color="primary"
@@ -89,7 +89,7 @@ const NavBar = () => {
         <NavbarItem>
           <Button
             as={Link}
-            className="bg-gradient font-bold text-white text-base md:text-lg"
+            className="bg-gradient font-bold text-white text-sm lg:text-lg"
             href="#"
             variant="flat"
             size="md"

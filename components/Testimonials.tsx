@@ -11,14 +11,14 @@ import {
 
 export default function Testimonials() {
   return (
-    <section className="py-6 md:py-10">
+    <section className="py-6 md:py-10" id="Testimonial">
       <div className="py-10 mx-auto">
         <h2 className="font-header text-5xl md:text-7xl text-gradient text-center">
           Customer Testimonials
         </h2>
         <hr className="w-56 mt-4 mx-auto p-[1px] bg-white" />
       </div>
-      <div className="w-full h-[65vh] overflow-hidden flex gap-4 ">
+      <div className="w-full h-full overflow-hidden flex gap-4 ">
         <div className="py-10 flex justify-around  gap-4 animate-horizontal_carousel">
           {lists.map((list, idx) => (
             <Card

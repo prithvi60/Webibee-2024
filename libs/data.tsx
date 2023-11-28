@@ -1,3 +1,4 @@
+// HERO
 export const IMG =[
     {src: "/img-1.jpg",ratio:"aspect-video"},
     {src: "/img-3.jpg",ratio:"aspect-square"},
@@ -8,6 +9,15 @@ export const IMG =[
     {src: "/img-3.jpg",ratio:"aspect-video"},
     {src: "/img-2.jpg",ratio:"aspect-square"},
     {src: "/img-4.jpg",ratio:"aspect-video"},
+  ]
+
+// NAVBAR
+  export const Navlinks =[
+    {href:"/",title:"FAQ"},
+    {href:"/",title:"Testimonial"},
+    {href:"/",title:"Services"},
+    {href:"/",title:"Tool"},
+    {href:"/",title:"Contact us"},
   ]
 
   // TESTIMONIALS
@@ -68,10 +78,21 @@ export const workflow=[
 
 //PORTFOLIO
 export const portfolio=[
-  {img:"/avatar-1.jpg"},
-  {img:"/avatar-2.jpg"},
-  {img:"/avatar-3.jpg"},
-  {img:"/avatar-1.jpg"},
-  {img:"/avatar-2.jpg"},
-  {img:"/avatar-3.jpg"}
+  {img:"/avatar-1.jpg",title:"Printguy",href:"/"},
+  {img:"/avatar-2.jpg",title:"Intermont",href:"/"},
+  {img:"/avatar-3.jpg",title:"Srk",href:"/"},
+  {img:"/avatar-1.jpg",title:"Lotus AI",href:"/"},
+  {img:"/avatar-2.jpg",title:"Iqu",href:"/"},
+  {img:"/avatar-3.jpg",title:"Vbcc",href:"/"},
+  {img:"/avatar-1.jpg",title:"N9 power",href:"/"},
+  {img:"/avatar-2.jpg",title:"Flow graph",href:"/"},
+  {img:"/avatar-3.jpg",title:"Custom slider",href:"/"},
+  {img:"/avatar-2.jpg",title:"Bubble plugin",href:"/"}
+]
+
+// TEAM
+export const team=[
+  {name:"Prithvi",img:"/avatar-1.jpg", designation:"Founder",passion:"We don't just build websites, we build websites that SELLS"},
+  {name:"Gokul Gandhi",img:"/avatar-3.jpg",designation:"FullStack Developer",passion:"Great web design without functionality is like a sports car with no engine"},
+  {name:"Satyajeet",img:"/avatar-1.jpg",designation:"FullStack Developer",passion:"Getting a quality website is not an expense but rather an investment"}
 ]

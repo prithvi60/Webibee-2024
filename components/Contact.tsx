@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="py-16 bg-gradient px-5">
+    <section className="py-16 bg-gradient px-5" id="Contact us">
       <div className="w-full md:w-4/5 lg:w-[40%] bg-white mx-auto rounded-lg ">
         <div className="bg-black-gradient border-b-1 border-primary rounded-t-lg py-3">
           <h2 className="font-header text-5xl md:text-7xl text-center text-white">
@@ -37,7 +37,7 @@ export default function Contact() {
         <form
           action=""
           method="POST"
-          className="flex flex-col justify-center items-center gap-4 bg-zinc-100 py-10 px-3 rounded-lg"
+          className="space-y-5 bg-zinc-100 py-10 px-3 rounded-lg"
         >
           <Input
             isRequired
@@ -98,7 +98,7 @@ export default function Contact() {
             orientation="horizontal"
             defaultValue="Yes"
             color="primary"
-            className="max-w-lg ml-2 lg:-ml-44 mb-5"
+            className="max-w-lg ml-2 mb-5"
           >
             <Radio value="Yes">Yes</Radio>
             <Radio value="No">No</Radio>

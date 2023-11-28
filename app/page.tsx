@@ -5,6 +5,7 @@ import FAQ from '@/components/FAQ';
 import Hero from '@/components/Hero';
 import Portfolio from '@/components/Portfolio';
 import Services from '@/components/Services';
+import Team from '@/components/Team';
 import Testimonials from '@/components/Testimonials';
 import Workflow from '@/components/Workflow';
 
@@ -14,8 +15,9 @@ export default function Home() {
       <Hero/>
       <Portfolio/>
       <Testimonials/>
-      {/* <ClientHighlight/> */}
+      <ClientHighlight/>
       <Workflow/>
+      <Team/>
       <Services/>
       <Benefits/>
       <FAQ/>

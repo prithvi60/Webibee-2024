@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 export default function Services() {
   return (
-    <section className="py-16 mb-28 bg-gradient px-5">
+    <section className="py-16 mb-28 bg-gradient px-5" id="Services">
       <div className="pb-10 mx-auto">
         <h2 className="font-header text-5xl md:text-7xl text-center text-white">
         Services We Offer

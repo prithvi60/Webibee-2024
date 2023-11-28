@@ -29,7 +29,6 @@ export default function Portfolio() {
         grabCursor={true}
         autoplay={{
           delay: 3000,
-          disableOnInteraction	: true,
           pauseOnMouseEnter:true
         }}
         centeredSlides={true}
@@ -46,10 +45,12 @@ export default function Portfolio() {
         className="mySwiper"
       >
         {portfolio.map((item,idx) =>(
-        <SwiperSlide className='!w-[280px] !h-[380px] md:!w-[500px] md:!h-[550px] bg-contain bg-center' key={idx}>
-          <Link href={"#"} className=''>
-          <Image alt='...' src={item.img} fill className='absolute rounded-xl border-2 border-primary object-cover object-center'/>
+        <SwiperSlide className='!w-[280px] !h-[380px] md:!w-[500px] md:!h-[550px] bg-contain bg-center relative group' key={idx}>
+          <Link href={item.href}>
+          <Image alt={item.title} src={item.img} fill className='absolute rounded-xl border-2 border-primary object-cover object-center'/>
           </Link>
+          <h4 className='absolute bottom-5 left-10 text-lg md:text-4xl font-header font-semibold text-white md:opacity-0 transition-all transform md:-translate-y-20 md:duration-1000
+          opacity-100  translate-y-0 md:group-hover:opacity-100 md:group-hover:translate-y-0'>{item.title}</h4>
         </SwiperSlide>
         ))}
       </Swiper>

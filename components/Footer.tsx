@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaSquareFacebook,FaSquareXTwitter,FaSquareInstagram,FaSquareWhatsapp } from "react-icons/fa6";
-
+import Navlink from './Navlinks';
 
 const Footer = () => {
   return (
@@ -9,21 +9,22 @@ const Footer = () => {
       <div className='py-3 flex flex-col justify-center items-center gap-8'>
         <div className='flex justify-center items-center gap-5 py-3 cursor-pointer'>
           <Link href={"#"}>
-        <FaSquareFacebook className='h-6 md:h-8 w-6 md:w-8 bg-primary rounded-md hover:bg-opacity-70 hover:animate-appearance-in'/>
+        <FaSquareFacebook className='h-6 md:h-8 w-6 md:w-8 bg-white rounded-md hover:bg-opacity-70 hover:animate-appearance-in hover:bg-primary'/>
         </Link>
         <Link href={"#"}>
-          <FaSquareXTwitter className='h-6 md:h-8 w-6 md:w-8 bg-primary rounded-md hover:bg-opacity-70 hover:animate-appearance-in'/>
+          <FaSquareXTwitter className='h-6 md:h-8 w-6 md:w-8 bg-white rounded-md hover:bg-opacity-70 hover:animate-appearance-in hover:bg-primary'/>
           </Link>
           <Link href={"#"}>
-          <FaSquareInstagram className='h-6 md:h-8 w-6 md:w-8 bg-primary rounded-md hover:bg-opacity-70 hover:animate-appearance-in'/>
+          <FaSquareInstagram className='h-6 md:h-8 w-6 md:w-8 bg-white rounded-md hover:bg-opacity-70 hover:animate-appearance-in hover:bg-primary'/>
           </Link>
           <Link href={"#"}>
-          <FaSquareWhatsapp className='h-6 md:h-8 w-6 md:w-8 bg-primary rounded-md hover:bg-opacity-70 hover:animate-appearance-in'/>
+          <FaSquareWhatsapp className='h-6 md:h-8 w-6 md:w-8 bg-white rounded-md hover:bg-opacity-70 hover:animate-appearance-in hover:bg-primary'/>
           </Link>
         </div>
-        <h3 className="font-extrabold text-3xl font-logo_header text-gradient tracking-wider text-center">
+        {/* <h3 className="font-extrabold text-3xl font-logo_header text-gradient tracking-wider text-center">
             WEBIBEE WORLD
-          </h3>
+          </h3> */}
+          <Navlink/>
         <p className='text-white text-center'>WEBIBEE &copy;{`Copyright ${new Date().getFullYear()}`} - All rights reserved</p>
       </div>
     </footer>

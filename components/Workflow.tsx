@@ -16,7 +16,7 @@ export default function Workflow() {
         </h2>
         <hr className="w-56 mt-4 mx-auto p-[1px] bg-white" />
       </div>
-      <div className="h-[70vh] bg-secondary py-12 px-4">
+      <div className="h-full bg-secondary py-12 px-4">
         <Swiper
           effect={"cards"}
           grabCursor={true}

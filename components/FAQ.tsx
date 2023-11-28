@@ -1,10 +1,15 @@
 "use client"
 import { Faq } from "@/libs/data";
 import {Accordion, AccordionItem} from "@nextui-org/react";
+import { type } from "os";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
+// type box = {
+//   name: string;
+// };
+
 export default function FAQ() {
   return (
-    <section className="py-16 mb-28 px-5">
+    <section className="py-16 mb-28 px-5" id="FAQ">
       <div className="pb-14 mx-auto">
         <h2 className="font-header text-5xl md:text-7xl text-center text-white">
         Frequently Asked Questions

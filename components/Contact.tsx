@@ -7,16 +7,15 @@ import {
   RadioGroup,
   Select,
   SelectItem,
-  Textarea,
 } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="py-16 bg-gradient px-5" id="Contact us">
+    <section className="padding-variable bg-gradient" id="Contact us">
       <div className="w-full md:w-4/5 lg:w-[40%] bg-white mx-auto rounded-lg ">
         <div className="bg-black-gradient border-b-1 border-primary rounded-t-lg py-3">
-          <h2 className="font-header text-5xl md:text-7xl text-center text-white">
+          <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white px-4 py-2">
             Contact Us
           </h2>
           <div className="p-1 my-3 rounded-full border-2 border-primary z-40 bg-white w-max mx-auto text-xs">
@@ -43,7 +42,7 @@ export default function Contact() {
             isRequired
             type="email"
             label="Email"
-            className="max-w-lg"
+            className="w-full"
             color="primary"
             variant={"bordered"}
           />
@@ -51,7 +50,7 @@ export default function Contact() {
             isRequired
             type="text"
             label="Number"
-            className="max-w-lg"
+            className="w-full"
             color="primary"
             variant={"bordered"}
           />
@@ -59,7 +58,7 @@ export default function Contact() {
             isRequired
             type="text"
             label="Company Name"
-            className="max-w-lg"
+            className="w-full"
             color="primary"
             variant={"bordered"}
           />
@@ -68,7 +67,7 @@ export default function Contact() {
             label="What service do you require? "
             placeholder="Select an Service"
             defaultSelectedKeys={["Service 1"]}
-            className="max-w-lg"
+            className="w-full"
             color="primary"
             variant={"bordered"}
           >
@@ -83,7 +82,7 @@ export default function Contact() {
             label="Where did you hear about webibee?"
             placeholder="Select an Media"
             defaultSelectedKeys={["Media 1"]}
-            className="max-w-lg"
+            className="w-full"
             color="primary"
             variant={"bordered"}
           >
@@ -98,7 +97,7 @@ export default function Contact() {
             orientation="horizontal"
             defaultValue="Yes"
             color="primary"
-            className="max-w-lg ml-2 mb-5"
+            className="w-full ml-2 mb-5"
           >
             <Radio value="Yes">Yes</Radio>
             <Radio value="No">No</Radio>

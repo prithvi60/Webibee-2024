@@ -9,12 +9,12 @@ import { workflow } from "@/libs/data";
 
 export default function Workflow() {
   return (
-    <section className="py-16  px-5 ">
+    <section className="padding-variable">
       <div className="pb-10 mx-auto">
-        <h2 className="font-header text-5xl md:text-7xl text-center text-gradient">
+        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-gradient">
           Our Workflow Process
         </h2>
-        <hr className="w-56 mt-4 mx-auto p-[1px] bg-white" />
+        <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-gradient" />
       </div>
       <div className="h-full bg-secondary py-12 px-4">
         <Swiper

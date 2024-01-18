@@ -12,9 +12,8 @@ module.exports = {
       colors: {
       },
       fontFamily: {
-        body: ['Work Sans', "sans-serif"],
-        header:['Caveat', "cursive"],
-        logo_header : ['JetBrains Mono', "monospace"]
+        Lato: ['var(--font-lato)'],
+        Montserrat: ['var(--font-montserrat)'],
       },
       aspectRatio: {
         box : "3 / 4"

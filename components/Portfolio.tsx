@@ -16,12 +16,12 @@ import { portfolio } from '@/libs/data';
 
 export default function Portfolio() {
   return (
-    <section className="py-16 px-5">
+    <section className="padding-variable">
       <div className="mx-auto">
-        <h2 className="font-header text-5xl md:text-7xl text-center text-gradient">
+        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-gradient">
         Our Portfolio
         </h2>
-        <hr className="w-56 mt-4 mx-auto p-[1px] bg-white" />
+        <hr className="w-56 mt-4 mx-auto bg-gradient p-0.5 border-t-0 rounded-md" />
       </div>
       <div className='bg-secondary py-12'>
       <Swiper
@@ -45,11 +45,11 @@ export default function Portfolio() {
         className="mySwiper"
       >
         {portfolio.map((item,idx) =>(
-        <SwiperSlide className='!w-[280px] !h-[380px] md:!w-[500px] md:!h-[550px] bg-contain bg-center relative group' key={idx}>
+        <SwiperSlide className='!w-[280px] !h-[380px] md:!w-[500px] md:!h-[550px] bg-contain bg-center relative group !my-6' key={idx}>
           <Link href={item.href}>
           <Image alt={item.title} src={item.img} fill className='absolute rounded-xl border-2 border-primary object-cover object-center'/>
           </Link>
-          <h4 className='absolute bottom-5 left-10 text-lg md:text-4xl font-header font-semibold text-white md:opacity-0 transition-all transform md:-translate-y-20 md:duration-1000
+          <h4 className='absolute bottom-5 left-10 text-lg md:text-4xl font-Montserrat font-semibold text-white md:opacity-0 transition-all transform md:-translate-y-20 md:duration-1000
           opacity-100  translate-y-0 md:group-hover:opacity-100 md:group-hover:translate-y-0'>{item.title}</h4>
         </SwiperSlide>
         ))}

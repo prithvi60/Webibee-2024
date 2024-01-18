@@ -1,29 +1,24 @@
-"use client"
 import { benefits } from "@/libs/data";
-import {Card, CardHeader, CardBody, Divider} from "@nextui-org/react";
+import { BenefitCard } from "./BenefitCard";
+import Marquee from "react-fast-marquee";
 
 export default function Benefits() {
   return (
-    <section className="py-16 bg-gradient px-5">
+    <section className="padding-variable bg-gradient">
       <div className="pb-14 mx-auto">
-        <h2 className="font-header text-5xl md:text-7xl text-center text-white">
+        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white pb-6 capitalize">
         Benefits of getting a website built from us
         </h2>
-        <hr className="w-80 mt-4 mx-auto p-[1px] bg-gradient" />
+        <hr className="w-80 mx-auto  bg-white p-0.5 border-t-0 rounded-md" />
       </div>
-      <div className="flex justify-center items-center flex-wrap gap-10 w-4/5 mx-auto">
+      {/* <div className="flex justify-center items-center flex-wrap gap-10 w-4/5 mx-auto"> */}
+      <Marquee pauseOnHover speed={70} autoFill={true}>
+      <div className="flex items-center gap-5 w-full h-full py-5 first:ms-5">
         {benefits.map((item,idx)=>(
-      <Card className="w-[280px] sm:w-[320px]" key={idx}>
-      <CardHeader className="flex gap-3 bg-black-gradient font-body justify-center items-center">
-        <h3 className="text-white text-bold text-xl px-2">{item.title}</h3>
-      </CardHeader>
-      <Divider/>
-      <CardBody className="pb-10 text-center">
-        <p className="font-bold text-lg px-2 py-2">{item.para}</p>
-      </CardBody>
-      </Card>
+      <BenefitCard item={item} key={idx}/>
         ))}
-    </div>
+        </div>
+    </Marquee>
     </section>
   )
 }

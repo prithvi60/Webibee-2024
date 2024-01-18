@@ -4,16 +4,16 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 export default function Services() {
   return (
-    <section className="py-16 mb-28 bg-gradient px-5" id="Services">
+    <section className="padding-variable bg-gradient" id="Services">
       <div className="pb-10 mx-auto">
-        <h2 className="font-header text-5xl md:text-7xl text-center text-white">
+        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white pb-6">
         Services We Offer
         </h2>
-        <hr className="w-56 mt-4 mx-auto p-[1px] bg-gradient" />
+        <hr className="w-80 mx-auto  bg-white p-0.5 border-t-0 rounded-md" />
       </div>
       <div className="flex justify-center items-center flex-wrap gap-10">
       <Card className="w-[300px] sm:w-[350px]">
-      <CardHeader className="flex gap-3 bg-black-gradient font-body ">
+      <CardHeader className="flex gap-3 bg-black-gradient font-Lato ">
         <h3 className="text-white text-bold text-xl px-2">Shopify Website Creation</h3>
       </CardHeader>
       <Divider/>
@@ -48,7 +48,7 @@ export default function Services() {
       </CardBody>
       </Card>
       <Card className="w-[300px] sm:w-[350px]">
-      <CardHeader className="flex gap-3 bg-black-gradient font-body ">
+      <CardHeader className="flex gap-3 bg-black-gradient font-Lato ">
         <h3 className="text-white text-bold text-xl px-2">Shopify Website Redesign</h3>
       </CardHeader>
       <Divider/>

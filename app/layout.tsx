@@ -4,10 +4,25 @@ import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Lato, Montserrat } from 'next/font/google'
 export const metadata: Metadata = {
   title: "Webibee",
   description: "Webibee Web Development Agency",
 };
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+  weight: "600"
+})
+
+const lato = Lato({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lato',
+  weight: "400"
+})
 
 export default function RootLayout({
   children,
@@ -15,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
+    <html lang="en" className={`${lato.variable} ${montserrat.variable}`}>
       <body>
         <Providers>
           <NavBar/>

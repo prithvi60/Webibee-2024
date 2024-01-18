@@ -19,9 +19,9 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className="py-2 bg-white font-body"
+      className="py-2 bg-white font-Lato"
     >
-      <NavbarContent className="md:hidden" justify="start">
+      <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         <NavbarMenuToggle className="text-primary" />
       </NavbarContent>
 
@@ -51,14 +51,14 @@ const NavBar = () => {
               className="absolute object-contain object-center"
             />
           </div>
-          <p className="font-extrabold text-3xl font-header text-gradient tracking-wider hidden lg:block">
+          <p className="font-extrabold text-2xl xl:text-3xl font-Montserrat text-gradient tracking-wider hidden lg:block uppercase">
             Webibee
           </p>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent
         className="hidden md:flex md:gap-5 lg:gap-10"
-        justify="end"
+        justify="center"
       >
         {Navlinks.map((link, idx) => (
           <NavbarItem key={idx}>
@@ -78,7 +78,7 @@ const NavBar = () => {
         ))}
       </NavbarContent>
 
-      <NavbarContent justify="end">
+      <NavbarContent className="w-max !flex-grow-0" >
         <NavbarItem>
           <Button
             as={Link}
@@ -92,12 +92,12 @@ const NavBar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="bg-secondary bg-opacity-90 mt-6">
+      <NavbarMenu className="bg-secondary bg-opacity-90 pt-10">
         {Navlinks.map((link, idx) => (
           <NavbarMenuItem key={`${link}-${idx}`} className="">
             <Button
               as={Link}
-              className="w-full p-2 font-body font-semibold text-lg"
+              className="w-full p-2 font-Lato font-semibold text-lg"
               // color={
               // }
               href={link.href}

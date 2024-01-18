@@ -3,6 +3,7 @@ import ClientHighlight from '@/components/ClientHighlight';
 import Contact from '@/components/Contact';
 import FAQ from '@/components/FAQ';
 import Hero from '@/components/Hero';
+import { KnowMore } from '@/components/KnowMore';
 import Portfolio from '@/components/Portfolio';
 import Services from '@/components/Services';
 import Team from '@/components/Team';
@@ -19,6 +20,7 @@ export default function Home() {
       <Workflow/>
       <Team/>
       <Services/>
+      <KnowMore />
       <Benefits/>
       <FAQ/>
       <Contact/>

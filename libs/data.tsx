@@ -93,6 +93,5 @@ export const portfolio=[
 // TEAM
 export const team=[
   {name:"Prithvi",img:"/avatar-1.jpg", designation:"Founder",passion:"We don't just build websites, we build websites that SELLS"},
-  {name:"Gokul Gandhi",img:"/avatar-3.jpg",designation:"FullStack Developer",passion:"Great web design without functionality is like a sports car with no engine"},
-  {name:"Satyajeet",img:"/avatar-1.jpg",designation:"FullStack Developer",passion:"Getting a quality website is not an expense but rather an investment"}
+  {name:"Gokul",img:"/avatar-3.jpg",designation:"FullStack Developer",passion:"Great web design without functionality is like a sports car with no engine"},
 ]

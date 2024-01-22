@@ -1,7 +1,7 @@
 "use client";
 import { team } from "@/libs/data";
 import { Card, CardFooter, Image, Button, Tooltip } from "@nextui-org/react";
-import { MdFavoriteBorder } from "react-icons/md";
+import { FaRegThumbsUp  } from "react-icons/fa6";
 import confetti from "canvas-confetti";
 
 export default function Team() {
@@ -69,14 +69,14 @@ export default function Team() {
                     color="danger"
                     aria-label="Like"
                   >
-                    <MdFavoriteBorder className="w-5 h-5 text-white" />
+                    <FaRegThumbsUp  className="w-5 h-5 text-white" />
                   </Button>
                 </Tooltip>
               </CardFooter>
             </Card>
-            <p className="hidden lg:block text-white text-base font-Lato text-center tracking-normal leading-snug">
+            {/* <p className="hidden lg:block text-white text-base font-Lato text-center tracking-normal leading-snug">
               {person.passion}
-            </p>
+            </p> */}
           </div>
         ))}
       </div>

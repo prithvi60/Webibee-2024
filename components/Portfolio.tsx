@@ -25,6 +25,12 @@ export default function Portfolio() {
       </div>
       <div className='bg-secondary py-12'>
       <Swiper
+      // navigation={true}
+      // navigation={{
+      //   nextEl: ".button-next",
+      //   prevEl: ".button-prev",
+      //   disabledClass: "swiper-button-disabled"
+      // }}
         effect={'coverflow'}
         grabCursor={true}
         autoplay={{

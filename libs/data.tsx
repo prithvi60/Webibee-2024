@@ -13,11 +13,11 @@ export const IMG =[
 
 // NAVBAR
   export const Navlinks =[
-    {href:"/",title:"FAQ"},
-    {href:"/",title:"Testimonial"},
-    {href:"/",title:"Services"},
-    {href:"/",title:"Tool"},
-    {href:"/",title:"Contact us"},
+    {href:"Services",title:"Services"},
+    {href:"RecentWork",title:"Recent Work"},
+    {href:"FAQ",title:"FAQ"},
+    {href:"Contact",title:"Contact us"},
+    // {href:"/",title:"Tool"},
   ]
 
   // TESTIMONIALS

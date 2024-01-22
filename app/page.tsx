@@ -14,14 +14,14 @@ export default function Home() {
   return (
     <div className='bg-secondary'>
       <Hero/>
+      <Services/>
+      <Benefits/>
       <Portfolio/>
       <Testimonials/>
       <ClientHighlight/>
       <Workflow/>
       <Team/>
-      <Services/>
       <KnowMore />
-      <Benefits/>
       <FAQ/>
       <Contact/>
     </div> 

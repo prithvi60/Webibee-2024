@@ -51,7 +51,7 @@ const NavBar = () => {
               className="absolute object-contain object-center"
             />
           </div>
-          <p className="font-extrabold text-2xl xl:text-3xl font-Montserrat text-gradient tracking-wider hidden lg:block uppercase">
+          <p className="font-extrabold text-2xl xl:text-3xl font-Caveat text-gradient tracking-wider hidden lg:block uppercase">
             Webibee
           </p>
         </NavbarBrand>
@@ -64,13 +64,14 @@ const NavBar = () => {
           <NavbarItem key={idx}>
             <Link
               key={idx}
-              to={link.title}
+              to={link.href}
               spy={true}
+              offset={-30}
               smooth={true}
               duration={500}
               color="secondary"
               aria-current="page"
-              className="text-lg hover:text-primary cursor-pointer"
+              className="text-lg hover:opacity-50 cursor-pointer"
             >
               {link.title}
             </Link>
@@ -78,7 +79,7 @@ const NavBar = () => {
         ))}
       </NavbarContent>
 
-      <NavbarContent className="w-max !flex-grow-0" >
+      {/* <NavbarContent className="w-max !flex-grow-0" >
         <NavbarItem>
           <Button
             as={Link}
@@ -90,7 +91,7 @@ const NavBar = () => {
             Free consultation
           </Button>
         </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
 
       <NavbarMenu className="bg-secondary bg-opacity-90 pt-10">
         {Navlinks.map((link, idx) => (

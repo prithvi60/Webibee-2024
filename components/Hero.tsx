@@ -1,69 +1,9 @@
 "use client";
-// import Image from "next/image";
-// const IMG = [
-//   { src: "/img-1.jpg", ratio: "aspect-box" },
-//   { src: "/img-3.jpg", ratio: "aspect-square" },
-//   { src: "/img-2.jpg", ratio: "aspect-box" },
-//   { src: "/img-4.jpg", ratio: "aspect-square" },
-//   { src: "/img-1.jpg", ratio: "aspect-box" },
-//   { src: "/img-3.jpg", ratio: "aspect-box" },
-//   { src: "/img-3.jpg", ratio: "aspect-box" },
-//   { src: "/img-2.jpg", ratio: "aspect-square" },
-//   { src: "/img-4.jpg", ratio: "aspect-box" },
-// ];
-
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    // <section className="pb-10 font-Lato bg-secondary">
-    //   <div className="w-full h-full md:h-[80vh] md:flex md:justify-between gap-5 md:gap-2">
-    //     {/* titlte card */}
-    //     <div className="w-full md:w-2/5 text-white flex flex-col justify-center items-center gap-5 py-5">
-    //       <h3 className="text-bold text-5xl md:text-7xl tracking-wide font-Montserrat text-center">
-    //         Webibee world
-    //       </h3>
-    //       <p className="font-medium text-2xl text-center w-4/5">
-    //       We are software developers who build modern websites and tools to boost your brands business
-    //       </p>
-    //       <hr className="w-3/5 p-0.5 bg-gradient"/>
-    //     </div>
-    //     {/* Masonary cards */}
-    //     <div className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
-    //       <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
-    //         {IMG.map((item, idx) => (
-    //           <div
-    //             className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
-    //             key={idx}
-    //           >
-    //             <Image
-    //               alt="..."
-    //               fill
-    //               src={item.src}
-    //               className="object-cover object-center mb-3"
-    //             />
-    //           </div>
-    //         ))}
-    //       </div>
-    //       <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel rounded-xl">
-    //         {IMG.map((item, idx) => (
-    //           <div
-    //             className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
-    //             key={idx}
-    //           >
-    //             <Image
-    //               alt="..."
-    //               fill
-    //               src={item.src}
-    //               className="object-cover object-center mb-3"
-    //             />
-    //           </div>
-    //         ))}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
     <section className="padding-variable text-center text-white">
       <h2 className="capitalize font- text-4xl md:text-6xl w-full mx-auto tracking-wide font-Montserrat font-bold">
         You deserve a better Life
@@ -71,7 +11,7 @@ const Hero = () => {
       <h3 className="capitalize font-urbanist text-lg md:text-xl w-full mx-auto font-Lato font-medium">
         A Counseling And Therapy Center
       </h3>
-      <div className="flex justify-around items-center gap-3 border-2 border-primary p-2 w-full lg:w-1/2 mx-auto rounded-xl">
+      <div className="flex justify-around items-center gap-3 border-2 border-primary py-3 px-2 w-full lg:w-1/2 mx-auto rounded-xl">
         <h4 className="hidden md:block text-sm md:text-lg font-Lato font-semibold">
           Excellent
         </h4>
@@ -147,13 +87,16 @@ const Hero = () => {
           </span>
         </h4>
       </div>
+
       <Button
         color="primary"
         size="lg"
         radius="lg"
         className="px-5 font-urbanist text-base md:text-lg"
       >
-        Book a Consultation{" "}
+        <Link href={"https://www.upwork.com/freelancers/~01d7976a7b95d87d"}>
+          Free consultation
+        </Link>
       </Button>
     </section>
   );

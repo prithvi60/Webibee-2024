@@ -16,7 +16,10 @@ export default function Workflow() {
         </h2>
         <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-gradient" />
       </div>
-      <div className="h-full bg-secondary py-12 px-4">
+      <div className="h-full bg-secondary py-12 px-4 grid md:grid-cols-2 place-items-center">
+      <video muted controls autoPlay className="w-full h-full md:w-[640px] lg:w-[640px] md:h-[360px] rounded-lg hidden md:block">
+         <source src="/sample.mp4" type="video/mp4"/>
+         </video>
         <Swiper
           effect={"cards"}
           grabCursor={true}

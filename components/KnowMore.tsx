@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const IMG = [
   { src: "/img-1.jpg", ratio: "aspect-box" },
   { src: "/img-3.jpg", ratio: "aspect-square" },
@@ -23,7 +24,7 @@ export const KnowMore = () => {
         {/* titlte card */}
         <div className="w-full md:w-2/5 text-white flex flex-col justify-center items-center gap-5 py-5">
           <h3 className="text-bold text-2xl md:text-3xl tracking-wide font-Montserrat text-center">
-            Webibee world
+           <span className="font-Caveat font-medium text-2xl md:text-4xl me-3">Webibee</span>world
           </h3>
           <p className="font-medium text-base md:text-lg text-center w-4/5 tracking-normal leading-relaxed">
             We are software developers who build modern websites and tools to
@@ -35,8 +36,8 @@ export const KnowMore = () => {
           {/* <hr className="w-3/5 p-0.5 bg-gradient" /> */}
         </div>
         {/* Masonary cards */}
-        <div className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
-          <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
+        <Link href={"/"} className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
+          <div  className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
             {IMG.map((item, idx) => (
               <div
                 className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
@@ -66,7 +67,7 @@ export const KnowMore = () => {
               </div>
             ))}
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

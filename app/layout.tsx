@@ -4,7 +4,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Lato, Montserrat } from 'next/font/google'
+import { Caveat, Lato, Montserrat } from 'next/font/google'
+import FloatingButton from "@/components/FloatingButton";
 export const metadata: Metadata = {
   title: "Webibee",
   description: "Webibee Web Development Agency",
@@ -24,18 +25,25 @@ const lato = Lato({
   weight: "400"
 })
 
+const caveat = Caveat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-caveat',
+})
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${lato.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${lato.variable} ${montserrat.variable} ${caveat.variable}`}>
       <body>
         <Providers>
           <NavBar/>
           <main className="relative overflow-hidden">{children}
           </main>
+          <FloatingButton />
           <Footer/>
         </Providers>
       </body>

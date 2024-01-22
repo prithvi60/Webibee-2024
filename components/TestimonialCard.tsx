@@ -1,28 +1,40 @@
 "use client";
-import { Card, CardHeader, CardBody, CardFooter, Image } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Image,
+  Avatar,
+} from "@nextui-org/react";
 
-const TestimonialCard = ({list}:{list : any}) => {
+const TestimonialCard = ({ list }: { list: any }) => {
   return (
     <Card className="max-w-[280px] min-h-[320px] md:!max-w-md p-3 bg-primary first:ms-5">
       <CardHeader className="justify-start gap-5">
         {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-white">
           Family Counselling
         </h4> */}
-        <Image
-                  alt="nextui logo"
-                  height={40}
-                  radius="sm"
-                  src={list.img}
-                  width={40}
-                />
-                <div className="flex flex-col">
-                  <p className="text-lg md:text-2xl font-semibold leading-none font-Montserrat text-white">{list.title}</p>
-                  <p className="text-sm md:text-base lg:text-lg text-slate-100 font-Lato">{list.country}</p>
-                </div>
+        {/* <Image
+          alt="nextui logo"
+          height={40}
+          radius="sm"
+          src={list.img}
+          width={40}
+        /> */}
+        <Avatar isBordered radius="full" size="md" src={"/avatar-3.jpg"} />
+        <div className="flex flex-col">
+          <p className="text-lg md:text-2xl font-semibold leading-none font-Montserrat text-white">
+            {list.title}
+          </p>
+          <p className="text-sm md:text-base lg:text-lg text-slate-100 font-Lato">
+            {list.country}
+          </p>
+        </div>
       </CardHeader>
       <CardBody className="px-3 py-0 text-small text-default-400 h-auto">
         <p className="font-Lato text-base tracking-tight text-white">
-        {list.para}
+          {list.para}
         </p>
       </CardBody>
       <CardFooter className="gap-3">

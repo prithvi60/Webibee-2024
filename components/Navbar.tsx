@@ -19,7 +19,7 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className="py-2 bg-white font-Lato"
+      className=" bg-white font-Lato"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         <NavbarMenuToggle className="text-primary" />

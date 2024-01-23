@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
+    "@splinetool/react-spline": "^2.2.6",
     "canvas-confetti": "^1.9.2",
     "chart.js": "^4.4.0",
     "framer-motion": "^10.16.5",

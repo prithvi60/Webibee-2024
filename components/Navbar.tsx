@@ -11,18 +11,27 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Image from "next/image";
+import React from "react";
 import { Link } from "react-scroll";
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
     <Navbar
       shouldHideOnScroll
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred
       maxWidth="2xl"
       className="py-2 bg-white font-Lato"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
-        <NavbarMenuToggle className="text-primary" />
+        {/* <NavbarMenuToggle className="text-primary" /> */}
+        <NavbarMenuToggle
+          className="text-primary"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
       </NavbarContent>
 
       <NavbarContent className="md:hidden" justify="center">
@@ -51,7 +60,7 @@ const NavBar = () => {
               className="absolute object-contain object-center"
             />
           </div>
-          <p className="font-extrabold text-2xl xl:text-3xl font-Caveat text-gradient tracking-wider hidden lg:block uppercase">
+          <p className="font-extrabold text-2xl xl:text-4xl font-Caveat text-gradient tracking-wider hidden lg:block capitalize">
             Webibee
           </p>
         </NavbarBrand>
@@ -98,10 +107,17 @@ const NavBar = () => {
           <NavbarMenuItem key={`${link}-${idx}`} className="">
             <Button
               as={Link}
+              key={idx}
+              to={link.href}
+              spy={true}
+              // offset={-30}
+              smooth={true}
+              duration={500}
               className="w-full p-2 font-Lato font-semibold text-lg"
               // color={
               // }
               href={link.href}
+              onClick={() => setIsMenuOpen(false)}
             >
               {link.title}
             </Button>

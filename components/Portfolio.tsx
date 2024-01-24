@@ -13,10 +13,11 @@ import { EffectCoverflow } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
 import { portfolio } from '@/libs/data';
+import { Element } from 'react-scroll';
 
 export default function Portfolio() {
   return (
-    <section className="padding-variable">
+    <Element className="padding-variable" name='Portfolio'>
       <div className="mx-auto">
         <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-gradient">
         Our Portfolio
@@ -61,6 +62,6 @@ export default function Portfolio() {
         ))}
       </Swiper>
       </div>
-    </section>
+    </Element>
   )
 }

@@ -14,11 +14,20 @@ export const IMG =[
 // NAVBAR
   export const Navlinks =[
     {href:"Services",title:"Services"},
-    {href:"RecentWork",title:"Recent Work"},
+    {href:"Portfolio",title:"Recent Work"},
     {href:"FAQ",title:"FAQ"},
-    {href:"Contact",title:"Contact us"},
+    // {href:"Contact",title:"Contact us"},
     // {href:"/",title:"Tool"},
   ]
+
+// Footer links
+export const Footerlinks =[
+  {href:"Services",title:"Services"},
+  {href:"Portfolio",title:"Recent Work"},
+  {href:"FAQ",title:"FAQ"},
+  {href:"Contact",title:"Contact us"},
+  // {href:"/",title:"Tool"},
+]
 
   // TESTIMONIALS
   export const lists = [

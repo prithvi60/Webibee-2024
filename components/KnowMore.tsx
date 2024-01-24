@@ -36,8 +36,9 @@ export const KnowMore = () => {
           {/* <hr className="w-3/5 p-0.5 bg-gradient" /> */}
         </div>
         {/* Masonary cards */}
-        <Link href={"/"} className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden overflow-y-hidden">
-          <div  className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
+        <div className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
+          <Link href={"/"}>
+          <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
             {IMG.map((item, idx) => (
               <div
                 className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
@@ -67,7 +68,8 @@ export const KnowMore = () => {
               </div>
             ))}
           </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </section>
   );

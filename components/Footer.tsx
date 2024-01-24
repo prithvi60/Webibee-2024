@@ -25,7 +25,7 @@ const Footer = () => {
             WEBIBEE WORLD
           </h3> */}
           <Navlink/>
-        <p className='text-white text-center font-Lato font-normal'><span className='font-Caveat font-semibold text-lg xl:text-xl animate-pulse mx-1.5'>WEBIBEE</span>  &copy;{`Copyright ${new Date().getFullYear()}`} - All rights reserved</p>
+        <p className='text-white text-center font-Lato font-normal'><span className='font-Caveat font-semibold text-lg xl:text-xl animate-pulse mx-1.5 capitalize'>Webibee</span>  &copy;{`Copyright ${new Date().getFullYear()}`} - All rights reserved</p>
       </div>
     </footer>
   )

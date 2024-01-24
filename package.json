@@ -1,6 +1,6 @@
 {
-  "name": "travel_app",
-  "version": "0.1.0",
+  "name": "agency portfolio",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

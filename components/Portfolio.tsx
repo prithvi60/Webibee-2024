@@ -52,8 +52,8 @@ export default function Portfolio() {
         className="mySwiper"
       >
         {portfolio.map((item,idx) =>(
-        <SwiperSlide className='!w-[280px] !h-[380px] md:!w-[500px] md:!h-[550px] bg-contain bg-center relative group !my-6' key={idx}>
-          <Link href={item.href}>
+        <SwiperSlide className='!w-[280px] !h-[350px] md:!w-[470px] md:!h-[600px] bg-contain bg-center relative group !my-6' key={idx}>
+          <Link href={item.href} target={"_blank"}>
           <Image alt={item.title} src={item.img} fill className='absolute rounded-xl border-2 border-primary object-cover object-center'/>
           </Link>
           <h4 className='absolute bottom-5 left-10 text-lg md:text-4xl font-Montserrat font-semibold text-white md:opacity-0 transition-all transform md:-translate-y-20 md:duration-1000

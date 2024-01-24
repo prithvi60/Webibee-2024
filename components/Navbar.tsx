@@ -59,7 +59,7 @@ const NavBar = () => {
             aria-current="page"
             className="text-lg hover:opacity-50 cursor-pointer 
               font-Montserrat
-              text-primary font-semibold
+              text-primary font-bold
               "
           >
             Contact Us
@@ -116,7 +116,7 @@ const NavBar = () => {
             aria-current="page"
             className="text-lg hover:opacity-50 cursor-pointer 
               font-Montserrat
-              text-primary font-semibold
+              text-primary font-bold
               "
           >
             Contact Us

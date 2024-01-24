@@ -9,10 +9,10 @@ const Footer = () => {
     <footer className="bg-secondary pt-7 md:pt-12 pb-6 ">
       <div className='py-3 flex flex-col justify-center items-center gap-8'>
         <div className='flex justify-center items-center gap-5 py-3 cursor-pointer'>
-          <Link href={"#"}>
+          <Link href={"https://www.linkedin.com/in/prithvi-n/"}>
           <FaLinkedinIn  className='h-6 md:h-8 w-6 md:w-8 text-white rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-primary'/>
           </Link>
-          <Link href={"#"}>
+          <Link href={"https://www.instagram.com/prithvi_bytes/?hl=en"}>
           <FaInstagram className='h-6 md:h-8 w-6 md:w-8 text-white rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-primary'/>
           </Link>
         </div>

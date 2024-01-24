@@ -20,18 +20,12 @@ export default function Contact() {
       <hr className="w-[17rem] mx-auto p-0.5 bg-white border-t-0 rounded-md" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center pt-3 md:pt-10">
         <div className="w-full text-white flex flex-col justify-center items-center gap-5 py-5">
-          <h3 className="text-bold text-2xl md:text-3xl tracking-wide font-Montserrat text-center">
-            <span className="font-Caveat font-medium text-2xl md:text-4xl me-3">
-              Webibee
-            </span>
-            world
-          </h3>
-          <p className="font-medium text-base md:text-lg text-center w-4/5 tracking-normal leading-relaxed">
-            We are software developers who build modern websites and tools to
-            boost your brands business.If you want to know more about our
-            company.
-            <br />
-            Check out 👉
+     
+          <p className="font-medium text-base md:text-lg text-left w-4/5 tracking-normal leading-relaxed">
+            If you are not ready to jump on the phone with us quite yet or just
+            want a simple web question answered, please leave an inquiry below
+            or email us at prithvi@webibee.com We will get back to you within 24
+            hours of your inquiry or email.
           </p>
           <p className="font-medium text-lg md:text-xl text-center tracking-normal leading-relaxed border border-primary py-1.5 px-3 w-max rounded-lg bg-black">
             +91-7358023088
@@ -42,10 +36,11 @@ export default function Contact() {
           <div className="w-max mx-auto mb-4">
             <Button
               as={Link}
-              href="#"
+              href="https://calendar.app.google/dUU7BcdHo1Y61M1v6"
               color="primary"
+              target="blank"
               size="lg"
-              variant="ghost"
+              variant={"solid"}
               className="capitalize font-semibold font-Lato  text-white"
             >
               Free Consultation
@@ -148,8 +143,8 @@ export default function Contact() {
               type="submit"
               color="primary"
               size="lg"
-              variant="ghost"
-              className="capitalize font-semibold font-Lato text-black hover:text-white"
+              variant="solid"
+              className="capitalize font-semibold font-Lato text-white hover:text-white"
             >
               Submit
             </Button>

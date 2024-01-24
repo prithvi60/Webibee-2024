@@ -19,7 +19,7 @@ const Hero = () => {
           100% Job Success
         </h4>
         <div className="block md:flex items-center">
-          <div className="flex items-center mb-1.5">
+          <div className="flex items-center ">
             <svg
               className="w-4 h-4 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"
               aria-hidden="true"
@@ -71,12 +71,17 @@ const Hero = () => {
           100% Job Success
         </h4>
         </div>
-        <h4 className="flex md:items-center md:gap-2 text-base md:text-xl font-urbanist font-bold">
-          <span className="p-1 md:p-1.5 rounded-full mx-2 bg-[#1F57C3] w-max"><TiStarOutline className="w-4 h-4 md:h-5 md:w-5 text-white "/></span>
+        <h4 className="flex flex-col justify-center md:flex-row items-center gap-1 md:gap-2 text-sm md:text-xl font-urbanist font-bold">
+          <span className="p-1 md:p-1.5 rounded-full mx-2 bg-[#1F57C3] w-max"><TiStarOutline className="w-3 h-3 md:h-5 md:w-5 text-white "/></span>
           <span className="mt-0 md:mt-1 font-Lato font-semibold">
           Top Rated
           </span>
         </h4>
+        <div className="flex md:items-center md:gap-2 text-xl md:text-2xl font-urbanist font-bold">
+          <span className="mt-0 md:mt-1 font-Lato font-extrabold text-[#14A800]">
+          Upwork
+          </span>
+        </div>
       </div>
 
       <Button

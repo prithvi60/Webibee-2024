@@ -7,15 +7,12 @@ import { Element } from "react-scroll";
 export default function Services() {
   return (
     <Element className="padding-variable bg-[url('/code.jpg')] bg-cover bg-center" name="Services">
-      {/* <div className="relative overflow-hidden w-full h-[300px] md:h-[350px] lg:h-[450px] backdrop-blur-md">
-        <Image alt="service image" fill src={"/code.jpg"} className="object-cover object-center" />
-      </div> */}
-      <div className="pb-10 mx-auto">
-        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white p-3 w-max mx-auto backdrop-blur-2xl rounded-2xl">
+      {/* <div className="pb-10 mx-auto">
+        <h2 className="font-Montserrat text-5xl md:text-7xl text-white p-3 w-max mx-auto backdrop-blur-2xl rounded-2xl">
         Services We Offer
         </h2>
         <hr className="w-80 mx-auto  bg-white p-0.5 border-t-0 rounded-md" />
-      </div>
+      </div> */}
       <Marquee pauseOnHover speed={70} autoFill={true}>
       <div className="flex justify-center items-center flex-wrap gap-10 first:ms-10">
       <Card className="w-[300px] sm:w-[350px]">

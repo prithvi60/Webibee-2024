@@ -17,7 +17,7 @@ export default function Contact() {
       <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white">
         Contact Us
       </h2>
-      <hr className="w-80 mx-auto p-0.5 bg-white border-t-0 rounded-md" />
+      <hr className="w-[17rem] mx-auto p-0.5 bg-white border-t-0 rounded-md" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center pt-3 md:pt-10">
         <div className="w-full text-white flex flex-col justify-center items-center gap-5 py-5">
           <h3 className="text-bold text-2xl md:text-3xl tracking-wide font-Montserrat text-center">

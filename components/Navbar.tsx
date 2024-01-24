@@ -34,8 +34,8 @@ const NavBar = () => {
         />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden" justify="center">
-        <NavbarBrand className="mr-5 animate-drip-expand">
+      <NavbarContent className="md:hidden" justify="start">
+        <NavbarBrand className=" mx-2 animate-drip-expand">
           <div className="relative h-11 w-11 animate-pulse">
             <Image
               src={"/brain-logo.svg"}
@@ -47,6 +47,23 @@ const NavBar = () => {
           </div>
           {/* <p className="font-extrabold text-3xl font-logo_header">WEBIBEE</p> */}
         </NavbarBrand>
+      </NavbarContent>
+      <NavbarContent justify="end" className="flex md:hidden">
+      <Link
+            to={"Contact"}
+            spy={true}
+            offset={-50}
+            smooth={true}
+            duration={500}
+            color="secondary"
+            aria-current="page"
+            className="text-lg hover:opacity-50 cursor-pointer 
+              font-Montserrat
+              text-primary font-semibold
+              "
+          >
+            Contact Us
+          </Link>
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-6" justify="center">
@@ -80,27 +97,32 @@ const NavBar = () => {
               duration={500}
               color="secondary"
               aria-current="page"
-              className="text-lg hover:opacity-50 cursor-pointer"
+              className="text-lg hover:opacity-50 cursor-pointer 
+              font-Montserrat
+              "
             >
               {link.title}
             </Link>
           </NavbarItem>
         ))}
-      </NavbarContent>
-
-      {/* <NavbarContent className="w-max !flex-grow-0" >
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-gradient font-bold text-white text-sm lg:text-lg capitalize"
-            href="#"
-            variant="flat"
-            size="md"
+          <Link
+            to={"Contact"}
+            spy={true}
+            offset={-30}
+            smooth={true}
+            duration={500}
+            color="secondary"
+            aria-current="page"
+            className="text-lg hover:opacity-50 cursor-pointer 
+              font-Montserrat
+              text-primary font-semibold
+              "
           >
-            Free consultation
-          </Button>
+            Contact Us
+          </Link>
         </NavbarItem>
-      </NavbarContent> */}
+      </NavbarContent>
 
       <NavbarMenu className="bg-secondary bg-opacity-90 pt-10">
         {Navlinks.map((link, idx) => (
@@ -110,12 +132,10 @@ const NavBar = () => {
               key={idx}
               to={link.href}
               spy={true}
-              // offset={-30}
+              offset={-50}
               smooth={true}
               duration={500}
               className="w-full p-2 font-Lato font-semibold text-lg"
-              // color={
-              // }
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
             >

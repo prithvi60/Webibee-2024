@@ -34,7 +34,7 @@ export default function Team() {
     <section className="padding-variable" id="Testimonial">
       <div className="mx-auto">
         <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-gradient capitalize">
-          Meet the W-Team
+          Meet the Team
         </h2>
         <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-gradient" />
       </div>

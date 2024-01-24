@@ -21,7 +21,7 @@ export default function FAQ() {
         <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white pb-6">
         Frequently Asked Questions
         </h2>
-        <hr className="w-80 mx-auto p-0.5 bg-gradient border-t-0 rounded-md" />
+        <hr className="w-[17rem] mx-auto p-0.5 bg-gradient border-t-0 rounded-md" />
       </div>
       <div className="w-full md:w-4/5 md:mx-auto">
     <Accordion variant="splitted" itemClasses={itemClasses}>

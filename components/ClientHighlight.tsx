@@ -15,7 +15,7 @@ import Chart from './Chart';
 
 export default function ClientHighlight() {
   return (
-    <section className="padding-variable bg-black-gradient">
+    <section className="padding-variable t">
       <div className="pb-10 mx-auto">
         <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white capitalize text-gradient">
         Case Study Highlight

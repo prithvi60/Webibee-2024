@@ -24,7 +24,7 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className="py-2 bg-white font-Lato"
+      className=" bg-white font-Lato"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
@@ -59,7 +59,7 @@ const NavBar = () => {
             aria-current="page"
             className="text-lg hover:opacity-50 cursor-pointer 
               font-Montserrat
-              text-primary font-semibold
+              text-primary font-bold
               "
           >
             Contact Us
@@ -116,7 +116,7 @@ const NavBar = () => {
             aria-current="page"
             className="text-lg hover:opacity-50 cursor-pointer 
               font-Montserrat
-              text-primary font-semibold
+              text-primary font-bold
               "
           >
             Contact Us

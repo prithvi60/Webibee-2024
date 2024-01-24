@@ -8,7 +8,7 @@ import { lists } from "@/libs/data";
 export default function Testimonials() {
   return (
     <Element
-      className="padding-variable h-full flex flex-col gap-4 "
+      className="padding-variable h-full flex flex-col gap-4 bg-black-gradient"
       name="testimonial"
     >
       <div>

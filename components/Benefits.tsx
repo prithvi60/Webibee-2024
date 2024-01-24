@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Benefits() {
   return (
-    <section className="padding-variable bg-black-gradient">
+    <section className="padding-variable bg-gradient">
       <div className="pb-14 mx-auto">
         <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white pb-6 capitalize">
         Benefits of getting a website built from us

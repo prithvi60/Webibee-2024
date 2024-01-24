@@ -1,21 +1,12 @@
+import { knowmore } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
-const IMG = [
-  { src: "/img-1.jpg", ratio: "aspect-box" },
-  { src: "/img-3.jpg", ratio: "aspect-square" },
-  { src: "/img-2.jpg", ratio: "aspect-box" },
-  { src: "/img-4.jpg", ratio: "aspect-square" },
-  { src: "/img-1.jpg", ratio: "aspect-box" },
-  { src: "/img-3.jpg", ratio: "aspect-box" },
-  { src: "/img-3.jpg", ratio: "aspect-box" },
-  { src: "/img-2.jpg", ratio: "aspect-square" },
-  { src: "/img-4.jpg", ratio: "aspect-box" },
-];
+
 export const KnowMore = () => {
   return (
-    <section className="padding-variable font-Lato bg-secondary">
+    <section className="padding-variable font-Lato bg-gradient">
       <div>
-        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-bold text-center text-gradient">
+        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-bold text-center text-white">
           Know More
         </h3>
         <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-gradient" />
@@ -24,22 +15,19 @@ export const KnowMore = () => {
         {/* titlte card */}
         <div className="w-full md:w-2/5 text-white flex flex-col justify-center items-center gap-5 py-5">
           <h3 className="text-bold text-2xl md:text-3xl tracking-wide font-Montserrat text-center">
-           <span className="font-Caveat font-medium text-2xl md:text-4xl me-3">Webibee</span>world
+           <span className="font-Caveat font-medium text-2xl md:text-4xl me-3">  Check out 👉</span>
           </h3>
-          <p className="font-medium text-base md:text-lg text-center w-4/5 tracking-normal leading-relaxed">
-            We are software developers who build modern websites and tools to
-            boost your brands business.If you want to know more about our
-            company. 
-            <br />
-            Check out 👉
+          <p className="font-medium text-base md:text-lg text-left w-4/5 tracking-normal leading-relaxed">
+            We are very active on Instagram and LinkendIn and love actively participating in global communities.
+          
           </p>
           {/* <hr className="w-3/5 p-0.5 bg-gradient" /> */}
         </div>
         {/* Masonary cards */}
         <div className="w-full h-[50vh] md:h-full md:w-3/5 py-5 overflow-hidden">
-          <Link href={"/"}>
+          <Link href={"https://www.instagram.com/prithvi_bytes/?hl=en"} target={"_blank"}>
           <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel  rounded-xl">
-            {IMG.map((item, idx) => (
+            {knowmore.map((item, idx) => (
               <div
                 className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
                 key={idx}
@@ -54,7 +42,7 @@ export const KnowMore = () => {
             ))}
           </div>
           <div className="gap-3 columns-2 md:columns-3 px-6 animate-vertical_carousel rounded-xl">
-            {IMG.map((item, idx) => (
+            {knowmore.map((item, idx) => (
               <div
                 className={`${item.ratio} rounded-md relative overflow-hidden mb-3`}
                 key={idx}

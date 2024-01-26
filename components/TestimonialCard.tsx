@@ -24,7 +24,7 @@ const TestimonialCard = ({ list }: { list: any }) => {
         /> */}
         <Avatar isBordered radius="full" size="md" src={"/avatar-3.jpg"} />
         <div className="flex flex-col">
-          <p className="text-lg md:text-2xl font-semibold leading-none font-Montserrat text-white">
+          <p className="text-lg md:text-2xl font-semibold leading-none font-Montserrat text-white line-clamp-1">
             {list.title}
           </p>
           <p className="text-sm md:text-base lg:text-lg text-slate-100 font-Lato">
@@ -33,7 +33,7 @@ const TestimonialCard = ({ list }: { list: any }) => {
         </div>
       </CardHeader>
       <CardBody className="px-3 py-0 text-small text-default-400 h-auto">
-        <p className="font-Lato text-base tracking-tight text-white">
+        <p className="font-Lato text-base tracking-tight text-white line-clamp-6">
           {list.para}
         </p>
       </CardBody>

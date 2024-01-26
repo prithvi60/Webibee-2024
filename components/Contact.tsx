@@ -9,9 +9,11 @@ import {
   SelectItem,
 } from "@nextui-org/react";
 import Link from "next/link";
+import { useRef } from "react";
 import { Element } from "react-scroll";
 
 export default function Contact() {
+  // const formRef = useRef(null);
   return (
     <Element className="padding-variable bg-gradient" name="Contact">
       <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white">
@@ -20,8 +22,7 @@ export default function Contact() {
       <hr className="w-[17rem] mx-auto p-0.5 bg-white border-t-0 rounded-md" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center pt-3 md:pt-10">
         <div className="w-full text-white flex flex-col justify-center items-center gap-5 py-5">
-     
-          <p className="font-medium text-base md:text-lg text-left w-4/5 tracking-normal leading-relaxed">
+          <p className="font-medium text-base md:text-lg md:text-left w-4/5 tracking-normal leading-relaxed">
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at prithvi@webibee.com We will get back to you within 24
@@ -71,12 +72,18 @@ export default function Contact() {
           </div> */}
           </div>
           <form
-            action=""
+            action="https://public.herotofu.com/v1/1da5cb00-21a1-11ee-a1b3-8ba321abde38"
             method="POST"
             className="space-y-5 bg-zinc-100 py-10 px-3 rounded-lg"
+            accept-charset="UTF-8"
+            // ref={formRef}
+            // onSubmit={() =>
+            //   setTimeout(() => {
+            //     formRef?.current.reset();
+            //   }, 1500)
+            // }
           >
             <Input
-              isRequired
               type="email"
               label="Email"
               className="w-full"
@@ -84,7 +91,6 @@ export default function Contact() {
               variant={"bordered"}
             />
             <Input
-              isRequired
               type="text"
               label="Number"
               className="w-full"
@@ -92,7 +98,6 @@ export default function Contact() {
               variant={"bordered"}
             />
             <Input
-              isRequired
               type="text"
               label="Company Name"
               className="w-full"
@@ -100,7 +105,6 @@ export default function Contact() {
               variant={"bordered"}
             />
             <Select
-              isRequired
               label="What service do you require? "
               placeholder="Select an Service"
               defaultSelectedKeys={["Service 1"]}
@@ -115,7 +119,6 @@ export default function Contact() {
               ))}
             </Select>
             <Select
-              isRequired
               label="Where did you hear about webibee?"
               placeholder="Select an Media"
               defaultSelectedKeys={["Media 1"]}

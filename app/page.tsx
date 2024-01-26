@@ -5,7 +5,6 @@ import FAQ from '@/components/FAQ';
 import Hero from '@/components/Hero';
 import { KnowMore } from '@/components/KnowMore';
 import Portfolio from '@/components/Portfolio';
-import Services from '@/components/Services';
 import Team from '@/components/Team';
 import Testimonials from '@/components/Testimonials';
 import Workflow from '@/components/Workflow';
@@ -14,9 +13,8 @@ export default function Home() {
   return (
     <div className='bg-secondary'>
       <Hero/>
-      <Services/>
-      <Benefits/>
       <Portfolio/>
+      <Benefits/>
       <Testimonials/>
       <ClientHighlight/>
       <Workflow/>

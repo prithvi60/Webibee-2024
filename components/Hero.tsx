@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <section
-        className="relative padding-variable text-center text-white h-screen
+        className="relative padding-variable text-center text-white h-full
     "
         style={{ zIndex: 2 }}
       >
@@ -105,10 +105,9 @@ const Hero = () => {
         </div>
 <div className="pt-8">
         <Button
-          color="primary"
           size="lg"
           radius="lg"
-          className="px-6 font-urbanist text-lg md:text-xl font-bold text-white shadow-lg"
+          className="px-6 py-4 font-urbanist text-xl md:text-2xl font-bold text-white shadow-lg bg-black-gradient"
         >
           <Link
             target="blank"
@@ -134,7 +133,7 @@ const Hero = () => {
             onLoad={() =>
               setTimeout(() => {
                 setLoader(false);
-              }, 2000)
+              }, 1000)
             }
           />
         </Suspense>

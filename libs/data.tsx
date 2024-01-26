@@ -13,7 +13,7 @@ export const IMG = [
 
 // NAVBAR
 export const Navlinks = [
-  { href: "Services", title: "Services" },
+  // { href: "Services", title: "Services" },
   { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   // {href:"Contact",title:"Contact us"},

@@ -7,9 +7,9 @@ import { Element } from "react-scroll";
 export default function FAQ() {
   const itemClasses = {
     base: "mb-2 !px-0 w-full !rounded-[20px] !bg-primary overflow-hidden",
-    heading: "p-4 md:p-5",
+    heading: "p-2 md:p-5",
     title:
-      "font-Montserrat text-xl md:text-2xl text-white focus-within:outline-none focus-within:border-transparent focus-within:ring-0 font-bold",
+      "font-Montserrat text-lg md:text-2xl text-white focus-within:outline-none focus-within:border-transparent focus-within:ring-0 font-bold",
     trigger: "h-auto lg:h-10",
     indicator: "text-xl md:text-2xl text-white",
     content:
@@ -18,8 +18,11 @@ export default function FAQ() {
   return (
     <Element className="padding-variable" name="FAQ">
       <div className="pb-14 mx-auto">
-        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white pb-6">
+        <h2 className="hidden md:block font-Montserrat text-5xl md:text-7xl text-center text-white pb-6">
           Frequently Asked Questions
+        </h2>
+        <h2 className="md:hidden font-Montserrat text-5xl md:text-7xl text-center text-white pb-6">
+          FAQ
         </h2>
         <hr className="w-[17rem] mx-auto p-0.5 bg-gradient border-t-0 rounded-md" />
       </div>

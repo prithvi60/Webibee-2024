@@ -1,12 +1,9 @@
 "use client"
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import React from 'react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-// import 'swiper/css/pagination';
 
 // import required modules
 import { EffectCoverflow } from 'swiper/modules';
@@ -14,6 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { portfolio } from '@/libs/data';
 import { Element } from 'react-scroll';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 
 export default function Portfolio() {
   return (
@@ -26,14 +24,9 @@ export default function Portfolio() {
       </div>
       <div className='bg-secondary py-12'>
       <Swiper
-      // navigation={true}
-      // navigation={{
-      //   nextEl: ".button-next",
-      //   prevEl: ".button-prev",
-      //   disabledClass: "swiper-button-disabled"
-      // }}
+
         effect={'coverflow'}
-        grabCursor={true}
+        // grabCursor={true}
         autoplay={{
           delay: 3000,
           pauseOnMouseEnter:true
@@ -51,6 +44,8 @@ export default function Portfolio() {
         modules={[EffectCoverflow]}
         className="mySwiper"
       >
+           <SlideNextButton/>
+           <SlidePrevButton/>
         {portfolio.map((item,idx) =>(
         <SwiperSlide className='!w-[280px] !h-[350px] md:!w-[470px] md:!h-[600px] bg-contain bg-center relative group !my-6' key={idx}>
           <Link href={item.href} target={"_blank"}>
@@ -64,4 +59,18 @@ export default function Portfolio() {
       </div>
     </Element>
   )
+}
+const SlideNextButton=()=> {
+  const swiper = useSwiper();
+
+  return (
+    <button onClick={() => swiper.slideNext()} className='text-white bg-[#904BF6] absolute top-1/2 right-2 rounded-full  z-[100]'><FaArrowAltCircleRight size={"3em"}/></button>
+  );
+}
+const SlidePrevButton=()=> {
+  const swiper = useSwiper();
+
+  return (
+    <button onClick={() => swiper.slidePrev()} className='text-white bg-[#904BF6] rounded-full absolute top-1/2  z-[100] left-2'><FaArrowAltCircleLeft size={"3em"}/></button>
+  );
 }

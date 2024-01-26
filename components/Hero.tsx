@@ -1,25 +1,25 @@
 "use client";
-import { Button } from "@nextui-org/react";
+import { Button, Spinner } from "@nextui-org/react";
 import Link from "next/link";
 import { TiStarOutline } from "react-icons/ti";
 import { LuCrown } from "react-icons/lu";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Spline from "@splinetool/react-spline";
 import Services from "./Services";
 
 const Hero = () => {
+  const [loader, setLoader] = useState(true);
   return (
     <>
-    <section
-      className="relative padding-variable text-center text-white h-screen
+      <section
+        className="relative padding-variable text-center text-white h-screen
     "
-    style={{zIndex:2}}
-    >
-      {/* <div className="z-10"> */}
-        <h2 className="capitalize font- text-4xl md:text-6xl w-full mx-auto tracking-wide font-Montserrat font-bold">
+        style={{ zIndex: 2 }}
+      >
+        <h2 className="capitalize font- text-6xl md:text-8xl w-full mx-auto tracking-wide font-Caveat font-bold mt-16">
           Websites that stands out
         </h2>
-        <h3 className="capitalize font-urbanist text-lg md:text-xl w-full mx-auto font-Lato font-medium">
+        <h3 className="capitalize font-urbanist text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           Seo ready and performance optimised with stunning designs
         </h3>
         <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-1/2 mx-auto rounded-xl">
@@ -103,12 +103,12 @@ const Hero = () => {
             </span>
           </div>
         </div>
-
+<div className="pt-8">
         <Button
-          color="success"
+          color="primary"
           size="lg"
           radius="lg"
-          className="px-5 font-urbanist text-base md:text-lg font-bold  "
+          className="px-6 font-urbanist text-lg md:text-xl font-bold text-white shadow-lg"
         >
           <Link
             target="blank"
@@ -117,15 +117,29 @@ const Hero = () => {
             Free Consultation
           </Link>
         </Button>
-      {/* </div> */}
-      <Services/>
-    </section>
-          <div className="absolute top-0 left-0 h-screen w-full pointer-events-none ">
-          <Suspense fallback={<div>Loading...</div>}>
-            <Spline scene="https://prod.spline.design/eVf36LEPiWXTIrPx/scene.splinecode" onLoad={()=>console.log("loaded")} />
-          </Suspense>
         </div>
-        </>
+        {loader ? (
+          <div className="font bold text-2xl ">
+            Wait for it ... <Spinner size="sm" />
+          </div>):<div className="font bold text-2xl"> ‎ </div>
+        }
+
+        {/* </div> */}
+        <Services />
+      </section>
+      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none ">
+        <Suspense fallback={<div>Loading...</div>}>
+          <Spline
+            scene="https://prod.spline.design/eVf36LEPiWXTIrPx/scene.splinecode"
+            onLoad={() =>
+              setTimeout(() => {
+                setLoader(false);
+              }, 2000)
+            }
+          />
+        </Suspense>
+      </div>
+    </>
   );
 };
 

@@ -7,9 +7,12 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper/modules";
 import { workflow } from "@/libs/data";
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
+import { Spinner } from '@nextui-org/react';
 
 export default function Workflow() {
+  const [loader, setLoader] = useState(true);
+
   return (
     <section className="padding-variable bg-gradient">
       <div className="pb-10 mx-auto">
@@ -22,9 +25,21 @@ export default function Workflow() {
       {/* <video muted controls autoPlay className="w-full h-full md:w-[640px] lg:w-[640px] md:h-[360px] rounded-lg hidden md:block">
          <source src="/sample.mp4" type="video/mp4"/>
          </video> */}
+   
          <section  className="w-full h-full md:w-[640px] lg:w-[640px]  rounded-lg hidden md:block">
+         {loader ? (
+          <div className="font bold text-2xl ">
+            Wait for it ... <Spinner size="sm" />
+          </div>):<div className="font bold text-2xl"> ‎ </div>
+        }
           <Suspense fallback={<div>Loading...</div>}>
-    <Spline scene="https://prod.spline.design/AXfFWmc13JGZSlvS/scene.splinecode" />
+    <Spline scene="https://prod.spline.design/fIcByMH0HNy-OoeW/scene.splinecode" 
+          onLoad={() =>
+            setTimeout(() => {
+              setLoader(false);
+            }, 2000)
+          }
+    />
     </Suspense>
     </section>
 

@@ -10,7 +10,7 @@ import {
 
 const TestimonialCard = ({ list }: { list: any }) => {
   return (
-    <Card className="max-w-[280px] min-h-[320px] md:!max-w-md p-3 bg-primary first:ms-5">
+    <Card className="max-w-[280px] md:min-h-[320px] md:!max-w-md p-3 bg-primary first:ms-5 min-h-[320px] max-h-[320px]">
       <CardHeader className="justify-start gap-5">
         {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-white">
           Family Counselling

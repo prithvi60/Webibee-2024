@@ -24,7 +24,7 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className=" bg-white font-Lato"
+      className=" bg-white font-Lato opacity-80"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
@@ -34,7 +34,7 @@ const NavBar = () => {
         />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden" justify="start">
+      <NavbarContent className="md:hidden z-[1000]" justify="start">
         <NavbarBrand className=" mx-2 animate-drip-expand">
           <div className="relative h-11 w-11 animate-pulse">
             <Image
@@ -57,8 +57,8 @@ const NavBar = () => {
             duration={500}
             color="secondary"
             aria-current="page"
-            className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat
+            className="text-2xl hover:opacity-50 cursor-pointer 
+              font-Caveat
               text-primary font-bold
               "
           >
@@ -114,8 +114,8 @@ const NavBar = () => {
             duration={500}
             color="secondary"
             aria-current="page"
-            className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat
+            className="text-2xl hover:opacity-50 cursor-pointer 
+              font-Caveat
               text-primary font-bold
               "
           >

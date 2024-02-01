@@ -17,7 +17,7 @@ const Hero = () => {
         style={{ zIndex: 2 }}
       >
         <h2 className="capitalize font- text-6xl md:text-8xl w-full mx-auto tracking-wide font-Caveat font-bold mt-16">
-          Websites that stands out
+          Websites that stand out
         </h2>
         <h3 className="capitalize font-urbanist text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           Seo ready and performance optimised with stunning designs

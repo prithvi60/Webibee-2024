@@ -61,9 +61,9 @@ module.exports = {
           colors: {
             default: "#FFFFFF",
             primary :"#17092c", // Main Bg
-            secondary: "#211636", // cards body Bg
+            secondary: "#231536", // cards body Bg
             success: "#2c213f", // nav & Title heading
-            warning : "#695b7f", // border
+            warning : "#4c435f", // border
             danger : "#7943f2",  // Buttons
             focus: "#17092c",
           },
@@ -77,7 +77,7 @@ module.exports = {
 
 // 904BF6 & CFB2FA [ Gradient colors ] - Purple
 // 141313 - black main bg color
-// FFFFFF- white text color
+// FFFFFF- default text color
 
 // Fonts-
 

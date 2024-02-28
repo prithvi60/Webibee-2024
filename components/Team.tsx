@@ -52,14 +52,14 @@ export default function Team() {
               />
               <CardFooter className="absolute bg-primary bg-opacity-20 bottom-0 border-t-1 border-primary z-10 justify-between">
                 <div>
-                  <p className="text-white  font-extrabold font-Montserrat text-2xl md:text-4xl">
+                  <p className="text-default  font-extrabold font-Montserrat text-2xl md:text-4xl">
                     {person.name}
                   </p>
                   <p className="text-black text-sm md:text-base font-medium uppercase">
                     {person.designation}
                   </p>
                 </div>
-                <Tooltip content="Hit Me" className="bg-secondary text-white">
+                <Tooltip content="Hit Me" className="bg-secondary text-default">
                   <Button
                     disableRipple
                     size="lg"
@@ -69,12 +69,12 @@ export default function Team() {
                     color="danger"
                     aria-label="Like"
                   >
-                    <FaRegThumbsUp  className="w-5 h-5 text-white" />
+                    <FaRegThumbsUp  className="w-5 h-5 text-default" />
                   </Button>
                 </Tooltip>
               </CardFooter>
             </Card>
-            {/* <p className="hidden lg:block text-white text-base font-Lato text-center tracking-normal leading-snug">
+            {/* <p className="hidden lg:block text-default text-base font-Lato text-center tracking-normal leading-snug">
               {person.passion}
             </p> */}
           </div>

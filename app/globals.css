@@ -48,7 +48,7 @@ body,
 
 body,
 .carousal::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: default;
   outline: 1px solid #904BF6;
 }
 
@@ -110,20 +110,20 @@ body,
 }
 
 .swiper-slider:nth-child(1n) {
-  background-color: #FFFFFF;
-  color: black;
+  background-color: #7943f2;
+  color: default;
 }
 
 .swiper-slider:nth-child(2n-1) {
-  background-color: #904BF6;
-  color: white;
+  background-color: #231536;
+  color: default;
 }
 
 /* Group Skip Sliders */
 .swiper-button-next, 
 .swiper-button-prev{
   background-color: #904BF6;
-  color: white !important;
+  color: default !important;
   padding: 30px;
   border-radius: 30px;
   /* position: absolute!important; */
@@ -179,7 +179,7 @@ body,
 
 /* .button-next{
   background-color: blue;
-  color: white !important;
+  color: default !important;
   padding: 30px;
   border-radius: 30px;
 } */

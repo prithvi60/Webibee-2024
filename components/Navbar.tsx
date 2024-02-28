@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import { Link } from "react-scroll";
+import { FaPhoneVolume } from "react-icons/fa6";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -24,17 +25,17 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className=" bg-primary font-Lato opacity-80"
+      className="bg-primary font-Lato opacity-80 border-b-2 border-warning py-2"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
         <NavbarMenuToggle
-          className="text-white"
+          className="text-default"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden z-[1000]" justify="start">
+      <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0" >
         <NavbarBrand className=" mx-2 animate-drip-expand">
           <div className="relative h-11 w-11 animate-pulse">
             <Image
@@ -57,9 +58,10 @@ const NavBar = () => {
           duration={500}
           // color="secondary"
           aria-current="page"
-          className="text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow font-normal py-1.5 px-2 bg-white text-primary rounded-lg"
+          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow py-1.5 px-2 text-default bg-danger rounded-lg font-semibold"
         >
-          +91-7358023088
+          <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span>
+          <span>+91-7358023088</span>
         </Link>
       </NavbarContent>
 
@@ -94,7 +96,7 @@ const NavBar = () => {
               duration={500}
               aria-current="page"
               className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat text-white"
+              font-Montserrat text-default"
             >
               {link.title}
             </Link>
@@ -109,11 +111,9 @@ const NavBar = () => {
             duration={500}
             // color="secondary"
             aria-current="page"
-            className="text-base sm:text-xl rounded-lg hover:opacity-50 cursor-pointer 
-              font-Caveat font-normal py-2 px-2.5 bg-white text-primary"
-          >
-            {/* Contact Us */}
-            +91-7358023088
+            className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow py-1.5 px-2 text-default bg-danger rounded-lg font-semibold">
+          <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span>
+          <span>+91-7358023088</span>
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -129,7 +129,7 @@ const NavBar = () => {
               offset={-50}
               smooth={true}
               duration={500}
-              className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-white"
+              className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-default"
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
             >

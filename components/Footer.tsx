@@ -1,28 +1,46 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 // import { FaSquareFacebook,FaSquareXTwitter,FaSquareInstagram,FaSquareWhatsapp, FaLinkedinIn } from "react-icons/fa6";
-import { FaLinkedin,FaInstagram,FaLinkedinIn   } from "react-icons/fa";
-import Navlink from './Navlinks';
+import { FaLinkedin, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Navlink from "./Navlinks";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary pt-7 md:pt-12 pb-6 ">
-      <div className='py-3 flex flex-col justify-center items-center gap-8'>
-        <div className='flex justify-center items-center gap-5 py-3 cursor-pointer'>
+    <footer className="bg-black pt-7 md:pt-12 pb-6 ">
+      <div className="flex flex-col justify-center items-center gap-8">
+        <div className="flex justify-center items-center gap-5 cursor-pointer">
           <Link href={"https://www.linkedin.com/in/prithvi-n/"}>
-          <FaLinkedinIn  className='h-6 md:h-8 w-6 md:w-8 text-white rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-primary'/>
+            <FaLinkedinIn className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-default/60" />
           </Link>
           <Link href={"https://www.instagram.com/prithvi_bytes/?hl=en"}>
-          <FaInstagram className='h-6 md:h-8 w-6 md:w-8 text-white rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-primary'/>
+            <FaInstagram className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-default/60" />
           </Link>
         </div>
-          <Navlink/>
-        <p className='text-white text-center font-Lato font-normal'><span className='font-Caveat font-semibold text-2xl animate-pulse mx-1.5 capitalize pr-8'>Webibee</span>  &copy;{`Copyright ${new Date().getFullYear()}`} - All rights reserved</p>
+        <Navlink />
+        <div className="text-default flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 font-Lato font-normal">
+          <div className="flex items-center gap-2">
+          <div className="relative h-8 w-8 animate-pulse">
+            <Image
+              src={"/brain-logo.svg"}
+              alt="Webibee logo"
+              fill
+              aria-label="Webibee logo"
+              className="absolute object-contain object-center"
+            />
+          </div>
+          <span className="font-Caveat font-semibold text-2xl animate-pulse  capitalize">
+            Webibee
+          </span>
+          </div>
+          <span>
+            &copy;{`Copyright ${new Date().getFullYear()}`} - All rights
+            reserved
+          </span>{" "}
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-
-
-export default Footer
+export default Footer;

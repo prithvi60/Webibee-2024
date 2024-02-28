@@ -117,16 +117,16 @@ const Hero = () => {
           </Link>
         </Button>
         </div>
-        {loader ? (
+        {/* {loader ? (
           <div className="font bold text-2xl ">
             Wait for it ... <Spinner size="sm" />
           </div>):<div className="font bold text-2xl"> ‎ </div>
-        }
+        } */}
 
         {/* </div> */}
         <Services />
       </section>
-      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none ">
+      {/* <div className="absolute top-0 left-0 h-screen w-full pointer-events-none ">
         <Suspense fallback={<div>Loading...</div>}>
           <Spline
             scene="https://prod.spline.design/eVf36LEPiWXTIrPx/scene.splinecode"
@@ -137,7 +137,7 @@ const Hero = () => {
             }
           />
         </Suspense>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -160,11 +160,13 @@ export const about = [
 
 // WORKFLOW
 export const workflow = [
-  { para: "Introductory call to understand requirments" },
-  { para: "Design mockups based on the requiement" },
+  { para: "Research from our side" },
+  { para: "Introductory call to understand your business needs" },
+  { para: "Design phase where we finalse UI/UX" },
   { para: "Development with cutting edge tools" },
-  { para: "Testing bugs and revisions" },
-  { para: "Site Optimisation and hosting" },
+  { para: "Revisions" },
+  { para: "QA testing" },
+  { para: "Web vitals Optimisation and deployment" },
 ];
 
 //PORTFOLIO

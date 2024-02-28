@@ -13,19 +13,22 @@ import {
 import Image from "next/image";
 import React from "react";
 import { Link } from "react-scroll";
-import { FaPhoneVolume } from "react-icons/fa6";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+  const [hideNav, setHideNav] = React.useState(true);
   return (
     <Navbar
-      shouldHideOnScroll
+      // shouldHideOnScroll
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred
       maxWidth="2xl"
       className="bg-primary font-Lato opacity-80 border-b-2 border-warning py-2"
+      style={{ display: hideNav ? "none" : "block" }}
+      onScrollPositionChange={(position) =>
+        position > 200 ? setHideNav(false) : setHideNav(true)
+      }
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
@@ -35,7 +38,7 @@ const NavBar = () => {
         />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0" >
+      <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0">
         <NavbarBrand className=" mx-2 animate-drip-expand">
           <div className="relative h-11 w-11 animate-pulse">
             <Image
@@ -58,10 +61,10 @@ const NavBar = () => {
           duration={500}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow py-1.5 px-2 text-default bg-danger rounded-lg font-semibold"
+          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2  bg-white rounded-lg font-semibold font-caveat"
         >
-          <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span>
-          <span>+91-7358023088</span>
+          {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
+          <span>Contact Us</span>
         </Link>
       </NavbarContent>
 
@@ -76,9 +79,9 @@ const NavBar = () => {
               className="absolute object-contain object-center"
             />
           </div>
-          <p className="font-extrabold text-2xl xl:text-4xl font-Caveat text-gradient tracking-wider hidden lg:block capitalize">
+          {/* <p className="font-extrabold text-2xl xl:text-4xl font-Caveat text-gradient tracking-wider hidden lg:block capitalize">
             Webibee
-          </p>
+          </p> */}
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent
@@ -111,9 +114,10 @@ const NavBar = () => {
             duration={500}
             // color="secondary"
             aria-current="page"
-            className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow py-1.5 px-2 text-default bg-danger rounded-lg font-semibold">
-          <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span>
-          <span>+91-7358023088</span>
+            className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold"
+          >
+            {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
+            <span>Contact Us</span>
           </Link>
         </NavbarItem>
       </NavbarContent>

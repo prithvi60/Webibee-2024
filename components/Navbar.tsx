@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import { Link } from "react-scroll";
+import { FaPhoneVolume } from "react-icons/fa6";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -24,17 +25,17 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className=" bg-white font-Lato opacity-80"
+      className="bg-primary font-Lato opacity-80 border-b-2 border-warning py-2"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
         <NavbarMenuToggle
-          className="text-primary"
+          className="text-default"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden z-[1000]" justify="start">
+      <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0" >
         <NavbarBrand className=" mx-2 animate-drip-expand">
           <div className="relative h-11 w-11 animate-pulse">
             <Image
@@ -49,21 +50,19 @@ const NavBar = () => {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="end" className="flex md:hidden">
-      <Link
-            to={"Contact"}
-            spy={true}
-            offset={-50}
-            smooth={true}
-            duration={500}
-            color="secondary"
-            aria-current="page"
-            className="text-2xl hover:opacity-50 cursor-pointer 
-              font-Caveat
-              text-primary font-bold
-              "
-          >
-            Contact Us
-          </Link>
+        <Link
+          to={"Contact"}
+          spy={true}
+          offset={-50}
+          smooth={true}
+          duration={500}
+          // color="secondary"
+          aria-current="page"
+          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow py-1.5 px-2 text-default bg-danger rounded-lg font-semibold"
+        >
+          <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span>
+          <span>+91-7358023088</span>
+        </Link>
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-6" justify="center">
@@ -95,11 +94,9 @@ const NavBar = () => {
               offset={-30}
               smooth={true}
               duration={500}
-              color="secondary"
               aria-current="page"
               className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat
-              "
+              font-Montserrat text-default"
             >
               {link.title}
             </Link>
@@ -112,14 +109,11 @@ const NavBar = () => {
             offset={-30}
             smooth={true}
             duration={500}
-            color="secondary"
+            // color="secondary"
             aria-current="page"
-            className="text-2xl hover:opacity-50 cursor-pointer 
-              font-Caveat
-              text-primary font-bold
-              "
-          >
-            Contact Us
+            className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow py-1.5 px-2 text-default bg-danger rounded-lg font-semibold">
+          <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span>
+          <span>+91-7358023088</span>
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -135,7 +129,7 @@ const NavBar = () => {
               offset={-50}
               smooth={true}
               duration={500}
-              className="w-full p-2 font-Lato font-semibold text-lg"
+              className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-default"
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
             >

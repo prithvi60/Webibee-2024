@@ -17,7 +17,7 @@ export default function ClientHighlight() {
   return (
     <section className="padding-variable t">
       <div className="pb-10 mx-auto">
-        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-white capitalize text-gradient">
+        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-default capitalize text-gradient">
         Case Study Highlight
         </h2>
         <hr className="w-56 mt-4 mx-auto bg-gradient p-0.5 border-t-0 rounded-md" />
@@ -50,21 +50,21 @@ export default function ClientHighlight() {
         <SwiperSlide className='relative rounded-l-lg'>
           <Chart/>
         </SwiperSlide>
-        <SwiperSlide className='relative font-Lato bg-black-gradient text-white rounded-r-lg p-6 m-auto'>
+        <SwiperSlide className='relative font-Lato bg-black-gradient text-default rounded-r-lg p-6 m-auto'>
           <h4 className='text-lg md:text-xl font-semibold'>Customer Feedback</h4>
           <p className='text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio autem, quibusdam debitis quod numquam unde sint! Magni aspernatur dicta corrupti praesentium.</p>
         </SwiperSlide>
         <SwiperSlide className='relative rounded-l-lg'>
         <Chart/>
         </SwiperSlide>
-        <SwiperSlide className='relative font-Lato bg-black-gradient text-white rounded-r-lg p-6 m-auto'>
+        <SwiperSlide className='relative font-Lato bg-black-gradient text-default rounded-r-lg p-6 m-auto'>
           <h4 className='text-lg md:text-xl font-semibold'>Customer Feedback</h4>
           <p className='text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio autem, quibusdam debitis quod numquam unde sint! Magni aspernatur dicta corrupti praesentium.</p>
         </SwiperSlide>
         <SwiperSlide className='relative rounded-l-lg'>
         <Chart/>
         </SwiperSlide>
-        <SwiperSlide className='relative font-Lato bg-black-gradient text-white rounded-r-lg p-6 m-auto'>
+        <SwiperSlide className='relative font-Lato bg-black-gradient text-default rounded-r-lg p-6 m-auto'>
           <h4 className='text-lg md:text-xl font-semibold'>Customer Feedback</h4>
           <p className='text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio autem, quibusdam debitis quod numquam unde sint! Magni aspernatur dicta corrupti praesentium.</p>
         </SwiperSlide>

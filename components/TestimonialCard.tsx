@@ -10,9 +10,9 @@ import {
 
 const TestimonialCard = ({ list }: { list: any }) => {
   return (
-    <Card className="max-w-[280px] md:min-h-[320px] md:!max-w-md p-3 bg-primary first:ms-5 min-h-[320px] max-h-[320px]">
-      <CardHeader className="justify-start gap-5">
-        {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-white">
+    <Card className="max-w-[280px] md:min-h-[320px] md:!max-w-md first:ms-5 min-h-[320px] max-h-[320px] border border-warning bg-success">
+      <CardHeader className="justify-start gap-5 px-6 py-4 ">
+        {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-default">
           Family Counselling
         </h4> */}
         {/* <Image
@@ -22,9 +22,9 @@ const TestimonialCard = ({ list }: { list: any }) => {
           src={list.img}
           width={40}
         /> */}
-        <Avatar isBordered radius="full" size="md" src={"/avatar-3.jpg"} />
+        <Avatar radius="full" size="lg" src={"/avatar-3.jpg"} className="border-danger border-5" />
         <div className="flex flex-col">
-          <p className="text-lg md:text-2xl font-semibold leading-none font-Montserrat text-white line-clamp-1">
+          <p className="text-lg md:text-2xl font-semibold leading-none font-Montserrat text-default line-clamp-1">
             {list.title}
           </p>
           <p className="text-sm md:text-base lg:text-lg text-slate-100 font-Lato">
@@ -32,12 +32,12 @@ const TestimonialCard = ({ list }: { list: any }) => {
           </p>
         </div>
       </CardHeader>
-      <CardBody className="px-3 py-0 text-small text-default-400 h-auto">
-        <p className="font-Lato text-base tracking-tight text-white line-clamp-6">
+      <CardBody className="px-6 py-4 text-small text-default-400 h-auto bg-secondary">
+        <p className="font-Lato text-base tracking-tight text-default line-clamp-6">
           {list.para}
         </p>
       </CardBody>
-      <CardFooter className="gap-3">
+      <CardFooter className="gap-3 p-3 bg-secondary">
         <div className="flex items-center mb-1.5">
           <svg
             className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"

@@ -137,10 +137,18 @@ Book a call or leave an inquiry to get a quote for your specific needs!
 
 // Contact Us
 export const services = [
-  { label: "Service 1", value: "Service 1" },
-  { label: "Service 2", value: "Service 2" },
-  { label: "Service 3", value: "Service 3" },
-  { label: "Service 4", value: "Service 4" },
+  { label: "Web Development", value: "Web Development" },
+  { label: "Google Ads", value: "Google Ads" },
+  { label: "Instagram Ads	", value: "Instagram Ads" },
+  {
+    label: "Search Engine Optimization (SEO)",
+    value: "Search Engine Optimization (SEO)",
+  },
+  { label: "Content Creation", value: "Content Creation" },
+  { label: "Email Marketing", value: "Email Marketing" },
+  { label: "Whatsapp Marketing", value: "Whatsapp Marketing" },
+  { label: "UI UX", value: "UI UX" },
+  { label: "E-commerce Setup", value: "E-commerce Setup" },
 ];
 
 export const about = [

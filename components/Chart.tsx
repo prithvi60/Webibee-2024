@@ -57,7 +57,7 @@ export const data = {
 
 export default function Chart() {
   return ( 
-  <div className='h-full bg-white'>
+  <div className='h-full bg-default'>
   <Line options={options} data={data} className='!h-full'/>
   </div>)
 }

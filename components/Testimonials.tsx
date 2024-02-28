@@ -8,14 +8,14 @@ import { lists } from "@/libs/data";
 export default function Testimonials() {
   return (
     <Element
-      className="padding-variable h-full flex flex-col gap-4 bg-black-gradient"
+      className="padding-variable h-full flex flex-col gap-4 bg-primary"
       name="testimonial"
     >
       <div>
-        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-bold text-center text-gradient">
+        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-normal text-center text-default">
           Customer Testimonials
         </h3>
-        <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-gradient" />
+        <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-default" />
       </div>
       <Marquee pauseOnHover speed={70} autoFill={true}>
         <div className="flex items-center gap-5 w-full h-full py-5 first:ms-5">
@@ -31,7 +31,7 @@ export default function Testimonials() {
     //     <h2 className="font-Montserrat text-5xl md:text-7xl text-gradient text-center">
     //       Customer Testimonials
     //     </h2>
-    //     <hr className="w-56 mt-4 mx-auto p-[1px] bg-white" />
+    //     <hr className="w-56 mt-4 mx-auto p-[1px] bg-default" />
     //   </div>
     //   <div className="w-full h-full overflow-hidden flex gap-4 ">
     //     <div className="py-10 flex justify-around  gap-4 animate-horizontal_carousel">

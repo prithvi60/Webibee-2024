@@ -55,7 +55,7 @@ export default function LogoIcon(props: React.ComponentProps<'svg'>) {
     <stop offset="1" stop-color="#CFB2FA"/>
     </linearGradient>
     <clipPath id="clip0_111_5">
-    <rect width="251" height="251" fill="white" transform="translate(0 45.7411) rotate(-10.5)"/>
+    <rect width="251" height="251" fill="default" transform="translate(0 45.7411) rotate(-10.5)"/>
     </clipPath>
     </defs>
     </svg>

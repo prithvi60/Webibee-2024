@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.0",
     "@nextui-org/react": "^2.2.9",
     "@splinetool/react-spline": "^2.2.6",
     "canvas-confetti": "^1.9.2",

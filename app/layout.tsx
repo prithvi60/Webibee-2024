@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
@@ -47,6 +47,7 @@ export default function RootLayout({
           <Footer/>
         </Providers>
       </body>
+      <GoogleAnalytics gaId="G-4ES4NTQ7T8" />
     </html>
   );
 }

@@ -249,7 +249,7 @@ export const ourservices = [
   },
   {
     title: "Plugin Development ",
-    desc: "Custom apps for Buuble, Shopify marketplace ",
+    desc: "Custom apps for Bubble, Shopify marketplace ",
   },
   {
     title: "SEO Optimisation",
@@ -268,8 +268,8 @@ export const ourservices = [
     desc: "Connect Wordpress, WIX or other systems to your website",
   },
   {
-    title: "3rd party Api",
-    desc: "Analytics apis of any custom requiemnet ",
+    title: "API integration",
+    desc: "3rd party api's of any custom requiemnet ",
   },
   {
     title: "Feature Development",

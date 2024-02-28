@@ -24,12 +24,12 @@ const NavBar = () => {
       isBordered
       isBlurred
       maxWidth="2xl"
-      className=" bg-white font-Lato opacity-80"
+      className=" bg-primary font-Lato opacity-80"
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
         <NavbarMenuToggle
-          className="text-primary"
+          className="text-white"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
@@ -49,21 +49,18 @@ const NavBar = () => {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="end" className="flex md:hidden">
-      <Link
-            to={"Contact"}
-            spy={true}
-            offset={-50}
-            smooth={true}
-            duration={500}
-            color="secondary"
-            aria-current="page"
-            className="text-2xl hover:opacity-50 cursor-pointer 
-              font-Caveat
-              text-primary font-bold
-              "
-          >
-            Contact Us
-          </Link>
+        <Link
+          to={"Contact"}
+          spy={true}
+          offset={-50}
+          smooth={true}
+          duration={500}
+          // color="secondary"
+          aria-current="page"
+          className="text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-yellow font-normal py-1.5 px-2 bg-white text-primary rounded-lg"
+        >
+          +91-7358023088
+        </Link>
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-6" justify="center">
@@ -95,11 +92,9 @@ const NavBar = () => {
               offset={-30}
               smooth={true}
               duration={500}
-              color="secondary"
               aria-current="page"
               className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat
-              "
+              font-Montserrat text-white"
             >
               {link.title}
             </Link>
@@ -112,14 +107,13 @@ const NavBar = () => {
             offset={-30}
             smooth={true}
             duration={500}
-            color="secondary"
+            // color="secondary"
             aria-current="page"
-            className="text-2xl hover:opacity-50 cursor-pointer 
-              font-Caveat
-              text-primary font-bold
-              "
+            className="text-base sm:text-xl rounded-lg hover:opacity-50 cursor-pointer 
+              font-Caveat font-normal py-2 px-2.5 bg-white text-primary"
           >
-            Contact Us
+            {/* Contact Us */}
+            +91-7358023088
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -135,7 +129,7 @@ const NavBar = () => {
               offset={-50}
               smooth={true}
               duration={500}
-              className="w-full p-2 font-Lato font-semibold text-lg"
+              className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-white"
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
             >

@@ -86,13 +86,14 @@ export default function Contact() {
               variant={"bordered"}
             />
             <Select
+              selectionMode="multiple"
               isRequired
               name="Service"
               id="Service"
               label="What service do you require? "
-              placeholder="Select an Service"
-              defaultSelectedKeys={["Service 1"]}
-              className="w-full"
+              placeholder="Select an service"
+              // defaultSelectedKeys={["Service 1"]}
+              className="w-full placeholder:text-slate-500"
               color="primary"
               variant={"bordered"}
             >
@@ -102,7 +103,7 @@ export default function Contact() {
                 </SelectItem>
               ))}
             </Select>
-            <Select
+            {/* <Select
               label="Where did you hear about webibee?"
               name="Reach"
               id="Reach"
@@ -117,8 +118,8 @@ export default function Contact() {
                   {item.label}
                 </SelectItem>
               ))}
-            </Select>
-            <RadioGroup
+            </Select> */}
+            {/* <RadioGroup
               name="NeedBranding"
               id="NeedBranding"
               label="Do you need help with your brand identity?"
@@ -129,7 +130,7 @@ export default function Contact() {
             >
               <Radio value="Yes">Yes</Radio>
               <Radio value="No">No</Radio>
-            </RadioGroup>
+            </RadioGroup> */}
             <Button
               type="submit"
               size="lg"

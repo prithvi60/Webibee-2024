@@ -59,9 +59,13 @@ module.exports = {
       themes: {
         light: {
           colors: {
-            primary :"#904BF6",
-            secondary: "#141313",
-            focus: "#904BF6",
+            default: "#FFFFFF",
+            primary :"#17092c", // Main Bg
+            secondary: "#211636", // cards body Bg
+            success: "#2c213f", // nav & Title heading
+            warning : "#695b7f", // border
+            danger : "#7943f2",  // Buttons
+            focus: "#17092c",
           },
         },
       },

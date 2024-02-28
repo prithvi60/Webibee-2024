@@ -1,18 +1,22 @@
 "use client";
-// import Spline from "@splinetool/react-spline";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper/modules";
+import { Controller } from "swiper/modules";
 import { workflow } from "@/libs/data";
-import { Suspense, useState } from "react";
+import {  useEffect } from "react";
 import Image from "next/image";
-// import { Spinner } from "@nextui-org/react";
+import { useInView } from "react-intersection-observer";
+import { useSwiper } from "swiper/react";
 
 export default function Workflow() {
-  const [loader, setLoader] = useState(true);
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.1,
+  });
 
   return (
     <section className="padding-variable bg-primary">
@@ -25,8 +29,7 @@ export default function Workflow() {
       {/* <div className="h-full py-12 px-4 
       grid md:grid-cols-2 
       place-items-center"> */}
-      <div
-        className="h-full py-12 px-4 place-items-center">
+      <div className="h-full py-12 px-4 place-items-center">
         {/* <video muted controls autoPlay className="w-full h-full md:w-[640px] lg:w-[640px] md:h-[360px] rounded-lg hidden md:block">
          <source src="/sample.mp4" type="video/mp4"/>
          </video> */}
@@ -50,7 +53,7 @@ export default function Workflow() {
             />
           </Suspense>
         </section> */}
-
+        <div ref={ref}>‎ </div>
         <Swiper
           effect={"cards"}
           grabCursor={true}
@@ -59,23 +62,39 @@ export default function Workflow() {
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
-          modules={[EffectCards]}
-          className="mySwiper w-[250px] h-full md:w-[350px]"
+          modules={[EffectCards, Controller]}
+          className="mySwiper w-[250px] h-[350px] md:h-full md:w-[450px]"
         >
           {workflow.map((work, idx) => (
             <SwiperSlide
               className="py-4 px-5 md:px-8 space-y-4 swiper-slider h-full border-2 border-warning"
               key={idx}
             >
-              <h3 className="text-base md:text-3xl">Step {idx + 1}</h3>
-              <p className="text-sm md:text-lg">{work.para}</p>
-              <div className="relative h-60 w-full  md:h-80 bg-transparent">
-              <Image fill src={"/avatar-3.jpg"} alt="images" className="object-contain"/>
+              <h3 className="text-base md:text-3xl">Stage {idx}</h3>
+              <p className="text-sm md:text-lg font-medium">{work.para}</p>
+              <div className="relative h-40 md:h-80 w-full  bg-transparent">
+                <Image
+                  fill
+                  src={"https://ik.imagekit.io/webibee/Agency/build.gif"}
+                  alt="images"
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
           ))}
+          <SlideNext inView={inView} />
         </Swiper>
       </div>
     </section>
   );
+}
+
+function SlideNext({ inView }: { inView: boolean }) {
+  const swiper = useSwiper();
+  useEffect(() => {
+    if (inView) {
+      swiper.slideNext();
+    }
+  }, [inView]);
+  return null;
 }

@@ -3,19 +3,18 @@ import { Button, Spinner } from "@nextui-org/react";
 import Link from "next/link";
 import { TiStarOutline } from "react-icons/ti";
 import { LuCrown } from "react-icons/lu";
-import { Suspense, useState } from "react";
-import Spline from "@splinetool/react-spline";
+// import { useState } from "react";
 import Services from "./Services";
 
 const Hero = () => {
-  const [loader, setLoader] = useState(true);
+  // const [loader, setLoader] = useState(true);
   return (
     <>
       <section
         className="relative padding-variable text-center text-default h-full bg-primary"
         style={{ zIndex: 2 }}
       >
-        <h2 className="capitalize font- text-6xl md:text-8xl w-full mx-auto tracking-wide font-Caveat font-medium mt-16">
+        <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-caveat  mt-16">
           Websites that stand out
         </h2>
         <h3 className="capitalize font-urbanist text-lg md:text-xl w-full mx-auto font-Lato font-medium ">

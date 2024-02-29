@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 
 export const BenefitCard = ({ item }: { item: any }) => {
   return (
-    <Card className="w-[250px] sm:w-[320px] min-h-[225px]">
+    <Card className="w-[250px] sm:w-[320px] min-h-[225px] font-Lato">
       <CardHeader className="flex gap-3 bg-success font-Lato justify-center items-center">
         <h3 className="text-default text-xl px-2">{item.title}</h3>
       </CardHeader>

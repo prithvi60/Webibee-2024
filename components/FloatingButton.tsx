@@ -16,7 +16,7 @@ export default function FloatingButton() {
         rel="noopener noreferrer"
       >
         <motion.img
-          src="/whatsapp.gif"
+          src="https://ik.imagekit.io/webibee/Agency/whatsapp.gif"
           loading="lazy"
           alt="msg"
           className="rounded-full shadow-xl h-12 w-12 md:h-14 md:w-14"

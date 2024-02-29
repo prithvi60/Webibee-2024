@@ -47,7 +47,7 @@ export default function Contact() {
           <form
             action="https://public.herotofu.com/v1/1da5cb00-21a1-11ee-a1b3-8ba321abde38"
             method="POST"
-            className="space-y-5 bg-secondary overflow-hidden py-10 px-5  md:px-10 rounded-b-lg"
+            className="space-y-5 bg-secondary overflow-hidden py-10 px-5  md:px-10 rounded-b-lg !font-Lato"
             acceptCharset="UTF-8"
             // ref={formRef}
             // onSubmit={() =>
@@ -127,18 +127,20 @@ export default function Contact() {
               <Radio value="Yes">Yes</Radio>
               <Radio value="No">No</Radio>
             </RadioGroup> */}
+            <div className="w-full text-center">
             <Button
               type="submit"
-              size="lg"
+              // size="lg"
               variant="solid"
-              className="capitalize font-semibold font-Lato text-default hover:text-default bg-danger"
+              className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger"
             >
               Submit
             </Button>
+            </div>
           </form>
         </div>
         <div className="w-full text-default flex flex-col  items-center gap-5 py-5">
-          <p className="text-base md:text-lg md:text-left w-4/5 tracking-normal leading-relaxed">
+          <p className="text-base md:text-lg md:text-left w-4/5 tracking-normal leading-relaxed font-Lato">
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at prithvi@webibee.com We will get back to you within 24

@@ -12,9 +12,9 @@ module.exports = {
       colors: {
       },
       fontFamily: {
-        Lato: ['var(--font-lato)'],
-        Montserrat: ['var(--font-montserrat)'],
-        caveat: ['var(--font-caveat)'],
+        Lato: 'var(--font-lato)',
+        Montserrat: 'var(--font-montserrat)',
+        Caveat: 'var(--font-caveat)',
       },
       aspectRatio: {
         box : "3 / 4"

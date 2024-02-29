@@ -41,11 +41,11 @@ const NavBar = () => {
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred
-      maxWidth="2xl"
+      maxWidth="full"
       // onScrollPositionChange={(position) =>
       //   position > 200 ? setHideNav(false) : setHideNav(true)
       // }
-      className={`${hideNav && "hidden -translate-y-full opacity-0 scroll-smooth transition-all duration-700 ease-linear"} bg-primary font-Lato opacity-80 border-b-2 border-warning py-2`}
+      className={`${hideNav && "hidden -translate-y-full opacity-0 scroll-smooth transition-all duration-700 ease-linear"} bg-primary font-Lato opacity-80 border-b-2 border-warning py-2 xl:px-8`}
       // style={{ display: hideNav ? "none" : "block" }}
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">

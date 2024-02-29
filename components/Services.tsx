@@ -8,7 +8,7 @@ import { ourservices } from "@/libs/data";
 export default function Services() {
   return (
     <Element
-      className="py-5 md:p-10 lg:p-[60px] space-y-3 md:space-y-4"
+      className="py-5 md:px-10 lg:p-[60px] space-y-3 md:space-y-4"
       name="Services"
     >
       {/* <div className="pb-10 mx-auto">

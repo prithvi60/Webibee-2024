@@ -18,22 +18,22 @@ const Footer = () => {
           </Link>
         </div>
         <Navlink />
-        <div className="text-default flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 font-Lato font-normal">
+        <div className="text-default flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 font-normal">
           <div className="flex items-center gap-2">
           <div className="relative h-8 w-8 animate-pulse">
             <Image
-              src={"/brain-logo.svg"}
+              src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
               fill
               aria-label="Webibee logo"
               className="absolute object-contain object-center"
             />
           </div>
-          <span className="font-Caveat font-semibold text-2xl animate-pulse  capitalize">
+          <span className="font-semibold text-2xl animate-pulse font-Caveat capitalize">
             Webibee
           </span>
           </div>
-          <span>
+          <span className="font-Lato">
             &copy;{`Copyright ${new Date().getFullYear()}`} - All rights
             reserved
           </span>{" "}

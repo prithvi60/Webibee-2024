@@ -34,13 +34,13 @@ export const lists = [
   {
     title: "Ujwal",
     country: "India",
-    img: "/avatar-1.jpg",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
     para: "Great work done in no time! Thanks for the co-operation",
   },
   {
     title: "Harry",
     country: "India",
-    img: "/avatar-2.jpg",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
     para: `
      Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
      `,
@@ -48,7 +48,7 @@ export const lists = [
   {
     title: "Paul",
     country: "Europe",
-    img: "/avatar-3.jpg",
+    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
     para: `
     Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
     `,
@@ -57,8 +57,7 @@ export const lists = [
   {
     title: "Louis",
     country: "UAE",
-    img: "/avatar-2.jpg",
-
+    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
   //   {title: "Video", country: "India", img : "/avatar-1.jpg",
@@ -102,7 +101,7 @@ export const benefits = [
 export const Faq = [
   {
     title: "How long will it take to build my website?",
-    content: "We take about 1 month depending on the scope of the prroject",
+    content: "We take about 1 month depending on the scope of the project",
   },
   {
     title: "Will my website operate on both desktop and mobile?",
@@ -110,7 +109,7 @@ export const Faq = [
   },
   {
     title: "Do you provide hosting and domains for websites?",
-    content: "Yes we do hosting and maintainence for long term clients",
+    content: "Yes we do hosting and maintenance for long term clients",
   },
   {
     title: "Other services we offer",
@@ -162,11 +161,11 @@ export const about = [
 export const workflow = [
   { para: "Research from our side" },
   { para: "Introductory call to understand your business needs" },
-  { para: "Design phase where we finalse UI/UX" },
+  { para: "Design phase where we finales UI/UX" },
   { para: "Development with cutting edge tools" },
   { para: "Revisions" },
   { para: "QA testing" },
-  { para: "Web vitals Optimisation and deployment" },
+  { para: "Web vitals Optimization and deployment" },
 ];
 
 //PORTFOLIO
@@ -183,7 +182,7 @@ export const portfolio = [
   },
   {
     img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
-    title: "SEO Optimisation",
+    title: "SEO Optimization",
     href: "https://vbccresearch.com/#/",
   },
   {
@@ -239,7 +238,7 @@ export const team = [
 export const ourservices = [
   {
     title: "Portfolio",
-    desc: "Business and personal webistes with a focus on high conversion",
+    desc: "Business and personal websites with a focus on high conversion",
   },
   {
     title: "Landing Page",
@@ -247,14 +246,14 @@ export const ourservices = [
   },
   {
     title: "Shopify",
-    desc: "Store setup to custom storefront theme developement",
+    desc: "Store setup to custom storefront theme development",
   },
   {
     title: "Plugin Development ",
     desc: "Custom apps for Bubble, Shopify marketplace ",
   },
   {
-    title: "SEO Optimisation",
+    title: "SEO Optimization",
     desc: "Web vitals and analytics setup",
   },
   {
@@ -271,7 +270,7 @@ export const ourservices = [
   },
   {
     title: "API integration",
-    desc: "3rd party api's of any custom requiemnet ",
+    desc: "3rd party api's of any custom requirements ",
   },
   {
     title: "Feature Development",

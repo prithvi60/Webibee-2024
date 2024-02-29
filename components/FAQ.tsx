@@ -9,7 +9,7 @@ export default function FAQ() {
     base: "mb-2 !px-0 w-full !rounded-[20px] !bg-success overflow-hidden",
     heading: "p-2 md:p-5 border border-warning",
     title:
-      "font-Montserrat text-lg md:text-2xl text-default focus-within:outline-none focus-within:border-transparent focus-within:ring-0",
+      "font-Lato text-lg md:text-2xl text-default focus-within:outline-none focus-within:border-transparent focus-within:ring-0",
     trigger: "h-auto lg:h-10",
     indicator: "text-xl md:text-2xl text-default",
     content:

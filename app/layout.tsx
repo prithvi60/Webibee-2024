@@ -13,22 +13,20 @@ export const metadata: Metadata = {
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  display: 'swap',
   variable: '--font-montserrat',
   weight: "600"
 })
 
 const lato = Lato({
   subsets: ['latin'],
-  display: 'swap',
   variable: '--font-lato',
   weight: "400"
 })
 
 const caveat = Caveat({
   subsets: ['latin'],
-  display: 'swap',
   variable: '--font-caveat',
+  weight: "500"
 })
 
 export default function RootLayout({

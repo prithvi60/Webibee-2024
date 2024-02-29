@@ -20,14 +20,14 @@ export default function Services() {
       <Marquee pauseOnHover speed={70} autoFill={true}>
         <div className="flex justify-center items-center flex-wrap gap-10 first:ms-10">
           {ourservices.map((service, idx) => (
-            <Card className="w-[275px] sm:w-[350px] h-[180px]" key={idx}>
+            <Card className="w-[275px] sm:w-[320px] h-[180px]" key={idx}>
               <CardHeader className="flex gap-3 bg-success font-Lato">
                 <h3 className="text-default font-medium text-2xl px-2 line-clamp-1">
                   {service.title}
                 </h3>
               </CardHeader>
               {/* <Divider className="bg-warning"/> */}
-              <CardBody className="pb-10 bg-secondary">
+              <CardBody className="pb-10 bg-secondary font-Lato">
                 <h4 className="font-normal text-default text-lg px-2 py-2 line-clamp-3">
                   {/* <FaCircleCheck  className="h-5 w-5  text-primary"/> */}
                   {service.desc}

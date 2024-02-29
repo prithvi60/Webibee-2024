@@ -11,24 +11,42 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [hideNav, setHideNav] = React.useState(true);
+
+  useEffect(() => {
+    const handleScroll = () =>{
+      const scroll = window.scrollY;
+      if(scroll > 165){
+        setHideNav(false)
+      } else{
+        setHideNav(true)
+      }
+    }
+
+    window.addEventListener("scroll",handleScroll)
+
+    return ()=>{
+      window.removeEventListener("scroll",handleScroll)
+    }
+  }, [hideNav,setHideNav])
+  
   return (
     <Navbar
-      // shouldHideOnScroll
+    shouldHideOnScroll
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred
       maxWidth="2xl"
-      className="bg-primary font-Lato opacity-80 border-b-2 border-warning py-2"
-      style={{ display: hideNav ? "none" : "block" }}
-      onScrollPositionChange={(position) =>
-        position > 200 ? setHideNav(false) : setHideNav(true)
-      }
+      // onScrollPositionChange={(position) =>
+      //   position > 200 ? setHideNav(false) : setHideNav(true)
+      // }
+      className={`${hideNav && "hidden -translate-y-full opacity-0 scroll-smooth transition-all duration-700 ease-linear"} bg-primary font-Lato opacity-80 border-b-2 border-warning py-2`}
+      // style={{ display: hideNav ? "none" : "block" }}
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
@@ -42,7 +60,7 @@ const NavBar = () => {
         <NavbarBrand className=" mx-2 animate-drip-expand">
           <div className="relative h-11 w-11 animate-pulse">
             <Image
-              src={"/brain-logo.svg"}
+              src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
               fill
               aria-label="Webibee logo"
@@ -61,7 +79,7 @@ const NavBar = () => {
           duration={500}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2  bg-white rounded-lg font-semibold font-caveat"
+          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
           <span>Contact Us</span>
@@ -72,7 +90,7 @@ const NavBar = () => {
         <NavbarBrand className="space-x-2 animate-drip-expand">
           <div className="relative h-14 w-14 animate-pulse">
             <Image
-              src={"/brain-logo.svg"}
+              src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
               fill
               aria-label="Webibee logo"

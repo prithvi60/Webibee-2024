@@ -70,12 +70,13 @@ export default function Workflow() {
               className="py-4 px-5 md:px-8 space-y-4 swiper-slider h-full border-2 border-warning"
               key={idx}
             >
-              <h3 className="text-base md:text-3xl">Stage {idx}</h3>
-              <p className="text-sm md:text-lg font-medium">{work.para}</p>
+              <h3 className="text-base md:text-3xl font-Lato">Stage {idx + 1}</h3>
+              <p className="text-sm md:text-lg font-medium font-Lato">{work.para}</p>
               <div className="relative h-40 md:h-80 w-full  bg-transparent">
                 <Image
                   fill
-                  src={"https://ik.imagekit.io/webibee/Agency/build.gif"}
+                  // src={"https://ik.imagekit.io/webibee/Agency/build.gif"}
+                  src={"https://ik.imagekit.io/webibee/Agency/lego-bricks.gif"}
                   alt="images"
                   className="object-cover"
                 />

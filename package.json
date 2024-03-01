@@ -11,6 +11,7 @@
   "dependencies": {
     "@next/third-parties": "^14.1.0",
     "@nextui-org/react": "^2.2.9",
+    "canvas-confetti": "^1.9.2",
     "chart.js": "^4.4.2",
     "framer-motion": "^10.16.5",
     "next": "13.5.4",
@@ -24,6 +25,7 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

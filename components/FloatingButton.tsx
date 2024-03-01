@@ -14,11 +14,13 @@ export default function FloatingButton() {
         "
         target="_blank"
         rel="noopener noreferrer"
+        title='whatsapp' 
       >
         <motion.img
           src="https://ik.imagekit.io/webibee/Agency/whatsapp.gif"
           loading="lazy"
-          alt="msg"
+          alt="whatsapp logo"
+          title="whatsapp logo"
           className="rounded-full shadow-xl h-12 w-12 md:h-14 md:w-14"
           style={{ boxShadow: "0 0 0 2px #904BF6" }}
           whileHover={{ boxShadow: "0 0 0 2px #FFFFFF" }}

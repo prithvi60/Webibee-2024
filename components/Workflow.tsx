@@ -21,9 +21,9 @@ export default function Workflow() {
   return (
     <section className="padding-variable bg-primary">
       <div className="pb-10 mx-auto">
-        <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
+        <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
           Our Workflow
-        </h2>
+        </h1>
         <hr className="mt-2 w-60 mx-auto  bg-default p-0.5 border-t-0 rounded-md" />
       </div>
       {/* <div className="h-full py-12 px-4 
@@ -78,6 +78,7 @@ export default function Workflow() {
                   // src={"https://ik.imagekit.io/webibee/Agency/build.gif"}
                   src={"https://ik.imagekit.io/webibee/Agency/lego-bricks.gif"}
                   alt="images"
+                  title="images"
                   className="object-cover"
                 />
               </div>

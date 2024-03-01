@@ -18,9 +18,9 @@ export default function FAQ() {
   return (
     <Element className="padding-variable bg-primary" name="FAQ">
       <div className="pb-14 mx-auto">
-        <h2 className="hidden md:block font-Montserrat text-5xl md:text-7xl text-center text-default pb-6 font-medium">
+        <h1 className="hidden md:block font-Montserrat text-5xl md:text-7xl text-center text-default pb-6 font-medium">
           Frequently Asked Questions
-        </h2>
+        </h1>
         <h2 className="md:hidden font-Montserrat text-5xl md:text-7xl text-center text-default pb-6">
           FAQ
         </h2>

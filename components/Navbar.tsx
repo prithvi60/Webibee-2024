@@ -45,6 +45,7 @@ const NavBar = () => {
             <Image
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
+              title="Webibee logo"
               fill
               aria-label="Webibee logo"
               className="absolute object-contain object-center"
@@ -75,6 +76,7 @@ const NavBar = () => {
             <Image
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
+              title="Webibee logo"
               fill
               aria-label="Webibee logo"
               className="absolute object-contain object-center"

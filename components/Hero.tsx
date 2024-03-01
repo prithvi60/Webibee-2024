@@ -14,9 +14,9 @@ const Hero = () => {
         className="relative padding-variable text-center text-default h-full bg-primary"
         style={{ zIndex: 2 }}
       >
-        <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-16">
+        <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-16">
           Websites that stand out
-        </h2>
+        </h1>
         <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           SEO ready and performance optimized with stunning designs
         </h3>
@@ -116,6 +116,7 @@ const Hero = () => {
             <Link
               target="blank"
               href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
+              title="google calendar"
             >
               Free Consultation
             </Link>

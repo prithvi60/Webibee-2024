@@ -6,9 +6,9 @@ export default function Benefits() {
   return (
     <section className="padding-variable bg-primary">
       <div className="pb-14 mx-auto">
-        <h2 className="hidden md:block font-Montserrat text-5xl md:text-6xl text-center text-default pb-6 capitalize">
+        <h1 className="hidden md:block font-Montserrat text-5xl md:text-6xl text-center text-default pb-6 capitalize">
         Benefits of getting a website built from us
-        </h2>
+        </h1>
         <h2 className="md:hidden font-Montserrat text-5xl md:text-7xl text-center text-default pb-6 capitalize">
         Benefits
         </h2>

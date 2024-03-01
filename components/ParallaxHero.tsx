@@ -35,9 +35,9 @@ const ParallaxHero = () => {
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 padding-variable text-center text-default h-full w-full bg-primary bg-opacity-70"
         style={{ zIndex: 2 }}
       >
-        <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-5 md:mt-10 ">
+        <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-5 md:mt-10 ">
           Websites that stand out
-        </h2>
+        </h1>
         <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           SEO ready and performance optimized with stunning designs
         </h3>
@@ -53,6 +53,7 @@ const ParallaxHero = () => {
             href={
               "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
             }
+            title="links"
           >
             <div className="block md:flex items-center">
               <div className="flex items-center ">
@@ -118,6 +119,7 @@ const ParallaxHero = () => {
           </h4>
           <div className="flex md:items-center md:gap-2 text-xl md:text-2xl font-urbanist font-bold">
             <Link
+            title="upwork"
               target="blank"
               href={
                 "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
@@ -137,6 +139,7 @@ const ParallaxHero = () => {
             <Link
               target="blank"
               href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
+              title="google calendar"
             >
               Free Consultation
             </Link>
@@ -169,9 +172,9 @@ const ParallaxHero = () => {
           className="relative padding-variable text-center text-default h-full bg-primary w-full"
           style={{ zIndex: 2 }}
         >
-          <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-10">
+          <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-10">
             Websites that stand out
-          </h2>
+          </h1>
           <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
             SEO ready and performance optimized with stunning designs
           </h3>
@@ -183,6 +186,7 @@ const ParallaxHero = () => {
               100% Job Success
             </h4>
             <Link
+            title="upwork"
               target="blank"
               href={
                 "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
@@ -252,6 +256,7 @@ const ParallaxHero = () => {
             </h4>
             <div className="flex md:items-center md:gap-2 text-xl md:text-2xl font-urbanist font-bold">
               <Link
+              title="upwork"
                 target="blank"
                 href={
                   "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
@@ -271,6 +276,7 @@ const ParallaxHero = () => {
               <Link
                 target="blank"
                 href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
+                title="google calendar"
               >
                 Free Consultation
               </Link>

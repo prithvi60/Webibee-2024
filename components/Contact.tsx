@@ -16,9 +16,9 @@ export default function Contact() {
   // const formRef = useRef(null);
   return (
     <Element className="padding-variable bg-primary" name="Contact">
-      <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
+      <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
         Contact Us
-      </h2>
+      </h1>
       <hr className="w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center pt-3 md:pt-10">
         <div className="w-full bg-default mx-auto rounded-lg">
@@ -128,14 +128,14 @@ export default function Contact() {
               <Radio value="No">No</Radio>
             </RadioGroup> */}
             <div className="w-full text-center">
-            <Button
-              type="submit"
-              // size="lg"
-              variant="solid"
-              className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger"
-            >
-              Submit
-            </Button>
+              <Button
+                type="submit"
+                // size="lg"
+                variant="solid"
+                className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger"
+              >
+                Submit
+              </Button>
             </div>
           </form>
         </div>
@@ -143,8 +143,13 @@ export default function Contact() {
           <p className="text-base md:text-lg md:text-left w-4/5 tracking-normal leading-relaxed font-Lato">
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
-            or email us at prithvi@webibee.com We will get back to you within 24
-            hours of your inquiry or email.
+            or email us at
+            <span className="mx-2 text-lg text-danger md:text-xl underline underline-offset-2">
+              <Link title="email address" href="mailto: support@webibee.com" target="_blank">
+                support@webibee.com
+              </Link>
+            </span>
+            We will get back to you within 24 hours of your inquiry or email.
           </p>
           {/* <p className="font-medium text-lg md:text-xl text-center tracking-normal leading-relaxed border border-primary py-1.5 px-3 w-max rounded-lg bg-black">
             +91-7358023088

@@ -10,10 +10,10 @@ const Footer = () => {
     <footer className="bg-black pt-7 md:pt-12 pb-6 ">
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="flex justify-center items-center gap-5 cursor-pointer">
-          <Link href={"https://www.linkedin.com/in/prithvi-n/"}>
+          <Link title="linkedIn" href={"https://www.linkedin.com/in/prithvi-n/"}>
             <FaLinkedinIn className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-default/60" />
           </Link>
-          <Link href={"https://www.instagram.com/prithvi_bytes/?hl=en"}>
+          <Link title="instagram" href={"https://www.instagram.com/prithvi_bytes/?hl=en"}>
             <FaInstagram className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-default/60" />
           </Link>
         </div>
@@ -25,6 +25,7 @@ const Footer = () => {
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
               fill
+              title="Webibee logo"
               aria-label="Webibee logo"
               className="absolute object-contain object-center"
             />

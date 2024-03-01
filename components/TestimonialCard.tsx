@@ -4,9 +4,9 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  Image,
   Avatar,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 const TestimonialCard = ({ list }: { list: any }) => {
   return (
@@ -15,14 +15,15 @@ const TestimonialCard = ({ list }: { list: any }) => {
         {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-default">
           Family Counselling
         </h4> */}
-        {/* <Image
-          alt="nextui logo"
-          height={40}
-          radius="sm"
+        <Image
+          alt={`${list.country} logo`}
+          height={55}
           src={list.img}
-          width={40}
-        /> */}
-        <Avatar radius="full" size="lg" src={list.img} className="border-danger border-5" />
+          width={55}
+          title={list.country}
+          className="rounded-full border-danger border-5"
+        />
+        {/* <Avatar title='country logo' radius="full" size="lg" src={list.img} alt={`${list.country} logo`}  className="border-danger border-5" /> */}
         <div className="flex flex-col">
           <h3 className="text-lg md:text-2xl font-semibold leading-none font-Lato text-default line-clamp-1">
             {list.title}

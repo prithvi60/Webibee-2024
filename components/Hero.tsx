@@ -1,14 +1,18 @@
 "use client";
-import { Button, Spinner } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import { TiStarOutline } from "react-icons/ti";
 import { LuCrown } from "react-icons/lu";
 // import { useState } from "react";
 import Services from "./Services";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
-  // const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
+  useEffect(() => {
+    setLoader(true);
+  }, []);
 
   return (
     <>
@@ -136,12 +140,22 @@ const Hero = () => {
         <Services />
       </section>
       <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
-        <Image
-          src={"/plasma_bg.gif"}
-          alt="bg gif"
-          fill
-          style={{ filter: "brightness(0.5)" }}
-        />
+        {loader ? (
+          <Image
+            src={"/plasma_bg.gif"}
+            alt="bg gif"
+            fill
+            style={{ filter: "brightness(0.6)" }}
+          />
+        ) : (
+          <Image
+            src={"/placeholder.png"}
+            quality={30}
+            alt="bg gif"
+            fill
+            style={{ filter: "brightness(0.6)" }}
+          />
+        )}
       </div>
     </>
   );

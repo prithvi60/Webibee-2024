@@ -16,19 +16,26 @@ import { Link } from "react-scroll";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [hideNav, setHideNav] = React.useState(true);
-  
+
   return (
     <Navbar
-    // shouldHideOnScroll
+      // shouldHideOnScroll
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred
       maxWidth="full"
-      style={{ display: hideNav ? "none" : "block" }}
-      onScrollPositionChange={(position) =>
-        position > 160 ? setHideNav(false) : setHideNav(true)
-      }
+      style={{
+        opacity: hideNav ? 0 : 1,
+        pointerEvents: hideNav ? "none" : "all",
+        position: hideNav ? "absolute" : "sticky",
+        // display:hideNav ? "none" : "block",
+
+      }}
+      onScrollPositionChange={(position) => {
+        // console.log("pos", position);
+        position > 160 ? setHideNav(false) : setHideNav(true);
+      }}
       className={`transform transition duration-700 ease-linear bg-primary font-Lato border-b-2 border-warning py-2 xl:px-8`}
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">

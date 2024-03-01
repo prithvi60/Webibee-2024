@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -7,10 +6,12 @@ import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Caveat, Lato, Montserrat } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
-export const metadata: Metadata = {
+// Meta Data
+export async function generateMetadata(): Promise<Metadata> {
+  return {
   title: "Webibee",
-  description: "Webibee crafts stunning websites that help businesses flourish.",
-  robots: "",
+  description: "Webibee crafts stunning websites that help businesses flourish",
+  robots: "index, follow",
   applicationName: "Webibee Web Development Agency",
   authors: [{ name: "Prithvi" }],
   generator: "Next.js",
@@ -34,7 +35,23 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://webibee.com/"),
   alternates: {
     canonical: "/blog/post",
+    languages: {
+      "en-US": "/",
+    },
   },
+  openGraph: {
+    type: "website",
+    url: `https://webibee.com`,
+    title: "Webibee",
+    description: "Webibee crafts stunning websites that help businesses flourish",
+    siteName: "Webibee Agency",
+    images: [
+      {
+        url: "https://ik.imagekit.io/webibee/Agency/brain-logo.svg",
+      },
+    ],
+  },     
+}
 };
 
 const montserrat = Montserrat({
@@ -65,10 +82,10 @@ export default function RootLayout({
       lang="en"
       className={`${lato.variable} ${montserrat.variable} ${caveat.variable}`}
     >
-      <Head>
+      {/* <Head>
         <meta name="robots" content="all" />
         <meta name="googlebot" content="all" />
-      </Head>
+      </Head> */}
       <body>
         <Providers>
           <NavBar />

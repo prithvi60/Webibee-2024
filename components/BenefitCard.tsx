@@ -5,7 +5,7 @@ export const BenefitCard = ({ item }: { item: any }) => {
   return (
     <Card className="w-[250px] sm:w-[320px] min-h-[225px] font-Lato">
       <CardHeader className="flex gap-3 bg-success font-Lato justify-center items-center">
-        <h3 className="text-default text-xl px-2">{item.title}</h3>
+        <h2 className="text-default text-xl px-2">{item.title}</h2>
       </CardHeader>
       {/* <Divider className="bg-warning" /> */}
       <CardBody className="pb-10 text-center bg-secondary">

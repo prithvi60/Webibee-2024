@@ -1,15 +1,12 @@
 "use client";
-import { about, services } from "@/libs/data";
+import { services } from "@/libs/data";
 import {
   Button,
   Input,
-  Radio,
-  RadioGroup,
   Select,
   SelectItem,
 } from "@nextui-org/react";
 import Link from "next/link";
-import { useRef } from "react";
 import { Element } from "react-scroll";
 
 export default function Contact() {
@@ -26,7 +23,7 @@ export default function Contact() {
             <h2 className="font-Montserrat text-2xl md:text-4xl text-center text-default ">
               Inquiry Form
             </h2>
-            <p className="font-Lato font-medium text-base text-center text-default">
+            <p className="font-Lato font-semibold text-base md:text-lg text-center text-default">
               We will get in touch with you shortly
             </p>
             {/* <div className="p-1 my-3 rounded-full border-2 border-primary z-40 bg-default w-max mx-auto text-xs">
@@ -144,7 +141,7 @@ export default function Contact() {
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at
-            <span className="mx-2 text-lg text-danger md:text-xl underline underline-offset-2">
+            <span className="mx-2 text-lg font-bold hover:text-default/70 md:text-xl underline underline-offset-2">
               <Link title="email address" href="mailto: support@webibee.com" target="_blank">
                 support@webibee.com
               </Link>

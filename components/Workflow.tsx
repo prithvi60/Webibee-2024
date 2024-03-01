@@ -70,7 +70,7 @@ export default function Workflow() {
               className="py-4 px-5 md:px-8 space-y-4 swiper-slider h-full border-2 border-warning"
               key={idx}
             >
-              <h3 className="text-base md:text-3xl font-Lato">Stage {idx + 1}</h3>
+              <h2 className="text-base md:text-3xl font-Lato">Stage {idx + 1}</h2>
               <p className="text-sm md:text-lg font-medium font-Lato">{work.para}</p>
               <div className="relative h-40 md:h-80 w-full  bg-transparent">
                 <Image

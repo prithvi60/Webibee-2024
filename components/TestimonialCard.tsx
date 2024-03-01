@@ -25,9 +25,9 @@ const TestimonialCard = ({ list }: { list: any }) => {
         />
         {/* <Avatar title='country logo' radius="full" size="lg" src={list.img} alt={`${list.country} logo`}  className="border-danger border-5" /> */}
         <div className="flex flex-col">
-          <h3 className="text-lg md:text-2xl font-semibold leading-none font-Lato text-default line-clamp-1">
+          <h2 className="text-lg md:text-2xl font-semibold leading-none font-Lato text-default line-clamp-1">
             {list.title}
-          </h3>
+          </h2>
           <p className="text-sm md:text-base lg:text-lg text-slate-100 font-Lato">
             {list.country}
           </p>

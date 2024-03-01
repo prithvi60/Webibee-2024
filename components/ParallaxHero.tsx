@@ -38,16 +38,16 @@ const ParallaxHero = () => {
         <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-5 md:mt-10 ">
           Websites that stand out
         </h1>
-        <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
+        <h2 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           SEO ready and performance optimized with stunning designs
-        </h3>
+        </h2>
         <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full md:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
-          <h4 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
+          <h2 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
             <span className="p-1.5 rounded-full bg-[#14A800]">
               <LuCrown className="h-5 w-5  text-default " />
             </span>
             100% Job Success
-          </h4>
+          </h2>
           <Link
             target="blank"
             href={
@@ -175,16 +175,16 @@ const ParallaxHero = () => {
           <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-10">
             Websites that stand out
           </h1>
-          <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
+          <h2 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
             SEO ready and performance optimized with stunning designs
-          </h3>
+          </h2>
           <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full md:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
-            <h4 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
+            <h2 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
               <span className="p-1.5 rounded-full bg-[#14A800]">
                 <LuCrown className="h-5 w-5  text-default " />
               </span>
               100% Job Success
-            </h4>
+            </h2>
             <Link
             title="upwork"
               target="blank"

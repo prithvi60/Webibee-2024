@@ -57,6 +57,7 @@ const NavBar = () => {
       <NavbarContent justify="end" className="flex md:hidden">
         <Link
           to={"Contact"}
+          href={"Contact"}
           spy={true}
           offset={-50}
           smooth={true}
@@ -96,6 +97,7 @@ const NavBar = () => {
             <Link
               key={idx}
               to={link.href}
+              href={link.href}
               spy={true}
               offset={-30}
               smooth={true}

@@ -40,7 +40,9 @@
 body::-webkit-scrollbar {
   width: 0.4em;
 }
-
+body{
+  background: #17092c;
+}
 body,
 .carousal::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

@@ -144,7 +144,7 @@ export default function Contact() {
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at
-            <span className="mx-2 text-lg text-danger md:text-xl underline underline-offset-2">
+            <span className="mx-2  text-white font-bold underline underline-offset-2">
               <Link title="email address" href="mailto: support@webibee.com" target="_blank">
                 support@webibee.com
               </Link>
@@ -166,7 +166,7 @@ export default function Contact() {
               variant={"solid"}
               className="capitalize font-semibold font-Lato  text-default bg-danger"
             >
-              Free Consultation
+              Book a Free Consultation
             </Button>
           </div>
         </div>

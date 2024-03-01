@@ -72,11 +72,11 @@ export default function Workflow() {
             >
               <h3 className="text-base md:text-3xl font-Lato">Stage {idx + 1}</h3>
               <p className="text-sm md:text-lg font-medium font-Lato">{work.para}</p>
-              <div className="relative h-40 md:h-80 w-full  bg-transparent">
+              <div className="relative h-48 md:h-80 w-full  bg-transparent">
                 <Image
                   fill
                   // src={"https://ik.imagekit.io/webibee/Agency/build.gif"}
-                  src={"https://ik.imagekit.io/webibee/Agency/lego-bricks.gif"}
+                  src={"https://ik.imagekit.io/webibee/Agency/climb.gif"}
                   alt="images"
                   title="images"
                   className="object-cover"

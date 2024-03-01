@@ -5,14 +5,18 @@ import { TiStarOutline } from "react-icons/ti";
 import { LuCrown } from "react-icons/lu";
 // import { useState } from "react";
 import Services from "./Services";
+import Image from "next/image";
 
 const Hero = () => {
   // const [loader, setLoader] = useState(true);
+
   return (
     <>
       <section
-        className="relative padding-variable text-center text-default h-full bg-primary"
-        style={{ zIndex: 2 }}
+        className="relative padding-variable text-center text-default h-full"
+        style={{
+          zIndex: 2,
+        }}
       >
         <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-16">
           Websites that stand out
@@ -118,7 +122,7 @@ const Hero = () => {
               href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
               title="google calendar"
             >
-              Free Consultation
+              Book a Free Consultation
             </Link>
           </Button>
         </div>
@@ -131,18 +135,14 @@ const Hero = () => {
         {/* </div> */}
         <Services />
       </section>
-      {/* <div className="absolute top-0 left-0 h-screen w-full pointer-events-none ">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Spline
-            scene="https://prod.spline.design/eVf36LEPiWXTIrPx/scene.splinecode"
-            onLoad={() =>
-              setTimeout(() => {
-                setLoader(false);
-              }, 1000)
-            }
-          />
-        </Suspense>
-      </div> */}
+      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
+        <Image
+          src={"/plasma_bg.gif"}
+          alt="bg gif"
+          fill
+          style={{ filter: "brightness(0.5)" }}
+        />
+      </div>
     </>
   );
 };

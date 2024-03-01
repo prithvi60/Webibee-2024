@@ -21,10 +21,7 @@ export default function Home() {
       <Portfolio/>
       <Benefits/>
       <Testimonials/>
-      {/* <ClientHighlight/> */}
       <Workflow/>
-      {/* <Team/> */}
-      {/* <KnowMore /> */}
       <FAQ/>
       <Contact/>
     </div> 

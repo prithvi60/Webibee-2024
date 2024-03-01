@@ -11,42 +11,25 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [hideNav, setHideNav] = React.useState(true);
-
-  useEffect(() => {
-    const handleScroll = () =>{
-      const scroll = window.scrollY;
-      if(scroll > 165){
-        setHideNav(false)
-      } else{
-        setHideNav(true)
-      }
-    }
-
-    window.addEventListener("scroll",handleScroll)
-
-    return ()=>{
-      window.removeEventListener("scroll",handleScroll)
-    }
-  }, [hideNav,setHideNav])
   
   return (
     <Navbar
-    shouldHideOnScroll
+    // shouldHideOnScroll
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred
       maxWidth="full"
-      // onScrollPositionChange={(position) =>
-      //   position > 200 ? setHideNav(false) : setHideNav(true)
-      // }
-      className={`${hideNav && "hidden -translate-y-full opacity-0 scroll-smooth transition-all duration-700 ease-linear"} bg-primary font-Lato opacity-80 border-b-2 border-warning py-2 xl:px-8`}
-      // style={{ display: hideNav ? "none" : "block" }}
+      style={{ display: hideNav ? "none" : "block" }}
+      onScrollPositionChange={(position) =>
+        position > 160 ? setHideNav(false) : setHideNav(true)
+      }
+      className={`transform transition duration-700 ease-linear bg-primary font-Lato border-b-2 border-warning py-2 xl:px-8`}
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}

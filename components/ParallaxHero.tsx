@@ -6,7 +6,7 @@ import { LuCrown } from "react-icons/lu";
 // import { useState } from "react";
 import Services from "./Services";
 import { BannerLayer, ParallaxBanner } from "react-scroll-parallax";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ParallaxHero = () => {
   const [loader, setLoader] = useState(false);
@@ -32,16 +32,16 @@ const ParallaxHero = () => {
     expanded: false,
     children: (
       <div
-        className="relative padding-variable text-center text-default h-full bg-primary bg-opacity-70"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 padding-variable text-center text-default h-full w-full bg-primary bg-opacity-70"
         style={{ zIndex: 2 }}
       >
-        <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-5 lg:mt-16 2xl:mt-[28rem]">
+        <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-5 md:mt-10 ">
           Websites that stand out
         </h2>
         <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           SEO ready and performance optimized with stunning designs
         </h3>
-        <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full md:w-3/4 2xl:w-[35%] mx-auto rounded-xl">
+        <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full md:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
           <h4 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
             <span className="p-1.5 rounded-full bg-[#14A800]">
               <LuCrown className="h-5 w-5  text-default " />
@@ -128,7 +128,7 @@ const ParallaxHero = () => {
             </Link>
           </div>
         </div>
-        <div className="pt-8 md:pt-3 lg:pt-8">
+        <div className="pt-2 md:pt-3 lg:pt-8">
           <Button
             size="lg"
             radius="lg"
@@ -166,16 +166,16 @@ const ParallaxHero = () => {
     <>
       {!loader ? (
         <div
-          className="relative padding-variable text-center text-default h-full bg-primary"
+          className="relative padding-variable text-center text-default h-full bg-primary w-full"
           style={{ zIndex: 2 }}
         >
-          <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-5 lg:mt-16">
+          <h2 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-10">
             Websites that stand out
           </h2>
           <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
             SEO ready and performance optimized with stunning designs
           </h3>
-          <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-1/2 mx-auto rounded-xl">
+          <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full md:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
             <h4 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
               <span className="p-1.5 rounded-full bg-[#14A800]">
                 <LuCrown className="h-5 w-5  text-default " />

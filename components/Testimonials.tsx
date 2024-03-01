@@ -12,7 +12,7 @@ export default function Testimonials() {
       name="testimonial"
     >
       <div>
-        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-normal text-center text-default">
+        <h3 className="capitalize text-[2.5rem] md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-normal text-center text-default">
           Customer Testimonials
         </h3>
         <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-default" />

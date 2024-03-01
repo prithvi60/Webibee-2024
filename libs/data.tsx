@@ -161,7 +161,7 @@ export const about = [
 export const workflow = [
   { para: "Research from our side" },
   { para: "Introductory call to understand your business needs" },
-  { para: "Design phase where we finales UI/UX" },
+  { para: "Design phase where we finalise UI/UX" },
   { para: "Development with cutting edge tools" },
   { para: "Revisions" },
   { para: "QA testing" },

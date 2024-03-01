@@ -163,7 +163,7 @@ export default function Contact() {
               variant={"solid"}
               className="capitalize font-semibold font-Lato  text-default bg-danger"
             >
-              Free Consultation
+              Book a Free Consultation
             </Button>
           </div>
         </div>

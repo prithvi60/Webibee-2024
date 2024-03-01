@@ -5,33 +5,38 @@ import { TiStarOutline } from "react-icons/ti";
 import { LuCrown } from "react-icons/lu";
 // import { useState } from "react";
 import Services from "./Services";
+import Image from "next/image";
 
 const Hero = () => {
   // const [loader, setLoader] = useState(true);
+
   return (
     <>
       <section
-        className="relative padding-variable text-center text-default h-full bg-primary"
-        style={{ zIndex: 2 }}
+        className="relative padding-variable text-center text-default h-screen"
+        style={{
+          zIndex: 2,
+        }}
       >
-        <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-16">
+       <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat md:mt-10 ">
           Websites that stand out
         </h1>
-        <h3 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
+        <h2 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
           SEO ready and performance optimized with stunning designs
-        </h3>
-        <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-1/2 mx-auto rounded-xl">
-          <h4 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
+        </h2>
+        <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
+          <h2 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
             <span className="p-1.5 rounded-full bg-[#14A800]">
               <LuCrown className="h-5 w-5  text-default " />
             </span>
             100% Job Success
-          </h4>
+          </h2>
           <Link
             target="blank"
             href={
               "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
             }
+            title="links"
           >
             <div className="block md:flex items-center">
               <div className="flex items-center ">
@@ -97,6 +102,7 @@ const Hero = () => {
           </h4>
           <div className="flex md:items-center md:gap-2 text-xl md:text-2xl font-urbanist font-bold">
             <Link
+            title="upwork"
               target="blank"
               href={
                 "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
@@ -107,11 +113,11 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="pt-8">
+        <div className="md:pt-3 lg:pt-8">
           <Button
             size="lg"
             radius="lg"
-            className="px-6 py-5 font-urbanist text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato"
+            className="px-6 py-5 md:py-2.5 lg:py-5 font-urbanist text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato"
           >
             <Link
               target="blank"
@@ -122,27 +128,17 @@ const Hero = () => {
             </Link>
           </Button>
         </div>
-        {/* {loader ? (
-          <div className="font bold text-2xl ">
-            Wait for it ... <Spinner size="sm" />
-          </div>):<div className="font bold text-2xl"> ‎ </div>
-        } */}
-
-        {/* </div> */}
         <Services />
       </section>
-      {/* <div className="absolute top-0 left-0 h-screen w-full pointer-events-none ">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Spline
-            scene="https://prod.spline.design/eVf36LEPiWXTIrPx/scene.splinecode"
-            onLoad={() =>
-              setTimeout(() => {
-                setLoader(false);
-              }, 1000)
-            }
-          />
-        </Suspense>
-      </div> */}
+      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
+        <Image
+          src={"/plasma_bg.gif"}
+          alt="bg gif"
+          fill
+          style={{ filter: "brightness(0.5)" }}
+          className=""
+        />
+      </div>
     </>
   );
 };

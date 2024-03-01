@@ -1,11 +1,6 @@
 "use client";
 import { services } from "@/libs/data";
-import {
-  Button,
-  Input,
-  Select,
-  SelectItem,
-} from "@nextui-org/react";
+import { Button, Input, Select, SelectItem } from "@nextui-org/react";
 import Link from "next/link";
 import { Element } from "react-scroll";
 
@@ -129,7 +124,7 @@ export default function Contact() {
                 type="submit"
                 // size="lg"
                 variant="solid"
-                className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger"
+                className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger hover:animate-appearance-in"
               >
                 Submit
               </Button>
@@ -141,8 +136,12 @@ export default function Contact() {
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at
-            <span className="mx-2 text-lg font-bold hover:text-default/70 md:text-xl underline underline-offset-2">
-              <Link title="email address" href="mailto: support@webibee.com" target="_blank">
+            <span className="mx-2 text-lg font-bold hover:text-default/70 md:text-xl underline underline-offset-2 hover:animate-appearance-in">
+              <Link passHref={true}
+                title="email address"
+                href="mailto: support@webibee.com"
+                target="_blank"
+              >
                 support@webibee.com
               </Link>
             </span>
@@ -157,11 +156,13 @@ export default function Contact() {
           <div className="w-max mx-auto mb-4">
             <Button
               as={Link}
+              passHref={true}
+              title="Free Consultation"
               href="https://calendar.app.google/dUU7BcdHo1Y61M1v6"
               target="blank"
               size="lg"
               variant={"solid"}
-              className="capitalize font-semibold font-Lato  text-default bg-danger"
+              className="capitalize font-semibold font-Lato  text-default bg-danger hover:animate-appearance-in"
             >
               Book a Free Consultation
             </Button>

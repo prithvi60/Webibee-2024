@@ -22,7 +22,7 @@ const Hero = () => {
           zIndex: 2,
         }}
       >
-       <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat md:mt-10 ">
+        <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat md:mt-10 ">
           Websites that stand out
         </h1>
         <h2 className="capitalize text-lg md:text-xl w-full mx-auto font-Lato font-medium ">
@@ -36,11 +36,13 @@ const Hero = () => {
             100% Job Success
           </h2>
           <Link
+          passHref={true}
             target="blank"
             href={
               "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
             }
-            title="links"
+            title="rating"
+            aria-label="Rating from Upwork"
           >
             <div className="block md:flex items-center">
               <div className="flex items-center ">
@@ -90,23 +92,23 @@ const Hero = () => {
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
               </div>
-              <h4 className="flex md:hidden items-center gap-2 text-[13px] md:text-lg font-Lato font-semibold">
+              <h2 className="flex md:hidden items-center gap-2 text-[13px] md:text-lg font-Lato font-semibold">
                 {/* <span className="p-1.5 rounded-full bg-[#1F57C3]"><LuCrown className="h-5 w-5  text-default "/></span> */}
                 100% Job Success
-              </h4>
+              </h2>
             </div>
           </Link>
-          <h4 className="flex flex-col justify-center md:flex-row items-center gap-1 md:gap-2 text-sm md:text-xl font-urbanist font-bold">
+          <h2 className="flex flex-col justify-center md:flex-row items-center gap-1 md:gap-2 text-sm md:text-xl font-bold">
             <span className="p-1 md:p-1.5 rounded-full mx-2 bg-[#14A800] w-max">
               <TiStarOutline className="w-3 h-3 md:h-5 md:w-5 text-default " />
             </span>
             <span className="mt-0 md:mt-1 font-Lato font-semibold">
               Top Rated
             </span>
-          </h4>
-          <div className="flex md:items-center md:gap-2 text-xl md:text-2xl font-urbanist font-bold">
+          </h2>
+          <div className="flex md:items-center md:gap-2 text-xl md:text-2xl font-bold">
             <Link
-            title="upwork"
+              title="upwork"
               target="blank"
               href={
                 "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
@@ -121,9 +123,10 @@ const Hero = () => {
           <Button
             size="lg"
             radius="lg"
-            className="px-6 py-5 md:py-2.5 lg:py-5 font-urbanist text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato"
+            className="px-6 py-5 md:py-2.5 lg:py-5 text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato hover:animate-appearance-in"
           >
             <Link
+            passHref={true}
               target="blank"
               href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
               title="google calendar"
@@ -137,6 +140,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
         {loader ? (
           <Image
+            title="bg gif"
             src={"/plasma_bg.gif"}
             alt="bg gif"
             fill
@@ -144,6 +148,7 @@ const Hero = () => {
           />
         ) : (
           <Image
+            title="bg gif"
             src={"/placeholder.png"}
             quality={30}
             alt="bg gif"

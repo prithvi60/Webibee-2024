@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function FloatingButton() {
   return (
     <motion.div
-      className="fixed bottom-8 right-4 "
+      className="fixed bottom-8 right-4  hover:animate-appearance-in"
       style={{ zIndex: "1000" }}
       whileHover={{ scale: 1.1 }}
     >

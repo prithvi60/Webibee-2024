@@ -30,7 +30,6 @@ const NavBar = () => {
         pointerEvents: hideNav ? "none" : "all",
         position: hideNav ? "absolute" : "sticky",
         // display:hideNav ? "none" : "block",
-
       }}
       onScrollPositionChange={(position) => {
         // console.log("pos", position);
@@ -64,17 +63,18 @@ const NavBar = () => {
       <NavbarContent justify="end" className="flex md:hidden">
         <Link
           to={"Contact"}
-          href={"Contact"}
+          href={"#Contact"}
+          title="Contact"
           spy={true}
           offset={-50}
           smooth={true}
           duration={500}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10"
+          className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-appearance-in"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-          <span>Contact Us</span>
+          Contact Us
         </Link>
       </NavbarContent>
 
@@ -90,9 +90,6 @@ const NavBar = () => {
               className="absolute object-contain object-center"
             />
           </div>
-          {/* <p className="font-extrabold text-2xl xl:text-4xl font-Caveat text-gradient tracking-wider hidden lg:block capitalize">
-            Webibee
-          </p> */}
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent
@@ -104,14 +101,15 @@ const NavBar = () => {
             <Link
               key={idx}
               to={link.href}
-              href={link.href}
+              href={`#${link.href}`}
+              title={link.title}
               spy={true}
               offset={-30}
               smooth={true}
               duration={500}
               aria-current="page"
               className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat text-default"
+              font-Montserrat text-default hover:animate-appearance-in"
             >
               {link.title}
             </Link>
@@ -126,10 +124,10 @@ const NavBar = () => {
             duration={500}
             // color="secondary"
             aria-current="page"
-            className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold"
+            className="flex items-center gap-2 text-sm sm:text-xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold hover:animate-appearance-in"
           >
             {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-            <span>Contact Us</span>
+            Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -141,12 +139,13 @@ const NavBar = () => {
               as={Link}
               key={idx}
               to={link.href}
+              href={`#${link.href}`}
+              title={link.title}
               spy={true}
               offset={-50}
               smooth={true}
               duration={500}
               className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-default"
-              href={link.href}
               onClick={() => setIsMenuOpen(false)}
             >
               {link.title}

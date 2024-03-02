@@ -12,7 +12,7 @@ export default function Benefits() {
         <h1 className="md:hidden font-Montserrat text-5xl md:text-7xl text-center text-default pb-6 capitalize">
         Benefits
         </h1>
-        <hr className="w-60 mx-auto  bg-default p-0.5 border-t-0 rounded-md" />
+        <hr className="w-12 md:w-60 mx-auto  bg-default p-0.5 border-t-0 rounded-md" />
       </div>
       {/* <div className="flex justify-center items-center flex-wrap gap-10 w-4/5 mx-auto"> */}
       <Marquee pauseOnHover speed={70} autoFill={true} direction="right">

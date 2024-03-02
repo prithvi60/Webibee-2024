@@ -9,9 +9,9 @@ export default function Contact() {
   return (
     <Element className="padding-variable bg-primary" name="Contact">
       <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
-        Contact Us
+        Contact <span className="hidden md:block">Us</span>
       </h1>
-      <hr className="w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
+      <hr className="w-12 md:w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center pt-3 md:pt-10">
         <div className="w-full bg-default mx-auto rounded-lg">
           <div className="bg-success rounded-t-lg py-3 space-y-2">

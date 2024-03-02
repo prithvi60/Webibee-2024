@@ -22,9 +22,9 @@ export default function Workflow() {
     <section className="padding-variable bg-primary">
       <div className="pb-10 mx-auto">
         <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
-          Our Workflow
+        <span className="hidden md:block"> Our </span>Workflow
         </h1>
-        <hr className="mt-2 w-60 mx-auto  bg-default p-0.5 border-t-0 rounded-md" />
+        <hr className="mt-2 w-12 md:w-60 mx-auto  bg-default p-0.5 border-t-0 rounded-md" />
       </div>
       {/* <div className="h-full py-12 px-4 
       grid md:grid-cols-2 

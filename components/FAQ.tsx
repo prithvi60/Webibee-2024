@@ -22,9 +22,9 @@ export default function FAQ() {
           Frequently Asked Questions
         </h1>
         <h2 className="md:hidden font-Montserrat text-5xl md:text-7xl text-center text-default pb-6">
-          FAQ
+          FAQS
         </h2>
-        <hr className="w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
+        <hr className="w-12 md:w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>
       <div className="w-full md:w-4/5 md:mx-auto">
         <Accordion variant="splitted" itemClasses={itemClasses}>

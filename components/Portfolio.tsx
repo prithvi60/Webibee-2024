@@ -18,9 +18,9 @@ export default function Portfolio() {
     <Element className="padding-variable bg-primary mt-8 md:mt-16" name="Portfolio">
       <div className="mx-auto">
         <h1 className="font-Montserrat font-medium text-5xl md:text-7xl text-center text-white">
-          Our Portfolio
+          <span className="hidden md:block">Our</span> Portfolio
         </h1>
-        <hr className="w-56 mt-4 mx-auto p-0.5 bg-default border-t-0 rounded-md" />
+        <hr className="w-12 md:w-56 mt-4 mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>
       <div className="py-12">
         <Swiper

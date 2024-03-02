@@ -6,7 +6,7 @@ import { LuCrown } from "react-icons/lu";
 // import { useState } from "react";
 import Services from "./Services";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 const Hero = () => {
   const [loader, setLoader] = useState(false);
@@ -26,7 +26,8 @@ const Hero = () => {
           Websites that stand out
         </h1>
         <h2 className="capitalize text-md  md:text-xl w-full mx-auto font-Lato font-medium ">
-        Elevate SEO, Drive Sales, and Set the Standard for Cutting-Edge Quality with Our Performance-Optimized Designs
+          Elevate SEO, Drive Sales, and Set the Standard for Cutting-Edge
+          Quality with Our Performance-Optimized Designs
         </h2>
         <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
           <h2 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
@@ -36,7 +37,7 @@ const Hero = () => {
             100% Job Success
           </h2>
           <Link
-          passHref={true}
+            passHref={true}
             target="blank"
             href={
               "https://www.upwork.com/freelancers/~01d7976a7b95d87d71?viewMode=1"
@@ -126,7 +127,7 @@ const Hero = () => {
             className="px-6 py-5 md:py-2.5 lg:py-5 text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato hover:animate-pulse"
           >
             <Link
-            passHref={true}
+              passHref={true}
               target="blank"
               href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
               title="google calendar"
@@ -135,13 +136,22 @@ const Hero = () => {
             </Link>
           </Button>
         </div>
-        <Services />
+        <Suspense
+          fallback={
+            <div className="text-white absolute bottom-12">
+              Loading services...
+            </div>
+          }
+        >
+          <Services />
+        </Suspense>
       </section>
       <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
         {loader ? (
           <Image
             title="bg gif"
             src={"/plasma_bg.gif"}
+            loading="lazy"
             alt="bg gif"
             fill
             style={{ filter: "brightness(0.6)" }}
@@ -152,6 +162,7 @@ const Hero = () => {
             src={"/placeholder.png"}
             quality={30}
             alt="bg gif"
+            priority
             fill
             style={{ filter: "brightness(0.6)" }}
           />

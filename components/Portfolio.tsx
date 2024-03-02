@@ -15,7 +15,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 export default function Portfolio() {
   return (
-    <Element className="padding-variable bg-primary md:mt-16" name="Portfolio">
+    <Element className="padding-variable bg-primary mt-8 md:mt-16" name="Portfolio">
       <div className="mx-auto">
         <h1 className="font-Montserrat font-medium text-5xl md:text-7xl text-center text-white">
           Our Portfolio
@@ -80,7 +80,7 @@ const SlideNextButton = () => {
       role="button"
       aria-label="next logo"
       onClick={() => swiper.slideNext()}
-      className="text-primary bg-danger absolute top-1/2 right-2 rounded-full  z-[100] hover:animate-appearance-in hover:bg-white"
+      className="text-secondary bg-warning absolute top-1/2 right-2 rounded-full  z-[100] hover:animate-pulse hover:bg-white"
     >
       <FaArrowAltCircleRight size={"3em"} />
     </button>
@@ -94,7 +94,7 @@ const SlidePrevButton = () => {
       role="button"
       aria-label="prev logo"
       onClick={() => swiper.slidePrev()}
-      className="text-primary bg-danger rounded-full absolute top-1/2  z-[100] left-2 hover:animate-appearance-in hover:bg-white"
+      className="text-secondary bg-warning rounded-full absolute top-1/2  z-[100] left-2 hover:animate-pulse hover:bg-white"
     >
       <FaArrowAltCircleLeft size={"3em"} />
     </button>

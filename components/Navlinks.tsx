@@ -16,7 +16,7 @@ export default function Navlink() {
           smooth={true}
           duration={500}
         >
-          <h2 className="text-base md:text-lg hover:text-default/50 hover:animate-appearance-in cursor-pointer">
+          <h2 className="text-base md:text-lg hover:text-default/50 hover:animate-pulse cursor-pointer">
             {link.title}
           </h2>
         </Link>

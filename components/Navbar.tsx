@@ -71,7 +71,7 @@ const NavBar = () => {
           duration={500}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-lg  md:text-2xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-appearance-in"
+          className="flex items-center gap-2 text-lg  md:text-2xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
           Contact Us
@@ -109,7 +109,7 @@ const NavBar = () => {
               duration={500}
               aria-current="page"
               className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat text-default hover:animate-appearance-in"
+              font-Montserrat text-default hover:animate-pulse"
             >
               {link.title}
             </Link>
@@ -124,7 +124,7 @@ const NavBar = () => {
             duration={500}
             // color="secondary"
             aria-current="page"
-            className="flex items-center gap-2 text-md md:text-2xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold hover:animate-appearance-in"
+            className="flex items-center gap-2 text-md md:text-2xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold hover:animate-pulse"
           >
             {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
             Contact Us

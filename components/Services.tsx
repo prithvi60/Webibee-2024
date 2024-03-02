@@ -14,7 +14,7 @@ export default function Services() {
       <Marquee pauseOnHover speed={70} autoFill={true}>
         <div className="flex justify-center items-center flex-wrap gap-10 first:ms-10">
           {ourservices.map((service, idx) => (
-            <Card className="w-[275px] sm:w-[320px] h-[180px]" key={idx}>
+            <Card className="w-[275px] h-[220px] md:w-[360px] md:h-[220px]" key={idx}>
               <CardHeader className="flex gap-3 bg-success font-Lato">
                 <h2 className="text-default font-medium text-2xl px-2 line-clamp-1">
                   {service.title}

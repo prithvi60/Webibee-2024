@@ -124,7 +124,7 @@ export default function Contact() {
                 type="submit"
                 // size="lg"
                 variant="solid"
-                className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger hover:animate-appearance-in"
+                className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Lato text-default hover:text-default bg-danger hover:animate-pulse"
               >
                 Submit
               </Button>
@@ -136,7 +136,7 @@ export default function Contact() {
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at
-            <span className="mx-2 font-bold hover:text-default/70 underline underline-offset-2 hover:animate-appearance-in">
+            <span className="mx-2 font-bold hover:text-default/70 underline underline-offset-2 hover:animate-pulse">
               <Link passHref={true}
                 title="email address"
                 href="mailto: support@webibee.com"
@@ -162,7 +162,7 @@ export default function Contact() {
               target="blank"
               size="lg"
               variant={"solid"}
-              className="capitalize font-semibold font-Lato  text-default bg-danger hover:animate-appearance-in"
+              className="capitalize font-semibold font-Lato  text-default bg-danger hover:animate-pulse"
             >
               Book a Free Consultation
             </Button>

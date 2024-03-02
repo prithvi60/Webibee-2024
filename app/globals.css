@@ -33,9 +33,9 @@
 
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 0.4em;
-}
+} */
 body{
   background: #17092c;
 }

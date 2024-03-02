@@ -21,7 +21,7 @@ export default function FloatingButton() {
           loading="lazy"
           alt="whatsapp logo"
           title="whatsapp logo"
-          className="rounded-full shadow-xl h-12 w-12 md:h-14 md:w-14"
+          className="rounded-full shadow-xl h-14 w-14 md:h-16 md:w-16"
           // style={{ boxShadow: "0 0 0 2px #904BF6" }}
           whileHover={{ boxShadow: "0 0 0 2px #FFFFFF" }}
         />

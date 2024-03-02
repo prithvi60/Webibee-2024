@@ -147,8 +147,8 @@ const Hero = () => {
         {loader ? (
           <Image
             title="bg gif"
-            src={"/plasma_bg.gif"}
-            fetchPriority={"auto"}
+            src={"https://ik.imagekit.io/webibee/Agency/bg-webibee.gif"}
+            fetchPriority={"high"}
             alt="bg gif"
             onLoad={()=>setLoader(true)}
             fill

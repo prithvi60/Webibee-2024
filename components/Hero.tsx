@@ -144,17 +144,19 @@ const Hero = () => {
         </Suspense>
       </section>
       <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
-        {loader ? (
-          <Image
-            title="bg gif"
-            src={"https://ik.imagekit.io/webibee/Agency/bg-webibee.gif"}
-            fetchPriority={"high"}
-            alt="bg gif"
-            onLoad={()=>setLoader(true)}
-            fill
-            style={{ filter: "brightness(0.6)" }}
-          />
-        ) : (
+        <Image
+          title="bg gif"
+          src={"https://ik.imagekit.io/webibee/Agency/bg-webibee.gif"}
+          fetchPriority={"high"}
+          quality={100}
+          alt="bg gif"
+          onLoad={() => {
+            setLoader(true);
+          }}
+          fill
+          style={{ filter: "brightness(0.6)" }}
+        />
+        {!loader && (
           <Image
             title="bg gif"
             src={"/placeholder.png"}

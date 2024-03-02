@@ -140,7 +140,7 @@ const Hero = () => {
         <Image
           title="bg gif"
           src={"https://ik.imagekit.io/webibee/Agency/bg_webibee.gif?tr:q-100"}
-          fetchPriority={"high"}
+         loading="lazy"
           quality={100}
           alt="bg gif"
           onLoad={() => {

@@ -80,7 +80,7 @@ const SlideNextButton = () => {
       role="button"
       aria-label="next logo"
       onClick={() => swiper.slideNext()}
-      className="text-default bg-danger absolute top-1/2 right-2 rounded-full  z-[100] hover:animate-appearance-in"
+      className="text-primary bg-danger absolute top-1/2 right-2 rounded-full  z-[100] hover:animate-appearance-in hover:bg-white"
     >
       <FaArrowAltCircleRight size={"3em"} />
     </button>
@@ -94,7 +94,7 @@ const SlidePrevButton = () => {
       role="button"
       aria-label="prev logo"
       onClick={() => swiper.slidePrev()}
-      className="text-default bg-danger rounded-full absolute top-1/2  z-[100] left-2 hover:animate-appearance-in"
+      className="text-primary bg-danger rounded-full absolute top-1/2  z-[100] left-2 hover:animate-appearance-in hover:bg-white"
     >
       <FaArrowAltCircleLeft size={"3em"} />
     </button>

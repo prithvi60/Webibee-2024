@@ -131,7 +131,7 @@ const Hero = () => {
               href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
               title="google calendar"
             >
-              Free Consultation
+              Book a Free Consultation
             </Link>
           </Button>
         </div>

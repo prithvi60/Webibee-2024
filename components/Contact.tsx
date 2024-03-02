@@ -82,7 +82,7 @@ export default function Contact() {
               id="Service"
               label="What service do you require? "
               placeholder="Select an service"
-              // defaultSelectedKeys={["Service 1"]}
+              defaultSelectedKeys={[services[0].label]}
               className="w-full bg-default rounded-md placeholder:text-slate-500 !overflow-hidden"
             >
               {services.map((service) => (
@@ -136,7 +136,7 @@ export default function Contact() {
             If you are not ready to jump on the phone with us quite yet or just
             want a simple web question answered, please leave an inquiry below
             or email us at
-            <span className="mx-2 text-lg font-bold hover:text-default/70 md:text-xl underline underline-offset-2 hover:animate-appearance-in">
+            <span className="mx-2 font-bold hover:text-default/70 underline underline-offset-2 hover:animate-appearance-in">
               <Link passHref={true}
                 title="email address"
                 href="mailto: support@webibee.com"
@@ -145,7 +145,7 @@ export default function Contact() {
                 support@webibee.com
               </Link>
             </span>
-            We will get back to you within 24 hours of your inquiry or email.
+            . We will get back to you within 24 hours of your inquiry or email.
           </p>
           {/* <p className="font-medium text-lg md:text-xl text-center tracking-normal leading-relaxed border border-primary py-1.5 px-3 w-max rounded-lg bg-black">
             +91-7358023088

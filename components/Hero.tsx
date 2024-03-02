@@ -10,9 +10,6 @@ import { Suspense, useEffect, useState } from "react";
 
 const Hero = () => {
   const [loader, setLoader] = useState(false);
-  useEffect(() => {
-    setLoader(true);
-  }, []);
 
   return (
     <>
@@ -151,8 +148,9 @@ const Hero = () => {
           <Image
             title="bg gif"
             src={"/plasma_bg.gif"}
-            loading="lazy"
+            fetchPriority={"auto"}
             alt="bg gif"
+            onLoad={()=>setLoader(true)}
             fill
             style={{ filter: "brightness(0.6)" }}
           />

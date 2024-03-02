@@ -133,20 +133,13 @@ const Hero = () => {
             </Link>
           </Button>
         </div>
-        <Suspense
-          fallback={
-            <div className="text-white absolute bottom-12">
-              Loading services...
-            </div>
-          }
-        >
+
           <Services />
-        </Suspense>
       </section>
       <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
         <Image
           title="bg gif"
-          src={"https://ik.imagekit.io/webibee/Agency/bg-webibee.gif"}
+          src={"https://ik.imagekit.io/webibee/Agency/bg_webibee.gif?tr:q-100"}
           fetchPriority={"high"}
           quality={100}
           alt="bg gif"

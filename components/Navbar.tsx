@@ -118,6 +118,8 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             to={"Contact"}
+            href={"#Contact"}
+            title="Contact"
             spy={true}
             offset={-30}
             smooth={true}

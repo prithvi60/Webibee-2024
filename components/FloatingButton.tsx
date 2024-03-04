@@ -17,8 +17,8 @@ export default function FloatingButton() {
         title='whatsapp' 
       >
         <motion.img
-          src="https://ik.imagekit.io/webibee/Agency/whatsapp.gif"
           loading="lazy"
+          src="https://ik.imagekit.io/webibee/Agency/whatsapp.gif"
           alt="whatsapp logo"
           title="whatsapp logo"
           className="rounded-full shadow-xl h-12 w-12 md:h-14 md:w-14"

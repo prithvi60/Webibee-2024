@@ -2,20 +2,22 @@ import Benefits from "@/components/Benefits";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
-// const SuspenseComponent = dynamic(() => import("@/components/ParallaxHero"), {
-//   suspense: true,
-//   ssr: true,
-// });
-// import ParallaxHero from '@/components/ParallaxHero';
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Workflow from "@/components/Workflow";
-// import dynamic from "next/dynamic";
 
-export default function Home() {
+export default function Home() { 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Webibee',
+    image: "https://ik.imagekit.io/webibee/Agency/brain-logo.svg",
+    description: "Webibee crafts stunning websites that help businesses flourish",
+    email : "support@webibee.com",
+    url : "https://webibee.com"
+  } 
   return (
     <div>
-      {/* <SuspenseComponent /> */}
       <Hero/>
       <Portfolio />
       <Benefits />
@@ -23,8 +25,10 @@ export default function Home() {
       <Workflow />
       <FAQ />
       <Contact />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }
-
-// bg-gradient-to-b from-[#904BF6] to-[#CFB2FA]

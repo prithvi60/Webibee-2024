@@ -11,10 +11,10 @@ const Footer = () => {
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="flex justify-center items-center gap-5 cursor-pointer">
           <Link title="linkedIn" href={"https://www.linkedin.com/in/prithvi-n/"}>
-            <FaLinkedinIn className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-default/60" />
+            <FaLinkedinIn className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-pulse hover:text-default/60" />
           </Link>
           <Link title="instagram" href={"https://www.instagram.com/prithvi_bytes/?hl=en"}>
-            <FaInstagram className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-appearance-in hover:text-default/60" />
+            <FaInstagram className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-pulse hover:text-default/60" />
           </Link>
         </div>
         <Navlink />

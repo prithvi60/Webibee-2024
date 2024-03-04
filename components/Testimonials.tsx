@@ -13,9 +13,9 @@ export default function Testimonials() {
     >
       <div>
         <h1 className="capitalize text-[2.5rem] md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-normal text-center text-default">
-          Customer Testimonials
+          <span className="hidden md:block">Customer</span> Testimonials
         </h1>
-        <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-default" />
+        <hr className="w-12 md:w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-default" />
       </div>
       <Marquee pauseOnHover speed={70} autoFill={true}>
         <div className="flex items-center gap-5 w-full h-full py-5 first:ms-5">

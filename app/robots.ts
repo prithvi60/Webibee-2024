@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/private/',
       },
       {
-        userAgent: ['Applebot', 'Bingbot'],
+        userAgent: 'Applebot',
         disallow: ['/'],
       },
     ],

@@ -7,11 +7,53 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import { Controller } from "swiper/modules";
 import { workflow } from "@/libs/data";
-import {  useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useSwiper } from "swiper/react";
-
+import { Masonry } from "@webibee/easy-masonry-react";
+const IMG = [
+  {
+    src:"https://picsum.photos/id/1/200/300",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%202.jpg",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%203.jpg",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%204.jpg",
+    ratio: "aspect-box",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%205.jpg",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%202.jpg",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%205.jpg",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%204.jpg",
+    ratio: "aspect-box",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%205.jpg",
+    ratio: "aspect-square",
+  },
+  {
+    src: "https://ik.imagekit.io/webibee/Agency/img%201.jpg",
+    ratio: "aspect-square",
+  },
+];
 export default function Workflow() {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -22,7 +64,7 @@ export default function Workflow() {
     <section className="padding-variable bg-primary">
       <div className="pb-10 mx-auto">
         <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
-        <span className="hidden md:block"> Our </span>Workflow
+          <span className="hidden md:block"> Our </span>Workflow
         </h1>
         <hr className="mt-2 w-12 md:w-60 mx-auto  bg-default p-0.5 border-t-0 rounded-md" />
       </div>
@@ -87,6 +129,16 @@ export default function Workflow() {
           <SlideNext inView={inView} />
         </Swiper>
       </div>
+      {/* <Masonry columnCount={{350:1,900:4}} height="screen" animation={true} speed="15s" stopOnHover={true}>
+        {IMG.map((item, idx) => (
+          <img
+            alt="..."
+            src={item.src}
+            className={` max-w-full rounded-md overflow-hidden object-cover object-center mb-8`}
+            key={idx}
+          />
+        ))}
+      </Masonry> */}
     </section>
   );
 }

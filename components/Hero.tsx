@@ -26,7 +26,7 @@ const Hero = () => {
           Elevate SEO, Drive Sales, and Set the Standard for Cutting-Edge
           Quality with Our Performance-Optimized Designs
         </h2>
-        <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
+        {/* <div className="flex justify-around items-center gap-3 border-2 border-[#14A800] py-3 px-2 w-full lg:w-3/4 2xl:w-[55%] 3xl:w-[45%] mx-auto rounded-xl">
           <h2 className="hidden md:flex items-center gap-2 text-sm md:text-lg font-Lato font-semibold">
             <span className="p-1.5 rounded-full bg-[#14A800]">
               <LuCrown className="h-5 w-5  text-default " />
@@ -91,7 +91,6 @@ const Hero = () => {
                 </svg>
               </div>
               <h2 className="flex md:hidden items-center gap-2 text-[13px] md:text-lg font-Lato font-semibold">
-                {/* <span className="p-1.5 rounded-full bg-[#1F57C3]"><LuCrown className="h-5 w-5  text-default "/></span> */}
                 100% Job Success
               </h2>
             </div>
@@ -116,12 +115,13 @@ const Hero = () => {
               Upwork
             </Link>
           </div>
-        </div>
-        <div className="md:pt-3 lg:pt-8">
+        </div> */}
+        <div className="md:pt-24 py-12 ">
           <Button
             size="lg"
             radius="lg"
-            className="px-6 py-5 md:py-2.5 lg:py-5 text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato hover:animate-pulse"
+            // className="px-6 py-5 md:py-2.5 lg:py-5 text-xl md:text-2xl font-bold text-default shadow-lg bg-danger font-Lato hover:animate-pulse"
+            className="rounded-2xl border-2 border-dashed border-success bg-danger md:text-xl shadow-lg px-6 py-5 md:px-28 md:py-8 font-Lato font-bold uppercase text-default transition-all duration-300 hover:animate-pulse active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           >
             <Link
               passHref={true}
@@ -134,13 +134,13 @@ const Hero = () => {
           </Button>
         </div>
 
-          <Services />
+        <Services />
       </section>
       <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
         <Image
           title="bg gif"
           src={"https://ik.imagekit.io/webibee/Agency/bg_webibee.gif?tr:q-100"}
-         loading="lazy"
+          loading="lazy"
           quality={100}
           alt="bg gif"
           onLoad={() => {

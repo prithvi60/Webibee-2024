@@ -27,7 +27,7 @@ export default function Services() {
                 className="w-[275px] h-[220px] md:w-[360px] md:h-[220px]"
                 key={idx}
               >
-                <CardHeader className="flex gap-3 bg-success font-Lato">
+                <CardHeader className="flex gap-3 bg-black font-Lato">
                   <h2 className="text-default font-medium text-2xl px-2 line-clamp-1">
                     {service.title}
                   </h2>

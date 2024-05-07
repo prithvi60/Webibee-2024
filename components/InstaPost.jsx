@@ -54,10 +54,11 @@ export const InstaPost = () => {
   return (
     <Swiper
       centeredSlides={true}
-      slidesPerView={1}
-      spaceBetween={30}
+      slidesPerView={3}
+      spaceBetween={50}
+      grabCursor={true}
       breakpoints={{
-        640: {
+        0: {
           slidesPerView: 1,
           spaceBetween: 20,
         },
@@ -74,47 +75,49 @@ export const InstaPost = () => {
     >
       <SlideNextButton />
       <SlidePrevButton />
-      {post.items.slice(1, 9).map((list) => (
-        <SwiperSlide
-          className="!h-auto !w-[280px] sm:!w-[320px]"
-          key={list?.caption?.id}
-        >
-          <Link
-            href={`https://www.instagram.com/p/${list.code}`}
-            // key={list?.caption?.id}
-            target="_blank"
+      <div className="w-full h-full">
+        {post.items.slice(1, 9).map((list) => (
+          <SwiperSlide
+            className="!h-auto !w-full sm:!w-[320px]"
+            key={list?.caption?.id}
           >
-            <Card className="pt-4 bg-black text-white w-full md:w-[320px] h-full font-Lato">
-              <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
-                <p className="text-tiny uppercase font-bold">Instagram</p>
-                <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
-                  {list?.caption?.text}
-                </h4>
-              </CardHeader>
-              {list.video_url ? (
-                <CardBody className="overflow-hidden justify-center p-0 relative h-full">
-                  <InstaClip videoSrc={list?.video_url} />
-                </CardBody>
-              ) : (
-                <CardBody className="overflow-hidden justify-center p-0 h-full aspect-clip">
-                  <Image
-                    alt="Card background"
-                    className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-                    src={list?.thumbnail_url}
-                    // width={270}
-                    height={320}
-                  />
-                </CardBody>
-              )}
-            </Card>
-          </Link>
-        </SwiperSlide>
-      ))}
-      {clip.map((data, idx) => (
-        <SwiperSlide className="!h-auto !w-[280px] sm:!w-[320px]" key={idx}>
-          <LinkedInPosts data={data} />
-        </SwiperSlide>
-      ))}
+            <Link
+              href={`https://www.instagram.com/p/${list.code}`}
+              // key={list?.caption?.id}
+              target="_blank"
+            >
+              <Card className="pt-4 bg-black text-white w-full md:w-[320px] h-full font-Lato">
+                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
+                  <p className="text-tiny uppercase font-bold">Instagram</p>
+                  <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
+                    {list?.caption?.text}
+                  </h4>
+                </CardHeader>
+                {list.video_url ? (
+                  <CardBody className="overflow-hidden justify-center p-0 relative h-full">
+                    <InstaClip videoSrc={list?.video_url} />
+                  </CardBody>
+                ) : (
+                  <CardBody className="overflow-hidden justify-center p-0 h-full aspect-clip">
+                    <Image
+                      alt="Card background"
+                      className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
+                      src={list?.thumbnail_url}
+                      // width={270}
+                      height={320}
+                    />
+                  </CardBody>
+                )}
+              </Card>
+            </Link>
+          </SwiperSlide>
+        ))}
+        {clip.map((data, idx) => (
+          <SwiperSlide className="!h-auto !w-full sm:!w-[320px]" key={idx}>
+            <LinkedInPosts data={data} />
+          </SwiperSlide>
+        ))}
+      </div>
     </Swiper>
   );
 };

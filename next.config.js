@@ -11,6 +11,9 @@ const nextConfig = {
         hostname: "picsum.photos",
       },
     ],
+  },
+  env:{
+    RapidAPI_Key : "2ac4984ffemsh2b2c0b79629cb4ep152f64jsnefb888ff6c68"
   }
 }
 

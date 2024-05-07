@@ -88,22 +88,27 @@ body::-webkit-scrollbar-thumb {
   color: default !important;
   padding: 30px;
   border-radius: 30px;
-  /* position: absolute!important; */
 }
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   .swiper-button-next, 
   .swiper-button-prev{
     display: none !important;
 }
-}
+} */
 
 /* .swiper-button-next{
   bottom: 25px!important;
   right: 25px!important;
 } */
 
-@media only screen and (min-width: 769px) {
+/* CSS Styles for social media */
+
+/* .swiper-wrapper{
+  gap: 30px;
+} */
+
+/* @media only screen and (min-width: 769px) {
   .swiper-slide:first-child {
     transition: transform 100ms;
   }
@@ -137,7 +142,8 @@ body::-webkit-scrollbar-thumb {
   .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
     transform: translateX(-55%);
   }
-}
+
+} */
 
 /* .button-next{
   background-color: blue;

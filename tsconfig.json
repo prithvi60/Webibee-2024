@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/InstaClip.jsx", "components/InstaPost.jsx", "libs/PostInsta.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/InstaClip.jsx", "components/InstaPost.jsx", "libs/PostInsta.jsx", "components/LinkedInPosts.jsx"],
   "exclude": ["node_modules"]
 }

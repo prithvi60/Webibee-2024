@@ -17,7 +17,8 @@ module.exports = {
         Caveat: 'var(--font-caveat)',
       },
       aspectRatio: {
-        box : "3 / 4"
+        box : "3 / 4",
+        clip : "9 / 16"
       },
       backgroundImage: {
         // 'bg-img-1': "url('/img-1.png')",

@@ -322,6 +322,6 @@ export const knowmore = [
 
 export const clip = [
     {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/img1.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", videoSrc :"/reel.mp4"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
     {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/img1.jpg"},
 ]

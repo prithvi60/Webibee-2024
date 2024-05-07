@@ -1,6 +1,6 @@
+"use client";
 
 import { InstaPost } from "./InstaPost";
-import { LinkedInPosts } from "./LinkedInPosts";
 
 const SocialMedia = () => {
   return (
@@ -12,8 +12,13 @@ const SocialMedia = () => {
         </h1>
         <hr className="w-12 md:w-56 mt-4 mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>
-      <InstaPost />
-      <LinkedInPosts />
+      
+        {/* <div className="flex items-center gap-5 flex-wrap pb-10"> */}
+          {/* <SwiperSlide className="!w-[280px] !h-[350px] md:!w-[470px] md:!h-[500px] bg-contain bg-center relative group !my-6"> */}
+            <InstaPost />
+            {/* <LinkedInPosts /> */}
+          {/* </SwiperSlide> */}
+        {/* </div> */}
     </section>
   );
 };

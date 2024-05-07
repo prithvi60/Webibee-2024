@@ -21,7 +21,7 @@ const InstaClip = ({videoSrc}) => {
         muted
         loop
         preload="auto"
-        className={`w-full h-[320px] object-cover object-center`}
+        className={`w-full h-full aspect-clip object-cover object-top`}
         ref={videoRef}
       >
         <source src={videoSrc} type="video/mp4" />

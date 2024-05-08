@@ -61,7 +61,7 @@ export default function Workflow() {
   });
 
   return (
-    <section className="padding-variable bg-primary">
+    <section className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary">
       <div className="pb-10 mx-auto">
         <h1 className="font-Montserrat text-5xl md:text-7xl text-default font-medium flex justify-center items-center gap-5">
           <span className="hidden md:block"> Our </span>Workflow

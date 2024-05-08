@@ -4,7 +4,7 @@ import { InstaPost } from "./InstaPost";
 
 const SocialMedia = () => {
   return (
-    <section className="padding-variable bg-primary">
+    <section className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary">
       <div className="mx-auto pb-14">
         <h1 className="font-Montserrat font-medium text-5xl md:text-7xl text-center text-white capitalize">
           {/* <span className="hidden md:block">social</span> media */}

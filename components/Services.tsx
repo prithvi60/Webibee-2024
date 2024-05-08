@@ -17,7 +17,7 @@ export default function Services() {
   } else
     return (
       <Element
-        className="py-2.5 md:px-10 lg:p-[60px] space-y-3 md:space-y-4"
+        className="py-2.5 w-screen space-y-3 md:space-y-4"
         name="Services"
       >
         <Marquee pauseOnHover speed={70} autoFill={true}>

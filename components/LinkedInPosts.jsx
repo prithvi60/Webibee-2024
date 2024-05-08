@@ -2,11 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import Link from "next/link";
+import InstaClip, { LinkedInClip } from "./InstaClip";
 
 export const LinkedInPosts = ({ data }) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [post, setPost] = useState(null);
-
   // useEffect(() => {
   //   async function fetchLinkedInData() {
   //     const url = "https://linkedin-data-scraper.p.rapidapi.com/profile_updates";
@@ -51,95 +49,59 @@ export const LinkedInPosts = ({ data }) => {
   // }
 
   return (
-    // <div >
-    <Link href={"#"} >
-      <Card className="pt-4 bg-black text-white w-full md:w-[320px] h-full font-Lato">
+    <Link href={data?.postUrl}>
+      <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
           <p className="text-tiny uppercase font-bold">LinkedIn</p>
           {/* <small className="text-default-500 mt-1.5">Prithvi_bytes</small> */}
           <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
-            {data.desc}
+            {data?.text}
           </h4>
+          {data.article.title && (
+            <h4 className="text-base font-semibold text-white mt-4">
+              {data?.article?.title}
+            </h4>
+          )}
         </CardHeader>
-        <CardBody className="overflow-hidden justify-center p-0">
-          <Image
-            alt="Card background"
-            className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-            src={data.img}
-            // width={270}
-            height={320}
-          />
-        </CardBody>
+        {
+          data.video ? (
+            <CardBody className="overflow-hidden justify-center p-0 relative h-full">
+              <LinkedInClip videoSrc={data?.video[0].url} />
+            </CardBody>
+          ) : (
+            // data.article.title ?
+            <CardBody className="overflow-hidden justify-center p-0 h-[350px]">
+              <Image
+                alt="Card background"
+                className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
+                src={"/article-mg.jpg"}
+                // width={270}
+                height={50}
+              />
+            </CardBody>
+          )
+          // :
+          // (
+          //   <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
+          //     <Image
+          //       alt="Card background"
+          //       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
+          //       src={data?.image[0].url}
+          //       // width={270}
+          //       height={50}
+          //     />
+          //   </CardBody>
+          // )
+        }
+
+        {/* */}
       </Card>
     </Link>
   );
 };
 
-{
-  /* <Link href={"#"}>
-        <Card className="pt-4 bg-black text-white w-full sm:w-[320px] min-h-[225px] font-Lato">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
-            <p className="text-tiny uppercase font-bold">Instagram post</p>
-            <small className="text-default-500 mt-1.5">Prithvi_bytes</small>
-            <h4 className="font-bold text-lg leading-snug tracking-wide mt-5">
-              Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Est dolores maiores cupiditate
-            </h4>
-          </CardHeader>
-          <CardBody className="overflow-hidden justify-center p-0">
-            <Image
-              alt="Card background"
-              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-              src="/img1.jpg"
-              // width={270}
-              height={250}
-            />
-          </CardBody>
-        </Card>
-      </Link>
-      <Link href={"#"}>
-        <Card className="pt-4 bg-black text-white w-full sm:w-[320px] min-h-[225px] font-Lato">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
-            <p className="text-tiny uppercase font-bold">Instagram post</p>
-            <small className="text-default-500 mt-1.5">Prithvi_bytes</small>
-            <h4 className="font-bold text-lg leading-snug tracking-wide mt-5">
-              Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Est dolores maiores cupiditate
-            </h4>
-          </CardHeader>
-          <CardBody className="overflow-hidden justify-center p-0">
-            <Image
-              alt="Card background"
-              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-              src="/img1.jpg"
-              // width={270}
-              height={250}
-            />
-          </CardBody>
-        </Card>
-      </Link>
-      <Link href={"#"}>
-        <Card className="pt-4 bg-black text-white w-full sm:w-[320px] min-h-[225px] font-Lato">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
-            <p className="text-tiny uppercase font-bold">Instagram post</p>
-            <small className="text-default-500 mt-1.5">Prithvi_bytes</small>
-            <h4 className="font-bold text-lg leading-snug tracking-wide mt-5">
-              Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Est dolores maiores cupiditate
-            </h4>
-          </CardHeader>
-          <CardBody className="overflow-hidden justify-center p-0">
-            <Image
-              alt="Card background"
-              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-              src="/img1.jpg"
-              // width={270}
-              height={250}
-            />
-          </CardBody>
-        </Card>
-      </Link> */
-}
-{
-  /* </div> */
-}
+// text
+// postUrl
+// image[0].url
+// video[0].url
+// article.title

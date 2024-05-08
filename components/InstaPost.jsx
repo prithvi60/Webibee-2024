@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import Link from "next/link";
-import InstaClip from "./InstaClip";
+import { InstaClip } from "./InstaClip";
 import { useEffect, useState } from "react";
 import { LinkedInPosts } from "./LinkedInPosts";
 import { clip } from "@/libs/data";
@@ -13,6 +13,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 export const InstaPost = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [post, setPost] = useState(null);
+  const [linkedInPost, setLinkedInPost] = useState(null);
 
   const url =
     "https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=prithvi_bytes";
@@ -23,6 +24,16 @@ export const InstaPost = () => {
       "X-RapidAPI-Host": "instagram-scraper-api2.p.rapidapi.com",
     },
   };
+
+  // const urlForLinkedIn =
+  //   "https://linkedin-api8.p.rapidapi.com/get-profile-posts?username=prithvi-n";
+  // const optionsForLinkedIn = {
+  //   method: "GET",
+  //   headers: {
+  //     "X-RapidAPI-Key": "2ac4984ffemsh2b2c0b79629cb4ep152f64jsnefb888ff6c68",
+  //     "X-RapidAPI-Host": "linkedin-api8.p.rapidapi.com",
+  //   },
+  // };
 
   useEffect(() => {
     async function fetchInstaData() {
@@ -43,6 +54,25 @@ export const InstaPost = () => {
     fetchInstaData();
   }, []);
 
+  // useEffect(() => {
+  //   async function fetchLinkedInData() {
+  //     try {
+  //       const response = await fetch(urlForLinkedIn, optionsForLinkedIn);
+  //       const result = await response.json();
+  //       // console.log(result.data);
+  //       const data = result.data;
+  //       setLinkedInPost(data);
+  //       setIsLoading(false);
+  //     } catch (error) {
+  //       return {
+  //         error: error.message,
+  //         // console.error(error);
+  //       };
+  //     }
+  //   }
+  //   fetchLinkedInData();
+  // }, []);
+
   if (isLoading) {
     return (
       <div className="text-center text-3xl w-full h-full text-white font-bold">
@@ -50,11 +80,14 @@ export const InstaPost = () => {
       </div>
     );
   }
+  console.log(post);
+  // console.log(linkedInPost[1].image[0].url);
+  // console.log(typeof linkedInPost);
 
   return (
     <Swiper
       centeredSlides={true}
-      slidesPerView={3}
+      slidesPerView={5}
       spaceBetween={50}
       grabCursor={true}
       breakpoints={{
@@ -62,7 +95,7 @@ export const InstaPost = () => {
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        768: {
+        640: {
           slidesPerView: 2,
           spaceBetween: 30,
         },
@@ -70,23 +103,24 @@ export const InstaPost = () => {
           slidesPerView: 3,
           spaceBetween: 40,
         },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
       }}
       className="mySwiper"
     >
       <SlideNextButton />
       <SlidePrevButton />
-      <div className="w-full h-full">
+      <div className="max-w-7xl w-max">
         {post.items.slice(1, 9).map((list) => (
-          <SwiperSlide
-            className="!h-auto !w-full sm:!w-[320px]"
-            key={list?.caption?.id}
-          >
+          <SwiperSlide key={list?.caption?.id}>
             <Link
               href={`https://www.instagram.com/p/${list.code}`}
               // key={list?.caption?.id}
               target="_blank"
             >
-              <Card className="pt-4 bg-black text-white w-full md:w-[320px] h-full font-Lato">
+              <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
                   <p className="text-tiny uppercase font-bold">Instagram</p>
                   <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
@@ -98,13 +132,13 @@ export const InstaPost = () => {
                     <InstaClip videoSrc={list?.video_url} />
                   </CardBody>
                 ) : (
-                  <CardBody className="overflow-hidden justify-center p-0 h-full aspect-clip">
+                  <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
                     <Image
                       alt="Card background"
                       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
                       src={list?.thumbnail_url}
                       // width={270}
-                      height={320}
+                      height={50}
                     />
                   </CardBody>
                 )}
@@ -112,11 +146,11 @@ export const InstaPost = () => {
             </Link>
           </SwiperSlide>
         ))}
-        {clip.map((data, idx) => (
-          <SwiperSlide className="!h-auto !w-full sm:!w-[320px]" key={idx}>
+        {/* {linkedInPost.slice(1, 9).map((data, idx) => (
+          <SwiperSlide key={idx}>
             <LinkedInPosts data={data} />
           </SwiperSlide>
-        ))}
+        ))} */}
       </div>
     </Swiper>
   );

@@ -16,7 +16,7 @@ export default function FAQ() {
       "p-4 md:p-5 font-Lato text-base md:text-lg text-default bg-secondary font-medium",
   };
   return (
-    <Element className="padding-variable bg-primary" name="FAQ">
+    <Element className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary" name="FAQ">
       <div className="pb-14 mx-auto">
         <h1 className="hidden md:block font-Montserrat text-5xl md:text-7xl text-center text-default pb-6 font-medium">
           Frequently Asked Questions

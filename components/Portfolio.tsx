@@ -16,7 +16,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 export default function Portfolio() {
   return (
     <Element
-      className="padding-variable bg-primary mt-8 md:mt-16"
+      className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary mt-8 md:mt-16"
       name="Portfolio"
     >
       <div className="mx-auto">

@@ -321,7 +321,16 @@ export const knowmore = [
 // sample data
 
 export const clip = [
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/img1.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
     {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/img1.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
+    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
 ]

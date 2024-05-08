@@ -15,7 +15,7 @@ import Chart from './Chart';
 
 export default function ClientHighlight() {
   return (
-    <section className="padding-variable t">
+    <section className="padding-variable py-6 md:py-10 lg:py-[60px]">
       <div className="pb-10 mx-auto">
         <h2 className="font-Montserrat text-5xl md:text-7xl text-center text-default capitalize text-gradient">
         Case Study Highlight

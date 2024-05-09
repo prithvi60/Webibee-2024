@@ -1,3 +1,6 @@
+import { image } from "@nextui-org/react";
+import { title } from "process";
+
 // HERO
 export const IMG = [
   { src: "/img-1.jpg", ratio: "aspect-video" },
@@ -317,20 +320,76 @@ export const knowmore = [
   },
 ];
 
-
 // sample data
 
 export const clip = [
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"img1.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-    {desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat", img :"/article-mg.jpg"},
-]
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "img1.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "img1.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "img1.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+  {
+    desc: "Frontend Radio Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores maiores cupiditat",
+    img: "/article-mg.jpg",
+  },
+];
+
+export const linkedInPostData = [
+  {
+    text: "𝑼𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈 𝑾𝒆𝒃 𝑽𝒊𝒕𝒂𝒍𝒔 𝑪𝒐𝒏𝒕𝒅: 𝑻𝒊𝒎𝒆 𝒕𝒐 𝑭𝒊𝒓𝒔𝒕 𝑩𝒚𝒕𝒆 (𝑻𝑻𝑭𝑩) To ensure the websites are performing well for users and google ranking TTFB is important .It delivers a fast and responsive user experience.𝑾𝒉𝒂𝒕 𝒊𝒔 𝑻𝑻𝑭𝑩? Time to First Byte (TTFB) is a web performance metric that measures the time it takes for a browser to receive the first byte of data from a web server after requesting a webpage. 𝑾𝒉𝒚 𝒊𝒔 𝑻𝑻𝑭𝑩 𝑰𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕?. 𝑼𝒔𝒆𝒓 𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒆: A fast TTFB contributes to a quick loading website, which is crucial for providing a positive user experience. Users are more likely to stay and engage with a site that loads quickly.-𝑺𝒆𝒂𝒓𝒄𝒉 𝑬𝒏𝒈𝒊𝒏𝒆 𝑹𝒂𝒏𝒌𝒊𝒏𝒈: Search engines like Google consider page speed as a ranking factor. A slow TTFB can negatively impact your website's search engine ranking. 𝑪𝒐𝒏𝒗𝒆𝒓𝒔𝒊𝒐𝒏 𝑹𝒂𝒕𝒆𝒔: Faster websites tend to have higher conversion rates. A slow TTFB can lead to increased bounce rates and lower conversion rates. 𝑹𝒆𝒂𝒍-𝒘𝒐𝒓𝒍𝒅 𝑬𝒙𝒂𝒎𝒑𝒍𝒆: Imagine a customer visiting your e-commerce website. A slow TTFB might make them wait longer to see product listings, leading to frustration and potentially leaving your site for a competitor with faster loading times.",
+    postUrl:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7193117187920826368/",
+    image: [
+      {
+        url: "https://ik.imagekit.io/webibee/linkedinimg.jpg?updatedAt=1715253470590",
+      },
+    ],
+  },
+  {
+    text: "Exploring AI integration on web.dev to push web development boundaries.There is a lot of information in the AI world. As a web developer, one of my main ways to consume practical AI information is through the articles from their website. They provide ideas and tools that are focused on the developer audience. By the way, the information is curated by the team at Google.Check out Artificial Intelligence in their explore section. I'm currently learning about RAG-based possibilities in websites.",
+    postUrl:
+      "https://www.linkedin.com/posts/prithvi-n_artificial-intelligence-webdev-activity-7190583082746286080-yNkR/",
+    article: {
+      title: "Artificial Intelligence | web.dev",
+    },
+  },
+];

@@ -49,7 +49,7 @@ export const LinkedInPosts = ({ data }) => {
   // }
 
   return (
-    <Link href={data?.postUrl}>
+    <Link href={data?.postUrl} target="_blank">
       <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
           <p className="text-tiny uppercase font-bold">LinkedIn</p>
@@ -57,42 +57,60 @@ export const LinkedInPosts = ({ data }) => {
           <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
             {data?.text}
           </h4>
-          {data.article.title && (
+          {data?.article?.title && (
             <h4 className="text-base font-semibold text-white mt-4">
               {data?.article?.title}
             </h4>
           )}
         </CardHeader>
-        {
+        {data?.article?.title ? (
+          <CardBody className="overflow-hidden justify-center p-0 h-[350px]">
+            <Image
+              alt="Card background"
+              className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
+              src={"/article-mg.jpg"}
+              height={50}
+            />
+          </CardBody>
+        ) : (
+          <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
+            <Image
+              alt="Card background"
+              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
+              src={data?.image[0].url}
+              // width={270}
+              height={50}
+            />
+          </CardBody>
+        )}
+        {/* {
           data.video ? (
             <CardBody className="overflow-hidden justify-center p-0 relative h-full">
               <LinkedInClip videoSrc={data?.video[0].url} />
             </CardBody>
           ) : (
-            // data.article.title ?
             <CardBody className="overflow-hidden justify-center p-0 h-[350px]">
               <Image
                 alt="Card background"
                 className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
                 src={"/article-mg.jpg"}
+                height={50}
+              />
+            </CardBody>
+          )
+          :
+          (
+            <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
+              <Image
+                alt="Card background"
+                className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
+                src={data?.image[0].url}
                 // width={270}
                 height={50}
               />
             </CardBody>
           )
-          // :
-          // (
-          //   <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
-          //     <Image
-          //       alt="Card background"
-          //       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
-          //       src={data?.image[0].url}
-          //       // width={270}
-          //       height={50}
-          //     />
-          //   </CardBody>
-          // )
-        }
+        } */}
 
         {/* */}
       </Card>

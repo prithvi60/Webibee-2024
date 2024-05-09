@@ -51,9 +51,10 @@ export const LinkedInClip = ({videoSrc}) => {
   return (
     <div className="relative shadow-md shadow-text-50">
       <video
-        muted
+        // muted
+        // controls
         loop
-        preload="auto"
+        preload="metadata"
         className={`w-full aspect-clip object-cover object-top`}
         ref={videoRef}
       >

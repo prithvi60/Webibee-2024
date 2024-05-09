@@ -7,13 +7,13 @@ import Link from "next/link";
 import { InstaClip } from "./InstaClip";
 import { useEffect, useState } from "react";
 import { LinkedInPosts } from "./LinkedInPosts";
-import { clip } from "@/libs/data";
+import { clip, linkedInPostData } from "@/libs/data";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 export const InstaPost = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [post, setPost] = useState(null);
-  const [linkedInPost, setLinkedInPost] = useState(null);
+  // const [linkedInPost, setLinkedInPost] = useState(null);
 
   const url =
     "https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=prithvi_bytes";
@@ -61,6 +61,7 @@ export const InstaPost = () => {
   //       const result = await response.json();
   //       // console.log(result.data);
   //       const data = result.data;
+  //       console.log(data);
   //       setLinkedInPost(data);
   //       setIsLoading(false);
   //     } catch (error) {
@@ -80,8 +81,8 @@ export const InstaPost = () => {
       </div>
     );
   }
-  console.log(post);
-  // console.log(linkedInPost[1].image[0].url);
+  // console.log(post);
+  // console.log(linkedInPost);
   // console.log(typeof linkedInPost);
 
   return (
@@ -113,7 +114,7 @@ export const InstaPost = () => {
       <SlideNextButton />
       <SlidePrevButton />
       <div className="max-w-7xl w-max">
-        {post.items.slice(1, 9).map((list) => (
+        {post?.items?.slice(1, 9).map((list) => (
           <SwiperSlide key={list?.caption?.id}>
             <Link
               href={`https://www.instagram.com/p/${list.code}`}
@@ -127,16 +128,16 @@ export const InstaPost = () => {
                     {list?.caption?.text}
                   </h4>
                 </CardHeader>
-                {list.video_url ? (
+                {list.is_video === true  ? (
                   <CardBody className="overflow-hidden justify-center p-0 relative h-full">
-                    <InstaClip videoSrc={list?.video_url} />
+                    <InstaClip videoSrc={list?.video_versions[0]?.url} />
                   </CardBody>
                 ) : (
                   <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
                     <Image
                       alt="Card background"
                       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-                      src={list?.thumbnail_url}
+                      src={list?.image_versions?.items[0].url}
                       // width={270}
                       height={50}
                     />
@@ -146,11 +147,11 @@ export const InstaPost = () => {
             </Link>
           </SwiperSlide>
         ))}
-        {/* {linkedInPost.slice(1, 9).map((data, idx) => (
+        {linkedInPostData?.map((data, idx) => (
           <SwiperSlide key={idx}>
             <LinkedInPosts data={data} />
           </SwiperSlide>
-        ))} */}
+        ))}
       </div>
     </Swiper>
   );

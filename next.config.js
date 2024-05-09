@@ -18,6 +18,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "dms.licdn.com",
       },
+      {
+        protocol: "https",
+        hostname: "scontent-ams2-1.cdninstagram.com",
+      },
     ],
   },
   env:{
@@ -26,3 +30,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+

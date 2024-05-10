@@ -47,7 +47,7 @@ const NavBar = () => {
 
       <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0">
         <NavbarBrand className=" mx-2 animate-drip-expand">
-          <div className="relative h-11 w-11 animate-pulse">
+          <div className="relative h-11 w-11 animate-pulse cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <Image
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"

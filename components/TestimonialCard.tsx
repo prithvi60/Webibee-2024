@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const TestimonialCard = ({ list }: { list: any }) => {
   return (
-    <Card className="max-w-[280px] md:min-h-[320px] md:!max-w-md first:ms-2 min-h-[320px] max-h-[320px] border border-warning bg-black">
+    <Card className="max-w-[280px] md:!max-w-md first:ms-2 min-h-[320px] max-h-[320px] border border-warning bg-black">
       <CardHeader className="justify-start gap-5 px-6 py-4 ">
         {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-default">
           Family Counselling
@@ -21,7 +21,7 @@ const TestimonialCard = ({ list }: { list: any }) => {
           src={list.img}
           width={55}
           title={list.country}
-          className="rounded-full "
+          className="rounded-full"
         />
         {/* <Avatar title='country logo' radius="full" size="lg" src={list.img} alt={`${list.country} logo`}  className="border-danger border-5" /> */}
         <div className="flex flex-col">

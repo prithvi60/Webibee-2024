@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 export default function Contact() {
   // const formRef = useRef(null);
   return (
-    <Element className="padding-variable bg-primary" name="Contact">
+    <Element className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary" name="Contact">
       <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
         Contact <span className="hidden md:block">Us</span>
       </h1>

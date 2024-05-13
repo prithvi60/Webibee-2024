@@ -1,8 +1,27 @@
 "use client";
 
 import { InstaPost } from "./InstaPost";
+import { Get_InstaPosts } from "../graphql/queries";
+import { useQuery } from "@apollo/client";
 
 const SocialMedia = () => {
+  const { data } = useQuery(Get_InstaPosts);
+
+  // if (loading)
+  //   return (
+  //     <div className="text-center text-3xl w-full h-full text-white font-bold">
+  //       Loading....
+  //     </div>
+  //   );
+
+  // if (error)
+  //   return (
+  //     <div className="text-center text-3xl w-full h-full text-white font-bold capitalize">
+  //       Oops!, something went wrong....
+  //     </div>
+  //   );
+
+
   return (
     <section className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary">
       <div className="mx-auto pb-14">
@@ -12,13 +31,10 @@ const SocialMedia = () => {
         </h1>
         <hr className="w-12 md:w-56 mt-4 mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>
-      
-        {/* <div className="flex items-center gap-5 flex-wrap pb-10"> */}
-          {/* <SwiperSlide className="!w-[280px] !h-[350px] md:!w-[470px] md:!h-[500px] bg-contain bg-center relative group !my-6"> */}
-            <InstaPost />
-            {/* <LinkedInPosts /> */}
-          {/* </SwiperSlide> */}
-        {/* </div> */}
+
+      <div className="flex items-center gap-5 flex-wrap pb-10">
+      <InstaPost posts={data?.insta_Posts} />
+      </div>
     </section>
   );
 };

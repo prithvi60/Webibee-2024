@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import Link from "next/link";
-import InstaClip, { LinkedInClip } from "./InstaClip";
+import { LinkedInClip } from "./InstaClip";
 
 export const LinkedInPosts = ({ data }) => {
   // useEffect(() => {
@@ -57,14 +57,31 @@ export const LinkedInPosts = ({ data }) => {
           <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
             {data?.text}
           </h4>
-          {data?.article?.title && (
+          {data?.article && (
             <h4 className="text-base font-semibold text-white mt-4">
-              {data?.article?.title}
+              {data?.article}
             </h4>
           )}
         </CardHeader>
-        {data?.article?.title ? (
-          <CardBody className="overflow-hidden justify-center p-0 h-[350px]">
+        {data?.imageSrc && (
+          <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
+            <Image
+              alt="Card background"
+              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
+              src={data?.imageSrc}
+              // width={270}
+              height={80}
+            />
+          </CardBody>
+        )}
+        {data?.videoSrc && (
+          <CardBody className="overflow-hidden justify-center p-0 relative h-full">
+            <LinkedInClip videoSrc={data?.videoSrc} />
+          </CardBody>
+        )}
+
+        {data?.article && (
+          <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
             <Image
               alt="Card background"
               className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
@@ -72,47 +89,7 @@ export const LinkedInPosts = ({ data }) => {
               height={50}
             />
           </CardBody>
-        ) : (
-          <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
-            <Image
-              alt="Card background"
-              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
-              src={data?.image[0].url}
-              // width={270}
-              height={50}
-            />
-          </CardBody>
         )}
-        {/* {
-          data.video ? (
-            <CardBody className="overflow-hidden justify-center p-0 relative h-full">
-              <LinkedInClip videoSrc={data?.video[0].url} />
-            </CardBody>
-          ) : (
-            <CardBody className="overflow-hidden justify-center p-0 h-[350px]">
-              <Image
-                alt="Card background"
-                className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
-                src={"/article-mg.jpg"}
-                height={50}
-              />
-            </CardBody>
-          )
-          :
-          (
-            <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
-              <Image
-                alt="Card background"
-                className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
-                src={data?.image[0].url}
-                // width={270}
-                height={50}
-              />
-            </CardBody>
-          )
-        } */}
-
-        {/* */}
       </Card>
     </Link>
   );

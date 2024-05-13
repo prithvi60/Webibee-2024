@@ -5,86 +5,29 @@ import "swiper/css";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import Link from "next/link";
 import { InstaClip } from "./InstaClip";
-import { useEffect, useState } from "react";
 import { LinkedInPosts } from "./LinkedInPosts";
-import { clip, linkedInPostData } from "@/libs/data";
+import { linkedInPostData } from "@/libs/data";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { useQuery } from "@apollo/client";
+import { Get_LinkedInPosts } from "@/graphql/queries";
 
-export const InstaPost = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [post, setPost] = useState(null);
-  // const [linkedInPost, setLinkedInPost] = useState(null);
+export const InstaPost = ({ posts }) => {
+  const { loading, error, data } = useQuery(Get_LinkedInPosts);
 
-  const url =
-    "https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=prithvi_bytes";
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "2ac4984ffemsh2b2c0b79629cb4ep152f64jsnefb888ff6c68",
-      "X-RapidAPI-Host": "instagram-scraper-api2.p.rapidapi.com",
-    },
-  };
-
-  // const urlForLinkedIn =
-  //   "https://linkedin-api8.p.rapidapi.com/get-profile-posts?username=prithvi-n";
-  // const optionsForLinkedIn = {
-  //   method: "GET",
-  //   headers: {
-  //     "X-RapidAPI-Key": "2ac4984ffemsh2b2c0b79629cb4ep152f64jsnefb888ff6c68",
-  //     "X-RapidAPI-Host": "linkedin-api8.p.rapidapi.com",
-  //   },
-  // };
-
-  useEffect(() => {
-    async function fetchInstaData() {
-      try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        // console.log(result.data);
-        const data = result.data;
-        setPost(data);
-        setIsLoading(false);
-      } catch (error) {
-        return {
-          error: error.message,
-          // console.error(error);
-        };
-      }
-    }
-    fetchInstaData();
-  }, []);
-
-  // useEffect(() => {
-  //   async function fetchLinkedInData() {
-  //     try {
-  //       const response = await fetch(urlForLinkedIn, optionsForLinkedIn);
-  //       const result = await response.json();
-  //       // console.log(result.data);
-  //       const data = result.data;
-  //       console.log(data);
-  //       setLinkedInPost(data);
-  //       setIsLoading(false);
-  //     } catch (error) {
-  //       return {
-  //         error: error.message,
-  //         // console.error(error);
-  //       };
-  //     }
-  //   }
-  //   fetchLinkedInData();
-  // }, []);
-
-  if (isLoading) {
+  if (loading)
     return (
       <div className="text-center text-3xl w-full h-full text-white font-bold">
         Loading....
       </div>
     );
-  }
-  // console.log(post);
-  // console.log(linkedInPost);
-  // console.log(typeof linkedInPost);
 
+  if (error)
+    return (
+      <div className="text-center text-3xl w-full h-full text-white font-bold capitalize">
+        Oops!, something went wrong....
+      </div>
+    );
+    
   return (
     <Swiper
       centeredSlides={true}
@@ -114,30 +57,37 @@ export const InstaPost = () => {
       <SlideNextButton />
       <SlidePrevButton />
       <div className="max-w-7xl w-max">
-        {post?.items?.slice(1, 9).map((list) => (
-          <SwiperSlide key={list?.caption?.id}>
+        {data?.linkedIn_Posts?.map((list, idx) => (
+          <SwiperSlide key={idx}>
+            <LinkedInPosts data={list} />
+          </SwiperSlide>
+        ))}
+        {posts?.map((list, idx) => (
+          <SwiperSlide>
             <Link
-              href={`https://www.instagram.com/p/${list.code}`}
+              // href={`https://www.instagram.com/p/${list.code}`}
+              href={list?.postUrl}
               // key={list?.caption?.id}
               target="_blank"
+              key={idx}
             >
               <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
                   <p className="text-tiny uppercase font-bold">Instagram</p>
                   <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
-                    {list?.caption?.text}
+                    {list?.text}
                   </h4>
                 </CardHeader>
-                {list.is_video === true  ? (
+                {list?.isVideo === true ? (
                   <CardBody className="overflow-hidden justify-center p-0 relative h-full">
-                    <InstaClip videoSrc={list?.video_versions[0]?.url} />
+                    <InstaClip videoSrc={list?.videoSrc} />
                   </CardBody>
                 ) : (
                   <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
                     <Image
                       alt="Card background"
                       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
-                      src={list?.image_versions?.items[0].url}
+                      src={list?.imageSrc}
                       // width={270}
                       height={50}
                     />
@@ -145,11 +95,6 @@ export const InstaPost = () => {
                 )}
               </Card>
             </Link>
-          </SwiperSlide>
-        ))}
-        {linkedInPostData?.map((data, idx) => (
-          <SwiperSlide key={idx}>
-            <LinkedInPosts data={data} />
           </SwiperSlide>
         ))}
       </div>

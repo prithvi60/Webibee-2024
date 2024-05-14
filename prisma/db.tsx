@@ -12,8 +12,8 @@ if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 // export default prisma;
 // module.exports = prisma;
 
-const linkedIn_Key = process.env.RapidAPI_Key_LinkedIn;
-const Insta_Key = process.env.RapidAPI_Key_Insta;
+const linkedIn_Key = process.env.NEXT_PUBLIC_RapidAPI_Key_LinkedIn;
+const Insta_Key = process.env.NEXT_PUBLIC_RapidAPI_Key_Insta;
 
 async function main() {
   // linedin posts

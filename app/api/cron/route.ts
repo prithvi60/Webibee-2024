@@ -8,18 +8,8 @@ export async function GET(req: NextRequest) {
     return new NextResponse("Unauthorized", { status: 401 });
   }
 
-  // Your cron job logic here
   try {
-    main()
-      .catch(async (e) => {
-        console.error(e);
-        process.exit(1);
-      })
-      .finally(async () => {
-        console.log("Cron job executed as expected");
-
-        await prisma.$disconnect();
-      });
+    await main();
     return NextResponse.json({ message: "Cron job executed successfully" });
   } catch (error) {
     console.error("Error executing cron job:", error);

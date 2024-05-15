@@ -56,6 +56,7 @@ export async function main() {
         data: posts,
       });
     }
+    console.log("main code success")
   } catch (error) {
     console.error(error);
   }

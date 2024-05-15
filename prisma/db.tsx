@@ -33,7 +33,7 @@ async function main() {
     const response = await fetch(linkedInUrl, linkedInOptions);
     const result = await response.json();
     let linkedInCount = await prisma.linkedIn.count();
-    console.log("prisma is running");
+    console.log("prisma is running!");
     const posts = await result.data.slice(0, 8).map((item: any) => {
       return {
         text: item?.text,

@@ -5,8 +5,11 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const client = new ApolloClient({
-    uri: "http://localhost:3000/api/graphql",
+    uri:process.env.NODE_ENV !== "production"? "http://localhost:3000/api/graphql":"http://webibee.com/api/graphql",
     cache: new InMemoryCache(),
+    // fetchOptions: {
+    //   mode: 'no-cors', // Use 'no-cors' mode
+    // },
   });
   return (
     <ApolloProvider client={client}>

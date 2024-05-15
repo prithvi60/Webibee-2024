@@ -6,12 +6,13 @@ import { prisma } from "../../../prisma/db";
 import { PrismaClient } from "@prisma/client";
 
 export type ServerType = {
-  prisma : PrismaClient,
-}
+  prisma: PrismaClient;
+};
 
 const apolloServer = new ApolloServer<ServerType>({
   resolvers: resolversPage,
   typeDefs: typeDefsPage,
+  // cors: false, // Disable CORS
 });
 
 const handler = startServerAndCreateNextHandler(apolloServer, {

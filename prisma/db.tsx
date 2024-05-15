@@ -33,7 +33,7 @@ async function main() {
     const response = await fetch(linkedInUrl, linkedInOptions);
     const result = await response.json();
     let linkedInCount = await prisma.linkedIn.count();
-
+    console.log("prisma is running");
     const posts = await result.data.slice(0, 8).map((item: any) => {
       return {
         text: item?.text,
@@ -101,12 +101,13 @@ async function main() {
     console.error(error);
   }
 }
+// Uncomment this later
 
-main()
-  .catch(async (e) => {
-    console.error(e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+// main()
+//   .catch(async (e) => {
+//     console.error(e);
+//     process.exit(1);
+//   })
+//   .finally(async () => {
+//     await prisma.$disconnect();
+//   });

@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 const linkedIn_Key = process.env.NEXT_PUBLIC_RapidAPI_Key_LinkedIn;
 const Insta_Key = process.env.NEXT_PUBLIC_RapidAPI_Key_Insta;
 
-async function main() {
+export async function main() {
   // linedin posts
 
   const linkedInUrl =

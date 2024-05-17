@@ -18,7 +18,6 @@ export const InstaClip = ({videoSrc}) => {
   return (
     <div className="relative shadow-md shadow-text-50">
       <video
-        muted
         loop
         preload="auto"
         className={`w-full aspect-clip object-cover object-top`}

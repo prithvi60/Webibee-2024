@@ -63,7 +63,7 @@ export default function Portfolio() {
                 />
               </Link>
               <h2
-                className="absolute bottom-5 left-10 text-lg md:text-4xl font-semibold  md:opacity-0 transition-all transform md:-translate-y-20 md:duration-1000
+                className="absolute bottom-5 left-10 text-lg md:text-4xl font-semibold md:opacity-0 transition-all transform md:-translate-y-20 md:duration-1000
           opacity-100  translate-y-0 md:group-hover:opacity-100 md:group-hover:translate-y-0 text-default bg-success rounded-md p-2 max-w-[320px] font-Lato"
               >
                 {item.title}

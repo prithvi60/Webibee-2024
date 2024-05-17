@@ -13,6 +13,7 @@ import { Get_LinkedInPosts } from "@/graphql/queries";
 
 export const InstaPost = ({ posts }) => {
   const { loading, error, data } = useQuery(Get_LinkedInPosts);
+  // console.log("gql query from mongo is running");
 
   if (loading)
     return (

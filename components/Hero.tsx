@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
         <Services />
       </section>
-      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none  ">
+      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none">
         <Image
           title="bg gif"
           src={"https://ik.imagekit.io/webibee/Agency/bg_webibee.gif?tr:q-100"}

@@ -25,16 +25,16 @@ const TestimonialCard = ({ list }: { list: any }) => {
         />
         {/* <Avatar title='country logo' radius="full" size="lg" src={list.img} alt={`${list.country} logo`}  className="border-danger border-5" /> */}
         <div className="flex flex-col">
-          <h2 className="text-lg md:text-2xl font-semibold leading-none font-Lato text-default line-clamp-1">
+          <h2 className="text-lg md:text-xl font-semibold leading-none font-Lato text-default line-clamp-1">
             {list.title}
           </h2>
-          <p className="text-sm md:text-base lg:text-lg text-slate-100 font-Lato">
+          <p className="text-base md:text-lg text-slate-100 font-Lato">
             {list.country}
           </p>
         </div>
       </CardHeader>
-      <CardBody className="px-6 py-4 text-small text-default-400 h-auto bg-secondary">
-        <p className="font-Lato text-base tracking-tight text-default line-clamp-6">
+      <CardBody className="px-6 py-4 text-default-400 h-auto bg-secondary">
+        <p className="font-Lato text-base md:text-lg tracking-wide line-clamp-6">
           {list.para}
         </p>
       </CardBody>

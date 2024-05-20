@@ -78,7 +78,7 @@ export default function Services() {
               <div className="px-4 py-3.5 text-xl xl:text-2xl font-medium text-white bg-black md:px-8 font-Lato line-clamp-1 overflow-hidden text-left capitalize">
                 <h4>{service.title}</h4>
               </div>
-              <div className="px-4 md:px-8 py-6 pb-10 text-base font-normal text-white bg-secondary font-Lato line-clamp-3 h-[180px] text-left">
+              <div className="px-4 md:px-8 py-6 pb-10 text-base md:text-lg font-normal text-white bg-secondary font-Lato line-clamp-3 h-[180px] text-left">
                 <p>{service.desc}</p>
               </div>
             </div>

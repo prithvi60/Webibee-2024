@@ -10,7 +10,7 @@ export default function FloatingButton() {
       whileHover={{ scale: 1.1 }}
     >
       <a
-        href="https://wa.me/7358023088?text=Hey.%20I%20Have%20a%20website%20requirement%20!
+        href="https://wa.me/7358023088?text=Hey%20Prithvi.%20We%20need%20to%20connect%20now%20!
         "
         target="_blank"
         rel="noopener noreferrer"

@@ -7,7 +7,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { Element } from "react-scroll";
 import { ourservices } from "@/libs/data";
 import { useEffect, useState } from "react";
-const animation = { duration: 35000, easing: (t:any) => t };
+const animation = { duration: 45000, easing: (t:any) => t };
 
 export default function Services() {
   const [loader, setLoader] = useState(false);
@@ -15,17 +15,17 @@ export default function Services() {
     loop: true,
     renderMode: "performance",
     drag: true,
-    mode: "free",
+    mode: "free-snap",
     // rtl: true,
     breakpoints: {
       "(min-width: 540px)": {
-        slides: { perView: 2, spacing: 40 },
+        slides: { perView: 2, spacing: 30 },
       },
       "(min-width: 1024px)": {
-        slides: { perView: 3, spacing: 40 },
+        slides: { perView: 3, spacing: 30 },
       },
       "(min-width: 1440px)": {
-        slides: { perView: 4, spacing: 40 },
+        slides: { perView: 4, spacing: 30 },
       },
     },
     slides: { perView: 1, spacing: 60 },

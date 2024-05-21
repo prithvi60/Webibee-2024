@@ -81,7 +81,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="px-4 py-6 pb-10 font-normal md:px-8 bg-secondary font-Lato text-base md:text-lg text-white/90 !h-[255px] flex flex-col justify-between items-start">
-            <p className="tracking-wide line-clamp-6">{item.para}</p>
+            <p className="tracking-wide line-clamp-5">{item.para}</p>
           <div className="flex items-center mb-1.5">
             <svg
               className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"

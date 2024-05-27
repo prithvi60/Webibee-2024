@@ -5,49 +5,6 @@ import Link from "next/link";
 import { LinkedInClip } from "./InstaClip";
 
 export const LinkedInPosts = ({ data }) => {
-  // useEffect(() => {
-  //   async function fetchLinkedInData() {
-  //     const url = "https://linkedin-data-scraper.p.rapidapi.com/profile_updates";
-
-  //     const options = {
-  //       method: "POST",
-  //       headers: {
-  //         "content-type": "application/json",
-  //         "X-RapidAPI-Key":
-  //           "2ac4984ffemsh2b2c0b79629cb4ep152f64jsnefb888ff6c68",
-  //         "X-RapidAPI-Host": "linkedin-data-scraper.p.rapidapi.com",
-  //       },
-  //       body: {
-  //         profile_url: "https://www.linkedin.com/in/prithvi-n",
-  //         posts: 10,
-  //         comments: 1,
-  //         reposts: 1,
-  //       },
-  //     };
-
-  //     try {
-  //       const response = await fetch(url, options);
-  //       const result = await response.json();
-  //       console.log(result);
-  //       // setPost(result);
-  //       // setIsLoading(false);
-  //     } catch (error) {
-  //       return {
-  //         error: error.message,
-  //       };
-  //     }
-  //   }
-  //   fetchLinkedInData();
-  // }, []);
-
-  // console.log(post);
-
-  // if (isLoading) {
-  //   return (
-  //     <div className="text-center text-3xl w-full h-full">Loading....</div>
-  //   );
-  // }
-
   return (
     <Link href={data?.postUrl} target="_blank">
       <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
@@ -90,6 +47,18 @@ export const LinkedInPosts = ({ data }) => {
             />
           </CardBody>
         )}
+        {data?.article === "" &&
+          data?.videoSrc === "" &&
+          data?.imageSrc === "" && (
+            <CardBody className="overflow-hidden justify-center p-0 h-[480px]">
+              <Image
+                alt="Card background"
+                className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
+                src={"/Image-folder.jpg"}
+                height={50}
+              />
+            </CardBody>
+          )}
       </Card>
     </Link>
   );

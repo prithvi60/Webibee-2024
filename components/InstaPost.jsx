@@ -13,7 +13,6 @@ import { Get_LinkedInPosts } from "@/graphql/queries";
 
 export const InstaPost = ({ posts }) => {
   const { loading, error, data } = useQuery(Get_LinkedInPosts);
-  // console.log("gql query from mongo is running");
 
   if (loading)
     return (
@@ -28,7 +27,7 @@ export const InstaPost = ({ posts }) => {
         Oops!, something went wrong....
       </div>
     );
-    
+
   return (
     <Swiper
       centeredSlides={true}
@@ -79,11 +78,12 @@ export const InstaPost = ({ posts }) => {
                     {list?.text}
                   </h4>
                 </CardHeader>
-                {list?.isVideo === true ? (
+                {list?.isVideo === true && list?.videoSrc !== "" && (
                   <CardBody className="overflow-hidden justify-center p-0 relative h-full">
                     <InstaClip videoSrc={list?.videoSrc} />
                   </CardBody>
-                ) : (
+                )}
+                {list?.isVideo === false && list?.videoSrc === "" && (
                   <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
                     <Image
                       alt="Card background"

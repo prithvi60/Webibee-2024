@@ -19,14 +19,14 @@ const Hero = () => {
           zIndex: 2,
         }}
       >
-        <h1 className="capitalize  text-6xl md:text-8xl w-full mx-auto tracking-wide font-medium font-Caveat mt-8 md:mt-10 ">
+        <h1 className="w-full mx-auto mt-8 text-6xl font-medium tracking-wide capitalize md:text-8xl font-Caveat md:mt-10 ">
           Websites that stand out
         </h1>
-        <h2 className="capitalize text-md  md:text-xl w-full mx-auto font-Lato font-medium ">
+        <h2 className="w-full mx-auto font-medium capitalize text-md md:text-xl font-Lato ">
           Elevate SEO, Drive Sales, and Set the Standard for Cutting-Edge
           Quality with Our Performance-Optimized Designs
         </h2>
-        <div className="md:pt-24 py-12 ">
+        <div className="py-12 md:pt-24 ">
           <Button
             size="lg"
             radius="lg"
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
         <Services />
       </section>
-      <div className="absolute top-0 left-0 h-screen w-full pointer-events-none">
+      <div className="absolute top-0 left-0 w-full h-screen pointer-events-none">
         <Image
           title="bg gif"
           src={"https://ik.imagekit.io/webibee/Agency/bg_webibee.gif?tr:q-100"}

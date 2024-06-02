@@ -21,6 +21,12 @@ export default function Navlink() {
           </h2>
         </Link>
       ))}
+      <a
+        href="terms"
+        className="text-base md:text-lg hover:text-default/50 hover:animate-pulse cursor-pointer"
+      >
+        T&C
+      </a>
     </div>
   );
 }

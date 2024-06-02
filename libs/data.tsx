@@ -19,7 +19,7 @@ export const Navlinks = [
   // { href: "Services", title: "Services" },
   { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
-  // {href:"Contact",title:"Contact us"},
+  // {href:"/terms",title:"Terms"},
   // {href:"/",title:"Tool"},
 ];
 

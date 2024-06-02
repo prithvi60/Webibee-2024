@@ -226,7 +226,8 @@ export default function Terms() {
       <section className="flex flex-col gap-4">
         <h2 className="text-3xl font-bold mb-6">9. Work Product Ownership</h2>
         <p>
-          (a) All work products, deliverables, or any other materials created by
+          {/* (a) */}
+          All work products, deliverables, or any other materials created by
           Independent Contractor in the performance of the Services under this
           Agreement (collectively, the "Work Product") shall be the sole
           property of the Company. Independent Contractor hereby assigns and
@@ -237,7 +238,7 @@ export default function Terms() {
           to perfect the assignment of such rights to Company or to protect
           Company's interest in such Work Product.
         </p>
-        <p>
+        {/* <p>
           (b) Independent Contractor agrees that all Work Product shall be
           considered “works made for hire” under the U.S. Copyright Act and that
           Company shall be deemed the author of such Work Product. If, for any
@@ -250,7 +251,7 @@ export default function Terms() {
           with Company and execute such documents as may be reasonably necessary
           to assist Company in obtaining or protecting its rights in such Work
           Product.
-        </p>
+        </p> */}
       </section>
     </section>
   );

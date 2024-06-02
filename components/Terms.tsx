@@ -11,7 +11,7 @@ export default function Terms() {
         <h2 className="text-3xl font-bold mb-6">1. Services</h2>
         <p>
           For all purposes of this MSA hereon, the "Independent Contractor"
-          shall be Revenueholic or any of its affiliates, and the counterparty
+          shall be Webibee or any of its affiliates, and the counterparty
           shall be the "Company". Company retains Independent Contractor, and
           Independent Contractor agrees to perform for Company, certain services
           set forth, notwithstanding any other document, in the signed order

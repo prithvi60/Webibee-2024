@@ -11,11 +11,31 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Image from "next/image";
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [hideNav, setHideNav] = React.useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [hideNav, setHideNav] = useState(true);
+  const [percent, setPercent] = useState<number>(0);
+
+  const handleScroll = () => {
+    const ele = document.body;
+    const scrollPosition = window.scrollY; // => scroll position
+    let percentage =
+      ((scrollPosition + window.innerHeight) / ele.clientHeight) * 100;
+    setPercent(Math.trunc(percentage));
+    // console.log(Math.trunc(percentage));
+  };
+
+  // Scroll based color change side effect
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [percent]);
 
   return (
     <Navbar
@@ -23,19 +43,30 @@ const NavBar = () => {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
-      isBlurred
+      isBlurred={false}
       maxWidth="full"
-      style={{
-        opacity: hideNav ? 0 : 1,
-        pointerEvents: hideNav ? "none" : "all",
-        position: hideNav ? "absolute" : "sticky",
-        // display:hideNav ? "none" : "block",
+      style={
+        {
+          // opacity: hideNav ? 0 : 1,
+          // pointerEvents: hideNav ? "none" : "all",
+          // position: hideNav ? "absolute" : "sticky",
+          // display:hideNav ? "none" : "block",
+        }
+      }
+      // onScrollPositionChange={(position) => {
+      //   // console.log("pos", position);
+      //   position > 160 ? setHideNav(false) : setHideNav(true);
+      // }}
+      classNames={{
+        base: [
+          `${
+            percent >= 0 && percent <= 12
+              ? "!bg-transparent shadow-none border-b-0"
+              : "bg-primary shadow-md border-b-2 border-warning"
+          } fixed top-0 left-0 transform transition duration-700 ease-linear font-Lato py-2 xl:px-8`,
+        ],
       }}
-      onScrollPositionChange={(position) => {
-        // console.log("pos", position);
-        position > 160 ? setHideNav(false) : setHideNav(true);
-      }}
-      className={`transform transition duration-700 ease-linear bg-primary font-Lato border-b-2 border-warning py-2 xl:px-8`}
+      // className={``}
     >
       <NavbarContent className="md:hidden !flex-grow-0" justify="start">
         {/* <NavbarMenuToggle className="text-primary" /> */}
@@ -47,7 +78,10 @@ const NavBar = () => {
 
       <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0">
         <NavbarBrand className=" mx-2 animate-drip-expand">
-          <div className="relative h-11 w-11 animate-pulse cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <div
+            className="relative h-11 w-11 animate-pulse cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <Image
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"

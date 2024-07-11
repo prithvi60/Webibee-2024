@@ -28,6 +28,8 @@ export const InstaPost = ({ posts }) => {
       </div>
     );
 
+  // console.log(data);
+  // console.log(posts);
   return (
     <Swiper
       centeredSlides={true}
@@ -63,13 +65,10 @@ export const InstaPost = ({ posts }) => {
           </SwiperSlide>
         ))}
         {posts?.map((list, idx) => (
-          <SwiperSlide>
+          <SwiperSlide key={idx}>
             <Link
-              // href={`https://www.instagram.com/p/${list.code}`}
               href={list?.postUrl}
-              // key={list?.caption?.id}
               target="_blank"
-              key={idx}
             >
               <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
@@ -78,12 +77,11 @@ export const InstaPost = ({ posts }) => {
                     {list?.text}
                   </h4>
                 </CardHeader>
-                {list?.isVideo === true && list?.videoSrc !== "" && (
+                {list?.isVideo === true ? (
                   <CardBody className="overflow-hidden justify-center p-0 relative h-full">
                     <InstaClip videoSrc={list?.videoSrc} />
                   </CardBody>
-                )}
-                {list?.isVideo === false && list?.videoSrc === "" && (
+                ) : (
                   <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
                     <Image
                       alt="Card background"

@@ -22,7 +22,7 @@ export async function main() {
     const linkedInOptions = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": linkedIn_Key,
+        "X-RapidAPI-Key": Insta_Key,
         "X-RapidAPI-Host": "linkedin-api8.p.rapidapi.com",
       },
     };
@@ -31,7 +31,6 @@ export async function main() {
     const linkedInResult = await linkedInResponse.json();
     let linkedInCount = await prisma.linkedIn.count();
     // console.log(linkedInResult.data);
-    
 
     const linkedInPosts = linkedInResult?.data
       ?.slice(0, 8)
@@ -67,7 +66,6 @@ export async function main() {
     const instaResponse = await fetch(instaUrl, instaOptions);
     const instaResult = await instaResponse.json();
     let instaCount = await prisma.instagram.count();
-    // console.log(instaResult.data);
 
     const instaPosts = instaResult?.data?.items
       .slice(1, 9)
@@ -78,6 +76,8 @@ export async function main() {
         videoSrc: item.is_video ? item?.video_versions[0].url : "",
         isVideo: item?.is_video,
       }));
+
+    // console.log(instaPosts);
 
     if (instaCount === 0) {
       await prisma.instagram.createMany({ data: instaPosts });
@@ -94,3 +94,10 @@ export async function main() {
 }
 
 // main()
+//   .catch(async (e) => {
+//     console.error(e);
+//     process.exit(1);
+//   })
+//   .finally(async () => {
+//     await prisma.$disconnect();
+//   });

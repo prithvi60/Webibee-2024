@@ -7,13 +7,13 @@ import { useKeenSlider } from "keen-slider/react";
 import { Element } from "react-scroll";
 import { ourservices } from "@/libs/data";
 import { useEffect, useState } from "react";
-const animation = { duration: 45000, easing: (t:any) => t };
+const animation = { duration: 30000, easing: (t:number) => t };
 
 export default function Services() {
   const [loader, setLoader] = useState(false);
   const [sliderRef] = useKeenSlider({
     loop: true,
-    renderMode: "performance",
+    renderMode: "precision",
     drag: true,
     mode: "free-snap",
     // rtl: true,
@@ -30,13 +30,13 @@ export default function Services() {
     },
     slides: { perView: 1, spacing: 60 },
     created(s) {
-      s.moveToIdx(ourservices.length - 1, true, animation);
+      s.moveToIdx(5 , true, animation);
     },
     updated(s) {
-      s.moveToIdx(s.track.details.abs + ourservices.length - 1, true, animation);
+      s.moveToIdx(s.track.details.abs + 5 , true, animation);
     },
     animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + ourservices.length - 1, true, animation);
+      s.moveToIdx(s.track.details.abs + 5 , true, animation);
     },
   });
 

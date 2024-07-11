@@ -7,13 +7,13 @@ import { lists } from "@/libs/data";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
-const animation = { duration: 35000, easing: (t:any) => t };
+const animation = { duration: 25000, easing: (t:any) => t };
 
 export default function Testimonials() {
 
   const [sliderRef] = useKeenSlider({
     loop: true,
-    renderMode: "performance",
+    renderMode: "precision",
     drag: true,
     mode: "free",
     breakpoints: {

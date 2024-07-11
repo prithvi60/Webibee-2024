@@ -4,12 +4,12 @@ import { BenefitCard } from "./BenefitCard";
 import Marquee from "react-fast-marquee";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-const animation = { duration: 35000, easing: (t: any) => t };
+const animation = { duration: 25000, easing: (t: any) => t };
 
 export default function Benefits() {
   const [sliderRef] = useKeenSlider({
     loop: true,
-    renderMode: "performance",
+    renderMode: "precision",
     drag: true,
     mode: "free",
     rtl: true,

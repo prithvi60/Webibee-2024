@@ -1,93 +1,88 @@
 "use client";
-
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
+import Marquee from "react-fast-marquee";
+// import { FaCircleCheck } from "react-icons/fa6";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 import { Element } from "react-scroll";
 import { ourservices } from "@/libs/data";
 import { useEffect, useState } from "react";
-import Slider from "react-slick";
+const animation = { duration: 30000, easing: (t:number) => t };
 
 export default function Services() {
   const [loader, setLoader] = useState(false);
-
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 4,
-    autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-    initialSlide: 0,
-    swipeToSlide : true,
-    touchMove: true,
-    // pauseOnFocus: false,
-    // pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 3,
-          // slidesToScroll: 3,
-        },
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    renderMode: "precision",
+    drag: true,
+    mode: "free-snap",
+    // rtl: true,
+    breakpoints: {
+      "(min-width: 540px)": {
+        slides: { perView: 2, spacing: 30 },
       },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          // slidesToScroll: 2,
-        },
+      "(min-width: 1024px)": {
+        slides: { perView: 3, spacing: 30 },
       },
-      // {
-      //   breakpoint: 768,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     // slidesToScroll: 2,
-      //   },
-      // },
-      // {
-      //   breakpoint: 640,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     // slidesToScroll: 2,
-      //   },
-      // },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+      "(min-width: 1440px)": {
+        slides: { perView: 4, spacing: 30 },
       },
-    ],
-  };
+    },
+    slides: { perView: 1, spacing: 60 },
+    created(s) {
+      s.moveToIdx(5 , true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5 , true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5 , true, animation);
+    },
+  });
 
   useEffect(() => {
     setLoader(true);
-    // console.log("logged");
-    
   }, []);
-
   if (!loader) {
     return <div className="font-bold"> Loading Services...</div>;
   } else
     return (
       <Element
-        className="py-2.5 w-full h-full space-y-3 md:space-y-4"
+        className="py-2.5 w-screen space-y-3 md:space-y-4"
         name="Services"
       >
-        <div className="slider-container w-full">
-          <Slider {...settings}>
+        {/* <Marquee pauseOnHover speed={70} autoFill={true}>
+          <div className="flex justify-center items-center flex-wrap gap-10 first:ms-10">
             {ourservices.map((service, idx) => (
-              <div className="shadow-md" key={idx}>
-                <div className="px-4 py-3.5 text-xl xl:text-2xl font-medium text-white bg-black md:px-8 font-Lato line-clamp-1 overflow-hidden text-left capitalize rounded-t-lg">
-                  <h4>{service.title}</h4>
-                </div>
-                <div className="px-4 md:px-8 py-6 pb-10 text-base md:text-lg font-normal text-white bg-secondary font-Lato line-clamp-3 h-[160px] text-left rounded-b-lg">
-                  <p>{service.desc}</p>
-                </div>
-              </div>
+              <Card
+                className="w-[275px] h-[220px] md:w-[360px] md:h-[220px]"
+                key={idx}
+              >
+                <CardHeader className="flex gap-3 bg-black font-Lato">
+                  <h2 className="text-default font-medium text-2xl px-2 line-clamp-1">
+                    {service.title}
+                  </h2>
+                </CardHeader>
+                <CardBody className="pb-10 bg-secondary font-Lato">
+                  <h2 className="font-normal text-default text-lg px-2 py-2 line-clamp-3">
+                    {service.desc}
+                  </h2>
+                </CardBody>
+              </Card>
             ))}
-          </Slider>
+          </div>
+        </Marquee> */}
+        <div ref={sliderRef} className="keen-slider">
+          {ourservices.map((service, idx) => (
+            <div className="shadow-md keen-slider__slide rounded-xl" key={idx}>
+              <div className="px-4 py-3.5 text-xl xl:text-2xl font-medium text-white bg-black md:px-8 font-Lato line-clamp-1 overflow-hidden text-left capitalize">
+                <h4>{service.title}</h4>
+              </div>
+              <div className="px-4 md:px-8 py-6 pb-10 text-base md:text-lg font-normal text-white bg-secondary font-Lato line-clamp-3 h-[160px] text-left">
+                <p>{service.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </Element>
     );

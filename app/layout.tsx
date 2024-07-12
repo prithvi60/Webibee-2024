@@ -6,6 +6,9 @@ import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Caveat, Lato, Montserrat } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
   return {

@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const TestimonialCard = ({ list }: { list: any }) => {
   return (
-    <Card className="max-w-[280px] md:!max-w-md first:ms-2 min-h-[320px] max-h-[320px] border border-warning bg-black">
+    <Card className="min-w-[18rem] md:min-w-[25rem] first:ms-2 min-h-[320px] max-h-[320px] border border-warning bg-black">
       <CardHeader className="justify-start gap-5 px-6 py-4 ">
         {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-default">
           Family Counselling
@@ -33,7 +33,7 @@ const TestimonialCard = ({ list }: { list: any }) => {
           </p>
         </div>
       </CardHeader>
-      <CardBody className="px-6 py-4 text-default-400 h-auto bg-secondary">
+      <CardBody className="px-6 py-4 text-white/90 h-auto bg-secondary ">
         <p className="font-Lato text-base md:text-lg tracking-wide line-clamp-6">
           {list.para}
         </p>

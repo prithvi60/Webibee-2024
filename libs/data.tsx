@@ -1,6 +1,3 @@
-import { image } from "@nextui-org/react";
-import { title } from "process";
-
 // HERO
 export const IMG = [
   { src: "/img-1.jpg", ratio: "aspect-video" },
@@ -56,24 +53,45 @@ export const lists = [
     Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
     `,
   },
-
   {
     title: "Louis",
     country: "UAE",
     img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
-  //   {title: "Video", country: "India", img : "/avatar-1.jpg",
-  //   para : "Video testimonial"
-  // },
-  //   {title: "Video", country: "India", img : "/avatar-3.jpg",
-  //   para :"Video testimonial"}
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+  {
+    title: "Paul",
+    country: "Europe",
+    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    para: `
+    Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
+    `,
+  },
+  {
+    title: "Louis",
+    country: "UAE",
+    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
+    para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
+  },
 ];
 
 // Benefits
 
 export const benefits = [
-  // {title: "90 plus Webvitals", para :"A well-designed website builds immediate trust, boosting engagement and conversions."},
   {
     title: "Premium Design",
     para: "A well-designed website builds immediate trust, boosting engagement and conversions.",

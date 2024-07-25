@@ -10,15 +10,17 @@ import { linkedInPostData } from "@/libs/data";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { useQuery } from "@apollo/client";
 import { Get_LinkedInPosts } from "@/graphql/queries";
+import { SpinnerUI } from "./Spinner";
 
 export const InstaPost = ({ posts }) => {
   const { loading, error, data } = useQuery(Get_LinkedInPosts);
 
   if (loading)
     return (
-      <div className="text-center text-3xl w-full h-full text-white font-bold">
-        Loading....
-      </div>
+      // <div className="text-center text-3xl w-full h-full text-white font-bold">
+      //   Loading....
+      // </div>
+      <SpinnerUI />
     );
 
   if (error)
@@ -66,10 +68,7 @@ export const InstaPost = ({ posts }) => {
         ))}
         {posts?.map((list, idx) => (
           <SwiperSlide key={idx}>
-            <Link
-              href={list?.postUrl}
-              target="_blank"
-            >
+            <Link href={list?.postUrl} target="_blank">
               <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
                   <p className="text-tiny uppercase font-bold">Instagram</p>
@@ -77,9 +76,19 @@ export const InstaPost = ({ posts }) => {
                     {list?.text}
                   </h4>
                 </CardHeader>
-                {list?.isVideo === true ? (
+                {list?.isVideo === true && list?.videoSrc !== "" ? (
                   <CardBody className="overflow-hidden justify-center p-0 relative h-full">
                     <InstaClip videoSrc={list?.videoSrc} />
+                  </CardBody>
+                ) : idx === 1 ? (
+                  <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
+                    <Image
+                      alt="Card background"
+                      className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
+                      src={"/Image-folder.jpg"}
+                      // width={270}
+                      height={50}
+                    />
                   </CardBody>
                 ) : (
                   <CardBody className="overflow-hidden justify-center p-0 aspect-clip">

@@ -6,9 +6,11 @@ export const prisma = globalForPrisma.prisma || new PrismaClient();
 
 if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 
-const linkedIn_Key =
-  (process.env.NEXT_PUBLIC_RAPIDAPI_KEY_LINKEDIN as string) ||
-  (process.env.RAPIDAPI_KEY_LINKEDIN as string);
+// const linkedIn_Key =
+//   (process.env.NEXT_PUBLIC_RAPIDAPI_KEY_LINKEDIN as string) ||
+//   (process.env.RAPIDAPI_KEY_LINKEDIN as string);
+
+// Instagram and linkedin API key from RapidAPI
 const Insta_Key =
   (process.env.NEXT_PUBLIC_RAPIDAPI_KEY_INSTA as string) ||
   (process.env.RAPIDAPI_KEY_INSTA as string);
@@ -29,12 +31,13 @@ export async function main() {
 
     const linkedInResponse = await fetch(linkedInUrl, linkedInOptions);
     const linkedInResult = await linkedInResponse.json();
-    let linkedInCount = await prisma.linkedIn.count();
-    // console.log(linkedInResult.data);
+    const linkedInCount = await prisma.linkedIn.count();
+    // console.log(linkedInCount);
 
     const linkedInPosts = linkedInResult?.data
       ?.slice(0, 8)
       .map((item: any) => ({
+        // idx: item?.urn,
         text: item?.text,
         postUrl: item?.postUrl,
         imageSrc: item?.image ? item.image[0].url : "",
@@ -44,10 +47,13 @@ export async function main() {
             ? item.article.title
             : "",
       }));
+    // console.log(linkedInPosts);
 
     if (linkedInCount === 0) {
+      // If no new posts, create all new data
       await prisma.linkedIn.createMany({ data: linkedInPosts });
     } else {
+      // Delete previous old data and create or update new posts
       await prisma.linkedIn.deleteMany({});
       await prisma.linkedIn.createMany({ data: linkedInPosts });
     }
@@ -93,11 +99,11 @@ export async function main() {
   }
 }
 
-// main()
-//   .catch(async (e) => {
-//     console.error(e);
-//     process.exit(1);
-//   })
-//   .finally(async () => {
-//     await prisma.$disconnect();
-//   });
+// main();
+// .catch(async (e) => {
+//   console.error(e);
+//   process.exit(1);
+// })
+// .finally(async () => {
+//   await prisma.$disconnect();
+// });

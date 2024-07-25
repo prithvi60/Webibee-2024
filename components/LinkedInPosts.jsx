@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import Link from "next/link";
 import { LinkedInClip } from "./InstaClip";
@@ -8,7 +8,7 @@ export const LinkedInPosts = ({ data }) => {
   return (
     <Link href={data?.postUrl} target="_blank">
       <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
-        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
+        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5 min-h-[5rem]">
           <p className="text-tiny uppercase font-bold">LinkedIn</p>
           {/* <small className="text-default-500 mt-1.5">Prithvi_bytes</small> */}
           <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">

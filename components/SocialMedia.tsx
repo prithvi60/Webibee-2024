@@ -3,13 +3,14 @@
 import { InstaPost } from "./InstaPost";
 import { Get_InstaPosts } from "../graphql/queries";
 import { useQuery } from "@apollo/client";
+import { SpinnerUI } from "./Spinner";
 
 const SocialMedia = () => {
   const { data } = useQuery(Get_InstaPosts);
 
-  if (data === undefined) {
-    return <div></div>;
-  }
+  // if (data === undefined) {
+  //   return <SpinnerUI />;
+  // }
 
   return (
     <section className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary">

@@ -1,5 +1,5 @@
 "use client";
-import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
+import { Card, CardHeader, CardBody} from "@nextui-org/react";
 
 export const BenefitCard = ({ item }: { item: any }) => {
   return (

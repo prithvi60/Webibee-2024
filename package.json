@@ -16,6 +16,7 @@
     "@nextui-org/react": "^2.2.9",
     "@prisma/client": "^5.13.0",
     "@webibee/easy-masonry-react": "^2.2.4",
+    "@webibee/react-marquee": "^0.0.5",
     "canvas-confetti": "^1.9.2",
     "chart.js": "^4.4.2",
     "framer-motion": "^10.16.5",

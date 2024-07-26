@@ -117,11 +117,11 @@ export default function Workflow() {
               <div className="relative h-48 md:h-80 w-full  bg-transparent">
                 <Image
                   fill
-                  // src={"https://ik.imagekit.io/webibee/Agency/build.gif"}
                   src={"https://ik.imagekit.io/webibee/Agency/climb.gif"}
                   alt="images"
                   title="images"
                   className="object-cover"
+                  sizes="(min-width: 820px) 382px, (min-width: 780px) calc(1000vw - 7618px), 206px"
                 />
               </div>
             </SwiperSlide>

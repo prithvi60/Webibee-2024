@@ -7,8 +7,8 @@ import { LinkedInClip } from "./InstaClip";
 export const LinkedInPosts = ({ data }) => {
   return (
     <Link href={data?.postUrl} target="_blank">
-      <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
-        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5 min-h-[5rem]">
+      <Card className="pt-4 bg-black text-white w-full max-h-[480px] 2xl:max-h-[560px] font-Lato">
+        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5 min-h-[6rem]">
           <p className="text-tiny uppercase font-bold">LinkedIn</p>
           {/* <small className="text-default-500 mt-1.5">Prithvi_bytes</small> */}
           <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
@@ -21,13 +21,13 @@ export const LinkedInPosts = ({ data }) => {
           )}
         </CardHeader>
         {data?.imageSrc && (
-          <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
+          <CardBody className="overflow-hidden justify-center p-0 w-full h-[480px] 2xl:h-[520px]">
             <Image
               alt="Card background"
-              className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
+              className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
               src={data?.imageSrc}
               // width={270}
-              height={80}
+              height={50}
             />
           </CardBody>
         )}
@@ -38,7 +38,7 @@ export const LinkedInPosts = ({ data }) => {
         )}
 
         {data?.article && (
-          <CardBody className="overflow-hidden justify-center p-0 h-[450px]">
+          <CardBody className="overflow-hidden justify-center p-0 w-full h-[480px] 2xl:h-[520px]">
             <Image
               alt="Card background"
               className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"
@@ -50,7 +50,7 @@ export const LinkedInPosts = ({ data }) => {
         {data?.article === "" &&
           data?.videoSrc === "" &&
           data?.imageSrc === "" && (
-            <CardBody className="overflow-hidden justify-center p-0 h-[480px]">
+            <CardBody className="overflow-hidden justify-center p-0 h-h-[480px] 2xl:h-[520px]">
               <Image
                 alt="Card background"
                 className="object-contain hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none aspect-clip"

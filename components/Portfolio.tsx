@@ -59,6 +59,7 @@ export default function Portfolio() {
                   title={item.title}
                   src={item.img}
                   fill
+                  sizes="(min-width: 780px) 466px, 276px"
                   className="absolute rounded-xl border-2 border-warning object-cover object-center"
                 />
               </Link>

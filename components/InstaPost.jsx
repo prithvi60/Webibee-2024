@@ -17,9 +17,6 @@ export const InstaPost = ({ posts }) => {
 
   if (loading)
     return (
-      // <div className="text-center text-3xl w-full h-full text-white font-bold">
-      //   Loading....
-      // </div>
       <SpinnerUI />
     );
 
@@ -69,8 +66,8 @@ export const InstaPost = ({ posts }) => {
         {posts?.map((list, idx) => (
           <SwiperSlide key={idx}>
             <Link href={list?.postUrl} target="_blank">
-              <Card className="pt-4 bg-black text-white w-full h-[500px] font-Lato">
-                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5">
+              <Card className="pt-4 bg-black text-white w-full h-full max-h-[480px] 2xl:max-h-[560px] font-Lato ">
+                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5 min-h-[6rem]">
                   <p className="text-tiny uppercase font-bold">Instagram</p>
                   <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">
                     {list?.text}
@@ -81,7 +78,7 @@ export const InstaPost = ({ posts }) => {
                     <InstaClip videoSrc={list?.videoSrc} />
                   </CardBody>
                 ) : idx === 1 ? (
-                  <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
+                  <CardBody className="overflow-hidden justify-center p-0 h-[480px] 2xl:h-[520px]">
                     <Image
                       alt="Card background"
                       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
@@ -91,7 +88,7 @@ export const InstaPost = ({ posts }) => {
                     />
                   </CardBody>
                 ) : (
-                  <CardBody className="overflow-hidden justify-center p-0 aspect-clip">
+                  <CardBody className="overflow-hidden justify-center p-0 h-[480px] 2xl:h-[520px]">
                     <Image
                       alt="Card background"
                       className="object-cover object-center hover:scale-110 transition-all duration-1000 ease-in-out !rounded-none"
@@ -118,9 +115,9 @@ const SlideNextButton = () => {
       role="button"
       aria-label="next logo"
       onClick={() => swiper.slideNext()}
-      className="text-secondary bg-warning absolute top-1/2 right-2 rounded-full  z-[100] hover:animate-pulse hover:bg-white"
+      className="text-secondary bg-warning absolute top-1/2 right-2 rounded-full z-[100] hover:animate-pulse hover:bg-white"
     >
-      <FaArrowAltCircleRight size={"3em"} />
+      <FaArrowAltCircleRight className="text-2xl sm:text-3xl 2xl:text-6xl" />
     </button>
   );
 };
@@ -135,7 +132,7 @@ const SlidePrevButton = () => {
       onClick={() => swiper.slidePrev()}
       className="text-secondary bg-warning rounded-full absolute top-1/2  z-[100] left-2 hover:animate-pulse hover:bg-white"
     >
-      <FaArrowAltCircleLeft size={"3em"} />
+      <FaArrowAltCircleLeft className="text-2xl sm:text-3xl 2xl:text-6xl" />
     </button>
   );
 };

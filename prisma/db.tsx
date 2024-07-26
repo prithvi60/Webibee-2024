@@ -53,8 +53,11 @@ export async function main() {
       // If no new posts, create all new data
       await prisma.linkedIn.createMany({ data: linkedInPosts });
     } else {
-      // Delete previous old data and create or update new posts
-      await prisma.linkedIn.deleteMany({});
+      if (linkedInCount > 0) {
+        // Delete previous old data
+        await prisma.linkedIn.deleteMany({});
+      }
+      // create or update new posts by deleting prev data
       await prisma.linkedIn.createMany({ data: linkedInPosts });
     }
 
@@ -86,9 +89,14 @@ export async function main() {
     // console.log(instaPosts);
 
     if (instaCount === 0) {
+      // If no new posts, create all new data
       await prisma.instagram.createMany({ data: instaPosts });
     } else {
-      await prisma.instagram.deleteMany({});
+      if (instaCount > 0) {
+        // Delete previous old data
+        await prisma.instagram.deleteMany({});
+      }
+      // create or update new posts by deleting prev data
       await prisma.instagram.createMany({ data: instaPosts });
     }
   } catch (error) {

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useState } from "react";
 
 export const InstaClip = ({videoSrc}) => {
@@ -16,11 +15,11 @@ export const InstaClip = ({videoSrc}) => {
     setPlay("false");
   };
   return (
-    <div className="relative shadow-md shadow-text-50">
+    <div className="relative shadow-md shadow-text-50 p-10 w-full h-full">
       <video
         loop
         preload="auto"
-        className={`w-full aspect-clip object-cover object-top`}
+        className={`w-full h-full max-h-[380px] 2xl:max-h-[560px] aspect-clip object-contain`}
         ref={videoRef}
       >
         <source src={videoSrc} type="video/mp4" />
@@ -48,13 +47,13 @@ export const LinkedInClip = ({videoSrc}) => {
     setPlay("false");
   };
   return (
-    <div className="relative shadow-md shadow-text-50">
+    <div className="!z-30 relative shadow-md shadow-text-50 p-10 w-full h-full">
       <video
         // muted
         // controls
         loop
         preload="metadata"
-        className={`w-full aspect-clip object-cover object-top`}
+        className={`w-full h-full max-h-[380px] 2xl:max-h-[560px] aspect-clip object-contain`}
         ref={videoRef}
       >
         <source src={videoSrc} type="video/mp4" />
@@ -68,5 +67,3 @@ export const LinkedInClip = ({videoSrc}) => {
     </div>
   );
 };
-
-// export default InstaClip;

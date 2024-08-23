@@ -16,12 +16,13 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 export default function Portfolio() {
   return (
     <Element
-      className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary mt-8 md:mt-16"
+      className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary mt-24 md:mt-16"
       name="Portfolio"
     >
       <div className="mx-auto">
         <h1 className="font-Montserrat font-medium text-5xl md:text-7xl text-center text-white">
-          <span className="hidden md:block">Our</span> Portfolio
+          {/* <span className="hidden md:block"> */}
+           Get Stunning Websites!
         </h1>
         <hr className="w-12 md:w-56 mt-4 mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>

@@ -14,7 +14,7 @@ export const IMG = [
 // NAVBAR
 export const Navlinks = [
   // { href: "Services", title: "Services" },
-  { href: "Portfolio", title: "Recent Work" },
+  // { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   // {href:"/terms",title:"Terms"},
   // {href:"/",title:"Tool"},
@@ -22,7 +22,7 @@ export const Navlinks = [
 
 // Footer links
 export const Footerlinks = [
-  { href: "Services", title: "Services" },
+  // { href: "Services", title: "Services" },
   { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   { href: "Contact", title: "Contact us" },
@@ -201,36 +201,36 @@ export const portfolio = [
     title: "Business Portfolio",
     href: "https://vbccinstruments.com/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
-    title: "SEO Optimization",
-    href: "https://vbccresearch.com/#/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
+  //   title: "SEO Optimization",
+  //   href: "https://vbccresearch.com/#/",
+  // },
   {
     img: "https://ik.imagekit.io/webibee/Agency/printguymock.png",
     title: "Shopify Storefront",
     href: "https://theprintguy.in/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/iqumock.png",
-    title: "CMS Integration",
-    href: "https://iquclinic.com/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/iqumock.png",
+  //   title: "CMS Integration",
+  //   href: "https://iquclinic.com/",
+  // },
   {
     img: "https://ik.imagekit.io/webibee/Agency/lotusai.png",
     title: "Fullstack with Webscraper",
     href: "https://lotus-ai.vercel.app/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/srkmock.png",
-    title: "Personal Portfolio",
-    href: "https://itssrk.com/",
-  },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/indiemock.png",
-    title: "Landing Page",
-    href: "https://indienadu.com/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/srkmock.png",
+  //   title: "Personal Portfolio",
+  //   href: "https://itssrk.com/",
+  // },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/indiemock.png",
+  //   title: "Landing Page",
+  //   href: "https://indienadu.com/",
+  // },
 
   // {img:"/avatar-1.jpg",title:"N9 power",href:"/"},
   // {img:"/avatar-2.jpg",title:"Flow graph",href:"/"},

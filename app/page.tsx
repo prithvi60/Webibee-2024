@@ -19,13 +19,13 @@ export default function Home() {
   } 
   return (
     <div>
-      <Hero/>
+      {/* <Hero/> */}
       <Portfolio />
-      <Benefits />
+      {/* <Benefits /> */}
       <Testimonials />
-      <Workflow />
+      {/* <Workflow /> */}
       <FAQ />
-      <SocialMedia/>
+      {/* <SocialMedia/> */}
       <Contact />
       <script
         type="application/ld+json"

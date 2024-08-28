@@ -1,6 +1,7 @@
 "use client";
-import { Faq } from "@/libs/data";
+import { FaqWestern,FaqIndia } from "@/libs/data";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { Element } from "react-scroll";
 
@@ -15,6 +16,19 @@ export default function FAQ() {
     content:
       "p-4 md:p-5 font-Merri text-base md:text-lg text-default bg-secondary font-medium",
   };
+  const [isIndia, setIsIndia] = useState(false);
+
+  useEffect(() => {
+   
+    // Fetch user's location
+    fetch("https://ipapi.co/json/")
+      .then(response => response.json())
+      .then(data => {
+        // Check if the country is India
+        setIsIndia(data.country === "IN");
+      });
+  }, []);
+  const Faq=isIndia?FaqIndia:FaqWestern
   return (
     <Element className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary" name="FAQ">
       <div className="pb-14 mx-auto">

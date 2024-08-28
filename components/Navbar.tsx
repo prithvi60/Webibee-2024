@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import NavBtn from "./NavBtn";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [hideNav, setHideNav] = useState(true);
@@ -91,13 +92,13 @@ const NavBar = () => {
       <NavbarContent justify="end" className="flex md:hidden">
         <a
                  href={"https://calendly.com/webibee/consultation"}
-          // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-xs hover:opacity-50 cursor-pointer font-Merri text-[#31a327] tracking-wider py-3 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
+          className="flex items-center gap-2 text-xs hover:opacity-50 cursor-pointer font-Merri bg-indigo-100 text-green-800 tracking-wider py-3 px-2  rounded-md font-bold z-10 hover:animate-pulse"
         >
-          {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
   Expert Advice in 15 Minutes
         </a>
+        {/* <NavBtn text={"Get Expert Advice in Just 15 Minutes"}/> */}
+
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-6" justify="center">
@@ -139,16 +140,16 @@ const NavBar = () => {
           </NavbarItem>
         ))}
         <NavbarItem>
-          <a
+          <NavBtn text={"Get Expert Advice in Just 15 Minutes"}/>
+          {/* <a
             href={"https://calendly.com/webibee/consultation"}
             title="Contact"
        
             aria-current="page"
             className="flex items-center gap-2 text-lg md:text-xl hover:opacity-50 cursor-pointer font-Merri py-1.5 px-2 text-[#31a327] bg-white rounded-lg font-semibold hover:animate-pulse"
           >
-            {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
        Get Expert Advice in Just 15 Minutes
-          </a>
+          </a> */}
         </NavbarItem>
       </NavbarContent>
 

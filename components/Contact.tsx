@@ -75,12 +75,12 @@ export default function Contact() {
               className="w-full bg-default rounded-md !overflow-hidden"
             />
             <Select
-              selectionMode="multiple"
+              // selectionMode="multiple"
               isRequired
               size="lg"
               name="Service"
               id="Service"
-              label="What service do you require? "
+              label="How can we help your brand? "
               placeholder="Select an service"
               defaultSelectedKeys={[services[0].label]}
               className="w-full bg-default rounded-md placeholder:text-slate-500 !overflow-hidden"
@@ -133,8 +133,8 @@ export default function Contact() {
         </div>
         <div className="w-full text-default flex flex-col  items-center gap-5 py-5">
           <p className="text-base md:text-lg md:text-left w-4/5 tracking-normal leading-relaxed font-Merri text-center">
-            If you are not ready to jump on the phone with us quite yet or just
-            want a simple web question answered, please leave an inquiry below
+            If you are not ready to jump on a consultation call immediately or
+            want some questions answered, please leave an inquiry 
             or email us at
             <span className="mx-2 font-bold hover:text-default/70 underline underline-offset-2 hover:animate-pulse">
               <Link passHref={true}
@@ -145,7 +145,7 @@ export default function Contact() {
                 support@webibee.com
               </Link>
             </span>
-            . We will get back to you within 24 hours of your inquiry or email.
+            . We will get back to you within 24 hours.
           </p>
           {/* <p className="font-medium text-lg md:text-xl text-center tracking-normal leading-relaxed border border-primary py-1.5 px-3 w-max rounded-lg bg-black">
             +91-7358023088

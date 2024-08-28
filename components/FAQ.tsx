@@ -27,10 +27,11 @@ export default function FAQ() {
         <hr className="w-12 md:w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>
       <div className="w-full md:w-4/5 md:mx-auto">
-        <Accordion variant="splitted" itemClasses={itemClasses}>
+        <Accordion variant="splitted" itemClasses={itemClasses} defaultExpandedKeys={["4"]}>
           {Faq.map((item, idx) => (
             <AccordionItem
-              key={idx}
+            subtitle="Press to expand"
+              key={`${idx}`}
               aria-label="Accordion 1" 
               indicator={({ isOpen }) =>
                 isOpen ? (

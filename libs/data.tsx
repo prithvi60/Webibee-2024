@@ -32,20 +32,6 @@ export const Footerlinks = [
 // TESTIMONIALS
 export const lists = [
   {
-    title: "Ujwal",
-    country: "India",
-    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
-    para: "Great work done in no time! Thanks for the co-operation",
-  },
-  {
-    title: "Harry",
-    country: "India",
-    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
-    para: `
-     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
-     `,
-  },
-  {
     title: "Paul",
     country: "Europe",
     img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
@@ -87,6 +73,21 @@ export const lists = [
     img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+
 ];
 
 // Benefits

@@ -34,7 +34,7 @@ const TestimonialCard = ({ list }: { list: any }) => {
         </div>
       </CardHeader>
       <CardBody className="px-6 py-4 text-white/90 h-auto bg-secondary ">
-        <p className="font-Lato text-base md:text-lg tracking-wide line-clamp-6">
+        <p className="font-Lato text-base md:text-md tracking-wide line-clamp-6">
           {list.para}
         </p>
       </CardBody>

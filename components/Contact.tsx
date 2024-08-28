@@ -8,14 +8,14 @@ export default function Contact() {
   // const formRef = useRef(null);
   return (
     <Element className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary" name="Contact">
-      <h1 className="font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
-        Contact <span className="hidden md:block">Us</span>
+      <h1 className="flex justify-center font-Montserrat text-5xl md:text-7xl text-center text-default font-medium">
+        Contact &nbsp; <span className="hidden md:block"> Us</span>
       </h1>
       <hr className="w-12 md:w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       <div className="grid grid-cols-1  gap-4 place-items-center pt-3 md:px-48">
         <div className="w-full bg-default mx-auto rounded-lg">
           <div className="bg-success rounded-t-lg py-3 space-y-2">
-            <h2 className="font-Montserrat text-2xl md:text-4xl text-center text-default ">
+            <h2 className="font-Montserrat text-2xl md:text-4xl text-center text-default tracking-wider ">
               Inquiry Form
             </h2>
             <p className="font-Lato font-semibold text-base md:text-lg text-center text-default">

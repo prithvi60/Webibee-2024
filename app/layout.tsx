@@ -4,7 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Caveat, Lato, Montserrat } from "next/font/google";
+import { Caveat, Lato, Montserrat, League_Gothic,Merriweather_Sans } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -57,13 +57,13 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 };
 
-const montserrat = Montserrat({
+const montserrat = League_Gothic({
   subsets: ["latin"],
   variable: "--font-montserrat",
-  weight: "600",
+  // weight: "600",
 });
 
-const lato = Lato({
+const lato = Merriweather_Sans({
   subsets: ["latin"],
   variable: "--font-lato",
   weight: "400",

@@ -33,8 +33,8 @@ const TestimonialCard = ({ list }: { list: any }) => {
           </p>
         </div>
       </CardHeader>
-      <CardBody className="px-6 py-4 text-white/90 h-auto bg-secondary ">
-        <p className="font-Merri text-base md:text-md tracking-wide line-clamp-6">
+      <CardBody className="px-6 py-4 text-white/90 h-auto bg-secondary overflow-y-auto" id="testimonialcard">
+        <p className="font-Merri text-base md:text-md tracking-wide line-clamp-8">
           {list.para}
         </p>
       </CardBody>

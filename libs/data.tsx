@@ -46,11 +46,12 @@ export const lists = [
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
   {
-    title: "Ujwal",
+    title: "Naveen",
     country: "India",
     img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
-    para: "Great work done in no time! Thanks for the co-operation",
+    para: "I highly recommend Prithvi together with his team at Webibee because they do very good work. To put it simply, they didn’t just develop websites; instead they optimized them leading to extremely high scores in Google’s website optimization metrics. On top of that, during the revision process, they always supported us until we were all satisfied with their work. I believe that Webibee is a reliable partner for current and future projects since they make me feel confident enough to tackle even bigger assignments going forward.",
   },
+
   {
     title: "Harry",
     country: "India",
@@ -58,6 +59,12 @@ export const lists = [
     para: `
      Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
      `,
+  },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
   },
   {
     title: "Paul",
@@ -122,48 +129,65 @@ export const benefits = [
 // FAQ
 export const Faq = [
   {
-    title: "How long will it take to build my website?",
-    content: "We delivery within 30days depending on the scope of the project",
+    title: "How can we get started with Webibee?",
+    content: "You can book a consulation slot via 'Get Expert Advice in 15mins' Button where we discuss your project requirements, scope and next steps to provide services for your business.",
   },
   {
-    title: "Will my website operate on both desktop and mobile?",
-    content: "Yes we build fully responsive designs",
+    title: "How much does it cost?",
+    content: "Our projects tend to start at 2500$ which includes various services like branding, UX, graphic design, and more. Dont worry hosting and maintainence is on us!",
   },
   {
-    title: "Do you provide hosting and domains for websites?",
-    content: "Yes we do hosting and maintenance for long term clients",
+    title: "What do Webibee specialise in?",
+    content: "We are tech savvy with all the latest tools, if you want to explore creative ideas in terms of design and functionality, we shine there.",
   },
   {
-    title: "Other services we offer",
+    title: "What industries do you work with?",
     content:
-      "We offer custom software development , video editing , digital marketing services",
+      "We work with Industrial , Real estate, Startups , Creative businessnes ",
   },
   {
-    title: "Who will create my website content?",
+    title: "What if Webibee services doesn't meet my expectations?",
     content:
-      "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
+      "We rarely face that but we'll understand your situtation and got your back. We guarantee a 500$ refund from the advance within 2 weeks of cancelation including our work resources till that period.",
   },
   {
-    title: "How do your make the websites",
-    content: `We use latest opensource javascript tools to build industry standard websites`,
-  },
+    title: "Do I own the IP and how will my privacy be protected?",
+    content:
+      "Whatever services we offer is totally owned by you and we have an NDA to make sure your business information is kept confidential",
+  }
+  // {
+  //   title: "Who will create my website content?",
+  //   content:
+  //     "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
+  // },
+  // {
+  //   title: "How do your make the websites",
+  //   content: `We use latest opensource javascript tools to build industry standard websites`,
+  // },
 
 ];
 
 // Contact Us
 export const services = [
-  { label: "Web Development", value: "Web Development" },
-  { label: "Google Ads", value: "Google Ads" },
-  { label: "Instagram Ads	", value: "Instagram Ads" },
-  {
-    label: "Search Engine Optimization (SEO)",
-    value: "Search Engine Optimization (SEO)",
-  },
-  { label: "Content Creation", value: "Content Creation" },
-  { label: "Email Marketing", value: "Email Marketing" },
-  { label: "Whatsapp Marketing", value: "Whatsapp Marketing" },
-  { label: "UI UX", value: "UI UX" },
-  { label: "E-commerce Setup", value: "E-commerce Setup" },
+  { label: "New Business Website", value: "New Business Website" },
+  { label: "Website Revamp", value: "Website Revamp" },
+  // { label: "Google Ads", value: "Google Ads" },
+  // { label: "Instagram Ads	", value: "Instagram Ads" },
+  { label: "E-commerce Store", value: "E-commerce Setup" },
+  { label: "Custom software development", value: "Custom software development" },
+  { label: "Mobile development", value: "Mobile development" },
+
+  // { label: "Branding", value: "Branding" },
+
+
+  // {
+  //   label: "Search Engine Optimization (SEO)",
+  //   value: "Search Engine Optimization (SEO)",
+  // },
+  // { label: "Content Creation", value: "Content Creation" },
+  // { label: "Email Marketing", value: "Email Marketing" },
+  // { label: "Whatsapp Marketing", value: "Whatsapp Marketing" },
+  // { label: "UI UX", value: "UI UX" },
 ];
 
 export const about = [

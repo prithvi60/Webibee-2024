@@ -66,7 +66,7 @@ export const InstaPost = ({ posts }) => {
         {posts?.map((list, idx) => (
           <SwiperSlide key={idx}>
             <Link href={list?.postUrl} target="_blank">
-              <Card className="pt-4 bg-black text-white w-full h-full max-h-[480px] 2xl:max-h-[560px] font-Lato ">
+              <Card className="pt-4 bg-black text-white w-full h-full max-h-[480px] 2xl:max-h-[560px] font-Merri ">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5 min-h-[6rem]">
                   <p className="text-tiny uppercase font-bold">Instagram</p>
                   <h4 className="font-bold text-lg leading-snug tracking-wide mt-5 line-clamp-2">

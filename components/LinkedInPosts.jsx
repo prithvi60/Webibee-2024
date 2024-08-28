@@ -7,7 +7,7 @@ import { LinkedInClip } from "./InstaClip";
 export const LinkedInPosts = ({ data }) => {
   return (
     <Link href={data?.postUrl} target="_blank">
-      <Card className="pt-4 bg-black text-white w-full max-h-[480px] 2xl:max-h-[560px] font-Lato">
+      <Card className="pt-4 bg-black text-white w-full max-h-[480px] 2xl:max-h-[560px] font-Merri">
         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start mb-5 min-h-[6rem]">
           <p className="text-tiny uppercase font-bold">LinkedIn</p>
           {/* <small className="text-default-500 mt-1.5">Prithvi_bytes</small> */}

@@ -63,7 +63,7 @@ const NavBar = () => {
             percent >= 0 && percent <= 12
               ? "!bg-transparent shadow-none border-b-0"
               : "bg-primary shadow-md border-b-2 border-warning"
-          } fixed top-0 left-0 transform transition duration-700 ease-linear font-Lato py-2 xl:px-8`,
+          } fixed top-0 left-0 transform transition duration-700 ease-linear font-Merri py-2 xl:px-8`,
         ],
       }}
       // className={``}
@@ -93,7 +93,7 @@ const NavBar = () => {
                  href={"https://calendly.com/webibee/consultation"}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-xs hover:opacity-50 cursor-pointer font-Lato text-[#31a327] tracking-wider py-3 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
+          className="flex items-center gap-2 text-xs hover:opacity-50 cursor-pointer font-Merri text-[#31a327] tracking-wider py-3 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
   Expert Advice in 15 Minutes
@@ -132,7 +132,7 @@ const NavBar = () => {
               duration={500}
               aria-current="page"
               className="text-xl hover:opacity-50 cursor-pointer 
-              font-Lato text-default hover:animate-pulse"
+              font-Merri text-default hover:animate-pulse"
             >
               {link.title}
             </Link>
@@ -144,7 +144,7 @@ const NavBar = () => {
             title="Contact"
        
             aria-current="page"
-            className="flex items-center gap-2 text-lg md:text-xl hover:opacity-50 cursor-pointer font-Lato py-1.5 px-2 text-[#31a327] bg-white rounded-lg font-semibold hover:animate-pulse"
+            className="flex items-center gap-2 text-lg md:text-xl hover:opacity-50 cursor-pointer font-Merri py-1.5 px-2 text-[#31a327] bg-white rounded-lg font-semibold hover:animate-pulse"
           >
             {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
        Get Expert Advice in Just 15 Minutes
@@ -165,7 +165,7 @@ const NavBar = () => {
               offset={-50}
               smooth={true}
               duration={500}
-              className="w-full p-2 font-Lato font-semibold text-xl bg-primary text-default"
+              className="w-full p-2 font-Merri font-semibold text-xl bg-primary text-default"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.title}

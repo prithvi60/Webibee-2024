@@ -63,7 +63,7 @@ export default function Workflow() {
   return (
     <section className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary">
       <div className="pb-10 mx-auto">
-        <h1 className="font-Montserrat text-5xl md:text-7xl text-default font-medium flex justify-center items-center gap-5">
+        <h1 className="font-Gothic text-5xl md:text-7xl text-default font-medium flex justify-center items-center gap-5">
           <span className="hidden md:block"> Our </span>Workflow
         </h1>
         <hr className="mt-2 w-12 md:w-60 mx-auto bg-default p-0.5 border-t-0 rounded-md" />
@@ -112,8 +112,8 @@ export default function Workflow() {
               className="py-4 px-5 md:px-8 space-y-4 swiper-slider h-full border-2 border-warning"
               key={idx}
             >
-              <h2 className="text-base md:text-3xl font-Lato">Stage {idx + 1}</h2>
-              <p className="text-sm md:text-lg font-medium font-Lato">{work.para}</p>
+              <h2 className="text-base md:text-3xl font-Merri">Stage {idx + 1}</h2>
+              <p className="text-sm md:text-lg font-medium font-Merri">{work.para}</p>
               <div className="relative h-48 md:h-80 w-full  bg-transparent">
                 <Image
                   fill

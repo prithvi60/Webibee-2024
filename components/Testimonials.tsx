@@ -2,11 +2,25 @@
 import { Card } from "@nextui-org/react";
 import { Element } from "react-scroll";
 import { Marquee } from "@webibee/react-marquee";
-import { lists } from "@/libs/data";
+import { reviewIndia,reviewWestern } from "@/libs/data";
 import Image from "next/image";
 import TestimonialCard from "./TestimonialCard";
+import { useEffect, useState } from "react";
 
 export default function Testimonials() {
+  const [isIndia, setIsIndia] = useState(false);
+
+  useEffect(() => {
+   
+    // Fetch user's location
+    fetch("https://ipapi.co/json/")
+      .then(response => response.json())
+      .then(data => {
+        // Check if the country is India
+        setIsIndia(data.country === "IN");
+      });
+  }, []);
+  const reviews=isIndia?reviewIndia:reviewWestern;
  
   return (
     <Element
@@ -27,7 +41,7 @@ export default function Testimonials() {
         </div>
       </Marquee> */}
       <Marquee >
-        {lists.map((list, idx) => (
+        {reviews.map((list, idx) => (
           <TestimonialCard list={list} key={idx} />
           // <div className="shadow-md keen-slider__slide rounded-xl" key={idx}>
           //   <div className="flex items-center gap-4 px-4 py-5 text-white bg-black md:px-8 md:gap-8">

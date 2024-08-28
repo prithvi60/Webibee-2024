@@ -30,7 +30,75 @@ export const Footerlinks = [
 ];
 
 // TESTIMONIALS
-export const lists = [
+export const reviewIndia = [
+
+  {
+    title: "Naveen",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "I highly recommend Prithvi together with his team at Webibee because they do very good work. To put it simply, they didn’t just develop websites; instead they optimized them leading to extremely high scores in Google’s website optimization metrics. On top of that, during the revision process, they always supported us until we were all satisfied with their work. I believe that Webibee is a reliable partner for current and future projects since they make me feel confident enough to tackle even bigger assignments going forward.",
+  },
+
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Paul",
+    country: "Europe",
+    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    para: `
+    Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
+    `,
+  },
+  {
+    title: "Louis",
+    country: "UAE",
+    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
+    para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
+  },
+
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+  {
+    title: "Paul",
+    country: "Europe",
+    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    para: `
+    Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
+    `,
+  },
+  {
+    title: "Louis",
+    country: "UAE",
+    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
+    para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
+  },
+
+];
+export const reviewWestern = [
   {
     title: "Paul",
     country: "Europe",
@@ -96,7 +164,6 @@ export const lists = [
   },
 
 ];
-
 // Benefits
 
 export const benefits = [
@@ -127,7 +194,46 @@ export const benefits = [
 ];
 
 // FAQ
-export const Faq = [
+export const FaqIndia = [
+  {
+    title: "How can we get started with Webibee?",
+    content: "You can book a consulation slot via 'Get Expert Advice in 15mins' Button where we discuss your project requirements, scope and next steps to provide services for your business.",
+  },
+  {
+    title: "How much does it cost?",
+    content: "Our projects tend to start at Rs 65,000 which includes various services like branding, UX, graphic design, and more. Dont worry hosting and maintainence is on us!",
+  },
+  {
+    title: "What do Webibee specialise in?",
+    content: "We are tech savvy with all the latest tools, if you want to explore creative ideas in terms of design and functionality, we shine there.",
+  },
+  {
+    title: "What industries do you work with?",
+    content:
+      "We work with Industrial , Real estate, Startups , Creative businessnes ",
+  },
+  {
+    title: "What if Webibee services doesn't meet my expectations?",
+    content:
+      "We rarely face that but we'll understand your situtation and got your back. We guarantee a Rs 25,000 refund from the advance within 2 weeks of cancelation including our work resources till that period.",
+  },
+  {
+    title: "Do I own the IP and how will my privacy be protected?",
+    content:
+      "Whatever services we offer is totally owned by you and we have an NDA to make sure your business information is kept confidential",
+  }
+  // {
+  //   title: "Who will create my website content?",
+  //   content:
+  //     "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
+  // },
+  // {
+  //   title: "How do your make the websites",
+  //   content: `We use latest opensource javascript tools to build industry standard websites`,
+  // },
+
+];
+export const FaqWestern = [
   {
     title: "How can we get started with Webibee?",
     content: "You can book a consulation slot via 'Get Expert Advice in 15mins' Button where we discuss your project requirements, scope and next steps to provide services for your business.",
@@ -166,7 +272,6 @@ export const Faq = [
   // },
 
 ];
-
 // Contact Us
 export const services = [
   { label: "New Business Website", value: "New Business Website" },

@@ -93,10 +93,10 @@ const NavBar = () => {
                  href={"https://calendly.com/webibee/consultation"}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-xl  md:text-2xl hover:opacity-50 cursor-pointer font-Montserrat text-[#31a327] tracking-wider py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
+          className="flex items-center gap-2 text-xs hover:opacity-50 cursor-pointer font-Lato text-[#31a327] tracking-wider py-3 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-     Get Expert Advice in Just 15 Minutes
+  Expert Advice in 15 Minutes
         </a>
       </NavbarContent>
 

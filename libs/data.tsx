@@ -123,7 +123,7 @@ export const benefits = [
 export const Faq = [
   {
     title: "How long will it take to build my website?",
-    content: "We take about 1 month depending on the scope of the project",
+    content: "We delivery within 30days depending on the scope of the project",
   },
   {
     title: "Will my website operate on both desktop and mobile?",
@@ -136,24 +136,18 @@ export const Faq = [
   {
     title: "Other services we offer",
     content:
-      "We offer pay per click and other marketing services for site content",
+      "We offer custom software development , video editing , digital marketing services",
   },
   {
-    title: "Who will create my websites content?",
+    title: "Who will create my website content?",
     content:
-      "We will be reliant upon you to create your own websites content. ",
+      "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
   },
   {
     title: "How do your make the websites",
-    content: `A website price will be unique to each project. This depends on things such as the page count, dynamic content, and the overall design. A project price is case-by-case.
-Book a call or leave an inquiry to get a quote for your specific needs!
-    `,
+    content: `We use latest opensource javascript tools to build industry standard websites`,
   },
-  {
-    title: "Who will create my websites content?",
-    content:
-      "We will be reliant upon you to create your own websites content. ",
-  },
+
 ];
 
 // Contact Us

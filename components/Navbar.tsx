@@ -90,13 +90,13 @@ const NavBar = () => {
       </NavbarContent>
       <NavbarContent justify="end" className="flex md:hidden">
         <a
-                 href={"https://calendly.com/prithvi-webibee/consultation"}
+                 href={"https://calendly.com/webibee/consultation"}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-xl  md:text-2xl hover:opacity-50 cursor-pointer font-Montserrat text-[#fa4848] tracking-wider py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
+          className="flex items-center gap-2 text-xl  md:text-2xl hover:opacity-50 cursor-pointer font-Montserrat text-[#31a327] tracking-wider py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-     Get Expert Advice in Just 15 Minutes!
+     Get Expert Advice in Just 15 Minutes
         </a>
       </NavbarContent>
 
@@ -140,14 +140,14 @@ const NavBar = () => {
         ))}
         <NavbarItem>
           <a
-            href={"https://calendly.com/prithvi-webibee/consultation"}
+            href={"https://calendly.com/webibee/consultation"}
             title="Contact"
        
             aria-current="page"
-            className="flex items-center gap-2 text-lg md:text-xl hover:opacity-50 cursor-pointer font-Lato py-1.5 px-2 text-[#fa4848] bg-white rounded-lg font-semibold hover:animate-pulse"
+            className="flex items-center gap-2 text-lg md:text-xl hover:opacity-50 cursor-pointer font-Lato py-1.5 px-2 text-[#31a327] bg-white rounded-lg font-semibold hover:animate-pulse"
           >
             {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-       Get Expert Advice in Just 15 Minutes !
+       Get Expert Advice in Just 15 Minutes
           </a>
         </NavbarItem>
       </NavbarContent>

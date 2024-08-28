@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const KnowMore = () => {
   return (
-    <section className="padding-variable font-Lato bg-gradient">
+    <section className="padding-variable font-Merri bg-gradient">
       <div>
-        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-bold text-center text-default">
+        <h3 className="capitalize text-5xl md:text-7xl w-full mx-auto tracking-wide font-Gothic font-bold text-center text-default">
           Know More
         </h3>
         <hr className="w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-gradient" />
@@ -14,7 +14,7 @@ export const KnowMore = () => {
       <div className="w-full h-full md:h-[80vh] md:flex md:justify-between gap-5 md:gap-2 py-10">
         {/* titlte card */}
         <div className="w-full md:w-2/5 text-default flex flex-col justify-center items-center gap-5 py-5">
-          <h3 className="text-bold text-2xl md:text-3xl tracking-wide font-Montserrat text-center">
+          <h3 className="text-bold text-2xl md:text-3xl tracking-wide font-Gothic text-center">
            <span className="font-Caveat font-medium text-2xl md:text-4xl me-3">  Check out 👉</span>
           </h3>
           <p className="font-medium text-base md:text-lg text-left w-4/5 tracking-normal leading-relaxed">

@@ -19,7 +19,7 @@ const Hero = () => {
         <h1 className="w-full mx-auto mt-8 text-6xl font-medium tracking-wide capitalize md:text-8xl font-Caveat md:mt-10 ">
           Websites that stand out
         </h1>
-        <h2 className="w-full mx-auto font-medium capitalize text-md md:text-xl font-Lato ">
+        <h2 className="w-full mx-auto font-medium capitalize text-md md:text-xl font-Merri ">
           Elevate SEO, Drive Sales, and Set the Standard for Cutting-Edge
           Quality with Our Performance-Optimized Designs
         </h2>
@@ -27,7 +27,7 @@ const Hero = () => {
           <Button
             size="lg"
             radius="lg"
-            className="rounded-2xl border-2 border-dashed border-success bg-danger md:text-xl shadow-lg px-6 py-5 md:px-28 md:py-8 font-Lato font-bold uppercase text-default transition-all duration-300 hover:animate-pulse active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+            className="rounded-2xl border-2 border-dashed border-success bg-danger md:text-xl shadow-lg px-6 py-5 md:px-28 md:py-8 font-Merri font-bold uppercase text-default transition-all duration-300 hover:animate-pulse active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           >
             <Link
               passHref={true}

@@ -4,16 +4,19 @@ import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Caveat, Lato, Montserrat, League_Gothic,Merriweather_Sans } from "next/font/google";
+import { Caveat,League_Gothic,Merriweather_Sans } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Head from "next/head";
+import { Partytown } from '@builder.io/partytown/react';
+
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
   return {
   title: "Webibee",
-  description: "Webibee crafts stunning websites that help businesses flourish",
+  description: "We deliver industry leading design and technology software services",
   robots: "index, follow",
   applicationName: "Webibee Web Development Agency",
   authors: [{ name: "Prithvi" }],
@@ -46,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
     type: "website",
     url: `https://webibee.com`,
     title: "Webibee",
-    description: "Webibee crafts stunning websites that help businesses flourish",
+    description: "We deliver industry leading design and technology software services",
     siteName: "Webibee Agency",
     images: [
       {
@@ -57,15 +60,15 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 };
 
-const montserrat = League_Gothic({
+const gothic = League_Gothic({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-gothic",
   // weight: "600",
 });
 
-const lato = Merriweather_Sans({
+const merri = Merriweather_Sans({
   subsets: ["latin"],
-  variable: "--font-lato",
+  variable: "--font-merri",
   weight: "400",
 });
 
@@ -83,12 +86,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${lato.variable} ${montserrat.variable} ${caveat.variable}`}
+      className={`${merri.variable} ${gothic.variable} ${caveat.variable}`}
     >
-      {/* <Head>
-        <meta name="robots" content="all" />
-        <meta name="googlebot" content="all" />
-      </Head> */}
+      <Head>
+           {/* Add Microsoft Clarity script with Partytown */}
+             <Partytown debug={true} forward={['dataLayer.push']} />
+             <script
+  type="text/partytown"
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)
+      })(window, document, "clarity", "script", "nubuveu1h7");
+    `,
+  }}
+/>
+      </Head>
       <body>
         <Providers>
           <NavBar />

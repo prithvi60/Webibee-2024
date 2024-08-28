@@ -14,7 +14,7 @@ export default function Testimonials() {
       name="testimonial"
     >
       <div>
-        <h1 className="flex justify-center capitalize text-[3.5rem] md:text-7xl w-full mx-auto tracking-wide font-Montserrat font-normal text-center text-default">
+        <h1 className="flex justify-center capitalize text-[3.5rem] md:text-7xl w-full mx-auto tracking-wide font-Gothic font-normal text-center text-default">
           <span className="hidden md:block">Customer&nbsp; </span> Testimonials
         </h1>
         <hr className="w-36 md:w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-default" />
@@ -40,15 +40,15 @@ export default function Testimonials() {
           //       className="rounded-full"
           //     />
           //     <div className="space-y-0.5">
-          //       <h4 className="text-lg font-semibold leading-none capitalize md:text-xl font-Lato line-clamp-1">
+          //       <h4 className="text-lg font-semibold leading-none capitalize md:text-xl font-Merri line-clamp-1">
           //         {item.title}
           //       </h4>
-          //       <p className="text-sm capitalize md:text-base lg:text-lg text-slate-100 font-Lato">
+          //       <p className="text-sm capitalize md:text-base lg:text-lg text-slate-100 font-Merri">
           //         {item.country}
           //       </p>
           //     </div>
           //   </div>
-          //   <div className="px-4 py-6 pb-10 font-normal md:px-8 bg-secondary font-Lato text-base md:text-lg text-white/90 !h-[255px] flex flex-col justify-between items-start">
+          //   <div className="px-4 py-6 pb-10 font-normal md:px-8 bg-secondary font-Merri text-base md:text-lg text-white/90 !h-[255px] flex flex-col justify-between items-start">
           //     <p className="tracking-wide line-clamp-5">{item.para}</p>
           //     <div className="flex items-center mb-1.5">
           //       <svg

@@ -46,7 +46,7 @@ const Footer = () => {
               Webibee
             </span>
           </div>
-          <span className="font-Lato">
+          <span className="font-Merri">
             &copy;{`Copyright ${new Date().getFullYear()}`} - All rights
             reserved
           </span>{" "}

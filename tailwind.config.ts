@@ -12,8 +12,8 @@ module.exports = {
       colors: {
       },
       fontFamily: {
-        Lato: 'var(--font-lato)',
-        Montserrat: 'var(--font-montserrat)',
+        Merri: 'var(--font-merri)',
+        Gothic: 'var(--font-gothic)',
         Caveat: 'var(--font-caveat)',
       },
       aspectRatio: {

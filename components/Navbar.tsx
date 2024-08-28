@@ -68,61 +68,50 @@ const NavBar = () => {
       }}
       // className={``}
     >
-      <NavbarContent className="md:hidden !flex-grow-0" justify="start">
-        {/* <NavbarMenuToggle className="text-primary" /> */}
-        <NavbarMenuToggle
-          className="text-default"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        />
-      </NavbarContent>
-
+  
       <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0">
         <NavbarBrand className=" mx-2 animate-drip-expand">
           <div
-            className="relative h-11 w-11 animate-pulse cursor-pointer"
+            className="relative  text-white text-4xl font-Caveat font-bold"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <Image
+            {/* <Image
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
               title="Webibee logo"
               fill
               aria-label="Webibee logo"
               className="absolute object-contain object-center"
-            />
+            /> */}
+            Webibee
           </div>
           {/* <p className="font-extrabold text-3xl font-logo_header">WEBIBEE</p> */}
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="end" className="flex md:hidden">
-        <Link
-          to={"Contact"}
-          href={"#Contact"}
-          title="Contact"
-          spy={true}
-          offset={-50}
-          smooth={true}
-          duration={500}
+        <a
+                 href={"https://calendly.com/webibee/consultation"}
           // color="secondary"
           aria-current="page"
-          className="flex items-center gap-2 text-xl  md:text-2xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
+          className="flex items-center gap-2 text-xl  md:text-2xl hover:opacity-50 cursor-pointer font-Montserrat text-[#31a327] tracking-wider py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
         >
           {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-          Contact Us
-        </Link>
+     Get Expert Advice in Just 15 Minutes
+        </a>
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-6" justify="center">
         <NavbarBrand className="space-x-2 animate-drip-expand">
-          <div className="relative h-14 w-14 animate-pulse">
-            <Image
+          <div className="relative text-5xl font-bold text-white font-Caveat">
+            {/* <Image
               src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
               alt="Webibee logo"
               title="Webibee logo"
               fill
               aria-label="Webibee logo"
               className="absolute object-contain object-center"
-            />
+            /> */}
+            Webibee
           </div>
         </NavbarBrand>
       </NavbarContent>
@@ -142,29 +131,24 @@ const NavBar = () => {
               smooth={true}
               duration={500}
               aria-current="page"
-              className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat text-default hover:animate-pulse"
+              className="text-xl hover:opacity-50 cursor-pointer 
+              font-Lato text-default hover:animate-pulse"
             >
               {link.title}
             </Link>
           </NavbarItem>
         ))}
         <NavbarItem>
-          <Link
-            to={"Contact"}
-            href={"#Contact"}
+          <a
+            href={"https://calendly.com/webibee/consultation"}
             title="Contact"
-            spy={true}
-            offset={-30}
-            smooth={true}
-            duration={500}
-            // color="secondary"
+       
             aria-current="page"
-            className="flex items-center gap-2 text-lg md:text-2xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold hover:animate-pulse"
+            className="flex items-center gap-2 text-lg md:text-xl hover:opacity-50 cursor-pointer font-Lato py-1.5 px-2 text-[#31a327] bg-white rounded-lg font-semibold hover:animate-pulse"
           >
             {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-            Contact Us
-          </Link>
+       Get Expert Advice in Just 15 Minutes
+          </a>
         </NavbarItem>
       </NavbarContent>
 
@@ -181,7 +165,7 @@ const NavBar = () => {
               offset={-50}
               smooth={true}
               duration={500}
-              className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-default"
+              className="w-full p-2 font-Lato font-semibold text-xl bg-primary text-default"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.title}

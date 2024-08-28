@@ -14,7 +14,7 @@ export const IMG = [
 // NAVBAR
 export const Navlinks = [
   // { href: "Services", title: "Services" },
-  { href: "Portfolio", title: "Recent Work" },
+  // { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   // {href:"/terms",title:"Terms"},
   // {href:"/",title:"Tool"},
@@ -22,7 +22,7 @@ export const Navlinks = [
 
 // Footer links
 export const Footerlinks = [
-  { href: "Services", title: "Services" },
+  // { href: "Services", title: "Services" },
   { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   { href: "Contact", title: "Contact us" },
@@ -32,20 +32,6 @@ export const Footerlinks = [
 // TESTIMONIALS
 export const lists = [
   {
-    title: "Ujwal",
-    country: "India",
-    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
-    para: "Great work done in no time! Thanks for the co-operation",
-  },
-  {
-    title: "Harry",
-    country: "India",
-    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
-    para: `
-     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
-     `,
-  },
-  {
     title: "Paul",
     country: "Europe",
     img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
@@ -87,6 +73,21 @@ export const lists = [
     img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+
 ];
 
 // Benefits
@@ -122,7 +123,7 @@ export const benefits = [
 export const Faq = [
   {
     title: "How long will it take to build my website?",
-    content: "We take about 1 month depending on the scope of the project",
+    content: "We delivery within 30days depending on the scope of the project",
   },
   {
     title: "Will my website operate on both desktop and mobile?",
@@ -135,24 +136,18 @@ export const Faq = [
   {
     title: "Other services we offer",
     content:
-      "We offer pay per click and other marketing services for site content",
+      "We offer custom software development , video editing , digital marketing services",
   },
   {
-    title: "Who will create my websites content?",
+    title: "Who will create my website content?",
     content:
-      "We will be reliant upon you to create your own websites content. ",
+      "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
   },
   {
     title: "How do your make the websites",
-    content: `A website price will be unique to each project. This depends on things such as the page count, dynamic content, and the overall design. A project price is case-by-case.
-Book a call or leave an inquiry to get a quote for your specific needs!
-    `,
+    content: `We use latest opensource javascript tools to build industry standard websites`,
   },
-  {
-    title: "Who will create my websites content?",
-    content:
-      "We will be reliant upon you to create your own websites content. ",
-  },
+
 ];
 
 // Contact Us
@@ -201,36 +196,36 @@ export const portfolio = [
     title: "Business Portfolio",
     href: "https://vbccinstruments.com/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
-    title: "SEO Optimization",
-    href: "https://vbccresearch.com/#/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
+  //   title: "SEO Optimization",
+  //   href: "https://vbccresearch.com/#/",
+  // },
   {
     img: "https://ik.imagekit.io/webibee/Agency/printguymock.png",
     title: "Shopify Storefront",
     href: "https://theprintguy.in/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/iqumock.png",
-    title: "CMS Integration",
-    href: "https://iquclinic.com/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/iqumock.png",
+  //   title: "CMS Integration",
+  //   href: "https://iquclinic.com/",
+  // },
   {
     img: "https://ik.imagekit.io/webibee/Agency/lotusai.png",
     title: "Fullstack with Webscraper",
     href: "https://lotus-ai.vercel.app/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/srkmock.png",
-    title: "Personal Portfolio",
-    href: "https://itssrk.com/",
-  },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/indiemock.png",
-    title: "Landing Page",
-    href: "https://indienadu.com/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/srkmock.png",
+  //   title: "Personal Portfolio",
+  //   href: "https://itssrk.com/",
+  // },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/indiemock.png",
+  //   title: "Landing Page",
+  //   href: "https://indienadu.com/",
+  // },
 
   // {img:"/avatar-1.jpg",title:"N9 power",href:"/"},
   // {img:"/avatar-2.jpg",title:"Flow graph",href:"/"},

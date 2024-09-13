@@ -22,7 +22,7 @@ export default function Portfolio() {
       <div className="mx-auto">
         <h1 className="font-Gothic font-medium text-6xl md:text-8xl text-center text-white">
           {/* <span className="hidden md:block"> */}
-           Get Stunning Websites!
+           Get Stunning AI-Optimized Websites!
         </h1>
         <hr className="w-36 md:w-56 mt-4 mx-auto p-0.5 bg-default border-t-0 rounded-md" />
       </div>

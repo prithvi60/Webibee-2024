@@ -201,11 +201,11 @@ export const FaqIndia = [
   },
   {
     title: "How much does it cost?",
-    content: "Our projects tend to start at Rs 65,000 which includes various services like branding, UX, graphic design, and more. Dont worry hosting and maintainence is on us!",
+    content: "Our projects tend to start at Rs 65,000 which includes various services like branding, UX, graphic design, and more. Dont worry hosting and maintainence is on us! Additionaly you might have to purchase a domain incase of new websites",
   },
   {
     title: "What do Webibee specialise in?",
-    content: "We are tech savvy with all the latest tools, if you want to explore creative ideas in terms of design and functionality, we shine there.",
+    content: "We are tech savvy with all the cutting edge tech and AI workflow, if you want to explore creative ideas in terms of design and functionality, we shine there.",
   },
   {
     title: "What industries do you work with?",
@@ -215,7 +215,7 @@ export const FaqIndia = [
   {
     title: "What if Webibee services doesn't meet my expectations?",
     content:
-      "We rarely face that but we'll understand your situtation and got your back. We guarantee a Rs 25,000 refund from the advance within 2 weeks of cancelation including our work resources till that period.",
+      "We rarely face that but we'll understand your situation and got your back. We guarantee a Rs 25,000 refund from the advance within 2 weeks of cancelation including our work resources till that period.",
   },
   {
     title: "Do I own the IP and how will my privacy be protected?",
@@ -240,11 +240,11 @@ export const FaqWestern = [
   },
   {
     title: "How much does it cost?",
-    content: "Our projects tend to start at 2500$ which includes various services like branding, UX, graphic design, and more. Dont worry hosting and maintainence is on us!",
+    content: "Our projects tend to start at 2500$ which includes various services like Branding, UX, Graphic design, Analytics, and more. Dont worry hosting and maintainence is on us! Additionaly you might have to purchase a domain incase of new websites",
   },
   {
     title: "What do Webibee specialise in?",
-    content: "We are tech savvy with all the latest tools, if you want to explore creative ideas in terms of design and functionality, we shine there.",
+    content: "We are tech savvy with all the cutting edge tech and AI workflow, if you want to explore creative ideas in terms of design and functionality, we shine there.",
   },
   {
     title: "What industries do you work with?",
@@ -254,7 +254,7 @@ export const FaqWestern = [
   {
     title: "What if Webibee services doesn't meet my expectations?",
     content:
-      "We rarely face that but we'll understand your situtation and got your back. We guarantee a 500$ refund from the advance within 2 weeks of cancelation including our work resources till that period.",
+      "We rarely face that but we'll understand your situation and got your back. We guarantee a 500$ refund from the advance within 2 weeks of cancelation including our work resources till that period.",
   },
   {
     title: "Do I own the IP and how will my privacy be protected?",
@@ -278,7 +278,7 @@ export const services = [
   { label: "Website Revamp", value: "Website Revamp" },
   // { label: "Google Ads", value: "Google Ads" },
   // { label: "Instagram Ads	", value: "Instagram Ads" },
-  { label: "E-commerce Store", value: "E-commerce Setup" },
+  // { label: "E-commerce Store", value: "E-commerce Setup" },
   { label: "Custom software development", value: "Custom software development" },
   { label: "Mobile development", value: "Mobile development" },
 

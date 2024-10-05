@@ -11,6 +11,14 @@ const Footer = () => {
     <footer className="bg-black pt-7 md:pt-12 pb-6 ">
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="flex justify-center items-center gap-5 cursor-pointer">
+        {/* <Image
+                src={"https://ik.imagekit.io/webibee/webibeepurplelogo.png"}
+                alt="Webibee logo"
+                fill
+                title="Webibee logo"
+                aria-label="Webibee logo"
+                className=" object-contain object-center"
+              /> */}
           <Link
             target="_blank"
             title="linkedIn"
@@ -32,9 +40,9 @@ const Footer = () => {
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <div className="relative h-8 w-8 animate-pulse ">
+            <div className="relative h-12 w-14 animate-pulse ">
               <Image
-                src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
+                src={"https://ik.imagekit.io/webibee/webibeepurplelogo.png"}
                 alt="Webibee logo"
                 fill
                 title="Webibee logo"

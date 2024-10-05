@@ -30,10 +30,10 @@ const MarqueeButton = ({ children }: { children: string }) => {
       whileTap={{
         scale: 0.95,
       }}
-      className="relative overflow-hidden  rounded-md bg-indigo-100 p-1 md:p-4 md:text-xl font-black uppercase font-Merri  w-[150px] md:w-full text-sm"
+      className="relative overflow-hidden  rounded-md bg-white p-1 md:p-4 md:text-xl font-black uppercase font-Merri  w-[150px] md:w-full text-sm"
     >
       <motion.span
-        className="inline-block text-indigo-900 "
+        className="inline-block text-[#7943f2] "
         initial={{ x: "0%" }}
         animate={{
           x: "calc(-100% - 6px)",
@@ -59,7 +59,7 @@ const MarqueeButton = ({ children }: { children: string }) => {
           repeat: Infinity,
           repeatType: "loop",
         }}
-        className="absolute left-1 md:left-4 top-1 md:top-4 inline-block text-green-500"
+        className="absolute left-1 md:left-4 top-1 md:top-4 inline-block text-[#7943f2]"
       >
         {children} •
       </motion.span>
@@ -74,7 +74,7 @@ const MarqueeButton = ({ children }: { children: string }) => {
           repeat: Infinity,
           repeatType: "loop",
         }}
-        className="absolute left-1 md:left-4 top-1 md:top-4 inline-block text-green-800"
+        className="absolute left-1 md:left-4 top-1 md:top-4 inline-block text-[#7943f2]"
       >
         {children} •
       </motion.span>
@@ -89,7 +89,7 @@ const MarqueeButton = ({ children }: { children: string }) => {
           repeat: Infinity,
           repeatType: "loop",
         }}
-        className="absolute left-1 md:left-4 top-1 md:top-4 inline-block text-indigo-900 "
+        className="absolute left-1 md:left-4 top-1 md:top-4 inline-block text-[#7943f2]"
       >
         {children} •
       </motion.span>

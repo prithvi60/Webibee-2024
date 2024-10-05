@@ -103,16 +103,19 @@ const NavBar = () => {
 
       <NavbarContent className="hidden md:flex gap-6" justify="center">
         <NavbarBrand className="space-x-2 animate-drip-expand">
+    
           <div className="relative text-5xl font-bold text-white font-Caveat">
-            {/* <Image
-              src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
+          {/* <Image
+              src={"https://ik.imagekit.io/webibee/webibeepurplelogo.png?updatedAt=1728135622562"}
               alt="Webibee logo"
               title="Webibee logo"
               fill
               aria-label="Webibee logo"
               className="absolute object-contain object-center"
             /> */}
+            <div>
             Webibee
+            </div>
           </div>
         </NavbarBrand>
       </NavbarContent>

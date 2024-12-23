@@ -1,57 +1,38 @@
-"use client";
 import Link from "next/link";
-import React from "react";
-// import { FaSquareFacebook,FaSquareXTwitter,FaSquareInstagram,FaSquareWhatsapp, FaLinkedinIn } from "react-icons/fa6";
-import { FaLinkedin, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import Navlink from "./Navlinks";
-import Image from "next/image";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black pt-7 md:pt-12 pb-6 ">
-      <div className="flex flex-col justify-center items-center gap-8">
-        <div className="flex justify-center items-center gap-5 cursor-pointer">
-          <Link
-            target="_blank"
-            title="linkedIn"
-            href={"https://www.linkedin.com/in/prithvi-n/"}
-          >
-            <FaLinkedinIn className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-pulse hover:text-default/60" />
-          </Link>
-          <Link
-            target="_blank"
-            title="instagram"
-            href={"https://www.instagram.com/prithvi_bytes/?hl=en"}
-          >
-            <FaInstagram className="h-6 md:h-8 w-6 md:w-8 text-default rounded-md hover:opacity-70 hover:animate-pulse hover:text-default/60" />
-          </Link>
+    <footer className="w-full mx-auto max-w-5xl px-5 md:px-0 py-10 md:py-20 block space-y-10 md:space-y-20 font-EbGaramond text-[#868686] tracking-wide text-lg md:text-xl xl:text-2xl">
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between gap-6 md:gap-0">
+        <div className="block space-y-3">
+          <h5>Webibee</h5>
+          <a href="mailto:support@webibee.com">support@webibee.com</a>
         </div>
-        <Navlink />
-        <div className="text-default flex flex-col md:flex-row items-center justify-center gap-2.5 md:gap-10 font-normal">
-          <div
-            className="flex items-center gap-2 cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <div className="relative h-8 w-8 animate-pulse ">
-              <Image
-                src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
-                alt="Webibee logo"
-                fill
-                title="Webibee logo"
-                aria-label="Webibee logo"
-                className="absolute object-contain object-center"
-              />
-            </div>
-            <span className="font-semibold text-2xl animate-pulse font-Caveat capitalize">
-              Webibee
-            </span>
-          </div>
-          <span className="font-Lato">
-            &copy;{`Copyright ${new Date().getFullYear()}`} - All rights
-            reserved
-          </span>{" "}
-        </div>
+        <ul className="flex items-center gap-5">
+          <li className="hover:animate-pulse">
+            <Link
+              href={"https://www.instagram.com/prithvi_bytes/?hl=en"}
+              className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
+            >
+              <FaLinkedinIn />
+            </Link>
+          </li>
+          <li className="hover:animate-pulse">
+            <Link
+              href={"https://www.instagram.com/prithvi_bytes/?hl=en"}
+              className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
+            >
+              <FaInstagram />
+            </Link>
+          </li>
+        </ul>
       </div>
+      <ul className="flex items-center gap-4">
+        <li><Link href={"/"}>Home</Link></li>
+        <li><Link href={"/caseStudies"}>CaseStudies</Link></li>
+        <li></li>
+      </ul>
     </footer>
   );
 };

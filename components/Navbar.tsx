@@ -1,18 +1,8 @@
 "use client";
-import { Navlinks } from "@/libs/data";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Button,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from "@nextui-org/react";
+
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [hideNav, setHideNav] = useState(true);
@@ -38,158 +28,18 @@ const NavBar = () => {
   }, [percent]);
 
   return (
-    <Navbar
-      // shouldHideOnScroll
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      isBordered
-      isBlurred={false}
-      maxWidth="full"
-      style={
-        {
-          // opacity: hideNav ? 0 : 1,
-          // pointerEvents: hideNav ? "none" : "all",
-          // position: hideNav ? "absolute" : "sticky",
-          // display:hideNav ? "none" : "block",
-        }
-      }
-      // onScrollPositionChange={(position) => {
-      //   // console.log("pos", position);
-      //   position > 160 ? setHideNav(false) : setHideNav(true);
-      // }}
-      classNames={{
-        base: [
-          `${
-            percent >= 0 && percent <= 12
-              ? "!bg-transparent shadow-none border-b-0"
-              : "bg-primary shadow-md border-b-2 border-warning"
-          } fixed top-0 left-0 transform transition duration-700 ease-linear font-Lato py-2 xl:px-8`,
-        ],
-      }}
-      // className={``}
-    >
-      <NavbarContent className="md:hidden !flex-grow-0" justify="start">
-        {/* <NavbarMenuToggle className="text-primary" /> */}
-        <NavbarMenuToggle
-          className="text-default"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        />
-      </NavbarContent>
-
-      <NavbarContent className="md:hidden z-[1000] !grow-0 !basis-0">
-        <NavbarBrand className=" mx-2 animate-drip-expand">
-          <div
-            className="relative h-11 w-11 animate-pulse cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <Image
-              src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
-              alt="Webibee logo"
-              title="Webibee logo"
-              fill
-              aria-label="Webibee logo"
-              className="absolute object-contain object-center"
-            />
-          </div>
-          {/* <p className="font-extrabold text-3xl font-logo_header">WEBIBEE</p> */}
-        </NavbarBrand>
-      </NavbarContent>
-      <NavbarContent justify="end" className="flex md:hidden">
-        <Link
-          to={"Contact"}
-          href={"#Contact"}
-          title="Contact"
-          spy={true}
-          offset={-50}
-          smooth={true}
-          duration={500}
-          // color="secondary"
-          aria-current="page"
-          className="flex items-center gap-2 text-xl  md:text-2xl hover:opacity-50 cursor-pointer font-Caveat text-[#904BF6] py-1.5 px-2 bg-default rounded-lg font-bold z-10 hover:animate-pulse"
-        >
-          {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-          Contact Us
-        </Link>
-      </NavbarContent>
-
-      <NavbarContent className="hidden md:flex gap-6" justify="center">
-        <NavbarBrand className="space-x-2 animate-drip-expand">
-          <div className="relative h-14 w-14 animate-pulse">
-            <Image
-              src={"https://ik.imagekit.io/webibee/Agency/brain-logo.svg"}
-              alt="Webibee logo"
-              title="Webibee logo"
-              fill
-              aria-label="Webibee logo"
-              className="absolute object-contain object-center"
-            />
-          </div>
-        </NavbarBrand>
-      </NavbarContent>
-      <NavbarContent
-        className="hidden md:flex md:gap-5 lg:gap-10"
-        justify="center"
-      >
-        {Navlinks.map((link, idx) => (
-          <NavbarItem key={idx}>
-            <Link
-              key={idx}
-              to={link.href}
-              href={`#${link.href}`}
-              title={link.title}
-              spy={true}
-              offset={-30}
-              smooth={true}
-              duration={500}
-              aria-current="page"
-              className="text-lg hover:opacity-50 cursor-pointer 
-              font-Montserrat text-default hover:animate-pulse"
-            >
-              {link.title}
-            </Link>
-          </NavbarItem>
-        ))}
-        <NavbarItem>
-          <Link
-            to={"Contact"}
-            href={"#Contact"}
-            title="Contact"
-            spy={true}
-            offset={-30}
-            smooth={true}
-            duration={500}
-            // color="secondary"
-            aria-current="page"
-            className="flex items-center gap-2 text-lg md:text-2xl hover:opacity-50 cursor-pointer font-Caveat  py-1.5 px-2 text-[#904BF6] bg-white rounded-lg font-semibold hover:animate-pulse"
-          >
-            {/* <span><FaPhoneVolume className="text-default text-base  md:text-lg animate-bounce"/></span> */}
-            Contact Us
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarMenu className="bg-secondary bg-opacity-90 pt-10">
-        {Navlinks.map((link, idx) => (
-          <NavbarMenuItem key={`${link}-${idx}`} className="">
-            <Button
-              as={Link}
-              key={idx}
-              to={link.href}
-              href={`#${link.href}`}
-              title={link.title}
-              spy={true}
-              offset={-50}
-              smooth={true}
-              duration={500}
-              className="w-full p-2 font-Lato font-semibold text-lg bg-primary text-default"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {link.title}
-            </Button>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
+    <header className="p-5 md:px-8 xl:px-12 md:py-10">
+      <nav className="flex justify-between items-center font-EbGaramond">
+        <div className="size-20 overflow-hidden relative">
+          <Image fill alt="logo" src={"/webibee logo.svg"} className="object-contain object-center" />
+        </div>
+        <ul>
+          <li className="underline underline-offset-8 tracking-wide font-bold hover:text-info/80  text-lg md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out">
+            <Link href={""}>Ready to ignite?</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

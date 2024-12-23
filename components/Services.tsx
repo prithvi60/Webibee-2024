@@ -1,7 +1,6 @@
 "use client";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import { Marquee } from "@webibee/react-marquee";
-import "keen-slider/keen-slider.min.css";
 import { Element } from "react-scroll";
 import { ourservices } from "@/libs/data";
 import { useEffect, useState } from "react";

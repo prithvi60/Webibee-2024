@@ -2,24 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
 }
 
 /* carousel animate hover state */
-.scroll:hover{
+.scroll:hover {
   animation-play-state: paused;
 }
 
 @layer utilities {
-
-  .padding-variable{
+  .padding-variable {
     @apply space-y-3 md:space-y-4
-    /* @apply p-6 md:p-10 lg:p-[60px] space-y-3 md:space-y-4 */
+    /* @apply p-6 md:p-10 lg:p-[60px] space-y-3 md:space-y-4 */;
   }
-
 }
 
 /* react slick */
@@ -28,18 +25,13 @@
   margin: 0 20px;
 }
 
-
-body{
-  background: #17092c;
-}
-body,
 .carousal::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: default;
-  outline: 1px solid #904BF6;
+  outline: 1px solid #904bf6;
 }
 
 /* Swiper JS */
@@ -75,9 +67,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Group Skip Sliders */
-.swiper-button-next, 
-.swiper-button-prev{
-  background-color: #904BF6;
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #904bf6;
   color: default !important;
   padding: 30px;
   border-radius: 30px;

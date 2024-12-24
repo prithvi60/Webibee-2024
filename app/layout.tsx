@@ -8,6 +8,7 @@ import FloatingButton from "@/components/FloatingButton";
 import Head from "next/head";
 import { Partytown } from '@builder.io/partytown/react';
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 
 // Meta Data
@@ -103,6 +104,7 @@ export default function RootLayout({
           <NavBar />
           <main className="relative overflow-hidden">{children}</main>
           <FloatingButton />
+          <Contact />
           <Footer />
         </Providers>
       </body>

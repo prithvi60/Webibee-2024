@@ -34,8 +34,8 @@ const FAQ = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 overflow-y-auto space-y-6">
-                <p className="text-xs md:text-sm font-SourceCodePro font-normal">Based on the business focus and customer needs, here's a recommended order for the FAQs, keeping it concise with the most essential questions:</p>
+            <div className="w-full md:w-1/2 overflow-y-auto space-y-4">
+                <p className="text-xs p-2 md:p-5 md:text-sm font-SourceCodePro font-normal">Based on the business focus and customer needs, here's a recommended order for the FAQs, keeping it concise with the most essential questions:</p>
                 <Accordion variant="light" itemClasses={itemClasses} defaultExpandedKeys={["0"]}>
                     {faq.map((item, idx) => (
                         <AccordionItem

@@ -12,7 +12,7 @@ const TestimonialCard = ({ list }: { list: any }) => {
   return (
     <Card className="min-w-[18rem] md:min-w-[25rem] first:ms-2 min-h-[320px] max-h-[320px] border border-warning bg-black">
       <CardHeader className="justify-start gap-5 px-6 py-4 ">
-        {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Montserrat text-default">
+        {/* <h4 className="text-xl md:text-3xl font-semibold leading-none font-Gothic text-default">
           Family Counselling
         </h4> */}
         <Image
@@ -25,16 +25,16 @@ const TestimonialCard = ({ list }: { list: any }) => {
         />
         {/* <Avatar title='country logo' radius="full" size="lg" src={list.img} alt={`${list.country} logo`}  className="border-danger border-5" /> */}
         <div className="flex flex-col">
-          <h2 className="text-lg md:text-xl font-semibold leading-none font-Lato text-default line-clamp-1">
+          <h2 className="text-lg md:text-xl font-semibold leading-none font-Merri text-default line-clamp-1">
             {list.title}
           </h2>
-          <p className="text-base md:text-lg text-slate-100 font-Lato">
+          <p className="text-base md:text-lg text-slate-100 font-Merri">
             {list.country}
           </p>
         </div>
       </CardHeader>
-      <CardBody className="px-6 py-4 text-white/90 h-auto bg-secondary ">
-        <p className="font-Lato text-base md:text-lg tracking-wide line-clamp-6">
+      <CardBody className="px-6 py-4 text-white/90 h-auto bg-secondary overflow-y-auto" id="testimonialcard">
+        <p className="font-Merri text-base md:text-md tracking-wide line-clamp-8">
           {list.para}
         </p>
       </CardBody>

@@ -4,19 +4,24 @@ import { resolversPage } from "@/graphql/resolversPage";
 import { typeDefsPage } from "@/graphql/typeDefsPage";
 import { prisma } from "../../../prisma/db";
 import { PrismaClient } from "@prisma/client";
+import { NextRequest } from "next/server";
 
-export type ServerType = {
+export type ServerContext = {
   prisma: PrismaClient;
+  req: NextRequest;
 };
 
-const apolloServer = new ApolloServer<ServerType>({
+const apolloServer = new ApolloServer<ServerContext>({
   resolvers: resolversPage,
   typeDefs: typeDefsPage,
-  // cors: false, // Disable CORS
 });
 
 const handler = startServerAndCreateNextHandler(apolloServer, {
-  context: async (req, res) => ({ req, res, prisma }),
+  context: async (req: NextRequest): Promise<ServerContext> => ({
+    req,
+    prisma,
+  }),
 });
 
-export { handler as GET, handler as POST };
+export const GET = handler;
+export const POST = handler;

@@ -11,10 +11,129 @@ export const IMG = [
   { src: "/img-4.jpg", ratio: "aspect-video" },
 ];
 
+// Testimonials
+
+export const testimonials = [
+  {
+    id: 1,
+    reviewer: "Webibee",
+    img: "/avatar 1.jpeg",
+    position: "CEO, Rasim Exports",
+    review:
+      "Working with Webibee has been a game-changer for our business. Their team truly understands the challenges of growing companies like ours and delivered a solution that exceeded our expectations. The process was smooth, the communication was clear, and the results were incredible. Thanks to their expertise, we now have a seamless website and optimized processes that have saved us time and boosted our growth. I couldn’t recommend them more!",
+  },
+  {
+    id: 2,
+    reviewer: "Webibee",
+    img: "/avatar 1.jpeg",
+    position: "CEO, Rasim Exports",
+    review:
+      "Webibee transformed our online presence with ease and efficiency. Their team delivered a clean, user-friendly website that perfectly reflects our brand. The attention to detail and commitment to understanding our needs truly set them apart. We've seen a significant increase in customer engagement, and I can confidently say partnering with Webibee was one of our best decisions.",
+  },
+  {
+    id: 3,
+    reviewer: "Webibee",
+    img: "/avatar 1.jpeg",
+    position: "CEO, Rasim Exports",
+    review:
+      "From day one, Webibee felt like an extension of our team. They listened, strategized, and delivered a custom solution that streamlined our operations. Their innovative approach and quick turnaround made the entire process stress-free. We now have tools that not only solve our problems but also drive growth. I highly recommend them to anyone looking to simplify their tech journey!",
+  },
+];
+
+export const collaboration = [
+  {
+    title: "Support (contract work)",
+    desc: "help with something specific ",
+  },
+  {
+    title: "Launch (project work)",
+    desc: "offer tech to your business",
+  },
+  {
+    title: "Grow (retainer work)",
+    desc: "grow existing business with tech",
+  },
+  {
+    title: "Scale ( custom product )",
+    desc: "build your Sass and grow it with tech",
+  },
+];
+
+export const faq = [
+  {
+    title: "What does Webibee offer?",
+    desc: "We provide a variety of services under IT, Digital, and Creative Essentials that takes of the end to end needs of an SME",
+  },
+  {
+    title: "How much does it cost?",
+    desc: "Our cost is carefully catered to meet the budget of SMEs and start from 2500$ ( convert to inr for indian visitors)",
+  },
+  {
+    title: "What information do you need to prepare an estimate?",
+    desc: "We would need a project brief - what business features you are looking for, references if any, and your valuable questions for our initial consultation",
+  },
+  {
+    title: "How can we get started with Webibee?",
+    desc: "Please book an initial consultation call to take our collaboration to the next step",
+  },
+  {
+    title: "Do I own the IP?",
+    desc: "Whatever services we offer is totally owned by you and we have an NDA to make sure your business information is kept confidential",
+  },
+  {
+    title: "Is there a refund policy?",
+    desc: " We rarely face that but we'll understand your situation and got your back. We guarantee a 50% refund from the Advance payment within 3 weeks of cancellation including our work resources till that period.",
+  },
+  {
+    title: "How long does it usually take for a startup?",
+    desc: "We have multiple timeline formats based on your needs. Refer here",
+  },
+  {
+    title: "Why Webibee?",
+    desc: "We are custom software specialists. We can strategies and make solutions that scales your business needs and look great while doing it .",
+  },
+];
+
+export const services = [
+  {
+    title: "IT",
+    summary: [
+      " I want to automate processes",
+      " improve efficiency",
+      "scale operations",
+      "build robust systems",
+      " create a product",
+      "implement my startup idea",
+    ],
+  },
+  {
+    title: "Digital",
+    summary: [
+      "I want to generate leads",
+      "improve conversions",
+      "increase traffic",
+      " have online presence",
+      "run an online business",
+      "market my product",
+      "reach audience",
+    ],
+  },
+  {
+    title: "Creative",
+    summary: [
+      "I want to spark curiosity",
+      "improve user experience",
+      "connect with customers ",
+      "create brand identity",
+      "make things aesthetic",
+    ],
+  },
+];
+
 // NAVBAR
 export const Navlinks = [
   // { href: "Services", title: "Services" },
-  { href: "Portfolio", title: "Recent Work" },
+  // { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   // {href:"/terms",title:"Terms"},
   // {href:"/",title:"Tool"},
@@ -22,7 +141,7 @@ export const Navlinks = [
 
 // Footer links
 export const Footerlinks = [
-  { href: "Services", title: "Services" },
+  // { href: "Services", title: "Services" },
   { href: "Portfolio", title: "Recent Work" },
   { href: "FAQ", title: "FAQ" },
   { href: "Contact", title: "Contact us" },
@@ -30,13 +149,14 @@ export const Footerlinks = [
 ];
 
 // TESTIMONIALS
-export const lists = [
+export const reviewIndia = [
   {
-    title: "Ujwal",
+    title: "Naveen",
     country: "India",
     img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
-    para: "Great work done in no time! Thanks for the co-operation",
+    para: "I highly recommend Prithvi together with his team at Webibee because they do very good work. To put it simply, they didn’t just develop websites; instead they optimized them leading to extremely high scores in Google’s website optimization metrics. On top of that, during the revision process, they always supported us until we were all satisfied with their work. I believe that Webibee is a reliable partner for current and future projects since they make me feel confident enough to tackle even bigger assignments going forward.",
   },
+
   {
     title: "Harry",
     country: "India",
@@ -44,6 +164,12 @@ export const lists = [
     para: `
      Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
      `,
+  },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
   },
   {
     title: "Paul",
@@ -59,6 +185,7 @@ export const lists = [
     img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
+
   {
     title: "Ujwal",
     country: "India",
@@ -88,7 +215,71 @@ export const lists = [
     para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
   },
 ];
+export const reviewWestern = [
+  {
+    title: "Paul",
+    country: "Europe",
+    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    para: `
+    Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
+    `,
+  },
+  {
+    title: "Louis",
+    country: "UAE",
+    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
+    para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
+  },
+  {
+    title: "Naveen",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "I highly recommend Prithvi together with his team at Webibee because they do very good work. To put it simply, they didn’t just develop websites; instead they optimized them leading to extremely high scores in Google’s website optimization metrics. On top of that, during the revision process, they always supported us until we were all satisfied with their work. I believe that Webibee is a reliable partner for current and future projects since they make me feel confident enough to tackle even bigger assignments going forward.",
+  },
 
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Paul",
+    country: "Europe",
+    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    para: `
+    Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.
+    `,
+  },
+  {
+    title: "Louis",
+    country: "UAE",
+    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
+    para: "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
+  },
+  {
+    title: "Ujwal",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: "Great work done in no time! Thanks for the co-operation",
+  },
+  {
+    title: "Harry",
+    country: "India",
+    img: "https://ik.imagekit.io/webibee/Agency/india%20logo.png",
+    para: `
+     Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+     `,
+  },
+];
 // Benefits
 
 export const benefits = [
@@ -119,57 +310,112 @@ export const benefits = [
 ];
 
 // FAQ
-export const Faq = [
+export const FaqIndia = [
   {
-    title: "How long will it take to build my website?",
-    content: "We take about 1 month depending on the scope of the project",
-  },
-  {
-    title: "Will my website operate on both desktop and mobile?",
-    content: "Yes we build fully responsive designs",
-  },
-  {
-    title: "Do you provide hosting and domains for websites?",
-    content: "Yes we do hosting and maintenance for long term clients",
-  },
-  {
-    title: "Other services we offer",
+    title: "How can we get started with Webibee?",
     content:
-      "We offer pay per click and other marketing services for site content",
+      "You can book a consulation slot via 'Get Expert Advice in 15mins' Button where we discuss your project requirements, scope and next steps to provide services for your business.",
   },
   {
-    title: "Who will create my websites content?",
+    title: "How much does it cost?",
     content:
-      "We will be reliant upon you to create your own websites content. ",
+      "Our projects tend to start at Rs 65,000 which includes various services like branding, UX, graphic design, and more. Dont worry hosting and maintainence is on us! Additionaly you might have to purchase a domain incase of new websites",
   },
   {
-    title: "How do your make the websites",
-    content: `A website price will be unique to each project. This depends on things such as the page count, dynamic content, and the overall design. A project price is case-by-case.
-Book a call or leave an inquiry to get a quote for your specific needs!
-    `,
-  },
-  {
-    title: "Who will create my websites content?",
+    title: "What do Webibee specialise in?",
     content:
-      "We will be reliant upon you to create your own websites content. ",
+      "We are tech savvy with all the cutting edge tech and AI workflow, if you want to explore creative ideas in terms of design and functionality, we shine there.",
   },
+  {
+    title: "What industries do you work with?",
+    content:
+      "We work with Industrial , Real estate, Startups , Creative businessnes ",
+  },
+  {
+    title: "What if Webibee services doesn't meet my expectations?",
+    content:
+      "We rarely face that but we'll understand your situation and got your back. We guarantee a Rs 25,000 refund from the advance within 2 weeks of cancelation including our work resources till that period.",
+  },
+  {
+    title: "Do I own the IP and how will my privacy be protected?",
+    content:
+      "Whatever services we offer is totally owned by you and we have an NDA to make sure your business information is kept confidential",
+  },
+  // {
+  //   title: "Who will create my website content?",
+  //   content:
+  //     "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
+  // },
+  // {
+  //   title: "How do your make the websites",
+  //   content: `We use latest opensource javascript tools to build industry standard websites`,
+  // },
 ];
-
+export const FaqWestern = [
+  {
+    title: "How can we get started with Webibee?",
+    content:
+      "You can book a consulation slot via 'Get Expert Advice in 15mins' Button where we discuss your project requirements, scope and next steps to provide services for your business.",
+  },
+  {
+    title: "How much does it cost?",
+    content:
+      "Our projects tend to start at 2500$ which includes various services like Branding, UX, Graphic design, Analytics, and more. Dont worry hosting and maintainence is on us! Additionaly you might have to purchase a domain incase of new websites",
+  },
+  {
+    title: "What do Webibee specialise in?",
+    content:
+      "We are tech savvy with all the cutting edge tech and AI workflow, if you want to explore creative ideas in terms of design and functionality, we shine there.",
+  },
+  {
+    title: "What industries do you work with?",
+    content:
+      "We work with Industrial , Real estate, Startups , Creative businessnes ",
+  },
+  {
+    title: "What if Webibee services doesn't meet my expectations?",
+    content:
+      "We rarely face that but we'll understand your situation and got your back. We guarantee a 500$ refund from the advance within 2 weeks of cancelation including our work resources till that period.",
+  },
+  {
+    title: "Do I own the IP and how will my privacy be protected?",
+    content:
+      "Whatever services we offer is totally owned by you and we have an NDA to make sure your business information is kept confidential",
+  },
+  // {
+  //   title: "Who will create my website content?",
+  //   content:
+  //     "We will be reliant upon you to create your own websites content. We have a opt in to help you with content ",
+  // },
+  // {
+  //   title: "How do your make the websites",
+  //   content: `We use latest opensource javascript tools to build industry standard websites`,
+  // },
+];
 // Contact Us
-export const services = [
-  { label: "Web Development", value: "Web Development" },
-  { label: "Google Ads", value: "Google Ads" },
-  { label: "Instagram Ads	", value: "Instagram Ads" },
-  {
-    label: "Search Engine Optimization (SEO)",
-    value: "Search Engine Optimization (SEO)",
-  },
-  { label: "Content Creation", value: "Content Creation" },
-  { label: "Email Marketing", value: "Email Marketing" },
-  { label: "Whatsapp Marketing", value: "Whatsapp Marketing" },
-  { label: "UI UX", value: "UI UX" },
-  { label: "E-commerce Setup", value: "E-commerce Setup" },
-];
+// export const services = [
+//   { label: "New Business Website", value: "New Business Website" },
+//   { label: "Website Revamp", value: "Website Revamp" },
+//   // { label: "Google Ads", value: "Google Ads" },
+//   // { label: "Instagram Ads	", value: "Instagram Ads" },
+//   // { label: "E-commerce Store", value: "E-commerce Setup" },
+//   {
+//     label: "Custom software development",
+//     value: "Custom software development",
+//   },
+//   { label: "Mobile development", value: "Mobile development" },
+
+//   // { label: "Branding", value: "Branding" },
+
+//   // {
+//   //   label: "Search Engine Optimization (SEO)",
+//   //   value: "Search Engine Optimization (SEO)",
+//   // },
+//   // { label: "Content Creation", value: "Content Creation" },
+//   // { label: "Email Marketing", value: "Email Marketing" },
+//   // { label: "Whatsapp Marketing", value: "Whatsapp Marketing" },
+//   // { label: "UI UX", value: "UI UX" },
+// ];
 
 export const about = [
   { label: "Media 1", value: "Media 1" },
@@ -201,36 +447,36 @@ export const portfolio = [
     title: "Business Portfolio",
     href: "https://vbccinstruments.com/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
-    title: "SEO Optimization",
-    href: "https://vbccresearch.com/#/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/vbrcmock.png",
+  //   title: "SEO Optimization",
+  //   href: "https://vbccresearch.com/#/",
+  // },
   {
     img: "https://ik.imagekit.io/webibee/Agency/printguymock.png",
     title: "Shopify Storefront",
     href: "https://theprintguy.in/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/iqumock.png",
-    title: "CMS Integration",
-    href: "https://iquclinic.com/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/iqumock.png",
+  //   title: "CMS Integration",
+  //   href: "https://iquclinic.com/",
+  // },
   {
     img: "https://ik.imagekit.io/webibee/Agency/lotusai.png",
     title: "Fullstack with Webscraper",
     href: "https://lotus-ai.vercel.app/",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/srkmock.png",
-    title: "Personal Portfolio",
-    href: "https://itssrk.com/",
-  },
-  {
-    img: "https://ik.imagekit.io/webibee/Agency/indiemock.png",
-    title: "Landing Page",
-    href: "https://indienadu.com/",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/srkmock.png",
+  //   title: "Personal Portfolio",
+  //   href: "https://itssrk.com/",
+  // },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Agency/indiemock.png",
+  //   title: "Landing Page",
+  //   href: "https://indienadu.com/",
+  // },
 
   // {img:"/avatar-1.jpg",title:"N9 power",href:"/"},
   // {img:"/avatar-2.jpg",title:"Flow graph",href:"/"},

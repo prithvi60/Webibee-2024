@@ -1,43 +1,49 @@
-"use client";
-import { Card, CardHeader, CardBody } from "@nextui-org/react";
-import { Marquee } from "@webibee/react-marquee";
-import { Element } from "react-scroll";
-import { ourservices } from "@/libs/data";
-import { useEffect, useState } from "react";
+"use client"
+import { services } from "@/libs/data";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Services() {
-  const [loader, setLoader] = useState(false);
-
-  useEffect(() => {
-    setLoader(true);
-  }, []);
-  if (!loader) {
-    return <div className="font-bold"> Loading Services...</div>;
-  } else
-    return (
-      <Element
-        className="py-2.5 w-screen space-y-3 md:space-y-4"
-        name="Services"
-      >
-        <Marquee>
-          {ourservices.map((service, idx) => (
-            <Card
-              className="w-[275px] h-[220px] md:w-[360px] md:h-[220px]"
-              key={idx}
-            >
-              <CardHeader className="flex gap-3 bg-black font-Lato">
-                <h2 className="text-default font-medium text-2xl px-2 line-clamp-1">
-                  {service.title}
-                </h2>
-              </CardHeader>
-              <CardBody className="pb-10 bg-secondary font-Lato">
-                <h2 className="font-normal text-default text-lg px-2 py-2 line-clamp-3">
-                  {service.desc}
-                </h2>
-              </CardBody>
-            </Card>
-          ))}
-        </Marquee>
-      </Element>
-    );
+  return (
+    <section className="block space-y-10 md:space-y-20 p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
+      <h4 className="text-lg sm:text-xl md:text-[32px] lg:text-[48px] xl:text-[64px] text-center w-full font-EbGaramond font-medium tracking-wide !leading-tight h-full">
+        Fueling Business with{" "}
+        <span className="font-extrabold text-[#2D1C55]">
+          tailored, agile, and creative
+        </span>{" "}
+        Solutions
+      </h4>
+      <div className="flex flex-wrap lg:flex-nowrap justify-center gap-5">
+        {services.map((service, idx) => (
+          <div
+            key={idx}
+            className="p-5 w-full max-w-72 md:max-w-96 border-4 border-[#DFE3E8] h-full sm:min-h-72 xl:min-h-96 block space-y-10"
+          >
+            <div className="text-[#404040] text-xl tracking-wider sm:text3xl xl:text-5xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
+              <h4>{service.title}</h4>
+              <h4>Essentials</h4>
+            </div>
+            <hr className="w-full h-1.5 bg-[#404040] rounded-md" />
+            <TypeText service={service} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
+
+const TypeText = ({ service }: { service: any }) => {
+  const sequence = service.summary.flatMap((value: string) => [
+    value,
+    1500, // delay after each value
+  ]);
+  return (
+    <div className="min-h-16 sm:min-h-20 w-full">
+      <TypeAnimation
+        sequence={sequence}
+        speed={50}
+        className="text-[#868686] capitalize font-SourceCodePro font-semibold text-lg sm:text-xl xl:text-2xl text-center"
+        repeat={Infinity}
+      />
+    </div>
+  );
+};

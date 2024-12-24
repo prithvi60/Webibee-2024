@@ -6,7 +6,7 @@ export const SpinnerUI = () => {
         size="lg"
         color="default"
       >
-        <h4 className="text-center text-lg sm:text-xl !text-white font-Montserrat font-semibold">Retrieving social media data. Please allow a few moments for processing.</h4>
+        <h4 className="text-center text-lg sm:text-xl !text-white font-Gothic font-semibold">Retrieving social media data. Please allow a few moments for processing.</h4>
       </Spinner>
     </div>
   );

@@ -28,13 +28,13 @@ const NavBar = () => {
   }, [percent]);
 
   return (
-    <header className="p-5 md:px-8 xl:px-12 md:py-10">
+    <header className="p-5 md:px-8 xl:px-12 md:py-8">
       <nav className="flex justify-between items-center font-EbGaramond">
-        <div className="size-20 overflow-hidden relative">
+        <div className="size-14 sm:size-20 overflow-hidden relative">
           <Image fill alt="logo" src={"/webibee logo.svg"} className="object-contain object-center" />
         </div>
         <ul>
-          <li className="underline underline-offset-8 tracking-wide font-bold hover:text-info/80  text-lg md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out">
+          <li className="underline underline-offset-8 tracking-wide font-bold hover:text-info/80 text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out">
             <Link href={""}>Ready to ignite?</Link>
           </li>
         </ul>

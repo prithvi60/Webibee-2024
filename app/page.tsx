@@ -1,11 +1,9 @@
-import Benefits from "@/components/Benefits";
-import Contact from "@/components/Contact";
+import AboutUs from "@/components/AboutUs";
+import Collaboration from "@/components/Collaboration";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
-import Portfolio from "@/components/Portfolio";
-import SocialMedia from "@/components/SocialMedia";
+import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import Workflow from "@/components/Workflow";
 
 export default function Home() {
   const jsonLd = {
@@ -19,14 +17,12 @@ export default function Home() {
   }
   return (
     <div>
-      {/* <Hero /> */}
-      {/* <Portfolio /> */}
-      {/* <Benefits /> */}
-      {/* <Testimonials /> */}
-      {/* <Workflow />
+      <Hero />
+      <Testimonials />
+      <AboutUs />
+      <Collaboration />
+      <Services />
       <FAQ />
-      <SocialMedia />
-      <Contact /> */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

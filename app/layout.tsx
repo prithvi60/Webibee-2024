@@ -3,17 +3,20 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { EB_Garamond, Source_Code_Pro } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Head from "next/head";
+import { Partytown } from '@builder.io/partytown/react';
+import Footer from "@/components/Footer";
+
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Webibee",
-    description: "Webibee crafts stunning websites that help businesses flourish",
+    description: "We deliver industry leading design and technology software services",
     robots: "index, follow",
     applicationName: "Webibee Web Development Agency",
     authors: [{ name: "Prithvi" }],
@@ -46,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       url: `https://webibee.com`,
       title: "Webibee",
-      description: "Webibee crafts stunning websites that help businesses flourish",
+      description: "We deliver industry leading design and technology software services",
       siteName: "Webibee Agency",
       images: [
         {
@@ -81,10 +84,22 @@ export default function RootLayout({
       lang="en"
       className={`${EbGaramond.variable} ${sourceCodePro.variable}`}
     >
-      {/* <Head>
-        <meta name="robots" content="all" />
-        <meta name="googlebot" content="all" />
-      </Head> */}
+      <Head>
+        {/* Add Microsoft Clarity script with Partytown */}
+        <Partytown debug={true} forward={['dataLayer.push']} />
+        <script
+          type="text/partytown"
+          dangerouslySetInnerHTML={{
+            __html: `
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)
+      })(window, document, "clarity", "script", "nubuveu1h7");
+    `,
+          }}
+        />
+      </Head>
       <body>
         <Providers>
           <NavBar />

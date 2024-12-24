@@ -5,8 +5,6 @@ import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
 import { EB_Garamond, Source_Code_Pro } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
 import { Partytown } from '@builder.io/partytown/react';
 import Footer from "@/components/Footer";

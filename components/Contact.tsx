@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Contact = () => {
@@ -9,7 +10,9 @@ const Contact = () => {
                     <h6 className='font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl'>Feel the Impact</h6>
                     <p className='text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]'>Ready to Elevate Your Brand?</p>
                     <button className='uppercase font-SourceCodePro text-base sm:text-lg xl:text-xl py-3 px-6 rounded-md hover:bg-info/80 hover:text-white transition duration-300 ease-in-out border-2'>
-                        GET IN TOUCH
+                        <Link href={"/contact"}>
+                            GET IN TOUCH
+                        </Link>
                     </button>
                 </div>
             </div>

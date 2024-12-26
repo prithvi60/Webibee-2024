@@ -6,16 +6,18 @@ import NavBar from "@/components/Navbar";
 import { EB_Garamond, Source_Code_Pro } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
 import Head from "next/head";
-import { Partytown } from '@builder.io/partytown/react';
+import { Partytown } from "@builder.io/partytown/react";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Webibee",
-    description: "We deliver industry leading design and technology software services",
+    description:
+      "We deliver industry leading design and technology software services",
     robots: "index, follow",
     applicationName: "Webibee Web Development Agency",
     authors: [{ name: "Prithvi" }],
@@ -48,7 +50,8 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       url: `https://webibee.com`,
       title: "Webibee",
-      description: "We deliver industry leading design and technology software services",
+      description:
+        "We deliver industry leading design and technology software services",
       siteName: "Webibee Agency",
       images: [
         {
@@ -56,8 +59,8 @@ export async function generateMetadata(): Promise<Metadata> {
         },
       ],
     },
-  }
-};
+  };
+}
 
 const EbGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -71,8 +74,6 @@ const sourceCodePro = Source_Code_Pro({
   weight: "400",
 });
 
-
-
 export default function RootLayout({
   children,
 }: {
@@ -85,7 +86,7 @@ export default function RootLayout({
     >
       <Head>
         {/* Add Microsoft Clarity script with Partytown */}
-        <Partytown debug={true} forward={['dataLayer.push']} />
+        <Partytown debug={true} forward={["dataLayer.push"]} />
         <script
           type="text/partytown"
           dangerouslySetInnerHTML={{
@@ -98,11 +99,23 @@ export default function RootLayout({
     `,
           }}
         />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+      (function(c,l,a,r,i,t,y){
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nubuveu1h7");
+    `,
+          }}
+        />
       </Head>
       <body>
         <Providers>
           <NavBar />
-          <main className="relative overflow-hidden">{children}</main>
+          <main className="relative">{children}</main>
           <FloatingButton />
           <Contact />
           <Footer />

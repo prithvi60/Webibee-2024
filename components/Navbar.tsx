@@ -1,43 +1,43 @@
 "use client";
-
+import { navLinks } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { FaBarsStaggered } from "react-icons/fa6";
+import MobileNav from "./MobileNav";
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [hideNav, setHideNav] = useState(true);
-  const [percent, setPercent] = useState<number>(0);
-
-  const handleScroll = () => {
-    const ele = document.body;
-    const scrollPosition = window.scrollY; // => scroll position
-    let percentage =
-      ((scrollPosition + window.innerHeight) / ele.clientHeight) * 100;
-    setPercent(Math.trunc(percentage));
-    // console.log(Math.trunc(percentage));
-  };
-
-  // Scroll based color change side effect
-
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [percent]);
-
+  const [open, setOpen] = useState(false);
+  const path = usePathname();
   return (
     <header className="p-5 md:px-8 xl:px-12 md:py-8">
       <nav className="flex justify-between items-center font-EbGaramond">
-        <div className="size-14 sm:size-20 overflow-hidden relative">
-          <Image fill alt="logo" src={"/webibee logo.svg"} className="object-contain object-center" />
-        </div>
-        <ul>
-          <li className="underline underline-offset-8 tracking-wide font-bold hover:text-info/80 text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out">
-            <Link href={""}>Ready to ignite?</Link>
-          </li>
+        <Link href={"/"} className="size-14 sm:size-20 overflow-hidden relative">
+          <Image
+            fill
+            alt="logo"
+            src={"/webibee logo.svg"}
+            className="object-contain object-center"
+          />
+        </Link>
+        <ul className="hidden md:flex space-x-8">
+          {navLinks.map((link, idx) => (
+            <li
+              key={idx}
+              className={` ${link.href === path && "underline underline-offset-8"} tracking-wide font-bold hover:text-info/80 text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out"`}
+            >
+              <Link href={`${link.href}`}>{link.title}</Link>
+            </li>
+          ))}
         </ul>
+        {/* Mobile View */}
+        <button
+          onClick={() => setOpen(true)}
+          className="absolute flex md:hidden right-8"
+        >
+          <FaBarsStaggered size={30} className="" />
+        </button>
+        <MobileNav open={open} setOpen={setOpen} path={path} />
       </nav>
     </header>
   );

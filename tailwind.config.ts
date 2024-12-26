@@ -16,10 +16,6 @@ module.exports = {
         EbGaramond: "var(--font-EbGaramond)",
         SourceCodePro: "var(--font-sourceCodePro)",
       },
-      aspectRatio: {
-        box: "3 / 4",
-        clip: "9 / 16",
-      },
       screens: {
         xs: "400px",
         "3xl": "1920px",

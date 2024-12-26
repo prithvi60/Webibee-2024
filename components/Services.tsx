@@ -7,8 +7,8 @@ export default function Services() {
     <section className="block space-y-10 md:space-y-20 p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
       <h4 className="text-lg sm:text-xl md:text-[32px] lg:text-[48px] xl:text-[64px] text-center w-full font-EbGaramond font-medium tracking-wide !leading-tight h-full">
         Fueling Business with{" "}
-        <span className="font-extrabold text-[#2D1C55]">
-          tailored, agile, and creative
+        <span className="font-extrabold uppercase text-info">
+          tailored, agile, & creative
         </span>{" "}
         Solutions
       </h4>
@@ -18,7 +18,7 @@ export default function Services() {
             key={idx}
             className="p-5 w-full max-w-72 md:max-w-96 border-4 border-[#DFE3E8] h-full sm:min-h-72 xl:min-h-96 block space-y-10"
           >
-            <div className="text-[#404040] text-xl tracking-wider sm:text3xl xl:text-5xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
+            <div className="text-[#404040] text-xl tracking-wider sm:text-3xl xl:text-5xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
               <h4>{service.title}</h4>
               <h4>Essentials</h4>
             </div>
@@ -34,14 +34,14 @@ export default function Services() {
 const TypeText = ({ service }: { service: any }) => {
   const sequence = service.summary.flatMap((value: string) => [
     value,
-    1500, // delay after each value
+    2500, // delay after each value
   ]);
   return (
     <div className="min-h-16 sm:min-h-20 w-full">
       <TypeAnimation
         sequence={sequence}
-        speed={50}
-        className="text-[#868686] capitalize font-SourceCodePro font-semibold text-lg sm:text-xl xl:text-2xl text-center"
+        speed={75}
+        className="text-[#868686] font-SourceCodePro font-semibold text-lg sm:text-xl xl:text-2xl text-center"
         repeat={Infinity}
       />
     </div>

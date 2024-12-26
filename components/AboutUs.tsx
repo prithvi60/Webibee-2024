@@ -35,10 +35,10 @@ const AboutUs = () => {
                     />
                 </div>
             </div>
-            <div className="relative bg-secondary">
-                <div className="flex flex-col-reverse md:flex-row md:items-start justify-between items-center gap-14 md:gap-16 p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
+            <div className="relative bg-secondary min-h-screen">
+                <div className="flex flex-col-reverse md:flex-row md:items-start justify-between items-center gap-14 md:gap-16 p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 overflow-visible h-full">
                     <div className="w-full md:w-1/2">
-                        <div className="sticky top-20">
+                        <div className="md:sticky md:top-5">
                             <video
                                 src="/sample.mp4"
                                 controls

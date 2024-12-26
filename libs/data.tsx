@@ -1,3 +1,24 @@
+// navbar links
+
+export const navLinks = [
+  { href: "/about", title: "About" },
+  { href: "/whyCode", title: "Why code" },
+  { href: "/proficiency", title: "Proficiency" },
+  { href: "/works", title: "Works" },
+  { href: "/contact", title: "Ready to ignite?" },
+];
+
+export const footerNavLinks = [
+  { href: "/", title: "Home" },
+  { href: "/caseStudies", title: "Case Studies" },
+  { href: "/about", title: "About" },
+  { href: "/whyCode", title: "Why code" },
+  { href: "/proficiency", title: "Proficiency" },
+  { href: "/works", title: "Works" },
+  { href: "/contact", title: "Contact Us" },
+  { href: "/terms", title: "Terms and Conditions" },
+];
+
 // HERO
 export const IMG = [
   { src: "/img-1.jpg", ratio: "aspect-video" },
@@ -9,6 +30,26 @@ export const IMG = [
   { src: "/img-3.jpg", ratio: "aspect-video" },
   { src: "/img-2.jpg", ratio: "aspect-square" },
   { src: "/img-4.jpg", ratio: "aspect-video" },
+];
+
+// Portfolio Images
+
+export const portfolioImages = [
+  "/rasimcasestudy.png",
+  "/vbcccasestudy.png",
+  "/ensilatacasestudy.png",
+];
+
+export const categories = [
+  { title: "Industrial & Manufacturing", logo: "/logos/VBCC - Logo.svg" },
+  { title: "Project Management Product", logo: "/logos/ensileta - Logo.svg" },
+  { title: "Real Estate", logo: "/logos/intermont - Logo.svg" },
+];
+
+export const categories2 = [
+  { title: "Professional Services Portfolio", logo: "/logos/daga - Logo.svg" },
+  { title: "E-commerce & Retail", logo: "/logos/rasim - Logo.svg" },
+  { title: "Tourism", logo: "/logos/oneus - logo.png" },
 ];
 
 // Testimonials
@@ -98,54 +139,36 @@ export const services = [
   {
     title: "IT",
     summary: [
-      " I want to automate processes",
-      " improve efficiency",
-      "scale operations",
-      "build robust systems",
-      " create a product",
-      "implement my startup idea",
+      "I want to automate processes",
+      "I want to improve efficiency",
+      "I want to scale operations",
+      "I want to build robust systems",
+      "I want to create a product",
+      "I want to implement my startup idea",
     ],
   },
   {
     title: "Digital",
     summary: [
       "I want to generate leads",
-      "improve conversions",
-      "increase traffic",
-      " have online presence",
-      "run an online business",
-      "market my product",
-      "reach audience",
+      "I want to improve conversions",
+      "I want to increase traffic",
+      "I want to have online presence",
+      "I want to run an online business",
+      "I want to market my product",
+      "I want to reach audience",
     ],
   },
   {
     title: "Creative",
     summary: [
       "I want to spark curiosity",
-      "improve user experience",
-      "connect with customers ",
-      "create brand identity",
-      "make things aesthetic",
+      "I want to improve user experience",
+      "I want to connect with customers ",
+      "I want to create brand identity",
+      "I want to make things aesthetic",
     ],
   },
-];
-
-// NAVBAR
-export const Navlinks = [
-  // { href: "Services", title: "Services" },
-  // { href: "Portfolio", title: "Recent Work" },
-  { href: "FAQ", title: "FAQ" },
-  // {href:"/terms",title:"Terms"},
-  // {href:"/",title:"Tool"},
-];
-
-// Footer links
-export const Footerlinks = [
-  // { href: "Services", title: "Services" },
-  { href: "Portfolio", title: "Recent Work" },
-  { href: "FAQ", title: "FAQ" },
-  { href: "Contact", title: "Contact us" },
-  // {href:"/",title:"Tool"},
 ];
 
 // TESTIMONIALS

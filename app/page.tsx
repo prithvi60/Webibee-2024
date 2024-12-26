@@ -4,6 +4,8 @@ import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import PortfolioSlider from "@/components/PortfolioSlider";
+import Categories from "@/components/Categories";
 
 export default function Home() {
   const jsonLd = {
@@ -18,6 +20,8 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <PortfolioSlider />
+      <Categories />
       <Testimonials />
       <AboutUs />
       <Collaboration />

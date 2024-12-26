@@ -2,12 +2,31 @@
 
 import { testimonials } from "@/libs/data";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { HiMiniSpeakerWave, HiMiniPause } from "react-icons/hi2";
 
 export default function Testimonials() {
   const [isActive, setIsActive] = useState(testimonials[0].id);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // console.log(isActive);
+  useEffect(() => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.play();
+      } else {
+        audioRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
+
+  const handlePlayPause = (): void => {
+    setIsPlaying(prevState => !prevState);
+  };
+
+  const handleAudioEnded = (): void => {
+    setIsPlaying(false);
+  };
 
   return (
     <section className="py-10 pr-10 sm:pr-20 xl:pr-64 sm:py-16 xl:py-28 overflow-hidden  md:py-12 block space-y-20 relative z-0">
@@ -57,8 +76,47 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div key={testimonial.id}>
               {isActive === testimonial.id ? (
-                <div className="p-5 md:p-0">
-                  <p className="!leading-9 text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
+                <div className="pl-10 sm:pl-0 space-y-6">
+                  <p className="!leading-9 text-justify text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
+                  <div className="flex justify-center sm:justify-start items-center gap-2.5">
+                    <audio
+                      ref={audioRef}
+                      src={"/sample-audio.wav"}
+                      className="hidden"
+                      onEnded={handleAudioEnded}
+                    />
+                    {isPlaying ? (
+                      <HiMiniPause
+                        className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
+                        onClick={handlePlayPause}
+                      />
+                    ) : (
+                      <HiMiniSpeakerWave
+                        className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
+                        onClick={handlePlayPause}
+                      />
+                    )}
+                    {isPlaying ? (
+                      <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
+                        <Image
+                          fill
+                          src={"/sound-gif.gif"}
+                          alt="image"
+                          quality={100}
+                          className="object-contain object-center"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
+                        <Image
+                          fill
+                          src={"/sound.svg"}
+                          alt="image"
+                          className="object-contain object-center"
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
               ) : null}
             </div>

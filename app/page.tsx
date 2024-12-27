@@ -1,5 +1,3 @@
-import AboutUs from "@/components/AboutUs";
-import Collaboration from "@/components/Collaboration";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -23,8 +21,6 @@ export default function Home() {
       <PortfolioSlider />
       <Categories />
       <Testimonials />
-      <AboutUs />
-      <Collaboration />
       <Services />
       <FAQ />
       <script

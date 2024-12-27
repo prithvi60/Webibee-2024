@@ -19,9 +19,9 @@ const FAQ = () => {
         <section className="space-y-10 overflow-visible min-h-screen p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row justify-between md:gap-16">
             <div className="w-full md:w-1/2 space-y-6 md:sticky md:top-2 h-full">
                 <div className="block space-y-2 ">
-                    <h1 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
+                    <h3 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
                         FAQ
-                    </h1>
+                    </h3>
                     <p className="font-SourceCodePro text-sm md:text-base font-light text-justify">At Webibee, we craft intuitive, user-centered designs that blend creativity with functionality. Our focus on quality ensures precision, innovation, and solutions that exceed client expectations.</p>
                 </div>
                 <div className="relative w-64 h-64 md:w-full md:h-80">

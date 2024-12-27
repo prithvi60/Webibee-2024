@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { useState } from 'react';
+import Link from 'next/link';
 
 const PortfolioSlider = () => {
     const [loading, setLoading] = useState(true);
@@ -15,6 +16,8 @@ const PortfolioSlider = () => {
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        rows: 3,
+        slidesPerRow: 1,
         nextArrow: <SampleNextArrow loading={loading} />,
         prevArrow: <SamplePrevArrow loading={loading} />,
     };
@@ -24,12 +27,13 @@ const PortfolioSlider = () => {
     };
     return (
         <section className='py-10 sm:py-16 xl:py-28 w-full h-full'>
-            <div className="slider-container h-[45vh] sm:h-[55vh] md:h-[75vh] lg:h-[100vh] xl:h-[100vh] relative">
+            {/* h-[45vh] sm:h-[55vh] md:h-[75vh] lg:h-[100vh] xl:h-[100vh]  */}
+            <div className="slider-container relative">
                 <Slider {...settings}>
                     {portfolioImages.map((image, index) => (
-                        <div className='relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh]  lg:h-screen' key={index}>
-                            <Image fill alt='image' src={image} className='object-contain object-center' onLoad={handleImageLoad} />
-                        </div>
+                        <Link href={image.href} className='relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh]  lg:h-screen' key={index}>
+                            <Image fill alt='image' src={image.img} className='object-contain object-center' onLoad={handleImageLoad} />
+                        </Link>
                     ))}
                 </Slider>
             </div>

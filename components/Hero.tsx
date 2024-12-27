@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LogoTypeWriterAnimation } from "./LogoTypeWriterAnimation";
 
 const Hero = () => {
 
@@ -10,9 +11,10 @@ const Hero = () => {
       </div>
       <div className="flex flex-col justify-center items-center gap-10">
         <h3 className="uppercase font-EbGaramond tracking-widest font-bold text-2xl sm:text-3xl xl:text-4xl text-center"> Business Tech to Small Medium Enterprises (SME)</h3>
-        <div className="relative overflow-hidden w-full h-72">
+        {/* <div className="relative overflow-hidden w-full h-72">
           <Image fill src={"/webibee logo.svg"} alt="logo" className="object-contain object-center " />
-        </div>
+        </div> */}
+        <LogoTypeWriterAnimation text={"webibee"} />
       </div>
     </section>
   );

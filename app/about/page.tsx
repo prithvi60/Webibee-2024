@@ -1,9 +1,12 @@
+import AboutUs from '@/components/about/AboutUs'
+import Collaboration from '@/components/Collaboration'
 import React from 'react'
 
 const Page = () => {
     return (
         <div>
-            About
+            <AboutUs />
+            <Collaboration />
         </div>
     )
 }

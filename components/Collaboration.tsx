@@ -16,10 +16,13 @@ export default function Collaboration() {
 
 
   return (
-    <section className="block space-y-10  p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 bg-primary">
-      <h1 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
+    <section className="block space-y-10  p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
+      {/* <h1 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
         Collaboration
-      </h1>
+      </h1> */}
+      <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl text-center md:text-start">
+        Collaboration
+      </h3>
       <div className="w-full">
         <Accordion variant="light" itemClasses={itemClasses} defaultExpandedKeys={["0"]}>
           {collaboration.map((item, idx) => (

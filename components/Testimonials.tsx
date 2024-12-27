@@ -31,9 +31,9 @@ export default function Testimonials() {
   return (
     <section className="py-10 pr-10 sm:pr-20 xl:pr-64 sm:py-16 xl:py-28 overflow-hidden  md:py-12 block space-y-20 relative z-0">
       <div className="relative z-0">
-        <h5 className="font-EbGaramond font-bold text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
+        <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
           Testimonials
-        </h5>
+        </h3>
         <div className="absolute -top-5 md:-top-10 left-48 xl:left-[480px] size-32 md:size-56 -z-10">
           <Image
             src={"/svg 2.svg"}

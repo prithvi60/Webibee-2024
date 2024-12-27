@@ -7,13 +7,19 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: smooth !important;
+  }
+}
+
 .no_scrollbar::-webkit-scrollbar {
   display: none;
 }
-
-/* html {
-  scroll-behavior: smooth;
-} */
 
 .carousal::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

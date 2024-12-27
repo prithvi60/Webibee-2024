@@ -7,7 +7,7 @@ const Categories = () => {
         <section className='p-10 overflow-visible min-h-screen sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col lg:flex-row gap-10'>
             <div className='w-full lg:w-[35%] h-fit-content'>
                 <div className='lg:sticky lg:top-5 space-y-12'>
-                    <h4 className='font-EbGaramond text-2xl md:text-4xl xl:text-6xl tracking-wider'>Crafting Impact Across <strong>Industries</strong></h4>
+                    <h4 className='font-EbGaramond text-2xl md:text-4xl xl:text-6xl tracking-wider font-medium'>Crafting Impact Across <strong className='text-info'>Industries</strong></h4>
                     <p className='text-base md:text-lg font-SourceCodePro'>Our work transforms visions into digital realities, elevating brands across diverse industries. Whether designing sleek portfolios for clothing brands or crafting immersive experiences for interior designers, we blend creativity with functionality. Every project is a testament to innovation and attention to detail.</p>
                 </div>
             </div>
@@ -16,14 +16,14 @@ const Categories = () => {
                     {categories.map((category, idx) => (
                         <div
                             key={idx}
-                            className="p-5 w-52 md:w-full lg:w-64 border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 block space-y-10"
+                            className="p-5 w-52 md:w-full lg:w-64 border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-80 block space-y-10"
                         >
-                            <div className="text-[#404040] text-base tracking-wider md:text-xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
-                                <h4>{category.title}</h4>
+                            <div className='relative mx-auto w-40 h-20'>
+                                <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
                             </div>
                             <hr className="w-full h-1.5 bg-[#404040] rounded-md" />
-                            <div className='relative mx-auto w-36 h-16'>
-                                <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
+                            <div className="text-[#404040] text-base tracking-wider md:text-xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
+                                <h4>{category.title}</h4>
                             </div>
                         </div>
                     ))}
@@ -32,14 +32,14 @@ const Categories = () => {
                     {categories2.map((category, idx) => (
                         <div
                             key={idx}
-                            className="p-5 w-52 md:w-full lg:w-64 border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 block space-y-10"
+                            className="p-5 w-52 md:w-full lg:w-64 border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-80 block space-y-10"
                         >
-                            <div className="text-[#404040] text-base tracking-wider md:text-xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
-                                <h4>{category.title}</h4>
+                            <div className='relative mx-auto w-40 h-20'>
+                                <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
                             </div>
                             <hr className="w-full h-1.5 bg-[#404040] rounded-md" />
-                            <div className='relative mx-auto w-36 h-16'>
-                                <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
+                            <div className="text-[#404040] text-base tracking-wider md:text-xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
+                                <h4>{category.title}</h4>
                             </div>
                         </div>
                     ))}

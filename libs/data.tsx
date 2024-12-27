@@ -1,16 +1,16 @@
 // navbar links
 
 export const navLinks = [
-  { href: "/about", title: "About" },
+  // { href: "/about", title: "About" },
   { href: "/whyCode", title: "Why code" },
-  { href: "/proficiency", title: "Proficiency" },
+  // { href: "/proficiency", title: "Proficiency" },
   { href: "/works", title: "Works" },
   { href: "/contact", title: "Ready to ignite?" },
 ];
 
 export const footerNavLinks = [
   { href: "/", title: "Home" },
-  { href: "/caseStudies", title: "Case Studies" },
+  // { href: "/caseStudies", title: "Case Studies" },
   { href: "/about", title: "About" },
   { href: "/whyCode", title: "Why code" },
   { href: "/proficiency", title: "Proficiency" },
@@ -35,9 +35,15 @@ export const IMG = [
 // Portfolio Images
 
 export const portfolioImages = [
-  "/rasimcasestudy.png",
-  "/vbcccasestudy.png",
-  "/ensilatacasestudy.png",
+  { img: "/rasimcasestudy.png", href: "/" },
+  { img: "/vbcccasestudy.png", href: "/" },
+  { img: "/ensilatacasestudy.png", href: "/" },
+  { img: "/vbcccasestudy.png", href: "/" },
+  { img: "/ensilatacasestudy.png", href: "/" },
+  { img: "/rasimcasestudy.png", href: "/" },
+  { img: "/ensilatacasestudy.png", href: "/" },
+  { img: "/vbcccasestudy.png", href: "/" },
+  { img: "/rasimcasestudy.png", href: "/" },
 ];
 
 export const categories = [

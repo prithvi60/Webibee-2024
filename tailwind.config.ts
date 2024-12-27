@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         EbGaramond: "var(--font-EbGaramond)",
         SourceCodePro: "var(--font-sourceCodePro)",
+        PermanentMarker: "var(--font-permanentMarker)",
       },
       screens: {
         xs: "400px",

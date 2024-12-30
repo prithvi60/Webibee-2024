@@ -177,6 +177,57 @@ export const services = [
   },
 ];
 
+export const howItWorks = [
+  {
+    img: "/logos/flex-logo.svg",
+    title: "Flexibility & Customization",
+    desc: "With coding, you can design solutions exactly as you envision, offering full control over every aspect of functionality, design, and user experience.",
+  },
+  {
+    img: "/logos/scalable-logo.svg",
+    title: "Scalability",
+    desc: "Custom code is built to grow with your project, ensuring it can handle increasing users, data, and complexity without sacrificing performance.",
+  },
+  {
+    img: "/logos/security-logo.svg",
+    title: "Security",
+    desc: "Developers can implement personalized, robust security measures, including encryption, authentication protocols, and firewalls, tailored to specific project needs.",
+  },
+  {
+    img: "/logos/integration-logo.svg",
+    title: "Integration",
+    desc: "Custom-coded solutions can seamlessly integrate with third-party APIs, legacy systems, and databases, offering broader capabilities and more control over the flow of data.",
+  },
+  {
+    img: "/logos/owner-logo.svg",
+    title: "Ownership",
+    desc: "When you code from scratch, you own the entire project, ensuring complete intellectual property control, reducing reliance on third-party platforms, and future-proofing your application.",
+  },
+];
+
+export const shine = [
+  {
+    title: "Business Website Creation",
+    desc: "We build tailored, professional websites that reflect your brand and provide seamless user experiences.",
+  },
+  {
+    title: "Technical Research and Integration",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+  {
+    title: "UI/UX Audit and Implementation",
+    desc: "We optimize your digital presence with in-depth UI/UX audits and implement enhancements for superior user engagement.",
+  },
+  {
+    title: "Sass MVP",
+    desc: "We specialize in developing scalable and functional MVPs for SaaS platforms, enabling fast market entry and validation.",
+  },
+  {
+    title: "Fullstack Development",
+    desc: "From front-end interfaces to back-end systems, we deliver complete web solutions. Our expertise spans across modern tech stacks to build scalable, secure, and performant applications that drive business growth.",
+  }
+]
+
 // TESTIMONIALS
 export const reviewIndia = [
   {

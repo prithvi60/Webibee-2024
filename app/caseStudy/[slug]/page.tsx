@@ -4,8 +4,8 @@ import OCSection from '@/components/CaseStudyPage/OCSection';
 import Result from '@/components/CaseStudyPage/Result';
 import React from 'react'
 
-const Page = ({ params }: { params: { slug: string } }) => {
-    const { slug } = params;
+const Page = () => {
+    // const { slug } = params;
     return (
         <div>
             <CSHero />

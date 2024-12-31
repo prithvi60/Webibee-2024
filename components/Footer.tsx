@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 block space-y-10 md:space-y-20 font-EbGaramond text-[#868686] tracking-wide text-lg md:text-xl xl:text-2xl">
       <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between gap-6 sm:gap-0">
         <div className="block space-y-3 text-center sm:text-start">
-          <h5>Webibee</h5>
+          <h5 className="text-info font-bold font-EbGaramond">Webibee</h5>
           <a href="mailto:support@webibee.com">support@webibee.com</a>
         </div>
         <ul className="flex items-center gap-10">

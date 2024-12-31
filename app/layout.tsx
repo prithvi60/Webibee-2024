@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Script from "next/script";
+import Development from "@/components/Development";
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
@@ -122,6 +123,7 @@ export default function RootLayout({
       </Head>
       <body>
         <Providers>
+          <Development />
           <NavBar />
           <main className="relative">
             {/* <SmoothScroll> */}

@@ -5,45 +5,118 @@ import { usePathname } from "next/navigation";
 
 const Contact = () => {
     const path = usePathname();
+    // console.log(path);
+
     return (
         <section
             className={`${path === "/contact" ? "hidden" : "block"
                 } w-full p-10 sm:px-12 xl:pt-12 xl:pb-6 max-w-5xl mx-auto text-center`}
         >
-            <div className="block space-y-12 lg:space-y-16">
-                {path === "/works" ? (
-                    <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl  xl:text-6xl">
-                        Ready to take your project to the{" "}
-                        <strong className="font-extrabold text-info">next level?</strong>{" "}
-                        Let’s talk about your goals!
-                    </h4>
-                ) : (
-                    <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl  xl:text-6xl">
-                        Ignite Your{" "}
-                        <strong className="font-extrabold text-info">Vision</strong> Today
-                    </h4>
-                )}
-
-                <div className="block space-y-6 lg:space-y-10">
-                    <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
-                        Feel the Impact
-                    </h6>
-                    <p className="text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]">
-                        Ready to Elevate Your Brand?
-                    </p>
-                    <DotExpandButton text="GET IN TOUCH" href="/contact" />
-                    {/* <button>
-                        <Link
-                            href={"/contact"}
-                            className="uppercase font-SourceCodePro text-base sm:text-lg xl:text-xl py-3 px-6 rounded-md hover:bg-info/80 hover:text-white transition duration-300 ease-in-out border-2"
-                        >
-                            GET IN TOUCH
-                        </Link>
-                    </button> */}
+            {path.startsWith("/caseStudy") ? (
+                <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                    <div className="space-y-10 w-full md:w-3/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            Ready to take your project to the{" "}
+                            <strong className="font-extrabold text-info">next level?</strong>{" "}
+                            Let’s talk about your goals!
+                        </h4>
+                        <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                    </div>
+                    <div className="space-y-10 w-full md:w-2/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            See all our creative{" "}
+                            <strong className="font-extrabold text-info">
+                                designs and projects
+                            </strong>{" "}
+                            in one place!
+                        </h4>
+                        <DotExpandButton text="Our Works" href="/works" />
+                    </div>
                 </div>
-            </div>
+            ) : path === "/ITEssentials" ||
+                path === "/digitalEssentials" ||
+                path === "/creativeEssentials" ? (
+                <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                    <div className="space-y-10 w-full md:w-3/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            Ready to take your project to the{" "}
+                            <strong className="font-extrabold text-info">next level?</strong>{" "}
+                            Let’s talk about your goals!
+                        </h4>
+                        <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                    </div>
+                    <div className="space-y-10 w-full md:w-2/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            Take a look at our{" "}
+                            <strong className="font-extrabold text-info">
+                                Business essential services
+                            </strong>{" "}
+                            too!
+                        </h4>
+                        <DotExpandButton text="Our Works" href="/works" />
+                    </div>
+                </div>
+            ) : (
+                <div className="block space-y-12 lg:space-y-16">
+                    {path === "/works" ? (
+                        <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
+                            Ready to take your project to the{" "}
+                            <strong className="font-extrabold text-info">next level?</strong>{" "}
+                            Let’s talk about your goals!
+                        </h4>
+                    ) : (
+                        <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
+                            Ignite Your{" "}
+                            <strong className="font-extrabold text-info">Vision</strong> Today
+                        </h4>
+                    )}
+                    {(path === "/" || path === "/about" || path === "/proficiency") && (
+                        <div className="block space-y-6 lg:space-y-10">
+                            <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
+                                Feel the Impact
+                            </h6>
+                            <p className="text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]">
+                                Ready to Elevate Your Brand?
+                            </p>
+                        </div>
+                    )}
+                    <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                </div>
+            )}
         </section>
     );
 };
 
 export default Contact;
+
+// const caseStudyContact = [
+//     {
+//         title1: "Ready to take your project to the",
+//         title2: "next level?",
+//         title3: "Let’s talk about your goals!",
+//         btn: "GET IN TOUCH",
+//         href: "/contact",
+//     },
+//     {
+//         title1: "See all our creative",
+//         title2: "designs and projects",
+//         title3: "in one place!",
+//         btn: "Our Works",
+//         href: "/works",
+//     },
+// ];
+
+// const essentialsContact = [
+//     {
+//         title1: "",
+//         title2: "",
+//         title3: "",
+//         btn: "",
+//     },
+//     {
+//         title1: "",
+//         title2: "",
+//         title3: "",
+//         href: "",
+//     },
+// ];

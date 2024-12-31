@@ -1,26 +1,55 @@
 "use client";
-import { howItWorks } from "@/libs/data";
+import { howItWorks, shine } from "@/libs/data";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-const HowItWorks = () => {
+const HowItWorks = ({
+    data,
+    title,
+    styles,
+}: {
+    data: any;
+    title: string;
+    styles: string;
+}) => {
+    return <HorizontalScrollCarousel data={data} title={title} styles={styles} />;
+};
+
+export const WeShine = ({
+    data,
+    title,
+    styles,
+}: {
+    data: any;
+    title: string;
+    styles: string;
+}) => {
     return (
-        <div className="md:pb-28 p-10 sm:px-20 xl:px-64 sm:pt-16 xl:pt-28">
-            <HorizontalScrollCarousel />
-        </div>
+        <HorizontalScrollCarousel data={data} title={title} styles={styles} />
     );
 };
 
-const HorizontalScrollCarousel = () => {
+const HorizontalScrollCarousel = ({
+    data,
+    title,
+    styles,
+}: {
+    data: any;
+    title: string;
+    styles: string;
+}) => {
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
     });
-
+    const path = usePathname();
     const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
-    const isTablet = useMediaQuery({ query: "(min-width: 641px) and (max-width: 1024px)" });
+    const isTablet = useMediaQuery({
+        query: "(min-width: 641px) and (max-width: 1024px)",
+    });
 
     const x = useTransform(
         scrollYProgress,
@@ -29,13 +58,30 @@ const HorizontalScrollCarousel = () => {
     );
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] ">
-            <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-10">
-                    {howItWorks.map((card, idx) => {
-                        return <Card card={card} key={idx} />;
-                    })}
-                </motion.div>
+        <section
+            ref={targetRef}
+            className={`relative ${path === "/proficiency" ? "h-[150vh]" : "h-[300vh]"
+                } `}
+        >
+            <div className={`${path === "/proficiency" ? "top-32 space-y-20" : path === "/whyCode" ? "top-5 space-y-8" : "top-10 space-y-10"} sticky`}>
+                <h5 className={`${styles}`}>
+                    {title}
+                </h5>
+                <div className={`items-center flex ${path === "/proficiency" ? "h-[45vh]" : path === "/whyCode" ? "h-[80vh]" : "h-[80vh]"} overflow-hidden`}>
+                    {path === "/proficiency" ? (
+                        <motion.div style={{ x }} className="flex gap-10">
+                            {data.map((card: string, idx: number) => {
+                                return <Card2 card={card} key={idx} />;
+                            })}
+                        </motion.div>
+                    ) : (
+                        <motion.div style={{ x }} className="flex gap-10">
+                            {data.map((card: string, idx: number) => {
+                                return <Card card={card} key={idx} />;
+                            })}
+                        </motion.div>
+                    )}
+                </div>
             </div>
         </section>
     );
@@ -46,7 +92,7 @@ const Card = ({ card }: { card: any }) => {
         <div className="block space-y-8 min-w-72 md:min-w-[480px] pb-5">
             <div className="size-24 md:size-48 relative mx-auto">
                 <Image
-                    alt=""
+                    alt="icon"
                     src={card.img}
                     fill
                     className="object-contain object-center"
@@ -64,6 +110,21 @@ const Card = ({ card }: { card: any }) => {
     );
 };
 
+const Card2 = ({ card }: { card: any }) => {
+    return (
+        <div className="block space-y-8 min-w-[480px] pb-6">
+            <div className="space-y-4">
+                <h4 className="font-EbGaramond font-bold tracking-wider md:text-3xl sm:text-2xl text-xl text-[#1B1B1CCC] xl:text-4xl">
+                    {card.title}
+                </h4>
+                <p className="font-SourceCodePro text-base sm:text-lg xl:text-xl !leading-tight">
+                    {card.desc}
+                </p>
+            </div>
+        </div>
+    );
+};
+
 export default HowItWorks;
 
 type CardType = {
@@ -71,41 +132,3 @@ type CardType = {
     title: string;
     id: number;
 };
-
-const cards: CardType[] = [
-    {
-        url: "/imgs/abstract/1.jpg",
-        title: "Title 1",
-        id: 1,
-    },
-    {
-        url: "/imgs/abstract/2.jpg",
-        title: "Title 2",
-        id: 2,
-    },
-    {
-        url: "/imgs/abstract/3.jpg",
-        title: "Title 3",
-        id: 3,
-    },
-    {
-        url: "/imgs/abstract/4.jpg",
-        title: "Title 4",
-        id: 4,
-    },
-    {
-        url: "/imgs/abstract/5.jpg",
-        title: "Title 5",
-        id: 5,
-    },
-    {
-        url: "/imgs/abstract/6.jpg",
-        title: "Title 6",
-        id: 6,
-    },
-    {
-        url: "/imgs/abstract/7.jpg",
-        title: "Title 7",
-        id: 7,
-    },
-];

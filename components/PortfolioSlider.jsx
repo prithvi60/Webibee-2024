@@ -31,7 +31,7 @@ const PortfolioSlider = () => {
             <div className="slider-container relative">
                 <Slider {...settings}>
                     {portfolioImages.map((image, index) => (
-                        <Link href={image.href} className='relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh]  lg:h-screen' key={index}>
+                        <Link href={`/caseStudy/${image.href}`} className='relative w-full h-[35vh] sm:h-[50vh] md:h-[80vh]  lg:h-screen' key={index}>
                             <Image fill alt='image' src={image.img} className='object-contain object-center' onLoad={handleImageLoad} />
                         </Link>
                     ))}

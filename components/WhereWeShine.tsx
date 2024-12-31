@@ -1,13 +1,14 @@
-import { howItWorks, shine } from "@/libs/data";
+import { shine } from "@/libs/data";
 import React from "react";
+import { WeShine } from "./whyCode/HorizontalScrollCarousel";
 
 const WhereWeShine = () => {
     return (
-        <section className="md:pb-28 p-10 sm:px-20 xl:px-64 sm:pt-16 xl:pt-28 space-y-20">
-            <h5 className="font-EbGaramond text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold !leading-tight text-[#1B1B1CCC]">
+        <section className="px-10 pt-10 sm:px-20 xl:px-64">
+            {/* <h5 className="font-EbGaramond text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold !leading-tight text-[#1B1B1CCC]">
                 Where we SHINE?
-            </h5>
-            <div className="flex flex-col overflow-x-scroll md:flex-row justify-between items-center gap-10">
+            </h5> */}
+            {/* <div className="flex flex-col overflow-x-scroll md:flex-row justify-between items-center gap-10">
                 {shine.map((work, index) => (
                     <div key={index} className="block space-y-8 min-w-[480px] pb-6">
                         <div className="space-y-4">
@@ -20,7 +21,8 @@ const WhereWeShine = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
+            <WeShine data={shine} title={"Where we SHINE?"} styles={"font-EbGaramond text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold !leading-tight text-[#1B1B1CCC]"} />
         </section>
     );
 };

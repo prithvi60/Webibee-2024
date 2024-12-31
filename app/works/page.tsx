@@ -1,9 +1,12 @@
+import ViewAllProjects from '@/components/works/ViewAllProjects'
+import WorksHeroSection from '@/components/works/WorksHeroSection'
 import React from 'react'
 
 const Page = () => {
     return (
         <div>
-            Works
+            <WorksHeroSection />
+            <ViewAllProjects />
         </div>
     )
 }

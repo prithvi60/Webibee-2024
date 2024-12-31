@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Terms() {
   return (
-    <section className="bg-primary min-h-screen w-full flex gap-8 flex-col justify-center items-center text-2xl text-default p-8">
-      <h1 className="text-4xl font-bold mt-16">
+    <section className="bg-primary min-h-screen w-full flex gap-8 flex-col justify-center items-center text-2xl text-default p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
+      <h1 className="text-4xl font-bold mt-16 font-EbGaramond">
         INDEPENDENT CONTRACTOR MASTER SERVICES AGREEMENT
       </h1>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">1. Services</h2>
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">1. Services</h2>
         <p>
           For all purposes of this MSA hereon, the "Independent Contractor"
           shall be Webibee or any of its affiliates, and the counterparty
@@ -19,8 +19,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">
           2. Consideration / Compensation
         </h2>
         <p>
@@ -44,8 +44,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">3. Nondisclosure</h2>
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">3. Nondisclosure</h2>
         <p>
           (a) Independent Contractor understands that, in connection with its
           engagement with Company, it may receive, produce, or otherwise be
@@ -98,8 +98,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">
           4. Indemnification / Release
         </h2>
         <p>
@@ -117,8 +117,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">
           5. Insurance and Other Requirements
         </h2>
         <p>
@@ -141,8 +141,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">6. Renewal & Termination</h2>
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">6. Renewal & Termination</h2>
         <p>
           This Agreement shall be effective on the date hereof and shall
           continue until terminated by either party upon 30 business day written
@@ -152,8 +152,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">7. Independent Contractor</h2>
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">7. Independent Contractor</h2>
         <p>
           (a) Company and Independent Contractor expressly agree and understand
           that Independent Contractor is an independent contractor and nothing
@@ -182,8 +182,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">8. General</h2>
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">8. General</h2>
         <p>
           (a) This Agreement does not create an obligation on Company to
           continue to retain Independent Contractor beyond this Agreement’s
@@ -223,8 +223,8 @@ export default function Terms() {
         </p>
       </section>
 
-      <section className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold mb-6">9. Work Product Ownership</h2>
+      <section className="flex flex-col gap-4 font-SourceCodePro !leading-normal">
+        <h2 className="text-3xl font-bold mb-6 font-EbGaramond">9. Work Product Ownership</h2>
         <p>
           {/* (a) */}
           All work products, deliverables, or any other materials created by

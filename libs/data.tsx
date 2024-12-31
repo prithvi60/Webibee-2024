@@ -1,5 +1,7 @@
 // navbar links
 
+import { desc } from "framer-motion/client";
+
 export const navLinks = [
   // { href: "/about", title: "About" },
   { href: "/whyCode", title: "Why code" },
@@ -35,15 +37,15 @@ export const IMG = [
 // Portfolio Images
 
 export const portfolioImages = [
-  { img: "/rasimcasestudy.png", href: "/" },
-  { img: "/vbcccasestudy.png", href: "/" },
-  { img: "/ensilatacasestudy.png", href: "/" },
-  { img: "/vbcccasestudy.png", href: "/" },
-  { img: "/ensilatacasestudy.png", href: "/" },
-  { img: "/rasimcasestudy.png", href: "/" },
-  { img: "/ensilatacasestudy.png", href: "/" },
-  { img: "/vbcccasestudy.png", href: "/" },
-  { img: "/rasimcasestudy.png", href: "/" },
+  { img: "/rasimcasestudy.png", href: "rasim" },
+  { img: "/vbcccasestudy.png", href: "vbcc" },
+  { img: "/ensilatacasestudy.png", href: "ensilata" },
+  { img: "/vbcccasestudy.png", href: "vbcc" },
+  { img: "/ensilatacasestudy.png", href: "ensilata" },
+  { img: "/rasimcasestudy.png", href: "rasim" },
+  { img: "/ensilatacasestudy.png", href: "ensilata" },
+  { img: "/vbcccasestudy.png", href: "vbcc" },
+  { img: "/rasimcasestudy.png", href: "rasim" },
 ];
 
 export const categories = [
@@ -56,6 +58,46 @@ export const categories2 = [
   { title: "Professional Services Portfolio", logo: "/logos/daga - Logo.svg" },
   { title: "E-commerce & Retail", logo: "/logos/rasim - Logo.svg" },
   { title: "Tourism", logo: "/logos/oneus - logo.png" },
+];
+
+export const caseStudyList = [
+  {
+    title: "Services",
+    lists: [
+      "Technical Research",
+      "UI/UX - Web",
+      "Front end development",
+      "Crm integration",
+      "3rd party API integration",
+    ],
+  },
+  {
+    title: "Sector",
+    lists: ["Industrial"],
+  },
+  {
+    title: "Company Stage",
+    lists: ["SME, Private"],
+  },
+];
+
+export const ObjectiveLists = [
+  {
+    title: "Outdated Design",
+    desc: "Their previous website lacked a modern, visually engaging design, affecting user trust and engagement.",
+  },
+  {
+    title: "Low SEO Performance:",
+    desc: "The site struggled with organic visibility and slow load times.",
+  },
+  {
+    title: "Team Integration",
+    desc: "Ensuring smooth collaboration with their marketing and content teams was critical for success.",
+  },
+  {
+    title: "Technical Customization:",
+    desc: "Tailor-made features specific to their niche were required, alongside long-term website scalability.",
+  },
 ];
 
 // Testimonials
@@ -152,6 +194,7 @@ export const services = [
       "I want to create a product",
       "I want to implement my startup idea",
     ],
+    href: "/ITEssentials"
   },
   {
     title: "Digital",
@@ -164,6 +207,7 @@ export const services = [
       "I want to market my product",
       "I want to reach audience",
     ],
+    href: "/digitalEssentials"
   },
   {
     title: "Creative",
@@ -174,6 +218,7 @@ export const services = [
       "I want to create brand identity",
       "I want to make things aesthetic",
     ],
+    href: "/creativeEssentials"
   },
 ];
 
@@ -205,6 +250,163 @@ export const howItWorks = [
   },
 ];
 
+export const resultLists = [
+  {
+    img: "/logos/CS 1.png",
+    title: "Enhanced User Experience",
+    desc: "Designed a visually appealing, intuitive interface that reflects expertise and builds trust. Incorporated consistent branding and ensured user-friendly navigation for seamless product and service exploration.",
+  },
+  {
+    img: "/logos/CS 2.png",
+    title: "Improved Page Speed Scores:",
+    desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
+  },
+  {
+    img: "/logos/CS 3.png",
+    title: "Seamless Collaboration",
+    desc: "Actively communicated with their in-house marketing and content teams to align the website's functionality with ongoing campaigns. Offered technical support to ensure smooth transitions during SEO implementations.",
+  },
+  {
+    img: "/logos/CS 4.png",
+    title: "Long-Term Solutions",
+    desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
+  },
+  {
+    img: "/logos/CS 5.png",
+    title: "Broader Reach",
+    desc: "With improved SEO performance, VBCC Instruments expanded its online visibility and attracted more organic traffic.",
+  },
+];
+
+export const ITEssentials = [
+  {
+    img: "/logos/IT icon 1.svg",
+    title: "Technical Research",
+    desc: "In-depth analysis to gather insights and optimize solutions for complex projects.",
+  },
+  {
+    img: "/logos/IT icon 2.svg",
+    title: "Audit & Consultation:",
+    desc: "Comprehensive evaluation and expert guidance to enhance performance, efficiency, and growth.",
+  },
+  {
+    img: "/logos/IT icon 3.svg",
+    title: "Automation & Integration",
+    desc: "Streamlining processes by connecting systems and automating workflows for improved efficiency and scalability.",
+  },
+  {
+    img: "/logos/IT icon 4.svg",
+    title: "3rd Party API Integration",
+    desc: "Seamlessly connecting external services to enhance functionality and streamline operations.",
+  },
+  {
+    img: "/logos/IT icon 5.svg",
+    title: "AI Tool Integration",
+    desc: "Integrating AI solutions to automate tasks, enhance decision-making, and drive innovation.",
+  },
+  {
+    img: "/logos/IT icon 6.svg",
+    title: "CRM Integration",
+    desc: "Connecting and automating customer data to improve relationships, streamline workflows, and boost productivity.",
+  },
+  {
+    img: "/logos/IT icon 7.svg",
+    title: "Front-End Development",
+    desc: "Crafting responsive, user-friendly interfaces that enhance user experience and bring designs to life.",
+  },
+  {
+    img: "/logos/IT icon 8.svg",
+    title: "Full-Stack Development",
+    desc: "Building end-to-end web applications by combining both front-end and back-end expertise for seamless functionality.",
+  },
+  {
+    img: "/logos/IT icon 9.svg",
+    title: "SaaS MVP",
+    desc: "Developing a scalable, minimal viable product for a Software-as-a-Service platform to quickly validate ideas and attract users.",
+  },
+];
+
+export const digitalEssentials = [
+  {
+    img: "/logos/digital icon 1.svg",
+    title: "Website Content",
+    desc: "Crafting engaging, informative, and SEO-optimized content that communicates your brand message and drives user action.",
+  },
+  {
+    img: "/logos/digital icon 2.svg",
+    title: "Marketing Research",
+    desc: "Analyzing market trends, consumer behavior, and competitors to inform strategies and drive business growth.",
+  },
+  {
+    img: "/logos/digital icon 3.svg",
+    title: "Social Media Ads",
+    desc: "Creating targeted ad campaigns across social platforms to boost brand visibility, engagement, and conversions.",
+  },
+  {
+    img: "/logos/digital icon 4.svg",
+    title: "Google Ads",
+    desc: "Optimizing paid search campaigns on Google to drive traffic, increase visibility, and maximize ROI.",
+  },
+  {
+    img: "/logos/digital icon 5.svg",
+    title: "Landing Page CRO",
+    desc: "Optimizing landing pages to enhance user experience, increase conversions, and maximize business goals.",
+  },
+  {
+    img: "/logos/digital icon 6.svg",
+    title: "Business Website Essentials",
+    desc: "Building a professional, responsive website with key features to enhance branding, navigation, and performance.",
+  },
+  {
+    img: "/logos/digital icon 7.svg",
+    title: "E-commerce Essentials",
+    desc: "Creating a secure, user-friendly online store with key features to drive sales.",
+  },
+];
+
+export const creativeEssentials = [
+  {
+    img: "/logos/IT icon 1.svg",
+    title: "UI/UX - Web",
+    desc: "Designing intuitive, user-friendly websites that enhance user experience and engagement.",
+  },
+  {
+    img: "/logos/IT icon 2.svg",
+    title: "UI/UX - Mobile",
+    desc: "Crafting seamless, responsive mobile interfaces for a flawless user experience across devices.",
+  },
+  {
+    img: "/logos/IT icon 3.svg",
+    title: "Logo Design",
+    desc: "Creating unique, memorable logos that represent your brand's identity.",
+  },
+  {
+    img: "/logos/IT icon 4.svg",
+    title: "Graphic Design",
+    desc: "Designing visually appealing graphics that communicate your message effectively.",
+  },
+  {
+    img: "/logos/IT icon 5.svg",
+    title: "Print Design",
+    desc: "Developing designs for brochures, posters, and other printed materials that leave a lasting impression.",
+  },
+  {
+    img: "/logos/IT icon 6.svg",
+    title: "Mockup Design",
+    desc: "Creating realistic representations of digital designs to showcase concepts and ideas.",
+  },
+  {
+    img: "/logos/IT icon 7.svg",
+    title: "3D Design",
+    desc: "Producing dynamic, detailed 3D visuals for products, environments, and concepts.",
+  },
+  {
+    img: "/logos/IT icon 7.svg",
+    title: "Interactive Website",
+    desc: "Designing engaging, interactive websites that enhance user experience and functionality.",
+  }
+];
+
 export const shine = [
   {
     title: "Business Website Creation",
@@ -225,8 +427,47 @@ export const shine = [
   {
     title: "Fullstack Development",
     desc: "From front-end interfaces to back-end systems, we deliver complete web solutions. Our expertise spans across modern tech stacks to build scalable, secure, and performant applications that drive business growth.",
-  }
-]
+  },
+];
+
+export const allProjectsLists = [
+  {
+    img: "/logos/rasim - logo.svg",
+    title: "Rasim",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+  {
+    img: "/logos/VBCC - Logo.svg",
+    title: "VBCC",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+  {
+    img: "/logos/oneus - logo.png",
+    title: "OneUs",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+  {
+    img: "/logos/ensileta - logo.svg",
+    title: "Ensileta Interior",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+  {
+    img: "/logos/intermont - logo.svg",
+    title: "Intermont",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+  {
+    img: "/logos/daga - logo.svg",
+    title: "Daga&Daga",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+  },
+];
 
 // TESTIMONIALS
 export const reviewIndia = [

@@ -9,8 +9,8 @@ export const LogoTypeWriterAnimation = ({ text }: { text: string }) => {
     );
 };
 
-const LETTER_DELAY = 0.50;
-const BOX_FADE_DURATION = 3.50;
+const LETTER_DELAY = 0.25;
+const BOX_FADE_DURATION = 1.75;
 
 const FADE_DELAY = 5;
 const MAIN_FADE_DURATION = 0.75;
@@ -27,7 +27,7 @@ const Typewrite = ({ text }: { text: string }) => {
     }, [text]);
 
     return (
-        <div className="mb-2.5 font-PermanentMarker font-semibold text-7xl md:text-9xl xl:text-[180px] uppercase text-info tracking-widest">
+        <div className="mb-2.5 font-PermanentMarker font-semibold text-[58px] md:text-9xl xl:text-[180px] uppercase text-info tracking-widest">
             <motion.div
                 initial={{ opacity: 0, scale: 1 }}
                 animate={{ opacity: 1, scale: [1, 1, 1, 1, 1, 1.2, 1] }}

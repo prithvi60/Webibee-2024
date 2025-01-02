@@ -8,7 +8,7 @@ const ContactForm = () => {
                     Let’s <strong className="text-info">talk</strong>
                 </h3>
                 <p className="font-SourceCodePro font-normal text-sm sm:text-base !leading-tight">
-                    Have a health care project to discuss?<br /> Looking to partner with us?
+                    Have a project to discuss?<br /> Looking to partner with us?
                 </p>
                 <p className="font-SourceCodePro font-normal text-sm sm:text-base">
                     Drop us a line...

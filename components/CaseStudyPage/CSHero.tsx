@@ -40,7 +40,7 @@ const CSHero = () => {
                                 <h5 className="relative ml-2 font-EbGaramond font-bold tracking-wider text-xl md:text-2xl p-1 xl:text-3xl before:absolute before:top-0.5 before:-left-2 before:w-2 before:h-full text-[#464959] before:bg-[#20427D] before:rounded-full">
                                     {item.title}
                                 </h5>
-                                <ul className="list-disc  font-SourceCodePro font-medium text-base md:text-lg xl:text-xl pl-10 pr-4 py-3.5 mr-2 bg-[#7575751A]">
+                                <ul className="list-disc  font-SourceCodePro font-medium text-base md:text-lg xl:text-xl pl-10 pr-4 py-3.5 mr-2 bg-secondary">
                                     {item.lists.map((list, idx) => (
                                         <li key={idx}>{list}</li>
                                     ))}

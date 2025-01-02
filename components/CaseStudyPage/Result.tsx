@@ -40,7 +40,7 @@ const Result = () => {
                     src={"/CS -2.png"}
                 />
             </div>
-            <div className="bg-[#2A3E5E26] flex !mt-32 flex-col lg:flex-row gap-10 p-8">
+            <div className="bg-secondary flex !mt-32 flex-col lg:flex-row gap-10 p-8">
                 <div className="basis-full md:basis-2/5">
                     <div className="relative overflow-hidden w-60 sm:w-80 mx-auto lg:w-full h-60 sm:h-96">
                         <Image

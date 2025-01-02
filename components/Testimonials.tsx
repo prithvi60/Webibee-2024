@@ -1,122 +1,128 @@
 "use client";
-import { Card } from "@nextui-org/react";
-import { Element } from "react-scroll";
-import { Marquee } from "@webibee/react-marquee";
-import { reviewIndia,reviewWestern } from "@/libs/data";
+
+import { testimonials } from "@/libs/data";
 import Image from "next/image";
-import TestimonialCard from "./TestimonialCard";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { HiMiniSpeakerWave, HiMiniPause } from "react-icons/hi2";
 
 export default function Testimonials() {
-  const [isIndia, setIsIndia] = useState(false);
+  const [isActive, setIsActive] = useState(testimonials[0].id);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-   
-    // Fetch user's location
-    fetch("https://ipapi.co/json/")
-      .then(response => response.json())
-      .then(data => {
-        // Check if the country is India
-        setIsIndia(data.country === "IN");
-      });
-  }, []);
-  const reviews=isIndia?reviewIndia:reviewWestern;
- 
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.play();
+      } else {
+        audioRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
+
+  const handlePlayPause = (): void => {
+    setIsPlaying(prevState => !prevState);
+  };
+
+  const handleAudioEnded = (): void => {
+    setIsPlaying(false);
+  };
+
   return (
-    <Element
-      className="padding-variable py-6 md:py-10 lg:py-[60px] h-full flex flex-col gap-4 bg-primary"
-      name="testimonial"
-    >
-      <div>
-        <h1 className="flex justify-center capitalize text-[3.5rem] md:text-7xl w-full mx-auto tracking-wide font-Gothic font-normal text-center text-default">
-          <span className="hidden md:block">Customer&nbsp; </span> Testimonials
-        </h1>
-        <hr className="w-36 md:w-56 mt-4 mx-auto p-0.5 border-t-0 rounded-md bg-default" />
+    <section className="py-10 pr-10 sm:pr-20 xl:pr-64 sm:py-16 xl:py-28 overflow-hidden  md:py-12 block space-y-20 relative z-0">
+      <div className="relative z-0">
+        <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
+          Testimonials
+        </h3>
+        <div className="absolute -top-5 md:-top-10 left-48 xl:left-[480px] size-32 md:size-56 -z-10">
+          <Image
+            src={"/svg 2.svg"}
+            alt="svg"
+            className="object-contain object-center"
+            fill
+            quality={100}
+          />
+        </div>
       </div>
-      {/* <Marquee pauseOnHover speed={70} autoFill={true}>
-        <div className="flex items-center gap-5 w-full h-full py-5 first:ms-5">
-          {lists.map((list, idx) => (
-            <TestimonialCard list={list} key={idx} />
+      <div className="flex flex-col sm:flex-row justify-between gap-5 md:gap-20">
+        <ul className="flex flex-row overflow-x-scroll sm:overflow-x-auto sm:flex-col gap-5 w-full md:w-[55%] sm:pb-5">
+          {testimonials.map((testimonial) => (
+            <li
+              className={`flex min-w-52 sm:min-w-full first:ml-10 sm:first:ml-0 p-5 items-center cursor-pointer justify-end py-5 mb-5 sm:mb-0 pr-3 lg:pr-10 gap-2.5 lg:gap-5 ${isActive === testimonial.id && "shadow-xl rounded-md"
+                }`}
+              key={testimonial.id}
+              onClick={() => setIsActive(testimonial.id)}
+            >
+              <Image
+                src={testimonial.img}
+                alt="avatar"
+                className="object-contain object-center rounded-full"
+                width={60}
+                quality={100}
+                height={60}
+              />
+              <div className="block space-y-2">
+                <h5 className="capitalize font-EbGaramond font-medium tracking-wider text-lg sm:text-xl xl:text-2xl">
+                  {testimonial.reviewer}
+                </h5>
+                <p className="text-sm capitalize  xl:text-lg tracking-wide font-SourceCodePro font-normal">
+                  {testimonial.position}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div className="block space-y-5 w-full md:w-[45%]">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id}>
+              {isActive === testimonial.id ? (
+                <div className="pl-10 sm:pl-0 space-y-6">
+                  <p className="!leading-9 text-justify text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
+                  <div className="flex justify-center sm:justify-start items-center gap-2.5">
+                    <audio
+                      ref={audioRef}
+                      src={"/sample-audio.wav"}
+                      className="hidden"
+                      onEnded={handleAudioEnded}
+                    />
+                    {isPlaying ? (
+                      <HiMiniPause
+                        className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
+                        onClick={handlePlayPause}
+                      />
+                    ) : (
+                      <HiMiniSpeakerWave
+                        className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
+                        onClick={handlePlayPause}
+                      />
+                    )}
+                    {isPlaying ? (
+                      <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
+                        <Image
+                          fill
+                          src={"/sound-gif.gif"}
+                          alt="image"
+                          quality={100}
+                          className="object-contain object-center"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
+                        <Image
+                          fill
+                          src={"/sound.svg"}
+                          alt="image"
+                          className="object-contain object-center"
+                        />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ) : null}
+            </div>
           ))}
         </div>
-      </Marquee> */}
-      <Marquee >
-        {reviews.map((list, idx) => (
-          <TestimonialCard list={list} key={idx} />
-          // <div className="shadow-md keen-slider__slide rounded-xl" key={idx}>
-          //   <div className="flex items-center gap-4 px-4 py-5 text-white bg-black md:px-8 md:gap-8">
-          //     <Image
-          //       alt={`${item.country} logo`}
-          //       height={55}
-          //       src={item.img}
-          //       width={55}
-          //       // title={list.country}
-          //       className="rounded-full"
-          //     />
-          //     <div className="space-y-0.5">
-          //       <h4 className="text-lg font-semibold leading-none capitalize md:text-xl font-Merri line-clamp-1">
-          //         {item.title}
-          //       </h4>
-          //       <p className="text-sm capitalize md:text-base lg:text-lg text-slate-100 font-Merri">
-          //         {item.country}
-          //       </p>
-          //     </div>
-          //   </div>
-          //   <div className="px-4 py-6 pb-10 font-normal md:px-8 bg-secondary font-Merri text-base md:text-lg text-white/90 !h-[255px] flex flex-col justify-between items-start">
-          //     <p className="tracking-wide line-clamp-5">{item.para}</p>
-          //     <div className="flex items-center mb-1.5">
-          //       <svg
-          //         className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"
-          //         aria-hidden="true"
-          //         xmlns="http://www.w3.org/2000/svg"
-          //         fill="currentColor"
-          //         viewBox="0 0 22 20"
-          //       >
-          //         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          //       </svg>
-          //       <svg
-          //         className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"
-          //         aria-hidden="true"
-          //         xmlns="http://www.w3.org/2000/svg"
-          //         fill="currentColor"
-          //         viewBox="0 0 22 20"
-          //       >
-          //         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          //       </svg>
-          //       <svg
-          //         className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"
-          //         aria-hidden="true"
-          //         xmlns="http://www.w3.org/2000/svg"
-          //         fill="currentColor"
-          //         viewBox="0 0 22 20"
-          //       >
-          //         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          //       </svg>
-          //       <svg
-          //         className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"
-          //         aria-hidden="true"
-          //         xmlns="http://www.w3.org/2000/svg"
-          //         fill="currentColor"
-          //         viewBox="0 0 22 20"
-          //       >
-          //         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          //       </svg>
-          //       <svg
-          //         className="w-5 h-5 md:w-6 md:h-6 ms-1 md:ms-1.5 text-yellow-400"
-          //         aria-hidden="true"
-          //         xmlns="http://www.w3.org/2000/svg"
-          //         fill="currentColor"
-          //         viewBox="0 0 22 20"
-          //       >
-          //         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          //       </svg>
-          //     </div>
-          //   </div>
-          // </div>
-        ))}
-      {/* </div> */}
-      </Marquee>
-      <Card />
-    </Element>
+      </div>
+    </section>
   );
 }

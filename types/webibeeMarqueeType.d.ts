@@ -1,1 +1,1 @@
-declare module '@webibee/react-marquee'
+declare module

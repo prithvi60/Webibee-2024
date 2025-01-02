@@ -1,72 +1,22 @@
-"use client";
-import { Button } from "@nextui-org/react";
-import Link from "next/link";
-import Services from "./Services";
 import Image from "next/image";
-import { useState } from "react";
+import { LogoTypeWriterAnimation } from "./LogoTypeWriterAnimation";
 
 const Hero = () => {
-  const [loader, setLoader] = useState(false);
 
   return (
-    <>
-      <section
-        className="relative padding-variable py-6 md:py-10 lg:py-[60px] text-center text-default h-screen"
-        style={{
-          zIndex: 2,
-        }}
-      >
-        <h1 className="w-full mx-auto mt-8 text-6xl font-medium tracking-wide capitalize md:text-8xl font-Caveat md:mt-10 ">
-          Websites that stand out
-        </h1>
-        <h2 className="w-full mx-auto font-medium capitalize text-md md:text-xl font-Merri ">
-          Elevate SEO, Drive Sales, and Set the Standard for Cutting-Edge
-          Quality with Our Performance-Optimized Designs
-        </h2>
-        <div className="py-12 md:pt-24 ">
-          <Button
-            size="lg"
-            radius="lg"
-            className="rounded-2xl border-2 border-dashed border-success bg-danger md:text-xl shadow-lg px-6 py-5 md:px-28 md:py-8 font-Merri font-bold uppercase text-default transition-all duration-300 hover:animate-pulse active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
-          >
-            <Link
-              passHref={true}
-              target="blank"
-              href={"https://calendar.app.google/dUU7BcdHo1Y61M1v6"}
-              title="google calendar"
-            >
-              Book a Free Consultation
-            </Link>
-          </Button>
-        </div>
-        <Services />
-      </section>
-      <div className="absolute top-0 left-0 w-full h-screen pointer-events-none">
-        <Image
-          title="bg gif"
-          src={"https://ik.imagekit.io/webibee/Agency/bg_webibee.gif?tr:q-100"}
-          loading="lazy"
-          quality={100}
-          alt="bg gif"
-          onLoad={() => {
-            setLoader(true);
-          }}
-          fill
-          style={{ filter: "brightness(0.6)" }}
-        />
-        {!loader && (
-          <Image
-            title="bg gif"
-            src={"/placeholder.png"}
-            quality={30}
-            alt="bg gif"
-            priority
-            fill
-            style={{ filter: "brightness(0.6)" }}
-          />
-        )}
+    <section className="p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 block space-y-10">
+      <div className="flex justify-center items-center gap-3 font-SourceCodePro font-semibold tracking-wider flex-col sm:flex-row md:gap-6 text-base sm:text-lg">
+        <h5>Limitless vision.</h5>
+        <h5>Limitless Progress.</h5>
       </div>
-    </>
+      <div className="flex flex-col justify-center items-center gap-10">
+        <h3 className="uppercase font-EbGaramond tracking-widest font-bold text-2xl sm:text-3xl xl:text-4xl text-center"> Business Tech to Small Medium Enterprises (SME)</h3>
+        {/* <div className="relative overflow-hidden w-full h-72">
+          <Image fill src={"/webibee logo.svg"} alt="logo" className="object-contain object-center " />
+        </div> */}
+        <LogoTypeWriterAnimation text={"webibee"} />
+      </div>
+    </section>
   );
 };
 

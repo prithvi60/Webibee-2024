@@ -40,11 +40,11 @@ export default function FloatingButton() {
           >
             <motion.img
               loading="lazy"
-              src="https://ik.imagekit.io/webibee/Agency/whatsapp.gif"
+              src="https://ik.imagekit.io/webibee/Agency/whatsapp.png?updatedAt=1735018588584"
               alt="whatsapp logo"
               title="whatsapp logo"
-              className="rounded-full shadow-xl h-14 w-14 md:h-16 md:w-16"
-              whileHover={{ boxShadow: "0 0 0 2px #FFFFFF" }}
+              className="h-12 w-12 md:h-16 md:w-20 "
+            // whileHover={{ boxShadow: "0 0 0 2px #FFFFFF" }}
             />
           </a>
         </motion.div>
@@ -54,7 +54,7 @@ export default function FloatingButton() {
           style={{ zIndex: "1000" }}
           whileHover={{ scale: 1.1 }}
         >
-          <OfferButton/>
+          <OfferButton />
         </motion.div>
       )}
     </>
@@ -73,7 +73,7 @@ const TiltChipLink = () => {
   return (
     <div className="mb-1.5 w-fit rounded-full bg-zinc-600">
       <a
-       href={"https://calendly.com/webibee/consultation"}
+        href={"https://calendly.com/webibee/consultation"}
         rel="nofollow"
         className="flex origin-top-left items-center rounded-full border border-indigo-900 bg-white p-0.5 text-sm transition-transform hover:-rotate-2"
       >
@@ -81,7 +81,7 @@ const TiltChipLink = () => {
           FREE!
         </span>
         <span className="ml-1.5 mr-1 inline-block">
-        Claim your free website audit here
+          Claim your free website audit here
         </span>
         <FiArrowUpRight className="mr-2 inline-block" />
       </a>

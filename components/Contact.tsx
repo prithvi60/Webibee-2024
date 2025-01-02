@@ -1,174 +1,122 @@
 "use client";
-import { services } from "@/libs/data";
-import { Button, Input, Select, SelectItem } from "@nextui-org/react";
-import Link from "next/link";
-import { Element } from "react-scroll";
+import React from "react";
+import DotExpandButton from "./buttons/DotExpandButton";
+import { usePathname } from "next/navigation";
 
-export default function Contact() {
-  // const formRef = useRef(null);
-  return (
-    <Element className="padding-variable p-6 md:p-10 lg:p-[60px] bg-primary" name="Contact">
-      <h1 className="flex justify-center font-Gothic text-5xl md:text-7xl text-center text-default font-medium">
-        Contact &nbsp; <span className="hidden md:block"> Us</span>
-      </h1>
-      <hr className="w-12 md:w-[17rem] mx-auto p-0.5 bg-default border-t-0 rounded-md" />
-      <div className="grid grid-cols-1  gap-4 place-items-center pt-3 md:px-48">
-        <div className="w-full bg-default mx-auto rounded-lg">
-          <div className="bg-success rounded-t-lg py-3 space-y-2">
-            <h2 className="font-Gothic text-2xl md:text-4xl text-center text-default tracking-wider ">
-              Inquiry Form
-            </h2>
-            <p className="font-Merri font-semibold text-base md:text-lg text-center text-default">
-              We will get in touch with you shortly
-            </p>
-            {/* <div className="p-1 my-3 rounded-full border-2 border-primary z-40 bg-default w-max mx-auto text-xs">
-            OR
-          </div> */}
-            {/* <div className="w-max mx-auto mb-4">
-            <Button
-              as={Link}
-              href="#"
-              color="primary"
-              size="md"
-              variant="ghost"
-              className="capitalize font-bold text-default">
-              Book a google meet
-            </Button>
-          </div> */}
-          </div>
-          <form
-            action="https://public.herotofu.com/v1/1da5cb00-21a1-11ee-a1b3-8ba321abde38"
-            method="POST"
-            className="space-y-5 bg-secondary overflow-hidden py-10 px-5  md:px-10 rounded-b-lg !font-Merri"
-            acceptCharset="UTF-8"
-            // ref={formRef}
-            // onSubmit={() =>
-            //   setTimeout(() => {
-            //     formRef?.current.reset();
-            //   }, 1500)
-            // }
-          >
-            <Input
-              isRequired
-              size="lg"
-              type="email"
-              label="Email"
-              name="Email"
-              id="Email"
-              className="w-full bg-default rounded-md !overflow-hidden"
-            />
-            <Input
-              type="text"
-              size="lg"
-              name="Phone"
-              id="Phone"
-              label="Number"
-              className="w-full bg-default rounded-md !overflow-hidden"
-            />
-            <Input
-              isRequired
-              type="text"
-              size="lg"
-              name="Company"
-              id="Company"
-              label="Company Name"
-              className="w-full bg-default rounded-md !overflow-hidden"
-            />
-            <Select
-              // selectionMode="multiple"
-              isRequired
-              size="lg"
-              name="Service"
-              id="Service"
-              label="How can we help your brand? "
-              placeholder="Select an service"
-              defaultSelectedKeys={[services[0].label]}
-              className="w-full bg-default rounded-md placeholder:text-slate-500 !overflow-hidden"
-            >
-              {services.map((service) => (
-                <SelectItem key={service.value} value={service.value}>
-                  {service.label}
-                </SelectItem>
-              ))}
-            </Select>
-            {/* <Select
-              label="Where did you hear about webibee?"
-              name="Reach"
-              id="Reach"
-              placeholder="Select an Media"
-              defaultSelectedKeys={["Media 1"]}
-              className="w-full"
-              color="primary"
-              variant={"bordered"}
-            >
-              {about.map((item) => (
-                <SelectItem key={item.value} value={item.value}>
-                  {item.label}
-                </SelectItem>
-              ))}
-            </Select> */}
-            {/* <RadioGroup
-              name="NeedBranding"
-              id="NeedBranding"
-              label="Do you need help with your brand identity?"
-              orientation="horizontal"
-              defaultValue="No"
-              color="primary"
-              className="w-full ml-2 mb-5"
-            >
-              <Radio value="Yes">Yes</Radio>
-              <Radio value="No">No</Radio>
-            </RadioGroup> */}
-            <div className="w-full text-center">
-              <Button
-                type="submit"
-                // size="lg"
-                variant="solid"
-                className="px-14 py-6 text-lg md:text-xl capitalize font-semibold font-Merri text-default hover:text-default bg-danger hover:animate-pulse"
-              >
-                Submit
-              </Button>
-            </div>
-          </form>
-        </div>
-        <div className="w-full text-default flex flex-col  items-center gap-5 py-5">
-          <p className="text-base md:text-lg md:text-left w-4/5 tracking-normal leading-relaxed font-Merri text-center">
-            If you are not ready to jump on a consultation call immediately or
-            want some questions answered, please leave an inquiry 
-            or email us at
-            <span className="mx-2 font-bold hover:text-default/70 underline underline-offset-2 hover:animate-pulse">
-              <Link passHref={true}
-                title="email address"
-                href="mailto: support@webibee.com"
-                target="_blank"
-              >
-                support@webibee.com
-              </Link>
-            </span>
-            . We will get back to you within 24 hours.
-          </p>
-          {/* <p className="font-medium text-lg md:text-xl text-center tracking-normal leading-relaxed border border-primary py-1.5 px-3 w-max rounded-lg bg-black">
-            +91-7358023088
-          </p>
-          <div className="p-1 my-3 rounded-full border-2 border-primary z-40 bg-black w-max mx-auto text-xs">
-            OR
-          </div> */}
-          {/* <div className="w-max mx-auto mb-4">
-            <Button
-              as={Link}
-              passHref={true}
-              title="Free Consultation"
-              href="https://calendar.app.google/dUU7BcdHo1Y61M1v6"
-              target="blank"
-              size="lg"
-              variant={"solid"}
-              className="capitalize font-semibold font-Merri  text-default bg-danger hover:animate-pulse"
-            >
-              Book a Free Consultation
-            </Button>
-          </div> */}
-        </div>
-      </div>
-    </Element>
-  );
-}
+const Contact = () => {
+    const path = usePathname();
+    // console.log(path);
+
+    return (
+        <section
+            className={`${path === "/contact" ? "hidden" : "block"
+                } w-full p-10 sm:px-12 xl:pt-12 xl:pb-6 max-w-5xl mx-auto text-center`}
+        >
+            {path.startsWith("/caseStudy") ? (
+                <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                    <div className="space-y-10 w-full md:w-3/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            Ready to take your project to the{" "}
+                            <strong className="font-extrabold text-info">next level?</strong>{" "}
+                            Let’s talk about your goals!
+                        </h4>
+                        <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                    </div>
+                    <div className="space-y-10 w-full md:w-2/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            See all our creative{" "}
+                            <strong className="font-extrabold text-info">
+                                designs and projects
+                            </strong>{" "}
+                            in one place!
+                        </h4>
+                        <DotExpandButton text="Our Works" href="/works" />
+                    </div>
+                </div>
+            ) : path === "/ITEssentials" ||
+                path === "/digitalEssentials" ||
+                path === "/creativeEssentials" ? (
+                <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                    <div className="space-y-10 w-full md:w-3/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            Ready to take your project to the{" "}
+                            <strong className="font-extrabold text-info">next level?</strong>{" "}
+                            Let’s talk about your goals!
+                        </h4>
+                        <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                    </div>
+                    <div className="space-y-10 w-full md:w-2/5">
+                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                            Take a look at our{" "}
+                            <strong className="font-extrabold text-info">
+                                Business essential services
+                            </strong>{" "}
+                            too!
+                        </h4>
+                        <DotExpandButton text="Our Works" href="/works" />
+                    </div>
+                </div>
+            ) : (
+                <div className="block space-y-12 lg:space-y-16">
+                    {path === "/works" ? (
+                        <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
+                            Ready to take your project to the{" "}
+                            <strong className="font-extrabold text-info">next level?</strong>{" "}
+                            Let’s talk about your goals!
+                        </h4>
+                    ) : (
+                        <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
+                            Ignite Your{" "}
+                            <strong className="font-extrabold text-info">Vision</strong> Today
+                        </h4>
+                    )}
+                    {(path === "/" || path === "/about" || path === "/proficiency") && (
+                        <div className="block space-y-6 lg:space-y-10">
+                            <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
+                                Feel the Impact
+                            </h6>
+                            <p className="text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]">
+                                Ready to Elevate Your Brand?
+                            </p>
+                        </div>
+                    )}
+                    <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                </div>
+            )}
+        </section>
+    );
+};
+
+export default Contact;
+
+// const caseStudyContact = [
+//     {
+//         title1: "Ready to take your project to the",
+//         title2: "next level?",
+//         title3: "Let’s talk about your goals!",
+//         btn: "GET IN TOUCH",
+//         href: "/contact",
+//     },
+//     {
+//         title1: "See all our creative",
+//         title2: "designs and projects",
+//         title3: "in one place!",
+//         btn: "Our Works",
+//         href: "/works",
+//     },
+// ];
+
+// const essentialsContact = [
+//     {
+//         title1: "",
+//         title2: "",
+//         title3: "",
+//         btn: "",
+//     },
+//     {
+//         title1: "",
+//         title2: "",
+//         title3: "",
+//         href: "",
+//     },
+// ];

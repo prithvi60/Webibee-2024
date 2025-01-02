@@ -11,12 +11,12 @@ const Categories = () => {
                     <p className='text-base md:text-lg font-SourceCodePro'>Our work transforms visions into digital realities, elevating brands across diverse industries. Whether designing sleek portfolios for clothing brands or crafting immersive experiences for interior designers, we blend creativity with functionality. Every project is a testament to innovation and attention to detail.</p>
                 </div>
             </div>
-            <div className='flex no_scrollbar md:justify-center flex-row md:flex-col lg:flex-row gap-5 max-w-2xl md:max-w-full lg:w-[55%] overflow-x-scroll md:overflow-x-visible h-full'>
+            <div className='flex no_scrollbar md:justify-center flex-row md:flex-col lg:flex-row gap-5 max-w-2xl md:max-w-full lg:w-[55%] overflow-x-scroll lg:overflow-x-visible h-full'>
                 <div className="flex flex-row lg:flex-col gap-5 lg:gap-10">
                     {categories.map((category, idx) => (
                         <div
                             key={idx}
-                            className="p-5 w-52 md:w-full lg:w-[300px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-80 block space-y-10"
+                            className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 flex flex-col items-center justify-center gap-10"
                         >
                             <div className='relative mx-auto w-40 h-20'>
                                 <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
@@ -32,7 +32,7 @@ const Categories = () => {
                     {categories2.map((category, idx) => (
                         <div
                             key={idx}
-                            className="p-5 w-52 md:w-full lg:w-[300px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-80 block space-y-10"
+                            className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 flex flex-col items-center justify-center gap-10"
                         >
                             <div className='relative mx-auto w-40 h-20'>
                                 <Image fill alt='logo' className='object-contain object-center' src={category.logo} />

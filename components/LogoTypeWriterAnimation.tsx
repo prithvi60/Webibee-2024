@@ -27,10 +27,10 @@ const Typewrite = ({ text }: { text: string }) => {
     }, [text]);
 
     return (
-        <div className="mb-2.5 font-PermanentMarker font-semibold text-[58px] md:text-9xl xl:text-[180px] uppercase text-info tracking-widest">
+        <div className="mb-2.5 font-EbGaramond font-semibold text-[58px] md:text-9xl xl:text-[180px] uppercase text-info tracking-widest">
             <motion.div
-                initial={{ opacity: 0, scale: 1 }}
-                animate={{ opacity: 1, scale: [1, 1, 1, 1, 1, 1.2, 1] }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: BOX_FADE_DURATION }}
                 className="typewriter-box"
             >

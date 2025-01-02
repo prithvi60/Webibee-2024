@@ -90,7 +90,7 @@ const HorizontalScrollCarousel = ({
 const Card = ({ card }: { card: any }) => {
     return (
         <div className="block space-y-8 min-w-72 md:min-w-[480px] pb-5">
-            <div className="size-24 md:size-48 relative mx-auto">
+            <div className="size-24 md:size-36 relative mx-auto">
                 <Image
                     alt="icon"
                     src={card.img}

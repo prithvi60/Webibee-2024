@@ -24,7 +24,7 @@ const NavBar = () => {
           {navLinks.map((link, idx) => (
             <li
               key={idx}
-              className={` ${link.href === path && "underline underline-offset-8"} tracking-wide font-bold hover:text-info/80 text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out"`}
+              className={` ${(link.href === path && link.href !== "/contact") && "underline underline-offset-[14px]"} tracking-wide font-bold hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out" ${link.title === "Contact Us" && "after:absolute after:-bottom-2 after:left-0 after:w-full after:h-1 after:bg-[#2D1C55] after:hover:bg-info after:transition-width after:duration-300 after:ease-in-out"}`}
             >
               <Link href={`${link.href}`}>{link.title}</Link>
             </li>

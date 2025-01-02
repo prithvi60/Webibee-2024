@@ -3,7 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
-import { Bungee_Shade, EB_Garamond, Fredericka_the_Great, Permanent_Marker, Source_Code_Pro } from "next/font/google";
+import { EB_Garamond, Source_Code_Pro } from "next/font/google";
 import FloatingButton from "@/components/FloatingButton";
 import Head from "next/head";
 import { Partytown } from "@builder.io/partytown/react";
@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Script from "next/script";
 import Development from "@/components/Development";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
@@ -77,11 +78,6 @@ const sourceCodePro = Source_Code_Pro({
   weight: "400",
 });
 
-const permanentMarker = Bungee_Shade({
-  subsets: ["latin"],
-  variable: "--font-permanentMarker",
-  weight: "400",
-});
 
 export default function RootLayout({
   children,
@@ -91,7 +87,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${EbGaramond.variable} ${sourceCodePro.variable} ${permanentMarker.variable}`}
+      className={`${EbGaramond.variable} ${sourceCodePro.variable}`}
     >
       <Head>
         {/* Add Microsoft Clarity script with Partytown */}
@@ -133,6 +129,7 @@ export default function RootLayout({
           {/* <FloatingButton /> */}
           <Contact />
           <Footer />
+          <ScrollToTopButton />
         </Providers>
 
       </body>

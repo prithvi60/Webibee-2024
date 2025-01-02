@@ -1,5 +1,6 @@
 import { allProjectsLists } from "@/libs/data";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
@@ -13,29 +14,31 @@ const ViewAllProjects = () => {
                 {allProjectsLists.map((list, idx) => (
                     <div
                         key={idx}
-                        className="block space-y-8 max-w-72 md:max-w-[480px] pb-5 border-2 border-info shadow-md p-5 rounded-lg"
+                        className="block max-w-72 md:max-w-[480px] pb-5 shadow-md rounded-lg overflow-hidden"
                     >
-                        <div className="size-24 md:size-48 relative mx-auto">
-                            <Image
-                                alt="icon"
-                                src={list.img}
-                                fill
-                                className="object-contain object-center"
-                            />
-                        </div>
-                        <div className="space-y-4">
-                            <div className="flex justify-between items-center font-EbGaramond font-bold tracking-wider text-[#1B1B1CCC]">
-                                <h4 className="md:text-3xl sm:text-2xl text-xl truncate w-[15ch]">
-                                    {list.title.length > 12
-                                        ? `${list.title.substring(0, 12)}...`
-                                        : list.title}
-                                </h4>
-                                <h5 className="md:text-xl text-lg ">{list.year}</h5>
+                        <Link href={`/caseStudy/${list.href}`} passHref className="space-y-8">
+                            <div className={`h-32 overflow-hidden w-full md:h-64 relative mx-auto`} style={{ backgroundColor: list.bg }}>
+                                <Image
+                                    alt="icon"
+                                    src={list.img}
+                                    fill
+                                    className="object-contain object-center p-5"
+                                />
                             </div>
-                            <p className="font-SourceCodePro text-justify md:text-start text-base sm:text-lg !leading-normal">
-                                {list.desc}
-                            </p>
-                        </div>
+                            <div className="space-y-4  p-5">
+                                <div className="flex justify-between items-center font-EbGaramond font-bold tracking-wider text-[#1B1B1CCC]">
+                                    <h4 className="md:text-3xl sm:text-2xl text-xl truncate w-[15ch]">
+                                        {list.title.length > 15
+                                            ? `${list.title.substring(0, 15)}...`
+                                            : list.title}
+                                    </h4>
+                                    <h5 className="md:text-xl text-lg ">{list.year}</h5>
+                                </div>
+                                <p className="font-SourceCodePro text-justify md:text-start text-base sm:text-lg !leading-normal">
+                                    {list.desc}
+                                </p>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>

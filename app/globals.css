@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* <uniquifier>: source_pro */
+/* <weight>: "900"*/
 
 * {
   margin: 0;
@@ -23,4 +27,17 @@
 
 .carousal::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.tags {
+  font-family: eb-garamond;
+  font-weight: 700;
+  color: #936af7;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+.tags2 {
+  font-family: "Source Code Pro", serif;
+  font-weight: 700;
 }

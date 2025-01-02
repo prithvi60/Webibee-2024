@@ -1,13 +1,14 @@
 // navbar links
 
 import { desc } from "framer-motion/client";
+import test from "node:test";
 
 export const navLinks = [
   // { href: "/about", title: "About" },
   { href: "/whyCode", title: "Why code" },
   // { href: "/proficiency", title: "Proficiency" },
   { href: "/works", title: "Works" },
-  { href: "/contact", title: "Ready to ignite?" },
+  { href: "/contact", title: "Contact Us" },
 ];
 
 export const footerNavLinks = [
@@ -37,27 +38,27 @@ export const IMG = [
 // Portfolio Images
 
 export const portfolioImages = [
-  { img: "/rasimcasestudy.png", href: "rasim" },
-  { img: "/vbcccasestudy.png", href: "vbcc" },
-  { img: "/ensilatacasestudy.png", href: "ensilata" },
-  { img: "/vbcccasestudy.png", href: "vbcc" },
-  { img: "/ensilatacasestudy.png", href: "ensilata" },
-  { img: "/rasimcasestudy.png", href: "rasim" },
-  { img: "/ensilatacasestudy.png", href: "ensilata" },
-  { img: "/vbcccasestudy.png", href: "vbcc" },
-  { img: "/rasimcasestudy.png", href: "rasim" },
+  { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
+  { img: "/ensilatacasestudy.png", href: "ensileta", alt: "Ensileta Portfolio Image" },
+  // { img: "/rasimcasestudy.png", href: "rasim" },
+  // { img: "/vbcccasestudy.png", href: "vbcc" },
+  // { img: "/ensilatacasestudy.png", href: "ensilata" },
+  // { img: "/rasimcasestudy.png", href: "rasim" },
 ];
 
 export const categories = [
-  { title: "Industrial & Manufacturing", logo: "/logos/VBCC - Logo.svg" },
-  { title: "Project Management Product", logo: "/logos/ensileta - Logo.svg" },
-  { title: "Real Estate", logo: "/logos/intermont - Logo.svg" },
+  { title: "Industrial & Manufacturing", logo: "/logos/VBCC-Logo.svg" },
+  { title: "Project Management Product", logo: "/logos/ensileta-Logo.svg" },
+  { title: "Real Estate", logo: "/logos/intermont-Logo.svg" },
+  { title: "Professional Services Portfolio", logo: "/logos/oneus-logo.png" },
+  { title: "Industrial & Manufacturing", logo: "/logos/VBCC-Logo.svg" },
 ];
 
 export const categories2 = [
-  { title: "Professional Services Portfolio", logo: "/logos/daga - Logo.svg" },
-  { title: "E-commerce & Retail", logo: "/logos/rasim - Logo.svg" },
-  { title: "Tourism", logo: "/logos/oneus - logo.png" },
+  { title: "Professional Services Portfolio", logo: "/logos/daga-Logo.svg" },
+  { title: "E-commerce & Retail", logo: "/logos/rasim-Logo.svg" },
+  { title: "Industrial & Manufacturing", logo: "/logos/n9-Logo.svg" },
+  { title: "FMCG Products", logo: "/logos/nivaran-logo.svg" },
 ];
 
 export const caseStudyList = [
@@ -163,7 +164,7 @@ export const faq = [
   },
   {
     title: "How can we get started with Webibee?",
-    desc: "Please book an initial consultation call to take our collaboration to the next step",
+    desc: "Please book an initial consultation call to take our collaboration to the next step <a href='/contact' class='tags'>Contact Us</a>",
   },
   {
     title: "Do I own the IP?",
@@ -175,7 +176,7 @@ export const faq = [
   },
   {
     title: "How long does it usually take for a startup?",
-    desc: "We have multiple timeline formats based on your needs. Refer here",
+    desc: "We have multiple timeline formats based on your needs <a href='/about/#collaboration' class='tags'>Click Here</a>",
   },
   {
     title: "Why Webibee?",
@@ -194,7 +195,7 @@ export const services = [
       "I want to create a product",
       "I want to implement my startup idea",
     ],
-    href: "/ITEssentials"
+    href: "/ITEssentials",
   },
   {
     title: "Digital",
@@ -207,7 +208,7 @@ export const services = [
       "I want to market my product",
       "I want to reach audience",
     ],
-    href: "/digitalEssentials"
+    href: "/digitalEssentials",
   },
   {
     title: "Creative",
@@ -218,7 +219,7 @@ export const services = [
       "I want to create brand identity",
       "I want to make things aesthetic",
     ],
-    href: "/creativeEssentials"
+    href: "/creativeEssentials",
   },
 ];
 
@@ -252,27 +253,27 @@ export const howItWorks = [
 
 export const resultLists = [
   {
-    img: "/logos/CS 1.png",
+    img: "/logos/CS-1.png",
     title: "Enhanced User Experience",
     desc: "Designed a visually appealing, intuitive interface that reflects expertise and builds trust. Incorporated consistent branding and ensured user-friendly navigation for seamless product and service exploration.",
   },
   {
-    img: "/logos/CS 2.png",
+    img: "/logos/CS-2.png",
     title: "Improved Page Speed Scores:",
     desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
   },
   {
-    img: "/logos/CS 3.png",
+    img: "/logos/CS-3.png",
     title: "Seamless Collaboration",
     desc: "Actively communicated with their in-house marketing and content teams to align the website's functionality with ongoing campaigns. Offered technical support to ensure smooth transitions during SEO implementations.",
   },
   {
-    img: "/logos/CS 4.png",
+    img: "/logos/CS-4.png",
     title: "Long-Term Solutions",
     desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
   },
   {
-    img: "/logos/CS 5.png",
+    img: "/logos/CS-5.png",
     title: "Broader Reach",
     desc: "With improved SEO performance, VBCC Instruments expanded its online visibility and attracted more organic traffic.",
   },
@@ -404,7 +405,7 @@ export const creativeEssentials = [
     img: "/logos/IT icon 7.svg",
     title: "Interactive Website",
     desc: "Designing engaging, interactive websites that enhance user experience and functionality.",
-  }
+  },
 ];
 
 export const shine = [
@@ -421,53 +422,253 @@ export const shine = [
     desc: "We optimize your digital presence with in-depth UI/UX audits and implement enhancements for superior user engagement.",
   },
   {
-    title: "Sass MVP",
+    title: "SaaS MVP Development",
     desc: "We specialize in developing scalable and functional MVPs for SaaS platforms, enabling fast market entry and validation.",
   },
   {
     title: "Fullstack Development",
-    desc: "From front-end interfaces to back-end systems, we deliver complete web solutions. Our expertise spans across modern tech stacks to build scalable, secure, and performant applications that drive business growth.",
+    desc: "From front-end to back-end, we deliver full-stack development solutions that are scalable, secure, and perfectly suited for your business needs.",
   },
 ];
 
 export const allProjectsLists = [
   {
-    img: "/logos/rasim - logo.svg",
-    title: "Rasim",
-    year: "2024",
-    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
-  },
-  {
-    img: "/logos/VBCC - Logo.svg",
+    img: "/logos/VBCC-logo.svg", alt: "VBCC Logo Image",
     title: "VBCC",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    bg: "#13294F",
+    href: "vbcc",
   },
   {
-    img: "/logos/oneus - logo.png",
-    title: "OneUs",
+    img: "/logos/rasim-logo.svg", alt: "Rasim Logo Image",
+    title: "Rasim",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    bg: "#F3F3F3",
+    href: "rasim",
   },
   {
-    img: "/logos/ensileta - logo.svg",
+    img: "/logos/ensileta-logo.svg", alt: "Ensileta Logo Image",
     title: "Ensileta Interior",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    bg: "#3D652E",
+    href: "ensileta",
   },
   {
-    img: "/logos/intermont - logo.svg",
+    img: "/logos/intermont-logo.svg", alt: "Intermont Logo Image",
     title: "Intermont",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    bg: "#FFE4AF",
+    href: "intermont",
   },
   {
-    img: "/logos/daga - logo.svg",
-    title: "Daga&Daga",
+    img: "/logos/ashok-logo.png", alt: "Ashok Minerals Logo Image",
+    title: "Ashok Minerals",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    bg: "#FFFFFF",
+    href: "ashokMinerals",
+  },
+  {
+    img: "/logos/oneus-logo.png", alt: "OneUs Logo Image",
+    title: "OneUs",
+    year: "2024",
+    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    bg: "#A1C3F2",
+    href: "oneUs",
   },
 ];
+
+export const caseStudies = [
+  {
+    title: "VBCC Instruments",
+    href: "vbcc",
+    mainBgImg: "/vbcccasestudy.png",
+    summary:
+      "A Website Revamp To Explore International Market And Improve Conversion Optimisation (CRO)",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web",
+          "Front end development",
+          "Crm integration",
+          "3rd party API integration",
+          "Industrial",
+        ],
+      },
+      { title: "sector", list: "Industrial" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "3 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Grow (retainer work)" },
+    ],
+    slides: [
+      { img: "/vbcc-1.png", alt: "vbcc home page" },
+      { img: "/vbcc-2.png", alt: "vbcc products" },
+      { video: "/sample.mp4", alt: "sample video" },
+    ],
+    about:
+      "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
+    OCLists: [
+      {
+        title: "Outdated Design",
+        desc: "Their previous website lacked a modern, visually engaging design, affecting user trust and engagement.",
+      },
+      {
+        title: "Low SEO Performance",
+        desc: "The site struggled with organic visibility and slow load times.",
+      },
+      {
+        title: "Team Integration",
+        desc: "Ensuring smooth collaboration with their marketing and content teams was critical for success.",
+      },
+      {
+        title: "Technical Customization",
+        desc: "Tailor-made features specific to their niche were required, alongside long-term website scalability.",
+      },
+    ],
+    results: [
+      {
+        img: "/logos/CS-1.png",
+        title: "Enhanced User Experience",
+        desc: "Designed a visually appealing, intuitive interface that reflects expertise and builds trust. Incorporated consistent branding and ensured user-friendly navigation for seamless product and service exploration.",
+      },
+      {
+        img: "/logos/CS-2.png",
+        title: "Improved Page Speed Scores",
+        desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
+      },
+      {
+        img: "/logos/CS-3.png",
+        title: "Seamless Collaboration",
+        desc: "Actively communicated with their in-house marketing and content teams to align the website's functionality with ongoing campaigns. Offered technical support to ensure smooth transitions during SEO implementations.",
+      },
+      {
+        img: "/logos/CS-4.png",
+        title: "Long-Term Solutions",
+        desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
+      },
+      {
+        img: "/logos/CS-5.png",
+        title: "Broader Reach",
+        desc: "With improved SEO performance, VBCC Instruments expanded its online visibility and attracted more organic traffic.",
+      },
+    ],
+    images: [
+      { img: "/CS -2.png", alt: "vbcc products" },
+      { img: "/vbcc-1.png", alt: "vbcc home page" },
+      { img: "/vbcc-2.png", alt: "vbcc products" },
+    ],
+    testimonialImg: "/vbcc-ceo.png",
+    testimonialName: "Naveen V",
+    testimonialPosition: "CEO, VBCC Instruments",
+    testimonials:
+      "Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.Not only did <span className='tags2'>Webibee meet our expectations, but also surpassed them by far.</span><br/> They followed closely to the design guidelines we provided giving useful suggestions on how to improve the functionality of our site. For now, we have reached the point where these websites have an attractive look due to timely delivery of the project. This was facilitated by their integration into my team members. Also, it is worth mentioning that <span className='tags2'>they are knowledgeable about various aspects of online presence management.</span><br/> I highly recommend Prithvi together with his team at Webibee because they do very good work. To put it simply, they didn’t just develop websites; instead <span className='tags2'>they optimized them leading to extremely high scores in Google’s website optimization metrics.</span> On top of that, during the revision process, they always supported us until we were all satisfied with their work. I believe that Webibee is a reliable partner for current and future projects since they make me feel confident enough to tackle even bigger assignments going forward.",
+  },
+  {
+    title: "Ensileta",
+    href: "ensileta",
+    mainBgImg: "/ensilatacasestudy.png",
+    summary:
+      "A Design Approval and Project Management System for Customers",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web | Mobile",
+          "Front end development",
+          "Full stack development",
+          "Sass MVP",
+          "Automation and Integration",
+        ],
+      },
+      { title: "sector", list: "Interior Design" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "4 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Scale ( custom product )" },
+    ],
+    slides: [
+      { img: "/ensileta-1.png", alt: "ensileta dashboard" },
+      { img: "/ensileta-2.png", alt: "ensileta drawings" },
+      { video: "/sample.mp4", alt: "sample video" },
+    ],
+    about:
+      "Ensileta Interiors, a leading interior design firm, needed a comprehensive solution to streamline their project management process and enhance client communication. They required a customer portal that simplified approval workflows, provided a professional tech-forward interface, and elevated their brand's perception.  Webibee partnered with Ensileta to create the Design Management Hub, a feature-rich platform tailored to their business needs, enabling efficient project management and client satisfaction.",
+    OCLists: [
+      {
+        title: "Approval Bottlenecks",
+        desc: "Managing multiple project approvals manually led to delays and miscommunication with clients.",
+      },
+      {
+        title: "Lack of Centralized Communication",
+        desc: "Designers, project managers, and clients lacked a single platform for sharing updates, feedback, and approvals.",
+      },
+      {
+        title: "Brand Perception",
+        desc: "Ensileta aimed to position itself as a tech-savvy brand with modern tools to match their innovative design work.",
+      },
+      {
+        title: "Scalable Solution",
+        desc: "The platform needed to support growth, allowing more clients and projects to be managed effectively.",
+      },
+    ],
+    results: [
+      {
+        img: "/logos/CS-1.png",
+        title: "Custom Approval System",
+        desc: "Built a role-based access system to streamline the management of design mockups, quotes, and deliverable approvals, ensuring seamless project oversight.",
+      },
+      {
+        img: "/logos/CS-2.png",
+        title: "Client-Centric Dashboard",
+        desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
+      },
+      {
+        img: "/logos/CS-3.png",
+        title: "Interactive Comment & Revision",
+        desc: "Introduced a structured commenting system that allows clients to leave feedback directly on mockups, accelerating the revision process and improving communication.",
+      },
+      {
+        img: "/logos/CS-4.png",
+        title: "Branded User Experience",
+        desc: "Incorporated Ensileta’s branding to create a polished, professional look that reflects innovation and reinforces customer trust in the platform.",
+      },
+      {
+        img: "/logos/CS-5.png",
+        title: "Scalable Integration & Training",
+        desc: "Developed a scalable backend framework to manage multiple clients and projects, integrated it into existing workflows, and provided hands-on training for seamless adoption.",
+      },
+    ],
+    images: [
+      { img: "/ensileta-1.png", alt: "ensileta dashboard" },
+      { img: "/ensileta-2.png", alt: "ensileta drawings" },
+      { img: "/ensileta-2.png", alt: "ensileta drawing upload" },
+    ],
+  },
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TESTIMONIALS
 export const reviewIndia = [

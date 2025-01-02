@@ -17,7 +17,7 @@ export default function Services() {
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="p-5 w-full max-w-72 md:max-w-96 border-4 border-[#DFE3E8] h-full sm:min-h-72 xl:min-h-96"
+            className="px-5 w-52 md:w-60 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-80 xl:h-96 py-14 xl:py-20"
           >
             <Link href={service.href} className="block space-y-10">
               <div className="text-[#404040] text-lg tracking-wider sm:text-xl xl:text-3xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">

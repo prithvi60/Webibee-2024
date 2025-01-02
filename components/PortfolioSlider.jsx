@@ -16,8 +16,8 @@ const PortfolioSlider = () => {
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        rows: 3,
-        slidesPerRow: 1,
+        // rows: 3,
+        // slidesPerRow: 1,
         nextArrow: <SampleNextArrow loading={loading} />,
         prevArrow: <SamplePrevArrow loading={loading} />,
     };

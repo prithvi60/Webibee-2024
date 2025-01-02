@@ -53,7 +53,7 @@ const FAQ = () => {
                             <div
                                 className="font-medium flex justify-between items-center"
                             >
-                                <p className="font-SourceCodePro tracking-wider font-medium !leading-7 text-sm md:text-base">{item.desc}</p>
+                                <p className="font-SourceCodePro tracking-wider font-medium !leading-7 text-sm md:text-base" dangerouslySetInnerHTML={{ __html: item.desc }} />
                             </div>
                         </AccordionItem>
                     ))}

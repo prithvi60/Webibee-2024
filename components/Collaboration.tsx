@@ -16,7 +16,7 @@ export default function Collaboration() {
 
 
   return (
-    <section className="block space-y-10  p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
+    <section id="collaboration" className="block space-y-10  p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
       {/* <h1 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
         Collaboration
       </h1> */}

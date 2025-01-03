@@ -1,99 +1,144 @@
 "use client";
-
+import { motion } from "framer-motion";
 import { testimonials } from "@/libs/data";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiMiniSpeakerWave, HiMiniPause } from "react-icons/hi2";
+import { parentVariant, variant1, variant2, variantGrid2 } from "@/libs/Variants";
 
 export default function Testimonials() {
   const [isActive, setIsActive] = useState(testimonials[0].id);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
-    }
-  }, [isPlaying]);
-
-  const handlePlayPause = (): void => {
-    setIsPlaying(prevState => !prevState);
-  };
-
-  const handleAudioEnded = (): void => {
+    speechSynthesis.cancel();
     setIsPlaying(false);
+  }, [isActive]);
+
+  const handlePlayPause = (review: string): void => {
+    if (!isPlaying) {
+      const voices = speechSynthesis.getVoices();
+      const professionalVoice = voices.find(
+        (voice) =>
+          voice.name.includes("Microsoft") ||
+          voice.name.includes("Google US English")
+      );
+
+      const utterance = new SpeechSynthesisUtterance(review);
+      utterance.lang = "en-US";
+      if (professionalVoice) {
+        utterance.voice = professionalVoice;
+      }
+      utterance.pitch = 1;
+      utterance.rate = 1;
+      utterance.volume = 1;
+      utterance.onend = () => {
+        setIsPlaying(false);
+      };
+      speechSynthesis.speak(utterance);
+      setIsPlaying(true);
+    } else {
+      speechSynthesis.cancel(); // Stop the speech if it is currently playing
+      setIsPlaying(false); // Reset the play state
+    }
   };
+
 
   return (
     <section className="py-10 pr-10 sm:pr-20 xl:pr-64 sm:py-16 xl:py-28 overflow-hidden  md:py-12 block space-y-20 relative z-0">
-      <div className="relative z-0">
+      <motion.div
+        variants={variant1}
+        viewport={{ once: true }}
+        initial="initial"
+        whileInView="animate" className="relative z-0">
         <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
           Testimonials
         </h3>
         <div className="absolute -top-5 md:-top-10 left-48 xl:left-[480px] size-32 md:size-56 -z-10">
           <Image
-            src={"/svg 2.svg"}
+            src={"https://ik.imagekit.io/webibee/Webibee/svg%202.svg?updatedAt=1735894423795"}
             alt="svg"
             className="object-contain object-center"
             fill
             quality={100}
           />
         </div>
-      </div>
-      <div className="flex flex-col sm:flex-row justify-between gap-5 md:gap-20">
-        <ul className="flex flex-row overflow-x-scroll sm:overflow-x-auto sm:flex-col gap-5 w-full md:w-[55%] sm:pb-5">
+      </motion.div>
+      <div className="flex flex-col-reverse md:flex-row justify-between gap-5 md:gap-20">
+        <motion.ul
+          variants={parentVariant}
+          viewport={{ amount: 0.3, once: true }}
+          initial="initial"
+          whileInView="animate" className="block space-y-5 w-full md:w-[55%] md:pb-5">
           {testimonials.map((testimonial) => (
-            <li
-              className={`flex min-w-52 sm:min-w-full first:ml-10 sm:first:ml-0 p-5 items-center cursor-pointer justify-end py-5 mb-5 sm:mb-0 pr-3 lg:pr-10 gap-2.5 lg:gap-5 ${isActive === testimonial.id && "shadow-xl rounded-md"
+            <motion.li
+              variants={variantGrid2}
+              initial="initial"
+              whileInView="animate"
+              custom={testimonial.id}
+              viewport={{ once: true }}
+              className={`flex min-w-80 md:min-w-full p-5 items-center cursor-pointer justify-end md:mb-0 lg:px-10 gap-2.5 lg:gap-5 ${isActive === testimonial.id && "shadow-xl rounded-md"
                 }`}
               key={testimonial.id}
               onClick={() => setIsActive(testimonial.id)}
             >
-              <Image
-                src={testimonial.img}
-                alt="avatar"
-                className="object-contain object-center rounded-full"
-                width={60}
-                quality={100}
-                height={60}
-              />
-              <div className="block space-y-2">
-                <h5 className="capitalize font-EbGaramond font-medium tracking-wider text-lg sm:text-xl xl:text-2xl">
-                  {testimonial.reviewer}
-                </h5>
-                <p className="text-sm capitalize  xl:text-lg tracking-wide font-SourceCodePro font-normal">
-                  {testimonial.position}
-                </p>
+              <div className="flex items-center gap-6 w-full lg:w-11/12 xl:w-4/5">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28">
+                  <Image
+                    src={testimonial.img}
+                    alt="avatar"
+                    className="object-cover object-top rounded-full"
+                    fill
+                    quality={100}
+                  />
+                </div>
+
+                <div className="block space-y-2">
+                  <h5 className="capitalize font-EbGaramond font-medium tracking-wider text-lg sm:text-xl xl:text-2xl">
+                    {testimonial.reviewer}
+                  </h5>
+                  <p className="text-sm capitalize  xl:text-lg tracking-wide font-SourceCodePro font-normal">
+                    {testimonial.position}
+                  </p>
+                </div>
               </div>
-            </li>
+            </motion.li>
           ))}
-        </ul>
-        <div className="block space-y-5 w-full md:w-[45%]">
+        </motion.ul>
+        <motion.div
+          variants={parentVariant}
+          viewport={{ amount: 0.3, once: true }}
+          initial="initial"
+          whileInView="animate" className="block space-y-5 md:py-5 w-full md:w-[45%]">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id}>
+            <motion.div
+              variants={variant2}
+              // viewport={{ once: true }}
+              initial="initial"
+              whileInView="animate" key={testimonial.id}>
               {isActive === testimonial.id ? (
-                <div className="pl-10 sm:pl-0 space-y-6">
-                  <p className="!leading-9 text-justify text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
+                <motion.div
+                  key={testimonial.review}
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ ease: "easeOut", duration: 0.5 }} className="pl-10 sm:pl-0 space-y-6">
+                  <p className="!leading-9 text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
                   <div className="flex justify-center sm:justify-start items-center gap-2.5">
-                    <audio
+                    {/* <audio
                       ref={audioRef}
                       src={"/sample-audio.wav"}
                       className="hidden"
                       onEnded={handleAudioEnded}
-                    />
+                    /> */}
                     {isPlaying ? (
                       <HiMiniPause
                         className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
-                        onClick={handlePlayPause}
+                        onClick={() => handlePlayPause(testimonial.review)}
                       />
                     ) : (
                       <HiMiniSpeakerWave
                         className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
-                        onClick={handlePlayPause}
+                        onClick={() => handlePlayPause(testimonial.review)}
                       />
                     )}
                     {isPlaying ? (
@@ -110,18 +155,18 @@ export default function Testimonials() {
                       <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
                         <Image
                           fill
-                          src={"/sound.svg"}
+                          src={"https://ik.imagekit.io/webibee/Webibee/sound.svg?updatedAt=1735894423738"}
                           alt="image"
                           className="object-contain object-center"
                         />
                       </div>
                     )}
                   </div>
-                </div>
+                </motion.div>
               ) : null}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

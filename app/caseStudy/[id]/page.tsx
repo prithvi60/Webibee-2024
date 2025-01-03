@@ -32,7 +32,7 @@ const Page: React.FC<PageProps> = async ({ params }) => {
                 slides={filteredData.slides}
                 summary={filteredData.summary}
             />
-            <AboutClient about={filteredData.about} />
+            <AboutClient title={filteredData.title} about={filteredData.about} />
             <OCSection OCLists={filteredData.OCLists} />
             <Result
                 results={filteredData.results}

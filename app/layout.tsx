@@ -4,17 +4,15 @@ import "./globals.css";
 import { Providers } from "./providers";
 import NavBar from "@/components/Navbar";
 import { EB_Garamond, Source_Code_Pro } from "next/font/google";
-import FloatingButton from "@/components/FloatingButton";
 import Head from "next/head";
 import { Partytown } from "@builder.io/partytown/react";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import Script from "next/script";
 import Development from "@/components/Development";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import SmoothScroll from "@/components/SmoothScroll";
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
@@ -78,7 +76,6 @@ const sourceCodePro = Source_Code_Pro({
   weight: "400",
 });
 
-
 export default function RootLayout({
   children,
 }: {
@@ -122,16 +119,14 @@ export default function RootLayout({
           <Development />
           <NavBar />
           <main className="relative">
-            {/* <SmoothScroll> */}
+            <SmoothScroll />
             {children}
-            {/* </SmoothScroll> */}
           </main>
           {/* <FloatingButton /> */}
           <Contact />
           <Footer />
           <ScrollToTopButton />
         </Providers>
-
       </body>
       <GoogleAnalytics gaId="G-4ES4NTQ7T8" />
     </html>

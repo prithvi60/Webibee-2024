@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
-import { FiCheck, FiX } from "react-icons/fi";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import { variantTitle2 } from '@/libs/Variants';
 
 const WCTable = () => {
     return (
@@ -23,7 +23,7 @@ const DarkGradientPricing = () => {
             // }}
             className="relative overflow-hidden bg-transparent text-zinc-200 selection:bg-transparent"
         >
-            <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 md:px-8">
+            <div className="relative z-10 mx-auto max-w-5xl py-12">
                 {/* <div className="mb-12 space-y-3">
                     <h2 className="text-center text-3xl font-semibold leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                         Pricing
@@ -34,7 +34,11 @@ const DarkGradientPricing = () => {
                     </p>
                 </div> */}
 
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <motion.div
+                    variants={variantTitle2}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="grid grid-cols-1 gap-6 md:grid-cols-3 h-fit">
                     <PriceCard
                         // tier=""
                         price="Feature"
@@ -47,6 +51,7 @@ const DarkGradientPricing = () => {
                             { text: "Integration", checked: true },
                             { text: "Ownership", checked: true },
                         ]}
+                        styles=""
                     />
                     <PriceCard
                         // tier=""
@@ -64,6 +69,7 @@ const DarkGradientPricing = () => {
                             { text: "Seamless", checked: true },
                             { text: "Full", checked: true },
                         ]}
+                        styles="bg-[#E4FFE6]"
                     />
                     <PriceCard
                         // tier=""
@@ -77,25 +83,26 @@ const DarkGradientPricing = () => {
                             { text: "Restricted", checked: true },
                             { text: "Partial", checked: true },
                         ]}
+                        styles="bg-[#FFE7E8]"
                     />
-                </div>
+                </motion.div>
             </div>
         </section>
     );
 };
 
-const PriceCard = ({ price, benefits }: { price: any, benefits: any }) => {
+const PriceCard = ({ price, benefits, styles }: { price: any, benefits: any, styles: string }) => {
     return (
-        <Card>
-            <div className="flex flex-col items-center border-b-4 border-[#1B1B1CCC] pb-6">
+        <Card className={`py-20 ${styles}`}>
+            <div className="flex flex-col items-center border-b-4 border-[#1B1B1CCC]">
                 {/* <span className="mb-6 inline-block text-zinc-50">{tier}</span> */}
-                <span className="mb-3 inline-block text-[#1B1B1CCC] text-4xl font-bold font-EbGaramond">{price}</span>
+                <span className="mb-8 inline-block text-[#1B1B1CCC] text-4xl font-bold font-EbGaramond">{price}</span>
                 {/* <span className="bg-gradient-to-br from-zinc-200 to-zinc-500 bg-clip-text text-center text-transparent">
                     {bestFor}
                 </span> */}
             </div>
 
-            <div className="space-y-4 py-9">
+            <div className="space-y-8 py-9">
                 {benefits.map((b: any, i: any) => (
                     <Benefit {...b} key={i} />
                 ))}
@@ -109,7 +116,7 @@ const PriceCard = ({ price, benefits }: { price: any, benefits: any }) => {
 const Benefit = ({ text, checked }: { text: any, checked: any }) => {
     return (
         <div className="flex items-center gap-3">
-            {checked ? (
+            {/* {checked ? (
                 <span className="grid size-5 place-content-center rounded-full bg-info text-sm text-zinc-50">
                     <FiCheck />
                 </span>
@@ -117,8 +124,8 @@ const Benefit = ({ text, checked }: { text: any, checked: any }) => {
                 <span className="grid size-5 place-content-center rounded-full bg-zinc-800 text-sm text-zinc-400">
                     <FiX />
                 </span>
-            )}
-            <span className="text-sm text-[#181B30] font-SourceCodePro">{text}</span>
+            )} */}
+            <span className="text-lg sm:text-xl xl:text-2xl text-[#181B30] font-SourceCodePro">{text}</span>
         </div>
     );
 };
@@ -147,7 +154,7 @@ const Card = ({
             }}
             style={style}
             className={twMerge(
-                "relative h-full w-full overflow-hidden rounded-2xl border-2 border-secondary bg-transparent p-6 shadow-xl",
+                "relative h-full w-full overflow-hidden rounded-2xl bg-transparent p-6 shadow-xl",
                 className
             )}
         >

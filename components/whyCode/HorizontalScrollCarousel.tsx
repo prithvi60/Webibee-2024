@@ -1,5 +1,5 @@
 "use client";
-import { howItWorks, shine } from "@/libs/data";
+import { variant2 } from "@/libs/Variants";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -64,9 +64,13 @@ const HorizontalScrollCarousel = ({
                 } `}
         >
             <div className={`${path === "/proficiency" ? "top-32 space-y-20" : path === "/whyCode" ? "top-5 space-y-8" : "top-10 space-y-10"} sticky`}>
-                <h5 className={`${styles}`}>
+                <motion.h5
+                    variants={variant2}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className={`${styles}`}>
                     {title}
-                </h5>
+                </motion.h5>
                 <div className={`items-center flex ${path === "/proficiency" ? "h-[45vh]" : path === "/whyCode" ? "h-[80vh]" : "h-[80vh]"} overflow-hidden`}>
                     {path === "/proficiency" ? (
                         <motion.div style={{ x }} className="flex gap-10">

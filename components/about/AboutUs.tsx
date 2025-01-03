@@ -32,8 +32,10 @@ const AboutUs = () => {
                         </p>
                         <div className="absolute -bottom-20 md:-bottom-60 left-0 h-64 w-full md:h-80">
                             <Image
-                                alt=""
-                                src={"/bg svg.svg"}
+                                alt="svg"
+                                src={
+                                    "https://ik.imagekit.io/webibee/Webibee/bg%20svg.svg?updatedAt=1735894412217"
+                                }
                                 fill
                                 className="object-contain object-center"
                             />
@@ -41,8 +43,10 @@ const AboutUs = () => {
                     </div>
                     <div className="relative w-64 h-64 md:w-full md:h-80 md:basis-2/5">
                         <Image
-                            alt=""
-                            src={"/illustration-1.svg"}
+                            alt="illustration"
+                            src={
+                                "https://ik.imagekit.io/webibee/Webibee/illustration-1.svg?updatedAt=1735894416477"
+                            }
                             fill
                             className="object-contain object-center"
                         />
@@ -63,7 +67,7 @@ const AboutUs = () => {
                     <div className="w-full md:w-1/2">
                         <div className="md:sticky md:top-5">
                             <video
-                                src="/sample.mp4"
+                                src="https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029"
                                 controls
                                 muted
                                 className="rounded-md"
@@ -74,10 +78,11 @@ const AboutUs = () => {
                 <div className="w-full flex justify-end items-center ">
                     <p className="font-normal text-base sm:text-lg xl:text-xl text-right !leading-10 w-full md:w-1/2">
                         At Webibee, we empower small and medium-sized enterprises (SMEs) by
-                        providing essential Business Tech that help them thrive in the modern
-                        business landscape. Our mission is to deliver tailored, cutting-edge
-                        technologies and compelling digital experiences that transform how
-                        businesses operate, engage with customers, and scale effectively.
+                        providing essential Business Tech that help them thrive in the
+                        modern business landscape. Our mission is to deliver tailored,
+                        cutting-edge technologies and compelling digital experiences that
+                        transform how businesses operate, engage with customers, and scale
+                        effectively.
                     </p>
                 </div>
             </div>

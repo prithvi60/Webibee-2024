@@ -2,18 +2,23 @@
 import React from "react";
 import DotExpandButton from "./buttons/DotExpandButton";
 import { usePathname } from "next/navigation";
-
+import { motion } from "framer-motion";
+import { variantTitle } from "@/libs/Variants";
 const Contact = () => {
     const path = usePathname();
     // console.log(path);
 
     return (
         <section
-            className={`${path === "/contact" ? "hidden" : "block"
+            className={`${path === "/contact" || path === "/thankyou" ? "hidden" : "block"
                 } w-full p-10 sm:px-12 xl:pt-12 xl:pb-6 max-w-5xl mx-auto text-center`}
         >
             {path.startsWith("/caseStudy") ? (
-                <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                <motion.div
+                    variants={variantTitle}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
                     <div className="space-y-10 w-full md:w-3/5">
                         <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
                             Ready to take your project to the{" "}
@@ -32,11 +37,15 @@ const Contact = () => {
                         </h4>
                         <DotExpandButton text="Our Works" href="/works" />
                     </div>
-                </div>
+                </motion.div>
             ) : path === "/ITEssentials" ||
                 path === "/digitalEssentials" ||
                 path === "/creativeEssentials" ? (
-                <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                <motion.div
+                    variants={variantTitle}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
                     <div className="space-y-10 w-full md:w-3/5">
                         <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
                             Ready to take your project to the{" "}
@@ -55,9 +64,13 @@ const Contact = () => {
                         </h4>
                         <DotExpandButton text="Our Works" href="/works" />
                     </div>
-                </div>
+                </motion.div>
             ) : (
-                <div className="block space-y-12 lg:space-y-16">
+                <motion.div
+                    variants={variantTitle}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="block space-y-12 lg:space-y-16">
                     {path === "/works" ? (
                         <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
                             Ready to take your project to the{" "}
@@ -81,7 +94,7 @@ const Contact = () => {
                         </div>
                     )}
                     <DotExpandButton text="GET IN TOUCH" href="/contact" />
-                </div>
+                </motion.div>
             )}
         </section>
     );

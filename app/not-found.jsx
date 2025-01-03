@@ -3,10 +3,12 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-EbGaramond bg-primary text-default space-y-6 mx-auto h-full w-full text-center">
+    <section className="p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 font-SourceCodePro bg-primary text-default mb-10 space-y-6 mx-auto h-full w-full text-center">
       {/* <div className='relative h-56 w-56 -mt-5'> */}
       <Image
-        src={"/404.png"}
+        src={
+          "https://ik.imagekit.io/webibee/Webibee/404.png?updatedAt=1735894412268"
+        }
         title="404 page not found"
         height={350}
         width={350}
@@ -30,16 +32,12 @@ export default function NotFound() {
         it&apos;s spelled correctly.
       </p>
       <div className="w-full flex justify-center items-center">
-        <Link
-          title="back to home"
-          href={"/"}
-        >
+        <Link title="back to home" href={"/"}>
           <h4
-            className={`text-lg text-default bg-danger px-8 py-4 rounded-md hover:bg-danger/75`}
+            className={`text-lg text-white bg-info px-8 py-4 rounded-md hover:bg-danger/75`}
           >
             Go Back To Home
           </h4>
-
         </Link>
       </div>
     </section>

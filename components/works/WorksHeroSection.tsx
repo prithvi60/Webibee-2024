@@ -4,7 +4,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { useState } from "react";
-import Link from "next/link";
+import { motion } from "framer-motion";
+import { variantContact, variantTitle } from "@/libs/Variants";
 
 const WorksHeroSection = () => {
     const [loading, setLoading] = useState(true);
@@ -26,12 +27,20 @@ const WorksHeroSection = () => {
     return (
         <section className="block w-full space-y-10">
             <div className="px-10 pt-10 sm:px-20 space-y-6 xl:px-64 sm:pt-16 xl:pt-28">
-                <h3 className="text-xl sm:text-2xl md:text-[40px] lg:text-[56px] xl:text-[72px] w-full font-EbGaramond uppercase font-medium tracking-wide !leading-tight h-full">
+                <motion.h3
+                    variants={variantTitle}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="text-xl sm:text-2xl md:text-[40px] lg:text-[56px] xl:text-[72px] w-full font-EbGaramond uppercase font-medium tracking-wide !leading-tight h-full">
                     Portfolio <span className="font-bold text-secondary">spotlight</span>
-                </h3>
-                <p className="font-SourceCodePro text-lg sm:text-xl lg:text-2xl !leading-snug capitalize">
+                </motion.h3>
+                <motion.p
+                    variants={variantContact}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="font-SourceCodePro text-lg sm:text-xl lg:text-2xl !leading-snug capitalize">
                     See How We Help Growing Businesses Succeed and Stand Out.
-                </p>
+                </motion.p>
             </div>
             <div className="pb-10 sm:pb-16 xl:pb-28">
                 <div className="slider-container relative">

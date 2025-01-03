@@ -1,51 +1,48 @@
-"use client";
-import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+// components/SmoothScroll.tsx
+"use client"
+import { useEffect, useState } from 'react';
+import lenis from 'lenis';
 
-const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({
-    children,
-}) => {
-    // Get height information of window and content
-    const contentRef = useRef<HTMLDivElement>(null);
-    const [contentHeight, setContentHeight] = useState(0);
-    const [windowHeight, setWindowHeight] = useState(0);
+
+const SmoothScroll: React.FC = () => {
+    const [lenisInstance, setLenisInstance] = useState<lenis | null>(null);
 
     useEffect(() => {
-        const handleResize = () => {
-            if (contentRef.current) {
-                setContentHeight(contentRef.current.scrollHeight);
-            }
-            setWindowHeight(window.innerHeight);
-        };
+        const lenisInstance = new lenis({
+            duration: 0.75, // Adjust duration
+            easing: (t: number) =>
+                t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t, // EaseInOutQuad easing
+            // smooth: true, // Enable smooth scrolling
+            // direction: 'vertical', // Restrict scrolling to vertical
+        });
 
-        // Initial call
-        handleResize();
+        function raf(time: number) {
+            lenisInstance.raf(time);
+            requestAnimationFrame(raf);
+        }
 
-        // Setup listeners for window resizing
-        window.addEventListener("resize", handleResize);
+        requestAnimationFrame(raf);
+
+        setLenisInstance(lenisInstance);
+
+        // Cleanup on component unmount
         return () => {
-            window.removeEventListener("resize", handleResize);
+            if (lenisInstance) {
+                lenisInstance.destroy();
+            }
         };
     }, []);
 
-    // Use Framer Motion's scroll hooks for smooth transformation
-    const { scrollYProgress } = useScroll();
-    const y = useTransform(scrollYProgress, [0, 1], [0, -(contentHeight - windowHeight)]);
+    useEffect(() => {
+        if (lenisInstance) {
+            lenisInstance.on('scroll', () => {
+                // Handle scroll events here, if needed
+            });
+        }
+    }, [lenisInstance]);
 
-    return (
-        <>
-            {/* Placeholder to simulate the total scroll height */}
-            <div style={{ height: contentHeight }} />
-            {/* Motion div for scrolling */}
-            <motion.div
-                // className="w-screen fixed top-0 flex flex-col"
-                ref={contentRef}
-                style={{ y: y }}
-            >
-                {children}
-            </motion.div>
-        </>
-    );
+    return null;
 };
 
 export default SmoothScroll;
+

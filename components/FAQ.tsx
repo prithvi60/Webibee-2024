@@ -3,6 +3,8 @@ import { faq } from "@/libs/data";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Image from "next/image";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import { motion } from "framer-motion"
+import { variant1, variant2 } from "@/libs/Variants";
 
 const FAQ = () => {
     const itemClasses = {
@@ -17,7 +19,11 @@ const FAQ = () => {
     };
     return (
         <section className="space-y-10 overflow-visible min-h-screen p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row justify-between md:gap-16">
-            <div className="w-full md:w-1/2 space-y-6 md:sticky md:top-2 h-full">
+            <motion.div
+                variants={variant1}
+                viewport={{ once: true }}
+                initial="initial"
+                whileInView="animate" className="w-full md:w-1/2 space-y-6 md:sticky md:top-2 h-full">
                 <div className="block space-y-2 ">
                     <h3 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
                         FAQ
@@ -26,15 +32,19 @@ const FAQ = () => {
                 </div>
                 <div className="relative w-64 h-64 md:w-full md:h-80">
                     <Image
-                        alt=""
-                        src={"/illustration-2.svg"}
+                        alt="illustration"
+                        src={"https://ik.imagekit.io/webibee/Webibee/illustration-2.svg?updatedAt=1735894417887"}
                         fill
                         className="object-contain object-center"
                     />
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="w-full md:w-1/2 overflow-y-auto space-y-4">
+            <motion.div
+                variants={variant2}
+                viewport={{ once: true }}
+                initial="initial"
+                whileInView="animate" className="w-full md:w-1/2 overflow-y-auto space-y-4">
                 <p className="text-xs p-2 md:p-5 md:text-sm font-SourceCodePro font-normal">Based on the business focus and customer needs, here's a recommended order for the FAQs, keeping it concise with the most essential questions:</p>
                 <Accordion variant="light" itemClasses={itemClasses} defaultExpandedKeys={["0"]}>
                     {faq.map((item, idx) => (
@@ -58,7 +68,7 @@ const FAQ = () => {
                         </AccordionItem>
                     ))}
                 </Accordion>
-            </div>
+            </motion.div>
         </section>
     )
 }

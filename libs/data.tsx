@@ -1,7 +1,3 @@
-// navbar links
-
-import { desc } from "framer-motion/client";
-import test from "node:test";
 
 export const navLinks = [
   // { href: "/about", title: "About" },
@@ -22,83 +18,29 @@ export const footerNavLinks = [
   { href: "/terms", title: "Terms and Conditions" },
 ];
 
-// HERO
-export const IMG = [
-  { src: "/img-1.jpg", ratio: "aspect-video" },
-  { src: "/img-3.jpg", ratio: "aspect-square" },
-  { src: "/img-2.jpg", ratio: "aspect-video" },
-  { src: "/img-4.jpg", ratio: "aspect-square" },
-  { src: "/img-1.jpg", ratio: "aspect-video" },
-  { src: "/img-3.jpg", ratio: "aspect-video" },
-  { src: "/img-3.jpg", ratio: "aspect-video" },
-  { src: "/img-2.jpg", ratio: "aspect-square" },
-  { src: "/img-4.jpg", ratio: "aspect-video" },
-];
-
 // Portfolio Images
 
 export const portfolioImages = [
   { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
   { img: "/ensilatacasestudy.png", href: "ensileta", alt: "Ensileta Portfolio Image" },
-  // { img: "/rasimcasestudy.png", href: "rasim" },
-  // { img: "/vbcccasestudy.png", href: "vbcc" },
-  // { img: "/ensilatacasestudy.png", href: "ensilata" },
-  // { img: "/rasimcasestudy.png", href: "rasim" },
+  { img: "/rasimcasestudy.png", href: "rasim" },
+  { img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568", href: "daga" },
+  { img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357", href: "oneus" },
 ];
 
 export const categories = [
-  { title: "Industrial & Manufacturing", logo: "/logos/VBCC-Logo.svg" },
-  { title: "Project Management Product", logo: "/logos/ensileta-Logo.svg" },
-  { title: "Real Estate", logo: "/logos/intermont-Logo.svg" },
-  { title: "Professional Services Portfolio", logo: "/logos/oneus-logo.png" },
-  { title: "Industrial & Manufacturing", logo: "/logos/VBCC-Logo.svg" },
+  { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
+  { title: "Project Management Product", logo: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385" },
+  { title: "Real Estate", logo: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576" },
+  { title: "Professional Services Portfolio", logo: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231" },
+  { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
 ];
 
 export const categories2 = [
-  { title: "Professional Services Portfolio", logo: "/logos/daga-Logo.svg" },
-  { title: "E-commerce & Retail", logo: "/logos/rasim-Logo.svg" },
-  { title: "Industrial & Manufacturing", logo: "/logos/n9-Logo.svg" },
-  { title: "FMCG Products", logo: "/logos/nivaran-logo.svg" },
-];
-
-export const caseStudyList = [
-  {
-    title: "Services",
-    lists: [
-      "Technical Research",
-      "UI/UX - Web",
-      "Front end development",
-      "Crm integration",
-      "3rd party API integration",
-    ],
-  },
-  {
-    title: "Sector",
-    lists: ["Industrial"],
-  },
-  {
-    title: "Company Stage",
-    lists: ["SME, Private"],
-  },
-];
-
-export const ObjectiveLists = [
-  {
-    title: "Outdated Design",
-    desc: "Their previous website lacked a modern, visually engaging design, affecting user trust and engagement.",
-  },
-  {
-    title: "Low SEO Performance:",
-    desc: "The site struggled with organic visibility and slow load times.",
-  },
-  {
-    title: "Team Integration",
-    desc: "Ensuring smooth collaboration with their marketing and content teams was critical for success.",
-  },
-  {
-    title: "Technical Customization:",
-    desc: "Tailor-made features specific to their niche were required, alongside long-term website scalability.",
-  },
+  { title: "Professional Services Portfolio", logo: "https://ik.imagekit.io/webibee/Webibee/logos/daga-logo.svg?updatedAt=1735894362197" },
+  { title: "E-commerce & Retail", logo: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197" },
+  { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/n9-logo.svg?updatedAt=1735894370420" },
+  { title: "FMCG Products", logo: "https://ik.imagekit.io/webibee/Webibee/logos/nivaran-logo.svg?updatedAt=1735894370616" },
 ];
 
 // Testimonials
@@ -106,25 +48,25 @@ export const ObjectiveLists = [
 export const testimonials = [
   {
     id: 1,
-    reviewer: "Webibee",
-    img: "/avatar 1.jpeg",
-    position: "CEO, Rasim Exports",
+    reviewer: "Naveen V",
+    img: "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
+    position: "Founder & CEO, VBCC Instruments",
     review:
       "Working with Webibee has been a game-changer for our business. Their team truly understands the challenges of growing companies like ours and delivered a solution that exceeded our expectations. The process was smooth, the communication was clear, and the results were incredible. Thanks to their expertise, we now have a seamless website and optimized processes that have saved us time and boosted our growth. I couldn’t recommend them more!",
   },
   {
     id: 2,
-    reviewer: "Webibee",
-    img: "/avatar 1.jpeg",
+    reviewer: "Rasim",
+    img: "https://ik.imagekit.io/webibee/Webibee/ceo-2.jpeg?updatedAt=1735894412153",
     position: "CEO, Rasim Exports",
     review:
       "Webibee transformed our online presence with ease and efficiency. Their team delivered a clean, user-friendly website that perfectly reflects our brand. The attention to detail and commitment to understanding our needs truly set them apart. We've seen a significant increase in customer engagement, and I can confidently say partnering with Webibee was one of our best decisions.",
   },
   {
     id: 3,
-    reviewer: "Webibee",
-    img: "/avatar 1.jpeg",
-    position: "CEO, Rasim Exports",
+    reviewer: "A. Jayesh Kumar Daga",
+    img: "https://ik.imagekit.io/webibee/Webibee/ceo-3.png?updatedAt=1735894414063",
+    position: "Head - Litigations, Daga and daga",
     review:
       "From day one, Webibee felt like an extension of our team. They listened, strategized, and delivered a custom solution that streamlined our operations. Their innovative approach and quick turnaround made the entire process stress-free. We now have tools that not only solve our problems but also drive growth. I highly recommend them to anyone looking to simplify their tech journey!",
   },
@@ -251,77 +193,49 @@ export const howItWorks = [
   },
 ];
 
-export const resultLists = [
-  {
-    img: "/logos/CS-1.png",
-    title: "Enhanced User Experience",
-    desc: "Designed a visually appealing, intuitive interface that reflects expertise and builds trust. Incorporated consistent branding and ensured user-friendly navigation for seamless product and service exploration.",
-  },
-  {
-    img: "/logos/CS-2.png",
-    title: "Improved Page Speed Scores:",
-    desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
-  },
-  {
-    img: "/logos/CS-3.png",
-    title: "Seamless Collaboration",
-    desc: "Actively communicated with their in-house marketing and content teams to align the website's functionality with ongoing campaigns. Offered technical support to ensure smooth transitions during SEO implementations.",
-  },
-  {
-    img: "/logos/CS-4.png",
-    title: "Long-Term Solutions",
-    desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
-  },
-  {
-    img: "/logos/CS-5.png",
-    title: "Broader Reach",
-    desc: "With improved SEO performance, VBCC Instruments expanded its online visibility and attracted more organic traffic.",
-  },
-];
-
 export const ITEssentials = [
   {
-    img: "/logos/IT icon 1.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%201.svg?updatedAt=1735894366285",
     title: "Technical Research",
     desc: "In-depth analysis to gather insights and optimize solutions for complex projects.",
   },
   {
-    img: "/logos/IT icon 2.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%202.svg?updatedAt=1735894366918",
     title: "Audit & Consultation:",
     desc: "Comprehensive evaluation and expert guidance to enhance performance, efficiency, and growth.",
   },
   {
-    img: "/logos/IT icon 3.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%203.svg?updatedAt=1735894367103",
     title: "Automation & Integration",
     desc: "Streamlining processes by connecting systems and automating workflows for improved efficiency and scalability.",
   },
   {
-    img: "/logos/IT icon 4.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%204.svg?updatedAt=1735894367039",
     title: "3rd Party API Integration",
     desc: "Seamlessly connecting external services to enhance functionality and streamline operations.",
   },
   {
-    img: "/logos/IT icon 5.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%205.svg?updatedAt=1735894367168",
     title: "AI Tool Integration",
     desc: "Integrating AI solutions to automate tasks, enhance decision-making, and drive innovation.",
   },
   {
-    img: "/logos/IT icon 6.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%206.svg?updatedAt=1735894367474",
     title: "CRM Integration",
     desc: "Connecting and automating customer data to improve relationships, streamline workflows, and boost productivity.",
   },
   {
-    img: "/logos/IT icon 7.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%207.svg?updatedAt=1735894367205",
     title: "Front-End Development",
     desc: "Crafting responsive, user-friendly interfaces that enhance user experience and bring designs to life.",
   },
   {
-    img: "/logos/IT icon 8.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%208.svg?updatedAt=1735894370315",
     title: "Full-Stack Development",
     desc: "Building end-to-end web applications by combining both front-end and back-end expertise for seamless functionality.",
   },
   {
-    img: "/logos/IT icon 9.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%209.svg?updatedAt=1735894370462",
     title: "SaaS MVP",
     desc: "Developing a scalable, minimal viable product for a Software-as-a-Service platform to quickly validate ideas and attract users.",
   },
@@ -329,37 +243,37 @@ export const ITEssentials = [
 
 export const digitalEssentials = [
   {
-    img: "/logos/digital icon 1.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%201.svg?updatedAt=1735894362225",
     title: "Website Content",
     desc: "Crafting engaging, informative, and SEO-optimized content that communicates your brand message and drives user action.",
   },
   {
-    img: "/logos/digital icon 2.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%202.svg?updatedAt=1735894362717",
     title: "Marketing Research",
     desc: "Analyzing market trends, consumer behavior, and competitors to inform strategies and drive business growth.",
   },
   {
-    img: "/logos/digital icon 3.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%203.svg?updatedAt=1735894362122",
     title: "Social Media Ads",
     desc: "Creating targeted ad campaigns across social platforms to boost brand visibility, engagement, and conversions.",
   },
   {
-    img: "/logos/digital icon 4.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%204.svg?updatedAt=1735894363410",
     title: "Google Ads",
     desc: "Optimizing paid search campaigns on Google to drive traffic, increase visibility, and maximize ROI.",
   },
   {
-    img: "/logos/digital icon 5.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%205.svg?updatedAt=1735894363228",
     title: "Landing Page CRO",
     desc: "Optimizing landing pages to enhance user experience, increase conversions, and maximize business goals.",
   },
   {
-    img: "/logos/digital icon 6.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%206.svg?updatedAt=1735894363277",
     title: "Business Website Essentials",
     desc: "Building a professional, responsive website with key features to enhance branding, navigation, and performance.",
   },
   {
-    img: "/logos/digital icon 7.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/digital%20icon%207.svg?updatedAt=1735894362508",
     title: "E-commerce Essentials",
     desc: "Creating a secure, user-friendly online store with key features to drive sales.",
   },
@@ -367,42 +281,42 @@ export const digitalEssentials = [
 
 export const creativeEssentials = [
   {
-    img: "/logos/IT icon 1.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%201.svg?updatedAt=1735894366285",
     title: "UI/UX - Web",
     desc: "Designing intuitive, user-friendly websites that enhance user experience and engagement.",
   },
   {
-    img: "/logos/IT icon 2.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%202.svg?updatedAt=1735894366918",
     title: "UI/UX - Mobile",
     desc: "Crafting seamless, responsive mobile interfaces for a flawless user experience across devices.",
   },
   {
-    img: "/logos/IT icon 3.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%203.svg?updatedAt=1735894367103",
     title: "Logo Design",
     desc: "Creating unique, memorable logos that represent your brand's identity.",
   },
   {
-    img: "/logos/IT icon 4.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%204.svg?updatedAt=1735894367039",
     title: "Graphic Design",
     desc: "Designing visually appealing graphics that communicate your message effectively.",
   },
   {
-    img: "/logos/IT icon 5.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%205.svg?updatedAt=1735894367168",
     title: "Print Design",
     desc: "Developing designs for brochures, posters, and other printed materials that leave a lasting impression.",
   },
   {
-    img: "/logos/IT icon 6.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%206.svg?updatedAt=1735894367474",
     title: "Mockup Design",
     desc: "Creating realistic representations of digital designs to showcase concepts and ideas.",
   },
   {
-    img: "/logos/IT icon 7.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%207.svg?updatedAt=1735894367205",
     title: "3D Design",
     desc: "Producing dynamic, detailed 3D visuals for products, environments, and concepts.",
   },
   {
-    img: "/logos/IT icon 7.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/IT%20icon%207.svg?updatedAt=1735894367205",
     title: "Interactive Website",
     desc: "Designing engaging, interactive websites that enhance user experience and functionality.",
   },
@@ -433,31 +347,31 @@ export const shine = [
 
 export const allProjectsLists = [
   {
-    img: "/logos/VBCC-logo.svg", alt: "VBCC Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853", alt: "VBCC Logo Image",
     title: "VBCC",
     year: "2024",
-    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    desc: "VBCC specializes in high-precision laboratory and industrial instruments, delivering quality and innovation across various sectors.",
     bg: "#13294F",
     href: "vbcc",
   },
   {
-    img: "/logos/rasim-logo.svg", alt: "Rasim Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197", alt: "Rasim Logo Image",
     title: "Rasim",
     year: "2024",
-    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    desc: "Rasims Exports manufactures high-quality clothing for men, women, and kids, serving international B2B clients.",
     bg: "#F3F3F3",
     href: "rasim",
   },
   {
-    img: "/logos/ensileta-logo.svg", alt: "Ensileta Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385", alt: "Ensileta Logo Image",
     title: "Ensileta Interior",
     year: "2024",
-    desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
+    desc: "Ensileta Interiors is a leading interior design firm focused on delivering innovative, high-quality design solutions that elevate client spaces and enhance user experiences.",
     bg: "#3D652E",
     href: "ensileta",
   },
   {
-    img: "/logos/intermont-logo.svg", alt: "Intermont Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576", alt: "Intermont Logo Image",
     title: "Intermont",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
@@ -465,7 +379,7 @@ export const allProjectsLists = [
     href: "intermont",
   },
   {
-    img: "/logos/ashok-logo.png", alt: "Ashok Minerals Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/ashok-logo.png?updatedAt=1735894357723", alt: "Ashok Minerals Logo Image",
     title: "Ashok Minerals",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
@@ -473,12 +387,12 @@ export const allProjectsLists = [
     href: "ashokMinerals",
   },
   {
-    img: "/logos/oneus-logo.png", alt: "OneUs Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231", alt: "OneUs Logo Image",
     title: "OneUs",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
     bg: "#A1C3F2",
-    href: "oneUs",
+    href: "oneus",
   },
 ];
 
@@ -508,9 +422,9 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "/vbcc-1.png", alt: "vbcc home page" },
-      { img: "/vbcc-2.png", alt: "vbcc products" },
-      { video: "/sample.mp4", alt: "sample video" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277", alt: "vbcc home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500", alt: "vbcc products" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
@@ -534,22 +448,22 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "/logos/CS-1.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
         title: "Enhanced User Experience",
         desc: "Designed a visually appealing, intuitive interface that reflects expertise and builds trust. Incorporated consistent branding and ensured user-friendly navigation for seamless product and service exploration.",
       },
       {
-        img: "/logos/CS-2.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
         title: "Improved Page Speed Scores",
         desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
       },
       {
-        img: "/logos/CS-3.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
         title: "Seamless Collaboration",
         desc: "Actively communicated with their in-house marketing and content teams to align the website's functionality with ongoing campaigns. Offered technical support to ensure smooth transitions during SEO implementations.",
       },
       {
-        img: "/logos/CS-4.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
         title: "Long-Term Solutions",
         desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
       },
@@ -560,11 +474,11 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "/CS -2.png", alt: "vbcc products" },
-      { img: "/vbcc-1.png", alt: "vbcc home page" },
-      { img: "/vbcc-2.png", alt: "vbcc products" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/CS%20-2.png?updatedAt=1735894413315", alt: "vbcc products" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277", alt: "vbcc home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500", alt: "vbcc products" },
     ],
-    testimonialImg: "/vbcc-ceo.png",
+    testimonialImg: "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
     testimonialName: "Naveen V",
     testimonialPosition: "CEO, VBCC Instruments",
     testimonials:
@@ -595,9 +509,9 @@ export const caseStudies = [
       { title: "Project Type", list: "Scale ( custom product )" },
     ],
     slides: [
-      { img: "/ensileta-1.png", alt: "ensileta dashboard" },
-      { img: "/ensileta-2.png", alt: "ensileta drawings" },
-      { video: "/sample.mp4", alt: "sample video" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070", alt: "ensileta dashboard" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892", alt: "ensileta drawings" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Ensileta Interiors, a leading interior design firm, needed a comprehensive solution to streamline their project management process and enhance client communication. They required a customer portal that simplified approval workflows, provided a professional tech-forward interface, and elevated their brand's perception.  Webibee partnered with Ensileta to create the Design Management Hub, a feature-rich platform tailored to their business needs, enabling efficient project management and client satisfaction.",
@@ -621,35 +535,430 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "/logos/CS-1.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
         title: "Custom Approval System",
         desc: "Built a role-based access system to streamline the management of design mockups, quotes, and deliverable approvals, ensuring seamless project oversight.",
       },
       {
-        img: "/logos/CS-2.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
         title: "Client-Centric Dashboard",
         desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
       },
       {
-        img: "/logos/CS-3.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
         title: "Interactive Comment & Revision",
         desc: "Introduced a structured commenting system that allows clients to leave feedback directly on mockups, accelerating the revision process and improving communication.",
       },
       {
-        img: "/logos/CS-4.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
         title: "Branded User Experience",
         desc: "Incorporated Ensileta’s branding to create a polished, professional look that reflects innovation and reinforces customer trust in the platform.",
       },
       {
-        img: "/logos/CS-5.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-ensileta-5.svg?updatedAt=1735894357438",
         title: "Scalable Integration & Training",
         desc: "Developed a scalable backend framework to manage multiple clients and projects, integrated it into existing workflows, and provided hands-on training for seamless adoption.",
       },
     ],
     images: [
-      { img: "/ensileta-1.png", alt: "ensileta dashboard" },
-      { img: "/ensileta-2.png", alt: "ensileta drawings" },
-      { img: "/ensileta-2.png", alt: "ensileta drawing upload" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070", alt: "ensileta dashboard" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892", alt: "ensileta drawings" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-3.png?updatedAt=1735894416908", alt: "ensileta drawing upload" },
+    ],
+  },
+  {
+    title: "Rasim Exports",
+    href: "rasim",
+    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/rasim-bg.png?updatedAt=1735894420329",
+    summary:
+      "Premium Branding & Website Design for Rasim Exports",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web | Mobile",
+          "Front end development",
+          "Crm integration",
+          "3rd party API integration",
+        ],
+      },
+      { title: "sector", list: "Textile" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "3 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Grow (retainer work)" },
+    ],
+    slides: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+    ],
+    about:
+      "Rasim Exports, a leading textile manufacturer, partnered with Webibee to redefine their brand identity and create a visually stunning online presence. With a major focus on showcasing their textile collections and impressing international buyers, especially for an Australian expo, we delivered a project that combined premium design, branding expertise, and multimedia production.This project went beyond just a website; it involved logo creation, brand image development, brochure design, product photography, and video production to ensure Rasim Exports stood out in a competitive market.",
+    OCLists: [
+      {
+        title: "Lack of Cohesive Branding",
+        desc: "Rasim Exports needed a professional and consistent logo and brand identity to compete in the global market.",
+      },
+      {
+        title: "Need for High-Quality Visuals",
+        desc: "The company required premium product images and videos to attract international buyers and showcase their offerings.",
+      },
+      {
+        title: "Website Redesign",
+        desc: "Their outdated website required a modern, user-friendly design to present their wide product range effectively.",
+      },
+      {
+        title: "Expo Marketing Materials",
+        desc: "They needed brochures and promotional materials to effectively present their collections at the Australian expo.",
+      },
+    ],
+    results: [
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
+        title: "Stronger Brand Identity",
+        desc: "A new logo and a refined brand image now position Rasim Exports as a premium and trustworthy manufacturer, enhancing their market credibility.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
+        title: "Enhanced Visual Appeal",
+        desc: "The professional drone footage, product photos, and videos provided high-quality visuals, making the brand more appealing at the Australian expo and online.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
+        title: "User-Friendly Website",
+        desc: "The newly designed website offers a clean, easy-to-navigate layout with detailed product pages, leading to a smoother and more engaging user experience for buyers.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
+        title: "Successful Expo Promotion",
+        desc: "The branded brochures and promotional videos helped attract attention at the Australian expo, strengthening Rasim Exports’ presence and generating new client inquiries.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-rasim-5.svg?updatedAt=1735894362051",
+        title: "Seamless Product Updates",
+        desc: "The dynamic content management system ensures the website stays up-to-date with the latest collections, providing buyers with timely and relevant product information.",
+      },
+    ],
+    images: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" }
+    ],
+  },
+  {
+    title: "Daga & Daga",
+    href: "daga",
+    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
+    summary:
+      "Modern Web Design for Daga & Daga Law Firm",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web | Mobile",
+          "Front end development",
+          "Crm integration",
+          "3rd party API integration",
+        ],
+      },
+      { title: "sector", list: "Law firm" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "3 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Grow (retainer work)" },
+    ],
+    slides: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+    ],
+    about:
+      "Daga & Daga, a prestigious law firm, sought to modernize their digital presence and internal workflows. They had no prior website and relied on outdated methods for creating and managing documents. Webibee collaborated with their team to design a professional website, establish streamlined workflows, and implement cloud-based tools to transform their operations and enhance their online visibility.This comprehensive project, completed in just 4 weeks, empowered Daga & Daga with a minimal, modern digital identity and an efficient content management system.",
+    OCLists: [
+      {
+        title: "No Digital Presence",
+        desc: "The firm lacked a website, limiting online visibility and client acquisition opportunities.",
+      },
+      {
+        title: "Outdated Identity",
+        desc: "The firm’s logo and branding felt outdated, impacting their professional image.",
+      },
+      {
+        title: "Manual Recruitment Process",
+        desc: "Job applications were handled manually, creating inefficiencies and delays.",
+      },
+      {
+        title: "No Automation",
+        desc: "The absence of email automation meant slow follow-ups and missed opportunities.",
+      },
+    ],
+    results: [
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
+        title: "Strong Online Presence",
+        desc: "We designed a sleek, responsive website that established the firm's digital presence, improving visibility and credibility.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
+        title: "Simplified Inquiries",
+        desc: "Integrated WhatsApp chat for direct communication, increasing client engagement and reducing response times.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
+        title: "Efficient Recruitment",
+        desc: "Developed a career portal with automated resume submissions and email acknowledgments, streamlining the hiring process.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
+        title: "Modern Branding",
+        desc: "Recreated the firm’s logo and designed custom icons to enhance brand identity and professionalism.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-daga-5.svg?updatedAt=1735894357369",
+        title: "Improved Operations",
+        desc: "Set up cloud-based workflows and automated email systems, saving time and boosting productivity.",
+      },
+    ],
+    images: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" }
+    ],
+  },
+  {
+    title: "OneUS Travels",
+    href: "oneus",
+    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
+    summary:
+      "Premium Travel-Themed Website for OneUS Travels",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web | Mobile",
+          "Front end development",
+          "Crm integration",
+          "3rd party API integration",
+        ],
+      },
+      { title: "sector", list: "Travels & Tour" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "3 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Grow (retainer work)" },
+    ],
+    slides: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+    ],
+    about:
+      "OneUS Travels approached us to build a dynamic and visually appealing website that aligns with their travel industry branding. They required a snappy, user-friendly design with customized content, seamless navigation, and multimedia elements to enhance customer engagement. Additionally, we incorporated a customer portal and accommodated multiple tailored pages to meet their specific business needs.Our objective was to deliver a travel-themed website that not only looks premium but also provides an excellent user experience, complete with branded videos and interactive elements.",
+    OCLists: [
+      {
+        title: "Distinct Travel Aesthetic",
+        desc: "Designing a visually engaging yet professional travel-themed site that aligns with the brand’s identity.",
+      },
+      {
+        title: "Content Creation & SEO",
+        desc: "Crafting unique, SEO-optimized content to improve search visibility and resonate with travelers.",
+      },
+      {
+        title: "Portal Integration",
+        desc: "Embedding a secure and intuitive customer portal to simplify client interactions and manage services.",
+      },
+      {
+        title: "Performance & Customization",
+        desc: "Ensuring the site is fast, responsive, and capable of handling multiple custom pages for diverse services.",
+      },
+    ],
+    results: [
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
+        title: "Premium Travel Design",
+        desc: "Delivered a visually captivating and cohesive travel-themed website that reflects the brand's identity, attracting more visitors and enhancing credibility.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
+        title: "SEO-Driven Content",
+        desc: "Developed engaging, keyword-optimized content that boosted search rankings and increased organic traffic to service pages.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
+        title: "Seamless Portal Access",
+        desc: "Integrated a customer portal directly into the site navigation, streamlining bookings and improving the overall client experience.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
+        title: "Dynamic Custom Pages",
+        desc: "Created multiple tailored service pages, allowing OneUS Travels to highlight their offerings and expand their service catalog.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-oneus-5.svg?updatedAt=1735894357734",
+        title: "Optimized Performance",
+        desc: "Enhanced loading speeds and responsiveness across all devices, providing users with a seamless browsing experience that increased site engagement by 30%.",
+      },
+    ],
+    images: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" }
+    ],
+  },
+  {
+    title: "Lotus AI Real Estate",
+    href: "lotus",
+    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/lotus-bg.png?updatedAt=1735901584505",
+    summary:
+      "Front-End Development and Data Analytics for Lotus AI Real Estate Listing Website",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web | Mobile",
+          "Front end development",
+          "Crm integration",
+          "3rd party API integration",
+        ],
+      },
+      { title: "sector", list: "Real Estate" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "3 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Grow (retainer work)" },
+    ],
+    slides: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+    ],
+    about:
+      "Webibee supported the Lotus AI Real Estate Listing website for four months, contributing to front-end development and the integration of advanced features. Our role included designing an intuitive UI, developing a web scraper for real-time property listings, and implementing data analytics on a map for a dynamic user experience. We worked collaboratively with another team, handling the integration of back-end systems, ensuring smooth data flow, and helping the site meet evolving needs. The goal was to provide users with a seamless, interactive platform for exploring real estate listings while maintaining high performance and ease of navigation.",
+    OCLists: [
+      {
+        title: "Responsive UI Design",
+        desc: "Designing a responsive and user-friendly interface for property listings that ensures seamless experiences on both desktop and mobile.",
+      },
+      {
+        title: "Web Scraper Integration",
+        desc: "Developing a custom web scraper to collect accurate, up-to-date real estate data from multiple sources.",
+      },
+      {
+        title: "Interactive Data Analytics",
+        desc: "Implementing map-based analytics to provide users with interactive property exploration and data visualization.",
+      },
+      {
+        title: "Cross-Team Collaboration",
+        desc: "Coordinating with back-end teams to ensure smooth integration and consistent user experience across the platform.",
+      },
+    ],
+    results: [
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
+        title: "Polished UI Design",
+        desc: "A sleek, modern interface that is both user-friendly and responsive, providing an easy browsing experience for property listings across all devices.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
+        title: "Reliable Real-Time Listings",
+        desc: "The custom web scraper ensures that property data remains accurate and up-to-date, enhancing the website’s reliability and trustworthiness.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
+        title: "Engaging Data Map",
+        desc: "Interactive map analytics allowed users to filter properties based on metrics, improving their search experience and providing rich, data-driven insights.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
+        title: "Successful Project Milestones",
+        desc: "We achieved key milestones, such as integrating the web scraper, building the analytics map, and optimizing performance, ensuring continuous project progress.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-lotus-5.svg?updatedAt=1735894357407",
+        title: "Ongoing Development Support",
+        desc: "Continuous front-end development support over four months ensured timely bug fixes, feature enhancements, and performance improvements, keeping the site up-to-date.",
+      },
+    ],
+    images: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" }
+    ],
+  },
+  {
+    title: "Lavender Salon Portal",
+    href: "lavender",
+    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/lavender-bg.png?updatedAt=1735901572406",
+    summary:
+      "Front-End Development and Support for Lavender Salon Portal",
+    table: [
+      {
+        title: "services",
+        list: [
+          "Technical Research",
+          "UI/UX - Web | Mobile",
+          "Front end development",
+          "Crm integration",
+          "3rd party API integration",
+        ],
+      },
+      { title: "sector", list: "Real Estate" },
+      { title: "Company Stage", list: "SME, Private" },
+      { title: "Timeline", list: "3 months" },
+      { title: "Year", list: "2024" },
+      { title: "Project Type", list: "Grow (retainer work)" },
+    ],
+    slides: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" },
+      { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" },
+      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+    ],
+    about:
+      "Lavender Salon Portal approached us to provide front-end development support during a few key sprints. Our role focused on implementing custom features, integrating backend APIs, and ensuring smooth user flows. We worked on refining the business logic in the front end, fixing critical production bugs, and offering expert consultation to improve overall functionality and user experience.Our aim was to deliver fast and reliable solutions that directly addressed the salon's business needs while maintaining a high-quality user experience.",
+    OCLists: [
+      {
+        title: "Custom Calendar System",
+        desc: "Designing and implementing a calendar for efficient salon appointment management.",
+      },
+      {
+        title: "API Integration",
+        desc: " Ensuring seamless communication between the front-end and back-end for booking and salon services.",
+      },
+      {
+        title: "Complex Business Logic",
+        desc: "Managing and optimizing intricate business logic for dynamic user operations.",
+      },
+      {
+        title: "Bug Resolution Under Pressure",
+        desc: "Identifying and fixing critical bugs swiftly to maintain portal functionality while adhering to tight deadlines.",
+      },
+    ],
+    results: [
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-1.png?updatedAt=1735894357400",
+        title: "Streamlined Booking",
+        desc: "The custom calendar simplified appointment management with available slots and instant confirmations, improving the process for staff and clients.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-2.png?updatedAt=1735894357717",
+        title: "Real-Time Sync",
+        desc: "API integration ensured real-time updates, providing immediate confirmations and reducing delays, boosting reliability and satisfaction.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-3.png?updatedAt=1735894357274",
+        title: "Stable Performance",
+        desc: "Critical bugs were quickly fixed, ensuring reliability and minimizing downtime, leading to fewer disruptions and improved functionality.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
+        title: "On-Time Delivery",
+        desc: "Features and fixes were delivered on schedule, keeping the project on track and meeting client expectations.",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-lavender-5.svg?updatedAt=1735901695161",
+        title: "Enhanced UX",
+        desc: "Front-end optimizations improved speed and responsiveness, leading to a more user-friendly experience and higher engagement.",
+      },
+    ],
+    images: [
+      { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" }
     ],
   },
 ];

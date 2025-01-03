@@ -9,7 +9,7 @@ const Page = () => {
     return (
         <div>
             {/* <AboutHero /> */}
-            <VelocityText />
+            {/* <VelocityText /> */}
             <AboutUs />
             <Collaboration />
             <FAQ />

@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+import { variant1, variants, variantTitle } from "@/libs/Variants";
 import Image from "next/image";
 import React from "react";
 import HowItWorks from "../whyCode/HorizontalScrollCarousel";
@@ -74,20 +77,32 @@ const Result: React.FC<ResultProps> = ({
                 testimonials && (
                     <div className="bg-[#FFD70026] flex !mt-32 flex-col lg:flex-row gap-10 p-8">
                         <div className="basis-full md:basis-2/5">
-                            <div className="relative overflow-hidden w-60 sm:w-80 mx-auto lg:w-full h-60 sm:h-96">
+                            <motion.div
+                                variants={variantTitle}
+                                viewport={{ once: true }}
+                                initial="initial"
+                                whileInView="animate" className="relative overflow-hidden w-60 sm:w-80 mx-auto lg:w-full h-60 sm:h-96">
                                 <Image
                                     fill
                                     alt="client image"
                                     className="object-cover object-center bg-[#ffe44c]"
                                     src={testimonialImg}
                                 />
-                                <div className="font-SourceCodePro bg-[#88720166] backdrop-blur-md font-medium w-full text-white absolute bottom-0 left-0 px-6 space-y-3 py-3">
+                                <motion.div
+                                    variants={variants}
+                                    viewport={{ once: true }}
+                                    initial="initial"
+                                    whileInView="animate" className="font-SourceCodePro bg-[#88720166] backdrop-blur-md font-medium w-full text-white absolute bottom-0 left-0 px-6 space-y-3 py-3">
                                     <h5 className="text-lg md:text-xl">{testimonialName}</h5>
                                     <p className="text-xs md:text-sm">{testimonialPosition}</p>
-                                </div>
-                            </div>
+                                </motion.div>
+                            </motion.div>
                         </div>
-                        <p
+                        <motion.div
+                            variants={variant1}
+                            viewport={{ once: true }}
+                            initial="initial"
+                            whileInView="animate"
                             className="font-SourceCodePro text-base md:text-lg !leading-tight text-[#181B30] basis-full md:basis-3/5"
                             dangerouslySetInnerHTML={{ __html: testimonials }}
                         />

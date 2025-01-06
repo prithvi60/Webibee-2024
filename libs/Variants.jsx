@@ -9,8 +9,10 @@ export const variants = {
         opacity: 1,
         x: 0,
         transition: {
+            delay: 0.25,
             staggerChildren: 0.3,
             delayChildren: 0.3,
+            duration: 0.7,
             ease: "easeIn",
         },
     },

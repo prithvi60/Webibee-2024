@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
+import { parentVariant, variant1, variantGrid, variantGrid2, variantTitle } from "@/libs/Variants";
+import { motion } from "framer-motion";
 
 const CSHero = ({
     data,
@@ -46,12 +48,20 @@ const CSHero = ({
                 />
             </div>
             <div className="p-10 sm:px-20 xl:px-64 sm:pb-16 xl:pb-28 block space-y-10">
-                <h4 className="font-EbGaramond font-bold tracking-wider text-4xl md:text-5xl xl:text-6xl text-[#464959]">
+                <motion.div
+                    variants={variant1}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="font-EbGaramond font-bold tracking-wider text-4xl md:text-5xl xl:text-6xl text-[#464959]">
                     {title}
-                </h4>
-                <p className="font-SourceCodePro font-medium !leading-tight text-base md:text-lg xl:text-xl">
+                </motion.div>
+                <motion.div
+                    variants={variant1}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className="font-SourceCodePro font-medium !leading-tight text-base md:text-lg xl:text-xl">
                     {summary}
-                </p>
+                </motion.div>
                 <div className="flex flex-col space-y-4 md:flex-row md:gap-10 gap-6">
                     <div className="slider-container relative w-full md:w-3/5 h-64 md:h-80 xl:h-96">
                         <Slider {...settings}>
@@ -83,9 +93,18 @@ const CSHero = ({
                             )}
                         </Slider>
                     </div>
-                    <div className="w-full md:w-2/5 space-y-6 overflow-y-scroll no_scrollbar max-h-96">
+                    <motion.div
+                        variants={parentVariant}
+                        viewport={{ amount: 0.3, once: true }}
+                        initial="initial"
+                        whileInView="animate" className="w-full md:w-2/5 space-y-6 overflow-y-scroll no_scrollbar max-h-96">
                         {data.map((item: any, index: number) => (
-                            <div key={index} className="space-y-4">
+                            <motion.div
+                                variants={variantGrid}
+                                initial="initial"
+                                whileInView="animate"
+                                custom={index}
+                                viewport={{ once: true }} key={index} className="space-y-4">
                                 <h5 className="relative ml-2 font-EbGaramond font-bold tracking-wider text-xl md:text-2xl p-1 xl:text-3xl before:absolute before:top-0.5 before:-left-2 before:w-2 before:h-full text-[#464959] before:bg-secondary before:rounded-full">
                                     {item.title}
                                 </h5>
@@ -104,9 +123,9 @@ const CSHero = ({
                                         </>
                                     )}
                                 </ul>
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

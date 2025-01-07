@@ -167,27 +167,27 @@ export const services = [
 
 export const howItWorks = [
   {
-    img: "/logos/flex-logo.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/flex-logo.svg?updatedAt=1735894366082",
     title: "Flexibility & Customization",
     desc: "With coding, you can design solutions exactly as you envision, offering full control over every aspect of functionality, design, and user experience.",
   },
   {
-    img: "/logos/scalable-logo.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/scalable-logo.svg?updatedAt=1735894371683",
     title: "Scalability",
     desc: "Custom code is built to grow with your project, ensuring it can handle increasing users, data, and complexity without sacrificing performance.",
   },
   {
-    img: "/logos/security-logo.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/security-logo.svg?updatedAt=1735894371289",
     title: "Security",
     desc: "Developers can implement personalized, robust security measures, including encryption, authentication protocols, and firewalls, tailored to specific project needs.",
   },
   {
-    img: "/logos/integration-logo.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/integration-logo.svg?updatedAt=1735894366065",
     title: "Integration",
     desc: "Custom-coded solutions can seamlessly integrate with third-party APIs, legacy systems, and databases, offering broader capabilities and more control over the flow of data.",
   },
   {
-    img: "/logos/owner-logo.svg",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/owner-logo.svg?updatedAt=1735894371558",
     title: "Ownership",
     desc: "When you code from scratch, you own the entire project, ensuring complete intellectual property control, reducing reliance on third-party platforms, and future-proofing your application.",
   },

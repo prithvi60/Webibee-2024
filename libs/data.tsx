@@ -91,40 +91,6 @@ export const collaboration = [
   },
 ];
 
-export const faq = [
-  {
-    title: "What does Webibee offer?",
-    desc: "We provide a variety of services under IT, Digital, and Creative Essentials that takes of the end to end needs of an SME",
-  },
-  {
-    title: "How much does it cost?",
-    desc: "Our cost is carefully catered to meet the budget of SMEs and start from 2500$ ( convert to inr for indian visitors)",
-  },
-  {
-    title: "What information do you need to prepare an estimate?",
-    desc: "We would need a project brief - what business features you are looking for, references if any, and your valuable questions for our initial consultation",
-  },
-  {
-    title: "How can we get started with Webibee?",
-    desc: "Please book an initial consultation call to take our collaboration to the next step <a href='/contact' class='tags'>Contact Us</a>",
-  },
-  {
-    title: "Do I own the IP?",
-    desc: "Whatever services we offer is totally owned by you and we have an NDA to make sure your business information is kept confidential",
-  },
-  {
-    title: "Is there a refund policy?",
-    desc: " We rarely face that but we'll understand your situation and got your back. We guarantee a 50% refund from the Advance payment within 3 weeks of cancellation including our work resources till that period.",
-  },
-  {
-    title: "How long does it usually take for a startup?",
-    desc: "We have multiple timeline formats based on your needs <a href='/about/#collaboration' class='tags'>Click Here</a>",
-  },
-  {
-    title: "Why Webibee?",
-    desc: "We are custom software specialists. We can strategies and make solutions that scales your business needs and look great while doing it .",
-  },
-];
 
 export const services = [
   {

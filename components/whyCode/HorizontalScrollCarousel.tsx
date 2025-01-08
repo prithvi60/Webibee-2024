@@ -68,9 +68,7 @@ const HorizontalScrollCarousel = ({
                     variants={variant2}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className={`${styles}`}>
-                    {title}
-                </motion.h5>
+                    whileInView="animate" className={`${styles}`} dangerouslySetInnerHTML={{ __html: title }} />
                 <div className={`items-center flex ${path === "/proficiency" ? "h-[45vh]" : path === "/whyCode" ? "h-[80vh]" : "h-[80vh]"} overflow-hidden`}>
                     {path === "/proficiency" ? (
                         <motion.div style={{ x }} className="flex gap-10">

@@ -31,8 +31,8 @@ const WorksHeroSection = () => {
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className="text-xl sm:text-2xl md:text-[40px] lg:text-[56px] xl:text-[72px] w-full font-EbGaramond uppercase font-medium tracking-wide !leading-tight h-full">
-                    Portfolio <span className="font-bold text-secondary">spotlight</span>
+                    whileInView="animate" className="font-EbGaramond font-medium text-5xl w-full sm:text-7xl uppercase tracking-wide !leading-tight h-full">
+                    Portfolio <span className="font-bold text-info">spotlight</span>
                 </motion.h3>
                 <motion.p
                     variants={variantContact}

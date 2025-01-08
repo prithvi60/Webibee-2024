@@ -10,7 +10,6 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Development from "@/components/Development";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import SmoothScroll from "@/components/SmoothScroll";
 
@@ -116,7 +115,7 @@ export default function RootLayout({
       </Head>
       <body>
         <Providers>
-          <Development />
+          {/* <Development /> */}
           <NavBar />
           <main className="relative">
             <SmoothScroll />

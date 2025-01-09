@@ -58,10 +58,10 @@ function SampleNextArrow(props) {
     return (
         <div
             className={`${loading && "hidden"
-                } absolute top-20 sm:top-28 lg:top-28 right-0 sm:right-4 xl:right-16 rounded-full p-2.5 cursor-pointer hover:bg-info bg-slate-200/50 backdrop-blur-xl`}
+                } absolute top-20 sm:top-28 lg:top-28 right-0 sm:right-4 xl:right-16 rounded-full p-2.5 cursor-pointer hover:bg-info bg-secondary backdrop-blur-xl`}
             onClick={onClick}
         >
-            <FaArrowRight className="text-xs sm:text-base xl:text-2xl text-white" />
+            <FaArrowRight className="text-xs sm:text-base xl:text-2xl text-white " />
         </div>
     );
 }
@@ -71,7 +71,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={`${loading && "hidden"
-                } absolute p-2.5 cursor-pointer hover:bg-info top-20 sm:top-28 right-8 sm:right-16 xl:right-32 lg:top-28 rounded-full z-30 bg-slate-200/50 backdrop-blur-xl`}
+                } absolute p-2.5 cursor-pointer hover:bg-info top-20 sm:top-28 right-8 sm:right-16 xl:right-32 lg:top-28 rounded-full z-30 bg-secondary backdrop-blur-xl`}
             onClick={onClick}
         >
             <FaArrowLeft className="text-xs sm:text-base xl:text-2xl text-white" />

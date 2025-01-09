@@ -36,7 +36,7 @@ export default function Services() {
           >
             <Link href={service.href} className="block space-y-10">
               <div className="text-[#404040] text-lg tracking-wider sm:text-xl xl:text-3xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
-                <h4>{service.title}</h4>
+                <h4 className="text-info scale-110">{service.title}</h4>
                 <h4>Essentials</h4>
               </div>
               <hr className="w-full h-1.5 bg-[#404040] rounded-md" />

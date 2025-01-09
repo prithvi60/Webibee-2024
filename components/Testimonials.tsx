@@ -18,19 +18,21 @@ export default function Testimonials() {
   const handlePlayPause = (review: string): void => {
     if (!isPlaying) {
       const voices = speechSynthesis.getVoices();
-      const professionalVoice = voices.find(
-        (voice) =>
-          voice.name.includes("Microsoft") ||
-          voice.name.includes("Google US English")
+      const femaleVoices = voices.filter(voice => 
+        voice.name.includes("Google US English Female") || 
+        voice.name.includes("Microsoft Zira") || 
+        voice.name.includes("Microsoft Hazel")
       );
+
+      const professionalVoice = femaleVoices.length > 0 ? femaleVoices[0] : null;
 
       const utterance = new SpeechSynthesisUtterance(review);
       utterance.lang = "en-US";
       if (professionalVoice) {
         utterance.voice = professionalVoice;
       }
-      utterance.pitch = 1;
-      utterance.rate = 1;
+      utterance.pitch = 1.2;
+      utterance.rate = 0.8;
       utterance.volume = 1;
       utterance.onend = () => {
         setIsPlaying(false);
@@ -130,6 +132,7 @@ export default function Testimonials() {
                       className="hidden"
                       onEnded={handleAudioEnded}
                     /> */}
+                  
                     {isPlaying ? (
                       <HiMiniPause
                         className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
@@ -161,6 +164,7 @@ export default function Testimonials() {
                         />
                       </div>
                     )}
+                      <div className="text-info text-xl"> ( Tired of Reading? Try the audio version )</div>
                   </div>
                 </motion.div>
               ) : null}

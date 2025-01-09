@@ -13,8 +13,8 @@ const Hero = () => {
         whileInView="animate"
         className="flex justify-center items-center gap-3 font-SourceCodePro font-semibold tracking-wider flex-col sm:flex-row md:gap-6 text-base sm:text-lg"
       >
-        <h5>Limitless vision.</h5>
-        <h5>Limitless Progress.</h5>
+        <h5>Reliable Process.</h5>
+        <h5>Accelerated Growth.</h5>
       </motion.div>
       <div className="flex flex-col justify-center items-center gap-10">
         <motion.h3
@@ -25,7 +25,8 @@ const Hero = () => {
           className="uppercase font-EbGaramond tracking-widest font-bold text-2xl sm:text-3xl xl:text-4xl text-center"
         >
           {" "}
-          Business Tech to Small Medium Enterprises (SME)
+          Business Tech for Small Medium Enterprises
+
         </motion.h3>
         {/* <div className="relative overflow-hidden w-full h-72">
           <Image fill src={"/webibee logo.svg"} alt="logo" className="object-contain object-center " />

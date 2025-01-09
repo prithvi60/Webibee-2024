@@ -15,7 +15,7 @@ const Footer = () => {
         <ul className="flex items-center gap-10">
           <li className="hover:animate-pulse">
             <Link
-              href={""}
+              href={"https://www.upwork.com/freelancers/~01d7976a7b95d87d71"}
               className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
             >
               <FaUpwork />
@@ -23,7 +23,7 @@ const Footer = () => {
           </li>
           <li className="hover:animate-pulse">
             <Link
-              href={"https://www.instagram.com/prithvi_bytes/?hl=en"}
+              href={"https://www.linkedin.com/in/prithvi-n/"}
               className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
             >
               <FaLinkedinIn />
@@ -31,7 +31,7 @@ const Footer = () => {
           </li>
           <li className="hover:animate-pulse">
             <Link
-              href={"https://www.instagram.com/prithvi_bytes/?hl=en"}
+              href={"https://www.instagram.com/prith.bytes"}
               className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
             >
               <FaInstagram />

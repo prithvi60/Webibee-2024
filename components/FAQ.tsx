@@ -40,7 +40,7 @@ const FAQ = () => {
         {
             title: "How much does it cost?",
             desc: isIndia
-                ? `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">₹2,14,550</strong>`
+                ? `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">₹1Lakh</strong>`
                 : `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">$2500</strong>`,
         },
         {
@@ -49,7 +49,7 @@ const FAQ = () => {
         },
         {
             title: "How can we get started with Webibee?",
-            desc: "Please book an initial consultation call to take our collaboration to the next step <a href='/contact' class='tags'>Contact Us</a>",
+            desc: "Please book an initial consultation call to take our collaboration to the next step <a href='/contact' class='tags'>Talk to an Expert</a>",
         },
         {
             title: "Do I own the IP?",
@@ -61,7 +61,7 @@ const FAQ = () => {
         },
         {
             title: "How long does it usually take for a startup?",
-            desc: "We have multiple timeline formats based on your needs <a href='/about/#collaboration' class='tags'>Click Here</a>",
+            desc: "We have multiple timeline formats based on your needs <a href='/about/#collaboration' class='tags'>Process</a>",
         },
         {
             title: "Why Webibee?",
@@ -79,7 +79,7 @@ const FAQ = () => {
                 className="w-full md:w-1/2 space-y-6 md:sticky md:top-2 h-full"
             >
                 <div className="block space-y-2 ">
-                    <h3 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
+                    <h3 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium mb-8">
                         FAQ
                     </h3>
                     <p className="font-SourceCodePro text-sm md:text-base font-light text-justify">
@@ -108,7 +108,7 @@ const FAQ = () => {
                 whileInView="animate"
                 className="w-full md:w-1/2 overflow-y-auto space-y-4"
             >
-                <p className="text-xs p-2 md:p-5 md:text-sm font-SourceCodePro font-normal">
+                <p className="text-xs p-2 md:p-5 md:text-lg  font-SourceCodePro font-normal mt-4">
                     Need Help? Start Here
                 </p>
                 <Accordion

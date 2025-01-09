@@ -1,20 +1,20 @@
 
 export const navLinks = [
   // { href: "/about", title: "About" },
-  { href: "/whyCode", title: "Why code" },
+  { href: "/whyCode", title: "Why Code" },
   // { href: "/proficiency", title: "Proficiency" },
-  { href: "/works", title: "Works" },
-  { href: "/contact", title: "Contact Us" },
+  { href: "/works", title: "Portfolio" },
+  { href: "/contact", title: "Talk to an Expert →" },
 ];
 
 export const footerNavLinks = [
   { href: "/", title: "Home" },
   // { href: "/caseStudies", title: "Case Studies" },
   { href: "/about", title: "About" },
-  { href: "/whyCode", title: "Why code" },
+  { href: "/whyCode", title: "Why Code" },
   { href: "/proficiency", title: "Proficiency" },
-  { href: "/works", title: "Works" },
-  { href: "/contact", title: "Contact Us" },
+  { href: "/works", title: "CaseStudies" },
+  { href: "/contact", title: "Get in touch" },
   { href: "/terms", title: "Terms and Conditions" },
 ];
 
@@ -52,24 +52,29 @@ export const testimonials = [
     img: "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
     position: "Founder & CEO, VBCC Instruments",
     review:
-      "Working with Webibee has been a game-changer for our business. Their team truly understands the challenges of growing companies like ours and delivered a solution that exceeded our expectations. The process was smooth, the communication was clear, and the results were incredible. Thanks to their expertise, we now have a seamless website and optimized processes that have saved us time and boosted our growth. I couldn’t recommend them more!",
+      `Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.
+
+Not only did Webibee meet our expectations, but also surpassed them by far. They followed closely to the design guidelines we provided giving useful suggestions on how to improve the functionality of our site. For now, we have reached the point where these websites have an attractive look due to timely delivery of the project. This was facilitated by their integration into my team members. Also, it is worth mentioning that they are knowledgeable about various aspects of online presence management.
+
+I highly recommend Prithvi together with his team at Webibee because they do very good work. To put it simply, they didn’t just develop websites; instead they optimized them leading to extremely high scores in Google’s website optimization metrics. On top of that, during the revision process, they always supported us until we were all satisfied with their work. I believe that Webibee is a reliable partner for current and future projects since they make me feel confident enough to tackle even bigger assignments going forward.`,
   },
   {
     id: 2,
-    reviewer: "Rasim",
-    img: "https://ik.imagekit.io/webibee/Webibee/ceo-2.jpeg?updatedAt=1735894412153",
-    position: "CEO, Rasim Exports",
-    review:
-      "Webibee transformed our online presence with ease and efficiency. Their team delivered a clean, user-friendly website that perfectly reflects our brand. The attention to detail and commitment to understanding our needs truly set them apart. We've seen a significant increase in customer engagement, and I can confidently say partnering with Webibee was one of our best decisions.",
-  },
-  {
-    id: 3,
     reviewer: "A. Jayesh Kumar Daga",
     img: "https://ik.imagekit.io/webibee/Webibee/ceo-3.png?updatedAt=1735894414063",
     position: "Head - Litigations, Daga and daga",
     review:
-      "From day one, Webibee felt like an extension of our team. They listened, strategized, and delivered a custom solution that streamlined our operations. Their innovative approach and quick turnaround made the entire process stress-free. We now have tools that not only solve our problems but also drive growth. I highly recommend them to anyone looking to simplify their tech journey!",
+      "Webibee helped us with our website development and digital management needs, and the experience exceeded my expectations. Prithvi took our vision and turned it into a stunning reality. He also patiently responded to all my queries. I highly recommend their services to anyone looking for a reliable and innovative digital partner.",
   },
+  {
+    id: 3,
+    reviewer: "Rasim",
+    img: "https://ik.imagekit.io/webibee/Webibee/ceo-2.jpeg?updatedAt=1735894412153",
+    position: "CEO, Rasim Exports",
+    review:
+      "The enhancement was really amazing . The data upgrades and artwork talks volumes of the hard work put behind . Overall , great job! ",
+  },
+
 ];
 
 export const collaboration = [

@@ -12,15 +12,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import SmoothScroll from "@/components/SmoothScroll";
+import FloatingButton from "@/components/FloatingButton";
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Webibee",
+    title: "Webibee Software Agency | Worldwide ",
     description:
-      "We deliver industry leading design and technology software services",
+      "Business Tech for Small Medium Enterprises across the globe",
     robots: "index, follow",
-    applicationName: "Webibee Web Development Agency",
+    applicationName: "Webibee Software Agency",
     authors: [{ name: "Prithvi" }],
     generator: "Next.js",
     keywords: [
@@ -50,13 +51,13 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       url: `https://webibee.com`,
-      title: "Webibee",
+      title: "Webibee Software Agency",
       description:
-        "We deliver industry leading design and technology software services",
+        "Business Tech for Small Medium Enterprises across the globe",
       siteName: "Webibee Agency",
       images: [
         {
-          url: "https://ik.imagekit.io/webibee/Agency/brain-logo.svg",
+          url: "https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322",
         },
       ],
     },
@@ -124,6 +125,7 @@ export default function RootLayout({
           {/* <FloatingButton /> */}
           <Contact />
           <Footer />
+          <FloatingButton/>
           <ScrollToTopButton />
         </Providers>
       </body>

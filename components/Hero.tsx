@@ -2,16 +2,36 @@
 import { LogoTypeWriterAnimation } from "./LogoTypeWriterAnimation";
 import { variant1, variantTitle } from "@/libs/Variants";
 import { motion } from "framer-motion";
-
+import { useEffect, useState } from 'react';
+import LoadingPage from './LoadingPage';
 const Hero = () => {
+
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const hasLoaded = sessionStorage.getItem('hasLoaded');
+    if (!hasLoaded) {
+      const timeout = setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem('hasLoaded', 'true');
+      }, 1000);
+      return () => clearTimeout(timeout);
+    } else {
+      setIsLoading(false);
+    }
+  }, []);
+  if(isLoading){
+return <LoadingPage/>
+  }
   return (
-    <section className="p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 block space-y-10">
+    <section className="px-10 xl:px-64 sm:py-16 xl:py-28 block space-y-6 md:space-y-10">
       <motion.div
         variants={variant1}
         viewport={{ once: true }}
         initial="initial"
         whileInView="animate"
-        className="flex justify-center items-center gap-3 font-SourceCodePro font-semibold tracking-wider flex-col sm:flex-row md:gap-6 text-base sm:text-lg"
+        className="flex justify-center items-center gap-3 font-SourceCodePro font-semibold tracking-wider flex-col sm:flex-row md:gap-6 text-xs sm:text-lg"
       >
         <h5>Reliable Process.</h5>
         <h5>Accelerated Growth.</h5>
@@ -22,7 +42,7 @@ const Hero = () => {
           viewport={{ once: true }}
           initial="initial"
           whileInView="animate"
-          className="uppercase font-EbGaramond tracking-widest font-bold text-2xl sm:text-3xl xl:text-4xl text-center"
+          className="uppercase font-EbGaramond tracking-widest font-bold text-xl sm:text-3xl xl:text-4xl text-center"
         >
           {" "}
           Business Tech for Small Medium Enterprises

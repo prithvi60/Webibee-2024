@@ -124,8 +124,8 @@ export default function Testimonials() {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ ease: "easeOut", duration: 0.5 }} className="pl-10 sm:pl-0 space-y-6">
-                  <p className="!leading-9 text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
-                  <div className="flex justify-center sm:justify-start items-center gap-2.5">
+                  <p className="hidden md:block !leading-9 text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
+                  <div className="flex justify-center sm:justify-start items-center md:gap-2.5">
                     {/* <audio
                       ref={audioRef}
                       src={"/sample-audio.wav"}
@@ -164,8 +164,10 @@ export default function Testimonials() {
                         />
                       </div>
                     )}
-                      <div className="text-info text-xl"> ( Tired of Reading? Try the audio version )</div>
+                      <div className="hidden md:block text-info text-xl"> ( Tired of Reading? Try the audio version )</div>
+
                   </div>
+                      <div className="md:hidden text-info text-sm text-center"> Tired of reading LONG reviews? <br /> Try our audio testimonial</div>
                 </motion.div>
               ) : null}
             </motion.div>

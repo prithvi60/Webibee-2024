@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import { LuCircleFadingArrowUp } from "react-icons/lu";
-
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
@@ -27,9 +26,9 @@ const ScrollToTopButton: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-info p-1.5 shadow-lg rounded-full transition duration-300ease-linear"
+          className="fixed bottom-10 right-20 md:right-28 bg-info p-1.5 shadow-lg rounded-full transition duration-300ease-linear"
         >
-          <LuCircleFadingArrowUp className="text-white text-xl sm:text-3xl xl:text-4xl" />
+          <MdKeyboardDoubleArrowUp  className="text-white text-xl sm:text-3xl xl:text-4xl" />
         </button>
       )}
     </div>

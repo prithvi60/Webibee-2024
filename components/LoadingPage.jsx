@@ -4,7 +4,7 @@ import { motion, useAnimate } from "framer-motion";
 
 const LoadingPage = () => {
     return (
-        <div className="grid h-screen place-content-center bg-info/70 backdrop-blur-lg p-4">
+        <div className="grid h-screen place-content-center backdrop-blur-lg p-4">
             <ShuffleLoader />
         </div>
     );
@@ -97,7 +97,7 @@ const ShuffleLoader = () => {
                             width: BLOCK_SIZE,
                             height: BLOCK_SIZE,
                         }}
-                        className="bg-white shadow-xl border mx-0.5"
+                        className="bg-info shadow-xl border mx-0.5"
                     />
                 );
             })}

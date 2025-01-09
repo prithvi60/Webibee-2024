@@ -2,31 +2,47 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-
+import { SiGooglechat } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 export default function FloatingButton() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [isIndia, setIsIndia] = useState(false);
 
   useEffect(() => {
-    // Show empty div for 1 second
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 500);
     // Fetch user's location
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
       .then((data) => {
         // Check if the country is India
-        setIsVisible(data.country === "IN");
+        setIsIndia(data.country === "IN");
       });
   }, []);
-  if (loading) {
-    return <div style={{ height: "100px" }} />;
-  }
-
   return (
     <>
-      {isVisible ? (
+      {!isIndia ? (
+        <motion.div
+          className="fixed bottom-8 right-4"
+          style={{ zIndex: "1000" }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <a
+            href="https://chat.google.com/dm/prithvi@webibee.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Google Chat"
+          >
+            {/* <motion.img
+              loading="lazy"
+              src="https://ik.imagekit.io/webibee/Agency/google-chat.png?updatedAt=1735018588584" // Replace with a Google Chat icon URL
+              alt="Google Chat logo"
+              title="Google Chat logo"
+              className="h-12 w-12 md:h-16 md:w-20"
+            /> */}
+            <div className="bg-white p-4 rounded-full border-secondary border-2">
+              <SiGooglechat className="text-green-500 text-xl sm:text-3xl xl:text-4xl " />
+            </div>
+          </a>
+        </motion.div>
+      ) : (
         <motion.div
           className="fixed bottom-8 right-4"
           style={{ zIndex: "1000" }}
@@ -38,23 +54,10 @@ export default function FloatingButton() {
             rel="noopener noreferrer"
             title="whatsapp"
           >
-            <motion.img
-              loading="lazy"
-              src="https://ik.imagekit.io/webibee/Agency/whatsapp.png?updatedAt=1735018588584"
-              alt="whatsapp logo"
-              title="whatsapp logo"
-              className="h-12 w-12 md:h-16 md:w-20 "
-            // whileHover={{ boxShadow: "0 0 0 2px #FFFFFF" }}
-            />
+            <div className="bg-white p-4 rounded-full border-secondary border-2">
+              <FaWhatsapp className="text-green-500 text-xl sm:text-3xl xl:text-4xl" />
+            </div>
           </a>
-        </motion.div>
-      ) : (
-        <motion.div
-          className="fixed bottom-0 right-2"
-          style={{ zIndex: "1000" }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <OfferButton />
         </motion.div>
       )}
     </>
@@ -88,27 +91,3 @@ const TiltChipLink = () => {
     </div>
   );
 };
-{
-  /* <motion.div
-className="fixed bottom-8 right-4"
-style={{ zIndex: "1000" }}
-whileHover={{ scale: 1.1 }}
->
-<a
-href="https://www.linkedin.com/in/prithvi-n"
-  target="_blank"
-  rel="noopener noreferrer"
-  title='LinkedIn'
-  onClick={() => navigator.clipboard.writeText("Hi, I would like to connect with you!")}
->
-  <motion.img
-    loading="lazy"
-    src="/Li.webp"
-    alt="LinkedIn logo"
-    title="LinkedIn logo"
-    className="rounded-full shadow-xl h-14 w-14 md:h-16 md:w-16"
-    whileHover={{ boxShadow: "0 0 0 2px #367cb6" }}
-  />
-</a>
-</motion.div> */
-}

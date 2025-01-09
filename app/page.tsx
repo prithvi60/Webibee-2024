@@ -9,9 +9,9 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Webibee',
-    image: "https://ik.imagekit.io/webibee/Agency/brain-logo.svg",
-    description: "Webibee crafts stunning websites that help businesses flourish",
+    name: 'Webibee Software Agency',
+    image: "https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322",
+    description: "Business Tech for Small Medium Enterprises across the globe",
     email: "support@webibee.com",
     url: "https://webibee.com"
   }

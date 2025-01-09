@@ -27,7 +27,7 @@ const Typewrite = ({ text }: { text: string }) => {
     }, [text]);
 
     return (
-        <div className="mb-2.5 font-EbGaramond font-semibold text-[58px] md:text-9xl xl:text-[180px] uppercase text-info tracking-widest">
+        <div className="mb-2.5 font-EbGaramond font-semibold text-[64px] md:text-9xl xl:text-[180px] uppercase text-info tracking-widest">
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

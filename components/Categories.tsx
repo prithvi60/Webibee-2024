@@ -34,7 +34,7 @@ const Categories = () => {
                             key={idx}
                             className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 flex flex-col items-center justify-center gap-10"
                         >
-                            <div className='relative mx-auto w-60 h-40'>
+                            <div className='relative mx-auto w-40 h-20 md:w-60 md:h-40'>
                                 <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
                             </div>
                             <hr className="w-full h-1 bg-secondary rounded-md" />
@@ -59,7 +59,7 @@ const Categories = () => {
                             key={idx}
                             className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 flex flex-col items-center justify-center gap-10"
                         >
-                            <div className='relative mx-auto w-60 h-40'>
+                            <div className='relative mx-auto w-40 h-20 md:w-60 md:h-40'>
                                 <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
                             </div>
                             <hr className="w-full h-1 bg-secondary rounded-md" />

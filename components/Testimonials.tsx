@@ -7,8 +7,25 @@ import { HiMiniSpeakerWave, HiMiniPause } from "react-icons/hi2";
 import { parentVariant, variant1, variant2, variantGrid2 } from "@/libs/Variants";
 
 export default function Testimonials() {
-  const [isActive, setIsActive] = useState(testimonials[0].id);
+  const [isIndia, setIsIndia] = useState(false);
+  const [locTestimonials, setLocTestimonials] = useState(testimonials);
+
+  useEffect(() => {
+    setLocTestimonials(isIndia ? testimonials.slice(0, 3) : testimonials.slice(3));
+  }, [isIndia]);
+
+  const [isActive, setIsActive] = useState(locTestimonials[0].id);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+
+  useEffect(() => {
+      // Fetch user's location
+      fetch("https://ipapi.co/json/")
+          .then((response) => response.json())
+          .then((data) => {
+              // Check if the country is India
+              setIsIndia(data.country === "IN");
+          });
+  }, []);
 
   useEffect(() => {
     speechSynthesis.cancel();
@@ -45,7 +62,6 @@ export default function Testimonials() {
     }
   };
 
-
   return (
     <section className="py-10 pr-10 sm:pr-20 xl:pr-64 sm:py-16 xl:py-28 overflow-hidden  md:py-12 block space-y-20 relative z-0">
       <motion.div
@@ -72,7 +88,7 @@ export default function Testimonials() {
           viewport={{ amount: 0.3, once: true }}
           initial="initial"
           whileInView="animate" className="block space-y-5 w-full md:w-[55%] md:pb-5">
-          {testimonials.map((testimonial) => (
+          {locTestimonials.map((testimonial) => (
             <motion.li
               variants={variantGrid2}
               initial="initial"
@@ -112,7 +128,7 @@ export default function Testimonials() {
           viewport={{ amount: 0.3, once: true }}
           initial="initial"
           whileInView="animate" className="block space-y-5 md:py-5 w-full md:w-[45%]">
-          {testimonials.map((testimonial) => (
+          {locTestimonials.map((testimonial) => (
             <motion.div
               variants={variant2}
               // viewport={{ once: true }}

@@ -15,7 +15,7 @@ const Categories = () => {
                     initial="initial"
                     whileInView="animate" className='lg:sticky lg:top-5 space-y-12'>
                     <h4 className='font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start'>Crafting Impact Across <strong className='text-info'>Industries</strong></h4>
-                    <p className='text-base text-center md:text-start md:text-lg font-SourceCodePro'>Our work transforms visions into digital realities, elevating brands across diverse industries. Whether designing sleek portfolios for clothing brands or crafting immersive experiences for interior designers, we blend creativity with functionality. Every project is a testament to innovation and attention to detail.</p>
+                    <p className='text-sm text-left md:text-start md:text-lg font-SourceCodePro'>Our work transforms visions into digital realities, elevating brands across diverse industries. Whether designing sleek portfolios for clothing brands or crafting immersive experiences for interior designers, we blend creativity with functionality. Every project is a testament to innovation and attention to detail.</p>
                 </motion.div>
             </div>
             <div className='flex no_scrollbar md:justify-center flex-row md:flex-col lg:flex-row gap-5 max-w-2xl md:max-w-full lg:w-[55%] overflow-x-scroll lg:overflow-x-visible h-full'>

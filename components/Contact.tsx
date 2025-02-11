@@ -79,17 +79,17 @@ const Contact = () => {
                         </h4>
                     ) : (
                         <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
-                            Ignite Your{" "}
-                            <strong className="font-extrabold text-info">Vision</strong> Today
+                            We build your{" "}
+                            <strong className="font-extrabold text-info">Vision</strong>
                         </h4>
                     )}
                     {(path === "/" || path === "/about" || path === "/proficiency") && (
                         <div className="block space-y-6 lg:space-y-10">
-                            <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
+                            {/* <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
                                 Feel the Impact
-                            </h6>
+                            </h6> */}
                             <p className="text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]">
-                                Ready to Elevate Your Brand?
+                                Ready for boost your Business Tech?
                             </p>
                         </div>
                     )}

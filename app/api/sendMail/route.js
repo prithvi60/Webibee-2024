@@ -35,7 +35,7 @@ export async function POST(req) {
 
   // Email options for the client (all user data and attachments)
   const clientMailOptions = {
-    from: `"${userEmail}" <${"support@webibee.com"}>`,
+    from: `"support@webibee.com" <${"support@webibee.com"}>`,
     to: process.env.EMAIL_ID,
     subject: `New Customer Form Submitted - ${capitalized} Page`,
     html: `
@@ -45,23 +45,21 @@ export async function POST(req) {
             </div>
             <p style="font-size: 16px; color: #555;">Hi,</p>
             <p style="font-size: 16px; color: #555;">You have a new message from the Webibee website:</p>
-            <p style="font-size: 16px; color: #555;">
-                Select Webibee for your web development requirements—where innovation and quality go hand in hand! We provide customized solutions, state-of-the-art designs, and smooth functionality, enabling your business to flourish online. Rely on Webibee to realize your vision with unparalleled expertise and customer-centered service.
-            </p>
+       
             <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
             <p style="font-size: 16px; color: #555;"><strong>Customer Details:</strong></p>
             <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${userName}</p>
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${userEmail}</p>
             ${
               designation
-                ? `<p style="font-size: 16px; color: #555;"><strong>Job Title:</strong> ${designation}</p>`
+                ? `<p style="font-size: 16px; color: #555;"><strong>Department:</strong> ${designation}</p>`
                 : ""
             }
             <p style="font-size: 16px; color: #555;"><strong>Phone Number:</strong> ${phone}</p>
             <p style="font-size: 16px; color: #555;"><strong>Company Name:</strong> ${companyName}</p>
             ${
               message
-                ? `<p style="font-size: 16px; color: #555;"><strong>Message:</strong> ${message}</p>`
+                ? `<p style="font-size: 16px; color: #555;"><strong>Concern:</strong> ${message}</p>`
                 : ""
             }
             <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
@@ -80,16 +78,15 @@ export async function POST(req) {
             <div style="text-align: center; margin-bottom: 20px;">
                 <img src="https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322" alt="Webibee Logo" style="width: 150px; height: auto;">
             </div>
-            <p style="font-size: 16px; color: #555;">Dear <strong>${userName}</strong> from <strong>${companyName}</strong>,</p>
+            <p style="font-size: 16px; color: #555;">Dear <strong>${userName}</strong>
             <p style="font-size: 16px; color: #555;">Greetings from Webibee Team!</p>
             <p style="font-size: 16px; color: #555;">
-                Thank you for choosing Webibee! We're thrilled to confirm we've received your submission and are excited to collaborate with you to bring your vision to life. Let’s create something amazing together!
+                Thank you for choosing Webibee! We're thrilled to confirm we've received your submission and are excited to collaborate with you to bring your vision to life. We will get in touch soon!
             </p>
             <p style="font-size: 16px; color: #555;">
                 Thanks & Regards,<br>
-                <strong>Webibee</strong><br>
+                <strong>Webibee Team</strong><br>
                 <a href="mailto:support@webibee.com" style="color: #007bff; text-decoration: none;">support@webibee.com</a><br>
-                Chennai, Tamil Nadu, India
             </p>
             <div style="text-align: center; margin-top: 20px; font-size: 14px; color: #aaa;">
                 <p>© ${new Date().getFullYear()} Webibee. All rights reserved.</p>

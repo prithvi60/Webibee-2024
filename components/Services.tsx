@@ -12,13 +12,14 @@ export default function Services() {
         variants={variantTitle}
         viewport={{ once: true }}
         initial="initial"
-        whileInView="animate" className="text-xl sm:text-2xl md:text-[40px] lg:text-[56px] xl:text-[72px] text-center w-full font-EbGaramond font-medium tracking-wide !leading-tight h-full">
+        whileInView="animate" className=" text-[26px] lg:text-[56px] xl:text-[72px]  w-full  !leading-tight h-full font-EbGaramond  tracking-wider font-medium text-center ">
         Fueling Business with{" "}
         <span className="font-extrabold uppercase text-info">
           tailored, agile, & creative
         </span>{" "}
         Solutions
       </motion.h3>
+      {/* <h4 className='font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start'>Crafting Impact Across <strong className='text-info'>Industries</strong></h4> */}
       <motion.div
         variants={parentVariant}
         viewport={{ amount: 0.3, once: true }}

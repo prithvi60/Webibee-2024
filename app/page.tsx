@@ -16,7 +16,7 @@ export default function Home() {
     url: "https://webibee.com"
   }
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <PortfolioSlider />
       <Categories />

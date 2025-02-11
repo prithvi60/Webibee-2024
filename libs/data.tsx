@@ -26,7 +26,13 @@ export const portfolioImages = [
   { img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568", href: "daga" },
   { img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357", href: "oneus" },
 ];
-
+export const portfolioImagesMob = [
+  // { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
+  { img: "/ensilatacasestudy.png", href: "ensileta", alt: "Ensileta Portfolio Image" },
+  { img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357", href: "oneus" },
+  { img: "/rasimcasestudy.png", href: "rasim" },
+  // { img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568", href: "daga" },
+];
 export const categories = [
   { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
   { title: "Project Management Product", logo: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385" },

@@ -15,6 +15,7 @@ const Page: React.FC<PageProps> = async ({ params }) => {
     const { id } = await Promise.resolve(params);
     const filteredData = caseStudies.find((data) => data.href === id);
 
+
     if (!filteredData) {
         return (
             <div className="p-10 space-y-6 sm:px-20 xl:px-64 sm:py-16 xl:py-28 font-EbGaramond text-xl font-semibold animate-pulse tracking-widest flex justify-center items-center h-screen sm:text-2xl xl:text-3xl">

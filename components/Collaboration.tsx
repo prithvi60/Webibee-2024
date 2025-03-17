@@ -1,6 +1,6 @@
 "use client";
 import { collaboration } from "@/libs/data";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@heroui/react";
 
 export default function Collaboration() {
   const itemClasses = {

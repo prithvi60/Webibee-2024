@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "build": "npm run partytown && next build",
     "partytown": "partytown copylib public/~partytown",
     "start": "next start",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@builder.io/partytown": "^0.10.3",
     "@next/third-parties": "^15.1.2",
-    "@nextui-org/react": "^2.6.8",
+    "@heroui/react": "2.7.5",
     "@splinetool/react-spline": "^4.0.0",
     "framer-motion": "^11.15.0",
     "geoip-lite": "^1.4.10",

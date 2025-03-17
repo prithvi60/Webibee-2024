@@ -2,8 +2,10 @@
 import { motion } from "framer-motion";
 import { variant1, variants, variantTitle } from "@/libs/Variants";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import HowItWorks from "../whyCode/HorizontalScrollCarousel";
+import Slider from "react-slick";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 interface ResultProps {
     results: any;
@@ -22,33 +24,24 @@ const Result: React.FC<ResultProps> = ({
     testimonialPosition,
     testimonials,
 }) => {
+    // const [loading, setLoading] = useState(true);
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // nextArrow: <SampleNextArrow loading={loading} />,
+        // prevArrow: <SamplePrevArrow loading={loading} />,
+    };
+
+    // const handleImageLoad = () => {
+    //     setLoading(false);
+    // };
     return (
         <section className="p-10 space-y-6 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
-            {/* <h4 className="font-EbGaramond font-bold tracking-wider text-4xl md:text-5xl xl:text-6xl text-[#464959]">
-                Result
-            </h4> */}
-            {/* <div className='flex items-center gap-8 md:gap-8 w-full overflow-x-scroll'>
-                {resultLists.map((card, idx) => (
-                    <div key={idx} className="block space-y-8 min-w-72 md:min-w-[480px] pb-5">
-                        <div className="size-24 md:size-48 relative mx-auto">
-                            <Image
-                                alt="icon"
-                                src={card.img}
-                                fill
-                                className="object-contain object-center"
-                            />
-                        </div>
-                        <div className="space-y-4">
-                            <h4 className="font-EbGaramond text-center md:text-start font-bold tracking-wider md:text-3xl sm:text-2xl text-xl text-[#1B1B1CCC] xl:text-4xl">
-                                {card.title}
-                            </h4>
-                            <p className="font-SourceCodePro text-justify md:text-start text-base sm:text-lg xl:text-xl !leading-tight">
-                                {card.desc}
-                            </p>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
             <HowItWorks
                 data={results}
                 title="Result"
@@ -56,20 +49,23 @@ const Result: React.FC<ResultProps> = ({
                     "font-EbGaramond font-bold tracking-wider text-4xl md:text-5xl xl:text-6xl text-info"
                 }
             />
-            <div className="space-y-6 block">
-                {data.map((img: { img: string; alt: string }, idx: number) => (
-                    <div
-                        className="relative overflow-hidden w-full h-40 md:h-96 xl:h-[28rem]"
-                        key={idx}
-                    >
-                        <Image
-                            fill
-                            alt={img.alt}
-                            className="object-contain object-center"
-                            src={img.img}
-                        />
-                    </div>
-                ))}
+            <div className="slider-container relative">
+                <Slider {...settings}>
+                    {data.map((img: { img: string; alt: string }, idx: number) => (
+                        <div
+                            className="relative overflow-hidden w-full h-40 md:h-96 xl:h-[28rem]"
+                            key={idx}
+                        >
+                            <Image
+                                fill
+                                alt={img.alt}
+                                className="object-contain object-center"
+                                src={img.img}
+                            // onLoad={handleImageLoad}
+                            />
+                        </div>
+                    ))}
+                </Slider>
             </div>
             {testimonialImg &&
                 testimonialName &&
@@ -113,3 +109,30 @@ const Result: React.FC<ResultProps> = ({
 };
 
 export default Result;
+
+
+// function SampleNextArrow(props: any) {
+//     const { onClick, loading } = props;
+//     return (
+//         <div
+//             className={`${loading && "hidden"
+//                 } absolute bottom-8 sm:bottom-0 lg:bottom-2 right-4 sm:right-4 xl:right-16 rounded-full p-1.5 cursor-pointer hover:bg-secondary bg-info/60 backdrop-blur-xl`}
+//             onClick={onClick}
+//         >
+//             <FaArrowRight className="text-xs sm:text-base xl:text-2xl text-white" />
+//         </div>
+//     );
+// }
+
+// function SamplePrevArrow(props: any) {
+//     const { onClick, loading } = props;
+//     return (
+//         <div
+//             className={`${loading && "hidden"
+//                 } absolute p-1.5 cursor-pointer hover:bg-secondary bottom-8 sm:bottom-0 lg:bottom-2 right-12 sm:right-16 xl:right-32 rounded-full z-30 bg-info/60 backdrop-blur-xl`}
+//             onClick={onClick}
+//         >
+//             <FaArrowLeft className="text-xs sm:text-base xl:text-2xl text-white" />
+//         </div>
+//     );
+// }

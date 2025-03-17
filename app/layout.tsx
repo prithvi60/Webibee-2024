@@ -86,7 +86,7 @@ export default function RootLayout({
       lang="en"
       className={`${EbGaramond.variable} ${sourceCodePro.variable}`}
     >
-      <Head>
+      <head>
         {/* Add Microsoft Clarity script with Partytown */}
         <Partytown debug={true} forward={["dataLayer.push"]} />
         <script
@@ -113,7 +113,7 @@ export default function RootLayout({
     `,
           }}
         />
-      </Head>
+      </head>
       <body>
         <Providers>
           {/* <Development /> */}
@@ -125,7 +125,7 @@ export default function RootLayout({
           {/* <FloatingButton /> */}
           <Contact />
           <Footer />
-          <FloatingButton/>
+          <FloatingButton />
           <ScrollToTopButton />
         </Providers>
       </body>

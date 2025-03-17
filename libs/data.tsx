@@ -424,7 +424,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277", alt: "vbcc home page" },
       { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500", alt: "vbcc products" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
@@ -468,7 +468,7 @@ export const caseStudies = [
         desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
       },
       {
-        img: "/logos/CS-5.png",
+        img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-5.png?updatedAt=1735894357582",
         title: "Broader Reach",
         desc: "With improved SEO performance, VBCC Instruments expanded its online visibility and attracted more organic traffic.",
       },
@@ -511,7 +511,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070", alt: "ensileta dashboard" },
       { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892", alt: "ensileta drawings" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Ensileta Interiors, a leading interior design firm, needed a comprehensive solution to streamline their project management process and enhance client communication. They required a customer portal that simplified approval workflows, provided a professional tech-forward interface, and elevated their brand's perception.  Webibee partnered with Ensileta to create the Design Management Hub, a feature-rich platform tailored to their business needs, enabling efficient project management and client satisfaction.",
@@ -552,7 +552,7 @@ export const caseStudies = [
       {
         img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-4.png?updatedAt=1735894357727",
         title: "Branded User Experience",
-        desc: "Incorporated Ensileta’s branding to create a polished, professional look that reflects innovation and reinforces customer trust in the platform.",
+        desc: "Incorporated Ensileta's branding to create a polished, professional look that reflects innovation and reinforces customer trust in the platform.",
       },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/logos/CS-ensileta-5.svg?updatedAt=1735894357438",
@@ -592,7 +592,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" },
       { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Rasim Exports, a leading textile manufacturer, partnered with Webibee to redefine their brand identity and create a visually stunning online presence. With a major focus on showcasing their textile collections and impressing international buyers, especially for an Australian expo, we delivered a project that combined premium design, branding expertise, and multimedia production.This project went beyond just a website; it involved logo creation, brand image development, brochure design, product photography, and video production to ensure Rasim Exports stood out in a competitive market.",
@@ -671,7 +671,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" },
       { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Daga & Daga, a prestigious law firm, sought to modernize their digital presence and internal workflows. They had no prior website and relied on outdated methods for creating and managing documents. Webibee collaborated with their team to design a professional website, establish streamlined workflows, and implement cloud-based tools to transform their operations and enhance their online visibility.This comprehensive project, completed in just 4 weeks, empowered Daga & Daga with a minimal, modern digital identity and an efficient content management system.",
@@ -750,7 +750,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" },
       { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "OneUS Travels approached us to build a dynamic and visually appealing website that aligns with their travel industry branding. They required a snappy, user-friendly design with customized content, seamless navigation, and multimedia elements to enhance customer engagement. Additionally, we incorporated a customer portal and accommodated multiple tailored pages to meet their specific business needs.Our objective was to deliver a travel-themed website that not only looks premium but also provides an excellent user experience, complete with branded videos and interactive elements.",
@@ -829,7 +829,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" },
       { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Webibee supported the Lotus AI Real Estate Listing website for four months, contributing to front-end development and the integration of advanced features. Our role included designing an intuitive UI, developing a web scraper for real-time property listings, and implementing data analytics on a map for a dynamic user experience. We worked collaboratively with another team, handling the integration of back-end systems, ensuring smooth data flow, and helping the site meet evolving needs. The goal was to provide users with a seamless, interactive platform for exploring real estate listings while maintaining high performance and ease of navigation.",
@@ -908,7 +908,7 @@ export const caseStudies = [
     slides: [
       { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" },
       { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" },
-      { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Lavender Salon Portal approached us to provide front-end development support during a few key sprints. Our role focused on implementing custom features, integrating backend APIs, and ensuring smooth user flows. We worked on refining the business logic in the front end, fixing critical production bugs, and offering expert consultation to improve overall functionality and user experience.Our aim was to deliver fast and reliable solutions that directly addressed the salon's business needs while maintaining a high-quality user experience.",

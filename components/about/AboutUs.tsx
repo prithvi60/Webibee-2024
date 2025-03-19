@@ -13,24 +13,18 @@ const AboutUs = () => {
           <strong className="font-extrabold text-info">Scalable</strong> ideas
           tailored for you.
         </h3>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-14 md:gap-5 overflow-hidden font-SourceCodePro pt-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-14 md:gap-5 overflow-hidden font-SourceCodePro pb-10">
           <div className="relative basis-full md:basis-3/5 pb-20 md:pb-0">
             <p className="font-normal text-base sm:text-lg xl:text-xl !leading-10">
-              Our journey began by recognizing the challenges entrepreneurs face
-              when navigating the fast-changing tech landscape. We set out to
-              create affordable, efficient, and scalable solutions that help
-              businesses not only survive but thrive. Whether you’re looking to
-              build your first{" "}
-              <span className="font-extrabold italic tracking-wide">
-                website, optimize processes, or scale rapidly,
-              </span>{" "}
-              Webibee offers the perfect blend of{" "}
-              <span className="font-extrabold italic tracking-wide">
-                technology, creativity, and strategic insights
-              </span>{" "}
-              to turn your ideas into reality
+              Webibee began with a shared desire to make complex technology
+              accessible to businesses of all sizes. With a focus on simplicity,
+              innovation, and quality, we started as a small team working with
+              SMEs, helping them digitize and streamline operations. Over the
+              years, we've built a reputation for delivering high-quality web
+              development, custom SaaS solutions, and digital marketing that drive
+              results.
             </p>
-            <div className="absolute -bottom-20 md:-bottom-60 left-0 h-64 w-full md:h-80">
+            <div className="absolute -bottom-20 md:-bottom-48 left-0 h-64 w-full md:h-80">
               <Image
                 alt="svg"
                 src={
@@ -67,14 +61,20 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="font-semibold text-base sm:text-lg md:text-xl basis-full md:basis-1/2 !leading-10">
-            <p >
-              Webibee began with a shared desire to make complex technology
-              accessible to businesses of all sizes. With a focus on simplicity,
-              innovation, and quality, we started as a small team working with
-              SMEs, helping them digitize and streamline operations. Over the
-              years, we've built a reputation for delivering high-quality web
-              development, custom SaaS solutions, and digital marketing that drive
-              results.
+            <p>
+              Our journey began by recognizing the challenges entrepreneurs face
+              when navigating the fast-changing tech landscape. We set out to
+              create affordable, efficient, and scalable solutions that help
+              businesses not only survive but thrive. Whether you’re looking to
+              build your first{" "}
+              <span className="font-extrabold italic tracking-wide">
+                website, optimize processes, or scale rapidly,
+              </span>{" "}
+              Webibee offers the perfect blend of{" "}
+              <span className="font-extrabold italic tracking-wide">
+                technology, creativity, and strategic insights
+              </span>{" "}
+              to turn your ideas into reality
             </p>
             <br />
             <p >

@@ -18,13 +18,17 @@ export default function Testimonials() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   useEffect(() => {
-      // Fetch user's location
-      fetch("https://ipapi.co/json/")
-          .then((response) => response.json())
-          .then((data) => {
-              // Check if the country is India
-              setIsIndia(data.country === "IN");
-          });
+    const fetchLocation = async () => {
+      try {
+        const response = await fetch("https://ipapi.co/json/");
+        const data = await response.json();
+        setIsIndia(data.country === "IN");
+      } catch (error) {
+        console.error("Error fetching location:", error);
+      }
+    };
+
+    fetchLocation();
   }, []);
 
   useEffect(() => {
@@ -35,9 +39,9 @@ export default function Testimonials() {
   const handlePlayPause = (review: string): void => {
     if (!isPlaying) {
       const voices = speechSynthesis.getVoices();
-      const femaleVoices = voices.filter(voice => 
-        voice.name.includes("Google US English Female") || 
-        voice.name.includes("Microsoft Zira") || 
+      const femaleVoices = voices.filter(voice =>
+        voice.name.includes("Google US English Female") ||
+        voice.name.includes("Microsoft Zira") ||
         voice.name.includes("Microsoft Hazel")
       );
 
@@ -148,7 +152,7 @@ export default function Testimonials() {
                       className="hidden"
                       onEnded={handleAudioEnded}
                     /> */}
-                  
+
                     {isPlaying ? (
                       <HiMiniPause
                         className="text-[#2D1C55] text-2xl sm:text-4xl cursor-pointer"
@@ -180,10 +184,10 @@ export default function Testimonials() {
                         />
                       </div>
                     )}
-                      <div className="hidden md:block text-info text-xl"> ( Tired of Reading? Try the audio version )</div>
+                    <div className="hidden md:block text-info text-xl"> ( Tired of Reading? Try the audio version )</div>
 
                   </div>
-                      <div className="md:hidden text-info text-sm text-center"> Tired of reading LONG reviews? <br /> Try our audio testimonial</div>
+                  <div className="md:hidden text-info text-sm text-center"> Tired of reading LONG reviews? <br /> Try our audio testimonial</div>
                 </motion.div>
               ) : null}
             </motion.div>

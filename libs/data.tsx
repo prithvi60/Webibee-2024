@@ -145,19 +145,19 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
 export const collaboration = [
   {
     title: "Support (contract work)",
-    desc: "help with something specific ",
+    desc: "Help with something specific ",
   },
   {
     title: "Launch (project work)",
-    desc: "offer tech to your business",
+    desc: "Offer tech to your business",
   },
   {
     title: "Grow (retainer work)",
-    desc: "grow existing business with tech",
+    desc: "Grow existing business with tech",
   },
   {
-    title: "Scale ( custom product )",
-    desc: "build your Sass and grow it with tech",
+    title: "Scale (custom product)",
+    desc: "Build your Sass and grow it with tech",
   },
 ];
 

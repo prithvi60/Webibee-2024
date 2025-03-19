@@ -27,9 +27,7 @@ export const WeShine = ({
     title: string;
     styles: string;
 }) => {
-    return (
-        <HorizontalScrollCarousel data={data} title={title} styles={styles} />
-    );
+    return <HorizontalScrollCarousel data={data} title={title} styles={styles} />;
 };
 
 const HorizontalScrollCarousel = ({
@@ -58,31 +56,65 @@ const HorizontalScrollCarousel = ({
     );
 
     return (
-        <section
-            ref={targetRef}
-            className={`relative ${path === "/proficiency" ? "h-[150vh]" : "h-[300vh]"
-                } `}
-        >
-            <div className={`${path === "/proficiency" ? "top-32 space-y-20" : path === "/whyCode" ? "top-5 space-y-8" : "top-10 space-y-10"} sticky`}>
+        <section className="w-full h-full">
+            <div className={`${path === "/proficiency" && "space-y-5"}`}>
                 <motion.h5
                     variants={variant2}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className={`${styles}`} dangerouslySetInnerHTML={{ __html: title }} />
-                <div className={`items-center flex ${path === "/proficiency" ? "h-[45vh]" : path === "/whyCode" ? "h-[80vh]" : "h-[80vh]"} overflow-hidden`}>
-                    {path === "/proficiency" ? (
-                        <motion.div style={{ x }} className="flex gap-10">
-                            {data.map((card: string, idx: number) => {
-                                return <Card2 card={card} key={idx} />;
-                            })}
-                        </motion.div>
-                    ) : (
-                        <motion.div style={{ x }} className="flex gap-10">
-                            {data.map((card: string, idx: number) => {
-                                return <Card card={card} key={idx} />;
-                            })}
-                        </motion.div>
-                    )}
+                    whileInView="animate"
+                    className={`${styles}`}
+                    dangerouslySetInnerHTML={{ __html: title }}
+                />
+                {path === "/proficiency" && (
+                    <p className="text-base sm:text-lg xl:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify">
+                        At Webibee, we thrive at the intersection of design, technology, and
+                        intelligence. Our strength lies in crafting custom digital
+                        experiences that go beyond aesthetics—experiences that think, adapt,
+                        and evolve. Whether it’s AI-enhanced user flows, interactive 3D web
+                        design, or high-performance web applications, we build solutions
+                        that aren’t just functional but intuitive, immersive, and
+                        future-ready. With every project, we push the limits of what’s
+                        possible, ensuring that our clients don’t just get a website—they
+                        get a digital experience that sets them apart.
+                    </p>
+                )}
+            </div>
+            <div
+                ref={targetRef}
+                className={`relative ${path === "/proficiency" ? "h-[300vh]" : "h-[300vh]"
+                    } `}
+            >
+                <div
+                    className={`${path === "/proficiency"
+                        ? "top-44 space-y-5"
+                        : path === "/whyCode"
+                            ? "top-32 space-y-8"
+                            : "top-32 space-y-10"
+                        } sticky`}
+                >
+                    <div
+                        className={`items-center flex ${path === "/proficiency"
+                            ? "h-[45vh]"
+                            : path === "/whyCode"
+                                ? "h-[80vh]"
+                                : "h-[80vh]"
+                            } overflow-hidden`}
+                    >
+                        {path === "/proficiency" ? (
+                            <motion.div style={{ x }} className="flex gap-10">
+                                {data.map((card: string, idx: number) => {
+                                    return <Card2 card={card} key={idx} />;
+                                })}
+                            </motion.div>
+                        ) : (
+                            <motion.div style={{ x }} className="flex gap-10">
+                                {data.map((card: string, idx: number) => {
+                                    return <Card card={card} key={idx} />;
+                                })}
+                            </motion.div>
+                        )}
+                    </div>
                 </div>
             </div>
         </section>

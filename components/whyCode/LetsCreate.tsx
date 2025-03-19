@@ -122,7 +122,7 @@ const LetsCreate = () => {
                         {outPerforms.map((list: string, idx: number) => (
                             <div key={idx} className="py-2 outline-none">
                                 <h2
-                                    className={`rounded-lg transition-all transform py-3 text-lg lg:text-xl xl:text-2xl max-w-60 sm:max-w-72 xl:max-w-80 mx-auto text-center duration-700 ease-in-out font-extrabold italic slick-center:scale-125 ${isActive === idx
+                                    className={`rounded-lg font-EbGaramond transition-all transform py-3 text-lg lg:text-xl xl:text-2xl max-w-60 sm:max-w-72 xl:max-w-80 mx-auto text-center duration-700 ease-in-out font-extrabold italic slick-center:scale-125 ${isActive === idx
                                         ? "text-info border-2 border-secondary scale-110"
                                         : "text-info/50 opacity-65"
                                         }`}

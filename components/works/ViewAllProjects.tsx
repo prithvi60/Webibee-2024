@@ -8,15 +8,12 @@ import { motion } from "framer-motion";
 import {
     parentVariant,
     variant2,
-    variantContact,
     variantGrid,
-    variantGrid2,
 } from "@/libs/Variants";
-import { div } from "framer-motion/client";
 
 const ViewAllProjects = () => {
     return (
-        <section className="block space-y-10 md:space-y-20 p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
+        <section className="block space-y-10 md:space-y-20 p-10 sm:px-20 md:px24 xl:px-60 sm:py-16 xl:py-28 overflow-hidden">
             <motion.h5
                 variants={variant2}
                 viewport={{ once: true }}
@@ -31,7 +28,7 @@ const ViewAllProjects = () => {
                 viewport={{ amount: 0.3, once: true }}
                 initial="initial"
                 whileInView="animate"
-                className="flex overflow-x-scroll md:overflow-x-auto md:grid max-w-lg md:max-w-full w-full md:grid-cols-2 lg:grid-cols-3 no_scrollbar md:place-content-center md:place-items-center gap-10"
+                className="flex overflow-x-scroll md:overflow-x-auto md:grid max-w-lg md:max-w-full w-full md:grid-cols-2 xl:grid-cols-3 no_scrollbar md:place-content-center md:place-items-center gap-10 xl:gap-5 pb-10"
             >
                 {allProjectsLists.map((list, idx) => (
                     <motion.div
@@ -41,7 +38,7 @@ const ViewAllProjects = () => {
                         custom={idx}
                         viewport={{ once: true }}
                         key={idx}
-                        className="block min-w-60 md:max-w-[480px] pb-5 shadow-md rounded-lg overflow-hidden h-fit lg:h-[640px]"
+                        className="block min-w-60 md:max-w-[480px] pb-5 shadow-md rounded-lg overflow-hidden h-[520px] md:h-[640px]"
                     >
                         <Link
                             href={`/caseStudy/${list.href}`}

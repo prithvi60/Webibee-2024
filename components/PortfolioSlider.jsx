@@ -84,7 +84,7 @@ function SampleNextArrow(props) {
                 } absolute top-20 sm:top-28 lg:top-28 right-0 sm:right-4 xl:right-16 rounded-full p-2.5 cursor-pointer hover:bg-info bg-secondary backdrop-blur-xl`}
             onClick={onClick}
         >
-            <FaArrowRight className="text-xs sm:text-base xl:text-2xl text-white " />
+            <FaArrowRight className="text-xs sm:text-base xl:text-2xl text-white" />
         </div>
     );
 }

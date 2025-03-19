@@ -21,31 +21,72 @@ export const footerNavLinks = [
 
 export const portfolioImages = [
   { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
-  { img: "/ensilatacasestudy.png", href: "ensileta", alt: "Ensileta Portfolio Image" },
+  {
+    img: "/ensilatacasestudy.png",
+    href: "ensileta",
+    alt: "Ensileta Portfolio Image",
+  },
   { img: "/rasimcasestudy.png", href: "rasim" },
-  { img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568", href: "daga" },
-  { img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357", href: "oneus" },
+  {
+    img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
+    href: "daga",
+  },
+  {
+    img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
+    href: "oneus",
+  },
 ];
 export const portfolioImagesMob = [
   // { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
-  { img: "/ensilatacasestudy.png", href: "ensileta", alt: "Ensileta Portfolio Image" },
-  { img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357", href: "oneus" },
+  {
+    img: "/ensilatacasestudy.png",
+    href: "ensileta",
+    alt: "Ensileta Portfolio Image",
+  },
+  {
+    img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
+    href: "oneus",
+  },
   { img: "/rasimcasestudy.png", href: "rasim" },
   // { img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568", href: "daga" },
 ];
 export const categories = [
-  { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
-  { title: "Project Management Product", logo: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385" },
-  { title: "Real Estate", logo: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576" },
-  { title: "Professional Services Portfolio", logo: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231" },
+  {
+    title: "manufacturing",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853",
+  },
+  {
+    title: "interior design",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385",
+  },
+  {
+    title: "real estate",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576",
+  },
+  {
+    title: "travel & tourism",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231",
+  },
   // { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
 ];
 
 export const categories2 = [
-  { title: "Professional Services Portfolio", logo: "https://ik.imagekit.io/webibee/Webibee/logos/daga-logo.svg?updatedAt=1735894362197" },
-  { title: "E-commerce & Retail", logo: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197" },
-  { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/n9-logo.svg?updatedAt=1735894370420" },
-  { title: "FMCG Products", logo: "https://ik.imagekit.io/webibee/Webibee/logos/nivaran-logo.svg?updatedAt=1735894370616" },
+  {
+    title: "legal services",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/daga-logo.svg?updatedAt=1735894362197",
+  },
+  {
+    title: "apparel & textiles",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197",
+  },
+  {
+    title: "marine services",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/n9-logo.svg?updatedAt=1735894370420",
+  },
+  {
+    title: "consumer goods (FMCG)",
+    logo: "https://ik.imagekit.io/webibee/Webibee/logos/nivaran-logo.svg?updatedAt=1735894370616",
+  },
 ];
 
 // Testimonials
@@ -56,8 +97,7 @@ export const testimonials = [
     reviewer: "Naveen V",
     img: "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
     position: "Founder & CEO, VBCC Instruments",
-    review:
-      `Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.
+    review: `Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.
 
 Not only did Webibee meet our expectations, but also surpassed them by far. They followed closely to the design guidelines we provided giving useful suggestions on how to improve the functionality of our site. For now, we have reached the point where these websites have an attractive look due to timely delivery of the project. This was facilitated by their integration into my team members. Also, it is worth mentioning that they are knowledgeable about various aspects of online presence management.
 
@@ -84,26 +124,22 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
     reviewer: "Paul",
     img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
     position: "CEO, European Company",
-    review:
-      `Working with Webibee was a fantastic experience. They understood our needs and delivered a product that exceeded our expectations. Their attention to detail and commitment to quality is commendable. I would highly recommend their services to anyone looking for a reliable partner in web development.`,
+    review: `Working with Webibee was a fantastic experience. They understood our needs and delivered a product that exceeded our expectations. Their attention to detail and commitment to quality is commendable. I would highly recommend their services to anyone looking for a reliable partner in web development.`,
   },
   {
     id: 5,
     reviewer: "Louis",
     img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
     position: "Managing Director, UAE Firm",
-    review:
-      `The team at Webibee transformed our online presence. Their innovative approach and technical expertise made a significant difference in our project. They were responsive and supportive throughout the process, ensuring we were satisfied with the final outcome.`,
+    review: `The team at Webibee transformed our online presence. Their innovative approach and technical expertise made a significant difference in our project. They were responsive and supportive throughout the process, ensuring we were satisfied with the final outcome.`,
   },
   {
     id: 6,
     reviewer: "Sarah",
     img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
     position: "Marketing Head, European Company",
-    review:
-      `Webibee's team is exceptional! They took our ideas and turned them into a beautiful website that truly represents our brand. Their professionalism and dedication to our project were evident from start to finish. I can't recommend them enough!`,
+    review: `Webibee's team is exceptional! They took our ideas and turned them into a beautiful website that truly represents our brand. Their professionalism and dedication to our project were evident from start to finish. I can't recommend them enough!`,
   },
-
 ];
 
 export const collaboration = [
@@ -124,7 +160,6 @@ export const collaboration = [
     desc: "build your Sass and grow it with tech",
   },
 ];
-
 
 export const services = [
   {
@@ -347,7 +382,8 @@ export const shine = [
 
 export const allProjectsLists = [
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853", alt: "VBCC Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853",
+    alt: "VBCC Logo Image",
     title: "VBCC",
     year: "2024",
     desc: "VBCC specializes in high-precision laboratory and industrial instruments, delivering quality and innovation across various sectors.",
@@ -355,7 +391,8 @@ export const allProjectsLists = [
     href: "vbcc",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197", alt: "Rasim Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197",
+    alt: "Rasim Logo Image",
     title: "Rasim",
     year: "2024",
     desc: "Rasims Exports manufactures high-quality clothing for men, women, and kids, serving international B2B clients.",
@@ -363,7 +400,8 @@ export const allProjectsLists = [
     href: "rasim",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385", alt: "Ensileta Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385",
+    alt: "Ensileta Logo Image",
     title: "Ensileta Interior",
     year: "2024",
     desc: "Ensileta Interiors is a leading interior design firm focused on delivering innovative, high-quality design solutions that elevate client spaces and enhance user experiences.",
@@ -371,7 +409,8 @@ export const allProjectsLists = [
     href: "ensileta",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576", alt: "Intermont Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576",
+    alt: "Intermont Logo Image",
     title: "Intermont",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
@@ -379,7 +418,8 @@ export const allProjectsLists = [
     href: "intermont",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/ashok-logo.png?updatedAt=1735894357723", alt: "Ashok Minerals Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/ashok-logo.png?updatedAt=1735894357723",
+    alt: "Ashok Minerals Logo Image",
     title: "Ashok Minerals",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
@@ -387,7 +427,8 @@ export const allProjectsLists = [
     href: "ashokMinerals",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231", alt: "OneUs Logo Image",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231",
+    alt: "OneUs Logo Image",
     title: "OneUs",
     year: "2024",
     desc: "Our team ensures that every technical component is carefully researched and integrated, offering smooth system performance.",
@@ -422,8 +463,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277", alt: "vbcc home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500", alt: "vbcc products" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277",
+        alt: "vbcc home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500",
+        alt: "vbcc products",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -474,11 +521,21 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/CS%20-2.png?updatedAt=1735894413315", alt: "vbcc products" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277", alt: "vbcc home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500", alt: "vbcc products" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/CS%20-2.png?updatedAt=1735894413315",
+        alt: "vbcc products",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277",
+        alt: "vbcc home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500",
+        alt: "vbcc products",
+      },
     ],
-    testimonialImg: "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
+    testimonialImg:
+      "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
     testimonialName: "Naveen V",
     testimonialPosition: "CEO, VBCC Instruments",
     testimonials:
@@ -488,8 +545,7 @@ export const caseStudies = [
     title: "Ensileta",
     href: "ensileta",
     mainBgImg: "/ensilatacasestudy.png",
-    summary:
-      "A Design Approval and Project Management System for Customers",
+    summary: "A Design Approval and Project Management System for Customers",
     table: [
       {
         title: "services",
@@ -509,8 +565,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Scale ( custom product )" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070", alt: "ensileta dashboard" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892", alt: "ensileta drawings" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070",
+        alt: "ensileta dashboard",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892",
+        alt: "ensileta drawings",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -561,17 +623,26 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070", alt: "ensileta dashboard" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892", alt: "ensileta drawings" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/ensileta-3.png?updatedAt=1735894416908", alt: "ensileta drawing upload" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070",
+        alt: "ensileta dashboard",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892",
+        alt: "ensileta drawings",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/ensileta-3.png?updatedAt=1735894416908",
+        alt: "ensileta drawing upload",
+      },
     ],
   },
   {
     title: "Rasim Exports",
     href: "rasim",
-    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/rasim-bg.png?updatedAt=1735894420329",
-    summary:
-      "Premium Branding & Website Design for Rasim Exports",
+    mainBgImg:
+      "https://ik.imagekit.io/webibee/Webibee/rasim-bg.png?updatedAt=1735894420329",
+    summary: "Premium Branding & Website Design for Rasim Exports",
     table: [
       {
         title: "services",
@@ -590,8 +661,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537",
+        alt: "rasim home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537",
+        alt: "rasim home page",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -642,15 +719,18 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537", alt: "rasim home page" }
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537",
+        alt: "rasim home page",
+      },
     ],
   },
   {
     title: "Daga & Daga",
     href: "daga",
-    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
-    summary:
-      "Modern Web Design for Daga & Daga Law Firm",
+    mainBgImg:
+      "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
+    summary: "Modern Web Design for Daga & Daga Law Firm",
     table: [
       {
         title: "services",
@@ -669,8 +749,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522",
+        alt: "Daga home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522",
+        alt: "Daga home page",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -721,15 +807,18 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522", alt: "Daga home page" }
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522",
+        alt: "Daga home page",
+      },
     ],
   },
   {
     title: "OneUS Travels",
     href: "oneus",
-    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
-    summary:
-      "Premium Travel-Themed Website for OneUS Travels",
+    mainBgImg:
+      "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
+    summary: "Premium Travel-Themed Website for OneUS Travels",
     table: [
       {
         title: "services",
@@ -748,8 +837,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038",
+        alt: "oneUs home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038",
+        alt: "oneUs home page",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -800,13 +895,17 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038", alt: "oneUs home page" }
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038",
+        alt: "oneUs home page",
+      },
     ],
   },
   {
     title: "Lotus AI Real Estate",
     href: "lotus",
-    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/lotus-bg.png?updatedAt=1735901584505",
+    mainBgImg:
+      "https://ik.imagekit.io/webibee/Webibee/lotus-bg.png?updatedAt=1735901584505",
     summary:
       "Front-End Development and Data Analytics for Lotus AI Real Estate Listing Website",
     table: [
@@ -827,8 +926,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780",
+        alt: "Lotus AI home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780",
+        alt: "Lotus AI home page",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -879,15 +984,18 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780", alt: "Lotus AI home page" }
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780",
+        alt: "Lotus AI home page",
+      },
     ],
   },
   {
     title: "Lavender Salon Portal",
     href: "lavender",
-    mainBgImg: "https://ik.imagekit.io/webibee/Webibee/lavender-bg.png?updatedAt=1735901572406",
-    summary:
-      "Front-End Development and Support for Lavender Salon Portal",
+    mainBgImg:
+      "https://ik.imagekit.io/webibee/Webibee/lavender-bg.png?updatedAt=1735901572406",
+    summary: "Front-End Development and Support for Lavender Salon Portal",
     table: [
       {
         title: "services",
@@ -906,8 +1014,14 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" },
-      { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440",
+        alt: "Lavender home page",
+      },
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440",
+        alt: "Lavender home page",
+      },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
@@ -958,26 +1072,22 @@ export const caseStudies = [
       },
     ],
     images: [
-      { img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440", alt: "Lavender home page" }
+      {
+        img: "https://ik.imagekit.io/webibee/Webibee/lavender-1.png?updatedAt=1735901584440",
+        alt: "Lavender home page",
+      },
     ],
   },
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const outPerforms = [
+  "Uniqueness & Innovation",
+  "Performance & Security",
+  " Precision & Flexibility",
+  "Long-term",
+  "Seamless integrations",
+  "Full control",
+];
 
 // TESTIMONIALS
 export const reviewIndia = [

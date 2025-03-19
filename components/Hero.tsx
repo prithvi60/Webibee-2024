@@ -2,28 +2,28 @@
 import { LogoTypeWriterAnimation } from "./LogoTypeWriterAnimation";
 import { variant1, variantTitle } from "@/libs/Variants";
 import { motion } from "framer-motion";
-import { useEffect, useState } from 'react';
-import LoadingPage from './LoadingPage';
+import { useEffect, useState } from "react";
+import LoadingPage from "./LoadingPage";
 const Hero = () => {
-
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const hasLoaded = sessionStorage.getItem('hasLoaded');
+    const hasLoaded = sessionStorage.getItem("hasLoaded");
     if (!hasLoaded) {
       const timeout = setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('hasLoaded', 'true');
+        sessionStorage.setItem("hasLoaded", "true");
       }, 1000);
       return () => clearTimeout(timeout);
     } else {
       setIsLoading(false);
     }
   }, []);
-  if(isLoading){
-return <LoadingPage/>
+
+  if (isLoading) {
+    return <LoadingPage />;
   }
+
   return (
     <section className="px-10 xl:px-64 sm:py-16 xl:py-28 block space-y-6 md:space-y-10">
       <motion.div
@@ -46,7 +46,6 @@ return <LoadingPage/>
         >
           {" "}
           Business Tech for Small Medium Enterprises
-
         </motion.h3>
         {/* <div className="relative overflow-hidden w-full h-72">
           <Image fill src={"/webibee logo.svg"} alt="logo" className="object-contain object-center " />

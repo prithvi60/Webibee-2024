@@ -1,11 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, useAnimate } from "framer-motion";
+import Image from "next/image";
 
 const LoadingPage = () => {
     return (
-        <div className="grid h-screen place-content-center backdrop-blur-lg p-4">
-            <ShuffleLoader />
+        <div className="grid min-h-screen place-content-center backdrop-blur-lg p-4">
+            {/* <ShuffleLoader /> */}
+            <Image alt="loader" src={"/webibee-loader.gif"} width={400} height={400} className="object-contain object-center" />
         </div>
     );
 };

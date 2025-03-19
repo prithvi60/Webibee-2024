@@ -35,7 +35,7 @@ const MobileNav = ({
                 </Link>
                 <div className="flex items-center gap-7 pr-3">
                     <RxCross1
-                        className={`h-7 w-7 text-black cursor-pointer hover:text-primary`}
+                        className={`h-7 w-7 text-black cursor-pointer hover:text-black/50`}
                         onClick={() => {
                             setOpen(false);
                         }}

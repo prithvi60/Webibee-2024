@@ -8,7 +8,7 @@ const AboutUs = () => {
         <h5 className="font-SourceCodePro font-semibold tracking-wider text-base sm:text-lg">
           Small team, <strong className="text-info">big</strong> solutions.
         </h5>
-        <h3 className="font-EbGaramond font-medium text-5xl w-full sm:text-7xl xl:text-9xl tracking-wide !leading-tight text-center md:text-start">
+        <h3 className="font-EbGaramond font-medium text-5xl w-full sm:text-7xl xl:text-9xl tracking-wide !leading-tight">
           Affordable &{" "}
           <strong className="font-extrabold text-info">Scalable</strong> ideas
           tailored for you.
@@ -55,7 +55,7 @@ const AboutUs = () => {
       </div>
       <div className="relative bg-secondary min-h-screen p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 space-y-6">
         <div className="flex flex-col-reverse md:flex-row md:items-start justify-between items-center gap-14 md:gap-16 overflow-visible h-full">
-        <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2">
             <div className="md:sticky md:top-5">
               <iframe
                 src="https://www.youtube.com/embed/DRxUfXXEOk4"
@@ -67,24 +67,24 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="font-semibold text-base sm:text-lg md:text-xl basis-full md:basis-1/2 !leading-10">
-          <p >
-            Webibee began with a shared desire to make complex technology
-            accessible to businesses of all sizes. With a focus on simplicity,
-            innovation, and quality, we started as a small team working with
-            SMEs, helping them digitize and streamline operations. Over the
-            years, we've built a reputation for delivering high-quality web
-            development, custom SaaS solutions, and digital marketing that drive
-            results.
-          </p>
-          <br/>
-          <p >
-            At Webibee, we empower small and medium-sized enterprises (SMEs) by
-            providing essential Business Tech that help them thrive in the
-            modern business landscape. Our mission is to deliver tailored,
-            cutting-edge technologies and compelling digital experiences that
-            transform how businesses operate, engage with customers, and scale
-            effectively.
-          </p>
+            <p >
+              Webibee began with a shared desire to make complex technology
+              accessible to businesses of all sizes. With a focus on simplicity,
+              innovation, and quality, we started as a small team working with
+              SMEs, helping them digitize and streamline operations. Over the
+              years, we've built a reputation for delivering high-quality web
+              development, custom SaaS solutions, and digital marketing that drive
+              results.
+            </p>
+            <br />
+            <p >
+              At Webibee, we empower small and medium-sized enterprises (SMEs) by
+              providing essential Business Tech that help them thrive in the
+              modern business landscape. Our mission is to deliver tailored,
+              cutting-edge technologies and compelling digital experiences that
+              transform how businesses operate, engage with customers, and scale
+              effectively.
+            </p>
           </div>
         </div>
         {/* <div className="w-full flex justify-end items-center ">

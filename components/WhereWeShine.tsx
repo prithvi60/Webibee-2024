@@ -5,7 +5,7 @@ import Spline from "@splinetool/react-spline/next";
 const WhereWeShine = () => {
   return (
     <section className="px-10 pt-10 sm:px-20 xl:px-64">
-      <div className="cursor-copy">
+      <div className="cursor-copy hidden md:block">
         <Spline scene="https://prod.spline.design/WQe4Ao8qsc5DUXaN/scene.splinecode" />
       </div>
 

@@ -18,17 +18,13 @@ export default function Testimonials() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   useEffect(() => {
-    const fetchLocation = async () => {
-      try {
-        const response = await fetch("https://ipapi.co/json/");
-        const data = await response.json();
+    // Fetch user's location
+    fetch("https://ipapi.co/json/")
+      .then((response) => response.json())
+      .then((data) => {
+        // Check if the country is India
         setIsIndia(data.country === "IN");
-      } catch (error) {
-        console.error("Error fetching location:", error);
-      }
-    };
-
-    fetchLocation();
+      });
   }, []);
 
   useEffect(() => {

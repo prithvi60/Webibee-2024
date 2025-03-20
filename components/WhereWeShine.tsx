@@ -12,9 +12,9 @@ const WhereWeShine = () => {
           "font-EbGaramond font-medium text-5xl w-full sm:text-7xl tracking-wide !leading-tight text-center md:text-start font-bold !leading-tight text-[#1B1B1CCC]"
         }
       />
-      <div className="cursor-copy hidden lg:block h-screen">
+      {/* <div className="cursor-copy hidden lg:block h-screen">
         <Spline scene="https://prod.spline.design/WQe4Ao8qsc5DUXaN/scene.splinecode" />
-      </div>
+      </div> */}
     </section>
   );
 };

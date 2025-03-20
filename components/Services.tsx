@@ -1,9 +1,8 @@
 "use client";
 import { services } from "@/libs/data";
-import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { parentVariant, variantGrid2, variantTitle } from "@/libs/Variants";
+import { parentVariant, variantGrid, variantTitle } from "@/libs/Variants";
 
 export default function Services() {
   return (
@@ -27,17 +26,17 @@ export default function Services() {
         viewport={{ amount: 0.3, once: true }}
         initial="initial"
         whileInView="animate"
-        className="flex md:justify-center max-w-sm sm:flex-wrap sm:max-w-full overflow-x-scroll md:overflow-x-auto gap-5 py-20"
+        className="flex md:justify-center max-w-sm sm:flex-wrap sm:max-w-full overflow-x-scroll md:overflow-x-auto gap-5 py-20 no_scrollbar"
       >
         {services.map((service, idx) => (
           <motion.a
-            variants={variantGrid2}
+            variants={variantGrid}
             initial="initial"
             whileInView="animate"
             custom={idx}
             viewport={{ once: true }}
             key={idx}
-            className="px-5 min-w-60 sm:w-52 sm:justify-center md:w-60 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-80 xl:h-96 py-14 xl:py-20 lg:hover:!scale-110 lg:hover:!rounded-lg transition-all duration-500 cursor-pointer"
+            className="px-5 min-w-60 sm:w-52 sm:justify-center md:w-60 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-80 xl:h-96 py-14 xl:py-20 lg:hover:!scale-110 lg:hover:!rounded-lg transition-all duration-500 cursor-pointer lg:hover:border-2 lg:hover:border-info lg:hover:shadow-lg lg:hover:shadow-info/30"
           >
             <div className="block space-y-10">
               <div className="text-[#404040] text-lg tracking-wider sm:text-xl xl:text-3xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">

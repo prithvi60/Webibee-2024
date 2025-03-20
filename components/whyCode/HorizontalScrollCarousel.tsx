@@ -1,5 +1,6 @@
 "use client";
 import { variant2 } from "@/libs/Variants";
+import Spline from "@splinetool/react-spline";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -67,17 +68,22 @@ const HorizontalScrollCarousel = ({
                     dangerouslySetInnerHTML={{ __html: title }}
                 />
                 {path === "/proficiency" && (
-                    <p className="text-base sm:text-lg xl:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify">
-                        At Webibee, we thrive at the intersection of design, technology, and
-                        intelligence. Our strength lies in crafting custom digital
-                        experiences that go beyond aesthetics—experiences that think, adapt,
-                        and evolve. Whether it’s AI-enhanced user flows, interactive 3D web
-                        design, or high-performance web applications, we build solutions
-                        that aren’t just functional but intuitive, immersive, and
-                        future-ready. With every project, we push the limits of what’s
-                        possible, ensuring that our clients don’t just get a website—they
-                        get a digital experience that sets them apart.
-                    </p>
+                    <div className="space-y-5">
+                        <p className="text-base sm:text-lg xl:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify">
+                            At Webibee, we thrive at the intersection of design, technology, and
+                            intelligence. Our strength lies in crafting custom digital
+                            experiences that go beyond aesthetics—experiences that think, adapt,
+                            and evolve. Whether it’s AI-enhanced user flows, interactive 3D web
+                            design, or high-performance web applications, we build solutions
+                            that aren’t just functional but intuitive, immersive, and
+                            future-ready. With every project, we push the limits of what’s
+                            possible, ensuring that our clients don’t just get a website—they
+                            get a digital experience that sets them apart.
+                        </p>
+                        <div className="cursor-copy hidden lg:block h-screen">
+                            <Spline scene="https://prod.spline.design/WQe4Ao8qsc5DUXaN/scene.splinecode" />
+                        </div>
+                    </div>
                 )}
             </div>
             <div
@@ -87,7 +93,7 @@ const HorizontalScrollCarousel = ({
             >
                 <div
                     className={`${path === "/proficiency"
-                        ? "top-44 space-y-5"
+                        ? "top-60 space-y-5"
                         : path === "/whyCode"
                             ? "top-32 space-y-8"
                             : "top-32 space-y-10"

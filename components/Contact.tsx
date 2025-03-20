@@ -40,12 +40,12 @@ const Contact = () => {
                 </motion.div>
             ) : path === "/ITEssentials" ||
                 path === "/digitalEssentials" ||
-                path === "/creativeEssentials" ? (
+                path === "/creativeEssentials" || path === "/whyCode" ? (
                 <motion.div
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                    whileInView="animate" className={`flex flex-col md:flex-row  gap-10 md:gap-5 ${path !== "/whyCode" ? "md:justify-between" : "md:justify-center"}`}>
                     <div className="space-y-10 w-full md:w-3/5">
                         <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
                             Ready to take your project to the{" "}
@@ -54,16 +54,18 @@ const Contact = () => {
                         </h4>
                         <DotExpandButton text="GET IN TOUCH" href="/contact" />
                     </div>
-                    <div className="space-y-10 w-full md:w-2/5">
-                        <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
-                            Take a look at our{" "}
-                            <strong className="font-extrabold text-info">
-                                Business essential services
-                            </strong>{" "}
-                            too!
-                        </h4>
-                        <DotExpandButton text="Our Works" href="/works" />
-                    </div>
+                    {path !== "/whyCode" && (
+                        <div className="space-y-10 w-full md:w-2/5">
+                            <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
+                                Take a look at our{" "}
+                                <strong className="font-extrabold text-info">
+                                    Business essential services
+                                </strong>{" "}
+                                too!
+                            </h4>
+                            <DotExpandButton text="Our Works" href="/works" />
+                        </div>
+                    )}
                 </motion.div>
             ) : (
                 <motion.div

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { variant1, variantTitle } from "@/libs/Variants";
+import { variant1, variant2, variantTitle } from "@/libs/Variants";
 import DotExpandButton from "../buttons/DotExpandButton";
 import { outPerforms } from "@/libs/data";
 import Slider from "react-slick";
@@ -17,7 +17,7 @@ const LetsCreate = () => {
         dots: false,
         infinite: true,
         speed: 1000,
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
@@ -30,17 +30,6 @@ const LetsCreate = () => {
         beforeChange: (current: number, next: number) => {
             setIsActive(next);
         },
-        // afterChange: (currentSlide: number) => {
-        //     setIsActive(currentSlide)
-        // },
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 4,
-                },
-            },
-        ],
     };
 
     // Detect if component is in viewport
@@ -81,50 +70,79 @@ const LetsCreate = () => {
                 Why Custom Code <strong className="text-info">Outperforms</strong>{" "}
                 No-Code Solutions
             </h4>
-            <div className="flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:items-start gap-12 lg:gap-6">
+            <div className="flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:items-start gap-12 lg:gap-6 relative">
                 <motion.div
                     variants={variant1}
                     viewport={{ once: true }}
                     initial="initial"
                     whileInView="animate"
-                    className="lg:sticky lg:top-5 w-full lg:w-3/5"
+                    className="w-full lg:w-3/5 space-y-5 md:space-y-10"
                 >
-                    <p className="text-sm md:text-start md:text-lg font-SourceCodePro md:!leading-[2] !text-justify">
-                        Custom-coded solutions offer unparalleled{" "}
-                        <span className="font-bold px-1">
-                            flexibility, scalability, and performance
-                        </span>{" "}
-                        compared to no-code platforms. While no-code tools are quick to
-                        deploy, they often come with limitations in{" "}
-                        <span className="font-bold px-1">
-                            customization, integrations, and long-term scalability.
+                    <p className="text-base sm:text-lg lg:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify text-[#404040]">
+                        At Webibee, code isn’t just about building websites—it’s a mindset.
+                        It’s about solving problems, designing better experiences, and
+                        pushing the boundaries of what’s possible. In a world where
+                        technology evolves faster than ever, coding is the language that
+                        powers innovation, automation, and intelligent systems.
+                    </p>
+                    <p className="text-base sm:text-lg lg:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify flex flex-col gap-1.5 text-[#404040]">
+                        <span className="font-extrabold tracking-normal text-black">
+                            A Mindset of Exploration & Problem-Solving
                         </span>
-                        With coding, businesses can build tailored solutions that meet
-                        specific needs, ensuring a seamless user experience, optimized
-                        performance, and enhanced security. Unlike no-code platforms, which
-                        rely on predefined templates and third-party dependencies, coded
-                        solutions provide{" "}
-                        <span className="font-bold px-1">
-                            complete control, allowing for continuous improvements and unique
-                            branding.
+                        Coding isn’t just technical—it’s creative problem-solving. Every
+                        project starts with a challenge, and our job is to engineer
+                        solutions that seamlessly blend design, function, and user
+                        experience. It’s about breaking down complex problems into simple,
+                        intuitive interactions.
+                    </p>
+                    <p className="text-base sm:text-lg lg:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify flex flex-col gap-1.5 text-[#404040]">
+                        <span className="font-extrabold tracking-normal text-black">
+                            AI: The Next Creative Leap
                         </span>
-                        Additionally, as businesses grow, coded applications adapt easily
-                        without the constraints of platform restrictions or rising
-                        subscription costs. Investing in coding ensures a future-proof,
-                        efficient, and competitive digital presence.
+                        The web is no longer just about static content—it’s becoming
+                        smarter, more interactive, and AI-driven. At Webibee, we embrace AI
+                        to enhance user experiences, automate workflows, and make websites
+                        more than just digital brochures. From AI-powered booking flows to
+                        intelligent UI personalization, we see code as a way to bring
+                        adaptive, intuitive technology to businesses.
+                    </p>
+                    <p className="text-base sm:text-lg lg:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify flex flex-col gap-1.5 text-[#404040]">
+                        <span className="font-extrabold tracking-normal text-black">
+                            Building for the Future
+                        </span>
+                        Technology is constantly evolving, and we’re not just following
+                        trends—we’re exploring new paradigms. Whether it’s 3D interactions,
+                        AI-assisted design, or creative coding experiments, we push the web
+                        forward with innovative, future-ready solutions.
+                    </p>
+                    <p className="text-base sm:text-lg lg:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify flex flex-col gap-1.5 text-[#404040]">
+                        <span className="font-extrabold tracking-normal text-black">
+                            BCode Beyond the Screen
+                        </span>
+                        The way we code reflects the way we think—logical yet creative,
+                        structured yet adaptable. This mindset doesn’t just shape our work,
+                        it shapes how we approach challenges in life and business.
+                    </p>
+                    <p className="text-base sm:text-lg lg:text-xl font-SourceCodePro md:!leading-[1.5] !text-justify text-[#404040]">
+                        Want to build something beyond the ordinary? Let’s create together.
+                        🚀
                     </p>
                 </motion.div>
-                <div
+                <motion.div
+                    variants={variant2}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate"
                     ref={containerRef}
-                    className="h-[520px] py-4 md:py-8 overflow-hidden w-full lg:w-2/5"
+                    className="h-full py-4 md:py-8 overflow-hidden w-full lg:w-2/5 lg:sticky lg:top-5"
                 >
                     <Slider ref={sliderRef} {...settings}>
                         {outPerforms.map((list: string, idx: number) => (
                             <div key={idx} className="py-2 outline-none">
                                 <h2
-                                    className={`rounded-lg font-EbGaramond transition-all transform py-3 text-lg lg:text-xl xl:text-2xl max-w-60 sm:max-w-72 xl:max-w-80 mx-auto text-center duration-700 ease-in-out font-extrabold italic slick-center:scale-125 ${isActive === idx
-                                        ? "text-info border-2 border-secondary scale-110"
-                                        : "text-info/50 opacity-65"
+                                    className={`rounded-lg font-EbGaramond transition-all transform py-3 text-lg lg:text-xl xl:text-2xl max-w-60 sm:max-w-72 xl:max-w-80 mx-auto text-center duration-700 ease-in-out font-extrabold ${isActive === idx
+                                        ? "text-black border-2 border-info scale-110"
+                                        : "text-black/50 opacity-65"
                                         }`}
                                 >
                                     {list}
@@ -132,7 +150,7 @@ const LetsCreate = () => {
                             </div>
                         ))}
                     </Slider>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
@@ -140,21 +158,23 @@ const LetsCreate = () => {
 
 export default LetsCreate;
 
-{/* <motion.div
-variants={variantTitle}
-viewport={{ once: true }}
-initial="initial"
-whileInView="animate"
-className="space-y-4 md:space-y-7"
->
-<h4 className="font-EbGaramond text-xl font-medium text-[#181B30] capitalize sm:text-2xl xl:text-[40px]">
-    If this aligns with your vision?
-</h4>
-<h4 className="font-EbGaramond !leading-20 text-4xl sm:text-5xl lg:text-[70px] flex flex-col gap-5">
-    let's create something together{" "}
-    <strong className="font-extrabold text-info tracking-wide">
-        Exceptional!
-    </strong>
-</h4>
-<DotExpandButton text="GET IN TOUCH" href="/contact" />
-</motion.div> */}
+{
+    /* <motion.div
+      variants={variantTitle}
+      viewport={{ once: true }}
+      initial="initial"
+      whileInView="animate"
+      className="space-y-4 md:space-y-7"
+      >
+      <h4 className="font-EbGaramond text-xl font-medium text-[#181B30] capitalize sm:text-2xl xl:text-[40px]">
+          If this aligns with your vision?
+      </h4>
+      <h4 className="font-EbGaramond !leading-20 text-4xl sm:text-5xl lg:text-[70px] flex flex-col gap-5">
+          let's create something together{" "}
+          <strong className="font-extrabold text-info tracking-wide">
+              Exceptional!
+          </strong>
+      </h4>
+      <DotExpandButton text="GET IN TOUCH" href="/contact" />
+      </motion.div> */
+}

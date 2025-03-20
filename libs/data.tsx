@@ -84,7 +84,7 @@ export const categories2 = [
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/n9-logo.svg?updatedAt=1735894370420",
   },
   {
-    title: "consumer goods (FMCG)",
+    title: "consumer goods (FMCG)",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/nivaran-logo.svg?updatedAt=1735894370616",
   },
 ];
@@ -203,28 +203,28 @@ export const services = [
 export const howItWorks = [
   {
     img: "https://ik.imagekit.io/webibee/Webibee/logos/flex-logo.svg?updatedAt=1735894366082",
-    title: "Flexibility & Customization",
-    desc: "With coding, you can design solutions exactly as you envision, offering full control over every aspect of functionality, design, and user experience.",
+    title: "Creative Problem-Solving",
+    desc: "Every challenge is an opportunity to design better experiences through code.",
   },
   {
     img: "https://ik.imagekit.io/webibee/Webibee/logos/scalable-logo.svg?updatedAt=1735894371683",
-    title: "Scalability",
-    desc: "Custom code is built to grow with your project, ensuring it can handle increasing users, data, and complexity without sacrificing performance.",
+    title: "AI as a Growth Catalyst",
+    desc: "The web is evolving, and AI is shaping the next wave of smart, interactive digital experiences.",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/security-logo.svg?updatedAt=1735894371289",
-    title: "Security",
-    desc: "Developers can implement personalized, robust security measures, including encryption, authentication protocols, and firewalls, tailored to specific project needs.",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/template.svg?updatedAt=1742456365823",
+    title: "Beyond Templates",
+    desc: "We build custom, future-ready solutions with modern frameworks and innovative tech.",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/integration-logo.svg?updatedAt=1735894366065",
-    title: "Integration",
-    desc: "Custom-coded solutions can seamlessly integrate with third-party APIs, legacy systems, and databases, offering broader capabilities and more control over the flow of data.",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/code.svg?updatedAt=1742456365846",
+    title: "Code that Thinks",
+    desc: "Our approach is not just about writing code, but crafting intelligent, intuitive, and scalable solutions.",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/logos/owner-logo.svg?updatedAt=1735894371558",
-    title: "Ownership",
-    desc: "When you code from scratch, you own the entire project, ensuring complete intellectual property control, reducing reliance on third-party platforms, and future-proofing your application.",
+    img: "https://ik.imagekit.io/webibee/Webibee/logos/ReImagined.svg?updatedAt=1742456365828",
+    title: "The Web, Reimagined",
+    desc: "We don't settle for the ordinary—we’re here to redefine what's possible online.",
   },
 ];
 
@@ -1081,12 +1081,12 @@ export const caseStudies = [
 ];
 
 export const outPerforms = [
-  "Uniqueness & Innovation",
-  "Performance & Security",
-  " Precision & Flexibility",
-  "Long-term",
-  "Seamless integrations",
-  "Full control",
+  "Code as a Creative Mindset",
+  "AI & Intelligent Experiences",
+  "Future-First Development",
+  "Code as a Creative Mindset",
+  "AI & Intelligent Experiences",
+  "Future-First Development"
 ];
 
 // TESTIMONIALS

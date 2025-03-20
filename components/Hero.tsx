@@ -9,21 +9,18 @@ const Hero = () => {
 
   useEffect(() => {
     const hasLoaded = sessionStorage.getItem("hasLoaded");
-    if (!hasLoaded) {
-      const timeout = setTimeout(() => {
-        setIsLoading(false);
-        sessionStorage.setItem("hasLoaded", "true");
-      }, 4000);
-      return () => clearTimeout(timeout);
-    } else {
+    if (hasLoaded) {
       setIsLoading(false);
     }
   }, []);
 
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+    sessionStorage.setItem("hasLoaded", "true"); 
+  };
+
   if (isLoading) {
-    return (
-      <LoadingPage />
-    );
+    return <LoadingPage onLoadingComplete={handleLoadingComplete} />;
   }
 
   return (

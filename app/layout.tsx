@@ -117,7 +117,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <NavBar />
-          <main className="relative">
+          <main>
             <SmoothScroll />
             {children}
           </main>

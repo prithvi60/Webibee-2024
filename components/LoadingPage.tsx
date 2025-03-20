@@ -1,12 +1,3 @@
-// "use client"
-// import dynamic from "next/dynamic";
-
-// const LoadingPage = dynamic(() => import("./LottieAnimationClient"), {
-//     ssr: false,
-// });
-
-// export default LoadingPage;
-
 "use client";
 
 import dynamic from "next/dynamic";
@@ -16,10 +7,17 @@ const LottieAnimationClient = dynamic(() => import("./LottieAnimationClient"), {
     ssr: false, // Prevents server-side rendering
 });
 
-const LoadingPage = () => {
+interface LoadingPageProps {
+    onLoadingComplete: () => void;
+}
+
+const LoadingPage = ({ onLoadingComplete }: LoadingPageProps) => {
+    const handleAnimationComplete = () => {
+        onLoadingComplete();
+    };
     return (
-        <div className="grid h-[85vh] place-content-center place-items-center">
-            <LottieAnimationClient />
+        <div className="grid h-screen w-full bg-white !z-[999999] top-0 left-0 absolute place-content-center place-items-center">
+            <LottieAnimationClient onAnimationComplete={handleAnimationComplete} />
         </div>
     );
 };

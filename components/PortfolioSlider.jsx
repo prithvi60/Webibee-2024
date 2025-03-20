@@ -1,9 +1,9 @@
 "use client";
-import { portfolioImages,portfolioImagesMob } from "@/libs/data";
+import { portfolioImages, portfolioImagesMob } from "@/libs/data";
 import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const PortfolioSlider = () => {
@@ -46,8 +46,8 @@ const PortfolioSlider = () => {
     const handleImageLoad = () => {
         setLoading(false);
     };
-        // Select images based on device type
-        const imagesToShow = isMobile ? portfolioImagesMob : portfolioImages;
+    // Select images based on device type
+    const imagesToShow = isMobile ? portfolioImagesMob : portfolioImages;
     return (
         <section className="py-10 sm:py-16 xl:py-28 w-full h-full">
             {/* h-[45vh] sm:h-[55vh] md:h-[75vh] lg:h-[100vh] xl:h-[100vh]  */}
@@ -63,7 +63,7 @@ const PortfolioSlider = () => {
                                 fill
                                 alt="image"
                                 src={image.img}
-                                className="object-cover md:object-contain object-left"
+                                className="object-cover md:object-contain object-center"
                                 onLoad={handleImageLoad}
                             />
                         </Link>

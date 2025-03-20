@@ -116,13 +116,11 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
-          {/* <Development /> */}
           <NavBar />
           <main className="relative">
             <SmoothScroll />
             {children}
           </main>
-          {/* <FloatingButton /> */}
           <Contact />
           <Footer />
           <FloatingButton />

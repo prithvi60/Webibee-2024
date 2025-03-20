@@ -13,7 +13,7 @@ const Hero = () => {
       const timeout = setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem("hasLoaded", "true");
-      }, 1000);
+      }, 4000);
       return () => clearTimeout(timeout);
     } else {
       setIsLoading(false);
@@ -21,7 +21,9 @@ const Hero = () => {
   }, []);
 
   if (isLoading) {
-    return <LoadingPage />;
+    return (
+      <LoadingPage />
+    );
   }
 
   return (

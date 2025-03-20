@@ -21,10 +21,10 @@ const AboutUs = () => {
               innovation, and quality, we started as a small team working with
               SMEs, helping them digitize and streamline operations. Over the
               years, we've built a reputation for delivering high-quality web
-              development, custom SaaS solutions, and digital marketing that drive
-              results.
+              development, custom SaaS solutions, and digital marketing that
+              drive results.
             </p>
-            <div className="absolute -bottom-20 md:-bottom-48 left-0 h-64 w-full md:h-80">
+            <div className="absolute -bottom-24 md:-bottom-52 left-0 h-64 w-full md:h-80">
               <Image
                 alt="svg"
                 src={
@@ -62,6 +62,15 @@ const AboutUs = () => {
           </div>
           <div className="font-semibold text-base sm:text-lg md:text-xl basis-full md:basis-1/2 !leading-10">
             <p>
+              At Webibee, we empower small and medium-sized enterprises (SMEs)
+              by providing essential Business Tech that help them thrive in the
+              modern business landscape. Our mission is to deliver tailored,
+              cutting-edge technologies and compelling digital experiences that
+              transform how businesses operate, engage with customers, and scale
+              effectively.
+            </p>
+            <br />
+            <p>
               Our journey began by recognizing the challenges entrepreneurs face
               when navigating the fast-changing tech landscape. We set out to
               create affordable, efficient, and scalable solutions that help
@@ -75,15 +84,6 @@ const AboutUs = () => {
                 technology, creativity, and strategic insights
               </span>{" "}
               to turn your ideas into reality
-            </p>
-            <br />
-            <p >
-              At Webibee, we empower small and medium-sized enterprises (SMEs) by
-              providing essential Business Tech that help them thrive in the
-              modern business landscape. Our mission is to deliver tailored,
-              cutting-edge technologies and compelling digital experiences that
-              transform how businesses operate, engage with customers, and scale
-              effectively.
             </p>
           </div>
         </div>

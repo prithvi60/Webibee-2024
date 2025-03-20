@@ -8,8 +8,6 @@ import React from 'react'
 const Page = () => {
     return (
         <div>
-            {/* <AboutHero /> */}
-            {/* <VelocityText /> */}
             <AboutUs />
             <Collaboration />
             <FAQ />

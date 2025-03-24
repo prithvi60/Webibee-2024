@@ -30,6 +30,7 @@ export default function Services() {
       >
         {services.map((service, idx) => (
           <motion.a
+            href={service.href}
             variants={variantGrid}
             initial="initial"
             whileInView="animate"

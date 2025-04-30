@@ -24,8 +24,8 @@ const CSHero = ({
         dots: false,
         infinite: true,
         speed: 2000,
-        autoplay: true,
-        autoplaySpeed: 4000,
+        // autoplay: true,
+        // autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow loading={loading} />,
@@ -75,16 +75,29 @@ const CSHero = ({
                                     index: number
                                 ) => (
                                     <div
-                                        className="relative overflow-hidden w-full h-64 md:h-80 xl:h-96"
+                                        className="relative overflow-hidden w-full h-64 md:h-96 xl:h-[520px]"
                                         key={index}
                                     >
                                         {slide.video ? (
+                                            // <video
+                                            //     autoPlay={true}
+                                            //     loop={true}
+                                            //     src={slide.video}
+                                            //     className="object-contain object-center w-max mx-auto h-full"
+                                            //     controls
+                                            //     onLoad={handleImageLoad}
+                                            // />
                                             <video
-                                                src={slide.video}
-                                                className="object-contain object-center w-full h-full"
+                                                autoPlay
+                                                loop
+                                                muted
+                                                playsInline
                                                 controls
                                                 onLoad={handleImageLoad}
-                                            />
+                                                className="object-contain object-center w-max mx-auto h-full"
+                                            >
+                                                <source src={slide.video} type="video/mp4" />
+                                            </video>
                                         ) : (
                                             <Image
                                                 fill
@@ -104,7 +117,7 @@ const CSHero = ({
                         viewport={{ amount: 0.3, once: true }}
                         initial="initial"
                         whileInView="animate"
-                        className="w-full grid grid-cols-1 md:grid-cols-2 gap-6"
+                        className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:mt-24 xl:mt-44"
                     >
                         {data.map((item: any, index: number) => (
                             <motion.div
@@ -144,7 +157,6 @@ const CSHero = ({
 };
 
 export default CSHero;
-
 
 function SampleNextArrow(props: any) {
     const { onClick, loading } = props;

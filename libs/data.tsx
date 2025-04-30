@@ -463,6 +463,7 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
+      { video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/vbcc.mp4?updatedAt=1746016221178", alt: "VBCC Website overview" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277",
         alt: "vbcc home page",
@@ -471,7 +472,6 @@ export const caseStudies = [
         img: "https://ik.imagekit.io/webibee/Webibee/vbcc-2.png?updatedAt=1735894429500",
         alt: "vbcc products",
       },
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
@@ -565,6 +565,7 @@ export const caseStudies = [
       { title: "Project Type", list: "Scale ( custom product )" },
     ],
     slides: [
+      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070",
         alt: "ensileta dashboard",
@@ -573,7 +574,6 @@ export const caseStudies = [
         img: "https://ik.imagekit.io/webibee/Webibee/ensileta-2.png?updatedAt=1735894416892",
         alt: "ensileta drawings",
       },
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Ensileta Interiors, a leading interior design firm, needed a comprehensive solution to streamline their project management process and enhance client communication. They required a customer portal that simplified approval workflows, provided a professional tech-forward interface, and elevated their brand's perception.  Webibee partnered with Ensileta to create the Design Management Hub, a feature-rich platform tailored to their business needs, enabling efficient project management and client satisfaction.",
@@ -661,6 +661,7 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
+      { video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/rasims.mp4?updatedAt=1746016222100", alt: "Rasim website overview" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537",
         alt: "rasim home page",
@@ -669,7 +670,6 @@ export const caseStudies = [
         img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537",
         alt: "rasim home page",
       },
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "Rasim Exports, a leading textile manufacturer, partnered with Webibee to redefine their brand identity and create a visually stunning online presence. With a major focus on showcasing their textile collections and impressing international buyers, especially for an Australian expo, we delivered a project that combined premium design, branding expertise, and multimedia production.This project went beyond just a website; it involved logo creation, brand image development, brochure design, product photography, and video production to ensure Rasim Exports stood out in a competitive market.",
@@ -837,6 +837,7 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
+      { video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/oneus.mp4?updatedAt=1746016193172", alt: "OneUs website overview" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038",
         alt: "oneUs home page",
@@ -845,7 +846,6 @@ export const caseStudies = [
         img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038",
         alt: "oneUs home page",
       },
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
     about:
       "OneUS Travels approached us to build a dynamic and visually appealing website that aligns with their travel industry branding. They required a snappy, user-friendly design with customized content, seamless navigation, and multimedia elements to enhance customer engagement. Additionally, we incorporated a customer portal and accommodated multiple tailored pages to meet their specific business needs.Our objective was to deliver a travel-themed website that not only looks premium but also provides an excellent user experience, complete with branded videos and interactive elements.",

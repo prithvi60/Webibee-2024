@@ -10,12 +10,14 @@ const CSHero = ({
     data,
     title,
     bgImg,
+    bgVideo,
     slides,
     summary,
 }: {
     data: any;
     title: string;
     bgImg: string;
+    bgVideo?: string;
     slides: any;
     summary: string;
 }) => {
@@ -36,16 +38,29 @@ const CSHero = ({
         setLoading(false);
     };
     return (
-        <section className="block w-full h-full space-y-28">
-            <div className="relative overflow-hidden w-full h-[35vh] md:h-[65vh] xl:min-h-screen    ">
-                <Image
-                    fill
-                    alt="bg image"
-                    quality={100}
-                    title="background image"
-                    src={bgImg}
-                    className="object-contain xl:object-cover object-center"
-                />
+        <section className="block w-full h-full space-y-10 md:space-y-28">
+            <div className="relative overflow-hidden w-full h-[35vh] md:h-[65vh] xl:min-h-screen sm:px-20 xl:px-64">
+                {bgVideo ? (
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        onLoad={handleImageLoad}
+                        className="object-cover object-center w-full m-auto h-full"
+                    >
+                        <source src={bgVideo} type="video/mp4" />
+                    </video>
+                ) : (
+                    <Image
+                        fill
+                        alt="bg image"
+                        quality={100}
+                        title="background image"
+                        src={bgImg}
+                        className="object-contain xl:object-cover object-center"
+                    />
+                )}
             </div>
             <div className="p-10 sm:px-20 xl:px-64 sm:pb-16 xl:pb-28 block space-y-10">
                 <motion.div
@@ -79,14 +94,6 @@ const CSHero = ({
                                         key={index}
                                     >
                                         {slide.video ? (
-                                            // <video
-                                            //     autoPlay={true}
-                                            //     loop={true}
-                                            //     src={slide.video}
-                                            //     className="object-contain object-center w-max mx-auto h-full"
-                                            //     controls
-                                            //     onLoad={handleImageLoad}
-                                            // />
                                             <video
                                                 autoPlay
                                                 loop

@@ -29,7 +29,8 @@ const Page: React.FC<PageProps> = async ({ params }) => {
             <CSHero
                 data={filteredData.table}
                 title={filteredData.title}
-                bgImg={filteredData.mainBgImg}
+                bgImg={filteredData?.mainBgImg}
+                bgVideo={filteredData?.video}
                 slides={filteredData.slides}
                 summary={filteredData.summary}
             />

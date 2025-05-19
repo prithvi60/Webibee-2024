@@ -37,35 +37,51 @@ export const portfolioImages = [
   },
 ];
 export const portfolioImagesMob = [
-  // { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
+  {
+    video:
+      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/vbcc.mp4?updatedAt=1746016221178",
+    href: "vbcc",
+    alt: "VBCC Portfolio Image",
+  },
+  {
+    video:
+      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/rasims.mp4?updatedAt=1746016222100",
+    href: "rasim",
+  },
+  {
+    img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
+    href: "daga",
+  },
+  {
+    video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/oneus.mp4?updatedAt=1746016193172",
+    href: "oneus",
+  },
   {
     img: "/ensilatacasestudy.png",
     href: "ensileta",
     alt: "Ensileta Portfolio Image",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
-    href: "oneus",
-  },
-  { img: "/rasimcasestudy.png", href: "rasim" },
-  // { img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568", href: "daga" },
 ];
 export const categories = [
   {
     title: "manufacturing",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853",
+    href: "/caseStudy/vbcc",
   },
   {
     title: "interior design",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385",
+    href: "/caseStudy/ensileta",
   },
   {
     title: "real estate",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576",
+    href: "/caseStudy/intermont",
   },
   {
     title: "travel & tourism",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231",
+    href: "/caseStudy/oneus",
   },
   // { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
 ];
@@ -74,18 +90,22 @@ export const categories2 = [
   {
     title: "legal services",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/daga-logo.svg?updatedAt=1735894362197",
+    href: "/caseStudy/daga",
   },
   {
     title: "apparel & textiles",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197",
+    href: "/caseStudy/rasim",
   },
   {
     title: "marine services",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/n9-logo.svg?updatedAt=1735894370420",
+    href: "#"
   },
   {
     title: "consumer goods (FMCG)",
     logo: "https://ik.imagekit.io/webibee/Webibee/logos/nivaran-logo.svg?updatedAt=1735894370616",
+    href: "#"
   },
 ];
 
@@ -463,7 +483,6 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/vbcc.mp4?updatedAt=1746016221178", alt: "VBCC Website overview" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/vbcc-1.png?updatedAt=1735894433277",
         alt: "vbcc home page",
@@ -473,6 +492,9 @@ export const caseStudies = [
         alt: "vbcc products",
       },
     ],
+    video:
+      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/vbcc.mp4?updatedAt=1746016221178",
+    alt: "VBCC Website overview",
     about:
       "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
     OCLists: [
@@ -565,7 +587,6 @@ export const caseStudies = [
       { title: "Project Type", list: "Scale ( custom product )" },
     ],
     slides: [
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/ensileta-1.png?updatedAt=1735894417070",
         alt: "ensileta dashboard",
@@ -575,6 +596,7 @@ export const caseStudies = [
         alt: "ensileta drawings",
       },
     ],
+    // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     about:
       "Ensileta Interiors, a leading interior design firm, needed a comprehensive solution to streamline their project management process and enhance client communication. They required a customer portal that simplified approval workflows, provided a professional tech-forward interface, and elevated their brand's perception.  Webibee partnered with Ensileta to create the Design Management Hub, a feature-rich platform tailored to their business needs, enabling efficient project management and client satisfaction.",
     OCLists: [
@@ -661,7 +683,6 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/rasims.mp4?updatedAt=1746016222100", alt: "Rasim website overview" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/rasim-1.png?updatedAt=1735894420537",
         alt: "rasim home page",
@@ -671,6 +692,9 @@ export const caseStudies = [
         alt: "rasim home page",
       },
     ],
+    video:
+      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/rasims.mp4?updatedAt=1746016222100",
+    alt: "Rasim website overview",
     about:
       "Rasim Exports, a leading textile manufacturer, partnered with Webibee to redefine their brand identity and create a visually stunning online presence. With a major focus on showcasing their textile collections and impressing international buyers, especially for an Australian expo, we delivered a project that combined premium design, branding expertise, and multimedia production.This project went beyond just a website; it involved logo creation, brand image development, brochure design, product photography, and video production to ensure Rasim Exports stood out in a competitive market.",
     OCLists: [
@@ -757,8 +781,8 @@ export const caseStudies = [
         img: "https://ik.imagekit.io/webibee/Webibee/daga-1.png?updatedAt=1735894412522",
         alt: "Daga home page",
       },
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
+    // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     about:
       "Daga & Daga, a prestigious law firm, sought to modernize their digital presence and internal workflows. They had no prior website and relied on outdated methods for creating and managing documents. Webibee collaborated with their team to design a professional website, establish streamlined workflows, and implement cloud-based tools to transform their operations and enhance their online visibility.This comprehensive project, completed in just 4 weeks, empowered Daga & Daga with a minimal, modern digital identity and an efficient content management system.",
     OCLists: [
@@ -837,7 +861,6 @@ export const caseStudies = [
       { title: "Project Type", list: "Grow (retainer work)" },
     ],
     slides: [
-      { video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/oneus.mp4?updatedAt=1746016193172", alt: "OneUs website overview" },
       {
         img: "https://ik.imagekit.io/webibee/Webibee/oneus-1.png?updatedAt=1735894420038",
         alt: "oneUs home page",
@@ -847,6 +870,9 @@ export const caseStudies = [
         alt: "oneUs home page",
       },
     ],
+    video:
+      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/oneus.mp4?updatedAt=1746016193172",
+    alt: "OneUs website overview",
     about:
       "OneUS Travels approached us to build a dynamic and visually appealing website that aligns with their travel industry branding. They required a snappy, user-friendly design with customized content, seamless navigation, and multimedia elements to enhance customer engagement. Additionally, we incorporated a customer portal and accommodated multiple tailored pages to meet their specific business needs.Our objective was to deliver a travel-themed website that not only looks premium but also provides an excellent user experience, complete with branded videos and interactive elements.",
     OCLists: [
@@ -934,8 +960,8 @@ export const caseStudies = [
         img: "https://ik.imagekit.io/webibee/Webibee/lotus-1.png?updatedAt=1735901571780",
         alt: "Lotus AI home page",
       },
-      // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     ],
+    // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
     about:
       "Webibee supported the Lotus AI Real Estate Listing website for four months, contributing to front-end development and the integration of advanced features. Our role included designing an intuitive UI, developing a web scraper for real-time property listings, and implementing data analytics on a map for a dynamic user experience. We worked collaboratively with another team, handling the integration of back-end systems, ensuring smooth data flow, and helping the site meet evolving needs. The goal was to provide users with a seamless, interactive platform for exploring real estate listings while maintaining high performance and ease of navigation.",
     OCLists: [
@@ -1086,7 +1112,7 @@ export const outPerforms = [
   "Future-First Development",
   "Code as a Creative Mindset",
   "AI & Intelligent Experiences",
-  "Future-First Development"
+  "Future-First Development",
 ];
 
 // TESTIMONIALS

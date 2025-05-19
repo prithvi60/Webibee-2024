@@ -28,3 +28,9 @@
   font-family: "Source Code Pro", serif;
   font-weight: 700;
 }
+
+@media screen and (max-width: 640px) {
+  .portfolio .slick-list {
+    height: 35vh !important;
+  }
+}

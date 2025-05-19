@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { parentVariant, variant1, variantGrid } from "@/libs/Variants";
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const Categories = () => {
     return (
@@ -32,15 +33,17 @@ const Categories = () => {
                             custom={idx}
                             viewport={{ once: true }}
                             key={idx}
-                            className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 flex flex-col items-center justify-center gap-10"
+                            className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96"
                         >
-                            <div className='relative mx-auto w-40 h-20 md:w-60 md:h-40'>
-                                <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
-                            </div>
-                            <hr className="w-full h-1 bg-secondary rounded-md" />
-                            <div className="text-[#404040] text-base tracking-wider md:text-lg block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
-                                <h4>{category.title}</h4>
-                            </div>
+                            <Link href={category.href} className='flex flex-col items-center justify-center gap-10'>
+                                <div className='relative mx-auto w-40 h-20 md:w-60 md:h-40'>
+                                    <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
+                                </div>
+                                <hr className="w-full h-1 bg-secondary rounded-md" />
+                                <div className="text-[#404040] text-base tracking-wider md:text-lg block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
+                                    <h4>{category.title}</h4>
+                                </div>
+                            </Link>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -57,15 +60,17 @@ const Categories = () => {
                             custom={idx}
                             viewport={{ once: true }}
                             key={idx}
-                            className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96 flex flex-col items-center justify-center gap-10"
+                            className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96"
                         >
-                            <div className='relative mx-auto w-40 h-20 md:w-60 md:h-40'>
-                                <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
-                            </div>
-                            <hr className="w-full h-1 bg-secondary rounded-md" />
-                            <div className="text-[#404040] text-base tracking-wider md:text-lg block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
-                                <h4>{category.title}</h4>
-                            </div>
+                            <Link href={category.href} className='flex flex-col items-center justify-center gap-10'>
+                                <div className='relative mx-auto w-40 h-20 md:w-60 md:h-40'>
+                                    <Image fill alt='logo' className='object-contain object-center' src={category.logo} />
+                                </div>
+                                <hr className="w-full h-1 bg-secondary rounded-md" />
+                                <div className="text-[#404040] text-base tracking-wider md:text-lg block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
+                                    <h4>{category.title}</h4>
+                                </div>
+                            </Link>
                         </motion.div>
                     ))}
                 </motion.div>

@@ -11,7 +11,7 @@ export default function Testimonials() {
   const [locTestimonials, setLocTestimonials] = useState(testimonials);
 
   useEffect(() => {
-    setLocTestimonials(isIndia ? testimonials.slice(0, 3) : testimonials.slice(3));
+    setLocTestimonials(isIndia ? testimonials.slice(0, 3) : testimonials.slice(3, testimonials.length));
   }, [isIndia]);
 
   const [isActive, setIsActive] = useState(locTestimonials[0].id);

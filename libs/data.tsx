@@ -48,20 +48,21 @@ export const portfolioImagesMob = [
       "https://ik.imagekit.io/webibee/Webibee/CS_Videos/rasims.mp4?updatedAt=1746016222100",
     href: "rasim",
   },
-  {
-    img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
-    href: "daga",
-  },
+  // {
+  //   img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
+  //   href: "daga",
+  // },
   {
     video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/oneus.mp4?updatedAt=1746016193172",
     href: "oneus",
   },
-  {
-    img: "/ensilatacasestudy.png",
-    href: "ensileta",
-    alt: "Ensileta Portfolio Image",
-  },
+  // {
+  //   img: "/ensilatacasestudy.png",
+  //   href: "ensileta",
+  //   alt: "Ensileta Portfolio Image",
+  // },
 ];
+
 export const categories = [
   {
     title: "manufacturing",
@@ -142,21 +143,21 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 4,
     reviewer: "Paul",
-    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    img: "https://ik.imagekit.io/webibee/Webibee/euro-flag.avif?updatedAt=1747718462403",
     position: "CEO, European Company",
     review: `Working with Webibee was a fantastic experience. They understood our needs and delivered a product that exceeded our expectations. Their attention to detail and commitment to quality is commendable. I would highly recommend their services to anyone looking for a reliable partner in web development.`,
   },
   {
     id: 5,
     reviewer: "Louis",
-    img: "https://ik.imagekit.io/webibee/Agency/uae%20logo.png",
+    img: "https://ik.imagekit.io/webibee/Webibee/UAE.jpg?updatedAt=1747718462781",
     position: "Managing Director, UAE Firm",
     review: `The team at Webibee transformed our online presence. Their innovative approach and technical expertise made a significant difference in our project. They were responsive and supportive throughout the process, ensuring we were satisfied with the final outcome.`,
   },
   {
     id: 6,
     reviewer: "Sarah",
-    img: "https://ik.imagekit.io/webibee/Agency/euro%20logo.png",
+    img: "https://ik.imagekit.io/webibee/Webibee/euro-flag.avif?updatedAt=1747718462403",
     position: "Marketing Head, European Company",
     review: `Webibee's team is exceptional! They took our ideas and turned them into a beautiful website that truly represents our brand. Their professionalism and dedication to our project were evident from start to finish. I can't recommend them enough!`,
   },

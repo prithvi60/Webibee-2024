@@ -9,9 +9,9 @@ const SmoothScroll: React.FC = () => {
 
     useEffect(() => {
         const lenisInstance = new lenis({
-            duration: 0.75, // Adjust duration
+            duration: 0.6, // Adjust duration
             easing: (t: number) =>
-                t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t, // EaseInOutQuad easing
+                t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,
             // smooth: true, // Enable smooth scrolling
             // direction: 'vertical', // Restrict scrolling to vertical
         });

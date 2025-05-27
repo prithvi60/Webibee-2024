@@ -39,7 +39,7 @@ const NavBar = () => {
             fill
             alt="logo"
             src={
-              "https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322"
+              "https://cdn.webibee.com/Webibee/webibeepurplelogo.png"
             }
             className="object-contain object-center"
           />
@@ -48,14 +48,12 @@ const NavBar = () => {
           {navLinks.map((link, idx) => (
             <li
               key={idx}
-              className={` ${
-                link.href === path &&
+              className={` ${link.href === path &&
                 link.href !== "/contact" &&
                 "underline underline-offset-[14px]"
-              } tracking-wide font-bold hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out" ${
-                link.title == "Talk to an Expert →" &&
+                } tracking-wide font-bold hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out" ${link.title == "Talk to an Expert →" &&
                 "capitalize font-bold text-info  hover:animate-pulse"
-              }`}
+                }`}
             >
               <Link href={`${link.href}`}>{link.title}</Link>
             </li>

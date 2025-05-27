@@ -10,7 +10,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Webibee Software Agency',
-    image: "https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322",
+    image: "https://cdn.webibee.com/Webibee/webibeepurplelogo.png",
     description: "Business Tech for Small Medium Enterprises across the globe",
     email: "support@webibee.com",
     url: "https://webibee.com"

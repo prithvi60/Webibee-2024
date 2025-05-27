@@ -30,13 +30,6 @@ export default function FloatingButton() {
             rel="noopener noreferrer"
             title="Google Chat"
           >
-            {/* <motion.img
-              loading="lazy"
-              src="https://ik.imagekit.io/webibee/Agency/google-chat.png?updatedAt=1735018588584" // Replace with a Google Chat icon URL
-              alt="Google Chat logo"
-              title="Google Chat logo"
-              className="h-12 w-12 md:h-16 md:w-20"
-            /> */}
             <div className="bg-white p-4 rounded-full border-secondary border-2">
               <SiGooglechat className="text-green-500 text-xl sm:text-3xl xl:text-4xl " />
             </div>

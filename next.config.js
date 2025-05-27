@@ -5,12 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ik.imagekit.io",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "mywebibeeworld.b-cdn.net",
+        hostname: "cdn.webibee.com",
         pathname: "/**",
       },
       {

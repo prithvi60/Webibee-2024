@@ -74,7 +74,7 @@ export default function Testimonials() {
         </h3>
         <div className="absolute -top-5 md:-top-10 left-48 xl:left-[480px] size-32 md:size-56 -z-10">
           <Image
-            src={"https://ik.imagekit.io/webibee/Webibee/svg%202.svg?updatedAt=1735894423795"}
+            src={"https://cdn.webibee.com/Webibee/svg%202.svg"}
             alt="svg"
             className="object-contain object-center"
             fill
@@ -174,7 +174,7 @@ export default function Testimonials() {
                       <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
                         <Image
                           fill
-                          src={"https://ik.imagekit.io/webibee/Webibee/sound.svg?updatedAt=1735894423738"}
+                          src={"https://cdn.webibee.com/Webibee/sound.svg"}
                           alt="image"
                           className="object-contain object-center"
                         />

@@ -28,7 +28,7 @@ const AboutUs = () => {
               <Image
                 alt="svg"
                 src={
-                  "https://mywebibeeworld.b-cdn.net/Webibee/bg%20svg.svg"
+                  "https://cdn.webibee.com/Webibee/bg%20svg.svg"
                 }
                 fill
                 className="object-contain object-center"
@@ -39,7 +39,7 @@ const AboutUs = () => {
             <Image
               alt="illustration"
               src={
-                "https://mywebibeeworld.b-cdn.net/Webibee/illustration-1.svg"
+                "https://cdn.webibee.com/Webibee/illustration-1.svg"
               }
               fill
               className="object-contain object-center"

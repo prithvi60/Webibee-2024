@@ -28,7 +28,7 @@ const MobileNav = ({
                 >
                     <Image
                         fill
-                        src={"https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322"}
+                        src={"https://cdn.webibee.com/Webibee/webibeepurplelogo.png"}
                         alt="Logo"
                         className="object-contain object-center"
                     />

@@ -28,24 +28,24 @@ export const portfolioImages = [
   },
   { img: "/rasimcasestudy.png", href: "rasim" },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/daga-bg.png",
+    img: "https://cdn.webibee.com/Webibee/daga-bg.png",
     href: "daga",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/oneus-bg.png",
+    img: "https://cdn.webibee.com/Webibee/oneus-bg.png",
     href: "oneus",
   },
 ];
 export const portfolioImagesMob = [
   {
     video:
-      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/vbcc.mp4",
+      "https://cdn.webibee.com/Webibee/CS_Videos/vbcc.mp4",
     href: "vbcc",
     alt: "VBCC Portfolio Image",
   },
   {
     video:
-      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/rasims.mp4",
+      "https://cdn.webibee.com/Webibee/CS_Videos/rasims.mp4",
     href: "rasim",
   },
   // {
@@ -53,7 +53,7 @@ export const portfolioImagesMob = [
   //   href: "daga",
   // },
   {
-    video: "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/oneus.mp4",
+    video: "https://cdn.webibee.com/Webibee/CS_Videos/oneus.mp4",
     href: "oneus",
   },
   // {
@@ -66,22 +66,22 @@ export const portfolioImagesMob = [
 export const categories = [
   {
     title: "manufacturing",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/VBCC-Logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/VBCC-Logo.svg",
     href: "/caseStudy/vbcc",
   },
   {
     title: "interior design",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/ensileta-logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/ensileta-logo.svg",
     href: "/caseStudy/ensileta",
   },
   {
     title: "real estate",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/intermont-logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/intermont-logo.svg",
     href: "/caseStudy/intermont",
   },
   {
     title: "travel & tourism",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/oneus-logo.png",
+    logo: "https://cdn.webibee.com/Webibee/logos/oneus-logo.png",
     href: "/caseStudy/oneus",
   },
   // { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
@@ -90,22 +90,22 @@ export const categories = [
 export const categories2 = [
   {
     title: "legal services",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/daga-logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/daga-logo.svg",
     href: "/caseStudy/daga",
   },
   {
     title: "apparel & textiles",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/rasim-logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/rasim-logo.svg",
     href: "/caseStudy/rasim",
   },
   {
     title: "marine services",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/n9-logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/n9-logo.svg",
     href: "#"
   },
   {
     title: "consumer goods (FMCG)",
-    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/nivaran-logo.svg",
+    logo: "https://cdn.webibee.com/Webibee/logos/nivaran-logo.svg",
     href: "#"
   },
 ];
@@ -116,7 +116,7 @@ export const testimonials = [
   {
     id: 1,
     reviewer: "Naveen V",
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-ceo.png",
+    img: "https://cdn.webibee.com/Webibee/vbcc-ceo.png",
     position: "Founder & CEO, VBCC Instruments",
     review: `Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.
 
@@ -127,7 +127,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 2,
     reviewer: "A. Jayesh Kumar Daga",
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/ceo-3.png",
+    img: "https://cdn.webibee.com/Webibee/ceo-3.png",
     position: "Head - Litigations, Daga and daga",
     review:
       "Webibee helped us with our website development and digital management needs, and the experience exceeded my expectations. Prithvi took our vision and turned it into a stunning reality. He also patiently responded to all my queries. I highly recommend their services to anyone looking for a reliable and innovative digital partner.",
@@ -135,7 +135,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 3,
     reviewer: "Rasim",
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/ceo-2.jpeg",
+    img: "https://cdn.webibee.com/Webibee/ceo-2.jpeg",
     position: "CEO, Rasim Exports",
     review:
       "The enhancement was really amazing . The data upgrades and artwork talks volumes of the hard work put behind . Overall , great job! ",
@@ -143,21 +143,21 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 4,
     reviewer: "Paul",
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/euro-flag_avif.heif",
+    img: "https://cdn.webibee.com/Webibee/euro-flag_avif.heif",
     position: "CEO, European Company",
     review: `Working with Webibee was a fantastic experience. They understood our needs and delivered a product that exceeded our expectations. Their attention to detail and commitment to quality is commendable. I would highly recommend their services to anyone looking for a reliable partner in web development.`,
   },
   {
     id: 5,
     reviewer: "Louis",
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/UAE.jpg",
+    img: "https://cdn.webibee.com/Webibee/UAE.jpg",
     position: "Managing Director, UAE Firm",
     review: `The team at Webibee transformed our online presence. Their innovative approach and technical expertise made a significant difference in our project. They were responsive and supportive throughout the process, ensuring we were satisfied with the final outcome.`,
   },
   {
     id: 6,
     reviewer: "Sarah",
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/euro-flag_avif.heif",
+    img: "https://cdn.webibee.com/Webibee/euro-flag_avif.heif",
     position: "Marketing Head, European Company",
     review: `Webibee's team is exceptional! They took our ideas and turned them into a beautiful website that truly represents our brand. Their professionalism and dedication to our project were evident from start to finish. I can't recommend them enough!`,
   },
@@ -223,27 +223,27 @@ export const services = [
 
 export const howItWorks = [
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/flex-logo.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/flex-logo.svg",
     title: "Creative Problem-Solving",
     desc: "Every challenge is an opportunity to design better experiences through code.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/scalable-logo.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/scalable-logo.svg",
     title: "AI as a Growth Catalyst",
     desc: "The web is evolving, and AI is shaping the next wave of smart, interactive digital experiences.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/template.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/template.svg",
     title: "Beyond Templates",
     desc: "We build custom, future-ready solutions with modern frameworks and innovative tech.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/code.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/code.svg",
     title: "Code that Thinks",
     desc: "Our approach is not just about writing code, but crafting intelligent, intuitive, and scalable solutions.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/ReImagined.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/ReImagined.svg",
     title: "The Web, Reimagined",
     desc: "We don't settle for the ordinary—we’re here to redefine what's possible online.",
   },
@@ -251,47 +251,47 @@ export const howItWorks = [
 
 export const ITEssentials = [
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%201.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%201.svg",
     title: "Technical Research",
     desc: "In-depth analysis to gather insights and optimize solutions for complex projects.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%202.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%202.svg",
     title: "Audit & Consultation:",
     desc: "Comprehensive evaluation and expert guidance to enhance performance, efficiency, and growth.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%203.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%203.svg",
     title: "Automation & Integration",
     desc: "Streamlining processes by connecting systems and automating workflows for improved efficiency and scalability.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%204.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%204.svg",
     title: "3rd Party API Integration",
     desc: "Seamlessly connecting external services to enhance functionality and streamline operations.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%205.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%205.svg",
     title: "AI Tool Integration",
     desc: "Integrating AI solutions to automate tasks, enhance decision-making, and drive innovation.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%206.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%206.svg",
     title: "CRM Integration",
     desc: "Connecting and automating customer data to improve relationships, streamline workflows, and boost productivity.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%207.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%207.svg",
     title: "Front-End Development",
     desc: "Crafting responsive, user-friendly interfaces that enhance user experience and bring designs to life.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%208.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%208.svg",
     title: "Full-Stack Development",
     desc: "Building end-to-end web applications by combining both front-end and back-end expertise for seamless functionality.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%209.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%209.svg",
     title: "SaaS MVP",
     desc: "Developing a scalable, minimal viable product for a Software-as-a-Service platform to quickly validate ideas and attract users.",
   },
@@ -299,37 +299,37 @@ export const ITEssentials = [
 
 export const digitalEssentials = [
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%201.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%201.svg",
     title: "Website Content",
     desc: "Crafting engaging, informative, and SEO-optimized content that communicates your brand message and drives user action.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%202.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%202.svg",
     title: "Marketing Research",
     desc: "Analyzing market trends, consumer behavior, and competitors to inform strategies and drive business growth.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%203.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%203.svg",
     title: "Social Media Ads",
     desc: "Creating targeted ad campaigns across social platforms to boost brand visibility, engagement, and conversions.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%204.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%204.svg",
     title: "Google Ads",
     desc: "Optimizing paid search campaigns on Google to drive traffic, increase visibility, and maximize ROI.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%205.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%205.svg",
     title: "Landing Page CRO",
     desc: "Optimizing landing pages to enhance user experience, increase conversions, and maximize business goals.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%206.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%206.svg",
     title: "Business Website Essentials",
     desc: "Building a professional, responsive website with key features to enhance branding, navigation, and performance.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/digital%20icon%207.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/digital%20icon%207.svg",
     title: "E-commerce Essentials",
     desc: "Creating a secure, user-friendly online store with key features to drive sales.",
   },
@@ -337,42 +337,42 @@ export const digitalEssentials = [
 
 export const creativeEssentials = [
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%201.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%201.svg",
     title: "UI/UX - Web",
     desc: "Designing intuitive, user-friendly websites that enhance user experience and engagement.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%202.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%202.svg",
     title: "UI/UX - Mobile",
     desc: "Crafting seamless, responsive mobile interfaces for a flawless user experience across devices.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%203.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%203.svg",
     title: "Logo Design",
     desc: "Creating unique, memorable logos that represent your brand's identity.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%204.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%204.svg",
     title: "Graphic Design",
     desc: "Designing visually appealing graphics that communicate your message effectively.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%205.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%205.svg",
     title: "Print Design",
     desc: "Developing designs for brochures, posters, and other printed materials that leave a lasting impression.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%206.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%206.svg",
     title: "Mockup Design",
     desc: "Creating realistic representations of digital designs to showcase concepts and ideas.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%207.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%207.svg",
     title: "3D Design",
     desc: "Producing dynamic, detailed 3D visuals for products, environments, and concepts.",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/IT%20icon%207.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/IT%20icon%207.svg",
     title: "Interactive Website",
     desc: "Designing engaging, interactive websites that enhance user experience and functionality.",
   },
@@ -403,7 +403,7 @@ export const shine = [
 
 export const allProjectsLists = [
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/VBCC-Logo.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/VBCC-Logo.svg",
     alt: "VBCC Logo Image",
     title: "VBCC",
     year: "2024",
@@ -412,7 +412,7 @@ export const allProjectsLists = [
     href: "vbcc",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/rasim-logo.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/rasim-logo.svg",
     alt: "Rasim Logo Image",
     title: "Rasim",
     year: "2024",
@@ -421,7 +421,7 @@ export const allProjectsLists = [
     href: "rasim",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/ensileta-logo.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/ensileta-logo.svg",
     alt: "Ensileta Logo Image",
     title: "Ensileta Interior",
     year: "2024",
@@ -430,7 +430,7 @@ export const allProjectsLists = [
     href: "ensileta",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/intermont-logo.svg",
+    img: "https://cdn.webibee.com/Webibee/logos/intermont-logo.svg",
     alt: "Intermont Logo Image",
     title: "Intermont",
     year: "2024",
@@ -439,7 +439,7 @@ export const allProjectsLists = [
     href: "intermont",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/ashok-logo.png",
+    img: "https://cdn.webibee.com/Webibee/logos/ashok-logo.png",
     alt: "Ashok Minerals Logo Image",
     title: "Ashok Minerals",
     year: "2024",
@@ -448,7 +448,7 @@ export const allProjectsLists = [
     href: "ashokMinerals",
   },
   {
-    img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/oneus-logo.png",
+    img: "https://cdn.webibee.com/Webibee/logos/oneus-logo.png",
     alt: "OneUs Logo Image",
     title: "OneUs",
     year: "2024",
@@ -485,16 +485,16 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-1.png",
+        img: "https://cdn.webibee.com/Webibee/vbcc-1.png",
         alt: "vbcc home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-2.png",
+        img: "https://cdn.webibee.com/Webibee/vbcc-2.png",
         alt: "vbcc products",
       },
     ],
     video:
-      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/vbcc.mp4",
+      "https://cdn.webibee.com/Webibee/CS_Videos/vbcc.mp4",
     alt: "VBCC Website overview",
     about:
       "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
@@ -518,47 +518,47 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Enhanced User Experience",
         desc: "Designed a visually appealing, intuitive interface that reflects expertise and builds trust. Incorporated consistent branding and ensured user-friendly navigation for seamless product and service exploration.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "Improved Page Speed Scores",
         desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "Seamless Collaboration",
         desc: "Actively communicated with their in-house marketing and content teams to align the website's functionality with ongoing campaigns. Offered technical support to ensure smooth transitions during SEO implementations.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "Long-Term Solutions",
         desc: "Designed scalable infrastructure to support future updates and projects. Delivered detailed documentation and training for their internal team.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-5.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-5.png",
         title: "Broader Reach",
         desc: "With improved SEO performance, VBCC Instruments expanded its online visibility and attracted more organic traffic.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/CS%20-2.png",
+        img: "https://cdn.webibee.com/Webibee/CS%20-2.png",
         alt: "vbcc products",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-1.png",
+        img: "https://cdn.webibee.com/Webibee/vbcc-1.png",
         alt: "vbcc home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-2.png",
+        img: "https://cdn.webibee.com/Webibee/vbcc-2.png",
         alt: "vbcc products",
       },
     ],
     testimonialImg:
-      "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-ceo.png",
+      "https://cdn.webibee.com/Webibee/vbcc-ceo.png",
     testimonialName: "Naveen V",
     testimonialPosition: "CEO, VBCC Instruments",
     testimonials:
@@ -589,11 +589,11 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/ensileta-1.png",
+        img: "https://cdn.webibee.com/Webibee/ensileta-1.png",
         alt: "ensileta dashboard",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/ensileta-2.png",
+        img: "https://cdn.webibee.com/Webibee/ensileta-2.png",
         alt: "ensileta drawings",
       },
     ],
@@ -620,42 +620,42 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Custom Approval System",
         desc: "Built a role-based access system to streamline the management of design mockups, quotes, and deliverable approvals, ensuring seamless project oversight.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "Client-Centric Dashboard",
         desc: "Implemented clean code practices and advanced optimizations to achieve high Google Page Speed scores. Built SEO-friendly content structures to support their marketing team's keyword strategies.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "Interactive Comment & Revision",
         desc: "Introduced a structured commenting system that allows clients to leave feedback directly on mockups, accelerating the revision process and improving communication.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "Branded User Experience",
         desc: "Incorporated Ensileta's branding to create a polished, professional look that reflects innovation and reinforces customer trust in the platform.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-ensileta-5.svg",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-ensileta-5.svg",
         title: "Scalable Integration & Training",
         desc: "Developed a scalable backend framework to manage multiple clients and projects, integrated it into existing workflows, and provided hands-on training for seamless adoption.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/ensileta-1.png",
+        img: "https://cdn.webibee.com/Webibee/ensileta-1.png",
         alt: "ensileta dashboard",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/ensileta-2.png",
+        img: "https://cdn.webibee.com/Webibee/ensileta-2.png",
         alt: "ensileta drawings",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/ensileta-3.png",
+        img: "https://cdn.webibee.com/Webibee/ensileta-3.png",
         alt: "ensileta drawing upload",
       },
     ],
@@ -664,7 +664,7 @@ export const caseStudies = [
     title: "Rasim Exports",
     href: "rasim",
     mainBgImg:
-      "https://mywebibeeworld.b-cdn.net/Webibee/rasim-bg.png",
+      "https://cdn.webibee.com/Webibee/rasim-bg.png",
     summary: "Premium Branding & Website Design for Rasim Exports",
     table: [
       {
@@ -685,16 +685,16 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/rasim-1.png",
+        img: "https://cdn.webibee.com/Webibee/rasim-1.png",
         alt: "rasim home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/rasim-1.png",
+        img: "https://cdn.webibee.com/Webibee/rasim-1.png",
         alt: "rasim home page",
       },
     ],
     video:
-      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/rasims.mp4",
+      "https://cdn.webibee.com/Webibee/CS_Videos/rasims.mp4",
     alt: "Rasim website overview",
     about:
       "Rasim Exports, a leading textile manufacturer, partnered with Webibee to redefine their brand identity and create a visually stunning online presence. With a major focus on showcasing their textile collections and impressing international buyers, especially for an Australian expo, we delivered a project that combined premium design, branding expertise, and multimedia production.This project went beyond just a website; it involved logo creation, brand image development, brochure design, product photography, and video production to ensure Rasim Exports stood out in a competitive market.",
@@ -718,34 +718,34 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Stronger Brand Identity",
         desc: "A new logo and a refined brand image now position Rasim Exports as a premium and trustworthy manufacturer, enhancing their market credibility.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "Enhanced Visual Appeal",
         desc: "The professional drone footage, product photos, and videos provided high-quality visuals, making the brand more appealing at the Australian expo and online.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "User-Friendly Website",
         desc: "The newly designed website offers a clean, easy-to-navigate layout with detailed product pages, leading to a smoother and more engaging user experience for buyers.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "Successful Expo Promotion",
         desc: "The branded brochures and promotional videos helped attract attention at the Australian expo, strengthening Rasim Exports’ presence and generating new client inquiries.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-rasim-5.svg",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-rasim-5.svg",
         title: "Seamless Product Updates",
         desc: "The dynamic content management system ensures the website stays up-to-date with the latest collections, providing buyers with timely and relevant product information.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/rasim-1.png",
+        img: "https://cdn.webibee.com/Webibee/rasim-1.png",
         alt: "rasim home page",
       },
     ],
@@ -754,7 +754,7 @@ export const caseStudies = [
     title: "Daga & Daga",
     href: "daga",
     mainBgImg:
-      "https://mywebibeeworld.b-cdn.net/Webibee/daga-bg.png",
+      "https://cdn.webibee.com/Webibee/daga-bg.png",
     summary: "Modern Web Design for Daga & Daga Law Firm",
     table: [
       {
@@ -775,11 +775,11 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/daga-1.png",
+        img: "https://cdn.webibee.com/Webibee/daga-1.png",
         alt: "Daga home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/daga-1.png",
+        img: "https://cdn.webibee.com/Webibee/daga-1.png",
         alt: "Daga home page",
       },
     ],
@@ -806,34 +806,34 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Strong Online Presence",
         desc: "We designed a sleek, responsive website that established the firm's digital presence, improving visibility and credibility.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "Simplified Inquiries",
         desc: "Integrated WhatsApp chat for direct communication, increasing client engagement and reducing response times.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "Efficient Recruitment",
         desc: "Developed a career portal with automated resume submissions and email acknowledgments, streamlining the hiring process.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "Modern Branding",
         desc: "Recreated the firm’s logo and designed custom icons to enhance brand identity and professionalism.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-daga-5.svg",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-daga-5.svg",
         title: "Improved Operations",
         desc: "Set up cloud-based workflows and automated email systems, saving time and boosting productivity.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/daga-1.png",
+        img: "https://cdn.webibee.com/Webibee/daga-1.png",
         alt: "Daga home page",
       },
     ],
@@ -842,7 +842,7 @@ export const caseStudies = [
     title: "OneUS Travels",
     href: "oneus",
     mainBgImg:
-      "https://mywebibeeworld.b-cdn.net/Webibee/oneus-bg.png",
+      "https://cdn.webibee.com/Webibee/oneus-bg.png",
     summary: "Premium Travel-Themed Website for OneUS Travels",
     table: [
       {
@@ -863,16 +863,16 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/oneus-1.png",
+        img: "https://cdn.webibee.com/Webibee/oneus-1.png",
         alt: "oneUs home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/oneus-1.png",
+        img: "https://cdn.webibee.com/Webibee/oneus-1.png",
         alt: "oneUs home page",
       },
     ],
     video:
-      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/oneus.mp4",
+      "https://cdn.webibee.com/Webibee/CS_Videos/oneus.mp4",
     alt: "OneUs website overview",
     about:
       "OneUS Travels approached us to build a dynamic and visually appealing website that aligns with their travel industry branding. They required a snappy, user-friendly design with customized content, seamless navigation, and multimedia elements to enhance customer engagement. Additionally, we incorporated a customer portal and accommodated multiple tailored pages to meet their specific business needs.Our objective was to deliver a travel-themed website that not only looks premium but also provides an excellent user experience, complete with branded videos and interactive elements.",
@@ -896,34 +896,34 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Premium Travel Design",
         desc: "Delivered a visually captivating and cohesive travel-themed website that reflects the brand's identity, attracting more visitors and enhancing credibility.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "SEO-Driven Content",
         desc: "Developed engaging, keyword-optimized content that boosted search rankings and increased organic traffic to service pages.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "Seamless Portal Access",
         desc: "Integrated a customer portal directly into the site navigation, streamlining bookings and improving the overall client experience.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "Dynamic Custom Pages",
         desc: "Created multiple tailored service pages, allowing OneUS Travels to highlight their offerings and expand their service catalog.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-oneus-5.svg",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-oneus-5.svg",
         title: "Optimized Performance",
         desc: "Enhanced loading speeds and responsiveness across all devices, providing users with a seamless browsing experience that increased site engagement by 30%.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/oneus-1.png",
+        img: "https://cdn.webibee.com/Webibee/oneus-1.png",
         alt: "oneUs home page",
       },
     ],
@@ -932,7 +932,7 @@ export const caseStudies = [
     title: "Lotus AI Real Estate",
     href: "lotus",
     mainBgImg:
-      "https://mywebibeeworld.b-cdn.net/Webibee/lotus-bg.png",
+      "https://cdn.webibee.com/Webibee/lotus-bg.png",
     summary:
       "Front-End Development and Data Analytics for Lotus AI Real Estate Listing Website",
     table: [
@@ -954,11 +954,11 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/lotus-1.png",
+        img: "https://cdn.webibee.com/Webibee/lotus-1.png",
         alt: "Lotus AI home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/lotus-1.png",
+        img: "https://cdn.webibee.com/Webibee/lotus-1.png",
         alt: "Lotus AI home page",
       },
     ],
@@ -985,34 +985,34 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Polished UI Design",
         desc: "A sleek, modern interface that is both user-friendly and responsive, providing an easy browsing experience for property listings across all devices.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "Reliable Real-Time Listings",
         desc: "The custom web scraper ensures that property data remains accurate and up-to-date, enhancing the website’s reliability and trustworthiness.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "Engaging Data Map",
         desc: "Interactive map analytics allowed users to filter properties based on metrics, improving their search experience and providing rich, data-driven insights.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "Successful Project Milestones",
         desc: "We achieved key milestones, such as integrating the web scraper, building the analytics map, and optimizing performance, ensuring continuous project progress.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-lotus-5.svg",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-lotus-5.svg",
         title: "Ongoing Development Support",
         desc: "Continuous front-end development support over four months ensured timely bug fixes, feature enhancements, and performance improvements, keeping the site up-to-date.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/lotus-1.png",
+        img: "https://cdn.webibee.com/Webibee/lotus-1.png",
         alt: "Lotus AI home page",
       },
     ],
@@ -1021,7 +1021,7 @@ export const caseStudies = [
     title: "Lavender Salon Portal",
     href: "lavender",
     mainBgImg:
-      "https://mywebibeeworld.b-cdn.net/Webibee/lavender-bg.png",
+      "https://cdn.webibee.com/Webibee/lavender-bg.png",
     summary: "Front-End Development and Support for Lavender Salon Portal",
     table: [
       {
@@ -1042,11 +1042,11 @@ export const caseStudies = [
     ],
     slides: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/lavender-1.png",
+        img: "https://cdn.webibee.com/Webibee/lavender-1.png",
         alt: "Lavender home page",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/lavender-1.png",
+        img: "https://cdn.webibee.com/Webibee/lavender-1.png",
         alt: "Lavender home page",
       },
       // { video: "https://ik.imagekit.io/webibee/Webibee/sample.mp4?updatedAt=1735897295029", alt: "sample video" },
@@ -1073,34 +1073,34 @@ export const caseStudies = [
     ],
     results: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-1.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-1.png",
         title: "Streamlined Booking",
         desc: "The custom calendar simplified appointment management with available slots and instant confirmations, improving the process for staff and clients.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-2.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-2.png",
         title: "Real-Time Sync",
         desc: "API integration ensured real-time updates, providing immediate confirmations and reducing delays, boosting reliability and satisfaction.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-3.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-3.png",
         title: "Stable Performance",
         desc: "Critical bugs were quickly fixed, ensuring reliability and minimizing downtime, leading to fewer disruptions and improved functionality.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-4.png",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-4.png",
         title: "On-Time Delivery",
         desc: "Features and fixes were delivered on schedule, keeping the project on track and meeting client expectations.",
       },
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/logos/CS-lavender-5.svg",
+        img: "https://cdn.webibee.com/Webibee/logos/CS-lavender-5.svg",
         title: "Enhanced UX",
         desc: "Front-end optimizations improved speed and responsiveness, leading to a more user-friendly experience and higher engagement.",
       },
     ],
     images: [
       {
-        img: "https://mywebibeeworld.b-cdn.net/Webibee/lavender-1.png",
+        img: "https://cdn.webibee.com/Webibee/lavender-1.png",
         alt: "Lavender home page",
       },
     ],

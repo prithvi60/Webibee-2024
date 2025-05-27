@@ -57,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "Webibee Agency",
       images: [
         {
-          url: "https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322",
+          url: "https://cdn.webibee.com/Webibee/webibeepurplelogo.png",
         },
       ],
     },

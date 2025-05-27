@@ -28,24 +28,24 @@ export const portfolioImages = [
   },
   { img: "/rasimcasestudy.png", href: "rasim" },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/daga-bg.png",
     href: "daga",
   },
   {
-    img: "https://ik.imagekit.io/webibee/Webibee/oneus-bg.png?updatedAt=1735894418357",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/oneus-bg.png",
     href: "oneus",
   },
 ];
 export const portfolioImagesMob = [
   {
     video:
-      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/vbcc.mp4?updatedAt=1746016221178",
+      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/vbcc.mp4",
     href: "vbcc",
     alt: "VBCC Portfolio Image",
   },
   {
     video:
-      "https://ik.imagekit.io/webibee/Webibee/CS_Videos/rasims.mp4?updatedAt=1746016222100",
+      "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/rasims.mp4",
     href: "rasim",
   },
   // {
@@ -53,7 +53,7 @@ export const portfolioImagesMob = [
   //   href: "daga",
   // },
   {
-    video: "https://ik.imagekit.io/webibee/Webibee/CS_Videos/oneus.mp4?updatedAt=1746016193172",
+    video: "https://mywebibeeworld.b-cdn.net/Webibee/CS_Videos/oneus.mp4",
     href: "oneus",
   },
   // {
@@ -66,22 +66,22 @@ export const portfolioImagesMob = [
 export const categories = [
   {
     title: "manufacturing",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/VBCC-Logo.svg",
     href: "/caseStudy/vbcc",
   },
   {
     title: "interior design",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/ensileta-logo.svg?updatedAt=1735894363385",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/ensileta-logo.svg",
     href: "/caseStudy/ensileta",
   },
   {
     title: "real estate",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/intermont-logo.svg?updatedAt=1735894366576",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/intermont-logo.svg",
     href: "/caseStudy/intermont",
   },
   {
     title: "travel & tourism",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/oneus-logo.png?updatedAt=1735894371231",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/oneus-logo.png",
     href: "/caseStudy/oneus",
   },
   // { title: "Industrial & Manufacturing", logo: "https://ik.imagekit.io/webibee/Webibee/logos/VBCC-Logo.svg?updatedAt=1735894371853" },
@@ -90,22 +90,22 @@ export const categories = [
 export const categories2 = [
   {
     title: "legal services",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/daga-logo.svg?updatedAt=1735894362197",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/daga-logo.svg",
     href: "/caseStudy/daga",
   },
   {
     title: "apparel & textiles",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/rasim-logo.svg?updatedAt=1735894372197",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/rasim-logo.svg",
     href: "/caseStudy/rasim",
   },
   {
     title: "marine services",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/n9-logo.svg?updatedAt=1735894370420",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/n9-logo.svg",
     href: "#"
   },
   {
     title: "consumer goods (FMCG)",
-    logo: "https://ik.imagekit.io/webibee/Webibee/logos/nivaran-logo.svg?updatedAt=1735894370616",
+    logo: "https://mywebibeeworld.b-cdn.net/Webibee/logos/nivaran-logo.svg",
     href: "#"
   },
 ];
@@ -116,7 +116,7 @@ export const testimonials = [
   {
     id: 1,
     reviewer: "Naveen V",
-    img: "https://ik.imagekit.io/webibee/Webibee/vbcc-ceo.png?updatedAt=1735894429407",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/vbcc-ceo.png",
     position: "Founder & CEO, VBCC Instruments",
     review: `Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.
 
@@ -127,7 +127,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 2,
     reviewer: "A. Jayesh Kumar Daga",
-    img: "https://ik.imagekit.io/webibee/Webibee/ceo-3.png?updatedAt=1735894414063",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/ceo-3.png",
     position: "Head - Litigations, Daga and daga",
     review:
       "Webibee helped us with our website development and digital management needs, and the experience exceeded my expectations. Prithvi took our vision and turned it into a stunning reality. He also patiently responded to all my queries. I highly recommend their services to anyone looking for a reliable and innovative digital partner.",
@@ -135,7 +135,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 3,
     reviewer: "Rasim",
-    img: "https://ik.imagekit.io/webibee/Webibee/ceo-2.jpeg?updatedAt=1735894412153",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/ceo-2.jpeg",
     position: "CEO, Rasim Exports",
     review:
       "The enhancement was really amazing . The data upgrades and artwork talks volumes of the hard work put behind . Overall , great job! ",
@@ -143,21 +143,21 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
   {
     id: 4,
     reviewer: "Paul",
-    img: "https://ik.imagekit.io/webibee/Webibee/euro-flag.avif?updatedAt=1747718462403",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/euro-flag_avif.heif",
     position: "CEO, European Company",
     review: `Working with Webibee was a fantastic experience. They understood our needs and delivered a product that exceeded our expectations. Their attention to detail and commitment to quality is commendable. I would highly recommend their services to anyone looking for a reliable partner in web development.`,
   },
   {
     id: 5,
     reviewer: "Louis",
-    img: "https://ik.imagekit.io/webibee/Webibee/UAE.jpg?updatedAt=1747718462781",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/UAE.jpg",
     position: "Managing Director, UAE Firm",
     review: `The team at Webibee transformed our online presence. Their innovative approach and technical expertise made a significant difference in our project. They were responsive and supportive throughout the process, ensuring we were satisfied with the final outcome.`,
   },
   {
     id: 6,
     reviewer: "Sarah",
-    img: "https://ik.imagekit.io/webibee/Webibee/euro-flag.avif?updatedAt=1747718462403",
+    img: "https://mywebibeeworld.b-cdn.net/Webibee/euro-flag_avif.heif",
     position: "Marketing Head, European Company",
     review: `Webibee's team is exceptional! They took our ideas and turned them into a beautiful website that truly represents our brand. Their professionalism and dedication to our project were evident from start to finish. I can't recommend them enough!`,
   },

@@ -10,6 +10,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "mywebibeeworld.b-cdn.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "youtube.com",
         pathname: "/**",
       },

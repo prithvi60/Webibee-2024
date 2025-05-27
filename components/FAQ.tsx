@@ -93,7 +93,7 @@ const FAQ = () => {
                     <Image
                         alt="illustration"
                         src={
-                            "https://ik.imagekit.io/webibee/Webibee/illustration-2.svg?updatedAt=1735894417887"
+                            "https://mywebibeeworld.b-cdn.net/Webibee/illustration-2.svg"
                         }
                         fill
                         className="object-contain object-center"

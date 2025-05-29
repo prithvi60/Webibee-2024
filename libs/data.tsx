@@ -22,6 +22,10 @@ export const footerNavLinks = [
 export const portfolioImages = [
   { img: "/vbcccasestudy.png", href: "vbcc", alt: "VBCC Portfolio Image" },
   {
+    img: "https://cdn.webibee.com/Webibee/oneus-bg.png",
+    href: "oneus",
+  },
+  {
     img: "/ensilatacasestudy.png",
     href: "ensileta",
     alt: "Ensileta Portfolio Image",
@@ -30,10 +34,6 @@ export const portfolioImages = [
   {
     img: "https://cdn.webibee.com/Webibee/daga-bg.png",
     href: "daga",
-  },
-  {
-    img: "https://cdn.webibee.com/Webibee/oneus-bg.png",
-    href: "oneus",
   },
 ];
 export const portfolioImagesMob = [
@@ -101,12 +101,12 @@ export const categories2 = [
   {
     title: "marine services",
     logo: "https://cdn.webibee.com/Webibee/logos/n9-logo.svg",
-    href: "#"
+    href: "/caseStudy/n9"
   },
   {
     title: "consumer goods (FMCG)",
     logo: "https://cdn.webibee.com/Webibee/logos/nivaran-logo.svg",
-    href: "#"
+    href: "/caseStudy/cne"
   },
 ];
 

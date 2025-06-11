@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import SmoothScroll from "@/components/SmoothScroll";
 import FloatingButton from "@/components/FloatingButton";
+import Script from "next/script";
 
 // Meta Data
 export async function generateMetadata(): Promise<Metadata> {
@@ -76,6 +77,10 @@ const sourceCodePro = Source_Code_Pro({
   weight: "400",
 });
 
+const hotjarId = process.env.NEXT_PUBLIC_HOTJAR_ID || '';
+const ahrefsKey = process.env.NEXT_PUBLIC_AHREFS_KEY || '';
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID || '';
+
 export default function RootLayout({
   children,
 }: {
@@ -127,6 +132,59 @@ export default function RootLayout({
           <ScrollToTopButton />
         </Providers>
       </body>
+      {/* Hotjar Script */}
+      {hotjarId && (
+        <Script
+          id="hotjar"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+                (function(h,o,t,j,a,r){
+                    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                    h._hjSettings={hjid:"${hotjarId}",hjsv:6};
+                    a=o.getElementsByTagName('head')[0];
+                    r=o.createElement('script');r.async=1;
+                    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                    a.appendChild(r);
+                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+              `,
+          }}
+        />
+      )}
+      {/* Ahrefs Analytics Script */}
+      {ahrefsKey && (
+        <Script
+          id="ahrefs-analytics"
+          strategy="afterInteractive"
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key={ahrefsKey}
+          async
+        />
+      )}
+
+      {/* Google Tag Manager (gtag.js) */}
+      {gtmId && (
+        <>
+          <Script
+            id="gtag"
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${gtmId}`}
+            async
+          />
+          <Script
+            id="gtag-config"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${gtmId}');
+                `,
+            }}
+          />
+        </>
+      )}
       <GoogleAnalytics gaId="G-4ES4NTQ7T8" />
     </html>
   );

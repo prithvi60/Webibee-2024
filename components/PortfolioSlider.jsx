@@ -3,13 +3,13 @@ import { portfolioImages, portfolioImagesMob } from "@/libs/data";
 import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const PortfolioSlider = () => {
     const [loading, setLoading] = useState(true);
     const [isMobile, setIsMobile] = useState(false);
-
+    const videoRefs = useRef([]);
     // Detect screen width and update state
     useEffect(() => {
         const handleResize = () => {
@@ -21,6 +21,21 @@ const PortfolioSlider = () => {
 
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    useEffect(() => {
+        const video = videoRefs.current[0];
+        if (video) {
+            const tryPlay = () => {
+                if (video.readyState >= 2) {
+                    video.play();
+                } else {
+                    video.addEventListener("loadedmetadata", () => video.play(), { once: true });
+                }
+            };
+            tryPlay();
+        }
+    }, []);
+
     const settings = {
         dots: false,
         infinite: true,
@@ -29,8 +44,45 @@ const PortfolioSlider = () => {
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // rows: 3,
-        // slidesPerRow: 1,
+        afterChange: (current) => {
+            videoRefs.current.forEach((video, idx) => {
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+
+                    if (idx === current) {
+                        const playVideo = () => {
+                            const playPromise = video.play();
+                            if (playPromise !== undefined) {
+                                playPromise.catch((error) => {
+                                    console.error("Play prevented:", error);
+                                });
+                            }
+                        };
+
+                        // If metadata already loaded, play immediately
+                        if (video.readyState >= 2) {
+                            playVideo();
+                        } else {
+                            // Wait for video to be ready
+                            video.addEventListener("loadedmetadata", playVideo, { once: true });
+                        }
+                    }
+                }
+            });
+        },
+        // afterChange: (current) => {
+        //     videoRefs.current.forEach((video, idx) => {
+        //         if (video) {
+        //             if (idx === current) {
+        //                 video.play();
+        //             } else {
+        //                 video.pause();
+        //                 video.currentTime = 0;
+        //             }
+        //         }
+        //     });
+        // },
         nextArrow: <SampleNextArrow loading={loading} />,
         prevArrow: <SamplePrevArrow loading={loading} />,
         responsive: [
@@ -62,10 +114,10 @@ const PortfolioSlider = () => {
                             {image.video ? (
                                 <video
                                     autoPlay
+                                    ref={el => (videoRefs.current[index] = el)}
                                     loop
                                     muted
                                     playsInline
-                                    onLoad={handleImageLoad}
                                     className="object-cover object-center w-full h-full"
                                 >
                                     <source src={image.video} type="video/mp4" />

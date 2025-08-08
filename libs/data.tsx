@@ -38,29 +38,18 @@ export const portfolioImages = [
 ];
 export const portfolioImagesMob = [
   {
-    video:
-      "https://cdn.webibee.com/Webibee/CS_Videos/vbcc.mp4",
+    video: "https://cdn.webibee.com/Webibee/CS_Videos/vbcc.mp4",
     href: "vbcc",
     alt: "VBCC Portfolio Image",
   },
   {
-    video:
-      "https://cdn.webibee.com/Webibee/CS_Videos/rasims.mp4",
+    video: "https://cdn.webibee.com/Webibee/CS_Videos/rasims.mp4",
     href: "rasim",
   },
-  // {
-  //   img: "https://ik.imagekit.io/webibee/Webibee/daga-bg.png?updatedAt=1735894413568",
-  //   href: "daga",
-  // },
   {
     video: "https://cdn.webibee.com/Webibee/CS_Videos/oneus.mp4",
     href: "oneus",
   },
-  // {
-  //   img: "/ensilatacasestudy.png",
-  //   href: "ensileta",
-  //   alt: "Ensileta Portfolio Image",
-  // },
 ];
 
 export const categories = [
@@ -101,12 +90,12 @@ export const categories2 = [
   {
     title: "marine services",
     logo: "https://cdn.webibee.com/Webibee/logos/n9-logo.svg",
-    href: "/caseStudy/n9"
+    href: "/caseStudy/n9",
   },
   {
     title: "consumer goods (FMCG)",
     logo: "https://cdn.webibee.com/Webibee/logos/nivaran-logo.svg",
-    href: "/caseStudy/cne"
+    href: "/caseStudy/cne",
   },
 ];
 
@@ -493,8 +482,7 @@ export const caseStudies = [
         alt: "vbcc products",
       },
     ],
-    video:
-      "https://cdn.webibee.com/Webibee/CS_Videos/vbcc.mp4",
+    video: "https://cdn.webibee.com/Webibee/CS_Videos/vbcc.mp4",
     alt: "VBCC Website overview",
     about:
       "VBCC Instruments, part of a group of companies specializing in high-precision laboratory and industrial instruments, needed a revamped online presence to align with their brand's vision and marketing goals. They sought a modern, user-friendly design that could showcase their offerings while achieving high website performance metrics and seamless integration with their marketing and SEO teams.Our team at Webibee stepped in to redesign their website and provide technical expertise for their ongoing SEO strategy, including work on another affiliated website, VBCC Research.",
@@ -557,8 +545,7 @@ export const caseStudies = [
         alt: "vbcc products",
       },
     ],
-    testimonialImg:
-      "https://cdn.webibee.com/Webibee/vbcc-ceo.png",
+    testimonialImg: "https://cdn.webibee.com/Webibee/vbcc-ceo.png",
     testimonialName: "Naveen V",
     testimonialPosition: "CEO, VBCC Instruments",
     testimonials:
@@ -663,8 +650,7 @@ export const caseStudies = [
   {
     title: "Rasim Exports",
     href: "rasim",
-    mainBgImg:
-      "https://cdn.webibee.com/Webibee/rasim-bg.png",
+    mainBgImg: "https://cdn.webibee.com/Webibee/rasim-bg.png",
     summary: "Premium Branding & Website Design for Rasim Exports",
     table: [
       {
@@ -693,8 +679,7 @@ export const caseStudies = [
         alt: "rasim home page",
       },
     ],
-    video:
-      "https://cdn.webibee.com/Webibee/CS_Videos/rasims.mp4",
+    video: "https://cdn.webibee.com/Webibee/CS_Videos/rasims.mp4",
     alt: "Rasim website overview",
     about:
       "Rasim Exports, a leading textile manufacturer, partnered with Webibee to redefine their brand identity and create a visually stunning online presence. With a major focus on showcasing their textile collections and impressing international buyers, especially for an Australian expo, we delivered a project that combined premium design, branding expertise, and multimedia production.This project went beyond just a website; it involved logo creation, brand image development, brochure design, product photography, and video production to ensure Rasim Exports stood out in a competitive market.",
@@ -753,8 +738,7 @@ export const caseStudies = [
   {
     title: "Daga & Daga",
     href: "daga",
-    mainBgImg:
-      "https://cdn.webibee.com/Webibee/daga-bg.png",
+    mainBgImg: "https://cdn.webibee.com/Webibee/daga-bg.png",
     summary: "Modern Web Design for Daga & Daga Law Firm",
     table: [
       {
@@ -841,8 +825,7 @@ export const caseStudies = [
   {
     title: "OneUS Travels",
     href: "oneus",
-    mainBgImg:
-      "https://cdn.webibee.com/Webibee/oneus-bg.png",
+    mainBgImg: "https://cdn.webibee.com/Webibee/oneus-bg.png",
     summary: "Premium Travel-Themed Website for OneUS Travels",
     table: [
       {
@@ -871,8 +854,7 @@ export const caseStudies = [
         alt: "oneUs home page",
       },
     ],
-    video:
-      "https://cdn.webibee.com/Webibee/CS_Videos/oneus.mp4",
+    video: "https://cdn.webibee.com/Webibee/CS_Videos/oneus.mp4",
     alt: "OneUs website overview",
     about:
       "OneUS Travels approached us to build a dynamic and visually appealing website that aligns with their travel industry branding. They required a snappy, user-friendly design with customized content, seamless navigation, and multimedia elements to enhance customer engagement. Additionally, we incorporated a customer portal and accommodated multiple tailored pages to meet their specific business needs.Our objective was to deliver a travel-themed website that not only looks premium but also provides an excellent user experience, complete with branded videos and interactive elements.",
@@ -931,8 +913,7 @@ export const caseStudies = [
   {
     title: "Lotus AI Real Estate",
     href: "lotus",
-    mainBgImg:
-      "https://cdn.webibee.com/Webibee/lotus-bg.png",
+    mainBgImg: "https://cdn.webibee.com/Webibee/lotus-bg.png",
     summary:
       "Front-End Development and Data Analytics for Lotus AI Real Estate Listing Website",
     table: [
@@ -1020,8 +1001,7 @@ export const caseStudies = [
   {
     title: "Lavender Salon Portal",
     href: "lavender",
-    mainBgImg:
-      "https://cdn.webibee.com/Webibee/lavender-bg.png",
+    mainBgImg: "https://cdn.webibee.com/Webibee/lavender-bg.png",
     summary: "Front-End Development and Support for Lavender Salon Portal",
     table: [
       {
@@ -1385,23 +1365,31 @@ export const clip = [
   },
 ];
 
-// export const linkedInPostData = [
-//   {
-//     text: "𝑼𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈 𝑾𝒆𝒃 𝑽𝒊𝒕𝒂𝒍𝒔 𝑪𝒐𝒏𝒕𝒅: 𝑻𝒊𝒎𝒆 𝒕𝒐 𝑭𝒊𝒓𝒔𝒕 𝑩𝒚𝒕𝒆 (𝑻𝑻𝑭𝑩) To ensure the websites are performing well for users and google ranking TTFB is important .It delivers a fast and responsive user experience.𝑾𝒉𝒂𝒕 𝒊𝒔 𝑻𝑻𝑭𝑩? Time to First Byte (TTFB) is a web performance metric that measures the time it takes for a browser to receive the first byte of data from a web server after requesting a webpage. 𝑾𝒉𝒚 𝒊𝒔 𝑻𝑻𝑭𝑩 𝑰𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕?. 𝑼𝒔𝒆𝒓 𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒆: A fast TTFB contributes to a quick loading website, which is crucial for providing a positive user experience. Users are more likely to stay and engage with a site that loads quickly.-𝑺𝒆𝒂𝒓𝒄𝒉 𝑬𝒏𝒈𝒊𝒏𝒆 𝑹𝒂𝒏𝒌𝒊𝒏𝒈: Search engines like Google consider page speed as a ranking factor. A slow TTFB can negatively impact your website's search engine ranking. 𝑪𝒐𝒏𝒗𝒆𝒓𝒔𝒊𝒐𝒏 𝑹𝒂𝒕𝒆𝒔: Faster websites tend to have higher conversion rates. A slow TTFB can lead to increased bounce rates and lower conversion rates. 𝑹𝒆𝒂𝒍-𝒘𝒐𝒓𝒍𝒅 𝑬𝒙𝒂𝒎𝒑𝒍𝒆: Imagine a customer visiting your e-commerce website. A slow TTFB might make them wait longer to see product listings, leading to frustration and potentially leaving your site for a competitor with faster loading times.",
-//     postUrl:
-//       "https://www.linkedin.com/feed/update/urn:li:activity:7193117187920826368/",
-//     image: [
-//       {
-//         url: "https://ik.imagekit.io/webibee/linkedinimg.jpg?updatedAt=1715253470590",
-//       },
-//     ],
-//   },
-//   {
-//     text: "Exploring AI integration on web.dev to push web development boundaries.There is a lot of information in the AI world. As a web developer, one of my main ways to consume practical AI information is through the articles from their website. They provide ideas and tools that are focused on the developer audience. By the way, the information is curated by the team at Google.Check out Artificial Intelligence in their explore section. I'm currently learning about RAG-based possibilities in websites.",
-//     postUrl:
-//       "https://www.linkedin.com/posts/prithvi-n_artificial-intelligence-webdev-activity-7190583082746286080-yNkR/",
-//     article: {
-//       title: "Artificial Intelligence | web.dev",
-//     },
-//   },
-// ];
+// Dynamic page data
+
+export const aboutData = [
+  {
+    mainTitle: "Social Media",
+    highlight: "Marketing",
+    about:
+      "We understand that social media is not just a platform; it’s a powerful tool to connect, engage, and build relationships with your audience. Our skilled social media marketing team is passionate about creating data-driven strategies that drive brand awareness, foster meaningful interactions, and generate measurable results.",
+    img: "/sample-1.jpg",
+    alt: "marketing",
+  },
+  {
+    mainTitle: "Social Media",
+    highlight: "Management",
+    about:
+      "We understand that social media is not just a platform; it’s a powerful tool to connect, engage, and build relationships with your audience. Our skilled social media marketing team is passionate about creating data-driven strategies that drive brand awareness, foster meaningful interactions, and generate measurable results.",
+    img: "/sample-2.jpg",
+    alt: "management",
+  },
+  {
+    mainTitle: "Content",
+    highlight: "Marketing",
+    about:
+      "Content is the cornerstone of digital marketing strategies. In an era where consumers are inundated with information, compelling and valuable content serves as the foundation for building brand awareness, driving engagement, and nurturing relationships with your audience. Content marketing involves the creation and distribution of relevant, informative, and entertaining content across various digital channels, including websites, blogs, social media platforms, email newsletters, and more.",
+    img: "/sample-1.jpg",
+    alt: "marketing",
+  },
+];

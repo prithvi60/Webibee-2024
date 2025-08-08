@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 import {
     parentVariant,
     variant2,
-    variantGrid,
 } from "@/libs/Variants";
+import { BlogCard } from "../blog/BlogCard";
 
 const ViewAllProjects = () => {
     return (
@@ -31,46 +31,7 @@ const ViewAllProjects = () => {
                 className="flex overflow-x-scroll md:overflow-x-auto md:grid max-w-lg md:max-w-full w-full md:grid-cols-2 xl:grid-cols-3 no_scrollbar md:place-content-center md:place-items-center gap-10 xl:gap-5 pb-10"
             >
                 {allProjectsLists.map((list, idx) => (
-                    <motion.div
-                        variants={variantGrid}
-                        initial="initial"
-                        whileInView="animate"
-                        custom={idx}
-                        viewport={{ once: true }}
-                        key={idx}
-                        className="block min-w-60 md:max-w-[480px] pb-5 shadow-md rounded-lg overflow-hidden h-[520px] md:h-[640px]"
-                    >
-                        <Link
-                            href={`/caseStudy/${list.href}`}
-                            passHref
-                            className="space-y-8"
-                        >
-                            <div
-                                className={`h-32 overflow-hidden w-full md:h-64 relative mx-auto`}
-                                style={{ backgroundColor: list.bg }}
-                            >
-                                <Image
-                                    alt="icon"
-                                    src={list.img}
-                                    fill
-                                    className="object-contain object-center p-5"
-                                />
-                            </div>
-                            <div className="space-y-4  p-5">
-                                <div className="flex justify-between items-center font-EbGaramond font-bold tracking-wider text-[#1B1B1CCC]">
-                                    <h4 className="md:text-3xl sm:text-2xl text-xl truncate w-[15ch]">
-                                        {list.title.length > 15
-                                            ? `${list.title.substring(0, 15)}...`
-                                            : list.title}
-                                    </h4>
-                                    <h5 className="md:text-xl text-lg ">{list.year}</h5>
-                                </div>
-                                <p className="font-SourceCodePro text-base sm:text-lg !leading-normal">
-                                    {list.desc}
-                                </p>
-                            </div>
-                        </Link>
-                    </motion.div>
+                    <BlogCard list={list} key={idx} />
                 ))}
             </motion.div>
 

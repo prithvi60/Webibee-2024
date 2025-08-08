@@ -56,7 +56,11 @@ export async function POST(req) {
                 : ""
             }
             <p style="font-size: 16px; color: #555;"><strong>Phone Number:</strong> ${phone}</p>
-            <p style="font-size: 16px; color: #555;"><strong>Company Name:</strong> ${companyName}</p>
+            ${
+              companyName
+                ? `<p style="font-size: 16px; color: #555;"><strong>Company Name:</strong> ${companyName}</p>`
+                : ""
+            }
             ${
               message
                 ? `<p style="font-size: 16px; color: #555;"><strong>Concern:</strong> ${message}</p>`

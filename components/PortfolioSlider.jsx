@@ -71,18 +71,6 @@ const PortfolioSlider = () => {
                 }
             });
         },
-        // afterChange: (current) => {
-        //     videoRefs.current.forEach((video, idx) => {
-        //         if (video) {
-        //             if (idx === current) {
-        //                 video.play();
-        //             } else {
-        //                 video.pause();
-        //                 video.currentTime = 0;
-        //             }
-        //         }
-        //     });
-        // },
         nextArrow: <SampleNextArrow loading={loading} />,
         prevArrow: <SamplePrevArrow loading={loading} />,
         responsive: [
@@ -102,7 +90,6 @@ const PortfolioSlider = () => {
     const imagesToShow = isMobile ? portfolioImagesMob : portfolioImages;
     return (
         <section className="py-10 sm:py-16 xl:py-28 w-full h-full">
-            {/* h-[45vh] sm:h-[55vh] md:h-[75vh] lg:h-[100vh] xl:h-[100vh]  */}
             <div className="slider-container relative">
                 <Slider {...settings} className="portfolio">
                     {imagesToShow.map((image, index) => (
@@ -117,6 +104,7 @@ const PortfolioSlider = () => {
                                     ref={el => (videoRefs.current[index] = el)}
                                     loop
                                     muted
+                                    webkit-playsinline="true"
                                     playsInline
                                     className="object-cover object-center w-full h-full"
                                 >

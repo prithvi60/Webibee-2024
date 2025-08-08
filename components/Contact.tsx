@@ -85,7 +85,7 @@ const Contact = () => {
                             <strong className="font-extrabold text-info">Vision</strong>
                         </h4>
                     )}
-                    {(path === "/" || path === "/about" || path === "/proficiency") && (
+                    {(path === "/" || path === "/about" || path === "/proficiency" || path) && (
                         <div className="block space-y-6 lg:space-y-10">
                             {/* <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
                                 Feel the Impact

@@ -2,17 +2,10 @@ import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import NavBar from "@/components/Navbar";
 import { EB_Garamond, Source_Code_Pro } from "next/font/google";
-import Head from "next/head";
 import { Partytown } from "@builder.io/partytown/react";
-import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import SmoothScroll from "@/components/SmoothScroll";
-import FloatingButton from "@/components/FloatingButton";
 import Script from "next/script";
 
 // Meta Data
@@ -120,17 +113,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Providers>
-          <NavBar />
-          <main>
-            <SmoothScroll />
+        <main>
+          <Providers>
             {children}
-          </main>
-          <Contact />
-          <Footer />
-          <FloatingButton />
-          <ScrollToTopButton />
-        </Providers>
+          </Providers>
+        </main>
       </body>
       {/* Hotjar Script */}
       {hotjarId && (

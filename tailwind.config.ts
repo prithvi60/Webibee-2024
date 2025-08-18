@@ -45,6 +45,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("@tailwindcss/typography"),
     heroui({
       themes: {
         light: {

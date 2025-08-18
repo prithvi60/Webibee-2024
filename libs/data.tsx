@@ -1,5 +1,5 @@
 export const navLinks = [
-  // { href: "/about", title: "About" },
+  { href: "/blog", title: "Blog" },
   { href: "/whyCode", title: "Why Code" },
   // { href: "/proficiency", title: "Proficiency" },
   { href: "/works", title: "Portfolio" },
@@ -8,7 +8,7 @@ export const navLinks = [
 
 export const footerNavLinks = [
   { href: "/", title: "Home" },
-  // { href: "/caseStudies", title: "Case Studies" },
+  { href: "/blog", title: "Blog" },
   { href: "/about", title: "About" },
   { href: "/whyCode", title: "Why Code" },
   { href: "/proficiency", title: "Proficiency" },
@@ -1393,3 +1393,20 @@ export const aboutData = [
     alt: "marketing",
   },
 ];
+
+
+// dynamic places
+
+// Valid cities array
+export const VALID_CITIES = [
+  "bangalore",
+  "chennai",
+  "usa"
+];
+
+// City display names mapping
+export const CITY_DISPLAY_NAMES = {
+  bangalore: "Bangalore",
+  chennai: "Chennai",
+  usa: "USA"
+};

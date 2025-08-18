@@ -72,12 +72,11 @@ const ContactForm = ({ seo, blog }: { seo?: boolean, blog?: boolean }) => {
     };
 
     return (
-
         <motion.form
             variants={variantContact}
             viewport={{ once: true }}
             initial="initial"
-            whileInView="animate" className={`w-full ${!blog ? "md:w-3/5" : "md:sticky md:top-5 lg:mt-32 xl:mt-36"}`} onSubmit={handleSubmit}>
+            whileInView="animate" className={`w-full ${!blog && !seo ? "md:w-3/5" : ""}`} onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
                 <input
                     type="text"

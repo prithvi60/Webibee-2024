@@ -14,7 +14,7 @@ const CounterStats = () => {
     }, []);
 
     return (
-        <section className="h-full md:h-[55dvh] flex flex-wrap md:flex-nowrap gap-6 lg:gap-10 w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:pb-28">
+        <section className="h-full md:h-[55dvh] flex flex-wrap md:flex-nowrap gap-6 lg:gap-10 w-full p-10 sm:px-20 xl:px-48 sm:py-16 xl:pb-28">
             <Stats
                 num={2.7}
                 decimals={1}

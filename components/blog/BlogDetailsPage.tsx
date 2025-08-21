@@ -5,11 +5,14 @@ import ContactForm from "../contact/ContactForm";
 const BlogDetailsPage = ({ post }: { post: any }) => {
 
     return (
-        <section className="relative w-full h-full mx-auto lg:max-w-full xl:max-w-fit 2xl:ml-80 px-7 py-12 sm:py-16 xl:py-20">
-            <div className="font-Gilroy space-10 md:space-y-10">
-                <h2 className={`font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start mb-6`}>
-                    <strong className="text-info">{post.title}</strong>
+        <section className="relative w-full h-full flex flex-col lg:flex-row lg:justify-between gap-8 xl:gap-12 mx-auto lg:max-w-full xl:max-w-fit 2xl:ml-80 px-7 py-12 sm:py-16 xl:py-20">
+            <div className="font-Gilroy space-6 md:space-y-10 lg:w-[65%]">
+                <h2 className="text-2xl font-bold tracking-normal capitalize font-Gilroy text-secondary md:text-3xl xl:text-4xl">
+
                 </h2>
+                <h3 className={`font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start`}>
+                    <strong className="text-info">{post.title}</strong>
+                </h3>
                 {/* <div className="relative overflow-hidden w-full h-[35vh] md:h-[75vh] sm:px-20 xl:px-64 rounded-md">
                     <Image
                         fill
@@ -20,17 +23,30 @@ const BlogDetailsPage = ({ post }: { post: any }) => {
                         className="object-cover object-center"
                     />
                 </div> */}
-                <div className="hidden md:block md:float-right pl-10">
-                    <ContactForm seo blog />
-                </div>
-                <div className="max-w-7xl font-Poppins prose prose-blue mx-auto prose-h1:text-3.5xl prose-h1:font-bold prose-h2:text-6xl prose-h2:font-bold prose-h3:text-5xl prose-h3:font-bold prose-h4:text-6xl prose-h4:font-bold prose-p:leading-relaxed prose-p:text-lg lg:prose-p:text-xl prose-p:mt-4 prose-p:mb-4 prose-blockquote:leading-relaxed prose-blockquote:text-lg lg:prose-blockquote:text-xl prose-list:list-disc prose-list-decimal">
+                <div className="max-w-7xl font-Poppins prose prose-blue mx-auto prose-p:leading-relaxed prose-p:mt-4 prose-p:mb-4 prose-blockquote:leading-relaxed prose-blockquote:text-lg lg:prose-blockquote:text-xl">
                     <PortableText value={post.blockContent} components={customComponents} />
                 </div>
             </div>
-            <div className="block md:hidden w-full">
+            <div className="w-full lg:w-[35%]">
                 <ContactForm seo blog />
             </div>
         </section>
+        // <section className="relative w-full h-full mx-auto lg:max-w-full xl:max-w-fit 2xl:ml-80 px-7 py-12 sm:py-16 xl:py-20">
+        //     <div className="font-Gilroy space-10 md:space-y-10">
+        //         <h2 className={`font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start mb-6`}>
+        //             <strong className="text-info">{post.title}</strong>
+        //         </h2>
+        //         <div className="hidden md:block md:float-right pl-10">
+        //             <ContactForm seo blog />
+        //         </div>
+        //         <div className="max-w-7xl font-Poppins prose prose-blue mx-auto  prose-p:leading-relaxed prose-p:mt-4 prose-p:mb-4 prose-blockquote:leading-relaxed prose-blockquote:text-lg lg:prose-blockquote:text-xl prose-list:list-disc prose-list-decimal">
+        //             <PortableText value={post.blockContent} components={customComponents} />
+        //         </div>
+        //     </div>
+        //     <div className="block md:hidden w-full">
+        //         <ContactForm seo blog />
+        //     </div>
+        // </section>
     )
 }
 

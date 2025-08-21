@@ -14,7 +14,7 @@ const initialFormData = {
     message: "",
 };
 
-const ContactForm = ({ seo, blog }: { seo?: boolean, blog?: boolean }) => {
+const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
 
@@ -76,7 +76,15 @@ const ContactForm = ({ seo, blog }: { seo?: boolean, blog?: boolean }) => {
             variants={variantContact}
             viewport={{ once: true }}
             initial="initial"
-            whileInView="animate" className={`w-full ${!blog && !seo ? "md:w-3/5" : ""}`} onSubmit={handleSubmit}>
+            whileInView="animate"
+            className={`w-full ${!blog ? "md:w-3/5" : "md:sticky md:top-5 lg:mt-16 "}`}
+            onSubmit={handleSubmit}
+        >
+            {seo && (
+                <h3 className="bg-info/80 text-center font-bold tracking-wide mb-6 text-white rounded-lg px-5 py-3">
+                    Get In Touch
+                </h3>
+            )}
             <div className="flex flex-col gap-6">
                 <input
                     type="text"
@@ -140,7 +148,6 @@ const ContactForm = ({ seo, blog }: { seo?: boolean, blog?: boolean }) => {
                 </button>
             </div>
         </motion.form>
-
     );
 };
 

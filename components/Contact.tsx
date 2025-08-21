@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <section
             className={`${path === "/contact" || path === "/thankyou" ? "hidden" : "block"
-                } w-full p-10 sm:px-12 xl:pt-12 xl:pb-6 max-w-5xl mx-auto text-center`}
+                } w-full p-10 sm:px-12 xl:pt-12 xl:pb-6 max-w-5xl 2xl:max-w-6xl mx-auto text-center`}
         >
             {path.startsWith("/caseStudy") ? (
                 <motion.div
@@ -67,6 +67,21 @@ const Contact = () => {
                         </div>
                     )}
                 </motion.div>
+            ) : path === "/blog" || path.startsWith("/blog") ? (
+                <motion.div
+                    variants={variantTitle}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    whileInView="animate" className={`flex flex-col md:flex-row items-center w-full justify-between`}>
+                    {/* <div className="space-y-10 w-full md:w-3/5"> */}
+                    <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px] text-left w-full lg:w-3/5">
+                        Ready to take your project to the{" "}
+                        <strong className="font-extrabold text-info">next level?</strong>{" "}
+                        Let’s talk about your goals!
+                    </h4>
+                    <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                    {/* </div> */}
+                </motion.div>
             ) : (
                 <motion.div
                     variants={variantTitle}
@@ -103,35 +118,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// const caseStudyContact = [
-//     {
-//         title1: "Ready to take your project to the",
-//         title2: "next level?",
-//         title3: "Let’s talk about your goals!",
-//         btn: "GET IN TOUCH",
-//         href: "/contact",
-//     },
-//     {
-//         title1: "See all our creative",
-//         title2: "designs and projects",
-//         title3: "in one place!",
-//         btn: "Our Works",
-//         href: "/works",
-//     },
-// ];
-
-// const essentialsContact = [
-//     {
-//         title1: "",
-//         title2: "",
-//         title3: "",
-//         btn: "",
-//     },
-//     {
-//         title1: "",
-//         title2: "",
-//         title3: "",
-//         href: "",
-//     },
-// ];

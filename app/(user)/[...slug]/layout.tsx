@@ -1,23 +1,26 @@
-import { Metadata } from 'next';
-import React from 'react'
+import { Metadata } from "next";
+import React from "react";
 
 interface SiteLayoutProps {
     children: React.ReactNode;
 }
 
-// Meta Data
-export async function generateMetadata({ params }: { params: { slug: string | string[] } }): Promise<Metadata> {
-    let slug = params.slug;
+interface GenerateMetadataProps {
+    params: Promise<{ slug: string | string[] }>;
+}
 
-    if (Array.isArray(slug)) {
-        slug = slug.join("-");
-    }
+export async function generateMetadata(
+    { params }: GenerateMetadataProps
+): Promise<Metadata> {
+    const { slug } = await params;
 
-    const decodedId = slug
+    const slugStr = Array.isArray(slug) ? slug.join("-") : slug;
+
+    const decodedId = slugStr
         .replace(/-/g, " ")
         .toLowerCase()
         .replace(/\b\w/g, (c) => c.toUpperCase());
- 
+
     return {
         title: `Webibee Software Agency | ${decodedId}`,
         description:
@@ -48,11 +51,7 @@ export async function generateMetadata({ params }: { params: { slug: string | st
 }
 
 const SiteLayout = ({ children }: SiteLayoutProps) => {
-    return (
-        <main>
-            {children}
-        </main>
-    )
-}
+    return <main>{children}</main>;
+};
 
-export default SiteLayout
+export default SiteLayout;

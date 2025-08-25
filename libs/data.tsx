@@ -1394,19 +1394,28 @@ export const aboutData = [
   },
 ];
 
-
-// dynamic places
+// dynamic places && category
 
 // Valid cities array
-export const VALID_CITIES = [
-  "bangalore",
-  "chennai",
-  "usa"
-];
+export const VALID_CITIES = ["bangalore", "chennai", "usa"];
 
 // City display names mapping
 export const CITY_DISPLAY_NAMES = {
   bangalore: "Bangalore",
   chennai: "Chennai",
-  usa: "USA"
+  usa: "USA",
 };
+
+// dynmic valid category
+
+export const VALID_CATEGORY = [
+  "web-design",
+  "branding",
+  "design",
+  "wordpress",
+  "shopify-apps",
+  "fullstack",
+  "ai",
+  "ads",
+  "ui-ux",
+];

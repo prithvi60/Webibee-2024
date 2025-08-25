@@ -24,7 +24,7 @@ const Page = async ({ params }: PageProps) => {
   );
 
   return (
-    <main>
+    <main className="!scroll-smooth">
       <BlogDetailsPage post={post} />
     </main>
   );

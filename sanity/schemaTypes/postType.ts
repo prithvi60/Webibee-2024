@@ -58,6 +58,13 @@ export const postType = defineType({
       type: "datetime",
     }),
     defineField({
+      name: "toc",
+      title: "Show Table of Contents",
+      type: "boolean",
+      description: "Enable to show a Table of Contents (heading H2).",
+      initialValue: true,
+    }),
+    defineField({
       title: "Block Content",
       name: "blockContent",
       type: "array",
@@ -76,30 +83,38 @@ export const postType = defineType({
             },
           ],
         },
+        {
+          type: "file",
+          name: "videoUpload",
+          title: "Video Upload",
+          options: { accept: "video/*" },
+          fields: [
+            {
+              name: "caption",
+              type: "string",
+              title: "Caption",
+            },
+          ],
+        },
+        {
+          type: "object",
+          name: "videoEmbed",
+          title: "Video Embed",
+          fields: [
+            {
+              name: "url",
+              type: "url",
+              title: "Video URL",
+              description: "Paste a YouTube, Vimeo, or external video link",
+            },
+            {
+              name: "title",
+              type: "string",
+              title: "Video Title",
+            },
+          ],
+        },
       ],
     }),
   ],
 });
-
-// preview: {
-//   select: {
-//     title: "title",
-//     author: "author.name",
-//     media: "mainImage",
-//   },
-//   prepare(selection) {
-//     const { author } = selection;
-//     return { ...selection, subtitle: author && `by ${author}` };
-//   },
-// },
-
-// defineField({
-//   name: "author",
-//   type: "reference",
-//   to: { type: "author" },
-// }),
-// defineField({
-//   name: "categories",
-//   type: "array",
-//   of: [defineArrayMember({ type: "reference", to: { type: "category" } })],
-// }),

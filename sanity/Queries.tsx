@@ -18,11 +18,20 @@ export const POST_QUERY = groq`
   summary,
   "imageUrl": mainImage.asset->url,
   "imageAlt": mainImage.alt,
-  blockContent[]{
+  toc,
+  blockContent[] {
     ...,
     _type == "image" => {
       "imageUrl": asset->url,
       alt
+    },
+    _type == "videoUpload" => {
+      "url": asset->url,
+      caption
+    },
+    _type == "videoEmbed" => {
+      url,
+      title
     }
   }
 }

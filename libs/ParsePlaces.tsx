@@ -1,3 +1,5 @@
+import { VALID_CATEGORY } from "./data";
+
 export const ParseRoute = (path: string) => {
     if (!path) return null;
 
@@ -8,9 +10,18 @@ export const ParseRoute = (path: string) => {
     if (match) {
         const prefix = match[1].toLowerCase();
         const city = match[2].toLowerCase();
-        return { prefix, city };
+
+        if (VALID_CATEGORY.includes(prefix)) {
+            return { prefix, city };
+        }
+        return null;
     }
 
     // Case 2: only a slug without "-in-"
-    return { prefix: path.toLowerCase(), city: null };
+    const prefix = path.toLowerCase();
+    if (VALID_CATEGORY.includes(prefix)) {
+        return { prefix, city: null };
+    }
+
+    return null;
 };

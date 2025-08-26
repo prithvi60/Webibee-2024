@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const DotExpandButton = ({ text, href }: { text: string, href: string }) => {
     return (
-        <section className="grid place-items-center">
+        <section className="grid">
             <Link href={href}>
                 <button className="group flex h-10 items-center gap-2 rounded-md pl-8 pr-8 transition-all duration-300 ease-in-out hover:bg-info/80 uppercase hover:pl-2 py-8 font-SourceCodePro text-base border-2 sm:text-lg xl:text-xl hover:text-white active:bg-neutral-700">
                     <span className="rounded-full bg-info/80 p-1 text-sm transition-colors duration-300 group-hover:bg-white">

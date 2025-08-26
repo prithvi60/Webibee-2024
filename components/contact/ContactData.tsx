@@ -5,30 +5,54 @@ import { motion } from "framer-motion";
 import DotExpandButton from "../buttons/DotExpandButton";
 import ContactForm from "./ContactForm";
 
-const ContactData = ({ seo }: { seo?: boolean }) => {
+type DataProps = {
+    title: React.ReactNode;
+    desc: string;
+    btn: string;
+};
+
+const ContactData = ({
+    seo,
+    data,
+    location,
+}: {
+    seo?: boolean;
+    data?: DataProps;
+    location?: string | null;
+}) => {
+
+    const country = `in ${location}`
+
+    const renderedDesc = data?.desc.replace('{{Country}}', location ? country : "").trim();
     return (
-        <section className={`w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row gap-20 ${seo ? "items-start" : "items-center"}`}>
-            <div className="w-full md:w-1/2 space-y-7 md:space-y-14">
+        <section
+            className={`w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row ${seo ? "items-start gap-10" : "items-center gap-20"}`}
+        >
+            <div className="w-full md:w-1/2">
                 {seo ? (
                     <motion.div
                         variants={variantTitle}
                         viewport={{ once: true }}
                         initial="initial"
-                        whileInView="animate" className="w-full space-y-7 md:space-y-14">
-                        <h3 className="font-EbGaramond font-medium text-5xl sm:text-7xl xl:text-8xl ">
-                            Transform Your <strong className="text-info">Digital Presence</strong>
+                        whileInView="animate"
+                        className="w-full space-y-7 md:space-y-14"
+                    >
+                        <h3 className="font-EbGaramond font-medium text-5xl sm:text-7xl xl:text-8xl">
+                            {data?.title}
                         </h3>
                         <p className="font-SourceCodePro font-normal text-sm sm:text-base !leading-tight">
-                            From clicks to conversions — our tailored digital marketing strategies drive measurable results.
+                            {renderedDesc}
                         </p>
-                        <DotExpandButton text="GET IN TOUCH" href="/contact" />
+                        <DotExpandButton text={data?.btn || ""} href="/contact" />
                     </motion.div>
                 ) : (
                     <motion.div
                         variants={variantTitle}
                         viewport={{ once: true }}
                         initial="initial"
-                        whileInView="animate" className="w-full md:w-2/5 space-y-7 md:space-y-14">
+                        whileInView="animate"
+                        className="w-full space-y-7 md:space-y-14"
+                    >
                         <h3 className="font-EbGaramond font-medium text-5xl sm:text-7xl xl:text-8xl ">
                             Let’s <strong className="text-info">talk</strong>
                         </h3>
@@ -46,7 +70,7 @@ const ContactData = ({ seo }: { seo?: boolean }) => {
                 <ContactForm seo />
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default ContactData
+export default ContactData;

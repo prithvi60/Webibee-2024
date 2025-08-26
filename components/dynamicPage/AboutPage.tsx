@@ -4,20 +4,25 @@ import { variant1 } from "@/libs/Variants";
 import Image from "next/image";
 
 type DataType = {
-    mainTitle: string;
-    highlight: string;
-    about: string;
+    title: React.ReactNode;
+    desc: string;
     img: string;
-    alt: string;
 };
 
 const AboutPage = ({
     data,
     reverse,
+    category,
+    location
 }: {
     data: DataType;
     reverse?: boolean;
+    category: string;
+    location?: string | null;
 }) => {
+    const country = `in ${location}`
+
+    const renderedDesc = data?.desc.replace('{{Country}}', location ? country : "").trim();
     return (
         <section
             className={`p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
@@ -32,11 +37,10 @@ const AboutPage = ({
                     className="lg:sticky lg:top-5 space-y-12"
                 >
                     <h4 className={`font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center ${reverse ? "md:text-end" : "md:text-start"}`}>
-                        {data.mainTitle}{" "}
-                        <strong className="text-info">{data.highlight}</strong>
+                        {data.title}
                     </h4>
                     <p className="text-lg text-left md:text-start sm:text-xl lg:text-2xl font-SourceCodePro">
-                        {data.about}
+                        {renderedDesc}
                     </p>
                 </motion.div>
             </div>
@@ -45,7 +49,7 @@ const AboutPage = ({
                     width={450}
                     height={450}
                     loading="lazy"
-                    alt={data.alt}
+                    alt={category + " image"}
                     className="object-contain object-center w-full h-fit rounded-md"
                     src={data.img}
                 />

@@ -77,7 +77,7 @@ const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
             viewport={{ once: true }}
             initial="initial"
             whileInView="animate"
-            className={`w-full ${!blog ? "md:w-3/5" : "md:sticky md:top-5 lg:mt-16 "}`}
+            className={`w-full ${!blog ? "" : "md:sticky md:top-5 lg:mt-16 "}`}
             onSubmit={handleSubmit}
         >
             {seo && (

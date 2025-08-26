@@ -2,7 +2,14 @@
 import React, { useState, useEffect } from "react";
 import { Stats } from "../Stats";
 
-const CounterStats = () => {
+type DataProps = {
+    num: number;
+    suffix: string;
+    subheading: string;
+    isDecimal: boolean;
+}[]
+
+const CounterStats = ({ data, location }: { data: DataProps, location: string | null; }) => {
     const [isActive, setIsActive] = useState(0);
 
     useEffect(() => {
@@ -16,28 +23,28 @@ const CounterStats = () => {
     return (
         <section className="h-full md:h-[55dvh] flex flex-wrap md:flex-nowrap gap-6 lg:gap-10 w-full p-10 sm:px-20 xl:px-48 sm:py-16 xl:pb-28">
             <Stats
-                num={2.7}
-                decimals={1}
-                suffix="M"
-                subheading="Digital Marketing hours"
+                num={data[0].num}
+                decimals={data[0].isDecimal === true ? 1 : 0}
+                suffix={data[0].suffix}
+                subheading={data[0].subheading}
                 isActive={isActive === 0}
             />
             <Stats
-                num={250}
-                suffix="+"
-                subheading="Marketing Experts"
+                num={data[1].num}
+                suffix={data[1].suffix}
+                subheading={data[1].subheading}
                 isActive={isActive === 1}
             />
             <Stats
-                num={1000}
-                suffix="+"
-                subheading="4 and above reviews"
+                num={data[2].num}
+                suffix={data[2].suffix}
+                subheading={data[2].subheading}
                 isActive={isActive === 2}
             />
             <Stats
-                num={800}
-                suffix="+"
-                subheading="Case studies"
+                num={data[3].num}
+                suffix={data[3].suffix}
+                subheading={data[3].subheading}
                 isActive={isActive === 3}
             />
         </section>

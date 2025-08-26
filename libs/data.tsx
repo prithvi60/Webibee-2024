@@ -1409,6 +1409,7 @@ export const CITY_DISPLAY_NAMES = {
 // dynmic valid category
 
 export const VALID_CATEGORY = [
+  "seo",
   "web-design",
   "branding",
   "design",
@@ -1419,3 +1420,800 @@ export const VALID_CATEGORY = [
   "ads",
   "ui-ux",
 ];
+
+const SpanTag = ({ tag }: { tag: string }) => {
+  return <span className="text-info">{tag}</span>;
+};
+
+export const dynamicContactDetails = [
+  {
+    category: "seo",
+    ContactDetails: {
+      title: (
+        <>
+          Boost Your Online Visibility with Expert{" "}
+          <SpanTag tag="SEO Services" />.
+        </>
+      ),
+      desc: "Our SEO strategies help your business rank higher, attract the right audience, and drive consistent growth {{Country}}.",
+      btn: "Start Ranking Today",
+    },
+    counterStatus: [
+      {
+        num: 2.7,
+        suffix: "M",
+        subheading: "Keyword Rankings",
+        isDecimal: true,
+      },
+      {
+        num: 250,
+        suffix: "+",
+        subheading: "Organic Traffic",
+        isDecimal: false,
+      },
+      {
+        num: 1000,
+        suffix: "+",
+        subheading: "Conversion Rates",
+        isDecimal: false,
+      },
+      {
+        num: 800,
+        suffix: "+",
+        subheading: "Local Visibility",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            Research & <SpanTag tag="Strategy" />
+          </>
+        ),
+        desc: "We believe every successful SEO campaign begins with a strong foundation. Our team {{Country}} conducts in-depth keyword research, competitor analysis, and audience targeting to uncover opportunities that align with your business goals. This step ensures we focus on the right search terms and create a roadmap for long-term success.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            On-Page & Technical <SpanTag tag="SEO" />
+          </>
+        ),
+        desc: "Optimizing your website goes beyond content—it’s about structure, performance, and accessibility. We refine your site’s on-page elements, such as meta tags, headings, and URLs, while addressing technical aspects like speed, mobile responsiveness, and crawlability. These improvements help search engines understand your website and deliver a seamless experience for users {{Country}}.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            Content & <SpanTag tag="Authority Building" />
+          </>
+        ),
+        desc: "Content is the voice of your brand, and authority is what makes it trusted. Our SEO content strategies focus on creating keyword-rich, valuable blogs and landing pages while strengthening your site with internal links and high-quality backlinks. By building credibility and authority, your business {{Country}} earns higher rankings and long-term visibility.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            Monitoring & Continuous <SpanTag tag="Optimization" />
+          </>
+        ),
+        desc: "",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "web-design",
+    ContactDetails: {
+      title: (
+        <>
+          Create Stunning, <SpanTag tag="User-Friendly" /> Websites that Drive Results.
+        </>
+      ),
+      desc: "Our web design services combine creativity, usability, and strategy to deliver websites that look great and perform even better {{Country}}.",
+      btn: "Book a Call",
+    },
+    counterStatus: [
+      {
+        num: 3,
+        suffix: "secs",
+        subheading: "Faster Load Times",
+        isDecimal: false,
+      },
+      {
+        num: 40,
+        suffix: "%",
+        subheading: "Improved Conversions",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "User Engagement",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Mobile Responsiveness",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="Custom" /> Website Design
+          </>
+        ),
+        desc: "We understand that your website is your digital storefront. Our custom website designs {{Country}} are crafted to reflect your brand identity, capture attention, and guide users toward meaningful actions.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Responsive" /> Web Design
+          </>
+        ),
+        desc: "Your audience is everywhere—desktop, tablet, and mobile. We create responsive websites that adapt flawlessly to all screen sizes, ensuring every visitor {{Country}} has a seamless browsing experience.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="E-Commerce" /> Web Design
+          </>
+        ),
+        desc: "E-commerce is more than a shopping cart; it’s an experience. We design user-friendly, secure, and conversion-focused online stores {{Country}} that make shopping simple and enjoyable.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Landing Page" /> Design
+          </>
+        ),
+        desc: "Whether for ads or campaigns, a landing page should convert. We design high-performing landing pages {{Country}} optimized to capture leads and maximize ROI.",
+        img: "/sample-1.jpg",
+      },
+    ],
+  },
+  {
+    category: "branding",
+    ContactDetails: {
+      title: (
+        <>
+          Build a <SpanTag tag="Brand Identity" /> That Stands Out.
+        </>
+      ),
+      desc: "Your brand is more than a logo—it’s the story, values, and personality that connect you with your audience {{Country}}. We craft branding solutions that make you unforgettable.",
+      btn: "Build My Brand",
+    },
+    counterStatus: [
+      {
+        num: 90,
+        suffix: "%",
+        subheading: "Brand Recognition",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "X",
+        subheading: "Customer Loyalty",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "%",
+        subheading: "Market Differentiation",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Engagement Growth",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            Logo Design & <SpanTag tag="Visual Identity" />
+          </>
+        ),
+        desc: "We design logos and brand visuals that reflect your company’s personality and values, creating a memorable first impression for your audience {{Country}}.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            Brand <SpanTag tag="Strategy" />
+          </>
+        ),
+        desc: "A brand is more than visuals—it’s direction. We develop a clear brand strategy {{Country}} to define your voice, values, and positioning in the market.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            Brand <SpanTag tag="Guidelines" />
+          </>
+        ),
+        desc: "Consistency builds trust. We create comprehensive brand guidelines that cover fonts, colors, tone, and visuals to ensure your brand looks and feels the same everywhere.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Rebranding" />
+          </>
+        ),
+        desc: "Markets evolve, and so should brands. Whether refreshing your logo or redefining your message, we help businesses {{Country}} successfully reposition and reintroduce themselves.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "design",
+    ContactDetails: {
+      title: (
+        <>
+          <SpanTag tag="Creative" /> Graphic Design Services That Speak Your Brand.
+        </>
+      ),
+      desc: "From brochures to social media creatives, our designs capture attention, communicate clearly, and leave a lasting impression {{Country}}.",
+      btn: "Book a call",
+    },
+    counterStatus: [
+      {
+        num: 90,
+        suffix: "%",
+        subheading: "Higher audience recall",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "%",
+        subheading: "More engagement",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "Better conversions",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Customers trust",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            Poster & Flyer Design <SpanTag tag="" />
+          </>
+        ),
+        desc: "We create eye-catching posters and flyers {{Country}} designed to grab attention and communicate your message instantly.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            Brochure & PDF Design <SpanTag tag="" />
+          </>
+        ),
+        desc: "Our professional brochures and PDFs make it easy to present your business, products, or services in a polished, branded format.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            Social Media Creatives <SpanTag tag="" />
+          </>
+        ),
+        desc: "Stand out online with scroll-stopping social media graphics that increase engagement and strengthen your brand presence {{Country}}.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            Corporate & Marketing Collateral <SpanTag tag="" />
+          </>
+        ),
+        desc: "From business cards to pitch decks, we design professional marketing materials that reflect your brand identity and values.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "wordpress",
+    ContactDetails: {
+      title: (
+        <>
+          <SpanTag tag="Custom WordPress Solutions" /> Built for Growth.
+        </>
+      ),
+      desc: "We design, develop, and optimize WordPress websites that are fast, secure, and easy to manage—tailored to your business needs {{Country}}.",
+      btn: "Build with WordPress",
+    },
+    counterStatus: [
+      {
+        num: 43,
+        suffix: "%",
+        subheading: "WordPress Websites Globally",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "%",
+        subheading: "Average load time",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "Reliability",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Content updates",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="Custom" /> WordPress Development
+          </>
+        ),
+        desc: "We build fully customized WordPress websites {{Country}}, designed to fit your business goals and branding.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Theme Design" /> & Customization
+          </>
+        ),
+        desc: "From scratch designs to tailoring existing themes, we create user-friendly layouts that stand out.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Plugin" /> Integration
+          </>
+        ),
+        desc: "Our team integrates plugins to extend functionality and improve your site’s performance.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            WordPress <SpanTag tag="Maintenance & Support" />
+          </>
+        ),
+        desc: "We provide regular updates, security monitoring, and performance optimization to keep your site running smoothly.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "shopify-apps",
+    ContactDetails: {
+      title: (
+        <>
+          <SpanTag tag="Custom Shopify apps" /> that Scale You Business.
+        </>
+      ),
+      desc: "Empowering your store with tailored apps that enhance functionality, improve user experience, and drive growth — no matter where your customers are shopping from.",
+      btn: "Build My App",
+    },
+    counterStatus: [
+      {
+        num: 43,
+        suffix: "%",
+        subheading: "Custom Shopify apps",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "%",
+        subheading: "Client satisfaction rate",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "Average store efficiency boost",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Industries served",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="Custom" /> App Development
+          </>
+        ),
+        desc: "We specialize in building apps tailored to your store’s unique needs, whether it’s streamlining inventory, managing subscriptions, or enhancing checkout. Our solutions are scalable, reliable, and built to grow with your business.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            App <SpanTag tag="Integration" />
+          </>
+        ),
+        desc: "Seamlessly connect your Shopify store with third-party tools like CRMs, payment gateways, and shipping providers. We ensure smooth integration so you can automate processes and provide a hassle-free customer experience.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            App <SpanTag tag="Optimization & Maintenance" />
+          </>
+        ),
+        desc: "Your app’s performance directly impacts your sales. Our team continuously monitors, optimizes, and updates your Shopify apps to ensure they run smoothly, adapt to platform changes, and stay ahead of competitors.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            Migration & <SpanTag tag="Upgrade" /> Services
+          </>
+        ),
+        desc: "Moving from a generic app to a custom-built solution? We handle smooth migrations and upgrades, making sure your data, features, and user experience remain intact while your store gets more powerful and efficient.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "fullstack",
+    ContactDetails: {
+      title: (
+        <>
+          End-to-End Full Stack Development for <SpanTag tag="Scalable" /> Digital Solutions
+        </>
+      ),
+      desc: "From crafting seamless frontends to building powerful backends, we deliver complete full stack solutions tailored for businesses {{Country}}. Whether you need a dynamic web app, enterprise platform, or custom-built software, our full stack expertise ensures speed, performance, and reliability.",
+      btn: "Book a Call",
+    },
+    counterStatus: [
+      {
+        num: 43,
+        suffix: "%",
+        subheading: "Projects Delivered",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "%",
+        subheading: "Client satisfaction rate",
+        isDecimal: false,
+      },
+      {
+        num: 24,
+        suffix: "/7",
+        subheading: "Technical support",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Industries served",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="Frontend" /> Development
+          </>
+        ),
+        desc: "We create user-friendly, responsive, and visually appealing interfaces that engage your audience. Using the latest frameworks like React, Angular, or Vue.js, we ensure smooth navigation, fast loading times, and an intuitive design experience tailored to your business needs.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Backend" /> Development
+          </>
+        ),
+        desc: "The backbone of your application is built with secure and scalable server-side solutions. From APIs to database management, our backend development ensures your platform runs smoothly, handling data and processes without compromising on performance or security.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Database" /> Design & Management
+          </>
+        ),
+        desc: "Efficient data handling is key to any successful application. We design and manage databases that are optimized for speed, accuracy, and scalability. Whether it’s SQL or NoSQL, we choose the right database solution to support your growing business requirements.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="API" /> Development & Integration
+          </>
+        ),
+        desc: "We connect your application with external services and tools to enhance functionality. Our API development and integration services ensure seamless communication between systems—whether it’s payment gateways, CRMs, or third-party software.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Maintenance" /> & Support
+          </>
+        ),
+        desc: "Technology evolves, and so should your application. We provide continuous monitoring, updates, bug fixes, and performance optimizations to keep your full-stack solution running at its best—long after the launch.",
+        img: "/sample-1.jpg",
+      },
+    ],
+  },
+  {
+    category: "ai",
+    ContactDetails: {
+      title: (
+        <>
+          <SpanTag tag="AI Solutions" /> Tailored for Businesses
+        </>
+      ),
+      desc: "From automation to advanced data insights, our AI development services empower businesses {{Country}} to innovate, optimize operations, and stay ahead of the competition.",
+      btn: "Get Started with AI",
+    },
+    counterStatus: [
+      {
+        num: 43,
+        suffix: "%",
+        subheading: "Improved efficiency",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "%",
+        subheading: "Reduction in manual tasks",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "Faster decision-making",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Customer satisfaction improved",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="AI-" /> Powered Automation
+          </>
+        ),
+        desc: "Automate repetitive and time-consuming tasks with AI-driven workflows. From chatbots to process automation, we help businesses in {{Country}} save time and focus on growth.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Machine Learning" /> Solutions
+          </>
+        ),
+        desc: "Leverage predictive models and smart algorithms to analyze data, forecast trends, and make data-driven decisions that keep your business competitive.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            Natural Language Processing <SpanTag tag="(NLP)" />
+          </>
+        ),
+        desc: "Build smarter systems that understand and respond to human language—perfect for chatbots, voice assistants, and customer engagement platforms.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Computer Vision" /> Applications
+          </>
+        ),
+        desc: "Enable your systems to interpret and process visual data through AI-powered image recognition, video analysis, and quality checks—tailored to industry-specific needs.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "ads",
+    ContactDetails: {
+      title: (
+        <>
+          Drive Measurable Results with <SpanTag tag="Performance-Driven Ads" />
+        </>
+      ),
+      desc: "From Google to social platforms, we create ad campaigns that don’t just get clicks—they bring real customers to your business.",
+      btn: "Launch My Campaign",
+    },
+    counterStatus: [
+      {
+        num: 43,
+        suffix: "%",
+        subheading: "Improved efficiency",
+        isDecimal: false,
+      },
+      {
+        num: 30,
+        suffix: "%",
+        subheading: "Impressions delivered",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "Advertising channels",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Average cost saved",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="Google" /> Ads
+          </>
+        ),
+        desc: "Be visible exactly when your customers are searching. We set up and optimize Google Search, Display, and Shopping campaigns to capture high-intent leads at the right moment.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Social Media" /> Ads
+          </>
+        ),
+        desc: "Reach, engage, and convert across Facebook, Instagram and LinkedIn. We craft creatives and targeting strategies that resonate with your audience while maximizing ROI.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            Retargeting & Remarketing <SpanTag tag="" />
+          </>
+        ),
+        desc: "Don’t let potential customers slip away. With retargeting campaigns, we remind visitors of your brand and bring them back until they convert.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="YouTube & Video" /> Ads
+          </>
+        ),
+        desc: "Tell your story through video. We create YouTube and OTT ads that engage viewers, increase brand recall, and convert attention into action.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+  {
+    category: "ui-ux",
+    ContactDetails: {
+      title: (
+        <>
+          Crafting <SpanTag tag="User Experiences" />, Built to Last
+        </>
+      ),
+      desc: "We craft intuitive, user-friendly, and visually appealing digital experiences. Our UI/UX design services blend creativity with strategy to ensure your website, app, or product not only looks great but also performs seamlessly.",
+      btn: "Book a Call",
+    },
+    counterStatus: [
+      {
+        num: 43,
+        suffix: "%",
+        subheading: "Interfaces Designed",
+        isDecimal: false,
+      },
+      {
+        num: 3,
+        suffix: "X",
+        subheading: "Better Engagement",
+        isDecimal: false,
+      },
+      {
+        num: 2,
+        suffix: "X",
+        subheading: "Higher Conversions",
+        isDecimal: false,
+      },
+      {
+        num: 100,
+        suffix: "%",
+        subheading: "Client Satisfaction Rate",
+        isDecimal: false,
+      },
+    ],
+    aboutSection: [
+      {
+        title: (
+          <>
+            <SpanTag tag="User Research" /> & Wireframing
+          </>
+        ),
+        desc: "We start by understanding your users—their needs, pain points, and goals. Through user research and wireframes, we map out the flow and structure to ensure every interaction is smooth and purposeful.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="UI Design" /> & Prototyping
+          </>
+        ),
+        desc: "From typography to color palettes, our UI design process focuses on creating pixel-perfect interfaces. With clickable prototypes, you can visualize the product experience before development.",
+        img: "/sample-2.jpg",
+      },
+      {
+        title: (
+          <>
+            <SpanTag tag="Iterations" />
+          </>
+        ),
+        desc: "Continuous iterations ensure that the design is user-centric and drives results.",
+        img: "/sample-1.jpg",
+      },
+      {
+        title: (
+          <>
+            Design System & <SpanTag tag="Branding" />
+          </>
+        ),
+        desc: "We create scalable design systems for consistency across your digital products while aligning with your brand’s voice, identity, and guidelines.",
+        img: "/sample-2.jpg",
+      },
+    ],
+  },
+];
+
+// export type DynamicContactDetailsType = {
+//   category: string;
+//   ContactDetails: {
+//     title: React.ReactNode;
+//     desc: string;
+//     btn: string;
+//   };
+//   counterStatus: {
+//     num: number;
+//     suffix: string;
+//     subheading: string;
+//     isDecimal: boolean;
+//   }[];
+//   aboutSection: {
+//     title: React.ReactNode;
+//     desc: string;
+//     img: string;
+//   }[];
+// };

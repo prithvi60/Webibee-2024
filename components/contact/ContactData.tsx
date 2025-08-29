@@ -20,10 +20,12 @@ const ContactData = ({
     data?: DataProps;
     location?: string | null;
 }) => {
+    const country = `in ${location}`;
 
-    const country = `in ${location}`
 
-    const renderedDesc = data?.desc.replace('{{Country}}', location ? country : "").trim();
+    const renderedDesc = data?.desc
+        .replace("{{Country}}", location ? country : "")
+        .trim();
     return (
         <section
             className={`w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row ${seo ? "items-start gap-10" : "items-center gap-20"}`}
@@ -37,8 +39,8 @@ const ContactData = ({
                         whileInView="animate"
                         className="w-full space-y-7 md:space-y-14"
                     >
-                        <h3 className="font-EbGaramond font-medium text-5xl sm:text-7xl xl:text-8xl">
-                            {data?.title}
+                        <h3 className="font-EbGaramond font-medium capitalize text-5xl sm:text-6xl xl:text-7xl">
+                            {data?.title} {`${location ? country : ""}`}
                         </h3>
                         <p className="font-SourceCodePro font-normal text-sm sm:text-base !leading-tight">
                             {renderedDesc}

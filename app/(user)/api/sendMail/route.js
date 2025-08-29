@@ -71,7 +71,7 @@ export async function POST(req) {
             <p style="font-size: 16px; color: #555;"><strong>Webibee Team</strong></p>
         </div>
             `,
-    // bcc: [process.env.EMAIL_ID],
+    bcc: ["prithvi@webibee.com", process.env.EMAIL_ID],
   };
 
   const userMailOptions = {

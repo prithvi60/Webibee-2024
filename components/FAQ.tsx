@@ -7,9 +7,25 @@ import { motion } from "framer-motion";
 import { variant1, variant2 } from "@/libs/Variants";
 import { useEffect, useState } from "react";
 
-const FAQ = () => {
-    const [isIndia, setIsIndia] = useState(false);
+const itemClasses = {
+    base: "w-full overflow-hidden",
+    heading:
+        "p-2 md:p-5 data-[open=true]:bg-gradient-to-r from-[#FFF3B3] to-[#FFD700]",
+    title:
+        "font-SourceCodePro text-lg md:text-xl text-default focus-within:outline-none focus-within:border-none focus-within:ring-0",
+    trigger: "h-auto lg:h-10",
+    indicator: "text-xl md:text-2xl text-default",
+    content:
+        "p-4 md:p-5 font-SourceCodePro text-base md:text-lg text-default font-medium",
+};
 
+type FAQProps = {
+    lists?: { title: string; desc: string }[];
+    location?: string | null;
+};
+
+const FAQ = ({ lists, location }: FAQProps) => {
+    const [isIndia, setIsIndia] = useState(false);
     useEffect(() => {
         // Fetch user's location
         fetch("https://ipapi.co/json/")
@@ -19,18 +35,6 @@ const FAQ = () => {
                 setIsIndia(data.country === "IN");
             });
     }, []);
-
-    const itemClasses = {
-        base: "w-full overflow-hidden",
-        heading:
-            "p-2 md:p-5 data-[open=true]:bg-gradient-to-r from-[#FFF3B3] to-[#FFD700]",
-        title:
-            "font-SourceCodePro text-lg md:text-xl text-default focus-within:outline-none focus-within:border-none focus-within:ring-0",
-        trigger: "h-auto lg:h-10",
-        indicator: "text-xl md:text-2xl text-default",
-        content:
-            "p-4 md:p-5 font-SourceCodePro text-base md:text-lg text-default font-medium",
-    };
 
     const faq = [
         {
@@ -92,9 +96,7 @@ const FAQ = () => {
                 <div className="relative w-64 h-64 md:w-full md:h-80">
                     <Image
                         alt="illustration"
-                        src={
-                            "https://cdn.webibee.com/Webibee/illustration-2.svg"
-                        }
+                        src={"https://cdn.webibee.com/Webibee/illustration-2.svg"}
                         fill
                         className="object-contain object-center"
                     />
@@ -111,36 +113,58 @@ const FAQ = () => {
                 <p className="text-xs p-2 md:p-5 md:text-lg  font-SourceCodePro font-normal mt-4">
                     Need Help? Start Here
                 </p>
-                <Accordion
-                    variant="light"
-                    itemClasses={itemClasses}
-                    defaultExpandedKeys={["0"]}
-                >
-                    {faq.map((item, idx) => (
-                        <AccordionItem
-                            key={`${idx}`}
-                            aria-label="Accordion 1"
-                            indicator={({ isOpen }) =>
-                                isOpen ? (
-                                    <AiOutlineMinus className="h-5 w-5 text-default rotate-90" />
-                                ) : (
-                                    <AiOutlinePlus className="h-5 w-5 text-default" />
-                                )
-                            }
-                            title={item.title}
-                        >
-                            <div className="font-medium flex justify-between items-center">
-                                <p
-                                    className="font-SourceCodePro tracking-wider font-medium !leading-7 text-sm md:text-base"
-                                    dangerouslySetInnerHTML={{ __html: item.desc }}
-                                />
-                            </div>
-                        </AccordionItem>
-                    ))}
-                </Accordion>
+                <AccordionComponent data={lists ? lists : faq} location={location} />
             </motion.div>
         </section>
     );
 };
 
 export default FAQ;
+
+type AccordionComponentProps = {
+    data: { title: string; desc: string }[];
+    location?: string | null;
+};
+
+const AccordionComponent = ({ data, location }: AccordionComponentProps) => {
+    // console.log(location);
+    return (
+        <Accordion
+            variant="light"
+            itemClasses={itemClasses}
+            defaultExpandedKeys={["0"]}
+        >
+            {data.map((item, idx) => {
+                const country = `in ${location}`;
+                const renderedTitle = item?.title
+                    .replace("{{Country}}", location ? country : "")
+                    .trim();
+                const renderedDesc = item?.desc
+                    .replace("{{Country}}", location ? country : "")
+                    .trim();
+
+                return (
+                    <AccordionItem
+                        key={`${idx}`}
+                        aria-label={`Accordion ${idx + 1}`}
+                        indicator={({ isOpen }) =>
+                            isOpen ? (
+                                <AiOutlineMinus className="h-5 w-5 text-default rotate-90" />
+                            ) : (
+                                <AiOutlinePlus className="h-5 w-5 text-default" />
+                            )
+                        }
+                        title={renderedTitle}
+                    >
+                        <div className="font-medium flex justify-between items-center">
+                            <p
+                                className="font-SourceCodePro tracking-wider font-medium !leading-7 text-sm md:text-base"
+                                dangerouslySetInnerHTML={{ __html: renderedDesc }}
+                            />
+                        </div>
+                    </AccordionItem>
+                );
+            })}
+        </Accordion>
+    );
+};

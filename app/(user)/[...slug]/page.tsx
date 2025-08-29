@@ -70,7 +70,10 @@ const Page = async ({ params }: PageProps) => {
                     location={routeInfo.city !== null ? routeInfo.city : null}
                 />
             )}
-            <FAQ />
+            <FAQ
+                lists={FilteredData[0].faq}
+                location={routeInfo.city !== null ? routeInfo.city : null}
+            />
         </div>
     );
 };

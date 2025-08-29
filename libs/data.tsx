@@ -1432,7 +1432,7 @@ export const dynamicContactDetails = [
       title: (
         <>
           Boost Your Online Visibility with Expert{" "}
-          <SpanTag tag="SEO Services" />.
+          <SpanTag tag="SEO Services" />
         </>
       ),
       desc: "Our SEO strategies help your business rank higher, attract the right audience, and drive consistent growth {{Country}}.",
@@ -1498,17 +1498,40 @@ export const dynamicContactDetails = [
             Monitoring & Continuous <SpanTag tag="Optimization" />
           </>
         ),
-        desc: "",
+        desc: "SEO is not a one-time effort—it’s an ongoing process. We continuously track keyword rankings, traffic, and conversions, making data-driven adjustments to keep your site ahead of algorithm changes. From local SEO enhancements to regular reporting, our team ensures your business {{Country}} stays visible, relevant, and competitive.",
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "How long does it take to see SEO results {{Country}}?",
+        desc: "SEO is a long-term strategy. While minor improvements can be seen within weeks, significant results usually take 3-6 months.",
+      },
+      {
+        title: "Do you offer local SEO services for small businesses {{Country}}?",
+        desc: "Yes! We specialize in optimizing for local searches to help small businesses rank in their area.",
+      },
+      {
+        title: "What’s included in your SEO packages?",
+        desc: "Our SEO includes keyword research, on-page optimization, technical fixes, content optimization, link building, local SEO, and monthly reporting.",
+      },
+      {
+        title: "How do you measure SEO success?",
+        desc: "We measure success by improvements in keyword rankings, organic traffic, lead conversions, and ROI for your business {{Country}}.",
+      },
+      {
+        title: "Why is SEO better than paid ads?",
+        desc: "Ads deliver quick but short-term results. SEO builds long-term visibility, credibility, and sustainable traffic without paying for every click.",
+      },
+    ]
   },
   {
     category: "web-design",
     ContactDetails: {
       title: (
         <>
-          Create Stunning, <SpanTag tag="User-Friendly" /> Websites that Drive Results.
+          Create Stunning, <SpanTag tag="User-Friendly" /> Websites that Drive
+          Results
         </>
       ),
       desc: "Our web design services combine creativity, usability, and strategy to deliver websites that look great and perform even better {{Country}}.",
@@ -1578,13 +1601,35 @@ export const dynamicContactDetails = [
         img: "/sample-1.jpg",
       },
     ],
+    faq: [
+      {
+        title: "How long does it take to design a website {{Country}}?",
+        desc: "Depending on the project size, it can take anywhere from 3-8 weeks, including research, design, development, and testing.",
+      },
+      {
+        title: "Will my website be mobile-friendly?",
+        desc: "Absolutely. All our web designs are fully responsive, ensuring compatibility across all devices.",
+      },
+      {
+        title: "Do you also handle website development or just design?",
+        desc: "Yes, we handle both. Our team {{Country}} designs and develops websites to be visually stunning and technically sound.",
+      },
+      {
+        title: "Can you redesign my existing website?",
+        desc: "Definitely. We offer website redesign services to give your current site a modern, user-friendly, and performance-driven makeover.",
+      },
+      {
+        title: "Will I be able to update my website after it’s built?",
+        desc: "Yes, we provide CMS-based solutions like WordPress and Shopify, so you can easily update content without needing technical skills.",
+      },
+    ]
   },
   {
     category: "branding",
     ContactDetails: {
       title: (
         <>
-          Build a <SpanTag tag="Brand Identity" /> That Stands Out.
+          Build a <SpanTag tag="Brand Identity" /> That Stands Out
         </>
       ),
       desc: "Your brand is more than a logo—it’s the story, values, and personality that connect you with your audience {{Country}}. We craft branding solutions that make you unforgettable.",
@@ -1654,13 +1699,36 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "Why is branding important for my business {{Country}}?",
+        desc: "Branding shapes how people see your business. It builds recognition, trust, and loyalty—making your company stand out {{Country}} competitive market.",
+      },
+      {
+        title: "How long does the branding process take?",
+        desc: "Depending on the scope (logo, guidelines, full strategy), it can take 3-6 weeks.",
+      },
+      {
+        title: "Can you redesign my existing logo or brand identity?",
+        desc: "Yes! We specialize in rebranding projects to modernize and reposition existing businesses {{Country}}.",
+      },
+      {
+        title: " Do you provide brand guidelines?",
+        desc: "Absolutely. Every branding project includes a style guide to maintain visual and messaging consistency across all platforms.",
+      },
+      {
+        title: "What industries do you work with?",
+        desc: "We work with startups, SMEs, and enterprises across multiple industries {{Country}}, tailoring branding to each sector’s unique needs.",
+      },
+    ]
   },
   {
     category: "design",
     ContactDetails: {
       title: (
         <>
-          <SpanTag tag="Creative" /> Graphic Design Services That Speak Your Brand.
+          <SpanTag tag="Creative" /> Graphic Design Services That Speak Your
+          Brand
         </>
       ),
       desc: "From brochures to social media creatives, our designs capture attention, communicate clearly, and leave a lasting impression {{Country}}.",
@@ -1730,13 +1798,35 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "What kind of graphic design services do you offer {{Country}}?",
+        desc: "We design posters, brochures, social media graphics, business cards, PDFs, and other marketing materials.",
+      },
+      {
+        title: "Can you design content for social media campaigns?",
+        desc: "Yes! We create platform-specific designs (Instagram, LinkedIn, Facebook, etc.) optimized for engagement {{Country}}.",
+      },
+      {
+        title: "Will the designs match my brand identity?",
+        desc: "Absolutely. We follow your brand guidelines (colors, fonts, tone) or create new ones if needed.",
+      },
+      {
+        title: "Do you provide editable design files?",
+        desc: "Yes, upon request we provide editable files (AI, PSD, or source formats) so you can update them later.",
+      },
+      {
+        title: "How quickly can you deliver designs?",
+        desc: "Timelines vary by project, but most social media creatives and posters can be delivered within 2-3 business days {{Country}}.",
+      },
+    ]
   },
   {
     category: "wordpress",
     ContactDetails: {
       title: (
         <>
-          <SpanTag tag="Custom WordPress Solutions" /> Built for Growth.
+          <SpanTag tag="Custom WordPress Solutions" /> Built for Growth
         </>
       ),
       desc: "We design, develop, and optimize WordPress websites that are fast, secure, and easy to manage—tailored to your business needs {{Country}}.",
@@ -1806,6 +1896,28 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "Why should I choose WordPress for my website {{Country}}?",
+        desc: "WordPress is flexible, scalable, and easy to manage, making it the most popular CMS for businesses worldwide.",
+      },
+      {
+        title: "Can you customize themes to match my brand?",
+        desc: "Yes! We create fully customized designs that reflect your brand identity and improve user experience.",
+      },
+      {
+        title: "Do you provide hosting and security setup?",
+        desc: "Absolutely. We set up secure, reliable WordPress hosting with 99.9% uptime.",
+      },
+      {
+        title: "Will I be able to update my website easily?",
+        desc: "Yes. WordPress allows you to manage content without technical expertise, and we’ll guide you with training.",
+      },
+      {
+        title: " Do you offer ongoing support and maintenance?",
+        desc: "Yes, we provide packages for regular updates, backups, bug fixes, and performance optimization {{Country}}.",
+      },
+    ]
   },
   {
     category: "shopify-apps",
@@ -1882,13 +1994,36 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "Why should I build a custom Shopify app instead of using existing ones?",
+        desc: "While pre-built apps are useful, they often don’t cover every business need. Custom apps are designed specifically for your store, giving you unique features and better performance.",
+      },
+      {
+        title: "Will my custom Shopify app work globally (e.g., India, USA, UK)?",
+        desc: "Yes, we build apps that adapt to your business location. Your app can be optimized for country-specific taxes, currencies, shipping methods, and customer experiences.",
+      },
+      {
+        title: "Can you integrate my app with other business tools?",
+        desc: "Absolutely. We ensure your Shopify app connects seamlessly with tools like CRMs, email marketing platforms, and logistics solutions for maximum efficiency.",
+      },
+      {
+        title: "Do you provide ongoing support after launch?",
+        desc: "Yes, we offer continuous support, maintenance, and upgrades to keep your app running flawlessly as your store evolves.",
+      },
+      {
+        title: "How long does it take to develop a custom Shopify app?",
+        desc: "Timelines vary depending on complexity, but most custom apps are delivered within 4-8 weeks. We’ll provide a clear roadmap before starting development.",
+      },
+    ]
   },
   {
     category: "fullstack",
     ContactDetails: {
       title: (
         <>
-          End-to-End Full Stack Development for <SpanTag tag="Scalable" /> Digital Solutions
+          End-to-End Full Stack Development for <SpanTag tag="Scalable" />{" "}
+          Digital Solutions
         </>
       ),
       desc: "From crafting seamless frontends to building powerful backends, we deliver complete full stack solutions tailored for businesses {{Country}}. Whether you need a dynamic web app, enterprise platform, or custom-built software, our full stack expertise ensures speed, performance, and reliability.",
@@ -1967,6 +2102,24 @@ export const dynamicContactDetails = [
         img: "/sample-1.jpg",
       },
     ],
+    faq: [
+      {
+        title: "What is full stack development?",
+        desc: " Full stack development covers both frontend (user-facing) and backend (server-side) development, ensuring end-to-end functionality of a website or application.",
+      },
+      {
+        title: "Why should I choose a full stack developer instead of separate frontend and backend teams?",
+        desc: "Full stack developers streamline communication, reduce costs, and accelerate development by managing the complete project flow.",
+      },
+      {
+        title: "Which technologies do you use for full stack projects?",
+        desc: "We use a modern tech stack including React, Angular, Node.js, Express, Django, Laravel, MySQL, and MongoDB, based on your project needs.",
+      },
+      {
+        title: "Can you scale my project as my business grows?",
+        desc: "Absolutely. We build scalable and flexible full stack applications that evolve with your business growth.",
+      }
+    ]
   },
   {
     category: "ai",
@@ -2012,7 +2165,7 @@ export const dynamicContactDetails = [
             <SpanTag tag="AI-" /> Powered Automation
           </>
         ),
-        desc: "Automate repetitive and time-consuming tasks with AI-driven workflows. From chatbots to process automation, we help businesses in {{Country}} save time and focus on growth.",
+        desc: "Automate repetitive and time-consuming tasks with AI-driven workflows. From chatbots to process automation, we help businesses {{Country}} save time and focus on growth.",
         img: "/sample-1.jpg",
       },
       {
@@ -2043,6 +2196,24 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "How can AI benefit my business {{Country}}?",
+        desc: "AI helps automate tasks, improve efficiency, reduce costs, and enhance customer experience, allowing your business to grow smarter.",
+      },
+      {
+        title: "Do I need a lot of data to implement AI?",
+        desc: "Not always. Our AI solutions can start small and scale as your data grows, ensuring flexibility.",
+      },
+      {
+        title: "Is AI only for large enterprises?",
+        desc: "No, businesses of all sizes in [Country] can leverage AI. We customize solutions based on your industry and business needs.",
+      },
+      {
+        title: "How long does it take to implement AI solutions?",
+        desc: "Implementation time depends on the complexity of your project, but we aim for efficient deployment with measurable results.",
+      }
+    ]
   },
   {
     category: "ads",
@@ -2119,6 +2290,24 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "Which platforms do you run ads on?",
+        desc: "We run ads across Google, Meta (Facebook/Instagram), LinkedIn, TikTok, YouTube, and more—based on where your target audience is most active.",
+      },
+      {
+        title: "How do you measure success?",
+        desc: "We track KPIs such as CTR, conversions, cost per acquisition, and ROI to ensure every ad dollar works harder for you.",
+      },
+      {
+        title: "What budget do I need to start?",
+        desc: "Budgets are flexible. We typically recommend starting with at least $500-$1000 monthly for testing and scaling gradually.",
+      },
+      {
+        title: "Do you also handle ad creatives?",
+        desc: "Yes! From copywriting to design and video production, we provide complete creative support for campaigns.",
+      }
+    ]
   },
   {
     category: "ui-ux",
@@ -2195,25 +2384,23 @@ export const dynamicContactDetails = [
         img: "/sample-2.jpg",
       },
     ],
+    faq: [
+      {
+        title: "Why is UI/UX important for my business?",
+        desc: "A well-designed user experience improves engagement, reduces drop-offs, and builds trust—directly impacting conversions and customer loyalty.",
+      },
+      {
+        title: "Do you only design websites?",
+        desc: "No, we design websites, mobile apps, dashboards, and even enterprise solutions that need intuitive interfaces.",
+      },
+      {
+        title: "How do you ensure designs match our brand identity?",
+        desc: "We analyze your brand elements and integrate them into the design system—ensuring every visual aligns with your brand’s personality.",
+      },
+      {
+        title: "Can you redesign my existing website or app?",
+        desc: "Absolutely! We specialize in redesigning outdated interfaces into modern, conversion-driven digital products.",
+      }
+    ]
   },
 ];
-
-// export type DynamicContactDetailsType = {
-//   category: string;
-//   ContactDetails: {
-//     title: React.ReactNode;
-//     desc: string;
-//     btn: string;
-//   };
-//   counterStatus: {
-//     num: number;
-//     suffix: string;
-//     subheading: string;
-//     isDecimal: boolean;
-//   }[];
-//   aboutSection: {
-//     title: React.ReactNode;
-//     desc: string;
-//     img: string;
-//   }[];
-// };

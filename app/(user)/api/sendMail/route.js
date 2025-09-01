@@ -41,7 +41,7 @@ export async function POST(req) {
     html: `
             <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
             <div style="text-align: center; margin-bottom: 20px;">
-                <img src="https://cdn.webibee.com/Webibee/webibeepurplelogo.png" alt="Webibee Logo" style="width: 150px; height: auto;">
+                <img src="https://ik.imagekit.io/a7ag28udt/webibeepurplelogo.png" alt="Webibee Logo" style="width: 150px; height: auto;">
             </div>
             <p style="font-size: 16px; color: #555;">Hi,</p>
             <p style="font-size: 16px; color: #555;">You have a new message from the Webibee website:</p>
@@ -80,7 +80,7 @@ export async function POST(req) {
     subject: "Acknowledgment: We received your Submission",
     html: `<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
             <div style="text-align: center; margin-bottom: 20px;">
-                <img src="https://cdn.webibee.com/Webibee/webibeepurplelogo.png" alt="Webibee Logo" style="width: 150px; height: auto;">
+                <img src="https://ik.imagekit.io/a7ag28udt/webibeepurplelogo.png" alt="Webibee Logo" style="width: 150px; height: auto;">
             </div>
             <p style="font-size: 16px; color: #555;">Dear <strong>${userName}</strong>
             <p style="font-size: 16px; color: #555;">Greetings from Webibee Team!</p>

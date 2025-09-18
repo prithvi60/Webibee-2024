@@ -4,28 +4,26 @@ import { testimonials } from "@/libs/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { HiMiniSpeakerWave, HiMiniPause } from "react-icons/hi2";
-import { parentVariant, variant1, variant2, variantGrid2 } from "@/libs/Variants";
+import {
+  parentVariant,
+  variant1,
+  variant2,
+  variantGrid2,
+} from "@/libs/Variants";
 
-export default function Testimonials() {
-  const [isIndia, setIsIndia] = useState(false);
+export default function Testimonials({ userCountry }: { userCountry: string }) {
   const [locTestimonials, setLocTestimonials] = useState(testimonials);
-
+  const isIndia = userCountry === "IN";
   useEffect(() => {
-    setLocTestimonials(isIndia ? testimonials.slice(0, 3) : testimonials.slice(3, testimonials.length));
+    setLocTestimonials(
+      isIndia
+        ? testimonials.slice(0, 3)
+        : testimonials.slice(3, testimonials.length)
+    );
   }, [isIndia]);
 
   const [isActive, setIsActive] = useState(locTestimonials[0].id);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-
-  useEffect(() => {
-    // Fetch user's location
-    fetch("https://ipapi.co/json/")
-      .then((response) => response.json())
-      .then((data) => {
-        // Check if the country is India
-        setIsIndia(data.country === "IN");
-      });
-  }, []);
 
   useEffect(() => {
     speechSynthesis.cancel();
@@ -35,13 +33,15 @@ export default function Testimonials() {
   const handlePlayPause = (review: string): void => {
     if (!isPlaying) {
       const voices = speechSynthesis.getVoices();
-      const femaleVoices = voices.filter(voice =>
-        voice.name.includes("Google US English Female") ||
-        voice.name.includes("Microsoft Zira") ||
-        voice.name.includes("Microsoft Hazel")
+      const femaleVoices = voices.filter(
+        (voice) =>
+          voice.name.includes("Google US English Female") ||
+          voice.name.includes("Microsoft Zira") ||
+          voice.name.includes("Microsoft Hazel")
       );
 
-      const professionalVoice = femaleVoices.length > 0 ? femaleVoices[0] : null;
+      const professionalVoice =
+        femaleVoices.length > 0 ? femaleVoices[0] : null;
 
       const utterance = new SpeechSynthesisUtterance(review);
       utterance.lang = "en-US";
@@ -68,7 +68,9 @@ export default function Testimonials() {
         variants={variant1}
         viewport={{ once: true }}
         initial="initial"
-        whileInView="animate" className="relative z-0">
+        whileInView="animate"
+        className="relative z-0"
+      >
         <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
           Testimonials
         </h3>
@@ -87,7 +89,9 @@ export default function Testimonials() {
           variants={parentVariant}
           viewport={{ amount: 0.3, once: true }}
           initial="initial"
-          whileInView="animate" className="block space-y-5 w-full md:w-[55%] md:pb-5">
+          whileInView="animate"
+          className="block space-y-5 w-full md:w-[55%] md:pb-5"
+        >
           {locTestimonials.map((testimonial) => (
             <motion.li
               variants={variantGrid2}
@@ -127,19 +131,25 @@ export default function Testimonials() {
           variants={parentVariant}
           viewport={{ amount: 0.3, once: true }}
           initial="initial"
-          whileInView="animate" className="block space-y-5 md:py-5 w-full md:w-[45%]">
+          whileInView="animate"
+          className="block space-y-5 md:py-5 w-full md:w-[45%]"
+        >
           {locTestimonials.map((testimonial) => (
             <motion.div
               variants={variant2}
               // viewport={{ once: true }}
               initial="initial"
-              whileInView="animate" key={testimonial.id}>
+              whileInView="animate"
+              key={testimonial.id}
+            >
               {isActive === testimonial.id ? (
                 <motion.div
                   key={testimonial.review}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ ease: "easeOut", duration: 0.5 }} className="pl-10 sm:pl-0 space-y-6">
+                  transition={{ ease: "easeOut", duration: 0.5 }}
+                  className="pl-10 sm:pl-0 space-y-6"
+                >
                   <p className="hidden md:block !leading-9 text-base font-SourceCodePro font-normal sm:text-lg lg:text-xl">{`${testimonial.review}`}</p>
                   <div className="flex justify-center sm:justify-start items-center md:gap-2.5">
                     {/* <audio
@@ -180,10 +190,16 @@ export default function Testimonials() {
                         />
                       </div>
                     )}
-                    <div className="hidden md:block text-info text-xl"> ( Tired of Reading? Try the audio version )</div>
-
+                    <div className="hidden md:block text-info text-xl">
+                      {" "}
+                      ( Tired of Reading? Try the audio version )
+                    </div>
                   </div>
-                  <div className="md:hidden text-info text-sm text-center"> Tired of reading LONG reviews? <br /> Try our audio testimonial</div>
+                  <div className="md:hidden text-info text-sm text-center">
+                    {" "}
+                    Tired of reading LONG reviews? <br /> Try our audio
+                    testimonial
+                  </div>
                 </motion.div>
               ) : null}
             </motion.div>

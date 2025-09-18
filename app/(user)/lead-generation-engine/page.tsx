@@ -7,8 +7,10 @@ import WhatWeDo from "@/components/lge/WhatWeDo";
 import WhyWebibee from "@/components/lge/WhyWebibee";
 import Testimonials from "@/components/Testimonials";
 import { LGEFaqs } from "@/libs/data";
+import { headers } from "next/headers";
 
-const Page = () => {
+const Page = async () => {
+    const country = (await headers()).get("x-vercel-ip-country") || "Unknown";
     return (
         <main>
             <LGEHero />
@@ -17,7 +19,7 @@ const Page = () => {
             <AllMarketingNeeds />
             <WhyWebibee />
             <Categories />
-            <Testimonials />
+            <Testimonials userCountry={country} />
             <FAQ lists={LGEFaqs} />
         </main>
     )

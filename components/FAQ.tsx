@@ -22,20 +22,10 @@ const itemClasses = {
 type FAQProps = {
     lists?: { title: string; desc: string }[];
     location?: string | null;
+    userCountry?: string;
 };
 
-const FAQ = ({ lists, location }: FAQProps) => {
-    const [isIndia, setIsIndia] = useState(false);
-    useEffect(() => {
-        // Fetch user's location
-        fetch("https://ipapi.co/json/")
-            .then((response) => response.json())
-            .then((data) => {
-                // Check if the country is India
-                setIsIndia(data.country === "IN");
-            });
-    }, []);
-
+const FAQ = ({ lists, location, userCountry }: FAQProps) => {
     const faq = [
         {
             title: "What does Webibee offer?",
@@ -43,9 +33,10 @@ const FAQ = ({ lists, location }: FAQProps) => {
         },
         {
             title: "How much does it cost?",
-            desc: isIndia
-                ? `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">₹1Lakh</strong>`
-                : `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">$2500</strong>`,
+            desc:
+                userCountry === "IN"
+                    ? `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">₹1Lakh</strong>`
+                    : `Our cost is carefully catered to meet the budget of SMEs and start from <strong class="text-info">$2500</strong>`,
         },
         {
             title: "What information do you need to prepare an estimate?",

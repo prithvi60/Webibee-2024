@@ -17,16 +17,15 @@ export default async function Home() {
     url: "https://webibee.com"
   }
   const country = (await headers()).get("x-vercel-ip-country") || "Unknown";
-  console.log(country);
 
   return (
     <div className="overflow-x-hidden">
       <Hero />
       <PortfolioSlider />
       <Categories />
-      <Testimonials />
+      <Testimonials userCountry={country} />
       <Services />
-      <FAQ />
+      <FAQ userCountry={country} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

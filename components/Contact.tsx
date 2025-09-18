@@ -10,7 +10,11 @@ const Contact = () => {
 
     return (
         <section
-            className={`${path === "/contact" || path === "/thankyou" ? "hidden" : "block"
+            className={`${path === "/contact" ||
+                path === "/thankyou" ||
+                path === "/lead-generation-engine"
+                ? "hidden"
+                : "block"
                 } w-full p-10 sm:px-12 xl:pt-12 xl:pb-6 max-w-5xl 2xl:max-w-6xl mx-auto text-center`}
         >
             {path.startsWith("/caseStudy") ? (
@@ -18,7 +22,9 @@ const Contact = () => {
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5">
+                    whileInView="animate"
+                    className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-5"
+                >
                     <div className="space-y-10 w-full md:w-3/5">
                         <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
                             Ready to take your project to the{" "}
@@ -40,12 +46,15 @@ const Contact = () => {
                 </motion.div>
             ) : path === "/ITEssentials" ||
                 path === "/digitalEssentials" ||
-                path === "/creativeEssentials" || path === "/whyCode" ? (
+                path === "/creativeEssentials" ||
+                path === "/whyCode" ? (
                 <motion.div
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className={`flex flex-col md:flex-row  gap-10 md:gap-5 ${path !== "/whyCode" ? "md:justify-between" : "md:justify-center"}`}>
+                    whileInView="animate"
+                    className={`flex flex-col md:flex-row  gap-10 md:gap-5 ${path !== "/whyCode" ? "md:justify-between" : "md:justify-center"}`}
+                >
                     <div className="space-y-10 w-full md:w-3/5">
                         <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px]">
                             Ready to take your project to the{" "}
@@ -72,7 +81,9 @@ const Contact = () => {
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className={`flex flex-col md:flex-row items-center w-full justify-between`}>
+                    whileInView="animate"
+                    className={`flex flex-col md:flex-row items-center w-full justify-between`}
+                >
                     {/* <div className="space-y-10 w-full md:w-3/5"> */}
                     <h4 className="font-EbGaramond text-2xl !leading-snug tracking-wider capitalize sm:text-[32px] text-left w-full lg:w-3/5">
                         Ready to take your project to the{" "}
@@ -87,7 +98,9 @@ const Contact = () => {
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
-                    whileInView="animate" className="block space-y-12 lg:space-y-16">
+                    whileInView="animate"
+                    className="block space-y-12 lg:space-y-16"
+                >
                     {path === "/works" ? (
                         <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">
                             Ready to take your project to the{" "}
@@ -100,16 +113,19 @@ const Contact = () => {
                             <strong className="font-extrabold text-info">Vision</strong>
                         </h4>
                     )}
-                    {(path === "/" || path === "/about" || path === "/proficiency" || path) && (
-                        <div className="block space-y-6 lg:space-y-10">
-                            {/* <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
+                    {(path === "/" ||
+                        path === "/about" ||
+                        path === "/proficiency" ||
+                        path) && (
+                            <div className="block space-y-6 lg:space-y-10">
+                                {/* <h6 className="font-SourceCodePro tracking-wide text-lg sm:text-2xl xl:text-3xl">
                                 Feel the Impact
                             </h6> */}
-                            <p className="text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]">
-                                Ready for boost your Business Tech?
-                            </p>
-                        </div>
-                    )}
+                                <p className="text-sm sm:text-lg xl:text-xl font-SourceCodePro text-[#868686]">
+                                    Ready for boost your Business Tech?
+                                </p>
+                            </div>
+                        )}
                     <DotExpandButton text="GET IN TOUCH" href="/contact" />
                 </motion.div>
             )}

@@ -1,3 +1,9 @@
+import { FaChartArea } from "react-icons/fa";
+import { MdMonitorHeart } from "react-icons/md";
+import { RiGlobalFill, RiInstagramFill } from "react-icons/ri";
+import { HiSpeakerphone } from "react-icons/hi";
+import { TbTools } from "react-icons/tb";
+
 export const navLinks = [
   { href: "/", title: "Home" },
   { href: "/blogs", title: "Blogs" },
@@ -1510,7 +1516,8 @@ export const dynamicContactDetails = [
         desc: "SEO is a long-term strategy. While minor improvements can be seen within weeks, significant results usually take 3-6 months.",
       },
       {
-        title: "Do you offer local SEO services for small businesses {{Country}}?",
+        title:
+          "Do you offer local SEO services for small businesses {{Country}}?",
         desc: "Yes! We specialize in optimizing for local searches to help small businesses rank in their area.",
       },
       {
@@ -1525,7 +1532,7 @@ export const dynamicContactDetails = [
         title: "Why is SEO better than paid ads?",
         desc: "Ads deliver quick but short-term results. SEO builds long-term visibility, credibility, and sustainable traffic without paying for every click.",
       },
-    ]
+    ],
   },
   {
     category: "web-design",
@@ -1624,7 +1631,7 @@ export const dynamicContactDetails = [
         title: "Will I be able to update my website after it’s built?",
         desc: "Yes, we provide CMS-based solutions like WordPress and Shopify, so you can easily update content without needing technical skills.",
       },
-    ]
+    ],
   },
   {
     category: "branding",
@@ -1722,7 +1729,7 @@ export const dynamicContactDetails = [
         title: "What industries do you work with?",
         desc: "We work with startups, SMEs, and enterprises across multiple industries {{Country}}, tailoring branding to each sector’s unique needs.",
       },
-    ]
+    ],
   },
   {
     category: "design",
@@ -1821,7 +1828,7 @@ export const dynamicContactDetails = [
         title: "How quickly can you deliver designs?",
         desc: "Timelines vary by project, but most social media creatives and posters can be delivered within 2-3 business days {{Country}}.",
       },
-    ]
+    ],
   },
   {
     category: "wordpress",
@@ -1919,7 +1926,7 @@ export const dynamicContactDetails = [
         title: " Do you offer ongoing support and maintenance?",
         desc: "Yes, we provide packages for regular updates, backups, bug fixes, and performance optimization {{Country}}.",
       },
-    ]
+    ],
   },
   {
     category: "shopify-apps",
@@ -1998,11 +2005,13 @@ export const dynamicContactDetails = [
     ],
     faq: [
       {
-        title: "Why should I build a custom Shopify app instead of using existing ones?",
+        title:
+          "Why should I build a custom Shopify app instead of using existing ones?",
         desc: "While pre-built apps are useful, they often don’t cover every business need. Custom apps are designed specifically for your store, giving you unique features and better performance.",
       },
       {
-        title: "Will my custom Shopify app work globally (e.g., India, USA, UK)?",
+        title:
+          "Will my custom Shopify app work globally (e.g., India, USA, UK)?",
         desc: "Yes, we build apps that adapt to your business location. Your app can be optimized for country-specific taxes, currencies, shipping methods, and customer experiences.",
       },
       {
@@ -2017,7 +2026,7 @@ export const dynamicContactDetails = [
         title: "How long does it take to develop a custom Shopify app?",
         desc: "Timelines vary depending on complexity, but most custom apps are delivered within 4-8 weeks. We’ll provide a clear roadmap before starting development.",
       },
-    ]
+    ],
   },
   {
     category: "fullstack",
@@ -2110,7 +2119,8 @@ export const dynamicContactDetails = [
         desc: " Full stack development covers both frontend (user-facing) and backend (server-side) development, ensuring end-to-end functionality of a website or application.",
       },
       {
-        title: "Why should I choose a full stack developer instead of separate frontend and backend teams?",
+        title:
+          "Why should I choose a full stack developer instead of separate frontend and backend teams?",
         desc: "Full stack developers streamline communication, reduce costs, and accelerate development by managing the complete project flow.",
       },
       {
@@ -2120,8 +2130,8 @@ export const dynamicContactDetails = [
       {
         title: "Can you scale my project as my business grows?",
         desc: "Absolutely. We build scalable and flexible full stack applications that evolve with your business growth.",
-      }
-    ]
+      },
+    ],
   },
   {
     category: "ai",
@@ -2214,8 +2224,8 @@ export const dynamicContactDetails = [
       {
         title: "How long does it take to implement AI solutions?",
         desc: "Implementation time depends on the complexity of your project, but we aim for efficient deployment with measurable results.",
-      }
-    ]
+      },
+    ],
   },
   {
     category: "ads",
@@ -2308,8 +2318,8 @@ export const dynamicContactDetails = [
       {
         title: "Do you also handle ad creatives?",
         desc: "Yes! From copywriting to design and video production, we provide complete creative support for campaigns.",
-      }
-    ]
+      },
+    ],
   },
   {
     category: "ui-ux",
@@ -2402,7 +2412,107 @@ export const dynamicContactDetails = [
       {
         title: "Can you redesign my existing website or app?",
         desc: "Absolutely! We specialize in redesigning outdated interfaces into modern, conversion-driven digital products.",
-      }
-    ]
+      },
+    ],
+  },
+];
+
+// lead generation engine page data
+
+export const LGEMarketingNeeds = [
+  {
+    title: "One Partner, Zero Headache",
+    description: "No need to hire 4-5 different agencies.",
+  },
+  {
+    title: "SME-Friendly Pricing",
+    description: "Affordable packages for both India & US markets.",
+  },
+  {
+    title: "Future-Ready",
+    description: "We bring AI + automation to simplify your business.",
+  },
+  {
+    title: "Scalable",
+    description: "Start small, grow as your business grows.",
+  },
+];
+
+export const LGEFaqs = [
+  {
+    title: " Do I need to spend a big budget on ads?",
+    desc: "Not at all. We optimize for SMEs, so you can start lean and scale as results come in.",
+  },
+  {
+    title: "How quickly can I see leads?",
+    desc: "Most clients start seeing results within 2-4 weeks.",
+  },
+  {
+    title: "Can you integrate with my existing CRM?",
+    desc: "Yes, we connect with HubSpot, Zoho, Salesforce, and more.",
+  },
+  {
+    title: "Is this for western businesses only?",
+    desc: "No, we support SMEs globally with localized pricing.",
+  },
+  {
+    title: "I’m not very tech-savvy. Can I still use this?",
+    desc: "Absolutely. We handle the tech, design, and automation — you just focus on running your business.",
+  },
+];
+
+export const LGEServices = [
+  {
+    icon: <FaChartArea className="text-info text-3xl" />,
+    title: "Business Development & Consulting",
+    summaryList: [
+      "Growth strategies tailored for SMEs",
+      "Sales enablement playbooks",
+      "Consulting on replacing outdated systems",
+    ],
+  },
+  {
+    icon: <RiInstagramFill className="text-info text-3xl" />,
+    title: "Content & Media",
+    summaryList: [
+      "Copywriting & AI content creation",
+      "Blog posts, SEO content, email campaigns",
+      "Video editing & short-form reels",
+    ],
+  },
+  {
+    icon: <RiGlobalFill className="text-info text-3xl" />,
+    title: "Web & Technology",
+    summaryList: [
+      "Website design & development",
+      "API integrations (payments, CRMs, ERPs)",
+      "AI-driven workflows & automation",
+    ],
+  },
+  {
+    icon: <HiSpeakerphone className="text-info text-3xl" />,
+    title: "Marketing & Tools",
+    summaryList: [
+      "Marketing tool setup (CRM, email, chatbots)",
+      "Campaign automation & tracking",
+      "Lead generation systems that actually work",
+    ],
+  },
+  {
+    icon: <TbTools className="text-info text-3xl" />,
+    title: "Creatives & Design",
+    summaryList: [
+      "Posters, social media creatives, brochures",
+      "AI-powered content & design",
+      "Brand identity & visual storytelling",
+    ],
+  },
+  {
+    icon: <MdMonitorHeart className="text-info text-3xl" />,
+    title: "Monitoring & Reports",
+    summaryList: [
+      "Real-time dashboards",
+      "Performance analysis & ROI tracking",
+    ],
   },
 ];

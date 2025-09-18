@@ -77,14 +77,14 @@ const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
             viewport={{ once: true }}
             initial="initial"
             whileInView="animate"
-            className={`w-full ${!blog ? "" : "md:sticky md:top-5 lg:mt-16 "}`}
+            className={`w-full ${!blog ? "" : "md:sticky md:top-5 lg:mt-16 "} ${seo && "bg-white "}`}
             onSubmit={handleSubmit}
         >
-            {seo && (
+            {/* {seo && (
                 <h3 className="bg-info/80 text-center font-bold tracking-wide mb-6 text-white rounded-lg px-5 py-3">
                     Get In Touch
                 </h3>
-            )}
+            )} */}
             <div className="flex flex-col gap-6">
                 <input
                     type="text"

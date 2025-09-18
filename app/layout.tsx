@@ -85,6 +85,11 @@ export default function RootLayout({
       className={`${EbGaramond.variable} ${sourceCodePro.variable}`}
     >
       <head>
+        {/* Add Calendly widget stylesheet globally */}
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
         {/* Add Microsoft Clarity script with Partytown */}
         <Partytown debug={true} forward={["dataLayer.push"]} />
         <script

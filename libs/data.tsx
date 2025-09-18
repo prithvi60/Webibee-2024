@@ -1,9 +1,11 @@
 export const navLinks = [
-  { href: "/blog", title: "Blog" },
-  { href: "/whyCode", title: "Why Code" },
+  { href: "/", title: "Home" },
+  { href: "/blogs", title: "Blogs" },
+  // { href: "/whyCode", title: "Why Code" },
   // { href: "/proficiency", title: "Proficiency" },
   { href: "/works", title: "Portfolio" },
-  { href: "/contact", title: "Talk to an Expert →" },
+  // { href: "/contact", title: "Talk to an Expert →" },
+  // { href: "/contact", title: "Talk to an Expert →" },
 ];
 
 export const footerNavLinks = [

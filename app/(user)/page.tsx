@@ -4,8 +4,9 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import PortfolioSlider from "@/components/PortfolioSlider";
 import Categories from "@/components/Categories";
+import { headers } from "next/headers";
 
-export default function Home() {
+export default async function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -15,6 +16,9 @@ export default function Home() {
     email: "support@webibee.com",
     url: "https://webibee.com"
   }
+  const country = (await headers()).get("x-vercel-ip-country") || "Unknown";
+  console.log(country);
+
   return (
     <div className="overflow-x-hidden">
       <Hero />

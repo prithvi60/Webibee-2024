@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import MobileNav from "./MobileNav";
+import CalendlyLink from "./CalendlyButton";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const path = usePathname();
@@ -48,16 +49,16 @@ const NavBar = () => {
           {navLinks.map((link, idx) => (
             <li
               key={idx}
-              className={` ${link.href === path &&
-                link.href !== "/contact" &&
-                "underline underline-offset-[14px]"
-                } tracking-wide font-bold hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out" ${link.title == "Talk to an Expert →" &&
+              className={`tracking-wide font-bold hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out ${link.title == "Talk to an Expert →" &&
                 "capitalize font-bold text-info  hover:animate-pulse"
                 }`}
             >
               <Link href={`${link.href}`}>{link.title}</Link>
             </li>
           ))}
+          <li>
+            <CalendlyLink />
+          </li>
         </ul>
         {/* Mobile View */}
         <button

@@ -4,21 +4,24 @@ import Footer from '@/components/Footer'
 import NavBar from '@/components/Navbar'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 import SmoothScroll from '@/components/SmoothScroll'
+import { headers } from 'next/headers'
 import React from 'react'
 
 interface SiteLayoutProps {
   children: React.ReactNode;
 }
 
-const SiteLayout = ({ children }: SiteLayoutProps) => {
+const SiteLayout = async ({ children }: SiteLayoutProps) => {
+  // Read the custom header set by the middleware
+  const country = (await headers()).get("X-User-Country") || "unknown";
   return (
     <main>
       <NavBar />
-      <SmoothScroll />
+      {/* <SmoothScroll /> */}
       {children}
       <Contact />
       <Footer />
-      <FloatingButton />
+      <FloatingButton userCountry={country} />
       <ScrollToTopButton />
     </main>
   )

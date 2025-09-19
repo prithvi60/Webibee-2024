@@ -9,9 +9,8 @@ import CalendlyLink from "../CalendlyButton";
 export const LGEHero = () => {
     return (
         <section
-            className={`w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row items-start gap-10 `}
-        // bg-cover bg-center bg-no-repeat
-        // style={{ backgroundImage: "url('/heroLGE.svg')" }}
+            className={`w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 flex flex-col md:flex-row items-start gap-10 bg-cover bg-center bg-no-repeat`}
+            style={{ backgroundImage: "url('/heroLGE.svg')" }}
         >
             <div className="w-full md:w-1/2">
                 <motion.div

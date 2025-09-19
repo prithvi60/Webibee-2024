@@ -9,7 +9,7 @@ const E2EServices = () => {
             <h2 className="font-EbGaramond font-medium capitalize text-5xl sm:text-6xl xl:text-7xl">
                 Our <strong className="text-info">End-to-End Services</strong>
             </h2>
-            <p className="font-SourceCodePro font-normal text-sm sm:text-base !leading-normal w-full xl:w-4/5 mx-auto">
+            <p className="font-SourceCodePro font-normal text-base sm:text-lg lg:text-xl !leading-normal w-full xl:w-4/5 mx-auto">
                 Running a business is tough. why juggle multiple vendors when you can have one partner who takes care of everything? We bring design, tech, automation, content, and business development under one roof—so you save time, cut costs, and focus on growth.
             </p>
         </section>

@@ -21,7 +21,7 @@ const Categories = () => {
                         Crafting Impact Across{" "}
                         <strong className="text-info">Industries</strong>
                     </h2>
-                    <p className="text-sm text-left md:text-start md:text-lg font-SourceCodePro">
+                    <p className="text-base sm:text-lg lg:text-xl text-left md:text-start font-SourceCodePro">
                         Our work transforms visions into digital realities, elevating brands
                         across diverse industries. Whether designing sleek portfolios for
                         clothing brands or crafting immersive experiences for interior

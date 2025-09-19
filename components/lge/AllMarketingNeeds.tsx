@@ -18,7 +18,7 @@ const AllMarketingNeeds = () => {
                         <h3 className="font-EbGaramond font-semibold text-center px-3 pt-4 pb-8 md:pt-6 md:pb-12 bg-[#FFD700] text-xl sm:text-2xl xl:text-[28px]">
                             {item.title}
                         </h3>
-                        <p className="font-SourceCodePro flex flex-col items-center justify-center bg-primary -mt-5 rounded-t-3xl text-center p-4 md:p-6 font-normal text-base sm:text-lg !leading-normal">
+                        <p className="font-SourceCodePro flex flex-col items-center justify-center bg-primary -mt-5 rounded-t-3xl text-center p-4 md:p-6 font-normal text-base sm:text-lg lg:text-xl !leading-normal">
                             {item.description}
                         </p>
                     </div>

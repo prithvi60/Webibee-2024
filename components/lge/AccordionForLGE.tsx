@@ -67,7 +67,8 @@ const AccordionForLGE = ({ userCountry }: { userCountry: string }) => {
         {
             title: "Scale - Your Marketing Department on Autopilot",
             price: userCountry === "IN" ? "₹65,000" : "$1500",
-            description: "For scaling companies who want full support and automation.",
+            description:
+                "For scaling companies who want full support and automation.",
             content: [
                 <>
                     <SpanTag tag="Consulting & Systems:" /> Full review of outdated
@@ -116,10 +117,12 @@ const AccordionForLGE = ({ userCountry }: { userCountry: string }) => {
                 {items.map((item, index) => (
                     <div
                         key={index}
-                        className={`bg-white rounded-2xl transition-all duration-300`}>
+                        className={`bg-white rounded-2xl transition-all duration-300`}
+                    >
                         <div
-                            className={`flex items-center justify-between p-6 cursor-pointer rounded-2xl`}
-                            onClick={() => handleToggle(index)}>
+                            className={`flex items-start md:items-center justify-between p-6 cursor-pointer rounded-2xl`}
+                            onClick={() => handleToggle(index)}
+                        >
                             <div className="flex flex-col">
                                 <span className="text-lg text-left font-semibold">
                                     {item.title}
@@ -127,13 +130,17 @@ const AccordionForLGE = ({ userCountry }: { userCountry: string }) => {
                                 <span className="text-gray-600 text-sm text-left">
                                     {item.description}
                                 </span>
+                                <span className="bg-purple-200 text-info font-bold py-2 px-4 rounded-full bg-opacity-50 text-xl md:text-2xl block sm:hidden mt-2">
+                                    {item.price}
+                                    <span className="text-black text-xs">/month</span>
+                                </span>
                             </div>
                             <div className="flex items-center space-x-4">
-                                <span className="bg-purple-200 text-info font-bold py-2 px-4 rounded-full bg-opacity-50 text-xl md:text-2xl">
-                                    {item.price}<span className="text-black text-xs">/month</span>
+                                <span className="bg-purple-200 text-info font-bold py-2 px-4 rounded-full bg-opacity-50 text-xl md:text-2xl hidden sm:block">
+                                    {item.price}
+                                    <span className="text-black text-xs">/month</span>
                                 </span>
-                                <button
-                                    className="bg-info text-white rounded-full p-2 hover:bg-info/70 focus:outline-none focus:ring-2 focus:ring-info/50 w-10 h-10 flex items-center justify-center">
+                                <button className="bg-info text-white rounded-full p-2 hover:bg-info/70 focus:outline-none focus:ring-2 focus:ring-info/50 w-10 h-10 flex items-center justify-center">
                                     {openIndex === index ? (
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -189,11 +196,11 @@ const AccordionForLGE = ({ userCountry }: { userCountry: string }) => {
                                                 />
                                             </svg>
                                         </span>
-                                        <p>{bullet}</p>
+                                        <p className="text-base md:text-lg">{bullet}</p>
                                     </li>
                                 ))}
                             </ul>
-                            <p className="font-normal text-base !leading-normal py-6 text-left">
+                            <p className="font-normal text-base md:text-lg !leading-normal py-6 text-left">
                                 {item.benefit}
                             </p>
                         </div>

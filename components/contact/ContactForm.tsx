@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import Loader from "../Loader";
 import { motion } from "framer-motion";
 import { variantContact, variantTitle } from "@/libs/Variants";
+import { usePathname } from "next/navigation";
 
 const initialFormData = {
     userName: "",
@@ -25,7 +26,7 @@ const ContactForm = ({
 }) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
-
+    const path = usePathname();
     const handleChange = (e: { target: { name: any; value: any } }) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -69,7 +70,11 @@ const ContactForm = ({
                 setStatus(false);
                 setFormData(initialFormData);
                 (e.target as HTMLFormElement).reset();
-                window.location.href = "/thankyou";
+                {
+                    path === "/lead-generation-engine"
+                        ? (window.location.href = "/lead-generation-engine/thankyou")
+                        : (window.location.href = "/thankyou");
+                }
             } else {
                 throw new Error("operations failed.");
             }

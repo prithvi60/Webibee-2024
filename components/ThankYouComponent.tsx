@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const ThankYouComponent = () => {
+  const path = usePathname();
   return (
     <section className="flex flex-col justify-center items-center p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 mb-10 font-EbGaramond text-default bg-primary space-y-6 h-[450px] md:h-[550px] lg:h-[60vh]">
       <div className="text-3xl md:text-6xl font-semibold text-center">
@@ -21,7 +24,9 @@ export const ThankYouComponent = () => {
       </p>
       <Link
         title="back to home"
-        href={"/"}
+        href={
+          path.startsWith("/lead-generation-engine") ? "/lead-generation-engine" : "/"
+        }
         className="w-max mx-auto"
       >
         <button
@@ -29,7 +34,6 @@ export const ThankYouComponent = () => {
         >
           Go Back To Home
         </button>
-
       </Link>
     </section>
   );

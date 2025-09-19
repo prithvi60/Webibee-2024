@@ -66,10 +66,10 @@ const LetsCreate = () => {
     }, [isInView]);
     return (
         <div className="block text-center space-y-10 lg:space-y-20 p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28">
-            <h4 className="font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start">
+            <h2 className="font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start">
                 Why Custom Code <strong className="text-info">Outperforms</strong>{" "}
                 No-Code Solutions
-            </h4>
+            </h2>
             <div className="flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:items-start gap-12 lg:gap-6 relative">
                 <motion.div
                     variants={variant1}
@@ -139,14 +139,14 @@ const LetsCreate = () => {
                     <Slider ref={sliderRef} {...settings}>
                         {outPerforms.map((list: string, idx: number) => (
                             <div key={idx} className="py-2 outline-none">
-                                <h2
+                                <h3
                                     className={`rounded-lg font-EbGaramond transition-all transform py-3 text-lg lg:text-xl xl:text-2xl max-w-60 sm:max-w-72 xl:max-w-80 mx-auto text-center duration-700 ease-in-out font-extrabold ${isActive === idx
                                         ? "text-black border-2 border-info scale-110"
                                         : "text-black/50 opacity-65"
                                         }`}
                                 >
                                     {list}
-                                </h2>
+                                </h3>
                             </div>
                         ))}
                     </Slider>

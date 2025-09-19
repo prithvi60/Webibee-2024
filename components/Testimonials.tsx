@@ -71,11 +71,12 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
         whileInView="animate"
         className="relative z-0"
       >
-        <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
+        <h2 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
           Testimonials
-        </h3>
+        </h2>
         <div className="absolute -top-5 md:-top-10 left-48 xl:left-[480px] size-32 md:size-56 -z-10">
           <Image
+            title="svg image"
             src={"https://cdn.webibee.com/Webibee/svg%202.svg"}
             alt="svg"
             className="object-contain object-center"
@@ -107,6 +108,7 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
               <div className="flex items-center gap-6 w-full lg:w-11/12 xl:w-4/5">
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28">
                   <Image
+                    title={testimonial.reviewer}
                     src={testimonial.img}
                     alt="avatar"
                     className="object-cover object-top rounded-full"
@@ -173,6 +175,7 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
                     {isPlaying ? (
                       <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
                         <Image
+                          title="sound gif"
                           fill
                           src={"/sound-gif.gif"}
                           alt="image"
@@ -183,6 +186,7 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
                     ) : (
                       <div className="w-32 h-8 sm:w-48 sm:h-12 relative">
                         <Image
+                          title="sound svg"
                           fill
                           src={"https://cdn.webibee.com/Webibee/sound.svg"}
                           alt="image"

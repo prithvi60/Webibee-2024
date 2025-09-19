@@ -1,6 +1,5 @@
 import { LGEServices } from '@/libs/data'
 import React from 'react'
-import { MdMonitorHeart } from 'react-icons/md'
 
 const WhatWeDo = () => {
     return (

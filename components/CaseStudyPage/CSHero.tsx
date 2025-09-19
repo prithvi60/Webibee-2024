@@ -107,6 +107,7 @@ const CSHero = ({
                                             </video>
                                         ) : (
                                             <Image
+                                                title="slide image"
                                                 fill
                                                 alt={slide.alt}
                                                 src={slide.img!}
@@ -136,14 +137,14 @@ const CSHero = ({
                                 key={index}
                                 className="space-y-4 "
                             >
-                                <h5 className="relative ml-2 font-EbGaramond font-bold tracking-wider text-xl md:text-2xl p-1 xl:text-3xl before:absolute before:top-0.5 before:-left-2 before:w-2 before:h-full text-[#464959] before:bg-secondary before:rounded-full capitalize">
+                                <h2 className="relative ml-2 font-EbGaramond font-bold tracking-wider text-xl md:text-2xl p-1 xl:text-3xl before:absolute before:top-0.5 before:-left-2 before:w-2 before:h-full text-[#464959] before:bg-secondary before:rounded-full capitalize">
                                     {item.title}
-                                </h5>
+                                </h2>
                                 <ul className="">
                                     {item.title === "services" ? (
                                         <li className="font-SourceCodePro font-medium text-base md:text-lg xl:text-xl pl-10 pr-4 py-3.5 mr-2 bg-[#FFD70033]">
                                             {item.list.map((val: any, idx: number) => (
-                                                <h5 key={idx}>{val}</h5>
+                                                <h3 key={idx}>{val}</h3>
                                             ))}
                                         </li>
                                     ) : (

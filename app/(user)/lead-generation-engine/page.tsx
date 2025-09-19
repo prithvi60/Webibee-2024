@@ -3,6 +3,7 @@ import FAQ from "@/components/FAQ";
 import AllMarketingNeeds from "@/components/lge/AllMarketingNeeds";
 import E2EServices from "@/components/lge/E2EServices";
 import { LGEHero } from "@/components/lge/LGEHero";
+import Pricing from "@/components/lge/Pricing";
 import WhatWeDo from "@/components/lge/WhatWeDo";
 import WhyWebibee from "@/components/lge/WhyWebibee";
 import Testimonials from "@/components/Testimonials";
@@ -20,6 +21,7 @@ const Page = async () => {
             <WhyWebibee />
             <Categories />
             <Testimonials userCountry={country} />
+            <Pricing userCountry={country}/>
             <FAQ lists={LGEFaqs} />
         </main>
     )

@@ -27,13 +27,13 @@ const WorksHeroSection = () => {
     return (
         <section className="block w-full space-y-10">
             <div className="px-10 pt-10 sm:px-20 space-y-6 xl:px-64 sm:pt-16 xl:pt-28">
-                <motion.h3
+                <motion.h1
                     variants={variantTitle}
                     viewport={{ once: true }}
                     initial="initial"
                     whileInView="animate" className="font-EbGaramond font-medium text-5xl w-full sm:text-7xl uppercase tracking-wide !leading-tight h-full">
                     Portfolio <span className="font-bold text-info">spotlight</span>
-                </motion.h3>
+                </motion.h1>
                 <motion.p
                     variants={variantContact}
                     viewport={{ once: true }}
@@ -52,6 +52,7 @@ const WorksHeroSection = () => {
                                 key={index}
                             >
                                 <Image
+                                    title="View Case Study"
                                     fill
                                     alt="image"
                                     src={image.img}

@@ -6,7 +6,7 @@ import { variantTitle, variantTitle2 } from "@/libs/Variants";
 const WorksHero = () => {
   return (
     <section className="md:pb-28 p-10 sm:px-20 xl:px-64 sm:pt-16 xl:pt-28 space-y-20">
-      <motion.h3
+      <motion.h1
         variants={variantTitle}
         viewport={{ once: true }}
         initial="initial"
@@ -14,7 +14,7 @@ const WorksHero = () => {
         Craft with{" "}
         <strong className="font-extrabold text-info">CODE, SCALE </strong>with
         Confidence
-      </motion.h3>
+      </motion.h1>
       <motion.div
         variants={variantTitle2}
         viewport={{ once: true }}

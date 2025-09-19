@@ -70,6 +70,7 @@ const CalendlyLink = ({ btn }: { btn?: boolean }) => {
         <>
             {btn ? (
                 <button
+                    type="button"
                     onClick={handleCalendlyClick}
                     className="group flex h-10 items-center gap-2 rounded-md pl-8 pr-8 transition-all duration-300 ease-in-out hover:bg-info/80 uppercase hover:pl-2 py-8 font-SourceCodePro text-base border-2 sm:text-lg xl:text-xl hover:text-white active:bg-neutral-700"
                 >
@@ -80,6 +81,7 @@ const CalendlyLink = ({ btn }: { btn?: boolean }) => {
                 </button>
             ) : (
                 <button
+                    type="button"
                     onClick={handleCalendlyClick}
                     className={`capitalize font-bold hover:animate-pulse tracking-wide hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out border-b-4 border-[#4d3191]`}
                 >

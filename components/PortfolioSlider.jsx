@@ -94,6 +94,7 @@ const PortfolioSlider = () => {
                 <Slider {...settings} className="portfolio">
                     {imagesToShow.map((image, index) => (
                         <Link
+                            title="View Case Study"
                             href={`/caseStudy/${image.href}`}
                             className="relative w-full h-[35vh] md:h-[80vh]  lg:h-screen"
                             key={index}
@@ -113,6 +114,7 @@ const PortfolioSlider = () => {
                             ) : (
 
                                 <Image
+                                    title="View Case Study"
                                     fill
                                     alt="image"
                                     src={image.img}

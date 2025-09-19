@@ -20,6 +20,7 @@ const MobileNav = ({
         >
             <div className="flex justify-between items-center">
                 <Link
+                    title="Go to Home"
                     href={"/"}
                     onClick={() => {
                         setOpen(false);
@@ -27,6 +28,7 @@ const MobileNav = ({
                     className="relative size-14"
                 >
                     <Image
+                        title="Webibee Logo - Business Tech for Small Medium Enterprises across the globe"
                         fill
                         src={"https://cdn.webibee.com/Webibee/webibeepurplelogo.png"}
                         alt="Logo"
@@ -51,6 +53,7 @@ const MobileNav = ({
                                 }`}
                         >
                             <Link
+                                title={link.title}
                                 passHref
                                 className="flex items-center gap-2 group"
                                 href={link.href}

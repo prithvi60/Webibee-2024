@@ -38,11 +38,11 @@ const AboutPage = ({
                     whileInView="animate"
                     className="lg:sticky lg:top-5 space-y-12"
                 >
-                    <h4
+                    <h2
                         className={`font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center ${reverse ? "md:text-end" : "md:text-start"}`}
                     >
                         {data.title}
-                    </h4>
+                    </h2>
                     <p className="text-lg leading-relaxed sm:text-xl lg:text-2xl font-SourceCodePro text-justify hyphens-auto">
                         {renderedDesc}
                     </p>
@@ -50,6 +50,7 @@ const AboutPage = ({
             </div>
             <div className="w-full lg:w-1/2">
                 <Image
+                    title="About Image"
                     width={450}
                     height={450}
                     loading="lazy"

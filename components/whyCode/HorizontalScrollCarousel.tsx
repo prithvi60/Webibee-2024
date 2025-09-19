@@ -132,6 +132,7 @@ const Card = ({ card }: { card: any }) => {
         <div className="block space-y-8 min-w-72 md:min-w-[480px] pb-5">
             <div className="size-24 md:size-36 relative mx-auto">
                 <Image
+                    title="icon"
                     alt="icon"
                     src={card.img}
                     fill
@@ -139,9 +140,9 @@ const Card = ({ card }: { card: any }) => {
                 />
             </div>
             <div className="space-y-4">
-                <h4 className="font-EbGaramond text-center md:text-start font-bold tracking-wider md:text-3xl sm:text-2xl text-xl text-[#1B1B1CCC] xl:text-4xl">
+                <h2 className="font-EbGaramond text-center md:text-start font-bold tracking-wider md:text-3xl sm:text-2xl text-xl text-[#1B1B1CCC] xl:text-4xl">
                     {card.title}
-                </h4>
+                </h2>
                 <p className="font-SourceCodePro text-justify md:text-start text-base sm:text-lg xl:text-xl !leading-tight">
                     {card.desc}
                 </p>
@@ -154,9 +155,9 @@ const Card2 = ({ card }: { card: any }) => {
     return (
         <div className="block space-y-8 min-w-[480px] pb-6">
             <div className="space-y-4">
-                <h4 className="font-EbGaramond font-bold tracking-wider md:text-3xl sm:text-2xl text-xl text-[#1B1B1CCC] xl:text-4xl">
+                <h2 className="font-EbGaramond font-bold tracking-wider md:text-3xl sm:text-2xl text-xl text-[#1B1B1CCC] xl:text-4xl">
                     {card.title}
-                </h4>
+                </h2>
                 <p className="font-SourceCodePro text-base sm:text-lg xl:text-xl !leading-tight">
                     {card.desc}
                 </p>
@@ -167,8 +168,3 @@ const Card2 = ({ card }: { card: any }) => {
 
 export default HowItWorks;
 
-type CardType = {
-    url: string;
-    title: string;
-    id: number;
-};

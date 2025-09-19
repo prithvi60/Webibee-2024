@@ -33,10 +33,12 @@ const NavBar = () => {
     <header className="px-5 py-4 md:px-8 xl:px-12 ">
       <nav className="flex justify-between w-full items-center font-EbGaramond">
         <Link
+          title="Go to Home"
           href={"/"}
           className="size-14 sm:size-20 overflow-hidden relative"
         >
           <Image
+            title="Webibee Logo - Business Tech for Small Medium Enterprises across the globe"
             fill
             alt="logo"
             src={
@@ -53,7 +55,7 @@ const NavBar = () => {
                 "capitalize font-bold text-info  hover:animate-pulse"
                 }`}
             >
-              <Link href={`${link.href}`}>{link.title}</Link>
+              <Link title={link.title} href={`${link.href}`}>{link.title}</Link>
             </li>
           ))}
           <li>

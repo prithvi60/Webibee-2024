@@ -16,7 +16,7 @@ export const navLinks = [
 
 export const footerNavLinks = [
   { href: "/", title: "Home" },
-  { href: "/blog", title: "Blog" },
+  { href: "/blogs", title: "Blogs" },
   { href: "/about", title: "About" },
   { href: "/whyCode", title: "Why Code" },
   { href: "/proficiency", title: "Proficiency" },

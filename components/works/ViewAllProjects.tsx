@@ -14,7 +14,7 @@ import { BlogCard } from "../blog/BlogCard";
 const ViewAllProjects = () => {
     return (
         <section className="block space-y-10 md:space-y-20 p-10 sm:px-20 md:px24 xl:px-60 sm:py-16 xl:py-28 overflow-hidden">
-            <motion.h5
+            <motion.h2
                 variants={variant2}
                 viewport={{ once: true }}
                 initial="initial"
@@ -22,7 +22,7 @@ const ViewAllProjects = () => {
                 className="font-EbGaramond text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#1B1B1CCC]"
             >
                 View all <span className="font-bold text-info/60">Projects</span>
-            </motion.h5>
+            </motion.h2>
             <motion.div
                 variants={parentVariant}
                 viewport={{ amount: 0.3, once: true }}
@@ -41,7 +41,7 @@ const ViewAllProjects = () => {
                         key={idx}
                         className="relative mx-4 md:mx-8 overflow-hidden h-24 w-32"
                     >
-                        <Image alt="logo" src={list.img} fill />
+                        <Image title="logo" alt="logo" src={list.img} fill />
                     </div>
                 ))}
             </Marquee>

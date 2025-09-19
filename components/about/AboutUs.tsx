@@ -5,14 +5,14 @@ const AboutUs = () => {
   return (
     <section className="w-full">
       <div className="md:pb-28 p-10 sm:px-20 xl:px-64 sm:pt-16 xl:pt-28 space-y-10">
-        <h5 className="font-SourceCodePro font-semibold tracking-wider text-base sm:text-lg">
+        <h1 className="font-SourceCodePro font-semibold tracking-wider text-base sm:text-lg">
           Small team, <strong className="text-info">big</strong> solutions.
-        </h5>
-        <h3 className="font-EbGaramond font-medium text-5xl w-full sm:text-7xl xl:text-9xl tracking-wide !leading-tight">
+        </h1>
+        <h2 className="font-EbGaramond font-medium text-5xl w-full sm:text-7xl xl:text-9xl tracking-wide !leading-tight">
           Affordable &{" "}
           <strong className="font-extrabold text-info">Scalable</strong> ideas
           tailored for you.
-        </h3>
+        </h2>
         <div className="flex flex-col md:flex-row justify-between items-center gap-14 md:gap-5 overflow-hidden font-SourceCodePro pb-10">
           <div className="relative basis-full md:basis-3/5 pb-20 md:pb-0">
             <p className="font-normal text-base sm:text-lg xl:text-xl !leading-10">
@@ -26,6 +26,7 @@ const AboutUs = () => {
             </p>
             <div className="absolute -bottom-24 md:-bottom-52 left-0 h-64 w-full md:h-80">
               <Image
+                title="bg svg"
                 alt="svg"
                 src={
                   "https://cdn.webibee.com/Webibee/bg%20svg.svg"
@@ -37,6 +38,7 @@ const AboutUs = () => {
           </div>
           <div className="relative w-64 h-64 md:w-full md:h-80 md:basis-2/5">
             <Image
+              title="illustration"
               alt="illustration"
               src={
                 "https://cdn.webibee.com/Webibee/illustration-1.svg"

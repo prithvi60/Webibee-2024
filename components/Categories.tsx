@@ -17,10 +17,10 @@ const Categories = () => {
                     whileInView="animate"
                     className="lg:sticky lg:top-5 space-y-12"
                 >
-                    <h4 className="font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start">
+                    <h2 className="font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start">
                         Crafting Impact Across{" "}
                         <strong className="text-info">Industries</strong>
-                    </h4>
+                    </h2>
                     <p className="text-sm text-left md:text-start md:text-lg font-SourceCodePro">
                         Our work transforms visions into digital realities, elevating brands
                         across diverse industries. Whether designing sleek portfolios for
@@ -49,11 +49,13 @@ const Categories = () => {
                             className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96"
                         >
                             <Link
+                                title={category.title}
                                 href={category.href}
                                 className="flex flex-col items-center justify-center gap-10"
                             >
                                 <div className="relative mx-auto w-40 h-20 md:w-60 md:h-40">
                                     <Image
+                                        title="logo"
                                         fill
                                         alt="logo"
                                         className="object-contain object-center"
@@ -86,11 +88,13 @@ const Categories = () => {
                             className="p-5 w-52 md:w-64 lg:w-[280px] border-4 border-[#DFE3E8] h-full sm:h-72 xl:h-96"
                         >
                             <Link
+                                title={category.title}
                                 href={category.href}
                                 className="flex flex-col items-center justify-center gap-10"
                             >
                                 <div className="relative mx-auto w-40 h-20 md:w-60 md:h-40">
                                     <Image
+                                        title="logo"
                                         fill
                                         alt="logo"
                                         className="object-contain object-center"

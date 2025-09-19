@@ -143,7 +143,7 @@ const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
                     onChange={handleChange}
                     className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
                 />
-                <button className="bg-info/80 text-white font-SourceCodePro font-medium text-base sm:text-lg xl:text-xl p-2 rounded-md hover:bg-info active:bg-neutral-700">
+                <button type="submit" title="submit" className="bg-info/80 text-white font-SourceCodePro font-medium text-base sm:text-lg xl:text-xl p-2 rounded-md hover:bg-info active:bg-neutral-700">
                     {status ? <Loader /> : "Submit"}
                 </button>
             </div>

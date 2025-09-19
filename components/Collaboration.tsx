@@ -20,9 +20,9 @@ export default function Collaboration() {
       {/* <h1 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium">
         Collaboration
       </h1> */}
-      <h3 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl text-center md:text-start">
+      <h2 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl text-center md:text-start">
         Collaboration
-      </h3>
+      </h2>
       <div className="w-full">
         <Accordion variant="light" itemClasses={itemClasses} defaultExpandedKeys={["0"]}>
           {collaboration.map((item, idx) => (

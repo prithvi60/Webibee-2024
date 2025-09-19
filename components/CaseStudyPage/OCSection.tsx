@@ -25,9 +25,9 @@ const OCSection = ({ OCLists }: { OCLists: any }) => {
                         whileInView="animate"
                         custom={index}
                         viewport={{ once: true }} key={index} className="space-y-2.5">
-                        <h4 className="font-EbGaramond font-bold tracking-wider text-xl md:text-2xl p-1 xl:text-3xl text-[#464959]">
+                        <h3 className="font-EbGaramond font-bold tracking-wider text-xl md:text-2xl p-1 xl:text-3xl text-[#464959]">
                             {item.title}
-                        </h4>
+                        </h3>
                         <p className="font-SourceCodePro text-base md:text-lg xl:text-xl !leading-snug">
                             {item.desc}
                         </p>

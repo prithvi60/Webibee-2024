@@ -1,11 +1,10 @@
 "use client";
-import { FaqWestern, FaqIndia } from "@/libs/data";
+
 import { Accordion, AccordionItem } from "@heroui/react";
 import Image from "next/image";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { variant1, variant2 } from "@/libs/Variants";
-import { useEffect, useState } from "react";
 
 const itemClasses = {
     base: "w-full overflow-hidden",
@@ -86,6 +85,7 @@ const FAQ = ({ lists, location, userCountry }: FAQProps) => {
                 </div>
                 <div className="relative w-64 h-64 md:w-full md:h-80">
                     <Image
+                        title="illustration"
                         alt="illustration"
                         src={"https://cdn.webibee.com/Webibee/illustration-2.svg"}
                         fill

@@ -7,7 +7,7 @@ import { parentVariant, variantGrid, variantTitle } from "@/libs/Variants";
 export default function Services() {
   return (
     <section className="block space-y-10 md:space-y-10 p-10 sm:px-20 xl:px-60 sm:py-16 xl:py-28">
-      <motion.h3
+      <motion.h2
         variants={variantTitle}
         viewport={{ once: true }}
         initial="initial"
@@ -19,7 +19,7 @@ export default function Services() {
           tailored, agile, & creative
         </span>{" "}
         Solutions
-      </motion.h3>
+      </motion.h2>
       {/* <h4 className='font-EbGaramond text-4xl xl:text-6xl tracking-wider font-medium text-center md:text-start'>Crafting Impact Across <strong className='text-info'>Industries</strong></h4> */}
       <motion.div
         variants={parentVariant}
@@ -30,6 +30,7 @@ export default function Services() {
       >
         {services.map((service, idx) => (
           <motion.a
+            title="View Details"
             href={service.href}
             variants={variantGrid}
             initial="initial"
@@ -41,8 +42,8 @@ export default function Services() {
           >
             <div className="block space-y-10">
               <div className="text-[#404040] text-lg tracking-wider sm:text-xl xl:text-3xl block space-y-1.5 text-center uppercase font-EbGaramond font-bold">
-                <h4 className="text-info scale-110">{service.title}</h4>
-                <h4>Essentials</h4>
+                <h3 className="text-info scale-110">{service.title}</h3>
+                <h3>Essentials</h3>
               </div>
               <hr className="w-full h-1.5 bg-[#404040] rounded-md" />
               <TypeText service={service} />

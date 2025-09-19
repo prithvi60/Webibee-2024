@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import { EB_Garamond, Source_Code_Pro } from "next/font/google";
+import { EB_Garamond, Lora, Source_Code_Pro } from "next/font/google";
 import { Partytown } from "@builder.io/partytown/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -64,11 +64,17 @@ const EbGaramond = EB_Garamond({
   weight: "400",
 });
 
-const sourceCodePro = Source_Code_Pro({
+const sourceCodePro = Lora({
   subsets: ["latin"],
   variable: "--font-sourceCodePro",
   weight: "400",
 });
+
+// const sourceCodePro = Source_Code_Pro({
+//   subsets: ["latin"],
+//   variable: "--font-sourceCodePro",
+//   weight: "400",
+// });
 
 const hotjarId = process.env.NEXT_PUBLIC_HOTJAR_ID || '';
 const ahrefsKey = process.env.NEXT_PUBLIC_AHREFS_KEY || '';

@@ -14,7 +14,15 @@ const initialFormData = {
     message: "",
 };
 
-const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
+const ContactForm = ({
+    seo,
+    blog,
+    lge,
+}: {
+    seo?: boolean;
+    blog?: boolean;
+    lge?: boolean;
+}) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
 
@@ -95,15 +103,29 @@ const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
                     required
                     className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
                 />
+
+                {lge && (
+                    <input
+                        type="text"
+                        placeholder="Business Name*"
+                        name="companyName"
+                        value={formData.companyName || ""}
+                        onChange={handleChange}
+                        required
+                        className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
+                    />
+                )}
+
                 <input
                     type="email"
-                    placeholder="Email Address*"
+                    placeholder="Email*"
                     name="userEmail"
                     value={formData.userEmail || ""}
                     onChange={handleChange}
                     required
                     className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
                 />
+
                 {!seo && (
                     <>
                         <input
@@ -137,13 +159,17 @@ const ContactForm = ({ seo, blog }: { seo?: boolean; blog?: boolean }) => {
                 />
                 <textarea
                     rows={5}
-                    placeholder="Message"
+                    placeholder={`${lge ? "Any Specific Need of Service?" : "Message"} `}
                     name="message"
                     value={formData.message || ""}
                     onChange={handleChange}
                     className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
                 />
-                <button type="submit" title="submit" className="bg-info/80 text-white font-SourceCodePro font-medium text-base sm:text-lg xl:text-xl p-2 rounded-md hover:bg-info active:bg-neutral-700">
+                <button
+                    type="submit"
+                    title="submit"
+                    className="bg-info/80 text-white font-SourceCodePro font-medium text-base sm:text-lg xl:text-xl p-2 rounded-md hover:bg-info active:bg-neutral-700"
+                >
                     {status ? <Loader /> : "Submit"}
                 </button>
             </div>

@@ -22,9 +22,10 @@ type FAQProps = {
     lists?: { title: string; desc: string }[];
     location?: string | null;
     userCountry?: string;
+    lge?: boolean
 };
 
-const FAQ = ({ lists, location, userCountry }: FAQProps) => {
+const FAQ = ({ lists, location, userCountry, lge }: FAQProps) => {
     const faq = [
         {
             title: "What does Webibee offer?",
@@ -73,15 +74,17 @@ const FAQ = ({ lists, location, userCountry }: FAQProps) => {
                 className="w-full md:w-1/2 space-y-6 md:sticky md:top-2 h-full"
             >
                 <div className="block space-y-2 ">
-                    <h3 className="block tracking-wider font-EbGaramond text-center md:text-start text-4xl md:text-5xl text-default font-medium mb-8">
+                    <h3 className={`${lge ? "text-center" : "text-center md:text-start"} block tracking-wider font-EbGaramond text-4xl md:text-5xl text-default font-medium mb-8`}>
                         FAQ
                     </h3>
-                    <p className="font-SourceCodePro text-sm md:text-base font-light text-justify">
-                        At Webibee, we craft intuitive, user-centered designs that blend
-                        creativity with functionality. Our focus on quality ensures
-                        precision, innovation, and solutions that exceed client
-                        expectations.
-                    </p>
+                    {!lge && (
+                        <p className="font-SourceCodePro text-sm md:text-base font-light text-justify">
+                            At Webibee, we craft intuitive, user-centered designs that blend
+                            creativity with functionality. Our focus on quality ensures
+                            precision, innovation, and solutions that exceed client
+                            expectations.
+                        </p>
+                    )}
                 </div>
                 <div className="relative w-64 h-64 md:w-full md:h-80">
                     <Image

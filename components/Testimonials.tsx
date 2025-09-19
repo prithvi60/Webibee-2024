@@ -11,7 +11,7 @@ import {
   variantGrid2,
 } from "@/libs/Variants";
 
-export default function Testimonials({ userCountry }: { userCountry: string }) {
+export default function Testimonials({ userCountry, lge }: { userCountry: string, lge?: boolean }) {
   const [locTestimonials, setLocTestimonials] = useState(testimonials);
   const isIndia = userCountry === "IN";
   useEffect(() => {
@@ -71,10 +71,10 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
         whileInView="animate"
         className="relative z-0"
       >
-        <h2 className="font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 text-center md:text-start">
+        <h2 className={`font-EbGaramond font-medium text-4xl sm:text-5xl xl:text-7xl px-10 sm:px-20 xl:px-64 w-full ${lge ? "text-center ml-7 md:ml-14 xl:ml-40 mx-auto" : "text-center md:text-start"}`}>
           Testimonials
         </h2>
-        <div className="absolute -top-5 md:-top-10 left-48 xl:left-[480px] size-32 md:size-56 -z-10">
+        <div className={`${lge ? "left-64 xl:left-[620px]" : "left-48 xl:left-[480px]"} absolute -top-5 md:-top-10 size-32 md:size-56 -z-10`}>
           <Image
             title="svg image"
             src={"https://cdn.webibee.com/Webibee/svg%202.svg"}
@@ -106,7 +106,7 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
               onClick={() => setIsActive(testimonial.id)}
             >
               <div className="flex items-center gap-6 w-full lg:w-11/12 xl:w-4/5">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28">
+                {/* <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28">
                   <Image
                     title={testimonial.reviewer}
                     src={testimonial.img}
@@ -115,15 +115,16 @@ export default function Testimonials({ userCountry }: { userCountry: string }) {
                     fill
                     quality={100}
                   />
-                </div>
+                </div> */}
+                <div className="relative size-14 sm:size-14 lg:size-16 bg-info rounded-full"></div>
 
                 <div className="block space-y-2">
                   <h5 className="capitalize font-EbGaramond font-medium tracking-wider text-lg sm:text-xl xl:text-2xl">
-                    {testimonial.reviewer}
+                    {testimonial.company}
                   </h5>
-                  <p className="text-sm capitalize  xl:text-lg tracking-wide font-SourceCodePro font-normal">
+                  {/* <p className="text-sm capitalize  xl:text-lg tracking-wide font-SourceCodePro font-normal">
                     {testimonial.position}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </motion.li>

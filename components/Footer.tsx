@@ -1,9 +1,12 @@
+"use client";
 import { footerNavLinks } from "@/libs/data";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaUpwork } from "react-icons/fa6";
 
 const Footer = () => {
+  const path = usePathname();
   const currentYear = new Date().getFullYear();
   return (
     <footer className="w-full p-10 sm:px-20 xl:px-64 sm:py-16 xl:py-28 block space-y-10 md:space-y-20 font-EbGaramond text-[#868686] tracking-wide text-lg md:text-xl xl:text-2xl">
@@ -13,14 +16,16 @@ const Footer = () => {
           <a href="mailto:support@webibee.com">support@webibee.com</a>
         </div>
         <ul className="flex items-center gap-10">
-          <li className="hover:animate-pulse">
-            <Link
-              href={"https://www.upwork.com/freelancers/~01d7976a7b95d87d71"}
-              className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
-            >
-              <FaUpwork />
-            </Link>
-          </li>
+          {path !== "/lead-generation-engine" && (
+            <li className="hover:animate-pulse">
+              <Link
+                href={"https://www.upwork.com/freelancers/~01d7976a7b95d87d71"}
+                className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
+              >
+                <FaUpwork />
+              </Link>
+            </li>
+          )}
           <li className="hover:animate-pulse">
             <Link
               href={"https://www.linkedin.com/in/prithvi-n/"}
@@ -29,14 +34,16 @@ const Footer = () => {
               <FaLinkedinIn />
             </Link>
           </li>
-          <li className="hover:animate-pulse">
-            <Link
-              href={"https://www.instagram.com/prith.bytes"}
-              className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
-            >
-              <FaInstagram />
-            </Link>
-          </li>
+          {path !== "/lead-generation-engine" && (
+            <li className="hover:animate-pulse">
+              <Link
+                href={"https://www.instagram.com/prith.bytes"}
+                className="text-xl md:text-2xl xl:text-3xl text-[#323031]"
+              >
+                <FaInstagram />
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
       <div className="flex justify-center md:justify-start text-center md:text-start gap-10">

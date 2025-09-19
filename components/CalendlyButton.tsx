@@ -77,7 +77,7 @@ const CalendlyLink = ({ btn }: { btn?: boolean }) => {
                     <span className="rounded-full bg-info/80 p-1 text-sm transition-colors duration-300 group-hover:bg-white">
                         <FiArrowRight className="-translate-x-[200%] text-[0px] transition-all duration-300 group-hover:translate-x-0 group-hover:text-lg group-hover:text-black group-active:-rotate-45" />
                     </span>
-                    <span>Book a free Consultation</span>
+                    <span>See How It Works</span>
                 </button>
             ) : (
                 <button
@@ -85,7 +85,7 @@ const CalendlyLink = ({ btn }: { btn?: boolean }) => {
                     onClick={handleCalendlyClick}
                     className={`capitalize font-bold hover:animate-pulse tracking-wide hover:text-info/80 relative text-base md:text-xl xl:text-2xl hover:decoration-dashed hover:transition-colors hover:duration-300 hover:ease-in-out border-b-4 border-[#4d3191]`}
                 >
-                    Free Consultation
+                    Simplify Marketing
                 </button>
             )}
         </>

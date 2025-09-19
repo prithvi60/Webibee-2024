@@ -114,6 +114,7 @@ export const testimonials = [
     id: 1,
     reviewer: "Naveen V",
     img: "https://cdn.webibee.com/Webibee/vbcc-ceo.png",
+    company: "VBCC Instruments",
     position: "Founder & CEO, VBCC Instruments",
     review: `Our group of companies faced a big challenge one time before engaging with Webibee, which was improving our online presence. In this light, we sought for some assistance in developing websites that were beautiful to look at and featured that were tailor-made for our requirements as well as technical help and a long-term commitment to cooperate with our SEO and content teams.
 
@@ -125,6 +126,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
     id: 2,
     reviewer: "A. Jayesh Kumar Daga",
     img: "https://cdn.webibee.com/Webibee/ceo-3.png",
+    company: "Daga and daga",
     position: "Head - Litigations, Daga and daga",
     review:
       "Webibee helped us with our website development and digital management needs, and the experience exceeded my expectations. Prithvi took our vision and turned it into a stunning reality. He also patiently responded to all my queries. I highly recommend their services to anyone looking for a reliable and innovative digital partner.",
@@ -133,6 +135,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
     id: 3,
     reviewer: "Rasim",
     img: "https://cdn.webibee.com/Webibee/ceo-2.jpeg",
+    company: "Rasim Exports",
     position: "CEO, Rasim Exports",
     review:
       "The enhancement was really amazing . The data upgrades and artwork talks volumes of the hard work put behind . Overall , great job! ",
@@ -141,6 +144,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
     id: 4,
     reviewer: "Paul",
     img: "https://cdn.webibee.com/Webibee/euro-flag_avif.heif",
+    company: "European Company",
     position: "CEO, European Company",
     review: `Working with Webibee was a fantastic experience. They understood our needs and delivered a product that exceeded our expectations. Their attention to detail and commitment to quality is commendable. I would highly recommend their services to anyone looking for a reliable partner in web development.`,
   },
@@ -148,6 +152,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
     id: 5,
     reviewer: "Louis",
     img: "https://cdn.webibee.com/Webibee/UAE.jpg",
+    company: "UAE Firm",
     position: "Managing Director, UAE Firm",
     review: `The team at Webibee transformed our online presence. Their innovative approach and technical expertise made a significant difference in our project. They were responsive and supportive throughout the process, ensuring we were satisfied with the final outcome.`,
   },
@@ -155,6 +160,7 @@ I highly recommend Prithvi together with his team at Webibee because they do ver
     id: 6,
     reviewer: "Sarah",
     img: "https://cdn.webibee.com/Webibee/euro-flag_avif.heif",
+    company: "European Company",
     position: "Marketing Head, European Company",
     review: `Webibee's team is exceptional! They took our ideas and turned them into a beautiful website that truly represents our brand. Their professionalism and dedication to our project were evident from start to finish. I can't recommend them enough!`,
   },
@@ -2426,7 +2432,7 @@ export const LGEMarketingNeeds = [
   },
   {
     title: "SME-Friendly Pricing",
-    description: "Affordable packages for both India & US markets.",
+    description: "affordabe and effective services for your needs.",
   },
   {
     title: "Future-Ready",

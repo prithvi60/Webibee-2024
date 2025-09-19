@@ -20,9 +20,9 @@ const Page = async () => {
             <AllMarketingNeeds />
             <WhyWebibee />
             <Categories />
-            <Testimonials userCountry={country} />
+            <Testimonials userCountry={country} lge />
             <Pricing userCountry={country}/>
-            <FAQ lists={LGEFaqs} />
+            <FAQ lists={LGEFaqs} lge />
         </main>
     )
 };

@@ -13,6 +13,8 @@ const transporter = nodemailer.createTransport({
 export async function POST(req) {
   const {
     userName,
+    firstName,
+    lastName,
     designation,
     companyName,
     userEmail,
@@ -48,7 +50,21 @@ export async function POST(req) {
        
             <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
             <p style="font-size: 16px; color: #555;"><strong>Customer Details:</strong></p>
-            <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${userName}</p>
+            ${
+              userName
+                ? `<p style="font-size: 16px; color: #555;"><strong>Department:</strong> ${userName}</p>`
+                : ""
+            }
+            ${
+              firstName
+                ? `<p style="font-size: 16px; color: #555;"><strong>First Name:</strong> ${firstName}</p>`
+                : ""
+            }
+            ${
+              lastName
+                ? `<p style="font-size: 16px; color: #555;"><strong>Last Name:</strong> ${lastName}</p>`
+                : ""
+            }
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${userEmail}</p>
             ${
               designation

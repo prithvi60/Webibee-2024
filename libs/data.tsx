@@ -2432,7 +2432,7 @@ export const LGEMarketingNeeds = [
   },
   {
     title: "SME-Friendly Pricing",
-    description: "affordabe and effective services for your needs.",
+    description: "Affordable and effective services for your needs.",
   },
   {
     title: "Future-Ready",

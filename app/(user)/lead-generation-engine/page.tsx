@@ -12,6 +12,25 @@ import { headers } from "next/headers";
 
 const Page = async () => {
     const country = (await headers()).get("x-vercel-ip-country") || "Unknown";
+    // try {
+    //     const response = await fetch('http://localhost:3000/api/zoho/contacts', {
+    //         cache: 'no-store' // Optional: prevents the response from being cached
+    //     });
+
+    //     if (!response.ok) {
+    //         throw new Error(`Failed to fetch leads: ${response.statusText}`);
+    //     }
+
+    //     const data = await response.json();
+
+    //     console.log("client side", data.data);
+
+
+    // } catch (error) {
+    //     console.error("Error fetching leads on the server:", error);
+    //     // You could render an error state or an empty list
+    //     return <div>An error occurred while fetching data.</div>;
+    // }
     return (
         <main>
             <LGEHero />
@@ -21,7 +40,7 @@ const Page = async () => {
             <WhyWebibee />
             <Categories />
             <Testimonials userCountry={country} lge />
-            <Pricing userCountry={country}/>
+            <Pricing userCountry={country} />
             <FAQ lists={LGEFaqs} lge />
         </main>
     )

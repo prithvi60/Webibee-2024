@@ -1,13 +1,16 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Loader from "../Loader";
 import { motion } from "framer-motion";
 import { variantContact, variantTitle } from "@/libs/Variants";
 import { usePathname } from "next/navigation";
 
+
 const initialFormData = {
     userName: "",
+    firstName: "",
+    lastName: "",
     designation: "",
     phoneNo: "",
     userEmail: "",
@@ -26,7 +29,7 @@ const ContactForm = ({
 }) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
-    const path = usePathname();
+    const path = usePathname()
     const handleChange = (e: { target: { name: any; value: any } }) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -35,6 +38,7 @@ const ContactForm = ({
         }));
     };
 
+
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus(true);
@@ -42,6 +46,8 @@ const ContactForm = ({
 
         const emailFormData = {
             userName: formData.userName,
+            firstName: formData.firstName,
+            lastName: formData.lastName,
             designation: formData.designation,
             userEmail: formData.userEmail,
             phone: formData.phoneNo,
@@ -49,7 +55,35 @@ const ContactForm = ({
             message: formData.message,
         };
 
+        const zohoData = {
+            data: [
+                {
+                    First_Name: formData.firstName,
+                    Last_Name: formData.lastName,
+                    Mobile: formData.phoneNo,
+                    Email: formData.userEmail,
+                    Organization: formData.companyName,
+                    message: formData.message,
+                },
+            ],
+        };
+
         try {
+            if (lge) {
+                const zohoResponse = await fetch("/api/zoho/contacts", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(zohoData),
+                });
+
+                if (!zohoResponse.ok) {
+                    const errorData = await zohoResponse.text();
+                    throw new Error(`Zoho API Error: ${zohoResponse.status} ${errorData}`);
+                }
+                // console.log(zohoResponse, zohoData);
+
+            }
+
             const emailResponse = await fetch("/api/sendMail", {
                 method: "POST",
                 headers: {
@@ -99,26 +133,50 @@ const ContactForm = ({
                 </h3>
             )} */}
             <div className="flex flex-col gap-6">
-                <input
-                    type="text"
-                    placeholder="Full Name*"
-                    name="userName"
-                    value={formData.userName || ""}
-                    onChange={handleChange}
-                    required
-                    className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
-                />
+                {
+                    !lge && (
+                        <input
+                            type="text"
+                            placeholder="Full Name*"
+                            name="userName"
+                            value={formData.userName || ""}
+                            onChange={handleChange}
+                            required
+                            className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
+                        />
+                    )
+                }
 
                 {lge && (
-                    <input
-                        type="text"
-                        placeholder="Business Name*"
-                        name="companyName"
-                        value={formData.companyName || ""}
-                        onChange={handleChange}
-                        required
-                        className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
-                    />
+                    <>
+                        <input
+                            type="text"
+                            placeholder="First Name*"
+                            name="firstName"
+                            value={formData.firstName || ""}
+                            onChange={handleChange}
+                            required
+                            className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Last Name*"
+                            name="lastName"
+                            value={formData.lastName || ""}
+                            onChange={handleChange}
+                            required
+                            className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Business Name*"
+                            name="companyName"
+                            value={formData.companyName || ""}
+                            onChange={handleChange}
+                            required
+                            className="bg-info/25 text-base md:text-lg font-SourceCodePro focus:ring-1 px-5 py-3 placeholder:text-[#757272] focus:outline-info/80"
+                        />
+                    </>
                 )}
 
                 <input

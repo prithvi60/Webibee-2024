@@ -67,7 +67,7 @@ const ContactForm = ({
                     Email: formData.userEmail,
                     Organization: formData.companyName,
                     message: formData.message,
-                    Source: `${leadSource} - Website`,
+                    Description: `${leadSource} - Website`,
                 },
             ],
         };

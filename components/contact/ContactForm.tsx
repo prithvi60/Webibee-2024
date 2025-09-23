@@ -16,6 +16,7 @@ const initialFormData = {
     userEmail: "",
     companyName: "",
     message: "",
+    source: ""
 };
 
 const ContactForm = ({
@@ -37,7 +38,8 @@ const ContactForm = ({
             [name]: value,
         }));
     };
-
+    const leadSource = path.split("/")[1].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+    // console.log(path.split("/")[1].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()));
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -53,6 +55,7 @@ const ContactForm = ({
             phone: formData.phoneNo,
             companyName: formData.companyName,
             message: formData.message,
+            source: `${leadSource} - Website`
         };
 
         const zohoData = {
@@ -64,6 +67,7 @@ const ContactForm = ({
                     Email: formData.userEmail,
                     Organization: formData.companyName,
                     message: formData.message,
+                    Source: `${leadSource} - Website`,
                 },
             ],
         };

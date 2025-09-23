@@ -60,7 +60,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
     const token = await getAccessToken();
-    console.log("Payload sent to Zoho:", { data: [body.data[0]] });
+    // console.log("Payload sent to Zoho:", { data: [body.data[0]] });
 
     const response = await axios.post(
       `${ZOHO_API_URL}/Contacts`,

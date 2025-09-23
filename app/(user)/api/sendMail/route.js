@@ -21,6 +21,7 @@ export async function POST(req) {
     phone,
     message,
     page = "",
+    source,
   } = await req.json();
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
@@ -49,7 +50,7 @@ export async function POST(req) {
             <p style="font-size: 16px; color: #555;">You have a new message from the Webibee website:</p>
        
             <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
-            <p style="font-size: 16px; color: #555;"><strong>Customer Details:</strong></p>
+            <p style="font-size: 16px; color: #555;"><strong>Customer Details:- </strong></p>
             ${
               userName
                 ? `<p style="font-size: 16px; color: #555;"><strong>Department:</strong> ${userName}</p>`
@@ -66,6 +67,7 @@ export async function POST(req) {
                 : ""
             }
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${userEmail}</p>
+            <p style="font-size: 16px; color: #555;"><strong>Lead Source:</strong> ${source}</p>
             ${
               designation
                 ? `<p style="font-size: 16px; color: #555;"><strong>Department:</strong> ${designation}</p>`

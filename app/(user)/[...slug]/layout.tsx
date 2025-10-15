@@ -43,7 +43,7 @@ export async function generateMetadata(
             siteName: "Webibee Agency",
             images: [
                 {
-                    url: "https://cdn.webibee.com/Webibee/webibeepurplelogo.png",
+                    url: "/webibeepurplelogo.png",
                 },
             ],
         },

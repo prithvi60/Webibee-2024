@@ -42,7 +42,7 @@ const NavBar = () => {
             fill
             alt="logo"
             src={
-              "https://cdn.webibee.com/Webibee/webibeepurplelogo.png"
+              "/webibeepurplelogo.png"
             }
             className="object-contain object-center"
           />

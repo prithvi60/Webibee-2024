@@ -30,7 +30,7 @@ const MobileNav = ({
                     <Image
                         title="Webibee Logo - Business Tech for Small Medium Enterprises across the globe"
                         fill
-                        src={"https://cdn.webibee.com/Webibee/webibeepurplelogo.png"}
+                        src={"/webibeepurplelogo.png"}
                         alt="Logo"
                         className="object-contain object-center"
                     />

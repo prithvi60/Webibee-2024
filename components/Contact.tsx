@@ -99,7 +99,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     initial="initial"
                     whileInView="animate"
-                    className="block space-y-12 lg:space-y-16"
+                    className="block space-y-12"
                 >
                     {path === "/works" ? (
                         <h4 className="font-EbGaramond text-2xl tracking-wider capitalize sm:text-5xl xl:text-6xl">

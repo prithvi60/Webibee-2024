@@ -90,7 +90,7 @@ const FAQ = ({ lists, location, userCountry, lge }: FAQProps) => {
                     <Image
                         title="illustration"
                         alt="illustration"
-                        src={"https://cdn.webibee.com/Webibee/illustration-2.svg"}
+                        src={"/illustration-2.svg"}
                         fill
                         className="object-contain object-center"
                     />

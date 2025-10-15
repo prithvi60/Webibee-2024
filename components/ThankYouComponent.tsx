@@ -10,7 +10,7 @@ export const ThankYouComponent = () => {
       <div className="text-3xl md:text-6xl font-semibold text-center">
         <div className="relative h-14 w-14 md:h-28 md:w-28 mx-auto text-warning">
           <Image
-            src={"https://cdn.webibee.com/Webibee/thumbs-up.gif"}
+            src={"/thumbs-up.gif"}
             fill
             title="thumbs up"
             alt="thumbs up"

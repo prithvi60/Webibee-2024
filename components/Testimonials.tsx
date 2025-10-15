@@ -77,7 +77,7 @@ export default function Testimonials({ userCountry, lge }: { userCountry: string
         <div className={`${lge ? "left-64 xl:left-[620px]" : "left-48 xl:left-[480px]"} absolute -top-5 md:-top-10 size-32 md:size-56 -z-10`}>
           <Image
             title="svg image"
-            src={"https://cdn.webibee.com/Webibee/svg%202.svg"}
+            src={"/svg%202.svg"}
             alt="svg"
             className="object-contain object-center"
             fill
@@ -189,7 +189,7 @@ export default function Testimonials({ userCountry, lge }: { userCountry: string
                         <Image
                           title="sound svg"
                           fill
-                          src={"https://cdn.webibee.com/Webibee/sound.svg"}
+                          src={"/sound.svg"}
                           alt="image"
                           className="object-contain object-center"
                         />

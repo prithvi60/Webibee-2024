@@ -29,7 +29,7 @@ const AboutUs = () => {
                 title="bg svg"
                 alt="svg"
                 src={
-                  "https://cdn.webibee.com/Webibee/bg%20svg.svg"
+                  "/bg%20svg.svg"
                 }
                 fill
                 className="object-contain object-center"
@@ -41,7 +41,7 @@ const AboutUs = () => {
               title="illustration"
               alt="illustration"
               src={
-                "https://cdn.webibee.com/Webibee/illustration-1.svg"
+                "/illustration-1.svg"
               }
               fill
               className="object-contain object-center"

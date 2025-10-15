@@ -7,7 +7,7 @@ export default function NotFound() {
       {/* <div className='relative h-56 w-56 -mt-5'> */}
       <Image
         src={
-          "https://cdn.webibee.com/Webibee/404.png"
+          "/404.png"
         }
         title="404 page not found"
         height={350}

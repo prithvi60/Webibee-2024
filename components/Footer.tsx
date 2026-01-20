@@ -14,9 +14,7 @@ const Footer = () => {
         <div className="block space-y-3 text-center sm:text-start">
           <h5 className="text-info font-bold font-EbGaramond">Webibee</h5>
           <a href="mailto:support@webibee.com">support@webibee.com</a>
-          <a href="tel:+917358023088" >
-  +91 73580 23088
-</a>
+          <br></br><a href="tel:+917358023088">+91 73580 23088</a>
         </div>
         <ul className="flex items-center gap-10">
           {path !== "/lead-generation-engine" && (
